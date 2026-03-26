@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0A0E1A;
+  --color-bg-elevated: #0E1220;
+  --color-bg-card: rgba(255, 255, 255, 0.02);
+  --color-bg-card-hover: rgba(255, 255, 255, 0.035);
+  --color-bg-input: rgba(255, 255, 255, 0.04);
+
+  --color-border: rgba(255, 255, 255, 0.05);
+  --color-border-hover: rgba(255, 255, 255, 0.1);
+
+  --color-text-1: #E8ECF1;
+  --color-text-2: rgba(232, 236, 241, 0.5);
+  --color-text-3: rgba(232, 236, 241, 0.25);
+
+  --color-brand: #FF4562;
+  --color-brand-dim: rgba(255, 69, 98, 0.08);
+
+  --color-accent-blue: #3B82F6;
+  --color-accent-teal: #10B981;
+  --color-accent-amber: #F59E0B;
+  --color-accent-purple: #A855F7;
+
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Satoshi', 'DM Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-grotesk: 'Space Grotesk', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+::selection {
+  background: rgba(255, 69, 98, 0.3);
+  color: #fff;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255, 69, 98, 0.15); border-radius: 3px; }
+
+@keyframes gentlePulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+@keyframes catCardIn {
+  from { opacity: 0; transform: translateY(16px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes floatBlob1 {
+  0%, 100% { transform: translate(0,0) scale(1); }
+  33% { transform: translate(60px,-40px) scale(1.1); }
+  66% { transform: translate(-30px,50px) scale(0.95); }
+}
+
+@keyframes floatBlob2 {
+  0%, 100% { transform: translate(0,0) scale(1); }
+  33% { transform: translate(-50px,30px) scale(0.9); }
+  66% { transform: translate(40px,-60px) scale(1.05); }
+}
+
+@keyframes floatBlob3 {
+  0%, 100% { transform: translate(0,0) scale(1.05); }
+  50% { transform: translate(30px,40px) scale(0.95); }
+}
