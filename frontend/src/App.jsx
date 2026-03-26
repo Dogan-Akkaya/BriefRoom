@@ -3,6 +3,9 @@ import Navbar from './components/Navbar'
 import Toast from './components/Toast'
 import Landing from './routes/Landing'
 import Builder from './routes/Builder'
+import Popular from './routes/Popular'
+import Methodology from './routes/Methodology'
+import StaticPage from './routes/StaticPage'
 
 export default function App() {
   return (
@@ -13,6 +16,9 @@ export default function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/builder" element={<Builder />} />
         <Route path="/builder/:categoryId" element={<Builder />} />
+        <Route path="/popular" element={<Popular />} />
+        <Route path="/methodology" element={<Methodology />} />
+        <Route path="/page/:slug" element={<StaticPage />} />
       </Routes>
     </div>
   )

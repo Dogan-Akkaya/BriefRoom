@@ -29,6 +29,7 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
+html, body, #root { min-height: 100vh; background: #0A0E1A; color: #E8ECF1; font-family: 'Satoshi', 'DM Sans', sans-serif; }
 
 ::selection {
   background: rgba(255, 69, 98, 0.3);

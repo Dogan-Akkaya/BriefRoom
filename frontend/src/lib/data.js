@@ -16,35 +16,108 @@ export const CATEGORIES = [
 
 export const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
-// Seeded RNG data generator from brief-room1.jsx
-export function generateData(catId) {
-  const seed = catId.split('').reduce((a, c) => a + c.charCodeAt(0), 0)
+// Threat groups / actors
+export const THREAT_GROUPS = [
+  'All Groups', 'LockBit 4.0', 'BlackCat/ALPHV', 'Cl0p', 'Play', 'Akira',
+  'Royal', 'Medusa', 'NoEscape', 'Black Basta', 'RansomHub', 'Rhysida', 'BianLian'
+]
+
+// Data points per category — each has its own element set
+export const DATA_POINTS_BY_CATEGORY = {
+  ransomware: [
+    { id: 'attack_volume', label: 'Attack Volume', elements: ['Healthcare', 'Finance', 'Manufacturing', 'Government', 'Education', 'Energy', 'Retail', 'Technology'] },
+    { id: 'ransom_demands', label: 'Ransom Demands ($)', elements: ['< $100K', '$100K-$500K', '$500K-$1M', '$1M-$5M', '$5M-$10M', '> $10M'] },
+    { id: 'recovery_time', label: 'Recovery Time (days)', elements: ['Healthcare', 'Finance', 'Manufacturing', 'Government', 'Education', 'Energy'] },
+    { id: 'payment_rate', label: 'Payment Rate (%)', elements: ['2021', '2022', '2023', '2024', '2025', '2026'] },
+    { id: 'targeted_sectors', label: 'Targeted Sectors', elements: ['Healthcare', 'Financial Services', 'Manufacturing', 'Government', 'Technology', 'Education', 'Energy', 'Retail'] },
+  ],
+  phishing: [
+    { id: 'campaign_volume', label: 'Campaign Volume', elements: ['Email', 'SMS/Smishing', 'QR Code', 'Social Media', 'Spear Phishing', 'Voice/Vishing'] },
+    { id: 'click_rate', label: 'Click-Through Rate (%)', elements: ['Healthcare', 'Finance', 'Education', 'Government', 'Retail', 'Technology'] },
+    { id: 'bec_losses', label: 'BEC Losses ($)', elements: ['Wire Transfer', 'Gift Cards', 'Payroll Diversion', 'Invoice Fraud', 'Real Estate', 'Vendor Impersonation'] },
+    { id: 'delivery_vectors', label: 'Delivery Vectors', elements: ['Email Link', 'Attachment', 'QR Code', 'SMS', 'Voice', 'Social Media'] },
+    { id: 'impersonation', label: 'Impersonation Targets', elements: ['Microsoft', 'Google', 'DHL', 'Amazon', 'LinkedIn', 'Apple', 'Meta', 'Netflix'] },
+  ],
+  data_leaks: [
+    { id: 'records_exposed', label: 'Records Exposed', elements: ['PII Records', 'Financial Data', 'Credentials', 'Health Records', 'Intellectual Property', 'Source Code'] },
+    { id: 'breach_cost', label: 'Breach Cost ($M)', elements: ['Healthcare', 'Financial', 'Pharma', 'Technology', 'Energy', 'Education', 'Government', 'Retail'] },
+    { id: 'root_causes', label: 'Root Causes', elements: ['Stolen Creds', 'Phishing', 'Misconfiguration', 'Vulnerability', 'Insider Threat', 'Physical', 'Unknown'] },
+    { id: 'time_to_detect', label: 'Time to Detect (days)', elements: ['Healthcare', 'Finance', 'Government', 'Technology', 'Retail', 'Energy'] },
+    { id: 'leak_sources', label: 'Leak Sources', elements: ['Dark Web Forums', 'Paste Sites', 'Telegram', 'Ransomware Sites', 'Public Repos', 'Social Media'] },
+  ],
+  vulnerability: [
+    { id: 'cve_volume', label: 'CVE Volume', elements: ['RCE', 'Privilege Escalation', 'SQLi', 'XSS', 'Auth Bypass', 'SSRF', 'DoS', 'Info Disclosure'] },
+    { id: 'time_to_exploit', label: 'Time to Exploit (days)', elements: ['2020', '2021', '2022', '2023', '2024', '2025', '2026'] },
+    { id: 'patch_rate', label: 'Patch Rate (%)', elements: ['Critical', 'High', 'Medium', 'Low'] },
+    { id: 'exploit_availability', label: 'Exploit Availability', elements: ['PoC Published', 'Weaponized', 'In-the-Wild', 'Kit Available', 'No Known Exploit'] },
+    { id: 'severity_dist', label: 'Severity Distribution', elements: ['Critical', 'High', 'Medium', 'Low', 'Informational'] },
+  ],
+  supply_chain: [
+    { id: 'incident_count', label: 'Incident Count', elements: ['npm', 'PyPI', 'Maven', 'Docker Hub', 'GitHub Actions', 'NuGet', 'RubyGems', 'Go Modules'] },
+    { id: 'malicious_packages', label: 'Malicious Packages', elements: ['Typosquatting', 'Dependency Confusion', 'Account Takeover', 'Build Injection', 'Backdoor', 'Data Exfil'] },
+    { id: 'third_party_rate', label: 'Third-Party Breach Rate', elements: ['2020', '2021', '2022', '2023', '2024', '2025', '2026'] },
+    { id: 'impact_sector', label: 'Impact by Sector', elements: ['Technology', 'Financial', 'Healthcare', 'Government', 'Manufacturing', 'Retail'] },
+    { id: 'attack_vectors', label: 'Attack Vectors', elements: ['Open Source', 'CI/CD Pipeline', 'Cloud Provider', 'SaaS Vendor', 'Managed Services', 'CDN/Infrastructure'] },
+  ],
+  dark_web_mentions: [
+    { id: 'credential_listings', label: 'Credential Listings', elements: ['Corporate Email', 'VPN Credentials', 'Cloud Accounts', 'Database Access', 'Admin Panels', 'API Keys'] },
+    { id: 'access_pricing', label: 'Access Broker Pricing ($)', elements: ['Corporate VPN', 'RDP', 'Citrix', 'Cloud Admin', 'Domain Admin', 'Database', 'Email Server'] },
+    { id: 'market_activity', label: 'Market Activity', elements: ['2020', '2021', '2022', '2023', '2024', '2025', '2026'] },
+    { id: 'forum_posts', label: 'Forum Posts', elements: ['Brand Name', 'Executives', 'Products', 'Domains', 'Code Repos', 'Partners'] },
+    { id: 'data_types', label: 'Data Types Listed', elements: ['Credentials', 'PII', 'Credit Cards', 'Health Records', 'Corporate Docs', 'Source Code'] },
+  ],
+}
+
+// Seeded RNG data generator — uses composite key for unique data per category+datapoint
+export function generateData(compositeKey) {
+  const seed = compositeKey.split('').reduce((a, c) => a + c.charCodeAt(0), 0)
   const rng = (i) => Math.abs(Math.sin(seed * 9301 + i * 49297) * 233280) % 1
-  const elements = {
-    ransomware: ['Healthcare', 'Finance', 'Manufacturing', 'Government', 'Education', 'Energy'],
-    phishing: ['Email', 'SMS', 'QR Code', 'Social Media', 'Spear Phishing', 'BEC'],
-    infostealer: ['Redline', 'Raccoon', 'Vidar', 'Lumma', 'StealC', 'Risepro'],
-    logs_on_sale: ['RDP Access', 'VPN Creds', 'Admin Panels', 'Email Access', 'Cloud Accounts', 'SSH Keys'],
-    data_leaks: ['PII Records', 'Financial Data', 'Credentials', 'Health Records', 'IP', 'Source Code'],
-    employee_exposure: ['Email/Pass', 'Phone Numbers', 'Corporate ID', 'Social Media', 'Financial Info', 'Home Address'],
-    dark_web_mentions: ['Brand Name', 'Executives', 'Products', 'Domains', 'Code Repos', 'Partners'],
-    vulnerability: ['RCE', 'Privilege Escalation', 'SQLi', 'XSS', 'Auth Bypass', 'SSRF'],
-    ddos: ['UDP Flood', 'SYN Flood', 'HTTP Flood', 'DNS Amplification', 'NTP Reflection', 'QUIC Flood'],
-    supply_chain: ['Open Source', 'CI/CD', 'Cloud Provider', 'SaaS Vendor', 'Managed Services', 'CDN/Infra'],
+
+  // Look up elements from DATA_POINTS_BY_CATEGORY if key contains underscore
+  const parts = compositeKey.split('/')
+  const catId = parts[0]
+  const dpId = parts[1]
+  let elementNames
+
+  if (dpId && DATA_POINTS_BY_CATEGORY[catId]) {
+    const dp = DATA_POINTS_BY_CATEGORY[catId].find(d => d.id === dpId)
+    elementNames = dp ? dp.elements : null
   }
-  return (elements[catId] || elements.ransomware).map((name, i) => {
+
+  if (!elementNames) {
+    // Fallback to legacy element sets
+    const elements = {
+      ransomware: ['Healthcare', 'Finance', 'Manufacturing', 'Government', 'Education', 'Energy'],
+      phishing: ['Email', 'SMS', 'QR Code', 'Social Media', 'Spear Phishing', 'BEC'],
+      data_leaks: ['PII Records', 'Financial Data', 'Credentials', 'Health Records', 'IP', 'Source Code'],
+      dark_web_mentions: ['Brand Name', 'Executives', 'Products', 'Domains', 'Code Repos', 'Partners'],
+      vulnerability: ['RCE', 'Privilege Escalation', 'SQLi', 'XSS', 'Auth Bypass', 'SSRF'],
+      supply_chain: ['Open Source', 'CI/CD', 'Cloud Provider', 'SaaS Vendor', 'Managed Services', 'CDN/Infra'],
+      infostealer: ['Redline', 'Raccoon', 'Vidar', 'Lumma', 'StealC', 'Risepro'],
+      logs_on_sale: ['RDP Access', 'VPN Creds', 'Admin Panels', 'Email Access', 'Cloud Accounts', 'SSH Keys'],
+      employee_exposure: ['Email/Pass', 'Phone Numbers', 'Corporate ID', 'Social Media', 'Financial Info', 'Home Address'],
+      ddos: ['UDP Flood', 'SYN Flood', 'HTTP Flood', 'DNS Amplification', 'NTP Reflection', 'QUIC Flood'],
+    }
+    elementNames = elements[catId] || elements.ransomware
+  }
+
+  return elementNames.map((name, i) => {
     const vals = {}
     MONTHS.forEach((m, mi) => { vals[m] = Math.round(rng(i * 100 + mi * 7 + seed) * 600 + 100 + rng(mi * 13 + i) * 300) })
     return { name, ...vals, color: `hsl(${(i * 55 + seed * 3) % 360},55%,58%)` }
   })
 }
 
-// Popular charts for the landing page
+// Popular charts for the landing page — 8 charts
 export const POPULAR = [
-  { title: 'Ransomware Attacks by Sector', views: '12.4k', tag: 'THREAT INTEL', trend: '+23% YoY', up: true, color: '#FF4562', data: [12, 19, 15, 25, 22, 30, 28, 35, 40, 38, 45, 52], sources: '2,400+ incident reports', updated: 'Mar 2026', detail: 'Healthcare and manufacturing remain the most targeted sectors. Median ransom demand increased 40% to $1.2M.', metrics: [{ label: 'Avg. Ransom', value: '$1.2M' }, { label: 'Top Sector', value: 'Healthcare' }] },
-  { title: 'Mean Time to Detect (MTTD)', views: '9.8k', tag: 'OPERATIONS', trend: '-18% YoY', up: false, color: '#3B82F6', data: [200, 195, 180, 175, 160, 155, 140, 130, 125, 110, 105, 98], sources: 'Global SOC benchmark data', updated: 'Mar 2026', detail: 'Organizations with XDR reduced detection time by 34%. Average MTTD now at 98 days, down from 120 in 2024.', metrics: [{ label: 'Current Avg.', value: '98 days' }, { label: 'Best-in-class', value: '12 days' }] },
-  { title: 'Cloud Misconfiguration Trends', views: '8.2k', tag: 'CLOUD SEC', trend: '-12% YoY', up: false, color: '#10B981', data: [45, 42, 48, 40, 38, 35, 33, 36, 30, 28, 25, 22], sources: 'Multi-cloud scanning data', updated: 'Feb 2026', detail: 'Public S3 buckets down 62%. IAM over-provisioning remains the #1 misconfiguration across AWS and Azure.', metrics: [{ label: '#1 Misconfig', value: 'IAM Excess' }, { label: 'Public Buckets', value: '-62%' }] },
-  { title: 'Phishing Click-Through Rates', views: '7.5k', tag: 'AWARENESS', trend: '-31% YoY', up: false, color: '#F59E0B', data: [18, 16, 19, 15, 14, 12, 13, 11, 10, 9, 8, 7], sources: 'Simulated phishing campaigns', updated: 'Mar 2026', detail: 'QR-code phishing (quishing) saw 400% growth. Traditional email click rates dropping but lateral vectors evolve.', metrics: [{ label: 'Click Rate', value: '7.1%' }, { label: 'Quishing', value: '+400%' }] },
+  { title: 'Ransomware Attacks by Sector', views: '12.4k', tag: 'THREAT INTEL', trend: '+23% YoY', up: true, color: '#FF4562', data: [12, 19, 15, 25, 22, 30, 28, 35, 40, 38, 45, 52], sources: '2,400+ incident reports', updated: 'Mar 2026', detail: 'Healthcare and manufacturing remain the most targeted sectors. Median ransom demand increased 40% to $1.2M.', metrics: [{ label: 'Avg. Ransom', value: '$1.2M' }, { label: 'Top Sector', value: 'Healthcare' }], categoryId: 'ransomware' },
+  { title: 'Mean Time to Detect (MTTD)', views: '9.8k', tag: 'OPERATIONS', trend: '-18% YoY', up: false, color: '#3B82F6', data: [200, 195, 180, 175, 160, 155, 140, 130, 125, 110, 105, 98], sources: 'Global SOC benchmark data', updated: 'Mar 2026', detail: 'Organizations with XDR reduced detection time by 34%. Average MTTD now at 98 days, down from 120 in 2024.', metrics: [{ label: 'Current Avg.', value: '98 days' }, { label: 'Best-in-class', value: '12 days' }], categoryId: 'data_leaks' },
+  { title: 'Cloud Misconfiguration Trends', views: '8.2k', tag: 'CLOUD SEC', trend: '-12% YoY', up: false, color: '#10B981', data: [45, 42, 48, 40, 38, 35, 33, 36, 30, 28, 25, 22], sources: 'Multi-cloud scanning data', updated: 'Feb 2026', detail: 'Public S3 buckets down 62%. IAM over-provisioning remains the #1 misconfiguration across AWS and Azure.', metrics: [{ label: '#1 Misconfig', value: 'IAM Excess' }, { label: 'Public Buckets', value: '-62%' }], categoryId: 'vulnerability' },
+  { title: 'Phishing Click-Through Rates', views: '7.5k', tag: 'AWARENESS', trend: '-31% YoY', up: false, color: '#F59E0B', data: [18, 16, 19, 15, 14, 12, 13, 11, 10, 9, 8, 7], sources: 'Simulated phishing campaigns', updated: 'Mar 2026', detail: 'QR-code phishing (quishing) saw 400% growth. Traditional email click rates dropping but lateral vectors evolve.', metrics: [{ label: 'Click Rate', value: '7.1%' }, { label: 'Quishing', value: '+400%' }], categoryId: 'phishing' },
+  { title: 'Vulnerability Exploits in the Wild', views: '6.9k', tag: 'CVE TRACKING', trend: '+34% YoY', up: true, color: '#A855F7', data: [28, 32, 30, 38, 42, 45, 50, 55, 48, 52, 58, 64], sources: 'NVD + CISA KEV catalog', updated: 'Mar 2026', detail: 'Time-to-exploit for critical CVEs dropped to 5 days. Zero-day exploitation up 40% compared to 2024.', metrics: [{ label: 'Avg. TTE', value: '5 days' }, { label: 'Zero-Days', value: '+40%' }], categoryId: 'vulnerability' },
+  { title: 'Supply Chain Incidents by Ecosystem', views: '5.6k', tag: 'SUPPLY CHAIN', trend: '+245% YoY', up: true, color: '#EC4899', data: [8, 10, 12, 15, 18, 22, 28, 35, 42, 48, 55, 62], sources: 'SOCRadar supply chain monitoring', updated: 'Mar 2026', detail: 'npm and PyPI account for 65% of malicious package incidents. Typosquatting remains the dominant attack vector.', metrics: [{ label: '#1 Ecosystem', value: 'npm' }, { label: 'Packages', value: '745+' }], categoryId: 'supply_chain' },
+  { title: 'Dark Web Credential Listings', views: '4.8k', tag: 'DARK WEB', trend: '+31% YoY', up: true, color: '#14B8A6', data: [180, 195, 210, 200, 225, 240, 255, 270, 260, 280, 295, 310], sources: 'SOCRadar dark web monitoring', updated: 'Mar 2026', detail: 'Corporate VPN credentials sell for $4,500 average. Domain admin access prices jumped 20% to $12,000.', metrics: [{ label: 'VPN Price', value: '$4,500' }, { label: 'Total Listed', value: '24B+' }], categoryId: 'dark_web_mentions' },
+  { title: 'DDoS Attack Bandwidth Trends', views: '3.9k', tag: 'INFRASTRUCTURE', trend: '+67% YoY', up: true, color: '#F97316', data: [120, 135, 128, 145, 160, 175, 190, 210, 225, 240, 255, 280], sources: 'Global DDoS monitoring network', updated: 'Feb 2026', detail: 'Peak attack bandwidth exceeded 3.5 Tbps in Q1 2026. QUIC flood attacks emerged as the fastest-growing vector.', metrics: [{ label: 'Peak BW', value: '3.5 Tbps' }, { label: '#1 Vector', value: 'QUIC Flood' }], categoryId: 'ransomware' },
 ]
 
 export const SEARCH_SUGGESTIONS = [
@@ -52,6 +125,10 @@ export const SEARCH_SUGGESTIONS = [
   { text: 'MTTD benchmarks financial services', cat: 'Operations' },
   { text: 'Cloud security posture by region', cat: 'Cloud' },
   { text: 'Zero-day frequency 2024 vs 2025', cat: 'Threat Intel' },
+  { text: 'Phishing click rates by industry', cat: 'Awareness' },
+  { text: 'Dark web credential pricing trends', cat: 'Dark Web' },
+  { text: 'Supply chain malicious packages npm', cat: 'Supply Chain' },
+  { text: 'DDoS attack volume Q1 2026', cat: 'Infrastructure' },
 ]
 
 export const insights = [

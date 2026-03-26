@@ -49,12 +49,12 @@ export default function SmokeHero() {
     };
 
     const ems = [
-      { bx: 0.12, by: 0.55, color: [199, 44, 65], rate: 0.15, opacity: 0.045, maxR: 110 },
-      { bx: 0.5, by: 0.65, color: [140, 35, 60], rate: 0.12, opacity: 0.035, maxR: 130 },
-      { bx: 0.85, by: 0.5, color: [30, 58, 138], rate: 0.15, opacity: 0.045, maxR: 110 },
-      { bx: 0.3, by: 0.75, color: [25, 45, 110], rate: 0.1, opacity: 0.035, maxR: 100 },
-      { bx: 0.7, by: 0.45, color: [180, 40, 65], rate: 0.1, opacity: 0.04, maxR: 100 },
-      { bx: 0.45, by: 0.35, color: [50, 35, 100], rate: 0.08, opacity: 0.03, maxR: 120 },
+      { bx: 0.12, by: 0.55, color: [199, 44, 65], rate: 0.15, opacity: 0.08, maxR: 110 },
+      { bx: 0.5, by: 0.65, color: [140, 35, 60], rate: 0.12, opacity: 0.065, maxR: 130 },
+      { bx: 0.85, by: 0.5, color: [30, 58, 138], rate: 0.15, opacity: 0.08, maxR: 110 },
+      { bx: 0.3, by: 0.75, color: [25, 45, 110], rate: 0.1, opacity: 0.065, maxR: 100 },
+      { bx: 0.7, by: 0.45, color: [180, 40, 65], rate: 0.1, opacity: 0.075, maxR: 100 },
+      { bx: 0.45, by: 0.35, color: [50, 35, 100], rate: 0.08, opacity: 0.06, maxR: 120 },
     ];
 
     const onMM = (e) => {
@@ -73,7 +73,7 @@ export default function SmokeHero() {
     const draw = () => {
       timeRef.current++;
       const t = timeRef.current;
-      ctx.fillStyle = 'rgba(10,14,26,0.04)';
+      ctx.fillStyle = 'rgba(10,14,26,0.03)';
       ctx.fillRect(0, 0, w, h);
       if (t % 90 === 0) {
         ctx.fillStyle = 'rgba(10,14,26,0.12)';
@@ -107,7 +107,7 @@ export default function SmokeHero() {
         }
       });
 
-      if (Math.random() < 0.003) {
+      if (Math.random() < 0.008) {
         const bx = Math.random() * w;
         const by = 0.3 * h + Math.random() * 0.5 * h;
         const cols = [
@@ -121,7 +121,7 @@ export default function SmokeHero() {
           particlesRef.current.push(
             mkP(bx, by, {
               color: bc,
-              opacity: 0.04 + Math.random() * 0.025,
+              opacity: 0.07 + Math.random() * 0.04,
               maxR: 60 + Math.random() * 80,
               minR: 15,
               speed: 0.3 + Math.random() * 0.8,
@@ -135,13 +135,13 @@ export default function SmokeHero() {
         }
       }
 
-      if (Math.random() < 0.008) {
+      if (Math.random() < 0.015) {
         const cx = Math.random() * w;
         const cy = 0.2 * h + Math.random() * 0.6 * h;
         particlesRef.current.push(
           mkP(cx, cy, {
             color: [140, 35, 60],
-            opacity: 0.025,
+            opacity: 0.045,
             maxR: 140 + Math.random() * 80,
             minR: 80,
             speed: 0.05,
@@ -171,7 +171,7 @@ export default function SmokeHero() {
             particlesRef.current.push(
               mkP(mx, my, {
                 color: cols[Math.floor(Math.random() * cols.length)],
-                opacity: 0.055,
+                opacity: 0.09,
                 maxR: 45 + sp * 0.4,
                 minR: 12,
                 speed: 0.5 + Math.random() * 0.6,
@@ -221,7 +221,7 @@ export default function SmokeHero() {
         w / 2, h / 2, h * 0.85
       );
       vig.addColorStop(0, 'rgba(10,14,26,0)');
-      vig.addColorStop(1, 'rgba(10,14,26,0.55)');
+      vig.addColorStop(1, 'rgba(10,14,26,0.3)');
       ctx.fillStyle = vig;
       ctx.fillRect(0, 0, w, h);
       animRef.current = requestAnimationFrame(draw);

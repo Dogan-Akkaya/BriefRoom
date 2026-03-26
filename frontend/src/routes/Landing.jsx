@@ -4,7 +4,6 @@ import SmokeHero from '../components/SmokeHero'
 import FlickerText from '../components/FlickerText'
 import Reveal from '../components/Reveal'
 import AnimNum from '../components/AnimNum'
-import Spark from '../components/Spark'
 import PopularChartCard from '../components/PopularChartCard'
 import CategoryPicker from '../components/CategoryPicker'
 import { POPULAR, SEARCH_SUGGESTIONS } from '../lib/data'
@@ -25,7 +24,8 @@ export default function Landing() {
       {/* HERO */}
       <section style={{ position: 'relative', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '120px 24px 80px', textAlign: 'center', overflow: 'hidden' }}>
         <SmokeHero />
-        <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: 'min(800px,90vw)', height: 420, background: 'radial-gradient(ellipse at center,rgba(10,14,26,0.7) 0%,rgba(10,14,26,0.3) 50%,transparent 75%)', filter: 'blur(40px)', zIndex: 1, pointerEvents: 'none' }} />
+        {/* Frosted glass panel behind hero text */}
+        <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-52%)', width: 'min(780px,88vw)', height: 480, background: 'rgba(10,14,26,0.45)', backdropFilter: 'blur(40px)', WebkitBackdropFilter: 'blur(40px)', borderRadius: 32, border: '1px solid rgba(255,255,255,0.04)', zIndex: 1, pointerEvents: 'none', boxShadow: '0 32px 80px rgba(0,0,0,0.3)' }} />
         <div style={{ position: 'relative', zIndex: 2, width: '100%' }}>
           <div style={{ opacity: loaded ? 1 : 0, transform: loaded ? 'none' : 'translateY(14px)', transition: 'all 0.6s cubic-bezier(0.16,1,0.3,1) 0.2s' }}>
             <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, letterSpacing: '0.14em', color: '#FF4562', marginBottom: 28, textTransform: 'uppercase', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, textShadow: '0 0 20px rgba(255,69,98,0.4)' }}>
@@ -92,7 +92,7 @@ export default function Landing() {
               <h2 style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 'clamp(26px,3.5vw,40px)', fontWeight: 600, lineHeight: 1.15, color: '#E8ECF1', marginBottom: 14, letterSpacing: '-0.02em' }}>What CISOs are looking at</h2>
               <p style={{ fontSize: 15, lineHeight: 1.7, color: 'rgba(232,236,241,0.38)', fontWeight: 300, maxWidth: 500 }}>Ready-made, board-ready. Click any chart to explore, export, or embed.</p>
             </div>
-            <button style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '10px 18px', fontFamily: "'Satoshi','DM Sans',sans-serif", fontSize: 12, fontWeight: 600, background: 'transparent', color: 'rgba(232,236,241,0.55)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 12, cursor: 'pointer' }}>
+            <button onClick={() => navigate('/popular')} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '10px 18px', fontFamily: "'Satoshi','DM Sans',sans-serif", fontSize: 12, fontWeight: 600, background: 'transparent', color: 'rgba(232,236,241,0.55)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 12, cursor: 'pointer' }}>
               Browse All 180+ →
             </button>
           </div>
@@ -101,11 +101,11 @@ export default function Landing() {
           {POPULAR.map((c, i) => (
             <Reveal key={i} delay={i * 70}>
               <PopularChartCard
-                chart={c}
+                {...c}
                 isHovered={hoveredChart === i}
                 onHover={() => setHoveredChart(i)}
                 onLeave={() => setHoveredChart(null)}
-                onClick={() => navigate('/builder/ransomware')}
+                onClick={() => navigate(`/builder/${c.categoryId}`)}
               />
             </Reveal>
           ))}
@@ -182,7 +182,7 @@ export default function Landing() {
         </div>
         <div style={{ display: 'flex', gap: 20 }}>
           {['Privacy', 'Terms', 'API', 'Contact'].map(l => (
-            <span key={l} style={{ fontSize: 11, color: 'rgba(232,236,241,0.38)', cursor: 'pointer', fontWeight: 500 }}>{l}</span>
+            <span key={l} onClick={() => navigate(`/page/${l.toLowerCase()}`)} style={{ fontSize: 11, color: 'rgba(232,236,241,0.38)', cursor: 'pointer', fontWeight: 500 }}>{l}</span>
           ))}
         </div>
       </footer>

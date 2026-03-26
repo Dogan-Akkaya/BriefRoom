@@ -83,11 +83,11 @@ export default function Navbar() {
           className="br-nav-desktop"
           style={{ display: "flex", gap: 28, alignItems: "center" }}
         >
-          <span className="br-nav-link">Popular Charts</span>
+          <span className="br-nav-link" onClick={() => navigate("/popular")}>Popular Charts</span>
           <span className="br-nav-link" onClick={() => navigate("/builder")}>
             Custom Builder
           </span>
-          <span className="br-nav-link">Methodology</span>
+          <span className="br-nav-link" onClick={() => navigate("/methodology")}>Methodology</span>
           <button
             onClick={() => navigate("/builder")}
             style={{

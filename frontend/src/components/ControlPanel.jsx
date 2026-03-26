@@ -1,4 +1,5 @@
 import React from "react";
+import { DATA_POINTS_BY_CATEGORY, THREAT_GROUPS } from '../lib/data'
 
 const CHART_TYPES = ["bar", "line", "area", "pie"];
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
@@ -127,6 +128,11 @@ export default function ControlPanel({
   setRegionMode,
   industry,
   setIndustry,
+  dataPoint,
+  setDataPoint,
+  dataPoints,
+  threatGroup,
+  setThreatGroup,
   rawData,
   hiddenElements,
   toggleElement,
@@ -371,6 +377,14 @@ export default function ControlPanel({
         </select>
       </div>
 
+      {/* Threat Actor / Group */}
+      <div style={{marginBottom:22}}>
+        <div style={ctrlLabel}>Threat Actor / Group</div>
+        <select style={selInput} value={threatGroup} onChange={e => setThreatGroup(e.target.value)}>
+          {THREAT_GROUPS.map(g => <option key={g} value={g}>{g}</option>)}
+        </select>
+      </div>
+
       {/* Divider */}
       <div
         style={{
@@ -380,6 +394,14 @@ export default function ControlPanel({
           marginBottom: 18,
         }}
       />
+
+      {/* Data Point */}
+      <div style={{marginBottom:22}}>
+        <div style={ctrlLabel}>Data Point</div>
+        <select style={selInput} value={dataPoint} onChange={e => setDataPoint(e.target.value)}>
+          {dataPoints.map(dp => <option key={dp.id} value={dp.id}>{dp.label}</option>)}
+        </select>
+      </div>
 
       {/* Elements */}
       <div>

@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import {
   BarChart, Bar, LineChart, Line, PieChart, Pie, Cell, AreaChart, Area,
@@ -7,8 +7,9 @@ import {
 import SmokeHero from '../components/SmokeHero'
 import CategoryPicker from '../components/CategoryPicker'
 import ControlPanel from '../components/ControlPanel'
+import ExportBar from '../components/ExportBar'
 import EmailGate from '../components/EmailGate'
-import { CATEGORIES, MONTHS, generateData } from '../lib/data'
+import { CATEGORIES, MONTHS, generateData, DATA_POINTS_BY_CATEGORY, THREAT_GROUPS } from '../lib/data'
 
 const tooltipStyle = {
   contentStyle: { background: 'rgba(12,16,28,0.96)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 14, fontSize: 12, fontFamily: "'JetBrains Mono',monospace", backdropFilter: 'blur(20px)', boxShadow: '0 12px 48px rgba(0,0,0,0.5)', padding: '12px 16px' },
@@ -42,10 +43,24 @@ export default function Builder() {
   const [country, setCountry] = useState('')
   const [regionMode, setRegionMode] = useState(false)
   const [industry, setIndustry] = useState('')
+  const [dataPoint, setDataPoint] = useState('')
+  const [threatGroup, setThreatGroup] = useState('All Groups')
 
   const catColor = '#FF4562'
 
-  const rawData = useMemo(() => selectedCat ? generateData(selectedCat.id) : [], [selectedCat])
+  const dataPoints = selectedCat ? (DATA_POINTS_BY_CATEGORY[selectedCat.id] || []) : []
+
+  useEffect(() => {
+    if (selectedCat && DATA_POINTS_BY_CATEGORY[selectedCat.id]) {
+      setDataPoint(DATA_POINTS_BY_CATEGORY[selectedCat.id][0].id)
+    }
+  }, [selectedCat])
+
+  const rawData = useMemo(() => {
+    if (!selectedCat) return []
+    const key = dataPoint ? `${selectedCat.id}/${dataPoint}` : selectedCat.id
+    return generateData(key)
+  }, [selectedCat, dataPoint])
   const activeMonths = MONTHS.slice(dateRange[0], dateRange[1] + 1)
   const visibleData = rawData.filter(d => !hiddenElements.has(d.name))
   const chartData = useMemo(() => activeMonths.map(month => { const point = { month }; visibleData.forEach(d => { point[d.name] = d[month] }); return point }), [activeMonths, visibleData])
@@ -103,6 +118,7 @@ export default function Builder() {
             <span style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 15, fontWeight: 600 }}>{selectedCat.label}</span>
             {country && <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.25)', padding: '2px 8px', borderRadius: 6, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.05)' }}>{country}</span>}
             {industry && <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.25)', padding: '2px 8px', borderRadius: 6, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.05)' }}>{industry}</span>}
+            {threatGroup && threatGroup !== 'All Groups' && <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.25)', padding: '2px 8px', borderRadius: 6, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.05)' }}>{threatGroup}</span>}
           </div>
         </div>
         <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
@@ -168,6 +184,7 @@ export default function Builder() {
               )}
             </ResponsiveContainer>
           </div>
+          <ExportBar chartRef={null} labels={activeMonths} datasets={visibleData} filename={selectedCat ? selectedCat.id : 'chart-data'} />
           <div style={{ marginTop: 12, fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.15)', display: 'flex', justifyContent: 'space-between' }}>
             <span>Data: SOCRadar Threat Intelligence • {activeMonths[0]}–{activeMonths[activeMonths.length - 1]} 2025{country ? ` • ${country}` : ''}{industry ? ` • ${industry}` : ''}</span>
             <span>{visibleData.length} of {rawData.length} shown</span>
@@ -181,6 +198,9 @@ export default function Builder() {
           country={country} setCountry={setCountry}
           regionMode={regionMode} setRegionMode={setRegionMode}
           industry={industry} setIndustry={setIndustry}
+          dataPoint={dataPoint} setDataPoint={setDataPoint}
+          dataPoints={dataPoints}
+          threatGroup={threatGroup} setThreatGroup={setThreatGroup}
           rawData={rawData} hiddenElements={hiddenElements}
           toggleElement={toggleElement}
           highlightedElement={highlightedElement}
