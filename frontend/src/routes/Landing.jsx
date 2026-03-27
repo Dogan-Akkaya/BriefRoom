@@ -31,7 +31,7 @@ export default function Landing() {
           <div style={{ opacity: loaded ? 1 : 0, transform: loaded ? 'none' : 'translateY(14px)', transition: 'all 0.6s cubic-bezier(0.16,1,0.3,1) 0.2s' }}>
             <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, letterSpacing: '0.14em', color: '#FF4562', marginBottom: 28, textTransform: 'uppercase', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, textShadow: '0 0 20px rgba(255,69,98,0.4)' }}>
               <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#FF4562', display: 'inline-block', animation: 'gentlePulse 2.5s ease-in-out infinite', boxShadow: '0 0 8px rgba(255,69,98,0.6)' }} />
-              Cybersecurity Intelligence for Leadership
+              Cyber Intelligence for Board & Security Leaders
             </div>
           </div>
           <h1 style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 'clamp(38px,6.5vw,74px)', fontWeight: 800, lineHeight: 1.05, maxWidth: 920, margin: '0 auto 28px', letterSpacing: '-0.035em', color: '#FFFFFF', textShadow: '0 2px 30px rgba(10,14,26,0.8)', opacity: loaded ? 1 : 0, transform: loaded ? 'none' : 'translateY(28px)', transition: 'all 0.8s cubic-bezier(0.16,1,0.3,1) 0.35s' }}>
@@ -40,8 +40,11 @@ export default function Landing() {
               <span style={{ background: 'linear-gradient(135deg,#FF4562 0%,#F97316 50%,#FF4562 100%)', backgroundSize: '200% auto', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>smarter security decisions</span>
             </FlickerText>
           </h1>
-          <p style={{ fontSize: 17, lineHeight: 1.7, color: 'rgba(232,236,241,0.6)', maxWidth: 480, margin: '0 auto 44px', fontWeight: 400, opacity: loaded ? 1 : 0, transition: 'all 0.8s cubic-bezier(0.16,1,0.3,1) 0.5s', textShadow: '0 2px 20px rgba(10,14,26,0.9)' }}>
-            Browse popular charts or create custom visualizations for your exact threat landscape. Completely free.
+          <p style={{ fontSize: 17, lineHeight: 1.7, color: 'rgba(232,236,241,0.6)', maxWidth: 580, margin: '0 auto 16px', fontWeight: 400, opacity: loaded ? 1 : 0, transition: 'all 0.8s cubic-bezier(0.16,1,0.3,1) 0.5s', textShadow: '0 2px 20px rgba(10,14,26,0.9)' }}>
+            Explore ransomware, phishing, and dark web threat data through ready-made charts. Tailored for industry and region for security reporting.
+          </p>
+          <p style={{ fontSize: 12, color: 'rgba(232,236,241,0.2)', fontFamily: "'JetBrains Mono'", letterSpacing: '0.06em', margin: '0 auto 36px', opacity: loaded ? 1 : 0, transition: 'all 0.8s cubic-bezier(0.16,1,0.3,1) 0.6s' }}>
+            Free &bull; Instant export
           </p>
 
           {/* Search */}
@@ -70,16 +73,19 @@ export default function Landing() {
                 </div>
               )}
             </div>
-            <div style={{ marginTop: 24, display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
-              <button onClick={() => document.getElementById('popular-section')?.scrollIntoView({ behavior: 'smooth' })} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '13px 28px', fontFamily: "'Satoshi','DM Sans',sans-serif", fontSize: 13, fontWeight: 600, border: 'none', borderRadius: 12, cursor: 'pointer', transition: 'all 0.3s', background: '#FF4562', color: '#fff' }}>
-                Popular Charts
-              </button>
-              <button onClick={() => navigate('/reports')} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '13px 28px', fontFamily: "'Satoshi','DM Sans',sans-serif", fontSize: 13, fontWeight: 600, border: '1px solid rgba(16,185,129,0.25)', borderRadius: 12, cursor: 'pointer', background: 'rgba(16,185,129,0.12)', color: '#34D399' }}>
-                Global Reports
-              </button>
-              <button onClick={() => navigate('/builder')} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '13px 28px', fontFamily: "'Satoshi','DM Sans',sans-serif", fontSize: 13, fontWeight: 600, border: '1px solid rgba(59,130,246,0.25)', borderRadius: 12, cursor: 'pointer', transition: 'all 0.3s', background: 'rgba(59,130,246,0.12)', color: '#60A5FA' }}>
-                Create Custom Chart
-              </button>
+            <div style={{ marginTop: 28, display: 'flex', justifyContent: 'center', gap: 32, flexWrap: 'wrap', maxWidth: 720, margin: '28px auto 0' }}>
+              <div onClick={() => document.getElementById('popular-section')?.scrollIntoView({ behavior: 'smooth' })} style={{ cursor: 'pointer', textAlign: 'center', flex: '1 1 180px', padding: '16px 12px', borderRadius: 14, border: '1px solid rgba(255,255,255,0.05)', background: 'rgba(255,255,255,0.02)', transition: 'all 0.3s' }}>
+                <div style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 14, fontWeight: 600, color: '#E8ECF1', marginBottom: 4 }}>Popular Charts</div>
+                <div style={{ fontSize: 12, color: 'rgba(232,236,241,0.35)', lineHeight: 1.5 }}>Recently created & suggested charts from SOCRadar</div>
+              </div>
+              <div onClick={() => navigate('/reports')} style={{ cursor: 'pointer', textAlign: 'center', flex: '1 1 180px', padding: '16px 12px', borderRadius: 14, border: '1px solid rgba(255,255,255,0.05)', background: 'rgba(255,255,255,0.02)', transition: 'all 0.3s' }}>
+                <div style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 14, fontWeight: 600, color: '#E8ECF1', marginBottom: 4 }}>Global Reports</div>
+                <div style={{ fontSize: 12, color: 'rgba(232,236,241,0.35)', lineHeight: 1.5 }}>Key charts from IBM, CrowdStrike, Verizon DBIR & more</div>
+              </div>
+              <div onClick={() => navigate('/builder')} style={{ cursor: 'pointer', textAlign: 'center', flex: '1 1 180px', padding: '16px 12px', borderRadius: 14, border: '1px solid rgba(255,255,255,0.05)', background: 'rgba(255,255,255,0.02)', transition: 'all 0.3s' }}>
+                <div style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 14, fontWeight: 600, color: '#E8ECF1', marginBottom: 4 }}>Custom Builder</div>
+                <div style={{ fontSize: 12, color: 'rgba(232,236,241,0.35)', lineHeight: 1.5 }}>Build your own charts with full control over data & filters</div>
+              </div>
             </div>
           </div>
         </div>
@@ -94,7 +100,7 @@ export default function Landing() {
                 <span style={{ animation: 'gentlePulse 2.5s ease-in-out infinite', display: 'inline-block' }}>●</span>&nbsp;&nbsp;Popular Charts
               </div>
               <h2 style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 'clamp(26px,3.5vw,40px)', fontWeight: 600, lineHeight: 1.15, color: '#E8ECF1', marginBottom: 14, letterSpacing: '-0.02em' }}>What CISOs are looking at</h2>
-              <p style={{ fontSize: 15, lineHeight: 1.7, color: 'rgba(232,236,241,0.38)', fontWeight: 300, maxWidth: 500 }}>Ready-made, board-ready. Click any chart to explore, export, or embed.</p>
+              <p style={{ fontSize: 15, lineHeight: 1.7, color: 'rgba(232,236,241,0.38)', fontWeight: 300, maxWidth: 600 }}>Explore ransomware, phishing, and dark web threat data through ready-made charts. Tailored for industry and region for security reporting.</p>
             </div>
             <button onClick={() => navigate('/popular')} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '10px 18px', fontFamily: "'Satoshi','DM Sans',sans-serif", fontSize: 12, fontWeight: 600, background: 'transparent', color: 'rgba(232,236,241,0.55)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 12, cursor: 'pointer' }}>
               Browse All 180+ →
@@ -195,7 +201,7 @@ export default function Landing() {
           <h2 style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 'clamp(26px,3.5vw,40px)', fontWeight: 600, lineHeight: 1.15, color: '#E8ECF1', marginBottom: 14, letterSpacing: '-0.02em' }}>
             Stop Googling for stats.<br /><span style={{ color: '#FF4562' }}>Start presenting them.</span>
           </h2>
-          <p style={{ fontSize: 15, lineHeight: 1.7, color: 'rgba(232,236,241,0.38)', fontWeight: 300, maxWidth: 500, margin: '0 auto 36px', textAlign: 'center' }}>Browse popular charts or create custom visualizations tailored to your threat landscape.</p>
+          <p style={{ fontSize: 15, lineHeight: 1.7, color: 'rgba(232,236,241,0.38)', fontWeight: 300, maxWidth: 500, margin: '0 auto 36px', textAlign: 'center' }}>Explore threat data through ready-made charts or build your own. Tailored for your industry and region.</p>
           <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
             <button onClick={() => document.getElementById('popular-section')?.scrollIntoView({ behavior: 'smooth' })} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '13px 26px', fontFamily: "'Satoshi','DM Sans',sans-serif", fontSize: 14, fontWeight: 600, border: 'none', borderRadius: 12, cursor: 'pointer', background: '#FF4562', color: '#fff' }}>Browse Popular Charts</button>
             <button onClick={() => navigate('/builder')} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '13px 26px', fontFamily: "'Satoshi','DM Sans',sans-serif", fontSize: 14, fontWeight: 600, border: '1px solid rgba(59,130,246,0.25)', borderRadius: 12, cursor: 'pointer', background: 'rgba(59,130,246,0.12)', color: '#60A5FA' }}>Create Custom Chart</button>
