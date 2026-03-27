@@ -13,7 +13,7 @@ Brief Room is a CISO-facing cyber threat intelligence visualization tool by SOCR
 - **State:** Zustand (toast, builder, briefing stores)
 - **Animations:** SmokeHero (canvas particles), FlickerText, Reveal, AnimNum (IntersectionObserver)
 - **Backend (planned):** FastAPI + SQLAlchemy + PostgreSQL 15 + Redis + Docker Compose
-- **Export:** html-to-image (PNG/clipboard), native CSV
+- **Export:** PNG (email-gated via PNGExportModal), Share Link (clipboard)
 - **Fonts:** Plus Jakarta Sans, Space Grotesk, JetBrains Mono, Satoshi, DM Sans
 
 ## Data Model
@@ -49,7 +49,7 @@ brief-room/
 │   ├── index.html
 │   └── src/
 │       ├── main.jsx
-│       ├── App.jsx            # Router: /, /builder, /popular, /methodology, /page/:slug
+│       ├── App.jsx            # Router: /, /builder, /popular, /reports, /methodology, /page/:slug
 │       ├── routes/
 │       │   ├── Landing.jsx    # Hero + search + popular charts + stats + categories
 │       │   ├── Builder.jsx    # Chart builder with category selection + controls
@@ -74,10 +74,12 @@ brief-room/
 │       │   │                        #   (country/industry/threat group),
 │       │   │                        #   operators (data point, operation mode),
 │       │   │                        #   date range + sparkline, elements
-│       │   ├── ExportBar.jsx        # Copy/PNG/CSV export buttons
-│       │   ├── EmailGate.jsx        # Modal email gate for export
+│       │   ├── ExportBar.jsx        # Export PNG (primary) + Share Link (secondary)
+│       │   ├── PNGExportModal.jsx   # PLG email gate for PNG export (3 benefit promises)
+│       │   ├── ShareLinkModal.jsx   # Share link copy-to-clipboard modal
+│       │   ├── ChartPreviewModal.jsx # Preview modal for popular/report charts
+│       │   ├── SearchPanel.jsx      # Professional search with grouped suggestions + filter chips
 │       │   ├── ChartPreview.jsx     # Recharts wrapper (bar/line/area/pie)
-│       │   ├── SearchBar.jsx
 │       │   └── Toast.jsx
 │       ├── stores/
 │       │   ├── useBuilderStore.js
@@ -88,7 +90,7 @@ brief-room/
 │       │   │                   # THREAT_GROUPS, POPULAR, generateData(),
 │       │   │                   # ALL_MONTHS, DATA_AVAILABILITY, DATE_PRESETS,
 │       │   │                   # ALL_COUNTRIES, ALL_REGIONS
-│       │   └── export.js       # PNG, CSV, clipboard helpers
+│       │   └── export.js       # PNG, clipboard helpers
 │       └── styles/
 │           └── tokens.css      # Tailwind theme + CSS animations
 └── Labs Complience/            # Reference docs (not deployed)
@@ -109,7 +111,7 @@ brief-room/
 - `generateData(compositeKey)` uses `/` separator: `"ransomware/attack_volume"`.
 
 ## Current Phase
-**Phase 2.85 (completed):** Global Threat Reports feature, Popular/Reports page polish with sidebar filters (Category, Industry, Country/Region, Trend/Source/Year), featured wide cards, home icon in navbar, per-link active colors (blue for Reports, red for others).
+**Phase 2.95 (completed):** PLG export flow (PNGExportModal with email gate + 3 benefit promises, ShareLinkModal), professional SearchPanel with grouped suggestions + filter chips, ChartPreviewModal for popular/report cards, "Powered by SOCRadar" watermark on builder charts, Global Threat Reports feature, sidebar filters on Popular/Reports pages.
 
 ## Phases Overview
 1. ~~Scaffold + React port~~ (done)
