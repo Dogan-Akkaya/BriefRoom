@@ -6,6 +6,7 @@ import Reveal from '../components/Reveal'
 
 const CATEGORY_FILTERS = ['All', 'Ransomware', 'Phishing', 'Cloud', 'Operations', 'Infrastructure', 'Awareness']
 const INDUSTRY_OPTIONS = ['All Industries', 'Healthcare', 'Financial', 'Technology', 'Manufacturing', 'Government', 'Education', 'Energy', 'Retail']
+const REGION_OPTIONS = ['Global', 'North America', 'Europe', 'Asia Pacific', 'Middle East', 'Latin America', 'Africa']
 const TREND_FILTERS = ['All', 'Rising', 'Declining']
 
 /* Map tags/titles to our filter categories */
@@ -51,6 +52,7 @@ export default function Popular() {
   const [hoveredChart, setHoveredChart] = useState(null)
   const [category, setCategory] = useState('All')
   const [industry, setIndustry] = useState('All Industries')
+  const [region, setRegion] = useState('Global')
   const [trend, setTrend] = useState('All')
 
   const filtered = useMemo(
@@ -159,6 +161,47 @@ export default function Popular() {
               }}
             >
               {INDUSTRY_OPTIONS.map(o => (
+                <option key={o} value={o} style={{ background: '#12162A', color: '#E8ECF1' }}>{o}</option>
+              ))}
+            </select>
+          </div>
+
+          {/* Country / Region */}
+          <div>
+            <div style={{
+              fontFamily: mono,
+              fontSize: 10,
+              letterSpacing: '0.12em',
+              textTransform: 'uppercase',
+              color: 'rgba(232,236,241,0.35)',
+              marginBottom: 12,
+            }}>
+              Country / Region
+            </div>
+            <select
+              value={region}
+              onChange={e => setRegion(e.target.value)}
+              style={{
+                width: '100%',
+                fontFamily: mono,
+                fontSize: 11,
+                padding: '8px 10px',
+                borderRadius: 10,
+                border: '1px solid rgba(255,255,255,0.06)',
+                background: 'rgba(255,255,255,0.03)',
+                backdropFilter: 'blur(12px)',
+                WebkitBackdropFilter: 'blur(12px)',
+                color: 'rgba(232,236,241,0.55)',
+                outline: 'none',
+                cursor: 'pointer',
+                appearance: 'none',
+                WebkitAppearance: 'none',
+                backgroundImage: `url("data:image/svg+xml,%3Csvg width='10' height='6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0l5 6 5-6z' fill='rgba(232,236,241,0.3)'/%3E%3C/svg%3E")`,
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'right 10px center',
+              }}
+            >
+              {REGION_OPTIONS.map(o => (
                 <option key={o} value={o} style={{ background: '#12162A', color: '#E8ECF1' }}>{o}</option>
               ))}
             </select>

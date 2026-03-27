@@ -125,15 +125,20 @@ export default function Landing() {
       {/* MID CTA */}
       <section style={{ position: 'relative', zIndex: 1, padding: '48px 24px', maxWidth: 1100, margin: '0 auto' }}>
         <Reveal>
-          <div style={{ background: 'linear-gradient(135deg,rgba(59,130,246,0.06) 0%,rgba(255,69,98,0.04) 100%)', border: '1px solid rgba(59,130,246,0.12)', borderRadius: 20, padding: '40px 36px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 24 }}>
+          <div
+            onClick={() => navigate('/builder')}
+            onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(59,130,246,0.25)'; e.currentTarget.style.transform = 'translateY(-3px)'; e.currentTarget.style.boxShadow = '0 16px 48px rgba(0,0,0,0.3), 0 0 30px rgba(59,130,246,0.06)' }}
+            onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(59,130,246,0.12)'; e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none' }}
+            style={{ background: 'linear-gradient(135deg,rgba(59,130,246,0.06) 0%,rgba(255,69,98,0.04) 100%)', border: '1px solid rgba(59,130,246,0.12)', borderRadius: 20, padding: '40px 36px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 24, cursor: 'pointer', transition: 'all 0.35s cubic-bezier(0.16,1,0.3,1)' }}
+          >
             <div style={{ flex: 1, minWidth: 280 }}>
               <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, letterSpacing: '0.12em', color: 'rgba(59,130,246,0.6)', textTransform: 'uppercase', marginBottom: 10 }}>Create Your Own</div>
-              <h3 style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 26, fontWeight: 600, lineHeight: 1.15, color: '#E8ECF1', marginBottom: 14, letterSpacing: '-0.02em' }}>Build the chart <span style={{ color: '#60A5FA' }}>your board</span> is asking for</h3>
+              <h3 style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 26, fontWeight: 600, lineHeight: 1.15, color: '#E8ECF1', marginBottom: 14, letterSpacing: '-0.02em' }}>Know what matters? <span style={{ color: '#60A5FA' }}>Build your chart</span></h3>
               <p style={{ fontSize: 14, color: 'rgba(232,236,241,0.4)', lineHeight: 1.6 }}>Choose your threat category, customize every element, and export board-ready visuals in seconds.</p>
             </div>
-            <button onClick={() => navigate('/builder')} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 28px', fontFamily: "'Satoshi','DM Sans',sans-serif", fontSize: 14, fontWeight: 600, border: '1px solid rgba(59,130,246,0.25)', borderRadius: 12, cursor: 'pointer', background: 'rgba(59,130,246,0.12)', color: '#60A5FA' }}>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 28px', fontFamily: "'Satoshi','DM Sans',sans-serif", fontSize: 14, fontWeight: 600, border: '1px solid rgba(59,130,246,0.25)', borderRadius: 12, background: 'rgba(59,130,246,0.12)', color: '#60A5FA' }}>
               Start Building →
-            </button>
+            </span>
           </div>
         </Reveal>
       </section>

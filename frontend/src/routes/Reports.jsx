@@ -7,6 +7,7 @@ import Reveal from '../components/Reveal'
 const SOURCES = ['All', 'IBM', 'CrowdStrike', 'Verizon DBIR', 'Mandiant', 'Unit 42', 'ENISA']
 const CATEGORIES = ['All', 'Data Breaches', 'Threat Actors', 'Ransomware', 'Detection', 'Breaches', 'eCrime', 'Intrusion', 'Threat Landscape']
 const YEARS = ['All', '2025', '2024']
+const REGION_OPTIONS = ['Global', 'North America', 'Europe', 'Asia Pacific', 'Middle East', 'Latin America', 'Africa']
 
 const sourceMatch = (report, filter) => {
   if (filter === 'All') return true
@@ -32,6 +33,7 @@ export default function Reports() {
   const [sourceFilter, setSourceFilter] = useState('All')
   const [categoryFilter, setCategoryFilter] = useState('All')
   const [yearFilter, setYearFilter] = useState('All')
+  const [regionFilter, setRegionFilter] = useState('Global')
 
   const filtered = useMemo(() => {
     return GLOBAL_REPORTS.filter((r) => {
@@ -109,6 +111,35 @@ export default function Reports() {
               </span>
             ))}
           </div>
+
+          {/* Country / Region */}
+          <span style={sectionLabel}>Country / Region</span>
+          <select
+            value={regionFilter}
+            onChange={e => setRegionFilter(e.target.value)}
+            style={{
+              width: '100%',
+              fontFamily: "'JetBrains Mono', monospace",
+              fontSize: 11,
+              padding: '8px 10px',
+              borderRadius: 10,
+              border: '1px solid rgba(59,130,246,0.08)',
+              background: 'rgba(59,130,246,0.03)',
+              backdropFilter: 'blur(12px)',
+              color: 'rgba(232,236,241,0.55)',
+              outline: 'none',
+              cursor: 'pointer',
+              appearance: 'none',
+              WebkitAppearance: 'none',
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='10' height='6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0l5 6 5-6z' fill='rgba(232,236,241,0.3)'/%3E%3C/svg%3E")`,
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'right 10px center',
+            }}
+          >
+            {REGION_OPTIONS.map(o => (
+              <option key={o} value={o} style={{ background: '#12162A', color: '#E8ECF1' }}>{o}</option>
+            ))}
+          </select>
         </div>
 
         {/* Main Content */}
