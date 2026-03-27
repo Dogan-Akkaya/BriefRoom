@@ -175,16 +175,8 @@ export default function Landing() {
       </section>
 
       {/* FOOTER */}
-      <footer style={{ position: 'relative', zIndex: 1, padding: '20px 28px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderTop: '1px solid rgba(255,255,255,0.03)' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <svg width="16" height="16" viewBox="0 0 28 28"><circle cx="14" cy="14" r="12" fill="none" stroke="#FF4562" strokeWidth="1.2" opacity="0.3" /><circle cx="14" cy="14" r="4.5" fill="#FF4562" opacity="0.4" /></svg>
-          <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: 'rgba(232,236,241,0.18)' }}>© 2026 SOCRadar Brief Room</span>
-        </div>
-        <div style={{ display: 'flex', gap: 20 }}>
-          {['Privacy', 'Terms', 'API', 'Contact'].map(l => (
-            <span key={l} onClick={() => navigate(`/page/${l.toLowerCase()}`)} style={{ fontSize: 11, color: 'rgba(232,236,241,0.38)', cursor: 'pointer', fontWeight: 500 }}>{l}</span>
-          ))}
-        </div>
+      <footer style={{ position: 'relative', zIndex: 1, padding: '20px 28px', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.03)' }}>
+        <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: 'rgba(232,236,241,0.18)' }}>© 2026 SOCRadar Brief Room</span>
       </footer>
     </div>
   )

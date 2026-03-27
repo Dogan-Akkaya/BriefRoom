@@ -138,3 +138,67 @@ export const insights = [
   'Phishing click rates rose to <strong style="color:#F59E0B">3.4%</strong> in Q1 2026, with QR-code phishing ("quishing") up 340% since last year.',
   'Dark web credential listings hit <strong style="color:#10B981">24 billion</strong> records. Corporate VPN access sells for $4,500 average on access broker markets.',
 ]
+
+// Extended date range: Jan 2024 — Dec 2026 (36 months)
+export const ALL_MONTHS = []
+const YEARS = [2024, 2025, 2026]
+YEARS.forEach(y => {
+  MONTHS.forEach(m => {
+    ALL_MONTHS.push({ month: m, year: y, label: `${m} ${y}` })
+  })
+})
+
+// Seeded RNG for deterministic data availability (same pattern as generateData)
+const _availRng = (i) => Math.abs(Math.sin(7919 * 9301 + i * 49297) * 233280) % 1
+
+// Data availability — varies by month (lower in 2024, peaks in late 2025)
+export const DATA_AVAILABILITY = ALL_MONTHS.map((m, i) => {
+  const r = _availRng(i * 17 + 3)
+  const base = i < 12 ? 40 + r * 30 : i < 24 ? 65 + r * 25 : 55 + r * 35
+  return { ...m, index: i, sources: Math.round(base) }
+})
+
+// Quick date presets
+export const DATE_PRESETS = [
+  { label: 'Last 3 months', getRange: () => [33, 35] },
+  { label: 'Last 6 months', getRange: () => [30, 35] },
+  { label: 'Last year', getRange: () => [24, 35] },
+  { label: 'YTD 2026', getRange: () => [24, 26] },
+  { label: 'All time', getRange: () => [0, 35] },
+]
+
+// Extended countries list (for searchable dropdown)
+export const ALL_COUNTRIES = [
+  { name: 'United States', region: 'North America' },
+  { name: 'Canada', region: 'North America' },
+  { name: 'United Kingdom', region: 'Europe' },
+  { name: 'Germany', region: 'Europe' },
+  { name: 'France', region: 'Europe' },
+  { name: 'Netherlands', region: 'Europe' },
+  { name: 'Spain', region: 'Europe' },
+  { name: 'Italy', region: 'Europe' },
+  { name: 'Sweden', region: 'Europe' },
+  { name: 'Norway', region: 'Europe' },
+  { name: 'Finland', region: 'Europe' },
+  { name: 'Poland', region: 'Europe' },
+  { name: 'Switzerland', region: 'Europe' },
+  { name: 'Turkey', region: 'Middle East' },
+  { name: 'UAE', region: 'Middle East' },
+  { name: 'Saudi Arabia', region: 'Middle East' },
+  { name: 'Israel', region: 'Middle East' },
+  { name: 'Qatar', region: 'Middle East' },
+  { name: 'Japan', region: 'Asia Pacific' },
+  { name: 'Australia', region: 'Asia Pacific' },
+  { name: 'Singapore', region: 'Asia Pacific' },
+  { name: 'India', region: 'Asia Pacific' },
+  { name: 'South Korea', region: 'Asia Pacific' },
+  { name: 'Indonesia', region: 'Asia Pacific' },
+  { name: 'Brazil', region: 'Latin America' },
+  { name: 'Mexico', region: 'Latin America' },
+  { name: 'Colombia', region: 'Latin America' },
+  { name: 'Argentina', region: 'Latin America' },
+  { name: 'South Africa', region: 'Africa' },
+  { name: 'Nigeria', region: 'Africa' },
+  { name: 'Kenya', region: 'Africa' },
+]
+export const ALL_REGIONS = [...new Set(ALL_COUNTRIES.map(c => c.region))]

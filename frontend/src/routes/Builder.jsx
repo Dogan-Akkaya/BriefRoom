@@ -5,11 +5,12 @@ import {
   XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid,
 } from 'recharts'
 import SmokeHero from '../components/SmokeHero'
+import GridBackground from '../components/GridBackground'
 import CategoryPicker from '../components/CategoryPicker'
 import ControlPanel from '../components/ControlPanel'
 import ExportBar from '../components/ExportBar'
 import EmailGate from '../components/EmailGate'
-import { CATEGORIES, MONTHS, generateData, DATA_POINTS_BY_CATEGORY, THREAT_GROUPS } from '../lib/data'
+import { CATEGORIES, MONTHS, generateData, DATA_POINTS_BY_CATEGORY, ALL_MONTHS } from '../lib/data'
 
 const tooltipStyle = {
   contentStyle: { background: 'rgba(12,16,28,0.96)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 14, fontSize: 12, fontFamily: "'JetBrains Mono',monospace", backdropFilter: 'blur(20px)', boxShadow: '0 12px 48px rgba(0,0,0,0.5)', padding: '12px 16px' },
@@ -36,7 +37,9 @@ export default function Builder() {
   const selectedCat = categoryId ? CATEGORIES.find(c => c.id === categoryId) : null
 
   const [chartType, setChartType] = useState('bar')
-  const [dateRange, setDateRange] = useState([0, 11])
+  const [operation, setOperation] = useState('Sum')
+  const [dateStart, setDateStart] = useState(24) // Jan 2026
+  const [dateEnd, setDateEnd] = useState(35) // Dec 2026
   const [hiddenElements, setHiddenElements] = useState(new Set())
   const [highlightedElement, setHighlightedElement] = useState(null)
   const [showEmailGate, setShowEmailGate] = useState(false)
@@ -61,9 +64,40 @@ export default function Builder() {
     const key = dataPoint ? `${selectedCat.id}/${dataPoint}` : selectedCat.id
     return generateData(key)
   }, [selectedCat, dataPoint])
-  const activeMonths = MONTHS.slice(dateRange[0], dateRange[1] + 1)
+
+  // Active months based on date range (map from ALL_MONTHS indices back to month names)
+  const activeDateMonths = ALL_MONTHS.slice(dateStart, dateEnd + 1)
+  const activeMonthNames = activeDateMonths.map(m => m.month)
+  // For chart data, use unique keys to avoid duplicate month names
+  const chartMonthLabels = activeDateMonths.map(m => `${m.month} ${String(m.year).slice(2)}`)
+
   const visibleData = rawData.filter(d => !hiddenElements.has(d.name))
-  const chartData = useMemo(() => activeMonths.map(month => { const point = { month }; visibleData.forEach(d => { point[d.name] = d[month] }); return point }), [activeMonths, visibleData])
+
+  const chartData = useMemo(() => {
+    if (operation === 'Break Down') {
+      // Current multi-element behavior
+      return chartMonthLabels.map((label, idx) => {
+        const monthName = activeMonthNames[idx]
+        const point = { month: label }
+        visibleData.forEach(d => { point[d.name] = d[monthName] })
+        return point
+      })
+    } else {
+      // Aggregated: Sum, Average, Min, Max -> single series
+      return chartMonthLabels.map((label, idx) => {
+        const monthName = activeMonthNames[idx]
+        const values = visibleData.map(d => d[monthName])
+        let val = 0
+        if (operation === 'Sum') val = values.reduce((s, v) => s + v, 0)
+        else if (operation === 'Average') val = values.length ? Math.round(values.reduce((s, v) => s + v, 0) / values.length) : 0
+        else if (operation === 'Min') val = values.length ? Math.min(...values) : 0
+        else if (operation === 'Max') val = values.length ? Math.max(...values) : 0
+        return { month: label, value: val }
+      })
+    }
+  }, [chartMonthLabels, activeMonthNames, visibleData, operation])
+
+  const activeMonths = activeMonthNames
   const pieData = useMemo(() => visibleData.map(d => ({ name: d.name, value: activeMonths.reduce((s, m) => s + d[m], 0), color: d.color })), [visibleData, activeMonths])
   const totalSum = pieData.reduce((s, d) => s + d.value, 0)
   const avgPerElement = visibleData.length > 0 ? Math.round(totalSum / visibleData.length) : 0
@@ -78,11 +112,15 @@ export default function Builder() {
   }
   const toggleHighlight = (name) => setHighlightedElement(p => p === name ? null : name)
 
+  const ctrlLabelStyle = { fontFamily: "'JetBrains Mono'", fontSize: 10, letterSpacing: '0.08em', color: 'rgba(232,236,241,0.3)', textTransform: 'uppercase', marginBottom: 4 }
+  const statValueStyle = { fontFamily: "'Plus Jakarta Sans'", fontSize: 24, fontWeight: 700, letterSpacing: '-0.02em' }
+  const statCardStyle = { padding: '14px 20px', borderRadius: 14, background: 'rgba(255,255,255,0.02)', backdropFilter: 'blur(16px)', border: '1px solid rgba(255,255,255,0.05)', boxShadow: '0 4px 20px rgba(0,0,0,0.12)' }
+
   // Category selection screen
   if (!selectedCat) {
     return (
       <div style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden', paddingTop: 80 }}>
-        <SmokeHero />
+        <GridBackground />
         <AmbientBG colors={['#FF4562', '#3B82F6', '#A855F7']} />
         <div style={{ maxWidth: 940, margin: '0 auto', padding: '60px 24px 40px', position: 'relative', zIndex: 2 }}>
           <div style={{ textAlign: 'center', marginBottom: 52 }}>
@@ -122,7 +160,6 @@ export default function Builder() {
           </div>
         </div>
         <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
-          <button onClick={() => setShowEmailGate(true)} style={{ background: `linear-gradient(135deg,${catColor},${catColor}CC)`, color: '#fff', border: 'none', borderRadius: 10, padding: '9px 22px', fontSize: 13, fontWeight: 600, cursor: 'pointer', boxShadow: `0 4px 16px ${catColor}30` }}>Export Chart</button>
           <button onClick={() => navigate('/')} style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 10, padding: '9px 16px', color: 'rgba(232,236,241,0.4)', cursor: 'pointer', fontSize: 12, backdropFilter: 'blur(8px)' }}>Home</button>
         </div>
       </nav>
@@ -133,11 +170,17 @@ export default function Builder() {
           {/* Stats */}
           <div style={{ display: 'flex', gap: 12, marginBottom: 20, flexWrap: 'wrap' }}>
             {[{ l: 'Total', v: totalSum.toLocaleString(), c: catColor }, { l: 'Avg / Category', v: avgPerElement.toLocaleString(), c: 'rgba(232,236,241,0.7)' }].map((s, i) => (
-              <div key={i} style={{ padding: '14px 20px', borderRadius: 14, background: 'rgba(255,255,255,0.02)', backdropFilter: 'blur(16px)', border: '1px solid rgba(255,255,255,0.05)', boxShadow: '0 4px 20px rgba(0,0,0,0.12)' }}>
-                <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, letterSpacing: '0.08em', color: 'rgba(232,236,241,0.3)', textTransform: 'uppercase', marginBottom: 4 }}>{s.l}</div>
-                <div style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 24, fontWeight: 700, color: s.c, letterSpacing: '-0.02em' }}>{s.v}</div>
+              <div key={i} style={statCardStyle}>
+                <div style={ctrlLabelStyle}>{s.l}</div>
+                <div style={{ ...statValueStyle, color: s.c }}>{s.v}</div>
               </div>
             ))}
+            {operation !== 'Break Down' && (
+              <div style={statCardStyle}>
+                <div style={ctrlLabelStyle}>Mode</div>
+                <div style={{ ...statValueStyle, color: 'rgba(232,236,241,0.7)' }}>{operation}</div>
+              </div>
+            )}
             {highlightedElement && highlightedData && (
               <div style={{ padding: '14px 20px', borderRadius: 14, background: `${catColor}06`, backdropFilter: 'blur(16px)', border: `1px solid ${catColor}18`, boxShadow: `0 4px 24px ${catColor}06`, animation: 'catCardIn 0.3s cubic-bezier(0.16,1,0.3,1)' }}>
                 <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, letterSpacing: '0.08em', color: `${catColor}90`, textTransform: 'uppercase', marginBottom: 4 }}>◉ {highlightedElement}</div>
@@ -156,7 +199,10 @@ export default function Builder() {
                   <XAxis dataKey="month" axisLine={false} tickLine={false} tick={{ fill: 'rgba(232,236,241,0.35)', fontFamily: "'JetBrains Mono'", fontSize: 10 }} />
                   <YAxis axisLine={false} tickLine={false} width={45} tick={{ fill: 'rgba(232,236,241,0.35)', fontFamily: "'JetBrains Mono'", fontSize: 10 }} />
                   <Tooltip {...tooltipStyle} cursor={{ fill: 'rgba(255,255,255,0.015)', radius: 4 }} />
-                  {visibleData.map(d => <Bar key={d.name} dataKey={d.name} fill={d.color} fillOpacity={highlightedElement && highlightedElement !== d.name ? 0.1 : 0.8} radius={[6, 6, 0, 0]} maxBarSize={28} />)}
+                  {operation === 'Break Down'
+                    ? visibleData.map(d => <Bar key={d.name} dataKey={d.name} fill={d.color} fillOpacity={highlightedElement && highlightedElement !== d.name ? 0.1 : 0.8} radius={[6, 6, 0, 0]} maxBarSize={28} />)
+                    : <Bar dataKey="value" fill={catColor} fillOpacity={0.8} radius={[6, 6, 0, 0]} maxBarSize={28} />
+                  }
                 </BarChart>
               ) : chartType === 'line' ? (
                 <LineChart data={chartData}>
@@ -164,7 +210,10 @@ export default function Builder() {
                   <XAxis dataKey="month" axisLine={false} tickLine={false} tick={{ fill: 'rgba(232,236,241,0.35)', fontFamily: "'JetBrains Mono'", fontSize: 10 }} />
                   <YAxis axisLine={false} tickLine={false} width={45} tick={{ fill: 'rgba(232,236,241,0.35)', fontFamily: "'JetBrains Mono'", fontSize: 10 }} />
                   <Tooltip {...tooltipStyle} />
-                  {visibleData.map(d => <Line key={d.name} type="monotone" dataKey={d.name} stroke={d.color} strokeWidth={highlightedElement === d.name ? 3 : 2} strokeOpacity={highlightedElement && highlightedElement !== d.name ? 0.12 : 0.9} dot={false} activeDot={{ r: 5, strokeWidth: 2, fill: '#0A0E1A', stroke: d.color }} />)}
+                  {operation === 'Break Down'
+                    ? visibleData.map(d => <Line key={d.name} type="monotone" dataKey={d.name} stroke={d.color} strokeWidth={highlightedElement === d.name ? 3 : 2} strokeOpacity={highlightedElement && highlightedElement !== d.name ? 0.12 : 0.9} dot={false} activeDot={{ r: 5, strokeWidth: 2, fill: '#0A0E1A', stroke: d.color }} />)
+                    : <Line type="monotone" dataKey="value" stroke={catColor} strokeWidth={2} strokeOpacity={0.9} dot={false} activeDot={{ r: 5, strokeWidth: 2, fill: '#0A0E1A', stroke: catColor }} />
+                  }
                 </LineChart>
               ) : chartType === 'area' ? (
                 <AreaChart data={chartData}>
@@ -172,7 +221,10 @@ export default function Builder() {
                   <XAxis dataKey="month" axisLine={false} tickLine={false} tick={{ fill: 'rgba(232,236,241,0.35)', fontFamily: "'JetBrains Mono'", fontSize: 10 }} />
                   <YAxis axisLine={false} tickLine={false} width={45} tick={{ fill: 'rgba(232,236,241,0.35)', fontFamily: "'JetBrains Mono'", fontSize: 10 }} />
                   <Tooltip {...tooltipStyle} />
-                  {visibleData.map(d => <Area key={d.name} type="monotone" dataKey={d.name} stroke={d.color} fill={d.color} fillOpacity={highlightedElement && highlightedElement !== d.name ? 0.02 : 0.12} strokeWidth={highlightedElement === d.name ? 2.5 : 1.5} strokeOpacity={highlightedElement && highlightedElement !== d.name ? 0.15 : 0.8} dot={false} />)}
+                  {operation === 'Break Down'
+                    ? visibleData.map(d => <Area key={d.name} type="monotone" dataKey={d.name} stroke={d.color} fill={d.color} fillOpacity={highlightedElement && highlightedElement !== d.name ? 0.02 : 0.12} strokeWidth={highlightedElement === d.name ? 2.5 : 1.5} strokeOpacity={highlightedElement && highlightedElement !== d.name ? 0.15 : 0.8} dot={false} />)
+                    : <Area type="monotone" dataKey="value" stroke={catColor} fill={catColor} fillOpacity={0.12} strokeWidth={1.5} strokeOpacity={0.8} dot={false} />
+                  }
                 </AreaChart>
               ) : (
                 <PieChart>
@@ -186,7 +238,7 @@ export default function Builder() {
           </div>
           <ExportBar chartRef={null} labels={activeMonths} datasets={visibleData} filename={selectedCat ? selectedCat.id : 'chart-data'} />
           <div style={{ marginTop: 12, fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.15)', display: 'flex', justifyContent: 'space-between' }}>
-            <span>Data: SOCRadar Threat Intelligence • {activeMonths[0]}–{activeMonths[activeMonths.length - 1]} 2025{country ? ` • ${country}` : ''}{industry ? ` • ${industry}` : ''}</span>
+            <span>Data: SOCRadar Threat Intelligence • {chartMonthLabels[0]}–{chartMonthLabels[chartMonthLabels.length - 1]}{country ? ` • ${country}` : ''}{industry ? ` • ${industry}` : ''}</span>
             <span>{visibleData.length} of {rawData.length} shown</span>
           </div>
         </div>
@@ -194,7 +246,9 @@ export default function Builder() {
         {/* RIGHT — Controls */}
         <ControlPanel
           chartType={chartType} setChartType={setChartType}
-          dateRange={dateRange} setDateRange={setDateRange}
+          operation={operation} setOperation={setOperation}
+          dateStart={dateStart} dateEnd={dateEnd}
+          setDateStart={setDateStart} setDateEnd={setDateEnd}
           country={country} setCountry={setCountry}
           regionMode={regionMode} setRegionMode={setRegionMode}
           industry={industry} setIndustry={setIndustry}
