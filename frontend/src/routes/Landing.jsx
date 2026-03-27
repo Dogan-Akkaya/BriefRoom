@@ -50,18 +50,33 @@ export default function Landing() {
           {/* Search */}
           <div style={{ opacity: loaded ? 1 : 0, transform: loaded ? 'none' : 'translateY(14px) scale(0.99)', transition: 'all 0.8s cubic-bezier(0.16,1,0.3,1) 0.65s', width: '100%' }}>
             <SearchPanel />
-            <div style={{ marginTop: 28, display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap', maxWidth: 720, margin: '28px auto 0' }}>
-              <div onClick={() => document.getElementById('popular-section')?.scrollIntoView({ behavior: 'smooth' })} style={{ cursor: 'pointer', textAlign: 'center', flex: '1 1 180px', padding: '16px 12px', borderRadius: 14, border: '1px solid rgba(255,69,98,0.12)', background: 'rgba(255,69,98,0.04)', transition: 'all 0.3s', boxShadow: '0 0 20px rgba(255,69,98,0.06)' }}>
+            <div style={{ marginTop: 28, display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap', maxWidth: 720, margin: '28px auto 0', paddingBottom: 40 }}>
+              <div
+                onClick={() => document.getElementById('popular-section')?.scrollIntoView({ behavior: 'smooth' })}
+                onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-3px)'; e.currentTarget.style.borderColor = 'rgba(255,69,98,0.3)'; e.currentTarget.style.boxShadow = '0 8px 28px rgba(255,69,98,0.12)' }}
+                onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.borderColor = 'rgba(255,69,98,0.18)'; e.currentTarget.style.boxShadow = '0 0 20px rgba(255,69,98,0.08)' }}
+                style={{ cursor: 'pointer', textAlign: 'center', flex: '1 1 180px', padding: '20px 16px', borderRadius: 14, border: '1px solid rgba(255,69,98,0.18)', background: 'rgba(255,69,98,0.06)', transition: 'all 0.3s cubic-bezier(0.16,1,0.3,1)', boxShadow: '0 0 20px rgba(255,69,98,0.08)' }}
+              >
                 <div style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 14, fontWeight: 600, color: '#E8ECF1', marginBottom: 4 }}>Popular Charts</div>
-                <div style={{ fontSize: 12, color: 'rgba(232,236,241,0.35)', lineHeight: 1.5 }}>Recently created & suggested charts from SOCRadar</div>
+                <div style={{ fontSize: 12, color: 'rgba(232,236,241,0.45)', lineHeight: 1.5 }}>Recently created & suggested charts from SOCRadar</div>
               </div>
-              <div onClick={() => navigate('/reports')} style={{ cursor: 'pointer', textAlign: 'center', flex: '1 1 180px', padding: '16px 12px', borderRadius: 14, border: '1px solid rgba(59,130,246,0.12)', background: 'rgba(59,130,246,0.04)', transition: 'all 0.3s', boxShadow: '0 0 20px rgba(59,130,246,0.06)' }}>
+              <div
+                onClick={() => navigate('/reports')}
+                onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-3px)'; e.currentTarget.style.borderColor = 'rgba(59,130,246,0.3)'; e.currentTarget.style.boxShadow = '0 8px 28px rgba(59,130,246,0.12)' }}
+                onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.borderColor = 'rgba(59,130,246,0.18)'; e.currentTarget.style.boxShadow = '0 0 20px rgba(59,130,246,0.08)' }}
+                style={{ cursor: 'pointer', textAlign: 'center', flex: '1 1 180px', padding: '20px 16px', borderRadius: 14, border: '1px solid rgba(59,130,246,0.18)', background: 'rgba(59,130,246,0.06)', transition: 'all 0.3s cubic-bezier(0.16,1,0.3,1)', boxShadow: '0 0 20px rgba(59,130,246,0.08)' }}
+              >
                 <div style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 14, fontWeight: 600, color: '#E8ECF1', marginBottom: 4 }}>Global Reports</div>
-                <div style={{ fontSize: 12, color: 'rgba(232,236,241,0.35)', lineHeight: 1.5 }}>Charts from recently released trusted sources</div>
+                <div style={{ fontSize: 12, color: 'rgba(232,236,241,0.45)', lineHeight: 1.5 }}>Charts from recently released trusted sources</div>
               </div>
-              <div onClick={() => navigate('/builder')} style={{ cursor: 'pointer', textAlign: 'center', flex: '1 1 180px', padding: '16px 12px', borderRadius: 14, border: '1px solid rgba(255,69,98,0.12)', background: 'rgba(255,69,98,0.04)', transition: 'all 0.3s', boxShadow: '0 0 20px rgba(255,69,98,0.06)' }}>
+              <div
+                onClick={() => navigate('/builder')}
+                onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-3px)'; e.currentTarget.style.borderColor = 'rgba(255,69,98,0.3)'; e.currentTarget.style.boxShadow = '0 8px 28px rgba(255,69,98,0.12)' }}
+                onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.borderColor = 'rgba(255,69,98,0.18)'; e.currentTarget.style.boxShadow = '0 0 20px rgba(255,69,98,0.08)' }}
+                style={{ cursor: 'pointer', textAlign: 'center', flex: '1 1 180px', padding: '20px 16px', borderRadius: 14, border: '1px solid rgba(255,69,98,0.18)', background: 'rgba(255,69,98,0.06)', transition: 'all 0.3s cubic-bezier(0.16,1,0.3,1)', boxShadow: '0 0 20px rgba(255,69,98,0.08)' }}
+              >
                 <div style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 14, fontWeight: 600, color: '#E8ECF1', marginBottom: 4 }}>Custom Builder</div>
-                <div style={{ fontSize: 12, color: 'rgba(232,236,241,0.35)', lineHeight: 1.5 }}>Build your own charts with full control over data & filters</div>
+                <div style={{ fontSize: 12, color: 'rgba(232,236,241,0.45)', lineHeight: 1.5 }}>Build your own charts with full control over data & filters</div>
               </div>
             </div>
           </div>
