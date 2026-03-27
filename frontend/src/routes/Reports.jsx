@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { GLOBAL_REPORTS } from '../lib/data'
 import ReportCard from '../components/ReportCard'
+import ChartPreviewModal from '../components/ChartPreviewModal'
 import Reveal from '../components/Reveal'
 
 const SOURCES = ['All', 'IBM', 'CrowdStrike', 'Verizon DBIR', 'Mandiant', 'Unit 42', 'ENISA']
@@ -30,6 +31,7 @@ const glass = {
 
 export default function Reports() {
   const navigate = useNavigate()
+  const [previewReport, setPreviewReport] = useState(null)
   const [sourceFilter, setSourceFilter] = useState('All')
   const [categoryFilter, setCategoryFilter] = useState('All')
   const [yearFilter, setYearFilter] = useState('All')
@@ -205,14 +207,14 @@ export default function Reports() {
               if (isFeatured) {
                 return (
                   <Reveal key={report.id} delay={i * 60} style={{ gridColumn: 'span 2' }}>
-                    <FeaturedCard report={report} />
+                    <FeaturedCard report={report} onClick={() => setPreviewReport(report)} />
                   </Reveal>
                 )
               }
 
               return (
                 <Reveal key={report.id} delay={i * 60}>
-                  <ReportCard report={report} onClick={() => {}} />
+                  <ReportCard report={report} onClick={() => setPreviewReport(report)} />
                 </Reveal>
               )
             })}
@@ -232,6 +234,14 @@ export default function Reports() {
           </div>
         </div>
       </div>
+
+      {previewReport && (
+        <ChartPreviewModal
+          chart={previewReport}
+          type="report"
+          onClose={() => setPreviewReport(null)}
+        />
+      )}
     </div>
   )
 }
@@ -272,7 +282,7 @@ function FeaturedMiniChart({ data, labels, color, type }) {
   )
 }
 
-function FeaturedCard({ report }) {
+function FeaturedCard({ report, onClick }) {
   const [hovered, setHovered] = useState(false)
 
   return (
@@ -291,6 +301,7 @@ function FeaturedCard({ report }) {
       }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      onClick={onClick}
     >
       {/* Featured badge */}
       <span style={{

@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { POPULAR } from '../lib/data'
 import PopularChartCard from '../components/PopularChartCard'
+import ChartPreviewModal from '../components/ChartPreviewModal'
 import Reveal from '../components/Reveal'
 
 const CATEGORY_FILTERS = ['All', 'Ransomware', 'Phishing', 'Cloud', 'Operations', 'Infrastructure', 'Awareness']
@@ -50,6 +51,7 @@ const glass = {
 export default function Popular() {
   const navigate = useNavigate()
   const [hoveredChart, setHoveredChart] = useState(null)
+  const [previewChart, setPreviewChart] = useState(null)
   const [category, setCategory] = useState('All')
   const [industry, setIndustry] = useState('All Industries')
   const [region, setRegion] = useState('Global')
@@ -365,7 +367,7 @@ export default function Popular() {
                       isHovered={hoveredChart === i}
                       onHover={() => setHoveredChart(i)}
                       onLeave={() => setHoveredChart(null)}
-                      onClick={() => navigate(`/builder/${c.categoryId}`)}
+                      onClick={() => setPreviewChart(c)}
                       /* Pass featured flag for wide-card styling */
                       style={isFeatured ? {
                         paddingTop: 44,
@@ -392,6 +394,15 @@ export default function Popular() {
           </div>
         </main>
       </div>
+
+      {previewChart && (
+        <ChartPreviewModal
+          chart={previewChart}
+          type="popular"
+          onClose={() => setPreviewChart(null)}
+          onCustomize={() => { setPreviewChart(null); navigate(`/builder/${previewChart.categoryId}`) }}
+        />
+      )}
     </div>
   )
 }

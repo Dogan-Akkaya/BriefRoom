@@ -36,6 +36,9 @@ export default function Builder() {
 
   const selectedCat = categoryId ? CATEGORIES.find(c => c.id === categoryId) : null
 
+  // Scroll to top when entering builder
+  useEffect(() => { window.scrollTo(0, 0) }, [categoryId])
+
   const [chartType, setChartType] = useState('bar')
   const [operation, setOperation] = useState('Sum')
   const [dateStart, setDateStart] = useState(24) // Jan 2026
@@ -140,7 +143,7 @@ export default function Builder() {
 
   // Chart builder view
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative', overflow: 'hidden', paddingTop: 60 }}>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative', paddingTop: 60 }}>
       <SmokeHero />
       <AmbientBG colors={[catColor, '#3B82F6', '#A855F7']} />
 
@@ -190,7 +193,7 @@ export default function Builder() {
           </div>
 
           {/* Chart */}
-          <div style={{ flex: 1, minHeight: 380, background: 'rgba(255,255,255,0.018)', backdropFilter: 'blur(20px)', border: '1px solid rgba(255,255,255,0.05)', borderRadius: 20, padding: '24px 20px 14px', boxShadow: '0 8px 40px rgba(0,0,0,0.2),inset 0 1px 0 rgba(255,255,255,0.03)', position: 'relative', overflow: 'hidden' }}>
+          <div style={{ minHeight: 380, background: 'rgba(255,255,255,0.018)', backdropFilter: 'blur(20px)', border: '1px solid rgba(255,255,255,0.05)', borderRadius: 20, padding: '24px 20px 14px', boxShadow: '0 8px 40px rgba(0,0,0,0.2),inset 0 1px 0 rgba(255,255,255,0.03)', position: 'relative', overflow: 'hidden' }}>
             <div style={{ position: 'absolute', top: 0, left: '10%', right: '10%', height: 1, background: `linear-gradient(90deg,transparent,${catColor}25,transparent)` }} />
             <ResponsiveContainer width="100%" height={380}>
               {chartType === 'bar' ? (

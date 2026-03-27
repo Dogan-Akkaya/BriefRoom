@@ -8,12 +8,15 @@ import PopularChartCard from '../components/PopularChartCard'
 import CategoryPicker from '../components/CategoryPicker'
 import ReportCard from '../components/ReportCard'
 import SearchPanel from '../components/SearchPanel'
+import ChartPreviewModal from '../components/ChartPreviewModal'
 import { POPULAR, GLOBAL_REPORTS } from '../lib/data'
 
 export default function Landing() {
   const navigate = useNavigate()
   const [loaded, setLoaded] = useState(false)
   const [hoveredChart, setHoveredChart] = useState(null)
+  const [previewChart, setPreviewChart] = useState(null)
+  const [previewType, setPreviewType] = useState(null)
 
   useEffect(() => { setTimeout(() => setLoaded(true), 150) }, [])
 
@@ -89,7 +92,7 @@ export default function Landing() {
                 isHovered={hoveredChart === i}
                 onHover={() => setHoveredChart(i)}
                 onLeave={() => setHoveredChart(null)}
-                onClick={() => navigate(`/builder/${c.categoryId}`)}
+                onClick={() => { setPreviewChart(c); setPreviewType('popular') }}
               />
             </Reveal>
           ))}
@@ -154,7 +157,7 @@ export default function Landing() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
           {GLOBAL_REPORTS.slice(0, 3).map((r, i) => (
             <Reveal key={r.id} delay={i * 70}>
-              <ReportCard report={r} onClick={() => navigate('/reports')} />
+              <ReportCard report={r} onClick={() => { setPreviewChart(r); setPreviewType('report') }} />
             </Reveal>
           ))}
         </div>
@@ -192,6 +195,15 @@ export default function Landing() {
       <footer style={{ position: 'relative', zIndex: 1, padding: '20px 28px', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.03)' }}>
         <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: 'rgba(232,236,241,0.18)' }}>© 2026 SOCRadar Brief Room</span>
       </footer>
+
+      {previewChart && (
+        <ChartPreviewModal
+          chart={previewChart}
+          type={previewType}
+          onClose={() => setPreviewChart(null)}
+          onCustomize={() => { setPreviewChart(null); navigate(`/builder/${previewChart.categoryId}`) }}
+        />
+      )}
     </div>
   )
 }
