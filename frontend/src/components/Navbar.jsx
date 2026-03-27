@@ -12,6 +12,7 @@ export default function Navbar() {
   }, []);
 
   const links = [
+    { label: "Home", path: "/", activeColor: "#FF4562", icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: 2}}><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>, exact: true },
     { label: "Popular Charts", path: "/popular", activeColor: "#FF4562" },
     { label: "Global Reports", path: "/reports", activeColor: "#3B82F6" },
     { label: "Custom Builder", path: "/builder", activeColor: "#FF4562" },
@@ -63,15 +64,15 @@ export default function Navbar() {
           style={{ display: "flex", gap: 28, alignItems: "center" }}
         >
           {links.map((link) => {
-            const isActive = location.pathname.startsWith(link.path);
+            const isActive = link.exact ? location.pathname === link.path : location.pathname.startsWith(link.path);
             return (
               <span
                 key={link.path}
                 className="br-nav-link"
-                style={isActive ? { color: '#E8ECF1', borderBottomColor: link.activeColor } : {}}
+                style={{ display: 'inline-flex', alignItems: 'center', ...(isActive ? { color: '#E8ECF1', borderBottomColor: link.activeColor } : {}) }}
                 onClick={() => navigate(link.path)}
               >
-                {link.label}
+                {link.icon}{link.label}
               </span>
             );
           })}

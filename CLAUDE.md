@@ -53,11 +53,13 @@ brief-room/
 │       ├── routes/
 │       │   ├── Landing.jsx    # Hero + search + popular charts + stats + categories
 │       │   ├── Builder.jsx    # Chart builder with category selection + controls
-│       │   ├── Popular.jsx    # All 8 popular charts grid
+│       │   ├── Popular.jsx    # Popular charts with sidebar filters + featured cards
+│       │   ├── Reports.jsx    # Global Threat Reports with sidebar filters
 │       │   ├── Methodology.jsx # Data sources & methodology
 │       │   └── StaticPage.jsx # Privacy, Terms, API, Contact placeholders
 │       ├── components/
-│       │   ├── Navbar.jsx          # Fixed top nav (centered links, no logo)
+│       │   ├── Navbar.jsx          # Fixed top nav (Home icon + centered links)
+│       │   ├── ReportCard.jsx     # Global report card (blue/gray, external source)
 │       │   ├── SmokeHero.jsx       # Canvas particle system (landing hero)
 │       │   ├── GridBackground.jsx  # Animated dot grid (builder category screen)
 │       │   ├── SearchableSelect.jsx # Type-to-filter dropdown
@@ -107,7 +109,7 @@ brief-room/
 - `generateData(compositeKey)` uses `/` separator: `"ransomware/attack_volume"`.
 
 ## Current Phase
-**Phase 2.75 (completed):** Labs integration UI — no logo in navbar, centered nav links, GridBackground on builder, operation modes (Sum/Break Down/Average/Min/Max), filter/operator separation, searchable dropdowns, date range with month+year pickers and availability sparkline, export bar elevated.
+**Phase 2.85 (completed):** Global Threat Reports feature, Popular/Reports page polish with sidebar filters (Category, Industry, Country/Region, Trend/Source/Year), featured wide cards, home icon in navbar, per-link active colors (blue for Reports, red for others).
 
 ## Phases Overview
 1. ~~Scaffold + React port~~ (done)
