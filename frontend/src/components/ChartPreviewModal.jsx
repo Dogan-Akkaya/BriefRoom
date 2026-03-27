@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useToastStore } from '../stores/useToastStore'
 import Spark from './Spark'
+import PNGExportModal from './PNGExportModal'
+import ShareLinkModal from './ShareLinkModal'
 
 function MiniChart({ data, labels, color, type }) {
   const w = 280, h = 140
@@ -49,6 +52,8 @@ const exportBtn = {
 export default function ChartPreviewModal({ chart, type, onClose, onCustomize }) {
   const navigate = useNavigate()
   const toast = useToastStore((s) => s.show)
+  const [showPNGModal, setShowPNGModal] = useState(false)
+  const [showShareModal, setShowShareModal] = useState(false)
 
   if (!chart) return null
 
@@ -178,21 +183,22 @@ export default function ChartPreviewModal({ chart, type, onClose, onCustomize })
             <div style={{ height: 1, background: 'rgba(255,255,255,0.06)', marginBottom: 16 }} />
 
             {/* Export row */}
-            <div style={{ display: 'flex', gap: 8, marginBottom: 16 }}>
-              <button
-                onClick={() => toast('Chart copied to clipboard', 'success')}
-                style={{ ...exportBtn, borderColor: 'rgba(255,69,98,0.2)', color: '#FF4562', background: 'rgba(255,69,98,0.06)' }}
-              >
-                <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="10" height="10" rx="1.5"/><path d="M3 6h10"/></svg>
-                Copy
+            <div style={{ display: 'flex', gap: 10, marginBottom: 16 }}>
+              <button onClick={() => setShowPNGModal(true)} style={{
+                flex: 1, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 6,
+                padding: '10px', fontSize: 13, fontWeight: 600,
+                background: 'rgba(255,69,98,0.1)', border: '1px solid rgba(255,69,98,0.25)',
+                borderRadius: 10, color: '#FF4562', cursor: 'pointer',
+              }}>
+                Export PNG
               </button>
-              <button onClick={() => toast('PNG downloaded', 'success')} style={exportBtn}>
-                <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M8 3v7m-3-3l3 3 3-3M3 12h10"/></svg>
-                PNG
-              </button>
-              <button onClick={() => toast('CSV exported', 'success')} style={exportBtn}>
-                <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 3h10v10H3zM7 7h2v2H7z"/></svg>
-                CSV
+              <button onClick={() => setShowShareModal(true)} style={{
+                flex: 1, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 6,
+                padding: '10px', fontSize: 13, fontWeight: 500,
+                background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)',
+                borderRadius: 10, color: 'rgba(232,236,241,0.5)', cursor: 'pointer',
+              }}>
+                Share Link
               </button>
             </div>
 
@@ -311,27 +317,30 @@ export default function ChartPreviewModal({ chart, type, onClose, onCustomize })
             {/* Divider */}
             <div style={{ height: 1, background: 'rgba(255,255,255,0.06)', marginBottom: 16 }} />
 
-            {/* Download PNG button */}
-            <button
-              onClick={() => toast('PNG downloaded', 'success')}
-              style={{
-                display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 8,
-                width: '100%', padding: '12px 24px',
-                fontSize: 13, fontWeight: 600,
-                fontFamily: "'Satoshi','DM Sans',sans-serif",
-                background: 'rgba(59,130,246,0.1)',
-                border: '1px solid rgba(59,130,246,0.25)',
-                color: '#60A5FA',
-                borderRadius: 12, cursor: 'pointer',
-                transition: 'all 0.2s',
-              }}
-            >
-              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M8 3v7m-3-3l3 3 3-3M3 12h10"/></svg>
-              Download PNG
-            </button>
+            {/* Export buttons */}
+            <div style={{ display: 'flex', gap: 10 }}>
+              <button onClick={() => setShowPNGModal(true)} style={{
+                flex: 1, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 6,
+                padding: '10px', fontSize: 13, fontWeight: 600,
+                background: 'rgba(255,69,98,0.1)', border: '1px solid rgba(255,69,98,0.25)',
+                borderRadius: 10, color: '#FF4562', cursor: 'pointer',
+              }}>
+                Export PNG
+              </button>
+              <button onClick={() => setShowShareModal(true)} style={{
+                flex: 1, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 6,
+                padding: '10px', fontSize: 13, fontWeight: 500,
+                background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)',
+                borderRadius: 10, color: 'rgba(232,236,241,0.5)', cursor: 'pointer',
+              }}>
+                Share Link
+              </button>
+            </div>
           </>
         )}
       </div>
+      {showPNGModal && <PNGExportModal onClose={() => setShowPNGModal(false)} categoryId={chart.categoryId || chart.id} />}
+      {showShareModal && <ShareLinkModal onClose={() => setShowShareModal(false)} categoryId={chart.categoryId || chart.id} />}
     </div>
   )
 }

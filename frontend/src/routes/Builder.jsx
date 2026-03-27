@@ -9,7 +9,8 @@ import GridBackground from '../components/GridBackground'
 import CategoryPicker from '../components/CategoryPicker'
 import ControlPanel from '../components/ControlPanel'
 import ExportBar from '../components/ExportBar'
-import EmailGate from '../components/EmailGate'
+import PNGExportModal from '../components/PNGExportModal'
+import ShareLinkModal from '../components/ShareLinkModal'
 import { CATEGORIES, MONTHS, generateData, DATA_POINTS_BY_CATEGORY, ALL_MONTHS } from '../lib/data'
 
 const tooltipStyle = {
@@ -45,7 +46,8 @@ export default function Builder() {
   const [dateEnd, setDateEnd] = useState(35) // Dec 2026
   const [hiddenElements, setHiddenElements] = useState(new Set())
   const [highlightedElement, setHighlightedElement] = useState(null)
-  const [showEmailGate, setShowEmailGate] = useState(false)
+  const [showPNGModal, setShowPNGModal] = useState(false)
+  const [showShareModal, setShowShareModal] = useState(false)
   const [country, setCountry] = useState('')
   const [regionMode, setRegionMode] = useState(false)
   const [industry, setIndustry] = useState('')
@@ -239,7 +241,7 @@ export default function Builder() {
               )}
             </ResponsiveContainer>
           </div>
-          <ExportBar chartRef={null} labels={activeMonths} datasets={visibleData} filename={selectedCat ? selectedCat.id : 'chart-data'} />
+          <ExportBar onPNGClick={() => setShowPNGModal(true)} onShareClick={() => setShowShareModal(true)} />
           <div style={{ marginTop: 12, fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.15)', display: 'flex', justifyContent: 'space-between' }}>
             <span>Data: SOCRadar Threat Intelligence • {chartMonthLabels[0]}–{chartMonthLabels[chartMonthLabels.length - 1]}{country ? ` • ${country}` : ''}{industry ? ` • ${industry}` : ''}</span>
             <span>{visibleData.length} of {rawData.length} shown</span>
@@ -267,8 +269,8 @@ export default function Builder() {
         />
       </div>
 
-      {/* Email gate modal */}
-      {showEmailGate && <EmailGate onClose={() => setShowEmailGate(false)} catColor={catColor} />}
+      {showPNGModal && <PNGExportModal onClose={() => setShowPNGModal(false)} categoryId={selectedCat?.id} />}
+      {showShareModal && <ShareLinkModal onClose={() => setShowShareModal(false)} categoryId={selectedCat?.id} />}
     </div>
   )
 }
