@@ -160,11 +160,11 @@ export const DATA_AVAILABILITY = ALL_MONTHS.map((m, i) => {
 
 // Quick date presets
 export const DATE_PRESETS = [
-  { label: 'Last 3 months', getRange: () => [33, 35] },
-  { label: 'Last 6 months', getRange: () => [30, 35] },
-  { label: 'Last year', getRange: () => [24, 35] },
-  { label: 'YTD 2026', getRange: () => [24, 26] },
-  { label: 'All time', getRange: () => [0, 35] },
+  { label: 'Last 3 months', start: 33, end: 35 },
+  { label: 'Last 6 months', start: 30, end: 35 },
+  { label: 'Last year', start: 24, end: 35 },
+  { label: 'YTD 2026', start: 24, end: 26 },
+  { label: 'All time', start: 0, end: 35 },
 ]
 
 // Extended countries list (for searchable dropdown)

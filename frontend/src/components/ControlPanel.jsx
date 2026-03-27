@@ -176,14 +176,13 @@ const SparkAvailability = ({ data, startIdx, endIdx, catColor }) => {
 }
 
 function parseMonthIndex(idx) {
-  if (idx < 0 || idx >= ALL_MONTHS.length) return { month: 'Jan', year: '2023' }
-  const parts = ALL_MONTHS[idx].split(' ')
-  return { month: parts[0], year: parts[1] }
+  if (idx < 0 || idx >= ALL_MONTHS.length) return { month: 'Jan', year: 2024 }
+  const m = ALL_MONTHS[idx]
+  return { month: m.month, year: m.year }
 }
 
 function findMonthIndex(month, year) {
-  const label = `${month} ${year}`
-  const idx = ALL_MONTHS.indexOf(label)
+  const idx = ALL_MONTHS.findIndex(m => m.month === month && m.year === Number(year))
   return idx >= 0 ? idx : 0
 }
 
