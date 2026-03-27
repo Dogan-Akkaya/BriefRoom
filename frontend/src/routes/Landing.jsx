@@ -7,18 +7,15 @@ import AnimNum from '../components/AnimNum'
 import PopularChartCard from '../components/PopularChartCard'
 import CategoryPicker from '../components/CategoryPicker'
 import ReportCard from '../components/ReportCard'
-import { POPULAR, SEARCH_SUGGESTIONS, GLOBAL_REPORTS } from '../lib/data'
+import SearchPanel from '../components/SearchPanel'
+import { POPULAR, GLOBAL_REPORTS } from '../lib/data'
 
 export default function Landing() {
   const navigate = useNavigate()
   const [loaded, setLoaded] = useState(false)
-  const [searchVal, setSearchVal] = useState('')
-  const [searchFocused, setSearchFocused] = useState(false)
   const [hoveredChart, setHoveredChart] = useState(null)
 
   useEffect(() => { setTimeout(() => setLoaded(true), 150) }, [])
-
-  const filtered = SEARCH_SUGGESTIONS.filter(s => !searchVal || s.text.toLowerCase().includes(searchVal.toLowerCase()))
 
   return (
     <div>
@@ -49,30 +46,7 @@ export default function Landing() {
 
           {/* Search */}
           <div style={{ opacity: loaded ? 1 : 0, transform: loaded ? 'none' : 'translateY(14px) scale(0.99)', transition: 'all 0.8s cubic-bezier(0.16,1,0.3,1) 0.65s', width: '100%' }}>
-            <div style={{ position: 'relative', maxWidth: 720, width: '100%', margin: '0 auto' }}>
-              <svg style={{ position: 'absolute', left: 18, top: 19, zIndex: 2, opacity: searchFocused ? 0.75 : 0.25, transition: 'opacity 0.3s' }} width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={searchFocused ? '#FF4562' : '#E8ECF1'} strokeWidth="2" strokeLinecap="round"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
-              <input
-                style={{ width: '100%', padding: '18px 22px 18px 50px', fontSize: 15, fontFamily: "'Satoshi','DM Sans',sans-serif", fontWeight: 400, background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 14, color: '#E8ECF1', outline: 'none', transition: 'all 0.4s cubic-bezier(0.16,1,0.3,1)', backdropFilter: 'blur(12px)', ...(searchFocused ? { background: 'rgba(255,255,255,0.07)', borderColor: 'rgba(255,69,98,0.35)', boxShadow: '0 0 0 3px rgba(255,69,98,0.06),0 16px 48px rgba(0,0,0,0.3)' } : {}) }}
-                placeholder="Search charts — 'ransomware healthcare', 'MTTD finance'..."
-                value={searchVal}
-                onChange={e => setSearchVal(e.target.value)}
-                onFocus={() => setSearchFocused(true)}
-                onBlur={() => setTimeout(() => setSearchFocused(false), 200)}
-              />
-              {searchFocused && (
-                <div style={{ position: 'absolute', top: 'calc(100% + 6px)', left: 0, right: 0, background: 'rgba(14,18,32,0.97)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 14, overflow: 'hidden', backdropFilter: 'blur(24px)', zIndex: 50, boxShadow: '0 20px 60px rgba(0,0,0,0.5)' }}>
-                  <div style={{ padding: '10px 18px 6px' }}>
-                    <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.18)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>Popular searches</span>
-                  </div>
-                  {filtered.map((s, i) => (
-                    <div key={i} style={{ padding: '13px 18px', fontSize: 14, color: 'rgba(232,236,241,0.5)', cursor: 'pointer', transition: 'all 0.2s', borderBottom: '1px solid rgba(255,255,255,0.03)', display: 'flex', justifyContent: 'space-between', animation: `slideIn 0.25s cubic-bezier(0.16,1,0.3,1) ${i * 35}ms both` }} onMouseDown={() => setSearchVal(s.text)}>
-                      <span>{s.text}</span>
-                      <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(255,69,98,0.3)' }}>{s.cat}</span>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
+            <SearchPanel />
             <div style={{ marginTop: 28, display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap', maxWidth: 720, margin: '28px auto 0' }}>
               <div onClick={() => document.getElementById('popular-section')?.scrollIntoView({ behavior: 'smooth' })} style={{ cursor: 'pointer', textAlign: 'center', flex: '1 1 180px', padding: '16px 12px', borderRadius: 14, border: '1px solid rgba(255,69,98,0.12)', background: 'rgba(255,69,98,0.04)', transition: 'all 0.3s', boxShadow: '0 0 20px rgba(255,69,98,0.06)' }}>
                 <div style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 14, fontWeight: 600, color: '#E8ECF1', marginBottom: 4 }}>Popular Charts</div>
