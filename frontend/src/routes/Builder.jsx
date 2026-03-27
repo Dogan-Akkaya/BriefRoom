@@ -240,6 +240,11 @@ export default function Builder() {
                 </PieChart>
               )}
             </ResponsiveContainer>
+            {/* Powered by SOCRadar watermark */}
+            <div style={{ position: 'absolute', bottom: 10, right: 16, display: 'flex', alignItems: 'center', gap: 5, opacity: 0.18, pointerEvents: 'none' }}>
+              <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 9, color: '#E8ECF1', letterSpacing: '0.04em' }}>Powered by</span>
+              <img src="/socradar-logo-white.png" alt="SOCRadar" style={{ height: 12, filter: 'brightness(1)' }} />
+            </div>
           </div>
           <ExportBar onPNGClick={() => setShowPNGModal(true)} onShareClick={() => setShowShareModal(true)} />
           <div style={{ marginTop: 12, fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.15)', display: 'flex', justifyContent: 'space-between' }}>
