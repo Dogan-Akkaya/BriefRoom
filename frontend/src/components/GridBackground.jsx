@@ -1,4 +1,4 @@
-import React from 'react'
+import { useMemo } from 'react'
 
 const GRID_ID = 'grid-bg-dots'
 
@@ -24,76 +24,46 @@ const keyframes = `
 }
 `
 
-// Deterministic "random" for dot selection
 const hash = (x, y) => Math.abs(Math.sin(x * 127.1 + y * 311.7) * 43758.5453) % 1
 
-// Build pulsing dots — every ~8th dot pulses with a staggered delay
-const pulsingDots = []
-const cols = Math.ceil(1920 / 40) + 1
-const rows = Math.ceil(1080 / 40) + 1
-
-for (let row = 0; row < rows; row++) {
-  for (let col = 0; col < cols; col++) {
-    if (hash(col, row) > 0.87) {
-      const delay = ((col + row * 1.7) % 12).toFixed(1)
-      pulsingDots.push(
-        <circle
-          key={`${col}-${row}`}
-          cx={col * 40}
-          cy={row * 40}
-          r="1"
-          fill="rgba(255,255,255,0.03)"
-          style={{
-            animation: `gridPulse ${6 + (hash(col, row) * 4).toFixed(1)}s ease-in-out ${delay}s infinite`,
-          }}
-        />
-      )
-    }
-  }
-}
-
 export default function GridBackground() {
-  return (
-    <div
-      style={{
-        position: 'absolute',
-        inset: 0,
-        zIndex: 0,
-        overflow: 'hidden',
-        pointerEvents: 'none',
-      }}
-      aria-hidden="true"
-    >
-      <style>{keyframes}</style>
+  const pulsingDots = useMemo(() => {
+    const dots = []
+    const cols = Math.ceil(1920 / 40) + 1
+    const rows = Math.ceil(1080 / 40) + 1
+    for (let row = 0; row < rows; row++) {
+      for (let col = 0; col < cols; col++) {
+        if (hash(col, row) > 0.87) {
+          const delay = ((col + row * 1.7) % 12).toFixed(1)
+          dots.push(
+            <circle
+              key={`${col}-${row}`}
+              cx={col * 40}
+              cy={row * 40}
+              r="1"
+              fill="rgba(255,255,255,0.03)"
+              style={{ animation: `gridPulse ${6 + (hash(col, row) * 4).toFixed(1)}s ease-in-out ${delay}s infinite` }}
+            />
+          )
+        }
+      }
+    }
+    return dots
+  }, [])
 
-      {/* Dot grid via SVG pattern */}
-      <svg
-        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}
-        xmlns="http://www.w3.org/2000/svg"
-      >
+  return (
+    <div style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden', pointerEvents: 'none' }} aria-hidden="true">
+      <style>{keyframes}</style>
+      <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
         <defs>
-          <pattern
-            id={GRID_ID}
-            x="0"
-            y="0"
-            width="40"
-            height="40"
-            patternUnits="userSpaceOnUse"
-          >
+          <pattern id={GRID_ID} x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
             <circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.03)" />
           </pattern>
         </defs>
         <rect width="100%" height="100%" fill={`url(#${GRID_ID})`} />
-
-        {/* Pulsing dots */}
         {pulsingDots}
       </svg>
-
-      {/* Gradient lines */}
-      <svg
-        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
         <defs>
           <linearGradient id="gridLine1" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="rgba(255,69,98,0)" />
@@ -111,25 +81,9 @@ export default function GridBackground() {
             <stop offset="100%" stopColor="rgba(168,85,247,0)" />
           </linearGradient>
         </defs>
-
-        <line
-          x1="0" y1="30%" x2="100%" y2="70%"
-          stroke="url(#gridLine1)"
-          strokeWidth="1"
-          style={{ animation: 'lineShift1 18s ease-in-out infinite', transformOrigin: 'center' }}
-        />
-        <line
-          x1="20%" y1="0" x2="80%" y2="100%"
-          stroke="url(#gridLine2)"
-          strokeWidth="1"
-          style={{ animation: 'lineShift2 22s ease-in-out infinite', transformOrigin: 'center' }}
-        />
-        <line
-          x1="0" y1="60%" x2="100%" y2="40%"
-          stroke="url(#gridLine3)"
-          strokeWidth="1"
-          style={{ animation: 'lineShift3 26s ease-in-out infinite', transformOrigin: 'center' }}
-        />
+        <line x1="0" y1="30%" x2="100%" y2="70%" stroke="url(#gridLine1)" strokeWidth="1" style={{ animation: 'lineShift1 18s ease-in-out infinite', transformOrigin: 'center' }} />
+        <line x1="20%" y1="0" x2="80%" y2="100%" stroke="url(#gridLine2)" strokeWidth="1" style={{ animation: 'lineShift2 22s ease-in-out infinite', transformOrigin: 'center' }} />
+        <line x1="0" y1="60%" x2="100%" y2="40%" stroke="url(#gridLine3)" strokeWidth="1" style={{ animation: 'lineShift3 26s ease-in-out infinite', transformOrigin: 'center' }} />
       </svg>
     </div>
   )
