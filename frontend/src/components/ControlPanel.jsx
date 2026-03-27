@@ -13,7 +13,7 @@ const INDUSTRIES = [
 const OPERATIONS = ['Sum', 'Break Down', 'Average', 'Min', 'Max']
 
 const MONTH_NAMES = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
-const YEARS = [...new Set(ALL_MONTHS.map(m => m.split(' ')[1]))]
+const YEARS = [...new Set(ALL_MONTHS.map(m => m.year))]
 
 const ctrlLabel = {
   fontFamily: "'JetBrains Mono', monospace",
