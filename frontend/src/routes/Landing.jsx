@@ -6,7 +6,8 @@ import Reveal from '../components/Reveal'
 import AnimNum from '../components/AnimNum'
 import PopularChartCard from '../components/PopularChartCard'
 import CategoryPicker from '../components/CategoryPicker'
-import { POPULAR, SEARCH_SUGGESTIONS } from '../lib/data'
+import ReportCard from '../components/ReportCard'
+import { POPULAR, SEARCH_SUGGESTIONS, GLOBAL_REPORTS } from '../lib/data'
 
 export default function Landing() {
   const navigate = useNavigate()
@@ -25,7 +26,7 @@ export default function Landing() {
       <section style={{ position: 'relative', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '120px 24px 80px', textAlign: 'center', overflow: 'hidden' }}>
         <SmokeHero />
         {/* Frosted glass panel behind hero text */}
-        <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-52%)', width: 'min(780px,88vw)', height: 480, background: 'rgba(10,14,26,0.45)', backdropFilter: 'blur(40px)', WebkitBackdropFilter: 'blur(40px)', borderRadius: 32, border: '1px solid rgba(255,255,255,0.04)', zIndex: 1, pointerEvents: 'none', boxShadow: '0 32px 80px rgba(0,0,0,0.3)' }} />
+        <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: 'min(1000px,92vw)', height: 620, background: 'rgba(10,14,26,0.45)', backdropFilter: 'blur(40px)', WebkitBackdropFilter: 'blur(40px)', borderRadius: 36, border: '1px solid rgba(255,255,255,0.04)', zIndex: 1, pointerEvents: 'none', boxShadow: '0 32px 80px rgba(0,0,0,0.3)' }} />
         <div style={{ position: 'relative', zIndex: 2, width: '100%' }}>
           <div style={{ opacity: loaded ? 1 : 0, transform: loaded ? 'none' : 'translateY(14px)', transition: 'all 0.6s cubic-bezier(0.16,1,0.3,1) 0.2s' }}>
             <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, letterSpacing: '0.14em', color: '#FF4562', marginBottom: 28, textTransform: 'uppercase', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, textShadow: '0 0 20px rgba(255,69,98,0.4)' }}>
@@ -33,10 +34,10 @@ export default function Landing() {
               Cybersecurity Intelligence for Leadership
             </div>
           </div>
-          <h1 style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 'clamp(38px,6.5vw,74px)', fontWeight: 800, lineHeight: 1.05, maxWidth: 740, margin: '0 auto 28px', letterSpacing: '-0.035em', color: '#FFFFFF', textShadow: '0 2px 30px rgba(10,14,26,0.8)', opacity: loaded ? 1 : 0, transform: loaded ? 'none' : 'translateY(28px)', transition: 'all 0.8s cubic-bezier(0.16,1,0.3,1) 0.35s' }}>
+          <h1 style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 'clamp(38px,6.5vw,74px)', fontWeight: 800, lineHeight: 1.05, maxWidth: 920, margin: '0 auto 28px', letterSpacing: '-0.035em', color: '#FFFFFF', textShadow: '0 2px 30px rgba(10,14,26,0.8)', opacity: loaded ? 1 : 0, transform: loaded ? 'none' : 'translateY(28px)', transition: 'all 0.8s cubic-bezier(0.16,1,0.3,1) 0.35s' }}>
             <FlickerText delay={600}>
-              <span style={{ color: '#FFFFFF' }}>The charts your</span><br />
-              <span style={{ background: 'linear-gradient(135deg,#FF4562 0%,#F97316 50%,#FF4562 100%)', backgroundSize: '200% auto', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>board needs to see</span>
+              <span style={{ color: '#FFFFFF' }}>Instant charts for</span><br />
+              <span style={{ background: 'linear-gradient(135deg,#FF4562 0%,#F97316 50%,#FF4562 100%)', backgroundSize: '200% auto', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>smarter security decisions</span>
             </FlickerText>
           </h1>
           <p style={{ fontSize: 17, lineHeight: 1.7, color: 'rgba(232,236,241,0.6)', maxWidth: 480, margin: '0 auto 44px', fontWeight: 400, opacity: loaded ? 1 : 0, transition: 'all 0.8s cubic-bezier(0.16,1,0.3,1) 0.5s', textShadow: '0 2px 20px rgba(10,14,26,0.9)' }}>
@@ -72,6 +73,9 @@ export default function Landing() {
             <div style={{ marginTop: 24, display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
               <button onClick={() => document.getElementById('popular-section')?.scrollIntoView({ behavior: 'smooth' })} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '13px 28px', fontFamily: "'Satoshi','DM Sans',sans-serif", fontSize: 13, fontWeight: 600, border: 'none', borderRadius: 12, cursor: 'pointer', transition: 'all 0.3s', background: '#FF4562', color: '#fff' }}>
                 Popular Charts
+              </button>
+              <button onClick={() => navigate('/reports')} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '13px 28px', fontFamily: "'Satoshi','DM Sans',sans-serif", fontSize: 13, fontWeight: 600, border: '1px solid rgba(16,185,129,0.25)', borderRadius: 12, cursor: 'pointer', background: 'rgba(16,185,129,0.12)', color: '#34D399' }}>
+                Global Reports
               </button>
               <button onClick={() => navigate('/builder')} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '13px 28px', fontFamily: "'Satoshi','DM Sans',sans-serif", fontSize: 13, fontWeight: 600, border: '1px solid rgba(59,130,246,0.25)', borderRadius: 12, cursor: 'pointer', transition: 'all 0.3s', background: 'rgba(59,130,246,0.12)', color: '#60A5FA' }}>
                 Create Custom Chart
@@ -144,6 +148,31 @@ export default function Landing() {
           ))}
         </div>
         <div style={{ height: 1, background: 'linear-gradient(90deg,transparent,rgba(255,69,98,0.1),transparent)', marginTop: 56 }} />
+      </section>
+
+      {/* GLOBAL THREAT REPORTS PREVIEW */}
+      <section style={{ position: 'relative', zIndex: 1, padding: '40px 24px', maxWidth: 1100, margin: '0 auto' }}>
+        <Reveal>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 16, marginBottom: 36 }}>
+            <div>
+              <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(59,130,246,0.6)', marginBottom: 14 }}>
+                <span style={{ animation: 'gentlePulse 2.5s ease-in-out infinite', display: 'inline-block' }}>●</span>&nbsp;&nbsp;Global Reports
+              </div>
+              <h2 style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 'clamp(26px,3.5vw,40px)', fontWeight: 600, lineHeight: 1.15, color: '#E8ECF1', marginBottom: 14, letterSpacing: '-0.02em' }}>From the reports CISOs trust most</h2>
+              <p style={{ fontSize: 15, lineHeight: 1.7, color: 'rgba(232,236,241,0.38)', fontWeight: 300, maxWidth: 500 }}>Key charts from IBM, CrowdStrike, Verizon DBIR, Mandiant and more. External sources, ready to present.</p>
+            </div>
+            <button onClick={() => navigate('/reports')} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '10px 18px', fontFamily: "'Satoshi','DM Sans',sans-serif", fontSize: 12, fontWeight: 600, background: 'transparent', color: 'rgba(232,236,241,0.55)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 12, cursor: 'pointer' }}>
+              Browse All Reports →
+            </button>
+          </div>
+        </Reveal>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
+          {GLOBAL_REPORTS.slice(0, 3).map((r, i) => (
+            <Reveal key={r.id} delay={i * 70}>
+              <ReportCard report={r} onClick={() => navigate('/reports')} />
+            </Reveal>
+          ))}
+        </div>
       </section>
 
       {/* CATEGORY PICKER */}

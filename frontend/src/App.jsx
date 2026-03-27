@@ -7,6 +7,7 @@ import Builder from './routes/Builder'
 import Popular from './routes/Popular'
 import Methodology from './routes/Methodology'
 import StaticPage from './routes/StaticPage'
+import Reports from './routes/Reports'
 
 class ErrorBoundary extends React.Component {
   constructor(props) { super(props); this.state = { error: null } }
@@ -37,6 +38,7 @@ export default function App() {
           <Route path="/builder/:categoryId" element={<Builder />} />
           <Route path="/popular" element={<Popular />} />
           <Route path="/methodology" element={<Methodology />} />
+          <Route path="/reports" element={<Reports />} />
           <Route path="/page/:slug" element={<StaticPage />} />
         </Routes>
       </div>

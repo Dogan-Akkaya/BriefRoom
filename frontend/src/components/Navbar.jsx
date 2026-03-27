@@ -13,6 +13,7 @@ export default function Navbar() {
 
   const links = [
     { label: "Popular Charts", path: "/popular" },
+    { label: "Global Reports", path: "/reports" },
     { label: "Custom Builder", path: "/builder" },
     { label: "Methodology", path: "/methodology" },
   ];
