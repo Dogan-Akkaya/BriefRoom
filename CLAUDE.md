@@ -57,8 +57,10 @@ brief-room/
 │       │   ├── Methodology.jsx # Data sources & methodology
 │       │   └── StaticPage.jsx # Privacy, Terms, API, Contact placeholders
 │       ├── components/
-│       │   ├── Navbar.jsx          # Fixed top nav (SOCRadar / Brief Room)
-│       │   ├── SmokeHero.jsx       # Canvas particle system
+│       │   ├── Navbar.jsx          # Fixed top nav (centered links, no logo)
+│       │   ├── SmokeHero.jsx       # Canvas particle system (landing hero)
+│       │   ├── GridBackground.jsx  # Animated dot grid (builder category screen)
+│       │   ├── SearchableSelect.jsx # Type-to-filter dropdown
 │       │   ├── FlickerText.jsx     # Flicker entrance animation
 │       │   ├── Reveal.jsx          # Scroll reveal animation
 │       │   ├── AnimNum.jsx         # Animated number counter
@@ -66,9 +68,10 @@ brief-room/
 │       │   ├── BriefingIllustration.jsx
 │       │   ├── PopularChartCard.jsx # Chart card with sparkline + metrics
 │       │   ├── CategoryPicker.jsx   # 10 category grid
-│       │   ├── ControlPanel.jsx     # Right sidebar: chart type, date range,
-│       │   │                        #   country/region, industry, threat group,
-│       │   │                        #   data point selector, element toggles
+│       │   ├── ControlPanel.jsx     # Right sidebar: chart type, filters
+│       │   │                        #   (country/industry/threat group),
+│       │   │                        #   operators (data point, operation mode),
+│       │   │                        #   date range + sparkline, elements
 │       │   ├── ExportBar.jsx        # Copy/PNG/CSV export buttons
 │       │   ├── EmailGate.jsx        # Modal email gate for export
 │       │   ├── ChartPreview.jsx     # Recharts wrapper (bar/line/area/pie)
@@ -80,7 +83,9 @@ brief-room/
 │       │   └── useToastStore.js
 │       ├── lib/
 │       │   ├── data.js         # CATEGORIES, DATA_POINTS_BY_CATEGORY,
-│       │   │                   # THREAT_GROUPS, POPULAR, generateData()
+│       │   │                   # THREAT_GROUPS, POPULAR, generateData(),
+│       │   │                   # ALL_MONTHS, DATA_AVAILABILITY, DATE_PRESETS,
+│       │   │                   # ALL_COUNTRIES, ALL_REGIONS
 │       │   └── export.js       # PNG, CSV, clipboard helpers
 │       └── styles/
 │           └── tokens.css      # Tailwind theme + CSS animations
@@ -95,14 +100,22 @@ brief-room/
 - Commits: Conventional commits (`feat:`, `fix:`, `chore:`)
 - Labs compliance: Follow `Labs Complience/complience-CLAUDE.md` conventions (English-only, security headers, parameterized queries, Docker non-root)
 
+## Data Notes
+- `ALL_MONTHS` items are **objects** `{ month, year, label }`, NOT strings. Always access `.month`, `.year`, `.label`.
+- `DATA_AVAILABILITY` items are objects `{ month, year, label, index, sources }`.
+- `DATE_PRESETS` items have `.start` and `.end` (indices into ALL_MONTHS), not functions.
+- `generateData(compositeKey)` uses `/` separator: `"ransomware/attack_volume"`.
+
 ## Current Phase
-**Phase 2.5 (completed):** UI polish — flexible elements, threat group filter, dummy pages, SmokeHero brightness, export bar, all dead buttons fixed.
+**Phase 2.75 (completed):** Labs integration UI — no logo in navbar, centered nav links, GridBackground on builder, operation modes (Sum/Break Down/Average/Min/Max), filter/operator separation, searchable dropdowns, date range with month+year pickers and availability sparkline, export bar elevated.
 
 ## Phases Overview
 1. ~~Scaffold + React port~~ (done)
 2. ~~UI overhaul from brief-room1.jsx~~ (done)
-3. Backend: FastAPI + PostgreSQL + Docker (next)
-4. Wire frontend to backend API
-5. Admin API endpoints + CSV import
-6. Celery tasks for automated data ingestion
-7. Polish: PPTX, briefing persistence, labs deploy
+3. ~~UI polish + flexible elements~~ (done)
+4. ~~Labs integration UI + builder UX~~ (done)
+5. Backend: FastAPI + PostgreSQL + Docker (next)
+6. Wire frontend to backend API
+7. Admin API endpoints + CSV import
+8. Celery tasks for automated data ingestion
+9. Polish: PPTX, briefing persistence, labs deploy
