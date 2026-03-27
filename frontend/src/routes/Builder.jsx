@@ -241,8 +241,7 @@ export default function Builder() {
               )}
             </ResponsiveContainer>
             {/* Powered by SOCRadar watermark */}
-            <style>{`@keyframes subtleGlow { 0%,90%,100% { opacity: 0.18; filter: drop-shadow(0 0 0px transparent); } 95% { opacity: 0.35; filter: drop-shadow(0 0 6px rgba(232,70,58,0.2)); } }`}</style>
-            <div style={{ position: 'absolute', bottom: 5, right: 16, display: 'flex', alignItems: 'center', gap: 5, opacity: 0.18, pointerEvents: 'none', animation: 'subtleGlow 25s ease-in-out infinite' }}>
+            <div style={{ position: 'absolute', bottom: 5, right: 16, display: 'flex', alignItems: 'center', gap: 5, opacity: 0.35, pointerEvents: 'none' }}>
               <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 9, color: '#E8ECF1', letterSpacing: '0.04em' }}>Powered by</span>
               <img src="/socradar-logo-white.png" alt="SOCRadar" style={{ height: 24 }} />
             </div>
