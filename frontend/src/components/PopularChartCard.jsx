@@ -136,31 +136,47 @@ export default function PopularChartCard({
   onHover,
   onLeave,
   onClick,
+  featured = false,
+  style: extraStyle,
 }) {
   const cardStyle = {
     ...styles.card,
     ...(isHovered ? styles.cardHovered : {}),
+    ...(extraStyle || {}),
   };
 
   const trendStyle = {
     fontFamily: "'JetBrains Mono', monospace",
-    fontSize: 13,
+    fontSize: featured ? 15 : 13,
     fontWeight: 500,
     color: up ? "#FF4562" : "#10B981",
   };
 
   const metricValueStyle = (c) => ({
     fontFamily: "'Plus Jakarta Sans', sans-serif",
-    fontSize: 18,
+    fontSize: featured ? 22 : 18,
     fontWeight: 700,
     color: c,
   });
 
   const sparkWrapStyle = {
-    transform: isHovered ? "scaleY(1.06)" : "scaleY(1)",
+    transform: isHovered
+      ? `scaleY(${featured ? 1.08 : 1.06})`
+      : "scaleY(1)",
     transformOrigin: "bottom",
     transition: "transform 0.4s cubic-bezier(0.16,1,0.3,1)",
+    height: featured ? 90 : undefined,
   };
+
+  /* Featured cards use a two-column layout for metrics + spark */
+  const featuredInner = featured
+    ? {
+        display: "grid",
+        gridTemplateColumns: "1fr 1.6fr",
+        gap: 24,
+        alignItems: "end",
+      }
+    : null;
 
   return (
     <div
@@ -192,35 +208,72 @@ export default function PopularChartCard({
       </div>
 
       {/* Title */}
-      <h4 style={styles.title}>{title}</h4>
+      <h4 style={{ ...styles.title, fontSize: featured ? 22 : 18 }}>{title}</h4>
 
       {/* Trend */}
       <span style={trendStyle}>
         {up ? "▲" : "▼"} {trend}
       </span>
 
-      {/* Detail */}
-      <p style={styles.detail}>{detail}</p>
+      {/* Detail — always visible, full text on featured */}
+      <p
+        style={{
+          ...styles.detail,
+          ...(featured
+            ? { WebkitLineClamp: "unset", lineClamp: "unset", maxHeight: "none" }
+            : {}),
+        }}
+      >
+        {detail}
+      </p>
 
-      {/* Metrics */}
-      <div style={styles.metricsRow}>
-        {metrics &&
-          metrics.map((m, mi) => (
-            <div key={mi} style={styles.metricBox}>
-              <div style={styles.metricLabel}>{m.label}</div>
-              <div style={metricValueStyle(color)}>{m.value}</div>
+      {/* Featured: side-by-side metrics + spark | Normal: stacked */}
+      {featured ? (
+        <div style={featuredInner}>
+          {/* Metrics column */}
+          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+            {metrics &&
+              metrics.map((m, mi) => (
+                <div key={mi} style={{ ...styles.metricBox, flex: "none" }}>
+                  <div style={styles.metricLabel}>{m.label}</div>
+                  <div style={metricValueStyle(color)}>{m.value}</div>
+                </div>
+              ))}
+          </div>
+          {/* Spark column — taller */}
+          <div>
+            <div style={sparkWrapStyle}>
+              <Spark data={data} color={color} />
             </div>
-          ))}
-      </div>
+            <div style={styles.sparkMonths}>
+              <span>JAN 2025</span>
+              <span>DEC 2025</span>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <>
+          {/* Metrics */}
+          <div style={styles.metricsRow}>
+            {metrics &&
+              metrics.map((m, mi) => (
+                <div key={mi} style={styles.metricBox}>
+                  <div style={styles.metricLabel}>{m.label}</div>
+                  <div style={metricValueStyle(color)}>{m.value}</div>
+                </div>
+              ))}
+          </div>
 
-      {/* Spark chart */}
-      <div style={sparkWrapStyle}>
-        <Spark data={data} color={color} />
-      </div>
-      <div style={styles.sparkMonths}>
-        <span>JAN 2025</span>
-        <span>DEC 2025</span>
-      </div>
+          {/* Spark chart */}
+          <div style={sparkWrapStyle}>
+            <Spark data={data} color={color} />
+          </div>
+          <div style={styles.sparkMonths}>
+            <span>JAN 2025</span>
+            <span>DEC 2025</span>
+          </div>
+        </>
+      )}
 
       {/* Bottom */}
       <div style={styles.bottomRow}>

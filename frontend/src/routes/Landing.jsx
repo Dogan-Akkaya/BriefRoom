@@ -49,7 +49,7 @@ export default function Landing() {
 
           {/* Search */}
           <div style={{ opacity: loaded ? 1 : 0, transform: loaded ? 'none' : 'translateY(14px) scale(0.99)', transition: 'all 0.8s cubic-bezier(0.16,1,0.3,1) 0.65s', width: '100%' }}>
-            <div style={{ position: 'relative', maxWidth: 600, width: '100%', margin: '0 auto' }}>
+            <div style={{ position: 'relative', maxWidth: 720, width: '100%', margin: '0 auto' }}>
               <svg style={{ position: 'absolute', left: 18, top: 19, zIndex: 2, opacity: searchFocused ? 0.75 : 0.25, transition: 'opacity 0.3s' }} width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={searchFocused ? '#FF4562' : '#E8ECF1'} strokeWidth="2" strokeLinecap="round"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
               <input
                 style={{ width: '100%', padding: '18px 22px 18px 50px', fontSize: 15, fontFamily: "'Satoshi','DM Sans',sans-serif", fontWeight: 400, background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 14, color: '#E8ECF1', outline: 'none', transition: 'all 0.4s cubic-bezier(0.16,1,0.3,1)', backdropFilter: 'blur(12px)', ...(searchFocused ? { background: 'rgba(255,255,255,0.07)', borderColor: 'rgba(255,69,98,0.35)', boxShadow: '0 0 0 3px rgba(255,69,98,0.06),0 16px 48px rgba(0,0,0,0.3)' } : {}) }}
@@ -73,16 +73,16 @@ export default function Landing() {
                 </div>
               )}
             </div>
-            <div style={{ marginTop: 28, display: 'flex', justifyContent: 'center', gap: 32, flexWrap: 'wrap', maxWidth: 720, margin: '28px auto 0' }}>
-              <div onClick={() => document.getElementById('popular-section')?.scrollIntoView({ behavior: 'smooth' })} style={{ cursor: 'pointer', textAlign: 'center', flex: '1 1 180px', padding: '16px 12px', borderRadius: 14, border: '1px solid rgba(255,255,255,0.05)', background: 'rgba(255,255,255,0.02)', transition: 'all 0.3s' }}>
+            <div style={{ marginTop: 28, display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap', maxWidth: 720, margin: '28px auto 0' }}>
+              <div onClick={() => document.getElementById('popular-section')?.scrollIntoView({ behavior: 'smooth' })} style={{ cursor: 'pointer', textAlign: 'center', flex: '1 1 180px', padding: '16px 12px', borderRadius: 14, border: '1px solid rgba(255,69,98,0.12)', background: 'rgba(255,69,98,0.04)', transition: 'all 0.3s', boxShadow: '0 0 20px rgba(255,69,98,0.06)' }}>
                 <div style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 14, fontWeight: 600, color: '#E8ECF1', marginBottom: 4 }}>Popular Charts</div>
                 <div style={{ fontSize: 12, color: 'rgba(232,236,241,0.35)', lineHeight: 1.5 }}>Recently created & suggested charts from SOCRadar</div>
               </div>
-              <div onClick={() => navigate('/reports')} style={{ cursor: 'pointer', textAlign: 'center', flex: '1 1 180px', padding: '16px 12px', borderRadius: 14, border: '1px solid rgba(255,255,255,0.05)', background: 'rgba(255,255,255,0.02)', transition: 'all 0.3s' }}>
+              <div onClick={() => navigate('/reports')} style={{ cursor: 'pointer', textAlign: 'center', flex: '1 1 180px', padding: '16px 12px', borderRadius: 14, border: '1px solid rgba(59,130,246,0.12)', background: 'rgba(59,130,246,0.04)', transition: 'all 0.3s', boxShadow: '0 0 20px rgba(59,130,246,0.06)' }}>
                 <div style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 14, fontWeight: 600, color: '#E8ECF1', marginBottom: 4 }}>Global Reports</div>
-                <div style={{ fontSize: 12, color: 'rgba(232,236,241,0.35)', lineHeight: 1.5 }}>Key charts from IBM, CrowdStrike, Verizon DBIR & more</div>
+                <div style={{ fontSize: 12, color: 'rgba(232,236,241,0.35)', lineHeight: 1.5 }}>Charts from recently released trusted sources</div>
               </div>
-              <div onClick={() => navigate('/builder')} style={{ cursor: 'pointer', textAlign: 'center', flex: '1 1 180px', padding: '16px 12px', borderRadius: 14, border: '1px solid rgba(255,255,255,0.05)', background: 'rgba(255,255,255,0.02)', transition: 'all 0.3s' }}>
+              <div onClick={() => navigate('/builder')} style={{ cursor: 'pointer', textAlign: 'center', flex: '1 1 180px', padding: '16px 12px', borderRadius: 14, border: '1px solid rgba(255,69,98,0.12)', background: 'rgba(255,69,98,0.04)', transition: 'all 0.3s', boxShadow: '0 0 20px rgba(255,69,98,0.06)' }}>
                 <div style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 14, fontWeight: 600, color: '#E8ECF1', marginBottom: 4 }}>Custom Builder</div>
                 <div style={{ fontSize: 12, color: 'rgba(232,236,241,0.35)', lineHeight: 1.5 }}>Build your own charts with full control over data & filters</div>
               </div>
@@ -96,10 +96,10 @@ export default function Landing() {
         <Reveal>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 16, marginBottom: 44 }}>
             <div>
-              <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(255,69,98,0.55)', marginBottom: 14 }}>
+              <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(255,69,98,0.85)', marginBottom: 14 }}>
                 <span style={{ animation: 'gentlePulse 2.5s ease-in-out infinite', display: 'inline-block' }}>●</span>&nbsp;&nbsp;Popular Charts
               </div>
-              <h2 style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 'clamp(26px,3.5vw,40px)', fontWeight: 600, lineHeight: 1.15, color: '#E8ECF1', marginBottom: 14, letterSpacing: '-0.02em' }}>What CISOs are looking at</h2>
+              <h2 style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 'clamp(26px,3.5vw,40px)', fontWeight: 600, lineHeight: 1.15, color: '#E8ECF1', marginBottom: 14, letterSpacing: '-0.02em' }}>What other CISOs are looking at</h2>
               <p style={{ fontSize: 15, lineHeight: 1.7, color: 'rgba(232,236,241,0.38)', fontWeight: 300, maxWidth: 600 }}>Explore ransomware, phishing, and dark web threat data through ready-made charts. Tailored for industry and region for security reporting.</p>
             </div>
             <button onClick={() => navigate('/popular')} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '10px 18px', fontFamily: "'Satoshi','DM Sans',sans-serif", fontSize: 12, fontWeight: 600, background: 'transparent', color: 'rgba(232,236,241,0.55)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 12, cursor: 'pointer' }}>
@@ -108,7 +108,7 @@ export default function Landing() {
           </div>
         </Reveal>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 18 }}>
-          {POPULAR.map((c, i) => (
+          {POPULAR.slice(0, 6).map((c, i) => (
             <Reveal key={i} delay={i * 70}>
               <PopularChartCard
                 {...c}
@@ -185,7 +185,7 @@ export default function Landing() {
       <section style={{ position: 'relative', zIndex: 1, padding: '40px 24px 60px', maxWidth: 1100, margin: '0 auto' }}>
         <Reveal>
           <div style={{ textAlign: 'center', marginBottom: 44 }}>
-            <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, letterSpacing: '0.12em', color: 'rgba(255,69,98,0.55)', textTransform: 'uppercase', marginBottom: 14 }}>
+            <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, letterSpacing: '0.12em', color: 'rgba(255,69,98,0.85)', textTransform: 'uppercase', marginBottom: 14 }}>
               <span style={{ animation: 'gentlePulse 2.5s ease-in-out infinite', display: 'inline-block' }}>●</span>&nbsp;&nbsp;Custom Builder
             </div>
             <h2 style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 'clamp(26px,3.5vw,40px)', fontWeight: 600, lineHeight: 1.15, color: '#E8ECF1', letterSpacing: '-0.02em' }}>Or pick a category to build your own</h2>
@@ -197,7 +197,7 @@ export default function Landing() {
       {/* FINAL CTA */}
       <section style={{ position: 'relative', zIndex: 1, padding: '60px 24px 120px', textAlign: 'center', maxWidth: 560, margin: '0 auto' }}>
         <Reveal>
-          <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(255,69,98,0.55)', marginBottom: 14 }}>Completely free</div>
+          <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(255,69,98,0.85)', marginBottom: 14 }}>Completely free</div>
           <h2 style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 'clamp(26px,3.5vw,40px)', fontWeight: 600, lineHeight: 1.15, color: '#E8ECF1', marginBottom: 14, letterSpacing: '-0.02em' }}>
             Stop Googling for stats.<br /><span style={{ color: '#FF4562' }}>Start presenting them.</span>
           </h2>

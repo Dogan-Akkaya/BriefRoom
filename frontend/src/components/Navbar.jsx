@@ -12,10 +12,10 @@ export default function Navbar() {
   }, []);
 
   const links = [
-    { label: "Popular Charts", path: "/popular" },
-    { label: "Global Reports", path: "/reports" },
-    { label: "Custom Builder", path: "/builder" },
-    { label: "Methodology", path: "/methodology" },
+    { label: "Popular Charts", path: "/popular", activeColor: "#FF4562" },
+    { label: "Global Reports", path: "/reports", activeColor: "#3B82F6" },
+    { label: "Custom Builder", path: "/builder", activeColor: "#FF4562" },
+    { label: "Methodology", path: "/methodology", activeColor: "#FF4562" },
   ];
 
   return (
@@ -62,15 +62,19 @@ export default function Navbar() {
           className="br-nav-desktop"
           style={{ display: "flex", gap: 28, alignItems: "center" }}
         >
-          {links.map((link) => (
-            <span
-              key={link.path}
-              className={`br-nav-link${location.pathname.startsWith(link.path) ? " active" : ""}`}
-              onClick={() => navigate(link.path)}
-            >
-              {link.label}
-            </span>
-          ))}
+          {links.map((link) => {
+            const isActive = location.pathname.startsWith(link.path);
+            return (
+              <span
+                key={link.path}
+                className="br-nav-link"
+                style={isActive ? { color: '#E8ECF1', borderBottomColor: link.activeColor } : {}}
+                onClick={() => navigate(link.path)}
+              >
+                {link.label}
+              </span>
+            );
+          })}
         </div>
       </nav>
     </>
