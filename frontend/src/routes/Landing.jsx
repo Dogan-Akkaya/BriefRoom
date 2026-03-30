@@ -36,8 +36,8 @@ export default function Landing() {
           </div>
           <h1 style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 'clamp(38px,6.5vw,74px)', fontWeight: 800, lineHeight: 1.05, maxWidth: 920, margin: '0 auto 28px', letterSpacing: '-0.035em', color: '#FFFFFF', textShadow: '0 2px 30px rgba(10,14,26,0.8)', opacity: loaded ? 1 : 0, transform: loaded ? 'none' : 'translateY(28px)', transition: 'all 0.8s cubic-bezier(0.16,1,0.3,1) 0.35s' }}>
             <FlickerText delay={600}>
-              <span style={{ color: '#FFFFFF' }}>Instant charts for</span><br />
-              <span style={{ background: 'linear-gradient(135deg,#FF4562 0%,#F97316 50%,#FF4562 100%)', backgroundSize: '200% auto', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>smarter security decisions</span>
+              <span style={{ color: '#FFFFFF' }}>Stop Googling for stats.</span><br />
+              <span style={{ background: 'linear-gradient(135deg,#FF4562 0%,#F97316 50%,#FF4562 100%)', backgroundSize: '200% auto', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Start presenting them.</span>
             </FlickerText>
           </h1>
           <p style={{ fontSize: 17, lineHeight: 1.7, color: 'rgba(232,236,241,0.6)', maxWidth: 580, margin: '0 auto 16px', fontWeight: 400, opacity: loaded ? 1 : 0, transition: 'all 0.8s cubic-bezier(0.16,1,0.3,1) 0.5s', textShadow: '0 2px 20px rgba(10,14,26,0.9)' }}>
@@ -196,7 +196,7 @@ export default function Landing() {
         <Reveal>
           <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(255,69,98,0.85)', marginBottom: 14 }}>Completely free</div>
           <h2 style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 'clamp(26px,3.5vw,40px)', fontWeight: 600, lineHeight: 1.15, color: '#E8ECF1', marginBottom: 14, letterSpacing: '-0.02em' }}>
-            Stop Googling for stats.<br /><span style={{ color: '#FF4562' }}>Start presenting them.</span>
+            Instant charts for<br /><span style={{ color: '#FF4562' }}>smarter security decisions</span>
           </h2>
           <p style={{ fontSize: 15, lineHeight: 1.7, color: 'rgba(232,236,241,0.38)', fontWeight: 300, maxWidth: 500, margin: '0 auto 36px', textAlign: 'center' }}>Explore threat data through ready-made charts or build your own. Tailored for your industry and region.</p>
           <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
