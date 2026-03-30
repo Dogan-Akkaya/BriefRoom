@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { POPULAR } from '../lib/data'
 import PopularChartCard from '../components/PopularChartCard'
@@ -56,6 +56,8 @@ export default function Popular() {
   const [industry, setIndustry] = useState('All Industries')
   const [region, setRegion] = useState('Global')
   const [trend, setTrend] = useState('All')
+
+  useEffect(() => { document.title = 'Popular Security Charts — Cybersecurity Visualizations | Brief Room' }, [])
 
   const filtered = useMemo(
     () => POPULAR.filter(c => matchesCategory(c, category) && matchesIndustry(c, industry) && matchesTrend(c, trend)),

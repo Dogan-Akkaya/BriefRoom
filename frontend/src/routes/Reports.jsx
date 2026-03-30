@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react'
+import React, { useState, useMemo, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { GLOBAL_REPORTS } from '../lib/data'
 import ReportCard from '../components/ReportCard'
@@ -36,6 +36,8 @@ export default function Reports() {
   const [categoryFilter, setCategoryFilter] = useState('All')
   const [yearFilter, setYearFilter] = useState('All')
   const [regionFilter, setRegionFilter] = useState('Global')
+
+  useEffect(() => { document.title = 'Global Threat Reports — IBM, CrowdStrike, Verizon DBIR | Brief Room' }, [])
 
   const filtered = useMemo(() => {
     return GLOBAL_REPORTS.filter((r) => {

@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useToastStore } from '../stores/useToastStore'
+import { downloadPNG } from '../lib/export'
 import Spark from './Spark'
 import PNGExportModal from './PNGExportModal'
 import ShareLinkModal from './ShareLinkModal'
@@ -54,10 +55,19 @@ export default function ChartPreviewModal({ chart, type, onClose, onCustomize })
   const toast = useToastStore((s) => s.show)
   const [showPNGModal, setShowPNGModal] = useState(false)
   const [showShareModal, setShowShareModal] = useState(false)
+  const [pngMode, setPngMode] = useState('export') // 'export' or 'customize'
+  const chartAreaRef = useRef(null)
 
   if (!chart) return null
 
   const isPopular = type === 'popular'
+
+  const handleDirectExport = async () => {
+    if (chartAreaRef.current) {
+      const ok = await downloadPNG(chartAreaRef.current, `briefroom-${chart.id || 'chart'}`)
+      if (ok) toast('Chart exported!')
+    }
+  }
 
   return (
     <div
@@ -100,6 +110,7 @@ export default function ChartPreviewModal({ chart, type, onClose, onCustomize })
         {isPopular ? (
           /* ── Popular Mode ── */
           <>
+            <div ref={chartAreaRef}>
             {/* Tag pill */}
             <span style={{
               display: 'inline-block',
@@ -179,12 +190,14 @@ export default function ChartPreviewModal({ chart, type, onClose, onCustomize })
               </div>
             )}
 
+            </div>{/* end chartAreaRef */}
+
             {/* Divider */}
             <div style={{ height: 1, background: 'rgba(255,255,255,0.06)', marginBottom: 16 }} />
 
             {/* Export row */}
             <div style={{ display: 'flex', gap: 10, marginBottom: 16 }}>
-              <button onClick={() => setShowPNGModal(true)} style={{
+              <button onClick={() => { setPngMode('export'); setShowPNGModal(true) }} style={{
                 flex: 1, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 6,
                 padding: '10px', fontSize: 13, fontWeight: 600,
                 background: 'rgba(255,69,98,0.1)', border: '1px solid rgba(255,69,98,0.25)',
@@ -207,10 +220,7 @@ export default function ChartPreviewModal({ chart, type, onClose, onCustomize })
 
             {/* Customize CTA */}
             <div
-              onClick={() => {
-                if (onCustomize) onCustomize()
-                else navigate(`/builder/${chart.categoryId}`)
-              }}
+              onClick={() => { setPngMode('customize'); setShowPNGModal(true) }}
               style={{
                 background: 'rgba(255,69,98,0.1)',
                 border: '1px solid rgba(255,69,98,0.25)',
@@ -223,12 +233,13 @@ export default function ChartPreviewModal({ chart, type, onClose, onCustomize })
                 transition: 'all 0.2s',
               }}
             >
-              Customize in Builder →
+              Customize & Export →
             </div>
           </>
         ) : (
           /* ── Report Mode ── */
           <>
+            <div ref={chartAreaRef}>
             {/* Source + External badges */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 14 }}>
               <span style={{
@@ -314,12 +325,14 @@ export default function ChartPreviewModal({ chart, type, onClose, onCustomize })
               Source: {chart.source}
             </div>
 
+            </div>{/* end chartAreaRef */}
+
             {/* Divider */}
             <div style={{ height: 1, background: 'rgba(255,255,255,0.06)', marginBottom: 16 }} />
 
             {/* Export buttons */}
             <div style={{ display: 'flex', gap: 10 }}>
-              <button onClick={() => setShowPNGModal(true)} style={{
+              <button onClick={handleDirectExport} style={{
                 flex: 1, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 6,
                 padding: '10px', fontSize: 13, fontWeight: 600,
                 background: 'rgba(255,69,98,0.1)', border: '1px solid rgba(255,69,98,0.25)',
@@ -339,7 +352,7 @@ export default function ChartPreviewModal({ chart, type, onClose, onCustomize })
           </>
         )}
       </div>
-      {showPNGModal && <PNGExportModal onClose={() => setShowPNGModal(false)} categoryId={chart.categoryId || chart.id} />}
+      {showPNGModal && <PNGExportModal onClose={() => setShowPNGModal(false)} chartType={type} mode={pngMode} onExport={handleDirectExport} />}
       {showShareModal && <ShareLinkModal onClose={() => setShowShareModal(false)} categoryId={chart.categoryId || chart.id} />}
     </div>
   )

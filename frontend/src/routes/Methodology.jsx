@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const cardStyle = {
@@ -38,6 +39,7 @@ const labelStyle = {
 
 export default function Methodology() {
   const navigate = useNavigate()
+  useEffect(() => { document.title = 'Data Sources & Methodology — Threat Intelligence | Brief Room' }, [])
 
   return (
     <div style={{ minHeight: '100vh', background: '#0A0E1A', color: '#E8ECF1' }}>

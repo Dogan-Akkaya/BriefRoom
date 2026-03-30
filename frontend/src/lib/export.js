@@ -1,11 +1,17 @@
 import { toPng } from 'html-to-image'
 
 export async function downloadPNG(element, filename = 'chart') {
-  const url = await toPng(element, { backgroundColor: '#151C2F' })
-  const link = document.createElement('a')
-  link.download = `${filename}.png`
-  link.href = url
-  link.click()
+  try {
+    const url = await toPng(element, { backgroundColor: '#151C2F' })
+    const link = document.createElement('a')
+    link.download = `${filename}.png`
+    link.href = url
+    link.click()
+    return true
+  } catch (err) {
+    console.error('PNG export failed:', err)
+    return false
+  }
 }
 
 export async function copyToClipboard(element) {

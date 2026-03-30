@@ -39,6 +39,11 @@ export default function Builder() {
 
   // Scroll to top when entering builder
   useEffect(() => { window.scrollTo(0, 0) }, [categoryId])
+  useEffect(() => {
+    document.title = selectedCat
+      ? `${selectedCat.label} Chart Builder | Brief Room`
+      : 'Custom Chart Builder — Threat Intelligence | Brief Room'
+  }, [selectedCat])
 
   const [chartType, setChartType] = useState('bar')
   const [operation, setOperation] = useState('Sum')
@@ -169,6 +174,9 @@ export default function Builder() {
         </div>
       </nav>
 
+      <h1 style={{ position: 'absolute', width: 1, height: 1, overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap' }}>
+        {selectedCat.label} Threat Intelligence Chart Builder — Brief Room by SOCRadar
+      </h1>
       <div style={{ display: 'flex', flex: 1, overflow: 'hidden', position: 'relative', zIndex: 1 }}>
         {/* LEFT — Chart */}
         <div style={{ flex: 1, padding: 24, display: 'flex', flexDirection: 'column', overflow: 'auto' }}>
@@ -243,7 +251,7 @@ export default function Builder() {
             {/* Powered by SOCRadar watermark */}
             <div style={{ position: 'absolute', bottom: 5, right: 16, display: 'flex', alignItems: 'center', gap: 5, opacity: 0.35, pointerEvents: 'none' }}>
               <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 9, color: '#E8ECF1', letterSpacing: '0.04em' }}>Powered by</span>
-              <img src="/socradar-logo-white.png" alt="SOCRadar" style={{ height: 24 }} />
+              <img src="/socradar-logo-white.png" alt="SOCRadar" loading="lazy" style={{ height: 24 }} />
             </div>
           </div>
           <ExportBar onPNGClick={() => setShowPNGModal(true)} onShareClick={() => setShowShareModal(true)} />
@@ -274,7 +282,21 @@ export default function Builder() {
         />
       </div>
 
-      {showPNGModal && <PNGExportModal onClose={() => setShowPNGModal(false)} categoryId={selectedCat?.id} />}
+      {showPNGModal && (
+        <PNGExportModal
+          onClose={() => setShowPNGModal(false)}
+          mode="customize"
+          initialState={{
+            chartType,
+            operation,
+            country,
+            regionMode,
+            industry,
+            threatType: selectedCat?.label || 'Ransomware',
+            categoryId: selectedCat?.id,
+          }}
+        />
+      )}
       {showShareModal && <ShareLinkModal onClose={() => setShowShareModal(false)} categoryId={selectedCat?.id} />}
     </div>
   )

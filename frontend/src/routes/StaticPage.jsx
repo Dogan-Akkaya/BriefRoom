@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 
 const PLACEHOLDERS = {
@@ -27,6 +28,8 @@ export default function StaticPage() {
     title: slug ? slug.charAt(0).toUpperCase() + slug.slice(1) : 'Page',
     body: 'This content is currently being prepared. Please check back soon for updates on this topic.',
   }
+
+  useEffect(() => { document.title = `${page.title} | Brief Room` }, [page.title])
 
   return (
     <div style={{ minHeight: '100vh', background: '#0A0E1A', color: '#E8ECF1' }}>

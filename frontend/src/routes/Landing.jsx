@@ -18,7 +18,7 @@ export default function Landing() {
   const [previewChart, setPreviewChart] = useState(null)
   const [previewType, setPreviewType] = useState(null)
 
-  useEffect(() => { setTimeout(() => setLoaded(true), 150) }, [])
+  useEffect(() => { document.title = 'Brief Room — Threat Intelligence Charts for CISOs | SOCRadar'; setTimeout(() => setLoaded(true), 150) }, [])
 
   return (
     <div>
@@ -31,7 +31,7 @@ export default function Landing() {
           <div style={{ opacity: loaded ? 1 : 0, transform: loaded ? 'none' : 'translateY(14px)', transition: 'all 0.6s cubic-bezier(0.16,1,0.3,1) 0.2s' }}>
             <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, letterSpacing: '0.14em', color: '#FF4562', marginBottom: 28, textTransform: 'uppercase', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, textShadow: '0 0 20px rgba(255,69,98,0.4)' }}>
               <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#FF4562', display: 'inline-block', animation: 'gentlePulse 2.5s ease-in-out infinite', boxShadow: '0 0 8px rgba(255,69,98,0.6)' }} />
-              Cyber Intelligence for Board & Security Leaders
+              Cyber Intelligence for CISOs & Security Leaders
             </div>
           </div>
           <h1 style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 'clamp(38px,6.5vw,74px)', fontWeight: 800, lineHeight: 1.05, maxWidth: 920, margin: '0 auto 28px', letterSpacing: '-0.035em', color: '#FFFFFF', textShadow: '0 2px 30px rgba(10,14,26,0.8)', opacity: loaded ? 1 : 0, transform: loaded ? 'none' : 'translateY(28px)', transition: 'all 0.8s cubic-bezier(0.16,1,0.3,1) 0.35s' }}>

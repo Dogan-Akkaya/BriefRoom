@@ -16,7 +16,7 @@ const SOURCES_LIST = ['IBM X-Force', 'CrowdStrike', 'Verizon DBIR', 'Mandiant M-
 export default function SearchPanel() {
   const [query, setQuery] = useState('')
   const [focused, setFocused] = useState(false)
-  const [activeFilter, setActiveFilter] = useState(null)
+  const [activeFilters, setActiveFilters] = useState([])
   const containerRef = useRef(null)
   const inputRef = useRef(null)
   const navigate = useNavigate()
@@ -26,7 +26,6 @@ export default function SearchPanel() {
     function handleClickOutside(e) {
       if (containerRef.current && !containerRef.current.contains(e.target)) {
         setFocused(false)
-        setActiveFilter(null)
       }
     }
     document.addEventListener('mousedown', handleClickOutside)
@@ -38,7 +37,6 @@ export default function SearchPanel() {
     function handleKey(e) {
       if (e.key === 'Escape') {
         setFocused(false)
-        setActiveFilter(null)
         inputRef.current?.blur()
       }
     }
@@ -48,64 +46,81 @@ export default function SearchPanel() {
 
   const activeCategories = useMemo(() => CATEGORIES.filter(c => c.hasData), [])
 
-  // Search results when typing with no active filter
+  // Combined search results respecting active filters + query
   const searchResults = useMemo(() => {
-    if (!query || activeFilter) return null
     const q = query.toLowerCase()
+    const hasFilters = activeFilters.length > 0
 
-    const popularMatches = POPULAR
-      .filter(p => p.title.toLowerCase().includes(q))
-      .slice(0, 3)
+    if (!q && !hasFilters) return null
 
-    const reportMatches = GLOBAL_REPORTS
-      .filter(r => r.title.toLowerCase().includes(q) || r.source.toLowerCase().includes(q))
-      .slice(0, 3)
+    let popularMatches = POPULAR
+    let reportMatches = GLOBAL_REPORTS
+    let categoryMatches = CATEGORIES.filter(c => c.hasData)
 
-    const categoryMatches = CATEGORIES
-      .filter(c => c.hasData && (c.label.toLowerCase().includes(q) || c.desc.toLowerCase().includes(q)))
-      .slice(0, 3)
-
-    if (!popularMatches.length && !reportMatches.length && !categoryMatches.length) return null
-    return { popular: popularMatches, reports: reportMatches, categories: categoryMatches }
-  }, [query, activeFilter])
-
-  // Filter mode results
-  const filterResults = useMemo(() => {
-    if (!activeFilter) return null
-    const q = query.toLowerCase()
-
-    if (activeFilter === 'industry') {
-      return INDUSTRIES_LIST.filter(item => !q || item.toLowerCase().includes(q))
+    // Apply text query
+    if (q) {
+      popularMatches = popularMatches.filter(p => p.title.toLowerCase().includes(q))
+      reportMatches = reportMatches.filter(r => r.title.toLowerCase().includes(q) || r.source.toLowerCase().includes(q))
+      categoryMatches = categoryMatches.filter(c => c.label.toLowerCase().includes(q) || c.desc.toLowerCase().includes(q))
     }
-    if (activeFilter === 'country') {
-      return COUNTRIES_LIST.filter(item => !q || item.toLowerCase().includes(q))
+
+    // Build filter result sections
+    const filterSections = {}
+    if (hasFilters) {
+      if (activeFilters.includes('industry')) {
+        filterSections.industry = INDUSTRIES_LIST.filter(item => !q || item.toLowerCase().includes(q))
+      }
+      if (activeFilters.includes('country')) {
+        filterSections.country = COUNTRIES_LIST.filter(item => !q || item.toLowerCase().includes(q))
+      }
+      if (activeFilters.includes('attack')) {
+        filterSections.attack = categoryMatches
+      }
+      if (activeFilters.includes('source')) {
+        filterSections.source = SOURCES_LIST.filter(item => !q || item.toLowerCase().includes(q))
+      }
     }
-    if (activeFilter === 'attack') {
-      return CATEGORIES.filter(c => c.hasData && (!q || c.label.toLowerCase().includes(q)))
+
+    // If only filters (no query text), show filter sections only
+    if (hasFilters) {
+      return { filterSections, popular: [], reports: [], categories: [] }
     }
-    if (activeFilter === 'source') {
-      return SOURCES_LIST.filter(item => !q || item.toLowerCase().includes(q))
+
+    // Text search only
+    return {
+      filterSections: {},
+      popular: popularMatches.slice(0, 3),
+      reports: reportMatches.slice(0, 3),
+      categories: categoryMatches.slice(0, 3),
     }
-    return null
-  }, [activeFilter, query])
+  }, [query, activeFilters])
 
   function closeAndNavigate(path) {
     setFocused(false)
-    setActiveFilter(null)
     setQuery('')
     navigate(path)
   }
 
   function handleFilterClick(filterKey) {
-    setActiveFilter(prev => prev === filterKey ? null : filterKey)
-    setQuery('')
+    setActiveFilters(prev =>
+      prev.includes(filterKey)
+        ? prev.filter(k => k !== filterKey)
+        : [...prev, filterKey]
+    )
     inputRef.current?.focus()
   }
 
-  const showDropdown = focused && (query.length > 0 || activeFilter || query.length === 0)
+  function handleSearch() {
+    // Navigate to popular page with search context
+    if (query || activeFilters.length > 0) {
+      closeAndNavigate('/popular')
+    }
+  }
 
-  const placeholderText = activeFilter
-    ? `Search ${FILTER_CHIPS.find(f => f.key === activeFilter)?.label}...`
+  const showDropdown = focused && (query.length > 0 || activeFilters.length > 0 || true)
+
+  const placeholderText = activeFilters.length > 0
+    ? `Search ${activeFilters.map(f => FILTER_CHIPS.find(c => c.key === f)?.label).join(' + ')}...`
     : 'Search threats, charts, reports...'
 
   // --- Styles ---
@@ -158,7 +173,7 @@ export default function SearchPanel() {
     background: isActive ? 'rgba(255,69,98,0.06)' : 'rgba(255,255,255,0.02)',
     color: isActive ? '#FF4562' : 'rgba(232,236,241,0.35)',
     cursor: 'pointer',
-    transition: 'all 0.2s',
+    transition: 'all 0.25s cubic-bezier(0.16,1,0.3,1)',
     userSelect: 'none',
   })
 
@@ -325,112 +340,82 @@ export default function SearchPanel() {
     )
   }
 
-  // --- Search results (query, no filter) ---
-  function renderSearchResults() {
+  // --- Combined results renderer ---
+  function renderCombinedResults() {
     if (!searchResults) {
-      return (
-        <div style={{ padding: '20px 18px', fontSize: 13, color: 'rgba(232,236,241,0.25)', textAlign: 'center' }}>
-          No results found for &ldquo;{query}&rdquo;
-        </div>
-      )
+      if (query) {
+        return (
+          <div style={{ padding: '20px 18px', fontSize: 13, color: 'rgba(232,236,241,0.25)', textAlign: 'center' }}>
+            No results found for &ldquo;{query}&rdquo;
+          </div>
+        )
+      }
+      return null
     }
+
+    const { filterSections, popular, reports, categories } = searchResults
 
     return (
       <>
-        {searchResults.popular.length > 0 && (
+        {/* Filter sections */}
+        {filterSections.industry?.length > 0 && (
+          <>
+            {renderSectionHeader('Industry', '#FF4562')}
+            {filterSections.industry.map((item, i) => (
+              <ResultItem key={`fi-${i}`} badge="industry" onClick={() => closeAndNavigate('/builder/ransomware')} icon={<span style={typeIconDot('#FF4562')} />}>{item}</ResultItem>
+            ))}
+          </>
+        )}
+        {filterSections.country?.length > 0 && (
+          <>
+            {renderSectionHeader('Country', '#FF4562')}
+            {filterSections.country.map((item, i) => (
+              <ResultItem key={`fc-${i}`} badge="country" onClick={() => closeAndNavigate('/builder/ransomware')} icon={<span style={typeIconDot('#FF4562')} />}>{item}</ResultItem>
+            ))}
+          </>
+        )}
+        {filterSections.attack?.length > 0 && (
+          <>
+            {renderSectionHeader('Attack Type', '#FF4562')}
+            {filterSections.attack.map((cat, i) => (
+              <ResultItem key={`fa-${i}`} badge={cat.desc.split(',')[0]} onClick={() => closeAndNavigate(`/builder/${cat.id}`)} icon={<span style={typeIconLetter}>B</span>}>{cat.label}</ResultItem>
+            ))}
+          </>
+        )}
+        {filterSections.source?.length > 0 && (
+          <>
+            {renderSectionHeader('Source', '#3B82F6')}
+            {filterSections.source.map((item, i) => (
+              <ResultItem key={`fs-${i}`} badge="source" onClick={() => closeAndNavigate('/reports')} icon={<span style={typeIconDot('#3B82F6')} />}>{item}</ResultItem>
+            ))}
+          </>
+        )}
+
+        {/* Text search sections */}
+        {popular?.length > 0 && (
           <>
             {renderSectionHeader('Popular Charts', '#FF4562')}
-            {searchResults.popular.map((p, i) => (
-              <ResultItem
-                key={`sp-${i}`}
-                badge={p.views}
-                onClick={() => closeAndNavigate('/popular')}
-                icon={<span style={typeIconDot('#FF4562')} />}
-              >
-                {p.title}
-              </ResultItem>
+            {popular.map((p, i) => (
+              <ResultItem key={`sp-${i}`} badge={p.views} onClick={() => closeAndNavigate('/popular')} icon={<span style={typeIconDot('#FF4562')} />}>{p.title}</ResultItem>
             ))}
           </>
         )}
-
-        {searchResults.categories.length > 0 && (
+        {categories?.length > 0 && (
           <>
             {renderSectionHeader('Custom Builder', '#FF4562')}
-            {searchResults.categories.map((cat, i) => (
-              <ResultItem
-                key={`sc-${i}`}
-                badge={cat.label}
-                onClick={() => closeAndNavigate(`/builder/${cat.id}`)}
-                icon={<span style={typeIconLetter}>B</span>}
-              >
-                {cat.label} &mdash; {cat.desc}
-              </ResultItem>
+            {categories.map((cat, i) => (
+              <ResultItem key={`sc-${i}`} badge={cat.label} onClick={() => closeAndNavigate(`/builder/${cat.id}`)} icon={<span style={typeIconLetter}>B</span>}>{cat.label} &mdash; {cat.desc}</ResultItem>
             ))}
           </>
         )}
-
-        {searchResults.reports.length > 0 && (
+        {reports?.length > 0 && (
           <>
             {renderSectionHeader('Global Reports', '#3B82F6')}
-            {searchResults.reports.map((r, i) => (
-              <ResultItem
-                key={`sr-${i}`}
-                badge={r.sourceShort}
-                onClick={() => closeAndNavigate('/reports')}
-                icon={<span style={typeIconDot('#3B82F6')} />}
-              >
-                {r.sourceShort}: {r.title}
-              </ResultItem>
+            {reports.map((r, i) => (
+              <ResultItem key={`sr-${i}`} badge={r.sourceShort} onClick={() => closeAndNavigate('/reports')} icon={<span style={typeIconDot('#3B82F6')} />}>{r.sourceShort}: {r.title}</ResultItem>
             ))}
           </>
         )}
-      </>
-    )
-  }
-
-  // --- Filter mode results ---
-  function renderFilterResults() {
-    if (!filterResults || filterResults.length === 0) {
-      return (
-        <div style={{ padding: '20px 18px', fontSize: 13, color: 'rgba(232,236,241,0.25)', textAlign: 'center' }}>
-          No matches found
-        </div>
-      )
-    }
-
-    const filterLabel = FILTER_CHIPS.find(f => f.key === activeFilter)?.label || ''
-    const dotColor = activeFilter === 'source' ? '#3B82F6' : '#FF4562'
-
-    return (
-      <>
-        {renderSectionHeader(filterLabel, dotColor)}
-        {filterResults.map((item, i) => {
-          // Determine display text and navigation
-          const isCategory = typeof item === 'object' && item.id
-          const label = isCategory ? item.label : item
-
-          let onClick
-          if (activeFilter === 'industry' || activeFilter === 'country') {
-            onClick = () => closeAndNavigate('/builder/ransomware')
-          } else if (activeFilter === 'attack' && isCategory) {
-            onClick = () => closeAndNavigate(`/builder/${item.id}`)
-          } else if (activeFilter === 'source') {
-            onClick = () => closeAndNavigate('/reports')
-          }
-
-          const badge = activeFilter === 'attack' && isCategory ? item.desc.split(',')[0] : activeFilter
-
-          return (
-            <ResultItem
-              key={`filt-${i}`}
-              badge={badge}
-              onClick={onClick}
-              icon={<span style={typeIconDot(dotColor)} />}
-            >
-              {label}
-            </ResultItem>
-          )
-        })}
       </>
     )
   }
@@ -469,26 +454,73 @@ export default function SearchPanel() {
         {/* Dropdown */}
         {showDropdown && focused && (
           <div style={dropdownStyle}>
-            {activeFilter
-              ? renderFilterResults()
-              : query.length > 0
-                ? renderSearchResults()
-                : renderDefaultSuggestions()}
+            {(query.length > 0 || activeFilters.length > 0)
+              ? renderCombinedResults()
+              : renderDefaultSuggestions()}
           </div>
         )}
       </div>
 
-      {/* Filter chips */}
+      {/* Filter chips + Search button */}
       <div style={chipsRowStyle}>
-        {FILTER_CHIPS.map((chip) => (
+        {FILTER_CHIPS.map((chip) => {
+          const isActive = activeFilters.includes(chip.key)
+          return (
+            <span
+              key={chip.key}
+              style={chipStyle(isActive)}
+              onClick={() => handleFilterClick(chip.key)}
+              onMouseEnter={e => {
+                if (!isActive) {
+                  e.currentTarget.style.borderColor = 'rgba(255,69,98,0.2)'
+                  e.currentTarget.style.background = 'rgba(255,69,98,0.04)'
+                  e.currentTarget.style.color = 'rgba(232,236,241,0.6)'
+                  e.currentTarget.style.transform = 'translateY(-2px)'
+                }
+              }}
+              onMouseLeave={e => {
+                if (!isActive) {
+                  e.currentTarget.style.borderColor = 'rgba(255,255,255,0.06)'
+                  e.currentTarget.style.background = 'rgba(255,255,255,0.02)'
+                  e.currentTarget.style.color = 'rgba(232,236,241,0.35)'
+                  e.currentTarget.style.transform = 'translateY(0)'
+                }
+              }}
+            >
+              {chip.label}
+            </span>
+          )
+        })}
+        {(query || activeFilters.length > 0) && (
           <span
-            key={chip.key}
-            style={chipStyle(activeFilter === chip.key)}
-            onClick={() => handleFilterClick(chip.key)}
+            style={{
+              fontSize: 10,
+              fontFamily: 'JetBrains Mono, monospace',
+              padding: '4px 14px',
+              borderRadius: 6,
+              border: '1px solid rgba(255,69,98,0.35)',
+              background: 'rgba(255,69,98,0.12)',
+              color: '#FF4562',
+              cursor: 'pointer',
+              transition: 'all 0.25s cubic-bezier(0.16,1,0.3,1)',
+              userSelect: 'none',
+              fontWeight: 600,
+            }}
+            onClick={handleSearch}
+            onMouseEnter={e => {
+              e.currentTarget.style.background = 'rgba(255,69,98,0.2)'
+              e.currentTarget.style.transform = 'translateY(-2px)'
+              e.currentTarget.style.boxShadow = '0 4px 16px rgba(255,69,98,0.15)'
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.background = 'rgba(255,69,98,0.12)'
+              e.currentTarget.style.transform = 'translateY(0)'
+              e.currentTarget.style.boxShadow = 'none'
+            }}
           >
-            {chip.label}
+            Search →
           </span>
-        ))}
+        )}
       </div>
     </div>
   )
