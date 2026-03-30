@@ -28,7 +28,7 @@ export const DATA_POINTS_BY_CATEGORY = {
     { id: 'attack_volume', label: 'Attack Volume', elements: ['Healthcare', 'Finance', 'Manufacturing', 'Government', 'Education', 'Energy', 'Retail', 'Technology'] },
     { id: 'ransom_demands', label: 'Ransom Demands ($)', elements: ['< $100K', '$100K-$500K', '$500K-$1M', '$1M-$5M', '$5M-$10M', '> $10M'] },
     { id: 'recovery_time', label: 'Recovery Time (days)', elements: ['Healthcare', 'Finance', 'Manufacturing', 'Government', 'Education', 'Energy'] },
-    { id: 'payment_rate', label: 'Payment Rate (%)', elements: ['2021', '2022', '2023', '2024', '2025', '2026'] },
+    { id: 'payment_rate', label: 'Payment Rate (%)', elements: ['0-10%', '10-25%', '25-50%', '50-75%', '75-100%', 'Undisclosed'] },
     { id: 'targeted_sectors', label: 'Targeted Sectors', elements: ['Healthcare', 'Financial Services', 'Manufacturing', 'Government', 'Technology', 'Education', 'Energy', 'Retail'] },
   ],
   phishing: [
@@ -36,7 +36,7 @@ export const DATA_POINTS_BY_CATEGORY = {
     { id: 'click_rate', label: 'Click-Through Rate (%)', elements: ['Healthcare', 'Finance', 'Education', 'Government', 'Retail', 'Technology'] },
     { id: 'bec_losses', label: 'BEC Losses ($)', elements: ['Wire Transfer', 'Gift Cards', 'Payroll Diversion', 'Invoice Fraud', 'Real Estate', 'Vendor Impersonation'] },
     { id: 'delivery_vectors', label: 'Delivery Vectors', elements: ['Email Link', 'Attachment', 'QR Code', 'SMS', 'Voice', 'Social Media'] },
-    { id: 'impersonation', label: 'Impersonation Targets', elements: ['Microsoft', 'Google', 'DHL', 'Amazon', 'LinkedIn', 'Apple', 'Meta', 'Netflix'] },
+    { id: 'impersonation', label: 'Impersonation Targets', elements: ['Microsoft', 'Google', 'Okta', 'Salesforce', 'DHL', 'DocuSign', 'LinkedIn', 'Apple'] },
   ],
   data_leaks: [
     { id: 'records_exposed', label: 'Records Exposed', elements: ['PII Records', 'Financial Data', 'Credentials', 'Health Records', 'Intellectual Property', 'Source Code'] },
@@ -47,7 +47,7 @@ export const DATA_POINTS_BY_CATEGORY = {
   ],
   vulnerability: [
     { id: 'cve_volume', label: 'CVE Volume', elements: ['RCE', 'Privilege Escalation', 'SQLi', 'XSS', 'Auth Bypass', 'SSRF', 'DoS', 'Info Disclosure'] },
-    { id: 'time_to_exploit', label: 'Time to Exploit (days)', elements: ['2020', '2021', '2022', '2023', '2024', '2025', '2026'] },
+    { id: 'time_to_exploit', label: 'Time to Exploit (days)', elements: ['0-1 day', '1-7 days', '7-30 days', '30-90 days', '90+ days'] },
     { id: 'patch_rate', label: 'Patch Rate (%)', elements: ['Critical', 'High', 'Medium', 'Low'] },
     { id: 'exploit_availability', label: 'Exploit Availability', elements: ['PoC Published', 'Weaponized', 'In-the-Wild', 'Kit Available', 'No Known Exploit'] },
     { id: 'severity_dist', label: 'Severity Distribution', elements: ['Critical', 'High', 'Medium', 'Low', 'Informational'] },
@@ -55,22 +55,23 @@ export const DATA_POINTS_BY_CATEGORY = {
   supply_chain: [
     { id: 'incident_count', label: 'Incident Count', elements: ['npm', 'PyPI', 'Maven', 'Docker Hub', 'GitHub Actions', 'NuGet', 'RubyGems', 'Go Modules'] },
     { id: 'malicious_packages', label: 'Malicious Packages', elements: ['Typosquatting', 'Dependency Confusion', 'Account Takeover', 'Build Injection', 'Backdoor', 'Data Exfil'] },
-    { id: 'third_party_rate', label: 'Third-Party Breach Rate', elements: ['2020', '2021', '2022', '2023', '2024', '2025', '2026'] },
+    { id: 'third_party_rate', label: 'Third-Party Breach Rate', elements: ['SaaS Vendors', 'Cloud Providers', 'Managed Services', 'Hardware Supply', 'Open Source Deps', 'Contractors'] },
     { id: 'impact_sector', label: 'Impact by Sector', elements: ['Technology', 'Financial', 'Healthcare', 'Government', 'Manufacturing', 'Retail'] },
     { id: 'attack_vectors', label: 'Attack Vectors', elements: ['Open Source', 'CI/CD Pipeline', 'Cloud Provider', 'SaaS Vendor', 'Managed Services', 'CDN/Infrastructure'] },
   ],
   dark_web_mentions: [
     { id: 'credential_listings', label: 'Credential Listings', elements: ['Corporate Email', 'VPN Credentials', 'Cloud Accounts', 'Database Access', 'Admin Panels', 'API Keys'] },
     { id: 'access_pricing', label: 'Access Broker Pricing ($)', elements: ['Corporate VPN', 'RDP', 'Citrix', 'Cloud Admin', 'Domain Admin', 'Database', 'Email Server'] },
-    { id: 'market_activity', label: 'Market Activity', elements: ['2020', '2021', '2022', '2023', '2024', '2025', '2026'] },
+    { id: 'market_activity', label: 'Market Activity', elements: ['Forums', 'Telegram', 'Marketplaces', 'Paste Sites', 'IRC/Discord', 'Private Channels'] },
     { id: 'forum_posts', label: 'Forum Posts', elements: ['Brand Name', 'Executives', 'Products', 'Domains', 'Code Repos', 'Partners'] },
     { id: 'data_types', label: 'Data Types Listed', elements: ['Credentials', 'PII', 'Credit Cards', 'Health Records', 'Corporate Docs', 'Source Code'] },
   ],
 }
 
-// Seeded RNG data generator — uses composite key for unique data per category+datapoint
-export function generateData(compositeKey) {
-  const seed = compositeKey.split('').reduce((a, c) => a + c.charCodeAt(0), 0)
+// Seeded RNG data generator — uses composite key for unique data per category+datapoint+filters
+export function generateData(compositeKey, filterSuffix = '') {
+  const fullKey = filterSuffix ? `${compositeKey}:${filterSuffix}` : compositeKey
+  const seed = fullKey.split('').reduce((a, c) => a + c.charCodeAt(0), 0)
   const rng = (i) => Math.abs(Math.sin(seed * 9301 + i * 49297) * 233280) % 1
 
   // Look up elements from DATA_POINTS_BY_CATEGORY if key contains underscore

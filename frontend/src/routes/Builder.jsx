@@ -72,8 +72,9 @@ export default function Builder() {
   const rawData = useMemo(() => {
     if (!selectedCat) return []
     const key = dataPoint ? `${selectedCat.id}/${dataPoint}` : selectedCat.id
-    return generateData(key)
-  }, [selectedCat, dataPoint])
+    const filterSuffix = [country, industry, threatGroup].filter(Boolean).join(':')
+    return generateData(key, filterSuffix)
+  }, [selectedCat, dataPoint, country, industry, threatGroup])
 
   // Active months based on date range (map from ALL_MONTHS indices back to month names)
   const activeDateMonths = ALL_MONTHS.slice(dateStart, dateEnd + 1)
@@ -108,9 +109,16 @@ export default function Builder() {
   }, [chartMonthLabels, activeMonthNames, visibleData, operation])
 
   const activeMonths = activeMonthNames
-  const pieData = useMemo(() => visibleData.map(d => ({ name: d.name, value: activeMonths.reduce((s, m) => s + d[m], 0), color: d.color })), [visibleData, activeMonths])
+  const pieData = useMemo(() => visibleData.map(d => {
+    const sum = activeMonths.reduce((s, m) => s + (d[m] || 0), 0)
+    let value = sum
+    if (operation === 'Average') value = Math.round(sum / (activeMonths.length || 1))
+    else if (operation === 'Min') value = Math.min(...activeMonths.map(m => d[m] || 0))
+    else if (operation === 'Max') value = Math.max(...activeMonths.map(m => d[m] || 0))
+    return { name: d.name, value, color: d.color }
+  }), [visibleData, activeMonths, operation])
   const totalSum = pieData.reduce((s, d) => s + d.value, 0)
-  const avgPerElement = visibleData.length > 0 ? Math.round(totalSum / visibleData.length) : 0
+  const avgPerMonth = visibleData.length > 0 && activeMonths.length > 0 ? Math.round(totalSum / activeMonths.length) : 0
   const highlightedData = highlightedElement ? pieData.find(d => d.name === highlightedElement) : null
   const highlightPct = highlightedData ? ((highlightedData.value / totalSum) * 100).toFixed(1) : null
 
@@ -181,8 +189,9 @@ export default function Builder() {
         {/* LEFT — Chart */}
         <div style={{ flex: 1, padding: 24, display: 'flex', flexDirection: 'column', overflow: 'auto' }}>
           {/* Stats */}
+          {visibleData.length > 0 && (
           <div style={{ display: 'flex', gap: 12, marginBottom: 20, flexWrap: 'wrap' }}>
-            {[{ l: 'Total', v: totalSum.toLocaleString(), c: catColor }, { l: 'Avg / Category', v: avgPerElement.toLocaleString(), c: 'rgba(232,236,241,0.7)' }].map((s, i) => (
+            {[{ l: 'Total', v: totalSum.toLocaleString(), c: catColor }, { l: 'Avg / Month', v: avgPerMonth.toLocaleString(), c: 'rgba(232,236,241,0.7)' }].map((s, i) => (
               <div key={i} style={statCardStyle}>
                 <div style={ctrlLabelStyle}>{s.l}</div>
                 <div style={{ ...statValueStyle, color: s.c }}>{s.v}</div>
@@ -201,10 +210,16 @@ export default function Builder() {
               </div>
             )}
           </div>
+          )}
 
           {/* Chart */}
           <div style={{ minHeight: 380, background: 'rgba(255,255,255,0.018)', backdropFilter: 'blur(20px)', border: '1px solid rgba(255,255,255,0.05)', borderRadius: 20, padding: '24px 20px 14px', boxShadow: '0 8px 40px rgba(0,0,0,0.2),inset 0 1px 0 rgba(255,255,255,0.03)', position: 'relative', overflow: 'hidden' }}>
             <div style={{ position: 'absolute', top: 0, left: '10%', right: '10%', height: 1, background: `linear-gradient(90deg,transparent,${catColor}25,transparent)` }} />
+            {operation === 'Break Down' && chartMonthLabels.length <= 1 && (
+              <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: `${catColor}80`, background: `${catColor}08`, border: `1px solid ${catColor}15`, borderRadius: 8, padding: '6px 12px', marginBottom: 10, textAlign: 'center' }}>
+                Select a wider date range for trend view
+              </div>
+            )}
             {visibleData.length === 0 ? (
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: 380, flexDirection: 'column', gap: 12 }}>
                 <div style={{ fontSize: 32, opacity: 0.2 }}>&#128202;</div>
