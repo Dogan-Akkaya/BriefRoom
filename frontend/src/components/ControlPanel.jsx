@@ -1,5 +1,6 @@
 import React from 'react'
 import SearchableSelect from './SearchableSelect'
+import { useToastStore } from '../stores/useToastStore'
 import { ALL_COUNTRIES, ALL_REGIONS, THREAT_GROUPS, ALL_MONTHS, DATA_AVAILABILITY, DATE_PRESETS } from '../lib/data'
 
 const CHART_TYPES = ['bar', 'line', 'area', 'pie']
@@ -19,7 +20,7 @@ const ctrlLabel = {
   fontFamily: "'JetBrains Mono', monospace",
   fontSize: 10,
   letterSpacing: '0.08em',
-  color: 'rgba(232,236,241,0.3)',
+  color: 'rgba(232,236,241,0.45)',
   textTransform: 'uppercase',
   marginBottom: 8,
 }
@@ -198,6 +199,7 @@ export default function ControlPanel({
   rawData, hiddenElements, toggleElement, highlightedElement, toggleHighlight,
   activeMonths, totalSum, catColor,
 }) {
+  const toast = useToastStore((s) => s.show)
   const countryList = regionMode
     ? ALL_REGIONS
     : ALL_COUNTRIES.map(c => c.name)
@@ -223,7 +225,8 @@ export default function ControlPanel({
   const activePreset = DATE_PRESETS.find(p => p.start === dateStart && p.end === dateEnd)
 
   const panelStyle = {
-    width: 350,
+    width: 'min(350px, 40vw)',
+    minWidth: 260,
     flexShrink: 0,
     overflowY: 'auto',
     background: 'rgba(255,255,255,0.012)',
@@ -365,6 +368,9 @@ export default function ControlPanel({
               {p.label}
             </button>
           ))}
+          {!activePreset && (
+            <span style={{ fontSize: 10, padding: '5px 9px', borderRadius: 8, border: `1px solid ${catColor}30`, background: `${catColor}08`, color: catColor, fontFamily: "'Satoshi', sans-serif", fontWeight: 500 }}>Custom</span>
+          )}
         </div>
 
         {/* Start date */}
@@ -460,6 +466,7 @@ export default function ControlPanel({
                   if (hiddenElements.has(d.name)) toggleElement(d.name)
                 })
                 if (highlightedElement) toggleHighlight(highlightedElement)
+                toast('Elements reset')
               }
             }}
             style={{

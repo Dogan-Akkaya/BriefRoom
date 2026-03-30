@@ -97,7 +97,7 @@ export default function ChartPreviewModal({ chart, type, onClose, onCustomize })
           onClick={onClose}
           style={{
             position: 'absolute', top: 16, right: 16,
-            width: 32, height: 32, borderRadius: 8,
+            width: 40, height: 40, borderRadius: 10,
             background: 'rgba(255,255,255,0.04)', border: 'none',
             color: 'rgba(232,236,241,0.4)', fontSize: 16,
             cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -348,6 +348,19 @@ export default function ChartPreviewModal({ chart, type, onClose, onCustomize })
               }}>
                 Share Link
               </button>
+            </div>
+
+            {/* Customize CTA */}
+            <div style={{ height: 1, background: 'rgba(255,255,255,0.06)', margin: '12px 0' }} />
+            <div
+              onClick={() => { setPngMode('customize'); setShowPNGModal(true) }}
+              style={{
+                background: 'rgba(59,130,246,0.08)', border: '1px solid rgba(59,130,246,0.2)',
+                color: '#60A5FA', borderRadius: 12, padding: '12px 24px', width: '100%', textAlign: 'center',
+                fontSize: 14, fontWeight: 600, cursor: 'pointer', fontFamily: "'Satoshi','DM Sans',sans-serif", transition: 'all 0.2s',
+              }}
+            >
+              Customize & Export →
             </div>
           </>
         )}

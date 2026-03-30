@@ -74,12 +74,13 @@ export default function Popular() {
         display: 'flex',
         gap: 32,
         alignItems: 'flex-start',
+        flexWrap: 'wrap',
       }}>
 
         {/* ── Left Sidebar ── */}
         <aside style={{
           width: 220,
-          minWidth: 220,
+          minWidth: 180,
           position: 'sticky',
           top: 96,
           ...glass,
@@ -88,6 +89,16 @@ export default function Popular() {
           flexDirection: 'column',
           gap: 28,
         }}>
+
+          {/* Clear all */}
+          {(category !== 'All' || industry !== 'All Industries' || region !== 'Global' || trend !== 'All') && (
+            <button
+              onClick={() => { setCategory('All'); setIndustry('All Industries'); setRegion('Global'); setTrend('All') }}
+              style={{ background: 'rgba(255,69,98,0.06)', border: '1px solid rgba(255,69,98,0.15)', borderRadius: 8, padding: '7px 0', color: '#FF4562', fontSize: 11, fontFamily: "'JetBrains Mono', monospace", cursor: 'pointer', transition: 'all 0.2s' }}
+            >
+              Clear all filters
+            </button>
+          )}
 
           {/* Category */}
           <div>
@@ -277,12 +288,16 @@ export default function Popular() {
                 cursor: 'pointer',
                 fontFamily: mono,
                 fontSize: 12,
-                color: 'rgba(232,236,241,0.4)',
+                color: 'rgba(232,236,241,0.55)',
                 marginBottom: 40,
-                transition: 'color 0.2s',
+                transition: 'all 0.2s',
+                padding: '6px 14px',
+                borderRadius: 8,
+                border: '1px solid rgba(255,255,255,0.06)',
+                background: 'rgba(255,255,255,0.02)',
               }}
-              onMouseEnter={e => (e.currentTarget.style.color = '#FF4562')}
-              onMouseLeave={e => (e.currentTarget.style.color = 'rgba(232,236,241,0.4)')}
+              onMouseEnter={e => { e.currentTarget.style.color = '#FF4562'; e.currentTarget.style.borderColor = 'rgba(255,69,98,0.2)' }}
+              onMouseLeave={e => { e.currentTarget.style.color = 'rgba(232,236,241,0.55)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.06)' }}
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="19" y1="12" x2="5" y2="12" />

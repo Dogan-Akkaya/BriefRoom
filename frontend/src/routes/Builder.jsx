@@ -205,6 +205,13 @@ export default function Builder() {
           {/* Chart */}
           <div style={{ minHeight: 380, background: 'rgba(255,255,255,0.018)', backdropFilter: 'blur(20px)', border: '1px solid rgba(255,255,255,0.05)', borderRadius: 20, padding: '24px 20px 14px', boxShadow: '0 8px 40px rgba(0,0,0,0.2),inset 0 1px 0 rgba(255,255,255,0.03)', position: 'relative', overflow: 'hidden' }}>
             <div style={{ position: 'absolute', top: 0, left: '10%', right: '10%', height: 1, background: `linear-gradient(90deg,transparent,${catColor}25,transparent)` }} />
+            {visibleData.length === 0 ? (
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: 380, flexDirection: 'column', gap: 12 }}>
+                <div style={{ fontSize: 32, opacity: 0.2 }}>&#128202;</div>
+                <div style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 15, fontWeight: 600, color: 'rgba(232,236,241,0.3)' }}>No data to display</div>
+                <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: 'rgba(232,236,241,0.15)' }}>Try adjusting your filters or showing hidden elements</div>
+              </div>
+            ) : (
             <ResponsiveContainer width="100%" height={380}>
               {chartType === 'bar' ? (
                 <BarChart data={chartData} barCategoryGap="20%" barGap={4}>
@@ -248,6 +255,7 @@ export default function Builder() {
                 </PieChart>
               )}
             </ResponsiveContainer>
+            )}
             {/* Powered by SOCRadar watermark */}
             <div style={{ position: 'absolute', bottom: 5, right: 16, display: 'flex', alignItems: 'center', gap: 5, opacity: 0.35, pointerEvents: 'none' }}>
               <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 9, color: '#E8ECF1', letterSpacing: '0.04em' }}>Powered by</span>

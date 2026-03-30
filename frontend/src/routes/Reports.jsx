@@ -76,16 +76,25 @@ export default function Reports() {
 
   return (
     <div style={{ paddingTop: 80, paddingBottom: 80, maxWidth: 1280, margin: '0 auto', paddingLeft: 24, paddingRight: 24 }}>
-      <div style={{ display: 'flex', gap: 28, alignItems: 'flex-start' }}>
+      <div style={{ display: 'flex', gap: 28, alignItems: 'flex-start', flexWrap: 'wrap' }}>
         {/* Left Sidebar */}
         <div style={{
           width: 220,
-          minWidth: 220,
+          minWidth: 180,
           position: 'sticky',
           top: 100,
           ...glass,
           padding: '20px 16px',
         }}>
+          {/* Clear all */}
+          {(sourceFilter !== 'All' || categoryFilter !== 'All' || yearFilter !== 'All' || regionFilter !== 'Global') && (
+            <button
+              onClick={() => { setSourceFilter('All'); setCategoryFilter('All'); setYearFilter('All'); setRegionFilter('Global') }}
+              style={{ background: 'rgba(255,69,98,0.06)', border: '1px solid rgba(255,69,98,0.15)', borderRadius: 8, padding: '7px 0', width: '100%', color: '#FF4562', fontSize: 11, fontFamily: "'JetBrains Mono', monospace", cursor: 'pointer', transition: 'all 0.2s', marginBottom: 16 }}
+            >
+              Clear all filters
+            </button>
+          )}
           {/* Source */}
           <span style={sectionLabel}>Source</span>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 22 }}>
@@ -185,8 +194,8 @@ export default function Reports() {
                 fontWeight: 500,
                 borderRadius: 8,
                 background: 'rgba(255,255,255,0.04)',
-                color: 'rgba(232,236,241,0.45)',
-                border: '1px solid rgba(255,255,255,0.06)',
+                color: 'rgba(232,236,241,0.55)',
+                border: '1px solid rgba(255,255,255,0.08)',
                 cursor: 'pointer',
                 fontFamily: "'Satoshi', sans-serif",
                 transition: 'all 0.2s',

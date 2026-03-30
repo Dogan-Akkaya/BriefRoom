@@ -453,6 +453,8 @@ export default function SearchPanel() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => setFocused(true)}
+          onKeyDown={(e) => { if (e.key === 'Enter') handleSearch() }}
+          aria-label="Search threats, charts, and reports"
           style={inputStyle}
         />
 
@@ -471,7 +473,7 @@ export default function SearchPanel() {
         {FILTER_CHIPS.map((chip) => {
           const isActive = activeFilters.includes(chip.key)
           return (
-            <span
+            <button
               key={chip.key}
               style={chipStyle(isActive)}
               onClick={() => handleFilterClick(chip.key)}
@@ -493,11 +495,11 @@ export default function SearchPanel() {
               }}
             >
               {chip.label}
-            </span>
+            </button>
           )
         })}
         {(query || activeFilters.length > 0) && (
-          <span
+          <button
             style={{
               fontSize: 10,
               fontFamily: 'JetBrains Mono, monospace',
@@ -524,7 +526,7 @@ export default function SearchPanel() {
             }}
           >
             Search →
-          </span>
+          </button>
         )}
       </div>
     </div>

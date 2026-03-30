@@ -66,22 +66,23 @@ export default function CategoryPicker({ onSelect }) {
               onMouseLeave={() => setHoveredId(null)}
               onClick={() => available && onSelect(cat)}
               style={{
-                background: hovered
+                background: !available ? "rgba(255,255,255,0.008)" : hovered
                   ? "rgba(255,255,255,0.035)"
                   : "rgba(255,255,255,0.015)",
-                border: hovered
+                border: !available ? "1px solid rgba(255,255,255,0.03)" : hovered
                   ? "1px solid rgba(255,255,255,0.1)"
                   : "1px solid rgba(255,255,255,0.06)",
                 borderRadius: 18,
                 padding: 26,
                 cursor: available ? "pointer" : "default",
+                opacity: available ? 1 : 0.45,
                 transition: "all 0.35s cubic-bezier(0.16,1,0.3,1)",
                 backdropFilter: "blur(16px)",
                 position: "relative",
                 overflow: "hidden",
                 animation: `catCardIn 0.5s cubic-bezier(0.16,1,0.3,1) ${i * 60}ms both`,
-                transform: hovered ? "translateY(-4px)" : "translateY(0)",
-                boxShadow: hovered
+                transform: available && hovered ? "translateY(-4px)" : "translateY(0)",
+                boxShadow: available && hovered
                   ? "0 20px 60px rgba(0,0,0,0.4), 0 0 30px rgba(255,69,98,0.06)"
                   : "none",
               }}
