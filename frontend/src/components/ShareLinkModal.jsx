@@ -3,18 +3,18 @@ import { useToastStore } from '../stores/useToastStore'
 
 export default function ShareLinkModal({ onClose, categoryId }) {
   const [copied, setCopied] = useState(false)
-  const addToast = useToastStore((s) => s.addToast)
+  const toast = useToastStore((s) => s.show)
 
-  const shareUrl = `https://briefroom.socradar.io/chart/${categoryId || 'custom'}`
+  const shareUrl = `${window.location.origin}/chart/${categoryId || 'custom'}`
 
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(shareUrl)
-      addToast('Link copied to clipboard')
+      toast('Link copied to clipboard')
       setCopied(true)
       setTimeout(() => setCopied(false), 2000)
     } catch {
-      addToast('Failed to copy link')
+      toast('Failed to copy link')
     }
   }
 

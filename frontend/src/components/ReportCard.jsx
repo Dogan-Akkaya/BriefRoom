@@ -79,9 +79,7 @@ export default function ReportCard({ report, onClick }) {
 
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: 10, borderTop: '1px solid rgba(59,130,246,0.06)' }}>
         <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.18)' }}>Source: {report.source}</span>
-        <button onClick={handleDownload} style={{ padding: '5px 12px', fontSize: 11, fontWeight: 500, borderRadius: 7, background: 'rgba(59,130,246,0.08)', color: '#60A5FA', border: 'none', cursor: 'pointer', fontFamily: "'Satoshi'", transition: 'all 0.2s' }}>
-          Download PNG
-        </button>
+        <span style={{ fontSize: 11, color: 'rgba(59,130,246,0.4)', fontFamily: "'JetBrains Mono'", fontSize: 10 }}>Click to preview</span>
       </div>
     </div>
   )

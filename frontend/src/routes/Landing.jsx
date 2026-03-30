@@ -99,7 +99,7 @@ export default function Landing() {
             </button>
           </div>
         </Reveal>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 18 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 18 }}>
           {POPULAR.slice(0, 6).map((c, i) => (
             <Reveal key={i} delay={i * 70}>
               <PopularChartCard
@@ -169,7 +169,7 @@ export default function Landing() {
             </button>
           </div>
         </Reveal>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16 }}>
           {GLOBAL_REPORTS.slice(0, 3).map((r, i) => (
             <Reveal key={r.id} delay={i * 70}>
               <ReportCard report={r} onClick={() => { setPreviewChart(r); setPreviewType('report') }} />

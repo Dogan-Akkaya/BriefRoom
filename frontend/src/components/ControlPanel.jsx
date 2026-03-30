@@ -210,6 +210,16 @@ export default function ControlPanel({
     setDateEnd(preset.end)
   }
 
+  const handleStartChange = (idx) => {
+    if (idx > dateEnd) { setDateStart(dateEnd); setDateEnd(idx) }
+    else setDateStart(idx)
+  }
+
+  const handleEndChange = (idx) => {
+    if (idx < dateStart) { setDateEnd(dateStart); setDateStart(idx) }
+    else setDateEnd(idx)
+  }
+
   const activePreset = DATE_PRESETS.find(p => p.start === dateStart && p.end === dateEnd)
 
   const panelStyle = {
@@ -366,7 +376,7 @@ export default function ControlPanel({
             <select
               style={{ ...selInput, flex: 1 }}
               value={startParsed.month}
-              onChange={e => setDateStart(findMonthIndex(e.target.value, startParsed.year))}
+              onChange={e => handleStartChange(findMonthIndex(e.target.value, startParsed.year))}
             >
               {MONTH_NAMES.map(m => (
                 <option key={m} value={m} style={{ background: '#0E1220', color: '#E8ECF1' }}>{m}</option>
@@ -375,7 +385,7 @@ export default function ControlPanel({
             <select
               style={{ ...selInput, flex: 1 }}
               value={startParsed.year}
-              onChange={e => setDateStart(findMonthIndex(startParsed.month, e.target.value))}
+              onChange={e => handleStartChange(findMonthIndex(startParsed.month, e.target.value))}
             >
               {YEARS.map(y => (
                 <option key={y} value={y} style={{ background: '#0E1220', color: '#E8ECF1' }}>{y}</option>
@@ -393,7 +403,7 @@ export default function ControlPanel({
             <select
               style={{ ...selInput, flex: 1 }}
               value={endParsed.month}
-              onChange={e => setDateEnd(findMonthIndex(e.target.value, endParsed.year))}
+              onChange={e => handleEndChange(findMonthIndex(e.target.value, endParsed.year))}
             >
               {MONTH_NAMES.map(m => (
                 <option key={m} value={m} style={{ background: '#0E1220', color: '#E8ECF1' }}>{m}</option>
@@ -402,7 +412,7 @@ export default function ControlPanel({
             <select
               style={{ ...selInput, flex: 1 }}
               value={endParsed.year}
-              onChange={e => setDateEnd(findMonthIndex(endParsed.month, e.target.value))}
+              onChange={e => handleEndChange(findMonthIndex(endParsed.month, e.target.value))}
             >
               {YEARS.map(y => (
                 <option key={y} value={y} style={{ background: '#0E1220', color: '#E8ECF1' }}>{y}</option>

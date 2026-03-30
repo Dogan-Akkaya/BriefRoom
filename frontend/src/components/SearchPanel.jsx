@@ -111,13 +111,18 @@ export default function SearchPanel() {
   }
 
   function handleSearch() {
-    // Navigate to popular page with search context
-    if (query || activeFilters.length > 0) {
+    if (!query && activeFilters.length === 0) return
+    // Route based on active filters
+    if (activeFilters.length === 1 && activeFilters[0] === 'source') {
+      closeAndNavigate('/reports')
+    } else if (activeFilters.length === 1 && activeFilters[0] === 'attack') {
+      closeAndNavigate('/builder')
+    } else {
       closeAndNavigate('/popular')
     }
   }
 
-  const showDropdown = focused && (query.length > 0 || activeFilters.length > 0 || true)
+  const showDropdown = focused
 
   const placeholderText = activeFilters.length > 0
     ? `Search ${activeFilters.map(f => FILTER_CHIPS.find(c => c.key === f)?.label).join(' + ')}...`
@@ -362,7 +367,7 @@ export default function SearchPanel() {
           <>
             {renderSectionHeader('Industry', '#FF4562')}
             {filterSections.industry.map((item, i) => (
-              <ResultItem key={`fi-${i}`} badge="industry" onClick={() => closeAndNavigate('/builder/ransomware')} icon={<span style={typeIconDot('#FF4562')} />}>{item}</ResultItem>
+              <ResultItem key={`fi-${i}`} badge="industry" onClick={() => closeAndNavigate('/builder')} icon={<span style={typeIconDot('#FF4562')} />}>{item}</ResultItem>
             ))}
           </>
         )}
@@ -370,7 +375,7 @@ export default function SearchPanel() {
           <>
             {renderSectionHeader('Country', '#FF4562')}
             {filterSections.country.map((item, i) => (
-              <ResultItem key={`fc-${i}`} badge="country" onClick={() => closeAndNavigate('/builder/ransomware')} icon={<span style={typeIconDot('#FF4562')} />}>{item}</ResultItem>
+              <ResultItem key={`fc-${i}`} badge="country" onClick={() => closeAndNavigate('/builder')} icon={<span style={typeIconDot('#FF4562')} />}>{item}</ResultItem>
             ))}
           </>
         )}
