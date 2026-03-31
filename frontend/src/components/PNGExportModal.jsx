@@ -1,5 +1,5 @@
 import { useState, useMemo, useCallback, useRef } from 'react'
-import { BarChart, Bar, LineChart, Line, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
+import { BarChart, Bar, LineChart, Line, AreaChart, Area, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
 import SearchableSelect from './SearchableSelect'
 import { ALL_COUNTRIES, ALL_REGIONS, CATEGORIES } from '../lib/data'
 import { downloadPNG } from '../lib/export'
@@ -90,7 +90,7 @@ function generatePreviewData(threatType, industry, country, timeRange) {
 }
 
 /* ─── Inline Preview Chart ─── */
-function PreviewChart({ data, colors, bgColor, gridLines, chartType, headline, showFiltered }) {
+function PreviewChart({ data, colors, bgColor, gridLines, chartType, headline, showFiltered, builderData, operation }) {
   const bg = BG_OPTIONS[bgColor] || BG_OPTIONS.dark
   const isLight = bgColor === 'white'
   const gridColor = gridLines === 'none' ? 'transparent' : gridLines === 'visible' ? (isLight ? 'rgba(0,0,0,0.12)' : 'rgba(255,255,255,0.08)') : (isLight ? 'rgba(0,0,0,0.05)' : 'rgba(255,255,255,0.03)')
@@ -99,20 +99,111 @@ function PreviewChart({ data, colors, bgColor, gridLines, chartType, headline, s
   const mutedColor = isLight ? 'rgba(0,0,0,0.35)' : 'rgba(232,236,241,0.35)'
   const tooltipBg = isLight ? '#fff' : '#151C2F'
   const tooltipBorder = isLight ? 'rgba(0,0,0,0.08)' : 'rgba(255,255,255,0.05)'
+  const tooltipStyle = { backgroundColor: tooltipBg, border: `1px solid ${tooltipBorder}`, borderRadius: 5, fontSize: 11 }
 
-  const commonProps = {
-    data,
-    margin: { top: 10, right: 10, left: -10, bottom: 0 },
-  }
+  const hasBuilder = builderData && builderData.chartData && builderData.chartData.length > 0
+  const isBreakDown = operation === 'Break Down'
+  const catColor = builderData?.catColor || colors[0]
 
   const renderContent = () => {
+    // Builder's real data — matches what's on the Builder screen
+    if (hasBuilder) {
+      const bd = builderData
+      const cData = bd.chartData
+      const xKey = 'month'
+
+      // Pie chart
+      if (chartType === 'pie' && bd.pieData) {
+        return (
+          <PieChart>
+            <Pie data={bd.pieData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={65} innerRadius={30} paddingAngle={2} strokeWidth={0} cornerRadius={3}>
+              {bd.pieData.map((d, i) => <Cell key={i} fill={d.color} fillOpacity={0.85} />)}
+            </Pie>
+            <Tooltip contentStyle={tooltipStyle} />
+          </PieChart>
+        )
+      }
+
+      // Break Down — multiple series from visibleData
+      if (isBreakDown && bd.visibleData) {
+        if (chartType === 'line') {
+          return (
+            <LineChart data={cData} margin={{ top: 10, right: 10, left: -10, bottom: 0 }}>
+              <CartesianGrid strokeDasharray="3 3" stroke={gridColor} />
+              <XAxis dataKey={xKey} tick={{ fill: axisColor, fontSize: 9 }} axisLine={false} tickLine={false} />
+              <YAxis tick={{ fill: axisColor, fontSize: 9 }} axisLine={false} tickLine={false} />
+              <Tooltip contentStyle={tooltipStyle} />
+              {bd.visibleData.map(d => <Line key={d.name} type="monotone" dataKey={d.name} stroke={d.color} strokeWidth={1.5} dot={false} />)}
+            </LineChart>
+          )
+        }
+        if (chartType === 'area') {
+          return (
+            <AreaChart data={cData} margin={{ top: 10, right: 10, left: -10, bottom: 0 }}>
+              <CartesianGrid strokeDasharray="3 3" stroke={gridColor} />
+              <XAxis dataKey={xKey} tick={{ fill: axisColor, fontSize: 9 }} axisLine={false} tickLine={false} />
+              <YAxis tick={{ fill: axisColor, fontSize: 9 }} axisLine={false} tickLine={false} />
+              <Tooltip contentStyle={tooltipStyle} />
+              {bd.visibleData.map(d => <Area key={d.name} type="monotone" dataKey={d.name} stroke={d.color} fill={d.color} fillOpacity={0.12} strokeWidth={1.5} dot={false} />)}
+            </AreaChart>
+          )
+        }
+        // bar (default for break down)
+        return (
+          <BarChart data={cData} margin={{ top: 10, right: 10, left: -10, bottom: 0 }} barCategoryGap="20%" barGap={2}>
+            <CartesianGrid strokeDasharray="3 3" stroke={gridColor} />
+            <XAxis dataKey={xKey} tick={{ fill: axisColor, fontSize: 9 }} axisLine={false} tickLine={false} />
+            <YAxis tick={{ fill: axisColor, fontSize: 9 }} axisLine={false} tickLine={false} />
+            <Tooltip contentStyle={tooltipStyle} />
+            {bd.visibleData.map(d => <Bar key={d.name} dataKey={d.name} fill={d.color} fillOpacity={0.8} radius={[3, 3, 0, 0]} maxBarSize={16} />)}
+          </BarChart>
+        )
+      }
+
+      // Sum/Avg/Min/Max — single "value" series
+      if (chartType === 'line') {
+        return (
+          <LineChart data={cData} margin={{ top: 10, right: 10, left: -10, bottom: 0 }}>
+            <CartesianGrid strokeDasharray="3 3" stroke={gridColor} />
+            <XAxis dataKey={xKey} tick={{ fill: axisColor, fontSize: 9 }} axisLine={false} tickLine={false} />
+            <YAxis tick={{ fill: axisColor, fontSize: 9 }} axisLine={false} tickLine={false} />
+            <Tooltip contentStyle={tooltipStyle} />
+            <Line type="monotone" dataKey="value" stroke={catColor} strokeWidth={2} dot={{ r: 2, fill: catColor }} />
+          </LineChart>
+        )
+      }
+      if (chartType === 'area') {
+        return (
+          <AreaChart data={cData} margin={{ top: 10, right: 10, left: -10, bottom: 0 }}>
+            <CartesianGrid strokeDasharray="3 3" stroke={gridColor} />
+            <XAxis dataKey={xKey} tick={{ fill: axisColor, fontSize: 9 }} axisLine={false} tickLine={false} />
+            <YAxis tick={{ fill: axisColor, fontSize: 9 }} axisLine={false} tickLine={false} />
+            <Tooltip contentStyle={tooltipStyle} />
+            <Area type="monotone" dataKey="value" stroke={catColor} fill={catColor} fillOpacity={0.12} strokeWidth={1.5} />
+          </AreaChart>
+        )
+      }
+      // bar default
+      return (
+        <BarChart data={cData} margin={{ top: 10, right: 10, left: -10, bottom: 0 }}>
+          <CartesianGrid strokeDasharray="3 3" stroke={gridColor} />
+          <XAxis dataKey={xKey} tick={{ fill: axisColor, fontSize: 9 }} axisLine={false} tickLine={false} />
+          <YAxis tick={{ fill: axisColor, fontSize: 9 }} axisLine={false} tickLine={false} />
+          <Tooltip contentStyle={tooltipStyle} />
+          <Bar dataKey="value" fill={catColor} fillOpacity={0.8} radius={[4, 4, 0, 0]} maxBarSize={20} />
+        </BarChart>
+      )
+    }
+
+    // Fallback: generic preview data (for Popular/Report flows without builder context)
+    const commonProps = { data, margin: { top: 10, right: 10, left: -10, bottom: 0 } }
     if (chartType === 'line') {
       return (
         <LineChart {...commonProps}>
           <CartesianGrid strokeDasharray="3 3" stroke={gridColor} />
           <XAxis dataKey="name" tick={{ fill: axisColor, fontSize: 10 }} axisLine={false} tickLine={false} />
           <YAxis tick={{ fill: axisColor, fontSize: 10 }} axisLine={false} tickLine={false} />
-          <Tooltip contentStyle={{ backgroundColor: tooltipBg, border: `1px solid ${tooltipBorder}`, borderRadius: 5, fontSize: 11 }} />
+          <Tooltip contentStyle={tooltipStyle} />
           <Line type="monotone" dataKey="value" stroke={colors[0]} strokeWidth={2} dot={{ r: 3, fill: colors[0] }} />
           {showFiltered && <Line type="monotone" dataKey="filtered" stroke={colors[1]} strokeWidth={2} dot={{ r: 3, fill: colors[1] }} strokeDasharray="4 3" />}
         </LineChart>
@@ -124,7 +215,7 @@ function PreviewChart({ data, colors, bgColor, gridLines, chartType, headline, s
           <CartesianGrid strokeDasharray="3 3" stroke={gridColor} />
           <XAxis dataKey="name" tick={{ fill: axisColor, fontSize: 10 }} axisLine={false} tickLine={false} />
           <YAxis tick={{ fill: axisColor, fontSize: 10 }} axisLine={false} tickLine={false} />
-          <Tooltip contentStyle={{ backgroundColor: tooltipBg, border: `1px solid ${tooltipBorder}`, borderRadius: 5, fontSize: 11 }} />
+          <Tooltip contentStyle={tooltipStyle} />
           <Area type="monotone" dataKey="value" stroke={colors[0]} fill={colors[0]} fillOpacity={0.15} />
           {showFiltered && <Area type="monotone" dataKey="filtered" stroke={colors[1]} fill={colors[1]} fillOpacity={0.1} strokeDasharray="4 3" />}
         </AreaChart>
@@ -135,11 +226,22 @@ function PreviewChart({ data, colors, bgColor, gridLines, chartType, headline, s
         <CartesianGrid strokeDasharray="3 3" stroke={gridColor} />
         <XAxis dataKey="name" tick={{ fill: axisColor, fontSize: 10 }} axisLine={false} tickLine={false} />
         <YAxis tick={{ fill: axisColor, fontSize: 10 }} axisLine={false} tickLine={false} />
-        <Tooltip contentStyle={{ backgroundColor: tooltipBg, border: `1px solid ${tooltipBorder}`, borderRadius: 5, fontSize: 11 }} />
+        <Tooltip contentStyle={tooltipStyle} />
         <Bar dataKey="value" fill={colors[0]} radius={[4, 4, 0, 0]} barSize={18} />
         {showFiltered && <Bar dataKey="filtered" fill={colors[1]} radius={[4, 4, 0, 0]} barSize={18} opacity={0.6} />}
       </BarChart>
     )
+  }
+
+  // Legend items
+  const legendItems = []
+  if (hasBuilder && isBreakDown && builderData.visibleData) {
+    builderData.visibleData.forEach(d => legendItems.push({ color: d.color, label: d.name }))
+  } else if (hasBuilder && chartType === 'pie' && builderData.pieData) {
+    builderData.pieData.forEach(d => legendItems.push({ color: d.color, label: d.name }))
+  } else {
+    legendItems.push({ color: hasBuilder ? catColor : colors[0], label: 'All data' })
+    if (showFiltered) legendItems.push({ color: colors[1], label: 'Filtered', opacity: 0.6 })
   }
 
   return (
@@ -150,30 +252,24 @@ function PreviewChart({ data, colors, bgColor, gridLines, chartType, headline, s
       padding: '16px 18px 12px',
       transition: 'all 0.3s',
     }}>
-      {/* Headline inside chart */}
       <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, fontWeight: 700, color: textColor, lineHeight: 1.3, marginBottom: 10 }}>
         {headline}
       </div>
 
-      <ResponsiveContainer width="100%" height={160}>
+      <ResponsiveContainer width="100%" height={chartType === 'pie' ? 180 : 160}>
         {renderContent()}
       </ResponsiveContainer>
 
-      {/* Bottom: legend left, watermark right */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 8, padding: '0 2px' }}>
-        <div style={{ display: 'flex', gap: 12 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-            <div style={{ width: 10, height: 3, borderRadius: 2, background: colors[0] }} />
-            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 8, color: mutedColor }}>All data</span>
-          </div>
-          {showFiltered && (
-            <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-              <div style={{ width: 10, height: 3, borderRadius: 2, background: colors[1], opacity: 0.6 }} />
-              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 8, color: mutedColor }}>Filtered</span>
+        <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+          {legendItems.slice(0, 6).map((item, i) => (
+            <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+              <div style={{ width: 8, height: 3, borderRadius: 2, background: item.color, opacity: item.opacity || 1 }} />
+              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 7, color: mutedColor }}>{item.label}</span>
             </div>
-          )}
+          ))}
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 4, opacity: 0.3 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 4, opacity: 0.3, flexShrink: 0 }}>
           <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 8, color: textColor, letterSpacing: '0.04em' }}>Powered by</span>
           <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 9, fontWeight: 700, color: textColor }}>SOCRadar</span>
         </div>
@@ -246,7 +342,7 @@ const DUMMY_ELEMENTS = [
 ]
 
 /* ─── Premium Builder Modal (after email / ungated for reports) ─── */
-function PremiumBuilderModal({ onClose, initialState = {} }) {
+function PremiumBuilderModal({ onClose, initialState = {}, builderData }) {
   const init = initialState || {}
   const [country, setCountry] = useState(init.country || '')
   const [regionMode, setRegionMode] = useState(init.regionMode || false)
@@ -289,18 +385,24 @@ function PremiumBuilderModal({ onClose, initialState = {} }) {
     return parts.join(' ')
   }, [threatType, industry, country, regionMode, timeRange])
 
-  // Dynamic preview data
+  // Use builder's real data when available, otherwise generate preview data
+  const hasBuilderData = builderData && builderData.chartData && builderData.chartData.length > 0
   const previewData = useMemo(
-    () => generatePreviewData(threatType, industry, country, timeRange),
-    [threatType, industry, country, timeRange]
+    () => hasBuilderData ? builderData.chartData : generatePreviewData(threatType, industry, country, timeRange),
+    [hasBuilderData, builderData, threatType, industry, country, timeRange]
   )
 
   // Ratio data from preview
   const ratioData = useMemo(() => {
-    const total = previewData.reduce((s, d) => s + d.value, 0)
-    const filtered = previewData.reduce((s, d) => s + d.filtered, 0)
+    if (hasBuilderData) {
+      const total = builderData.pieData?.reduce((s, d) => s + d.value, 0) || 0
+      const filtered = Math.round(total * 0.35)
+      return { total, filtered, pct: total > 0 ? ((filtered / total) * 100).toFixed(1) : '0.0' }
+    }
+    const total = previewData.reduce((s, d) => s + (d.value || 0), 0)
+    const filtered = previewData.reduce((s, d) => s + (d.filtered || 0), 0)
     return { total, filtered, pct: total > 0 ? ((filtered / total) * 100).toFixed(1) : '0.0' }
-  }, [previewData])
+  }, [hasBuilderData, builderData, previewData])
 
   const handlePaletteSelect = useCallback((idx) => {
     setPalette(idx)
@@ -387,6 +489,8 @@ function PremiumBuilderModal({ onClose, initialState = {} }) {
               chartType={chartType}
               headline={headline}
               showFiltered={showFiltered}
+              builderData={builderData}
+              operation={operation}
             />
           </div>
         </div>
@@ -683,14 +787,14 @@ function PremiumBuilderModal({ onClose, initialState = {} }) {
 
 /* ─── Email Gate Modal (first step) — skipped for reports ─── */
 // mode: 'customize' = show premium builder after email, 'export' = download via onExport callback
-export default function PNGExportModal({ onClose, onExport, chartType: sourceType, mode = 'customize', initialState }) {
+export default function PNGExportModal({ onClose, onExport, chartType: sourceType, mode = 'customize', initialState, builderData }) {
   const [email, setEmail] = useState('')
   const [showPremium, setShowPremium] = useState(false)
 
   // Reports are ungated — go straight to premium builder
   const isReport = sourceType === 'report'
   if (isReport || (showPremium && mode === 'customize')) {
-    return <PremiumBuilderModal onClose={onClose} initialState={initialState} />
+    return <PremiumBuilderModal onClose={onClose} initialState={initialState} builderData={builderData} />
   }
 
   const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)

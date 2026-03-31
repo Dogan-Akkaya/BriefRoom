@@ -318,6 +318,14 @@ export default function Builder() {
             threatType: selectedCat?.label || 'Ransomware',
             categoryId: selectedCat?.id,
           }}
+          builderData={{
+            chartData,
+            pieData,
+            visibleData,
+            chartMonthLabels,
+            catColor,
+            activeMonths,
+          }}
         />
       )}
       {showShareModal && <ShareLinkModal onClose={() => setShowShareModal(false)} categoryId={selectedCat?.id} />}
