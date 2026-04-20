@@ -27,7 +27,7 @@ const ctrlLabel = {
   fontFamily: "'JetBrains Mono', monospace",
   fontSize: 10,
   letterSpacing: '0.08em',
-  color: 'rgba(232,236,241,0.3)',
+  color: 'rgba(232,236,241,0.6)',
   textTransform: 'uppercase',
   marginBottom: 8,
 }
@@ -284,7 +284,7 @@ function ColorPickerRow({ colors, onChange }) {
     <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
       {colors.map((color, idx) => (
         <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 9, color: 'rgba(232,236,241,0.3)', width: 62, flexShrink: 0 }}>
+          <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 9, color: 'rgba(232,236,241,0.6)', width: 62, flexShrink: 0 }}>
             {COLOR_LABELS[idx]}
           </span>
           <div style={{ position: 'relative', width: 24, height: 24, flexShrink: 0 }}>
@@ -510,7 +510,7 @@ function PremiumBuilderModal({ onClose, initialState = {}, builderData }) {
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
                 <div style={{ width: 3, height: 14, borderRadius: 2, background: 'rgba(59,130,246,0.5)' }} />
-                <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, letterSpacing: '0.08em', color: 'rgba(232,236,241,0.3)', textTransform: 'uppercase' }}>Filters</span>
+                <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, letterSpacing: '0.08em', color: 'rgba(232,236,241,0.6)', textTransform: 'uppercase' }}>Filters</span>
               </div>
 
               <div style={{ marginBottom: 10 }}>
@@ -557,7 +557,7 @@ function PremiumBuilderModal({ onClose, initialState = {}, builderData }) {
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
                 <div style={{ width: 3, height: 14, borderRadius: 2, background: 'rgba(255,69,98,0.4)' }} />
-                <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, letterSpacing: '0.08em', color: 'rgba(232,236,241,0.3)', textTransform: 'uppercase' }}>Operators</span>
+                <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, letterSpacing: '0.08em', color: 'rgba(232,236,241,0.6)', textTransform: 'uppercase' }}>Operators</span>
               </div>
 
               <div style={{ marginBottom: showElements ? 10 : 0 }}>
@@ -642,7 +642,7 @@ function PremiumBuilderModal({ onClose, initialState = {}, builderData }) {
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
                 <div style={{ width: 3, height: 14, borderRadius: 2, background: 'rgba(255,69,98,0.4)' }} />
-                <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, letterSpacing: '0.08em', color: 'rgba(232,236,241,0.3)', textTransform: 'uppercase' }}>Color Scale</span>
+                <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, letterSpacing: '0.08em', color: 'rgba(232,236,241,0.6)', textTransform: 'uppercase' }}>Color Scale</span>
               </div>
 
               {COLOR_PALETTES.map((p, idx) => (
@@ -740,7 +740,7 @@ function PremiumBuilderModal({ onClose, initialState = {}, builderData }) {
                 </div>
                 <div style={{ textAlign: 'center', padding: '6px 0 0', borderTop: '1px solid rgba(255,255,255,0.04)', marginTop: 6 }}>
                   <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 20, fontWeight: 700, color: '#FF4562' }}>{ratioData.pct}%</span>
-                  <span style={{ fontSize: 11, color: 'rgba(232,236,241,0.3)', marginLeft: 6 }}>of global</span>
+                  <span style={{ fontSize: 11, color: 'rgba(232,236,241,0.6)', marginLeft: 6 }}>of global</span>
                 </div>
               </div>
             )}
@@ -903,14 +903,14 @@ export default function PNGExportModal({ onClose, onExport, chartType: sourceTyp
               cursor: isValid ? 'pointer' : 'default', transition: 'all 0.2s ease',
               ...(isValid
                 ? { background: 'linear-gradient(135deg, #FF4562, #FF4562CC)', color: '#fff', boxShadow: '0 4px 24px rgba(255,69,98,0.25)' }
-                : { background: 'rgba(255,255,255,0.04)', color: 'rgba(232,236,241,0.3)' }),
+                : { background: 'rgba(255,255,255,0.04)', color: 'rgba(232,236,241,0.6)' }),
             }}
           >
             Send me the chart
           </button>
         </form>
 
-        <p style={{ fontSize: 11, color: 'rgba(232,236,241,0.25)', textAlign: 'center', margin: '14px 0 0' }}>
+        <p style={{ fontSize: 11, color: 'rgba(232,236,241,0.55)', textAlign: 'center', margin: '14px 0 0' }}>
           We'll email your chart instantly. No spam.
         </p>
       </div>

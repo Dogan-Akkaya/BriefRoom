@@ -203,7 +203,7 @@ export default function SearchPanel() {
     fontSize: 10,
     letterSpacing: '0.1em',
     textTransform: 'uppercase',
-    color: 'rgba(232,236,241,0.25)',
+    color: 'rgba(232,236,241,0.55)',
     padding: '12px 18px 6px',
     display: 'flex',
     alignItems: 'center',
@@ -233,7 +233,7 @@ export default function SearchPanel() {
   const badgeStyle = {
     fontFamily: 'JetBrains Mono, monospace',
     fontSize: 10,
-    color: 'rgba(232,236,241,0.2)',
+    color: 'rgba(232,236,241,0.5)',
     padding: '2px 8px',
     borderRadius: 4,
     background: 'rgba(255,255,255,0.03)',
@@ -350,7 +350,7 @@ export default function SearchPanel() {
     if (!searchResults) {
       if (query) {
         return (
-          <div style={{ padding: '20px 18px', fontSize: 13, color: 'rgba(232,236,241,0.25)', textAlign: 'center' }}>
+          <div style={{ padding: '20px 18px', fontSize: 13, color: 'rgba(232,236,241,0.55)', textAlign: 'center' }}>
             No results found for &ldquo;{query}&rdquo;
           </div>
         )

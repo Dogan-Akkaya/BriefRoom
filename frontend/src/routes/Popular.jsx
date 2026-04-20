@@ -1,40 +1,68 @@
 import { useState, useMemo, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { POPULAR } from '../lib/data'
+import { CATEGORIES, INDUSTRIES, ALL_REGIONS } from '../lib/data'
+import { popularCharts, threatTypeLabel } from '../lib/intelligenceLibrary'
 import PopularChartCard from '../components/PopularChartCard'
 import ChartPreviewModal from '../components/ChartPreviewModal'
 import Reveal from '../components/Reveal'
+import AmbientSmoke from '../components/AmbientSmoke'
 
-const CATEGORY_FILTERS = ['All', 'Ransomware', 'Phishing', 'Cloud', 'Operations', 'Infrastructure', 'Awareness']
-const INDUSTRY_OPTIONS = ['All Industries', 'Healthcare', 'Financial', 'Technology', 'Manufacturing', 'Government', 'Education', 'Energy', 'Retail']
-const REGION_OPTIONS = ['Global', 'North America', 'Europe', 'Asia Pacific', 'Middle East', 'Latin America', 'Africa']
+// Filters derived from Intelligence Library dimensions (tag-based, no fuzzy match)
+const CATEGORY_FILTERS = ['All', ...CATEGORIES.filter(c => c.hasData).map(c => c.id)]
+const INDUSTRY_OPTIONS = ['All Industries', ...INDUSTRIES]
+const REGION_OPTIONS = ['Global', ...ALL_REGIONS]
 const TREND_FILTERS = ['All', 'Rising', 'Declining']
 
-/* Map tags/titles to our filter categories */
+function categoryLabel(id) {
+  if (id === 'All') return 'All'
+  return threatTypeLabel(id)
+}
+
 function matchesCategory(item, cat) {
   if (cat === 'All') return true
-  const hay = `${item.tag} ${item.title} ${item.categoryId}`.toLowerCase()
-  const map = {
-    Ransomware: ['ransomware'],
-    Phishing: ['phishing'],
-    Cloud: ['cloud'],
-    Operations: ['operations', 'mttd', 'detect'],
-    Infrastructure: ['infrastructure', 'ddos'],
-    Awareness: ['awareness', 'click-through', 'click rate'],
-  }
-  return (map[cat] || []).some(k => hay.includes(k))
+  return (item._threatTypes || []).includes(cat)
 }
 
 function matchesIndustry(item, ind) {
   if (ind === 'All Industries') return true
-  const hay = `${item.title} ${item.detail || ''}`.toLowerCase()
-  return hay.includes(ind.toLowerCase())
+  return (item._industries || []).includes(ind)
+}
+
+function matchesRegion(item, reg) {
+  if (reg === 'Global') return true
+  return (item._regions || []).includes(reg)
 }
 
 function matchesTrend(item, trend) {
   if (trend === 'All') return true
   if (trend === 'Rising') return item.up === true
   return item.up === false
+}
+
+// Adapter: Intelligence Library item → PopularChartCard props
+function toCardProps(item) {
+  const series = item.dataset?.series || []
+  const first = series[0] || {}
+  const tt = item.threat_type?.[0]
+  const d = item.display || {}
+  return {
+    _id: item.id,
+    title: item.title,
+    views: d.views || '—',
+    tag: (threatTypeLabel(tt) || 'INTEL').toUpperCase(),
+    trend: d.trend || '',
+    up: d.up !== undefined ? d.up : null,
+    color: first.color || '#FF4562',
+    data: first.values || [],
+    sources: item.source,
+    updated: item.updated_at ? item.updated_at.slice(0, 7) : '',
+    detail: d.detail || '',
+    metrics: d.metrics || [],
+    categoryId: tt,
+    _industries: item.industry || [],
+    _regions: item.region || [],
+    _threatTypes: item.threat_type || [],
+  }
 }
 
 /* Shared style tokens */
@@ -59,13 +87,22 @@ export default function Popular() {
 
   useEffect(() => { document.title = 'Popular Security Charts — Cybersecurity Visualizations | Brief Room' }, [])
 
+  const cards = useMemo(() => popularCharts().map(toCardProps), [])
+
   const filtered = useMemo(
-    () => POPULAR.filter(c => matchesCategory(c, category) && matchesIndustry(c, industry) && matchesTrend(c, trend)),
-    [category, industry, trend],
+    () => cards.filter(c =>
+      matchesCategory(c, category)
+      && matchesIndustry(c, industry)
+      && matchesRegion(c, region)
+      && matchesTrend(c, trend)
+    ),
+    [cards, category, industry, region, trend],
   )
 
   return (
-    <div style={{ minHeight: '100vh', background: '#0A0E1A', color: '#E8ECF1' }}>
+    <div style={{ minHeight: '100vh', background: '#0A0E1A', color: '#E8ECF1', position: 'relative', overflow: 'hidden' }}>
+      <AmbientSmoke targetFocus={0} intensity={0.4} timeRate={0.5} particleCap={160} />
+      <div style={{ position: 'relative', zIndex: 2 }}>
       <div style={{
         paddingTop: 80,
         maxWidth: 1260,
@@ -107,7 +144,7 @@ export default function Popular() {
               fontSize: 10,
               letterSpacing: '0.12em',
               textTransform: 'uppercase',
-              color: 'rgba(232,236,241,0.35)',
+              color: 'rgba(232,236,241,0.6)',
               marginBottom: 12,
             }}>
               Category
@@ -133,7 +170,7 @@ export default function Popular() {
                       transition: 'all 0.2s',
                     }}
                   >
-                    {c}
+                    {categoryLabel(c)}
                   </button>
                 )
               })}
@@ -147,7 +184,7 @@ export default function Popular() {
               fontSize: 10,
               letterSpacing: '0.12em',
               textTransform: 'uppercase',
-              color: 'rgba(232,236,241,0.35)',
+              color: 'rgba(232,236,241,0.6)',
               marginBottom: 12,
             }}>
               Industry
@@ -188,7 +225,7 @@ export default function Popular() {
               fontSize: 10,
               letterSpacing: '0.12em',
               textTransform: 'uppercase',
-              color: 'rgba(232,236,241,0.35)',
+              color: 'rgba(232,236,241,0.6)',
               marginBottom: 12,
             }}>
               Country / Region
@@ -229,7 +266,7 @@ export default function Popular() {
               fontSize: 10,
               letterSpacing: '0.12em',
               textTransform: 'uppercase',
-              color: 'rgba(232,236,241,0.35)',
+              color: 'rgba(232,236,241,0.6)',
               marginBottom: 12,
             }}>
               Trend
@@ -266,7 +303,7 @@ export default function Popular() {
           <div style={{
             fontFamily: mono,
             fontSize: 10,
-            color: 'rgba(232,236,241,0.2)',
+            color: 'rgba(232,236,241,0.5)',
             borderTop: '1px solid rgba(255,255,255,0.05)',
             paddingTop: 16,
           }}>
@@ -403,7 +440,7 @@ export default function Popular() {
                 padding: '60px 0',
                 fontFamily: mono,
                 fontSize: 13,
-                color: 'rgba(232,236,241,0.25)',
+                color: 'rgba(232,236,241,0.55)',
               }}>
                 No charts match the current filters.
               </div>
@@ -420,6 +457,7 @@ export default function Popular() {
           onCustomize={() => { setPreviewChart(null); navigate(`/builder/${previewChart.categoryId}`) }}
         />
       )}
+      </div>
     </div>
   )
 }

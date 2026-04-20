@@ -178,7 +178,7 @@ export default function CategoryPicker({ onSelect }) {
                       fontFamily: "'JetBrains Mono', monospace",
                       fontSize: 10,
                       letterSpacing: "0.06em",
-                      color: "rgba(232,236,241,0.25)",
+                      color: "rgba(232,236,241,0.55)",
                       background: "rgba(255,255,255,0.04)",
                       border: "1px solid rgba(255,255,255,0.06)",
                       borderRadius: 6,

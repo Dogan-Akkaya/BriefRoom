@@ -29,7 +29,7 @@ export default function EmailGate({ onClose, catColor = '#FF4562' }) {
         >
           Export Chart — Free
         </button>
-        <p style={{ fontSize: 11, color: 'rgba(232,236,241,0.2)', textAlign: 'center', marginTop: 16 }}>No spam. We'll send your chart and occasional threat intel updates.</p>
+        <p style={{ fontSize: 11, color: 'rgba(232,236,241,0.5)', textAlign: 'center', marginTop: 16 }}>No spam. We'll send your chart and occasional threat intel updates.</p>
       </div>
     </div>
   )

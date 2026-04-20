@@ -127,7 +127,7 @@ export default function StatsSection() {
                   fontFamily: "'JetBrains Mono', monospace",
                   fontSize: 10,
                   letterSpacing: "0.1em",
-                  color: "rgba(232,236,241,0.25)",
+                  color: "rgba(232,236,241,0.55)",
                   textTransform: "uppercase",
                 }}
               >

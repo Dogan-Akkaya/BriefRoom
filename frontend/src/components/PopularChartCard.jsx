@@ -28,7 +28,7 @@ const styles = {
     fontFamily: "'JetBrains Mono', monospace",
     fontSize: 10,
     background: "rgba(255,255,255,0.04)",
-    color: "rgba(232,236,241,0.35)",
+    color: "rgba(232,236,241,0.6)",
     padding: "4px 10px",
     borderRadius: 6,
   },
@@ -40,7 +40,7 @@ const styles = {
   views: {
     fontFamily: "'JetBrains Mono', monospace",
     fontSize: 10,
-    color: "rgba(232,236,241,0.18)",
+    color: "rgba(232,236,241,0.5)",
     display: "flex",
     alignItems: "center",
     gap: 4,
@@ -48,7 +48,7 @@ const styles = {
   updated: {
     fontFamily: "'JetBrains Mono', monospace",
     fontSize: 10,
-    color: "rgba(232,236,241,0.12)",
+    color: "rgba(232,236,241,0.45)",
   },
   title: {
     fontSize: 18,
@@ -59,7 +59,7 @@ const styles = {
   },
   detail: {
     fontSize: 13,
-    color: "rgba(232,236,241,0.35)",
+    color: "rgba(232,236,241,0.6)",
     lineHeight: 1.6,
     marginTop: 12,
     marginBottom: 16,
@@ -80,7 +80,7 @@ const styles = {
   metricLabel: {
     fontFamily: "'JetBrains Mono', monospace",
     fontSize: 9,
-    color: "rgba(232,236,241,0.2)",
+    color: "rgba(232,236,241,0.55)",
     letterSpacing: "0.06em",
     textTransform: "uppercase",
     marginBottom: 4,
@@ -91,7 +91,7 @@ const styles = {
     justifyContent: "space-between",
     marginTop: 6,
     fontSize: 9,
-    color: "rgba(232,236,241,0.1)",
+    color: "rgba(232,236,241,0.45)",
   },
   bottomRow: {
     marginTop: 14,
@@ -104,7 +104,7 @@ const styles = {
   sourceText: {
     fontFamily: "'JetBrains Mono', monospace",
     fontSize: 10,
-    color: "rgba(232,236,241,0.15)",
+    color: "rgba(232,236,241,0.5)",
   },
   openBtn: {
     padding: "6px 14px",

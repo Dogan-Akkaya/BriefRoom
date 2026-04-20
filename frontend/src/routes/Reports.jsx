@@ -1,12 +1,17 @@
 import React, { useState, useMemo, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { GLOBAL_REPORTS } from '../lib/data'
+import { INTELLIGENCE_LIBRARY } from '../lib/intelligenceLibrary'
 import ReportCard from '../components/ReportCard'
 import ChartPreviewModal from '../components/ChartPreviewModal'
 import Reveal from '../components/Reveal'
+import KnowledgeGraphBG from '../components/KnowledgeGraphBG'
+import SliceStatCard from '../components/explore/SliceStatCard'
+import { BrandChip } from '../lib/sourceBrands'
 
 const SOURCES = ['All', 'IBM', 'CrowdStrike', 'Verizon DBIR', 'Mandiant', 'Unit 42', 'ENISA']
-const CATEGORIES = ['All', 'Data Breaches', 'Threat Actors', 'Ransomware', 'Detection', 'Breaches', 'eCrime', 'Intrusion', 'Threat Landscape']
+// Aligned with unique GLOBAL_REPORTS[].category values (see data.js).
+const CATEGORIES = ['All', 'Data Breaches', 'Detection', 'Intrusion', 'Ransomware', 'Threat Actors', 'Threat Landscape', 'eCrime']
 const YEARS = ['All', '2025', '2024']
 const REGION_OPTIONS = ['Global', 'North America', 'Europe', 'Asia Pacific', 'Middle East', 'Latin America', 'Africa']
 
@@ -39,6 +44,12 @@ export default function Reports() {
 
   useEffect(() => { document.title = 'Global Threat Reports — IBM, CrowdStrike, Verizon DBIR | Brief Room' }, [])
 
+  // Verified Intelligence — library items with real:true (vendor-attributed stats + charts)
+  const verifiedStats = useMemo(
+    () => INTELLIGENCE_LIBRARY.filter(i => i.real && i.type === 'stat').slice(0, 18),
+    []
+  )
+
   const filtered = useMemo(() => {
     return GLOBAL_REPORTS.filter((r) => {
       if (!sourceMatch(r, sourceFilter)) return false
@@ -69,13 +80,15 @@ export default function Reports() {
     fontWeight: 600,
     letterSpacing: '0.14em',
     textTransform: 'uppercase',
-    color: 'rgba(232,236,241,0.3)',
+    color: 'rgba(232,236,241,0.6)',
     marginBottom: 10,
     display: 'block',
   }
 
   return (
-    <div style={{ paddingTop: 80, paddingBottom: 80, maxWidth: 1280, margin: '0 auto', paddingLeft: 24, paddingRight: 24 }}>
+    <div style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden' }}>
+      <KnowledgeGraphBG />
+      <div style={{ position: 'relative', zIndex: 2, paddingTop: 80, paddingBottom: 80, maxWidth: 1280, margin: '0 auto', paddingLeft: 24, paddingRight: 24 }}>
       <div style={{ display: 'flex', gap: 28, alignItems: 'flex-start', flexWrap: 'wrap' }}>
         {/* Left Sidebar */}
         <div style={{
@@ -235,7 +248,7 @@ export default function Reports() {
                 gridColumn: 'span 2',
                 textAlign: 'center',
                 padding: '60px 20px',
-                color: 'rgba(232,236,241,0.25)',
+                color: 'rgba(232,236,241,0.55)',
                 fontFamily: "'Satoshi', sans-serif",
                 fontSize: 14,
               }}>
@@ -243,6 +256,55 @@ export default function Reports() {
               </div>
             )}
           </div>
+
+          {/* Verified Intelligence — vendor-sourced library stats mixed number/sparkline/bar/quote */}
+          {verifiedStats.length > 0 && (
+            <section style={{ marginTop: 72 }}>
+              <style>{`
+                .reports-slice-grid {
+                  display: grid;
+                  grid-template-columns: repeat(3, minmax(0, 1fr));
+                  grid-auto-flow: dense;
+                  gap: 14px;
+                }
+                @media (max-width: 900px) {
+                  .reports-slice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+                }
+                @media (max-width: 560px) {
+                  .reports-slice-grid { grid-template-columns: 1fr; }
+                  .reports-slice-grid > * { grid-column: span 1 !important; }
+                }
+              `}</style>
+              <Reveal>
+                <div style={{ marginBottom: 22 }}>
+                  <div style={{
+                    fontFamily: "'JetBrains Mono', monospace",
+                    fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase',
+                    color: 'rgba(59,130,246,0.75)', marginBottom: 12,
+                  }}>
+                    <span style={{ animation: 'gentlePulse 2.5s ease-in-out infinite', display: 'inline-block' }}>●</span>
+                    &nbsp;&nbsp;Verified Intelligence
+                  </div>
+                  <h2 style={{
+                    fontFamily: "'Plus Jakarta Sans', sans-serif",
+                    fontSize: 'clamp(24px,3vw,32px)', fontWeight: 700,
+                    color: '#E8ECF1', letterSpacing: '-0.02em', marginBottom: 10,
+                  }}>
+                    Statistics from the same sources
+                  </h2>
+                  <p style={{
+                    fontSize: 14, color: 'rgba(232,236,241,0.45)',
+                    maxWidth: 640, lineHeight: 1.65,
+                  }}>
+                    Pulled from IBM X-Force, Verizon DBIR, Mandiant, CrowdStrike, ENISA, SOCRadar and others — mixed numbers, mini-charts, and analyst quotes. Every card here carries a verified vendor attribution.
+                  </p>
+                </div>
+              </Reveal>
+              <div className="reports-slice-grid">
+                {verifiedStats.map(s => <SliceStatCard key={s.id} item={s} />)}
+              </div>
+            </section>
+          )}
         </div>
       </div>
 
@@ -253,6 +315,7 @@ export default function Reports() {
           onClose={() => setPreviewReport(null)}
         />
       )}
+      </div>
     </div>
   )
 }
@@ -299,8 +362,10 @@ function FeaturedCard({ report, onClick }) {
   return (
     <div
       style={{
-        background: 'rgba(59,130,246,0.04)',
-        border: `1px solid ${hovered ? 'rgba(59,130,246,0.18)' : 'rgba(59,130,246,0.1)'}`,
+        background: 'rgba(12,16,28,0.74)',
+        backdropFilter: 'blur(20px) saturate(120%)',
+        WebkitBackdropFilter: 'blur(20px) saturate(120%)',
+        border: `1px solid ${hovered ? 'rgba(59,130,246,0.3)' : 'rgba(59,130,246,0.14)'}`,
         borderRadius: 20,
         padding: 28,
         cursor: 'pointer',
@@ -308,7 +373,7 @@ function FeaturedCard({ report, onClick }) {
         overflow: 'hidden',
         transition: 'all 0.3s cubic-bezier(0.16,1,0.3,1)',
         transform: hovered ? 'translateY(-3px)' : 'none',
-        boxShadow: hovered ? '0 20px 50px rgba(0,0,0,0.35)' : '0 4px 20px rgba(0,0,0,0.1)',
+        boxShadow: hovered ? '0 20px 50px rgba(0,0,0,0.45)' : '0 6px 22px rgba(0,0,0,0.28)',
       }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
@@ -338,31 +403,23 @@ function FeaturedCard({ report, onClick }) {
         fontFamily: "'JetBrains Mono', monospace",
         fontSize: 9,
         background: 'rgba(255,255,255,0.04)',
-        color: 'rgba(232,236,241,0.2)',
+        color: 'rgba(232,236,241,0.5)',
         padding: '3px 8px',
         borderRadius: 4,
         letterSpacing: '0.04em',
       }}>External Source</span>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
+        <BrandChip source={report.source} size="lg" />
         <span style={{
           fontFamily: "'JetBrains Mono', monospace",
           fontSize: 10,
-          fontWeight: 600,
-          background: 'rgba(59,130,246,0.08)',
-          color: 'rgba(232,236,241,0.6)',
-          padding: '3px 9px',
-          borderRadius: 6,
-        }}>{report.sourceShort}</span>
-        <span style={{
-          fontFamily: "'JetBrains Mono', monospace",
-          fontSize: 10,
-          color: 'rgba(232,236,241,0.25)',
+          color: 'rgba(232,236,241,0.55)',
         }}>{report.year}</span>
         <span style={{
           fontFamily: "'JetBrains Mono', monospace",
           fontSize: 9,
-          color: 'rgba(232,236,241,0.3)',
+          color: 'rgba(232,236,241,0.6)',
           background: 'rgba(255,255,255,0.03)',
           padding: '3px 8px',
           borderRadius: 5,
@@ -409,13 +466,13 @@ function FeaturedCard({ report, onClick }) {
           <div style={{
             fontSize: 11,
             fontFamily: "'JetBrains Mono', monospace",
-            color: 'rgba(232,236,241,0.2)',
+            color: 'rgba(232,236,241,0.5)',
             marginBottom: 6,
           }}>Published: {report.year}</div>
           <div style={{
             fontSize: 11,
             fontFamily: "'JetBrains Mono', monospace",
-            color: 'rgba(232,236,241,0.18)',
+            color: 'rgba(232,236,241,0.45)',
             marginBottom: 20,
           }}>Source: {report.source}</div>
 

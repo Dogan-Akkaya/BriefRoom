@@ -1,15 +1,12 @@
 import React from 'react'
 import SearchableSelect from './SearchableSelect'
 import { useToastStore } from '../stores/useToastStore'
-import { ALL_COUNTRIES, ALL_REGIONS, THREAT_GROUPS, ALL_MONTHS, DATA_AVAILABILITY, DATE_PRESETS } from '../lib/data'
+import { ALL_COUNTRIES, ALL_REGIONS, THREAT_GROUPS, ALL_MONTHS, DATA_AVAILABILITY, DATE_PRESETS, INDUSTRIES as DATA_INDUSTRIES } from '../lib/data'
 
 const CHART_TYPES = ['bar', 'line', 'area', 'pie']
 
-const INDUSTRIES = [
-  'All Industries', 'Financial Services', 'Healthcare', 'Technology', 'Government',
-  'Manufacturing', 'Energy & Utilities', 'Retail & E-Commerce', 'Telecommunications',
-  'Education', 'Transportation',
-]
+// Single source of truth: INDUSTRIES lives in data.js. 'All Industries' is the filter sentinel.
+const INDUSTRIES = ['All Industries', ...DATA_INDUSTRIES]
 
 const OPERATIONS = ['Sum', 'Break Down', 'Average', 'Min', 'Max']
 
@@ -119,7 +116,7 @@ const groupHeaderLabel = {
   fontFamily: "'JetBrains Mono', monospace",
   fontSize: 10,
   letterSpacing: '0.08em',
-  color: 'rgba(232,236,241,0.3)',
+  color: 'rgba(232,236,241,0.6)',
   textTransform: 'uppercase',
 }
 
@@ -375,7 +372,7 @@ export default function ControlPanel({
 
         {/* Start date */}
         <div style={{ marginBottom: 8 }}>
-          <label style={{ fontSize: 10, color: 'rgba(232,236,241,0.2)', display: 'block', marginBottom: 3 }}>
+          <label style={{ fontSize: 10, color: 'rgba(232,236,241,0.5)', display: 'block', marginBottom: 3 }}>
             Start
           </label>
           <div style={{ display: 'flex', gap: 6 }}>
@@ -402,7 +399,7 @@ export default function ControlPanel({
 
         {/* End date */}
         <div style={{ marginBottom: 12 }}>
-          <label style={{ fontSize: 10, color: 'rgba(232,236,241,0.2)', display: 'block', marginBottom: 3 }}>
+          <label style={{ fontSize: 10, color: 'rgba(232,236,241,0.5)', display: 'block', marginBottom: 3 }}>
             End
           </label>
           <div style={{ display: 'flex', gap: 6 }}>
@@ -432,7 +429,7 @@ export default function ControlPanel({
           <div style={{
             fontFamily: "'JetBrains Mono', monospace",
             fontSize: 9,
-            color: 'rgba(232,236,241,0.25)',
+            color: 'rgba(232,236,241,0.55)',
             marginBottom: 4,
           }}>
             Data availability
@@ -511,7 +508,7 @@ export default function ControlPanel({
                 </div>
                 <div style={{
                   fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: 10, color: 'rgba(232,236,241,0.22)',
+                  fontSize: 10, color: 'rgba(232,236,241,0.55)',
                 }}>
                   {elTotal.toLocaleString()} &middot; {elPct}%
                 </div>

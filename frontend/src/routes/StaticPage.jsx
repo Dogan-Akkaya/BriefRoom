@@ -103,25 +103,33 @@ export default function StaticPage() {
         </div>
 
         <div style={{
-          background: 'rgba(255,69,98,0.06)',
-          border: '1px solid rgba(255,69,98,0.12)',
+          background: 'rgba(59,130,246,0.06)',
+          border: '1px solid rgba(59,130,246,0.18)',
           borderRadius: 12,
-          padding: '18px 22px',
-          display: 'flex',
+          padding: '14px 18px',
+          display: 'inline-flex',
           alignItems: 'center',
           gap: 10,
         }}>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF4562" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="12" cy="12" r="10" />
-            <line x1="12" y1="8" x2="12" y2="12" />
-            <line x1="12" y1="16" x2="12.01" y2="16" />
-          </svg>
           <span style={{
             fontFamily: "'JetBrains Mono', monospace",
-            fontSize: 12,
-            color: 'rgba(255,69,98,0.7)',
+            fontSize: 10,
+            letterSpacing: '0.14em',
+            textTransform: 'uppercase',
+            fontWeight: 600,
+            background: 'rgba(59,130,246,0.18)',
+            color: '#60A5FA',
+            padding: '3px 8px',
+            borderRadius: 4,
           }}>
-            This page is under development. Full content coming soon.
+            Beta
+          </span>
+          <span style={{
+            fontFamily: "'Satoshi', 'DM Sans', sans-serif",
+            fontSize: 13,
+            color: 'rgba(232,236,241,0.6)',
+          }}>
+            Beta preview — not final legal copy.
           </span>
         </div>
 
