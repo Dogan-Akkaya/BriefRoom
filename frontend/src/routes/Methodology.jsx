@@ -108,14 +108,16 @@ export default function Methodology() {
           <span style={labelStyle}>01</span>
           <h2 style={sectionTitle}>Data Collection</h2>
           <p style={{ fontSize: 14, color: 'rgba(232,236,241,0.45)', lineHeight: 1.7, marginBottom: 14 }}>
-            We aggregate intelligence from multiple authoritative sources to ensure breadth and accuracy:
+            Brief Room blends <strong style={{ color: '#E8ECF1' }}>32 verified vendor-sourced data points</strong> (IBM X-Force, Verizon DBIR, Mandiant M-Trends, CrowdStrike, Cloudflare, ENISA, SOCRadar, and others) with <strong style={{ color: '#E8ECF1' }}>75 internal synthetic baselines</strong> and a deterministic coverage generator that fills any remaining gap — ensuring every industry, region, and threat type always renders at least 12 items. Real data is prioritized in every slice; synthetic items appear only when no verified source exists for the selected dimensions.
+          </p>
+          <p style={{ fontSize: 14, color: 'rgba(232,236,241,0.45)', lineHeight: 1.7, marginBottom: 14 }}>
+            We aggregate intelligence from the following authoritative sources:
           </p>
           <ul style={listStyle}>
             <li><strong style={{ color: '#FF4562' }}>SOCRadar Intel</strong> -- Proprietary threat intelligence from SOCRadar's global sensor network</li>
             <li><strong style={{ color: '#FF4562' }}>MITRE ATT&CK</strong> -- Adversary tactics, techniques, and procedures mapping</li>
             <li><strong style={{ color: '#FF4562' }}>CISA KEV</strong> -- Known Exploited Vulnerabilities catalog</li>
             <li><strong style={{ color: '#FF4562' }}>NVD</strong> -- National Vulnerability Database for CVE scoring and metadata</li>
-            <li><strong style={{ color: '#FF4562' }}>PhishStats</strong> -- Real-time phishing URL and campaign data</li>
             <li><strong style={{ color: '#FF4562' }}>Verizon DBIR</strong> -- Data Breach Investigations Report annual findings</li>
             <li><strong style={{ color: '#FF4562' }}>FBI IC3</strong> -- Internet Crime Complaint Center annual reports and alerts</li>
           </ul>
@@ -144,9 +146,9 @@ export default function Methodology() {
             Every data point undergoes a multi-stage validation pipeline:
           </p>
           <ul style={listStyle}>
-            <li><strong style={{ color: '#10B981' }}>Confidence Scoring</strong> -- Each metric carries a confidence level (high / medium / low) based on source reliability and corroboration</li>
             <li><strong style={{ color: '#10B981' }}>Source Attribution</strong> -- All charts display their underlying sources so you can verify independently</li>
             <li><strong style={{ color: '#10B981' }}>Peer Review</strong> -- SOCRadar analysts review aggregated datasets before publication to catch anomalies and bias</li>
+            <li><strong style={{ color: '#10B981' }}>Cross-referencing</strong> -- Metrics are corroborated against at least two independent sources wherever possible</li>
           </ul>
         </div>
 
@@ -159,15 +161,15 @@ export default function Methodology() {
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 16, marginTop: 18 }}>
             {[
-              { value: '47', label: 'Countries', desc: 'Global threat telemetry coverage' },
+              { value: '31', label: 'Countries', desc: 'Global threat telemetry coverage' },
               { value: '10', label: 'Industries', desc: 'Sector-specific benchmarks' },
-              { value: '6', label: 'Threat Categories', desc: 'From ransomware to supply chain' },
-              { value: '180+', label: 'Charts', desc: 'Board-ready visualizations' },
+              { value: '10', label: 'Threat Categories', desc: 'From ransomware to supply chain' },
+              { value: '130+', label: 'Data Points', desc: 'Charts and stats across slices' },
             ].map((item, i) => (
               <div key={i} style={{ padding: '16px 14px', background: 'rgba(255,255,255,0.02)', borderRadius: 12, border: '1px solid rgba(255,255,255,0.04)' }}>
                 <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 28, fontWeight: 700, color: '#FF4562', marginBottom: 4 }}>{item.value}</div>
-                <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'rgba(232,236,241,0.35)', marginBottom: 4 }}>{item.label}</div>
-                <div style={{ fontSize: 12, color: 'rgba(232,236,241,0.3)' }}>{item.desc}</div>
+                <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'rgba(232,236,241,0.6)', marginBottom: 4 }}>{item.label}</div>
+                <div style={{ fontSize: 12, color: 'rgba(232,236,241,0.6)' }}>{item.desc}</div>
               </div>
             ))}
           </div>

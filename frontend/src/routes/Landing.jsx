@@ -9,7 +9,30 @@ import CategoryPicker from '../components/CategoryPicker'
 import ReportCard from '../components/ReportCard'
 import SearchPanel from '../components/SearchPanel'
 import ChartPreviewModal from '../components/ChartPreviewModal'
-import { POPULAR, GLOBAL_REPORTS } from '../lib/data'
+import { GLOBAL_REPORTS } from '../lib/data'
+import { popularCharts, threatTypeLabel } from '../lib/intelligenceLibrary'
+
+// Adapter: Intelligence Library item → PopularChartCard props (mirrors /popular)
+function toCardProps(item) {
+  const series = item.dataset?.series || []
+  const first = series[0] || {}
+  const tt = item.threat_type?.[0]
+  const d = item.display || {}
+  return {
+    title: item.title,
+    views: d.views || '—',
+    tag: (threatTypeLabel(tt) || 'INTEL').toUpperCase(),
+    trend: d.trend || '',
+    up: d.up !== undefined ? d.up : null,
+    color: first.color || '#FF4562',
+    data: first.values || [],
+    sources: item.source,
+    updated: item.updated_at ? item.updated_at.slice(0, 7) : '',
+    detail: d.detail || '',
+    metrics: d.metrics || [],
+    categoryId: tt,
+  }
+}
 
 export default function Landing() {
   const navigate = useNavigate()
@@ -43,7 +66,7 @@ export default function Landing() {
           <p style={{ fontSize: 17, lineHeight: 1.7, color: 'rgba(232,236,241,0.6)', maxWidth: 580, margin: '0 auto 16px', fontWeight: 400, opacity: loaded ? 1 : 0, transition: 'all 0.8s cubic-bezier(0.16,1,0.3,1) 0.5s', textShadow: '0 2px 20px rgba(10,14,26,0.9)' }}>
             Explore ransomware, phishing, and dark web threat data through ready-made charts. Tailored for industry and region for security reporting.
           </p>
-          <p style={{ fontSize: 12, color: 'rgba(232,236,241,0.2)', fontFamily: "'JetBrains Mono'", letterSpacing: '0.06em', margin: '0 auto 36px', opacity: loaded ? 1 : 0, transition: 'all 0.8s cubic-bezier(0.16,1,0.3,1) 0.6s' }}>
+          <p style={{ fontSize: 12, color: 'rgba(232,236,241,0.5)', fontFamily: "'JetBrains Mono'", letterSpacing: '0.06em', margin: '0 auto 36px', opacity: loaded ? 1 : 0, transition: 'all 0.8s cubic-bezier(0.16,1,0.3,1) 0.6s' }}>
             Free &bull; Instant export
           </p>
 
@@ -79,6 +102,23 @@ export default function Landing() {
                 <div style={{ fontSize: 12, color: 'rgba(232,236,241,0.45)', lineHeight: 1.5 }}>Build your own charts with full control over data & filters</div>
               </div>
             </div>
+
+            {/* STATS — moved up: lives directly below the 3-card row, inside the hero */}
+            <div style={{ maxWidth: 900, margin: '32px auto 0', padding: '0 16px' }}>
+              <div style={{ height: 1, background: 'linear-gradient(90deg,transparent,rgba(255,69,98,0.1),transparent)', marginBottom: 20 }} />
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(130px,1fr))', gap: 8, textAlign: 'center' }}>
+                {[{ n: 2400, s: '+', l: 'CISOs using Brief Room' }, { n: 47, s: '', l: 'Countries covered' }, { n: 180, s: '+', l: 'Ready-made charts' }, { n: 12, s: 's', l: 'Avg. time to first chart' }].map((s, i) => (
+                  <Reveal key={i} delay={i * 70}>
+                    <div style={{ padding: '10px 6px' }}>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 30, fontWeight: 700, color: '#FF4562', lineHeight: 1, marginBottom: 4, letterSpacing: '-0.02em' }}>
+                        <AnimNum end={s.n} />{s.s}
+                      </div>
+                      <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 9, letterSpacing: '0.1em', color: 'rgba(232,236,241,0.6)', textTransform: 'uppercase' }}>{s.l}</div>
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -92,7 +132,7 @@ export default function Landing() {
                 <span style={{ animation: 'gentlePulse 2.5s ease-in-out infinite', display: 'inline-block' }}>●</span>&nbsp;&nbsp;Popular Charts
               </div>
               <h2 style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 'clamp(26px,3.5vw,40px)', fontWeight: 600, lineHeight: 1.15, color: '#E8ECF1', marginBottom: 14, letterSpacing: '-0.02em' }}>What other CISOs are looking at</h2>
-              <p style={{ fontSize: 15, lineHeight: 1.7, color: 'rgba(232,236,241,0.38)', fontWeight: 300, maxWidth: 600 }}>Explore ransomware, phishing, and dark web threat data through ready-made charts. Tailored for industry and region for security reporting.</p>
+              <p style={{ fontSize: 15, lineHeight: 1.7, color: 'rgba(232,236,241,0.62)', fontWeight: 300, maxWidth: 600 }}>Explore ransomware, phishing, and dark web threat data through ready-made charts. Tailored for industry and region for security reporting.</p>
             </div>
             <button onClick={() => navigate('/popular')} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '10px 18px', fontFamily: "'Satoshi','DM Sans',sans-serif", fontSize: 12, fontWeight: 600, background: 'transparent', color: 'rgba(232,236,241,0.55)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 12, cursor: 'pointer' }}>
               Browse All 180+ →
@@ -100,7 +140,7 @@ export default function Landing() {
           </div>
         </Reveal>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 18 }}>
-          {POPULAR.slice(0, 6).map((c, i) => (
+          {popularCharts().slice(0, 6).map(toCardProps).map((c, i) => (
             <Reveal key={i} delay={i * 70}>
               <PopularChartCard
                 {...c}
@@ -135,24 +175,6 @@ export default function Landing() {
         </Reveal>
       </section>
 
-      {/* STATS */}
-      <section style={{ position: 'relative', zIndex: 1, padding: '60px 24px 80px', maxWidth: 900, margin: '0 auto' }}>
-        <div style={{ height: 1, background: 'linear-gradient(90deg,transparent,rgba(255,69,98,0.1),transparent)', marginBottom: 56 }} />
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(150px,1fr))', gap: 12, textAlign: 'center' }}>
-          {[{ n: 2400, s: '+', l: 'CISOs using Brief Room' }, { n: 47, s: '', l: 'Countries covered' }, { n: 180, s: '+', l: 'Ready-made charts' }, { n: 12, s: 's', l: 'Avg. time to first chart' }].map((s, i) => (
-            <Reveal key={i} delay={i * 70}>
-              <div style={{ padding: '28px 8px' }}>
-                <div style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 42, fontWeight: 700, color: '#FF4562', lineHeight: 1, marginBottom: 6, letterSpacing: '-0.02em' }}>
-                  <AnimNum end={s.n} />{s.s}
-                </div>
-                <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, letterSpacing: '0.1em', color: 'rgba(232,236,241,0.25)', textTransform: 'uppercase' }}>{s.l}</div>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-        <div style={{ height: 1, background: 'linear-gradient(90deg,transparent,rgba(255,69,98,0.1),transparent)', marginTop: 56 }} />
-      </section>
-
       {/* GLOBAL THREAT REPORTS PREVIEW */}
       <section style={{ position: 'relative', zIndex: 1, padding: '40px 24px', maxWidth: 1100, margin: '0 auto' }}>
         <Reveal>
@@ -162,7 +184,7 @@ export default function Landing() {
                 <span style={{ animation: 'gentlePulse 2.5s ease-in-out infinite', display: 'inline-block' }}>●</span>&nbsp;&nbsp;Global Reports
               </div>
               <h2 style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 'clamp(26px,3.5vw,40px)', fontWeight: 600, lineHeight: 1.15, color: '#E8ECF1', marginBottom: 14, letterSpacing: '-0.02em' }}>From the reports CISOs trust most</h2>
-              <p style={{ fontSize: 15, lineHeight: 1.7, color: 'rgba(232,236,241,0.38)', fontWeight: 300, maxWidth: 500 }}>Key charts from IBM, CrowdStrike, Verizon DBIR, Mandiant and more. External sources, ready to present.</p>
+              <p style={{ fontSize: 15, lineHeight: 1.7, color: 'rgba(232,236,241,0.62)', fontWeight: 300, maxWidth: 500 }}>Key charts from IBM, CrowdStrike, Verizon DBIR, Mandiant and more. External sources, ready to present.</p>
             </div>
             <button onClick={() => navigate('/reports')} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '10px 18px', fontFamily: "'Satoshi','DM Sans',sans-serif", fontSize: 12, fontWeight: 600, background: 'transparent', color: 'rgba(232,236,241,0.55)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 12, cursor: 'pointer' }}>
               Browse All Reports →
@@ -198,7 +220,7 @@ export default function Landing() {
           <h2 style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 'clamp(26px,3.5vw,40px)', fontWeight: 600, lineHeight: 1.15, color: '#E8ECF1', marginBottom: 14, letterSpacing: '-0.02em' }}>
             Instant charts for<br /><span style={{ color: '#FF4562' }}>smarter security decisions</span>
           </h2>
-          <p style={{ fontSize: 15, lineHeight: 1.7, color: 'rgba(232,236,241,0.38)', fontWeight: 300, maxWidth: 500, margin: '0 auto 36px', textAlign: 'center' }}>Explore threat data through ready-made charts or build your own. Tailored for your industry and region.</p>
+          <p style={{ fontSize: 15, lineHeight: 1.7, color: 'rgba(232,236,241,0.62)', fontWeight: 300, maxWidth: 500, margin: '0 auto 36px', textAlign: 'center' }}>Explore threat data through ready-made charts or build your own. Tailored for your industry and region.</p>
           <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
             <button onClick={() => document.getElementById('popular-section')?.scrollIntoView({ behavior: 'smooth' })} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '13px 26px', fontFamily: "'Satoshi','DM Sans',sans-serif", fontSize: 14, fontWeight: 600, border: 'none', borderRadius: 12, cursor: 'pointer', background: '#FF4562', color: '#fff' }}>Browse Popular Charts</button>
             <button onClick={() => navigate('/builder')} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '13px 26px', fontFamily: "'Satoshi','DM Sans',sans-serif", fontSize: 14, fontWeight: 600, border: '1px solid rgba(59,130,246,0.25)', borderRadius: 12, cursor: 'pointer', background: 'rgba(59,130,246,0.12)', color: '#60A5FA' }}>Create Custom Chart</button>
@@ -208,7 +230,7 @@ export default function Landing() {
 
       {/* FOOTER */}
       <footer style={{ position: 'relative', zIndex: 1, padding: '20px 28px', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.03)' }}>
-        <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: 'rgba(232,236,241,0.18)' }}>© 2026 SOCRadar Brief Room</span>
+        <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: 'rgba(232,236,241,0.45)' }}>© 2026 SOCRadar Brief Room</span>
       </footer>
 
       {previewChart && (

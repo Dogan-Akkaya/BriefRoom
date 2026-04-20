@@ -1,17 +1,16 @@
 import { useState, useMemo, useEffect } from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, useSearchParams, Navigate } from 'react-router-dom'
 import {
   BarChart, Bar, LineChart, Line, PieChart, Pie, Cell, AreaChart, Area,
   XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid,
 } from 'recharts'
 import SmokeHero from '../components/SmokeHero'
-import GridBackground from '../components/GridBackground'
-import CategoryPicker from '../components/CategoryPicker'
 import ControlPanel from '../components/ControlPanel'
 import ExportBar from '../components/ExportBar'
 import PNGExportModal from '../components/PNGExportModal'
 import ShareLinkModal from '../components/ShareLinkModal'
-import { CATEGORIES, MONTHS, generateData, DATA_POINTS_BY_CATEGORY, ALL_MONTHS } from '../lib/data'
+import { CATEGORIES, MONTHS, generateData, DATA_POINTS_BY_CATEGORY, ALL_MONTHS, ALL_REGIONS } from '../lib/data'
+import { slugToLabel } from '../lib/intelligenceLibrary'
 
 const tooltipStyle = {
   contentStyle: { background: 'rgba(12,16,28,0.96)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 14, fontSize: 12, fontFamily: "'JetBrains Mono',monospace", backdropFilter: 'blur(20px)', boxShadow: '0 12px 48px rgba(0,0,0,0.5)', padding: '12px 16px' },
@@ -34,6 +33,7 @@ const AmbientBG = ({ colors }) => (
 export default function Builder() {
   const { categoryId } = useParams()
   const navigate = useNavigate()
+  const [searchParams] = useSearchParams()
 
   const selectedCat = categoryId ? CATEGORIES.find(c => c.id === categoryId) : null
 
@@ -45,6 +45,18 @@ export default function Builder() {
       : 'Custom Chart Builder — Threat Intelligence | Brief Room'
   }, [selectedCat])
 
+  // Pre-anchor from wizard: ?industry=<slug> or ?region=<slug>
+  const initialIndustry = (() => {
+    const slug = searchParams.get('industry')
+    if (!slug) return ''
+    return slugToLabel('industry', slug) || ''
+  })()
+  const initialRegion = (() => {
+    const slug = searchParams.get('region')
+    if (!slug) return ''
+    return slugToLabel('region', slug) || ALL_REGIONS.find(r => r.toLowerCase() === slug.toLowerCase()) || ''
+  })()
+
   const [chartType, setChartType] = useState('bar')
   const [operation, setOperation] = useState('Sum')
   const [dateStart, setDateStart] = useState(24) // Jan 2026
@@ -53,9 +65,9 @@ export default function Builder() {
   const [highlightedElement, setHighlightedElement] = useState(null)
   const [showPNGModal, setShowPNGModal] = useState(false)
   const [showShareModal, setShowShareModal] = useState(false)
-  const [country, setCountry] = useState('')
-  const [regionMode, setRegionMode] = useState(false)
-  const [industry, setIndustry] = useState('')
+  const [country, setCountry] = useState(initialRegion)
+  const [regionMode, setRegionMode] = useState(Boolean(initialRegion))
+  const [industry, setIndustry] = useState(initialIndustry)
   const [dataPoint, setDataPoint] = useState('')
   const [threatGroup, setThreatGroup] = useState('All Groups')
 
@@ -130,30 +142,13 @@ export default function Builder() {
   }
   const toggleHighlight = (name) => setHighlightedElement(p => p === name ? null : name)
 
-  const ctrlLabelStyle = { fontFamily: "'JetBrains Mono'", fontSize: 10, letterSpacing: '0.08em', color: 'rgba(232,236,241,0.3)', textTransform: 'uppercase', marginBottom: 4 }
+  const ctrlLabelStyle = { fontFamily: "'JetBrains Mono'", fontSize: 10, letterSpacing: '0.08em', color: 'rgba(232,236,241,0.6)', textTransform: 'uppercase', marginBottom: 4 }
   const statValueStyle = { fontFamily: "'Plus Jakarta Sans'", fontSize: 24, fontWeight: 700, letterSpacing: '-0.02em' }
   const statCardStyle = { padding: '14px 20px', borderRadius: 14, background: 'rgba(255,255,255,0.02)', backdropFilter: 'blur(16px)', border: '1px solid rgba(255,255,255,0.05)', boxShadow: '0 4px 20px rgba(0,0,0,0.12)' }
 
-  // Category selection screen
+  // Invalid / missing categoryId → send user back to the wizard entry.
   if (!selectedCat) {
-    return (
-      <div style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden', paddingTop: 80 }}>
-        <GridBackground />
-        <AmbientBG colors={['#FF4562', '#3B82F6', '#A855F7']} />
-        <div style={{ maxWidth: 940, margin: '0 auto', padding: '60px 24px 40px', position: 'relative', zIndex: 2 }}>
-          <div style={{ textAlign: 'center', marginBottom: 52 }}>
-            <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, letterSpacing: '0.12em', color: 'rgba(255,69,98,0.6)', textTransform: 'uppercase', marginBottom: 16, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}>
-              <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#FF4562', boxShadow: '0 0 8px rgba(255,69,98,0.5)' }} />Custom Chart Builder
-            </div>
-            <h1 style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 'clamp(30px,4.5vw,46px)', fontWeight: 800, letterSpacing: '-0.03em', marginBottom: 14, lineHeight: 1.1, color: '#FFFFFF', textShadow: '0 2px 30px rgba(10,14,26,0.8)' }}>
-              What data do you want to <span style={{ background: 'linear-gradient(135deg,#FF4562,#F97316)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>visualize</span>?
-            </h1>
-            <p style={{ fontSize: 16, color: 'rgba(232,236,241,0.45)', fontWeight: 300, maxWidth: 480, margin: '0 auto', lineHeight: 1.7 }}>Select a threat category. You'll customize chart type, date range, and every data element.</p>
-          </div>
-          <CategoryPicker onSelect={(cat) => navigate(`/builder/${cat.id}`)} />
-        </div>
-      </div>
-    )
+    return <Navigate to="/explore" replace />
   }
 
   // Chart builder view
@@ -165,16 +160,16 @@ export default function Builder() {
       {/* Builder nav */}
       <nav style={{ padding: '12px 22px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.05)', background: 'rgba(10,14,26,0.6)', backdropFilter: 'blur(20px)', position: 'relative', zIndex: 10 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <button onClick={() => navigate('/builder')} style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 10, padding: '7px 16px', color: 'rgba(232,236,241,0.5)', cursor: 'pointer', fontSize: 12, backdropFilter: 'blur(8px)' }}>← Categories</button>
+          <button onClick={() => navigate('/explore')} style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 10, padding: '7px 16px', color: 'rgba(232,236,241,0.5)', cursor: 'pointer', fontSize: 12, backdropFilter: 'blur(8px)' }}>← Custom Builder</button>
           <div style={{ width: 1, height: 20, background: 'rgba(255,255,255,0.06)' }} />
           <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
             <div style={{ width: 30, height: 30, borderRadius: 8, background: 'rgba(255,69,98,0.08)', border: '1px solid rgba(255,69,98,0.18)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <CatIcon path={selectedCat.svgPath} />
             </div>
             <span style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 15, fontWeight: 600 }}>{selectedCat.label}</span>
-            {country && <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.25)', padding: '2px 8px', borderRadius: 6, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.05)' }}>{country}</span>}
-            {industry && <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.25)', padding: '2px 8px', borderRadius: 6, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.05)' }}>{industry}</span>}
-            {threatGroup && threatGroup !== 'All Groups' && <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.25)', padding: '2px 8px', borderRadius: 6, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.05)' }}>{threatGroup}</span>}
+            {country && <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.55)', padding: '2px 8px', borderRadius: 6, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.05)' }}>{country}</span>}
+            {industry && <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.55)', padding: '2px 8px', borderRadius: 6, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.05)' }}>{industry}</span>}
+            {threatGroup && threatGroup !== 'All Groups' && <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.55)', padding: '2px 8px', borderRadius: 6, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.05)' }}>{threatGroup}</span>}
           </div>
         </div>
         <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
@@ -206,7 +201,7 @@ export default function Builder() {
             {highlightedElement && highlightedData && (
               <div style={{ padding: '14px 20px', borderRadius: 14, background: `${catColor}06`, backdropFilter: 'blur(16px)', border: `1px solid ${catColor}18`, boxShadow: `0 4px 24px ${catColor}06`, animation: 'catCardIn 0.3s cubic-bezier(0.16,1,0.3,1)' }}>
                 <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, letterSpacing: '0.08em', color: `${catColor}90`, textTransform: 'uppercase', marginBottom: 4 }}>◉ {highlightedElement}</div>
-                <div style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 24, fontWeight: 700, color: catColor, letterSpacing: '-0.02em' }}>{highlightPct}%<span style={{ fontSize: 13, fontWeight: 400, color: 'rgba(232,236,241,0.3)', marginLeft: 8 }}>({highlightedData.value.toLocaleString()})</span></div>
+                <div style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 24, fontWeight: 700, color: catColor, letterSpacing: '-0.02em' }}>{highlightPct}%<span style={{ fontSize: 13, fontWeight: 400, color: 'rgba(232,236,241,0.6)', marginLeft: 8 }}>({highlightedData.value.toLocaleString()})</span></div>
               </div>
             )}
           </div>
@@ -223,8 +218,8 @@ export default function Builder() {
             {visibleData.length === 0 ? (
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: 380, flexDirection: 'column', gap: 12 }}>
                 <div style={{ fontSize: 32, opacity: 0.2 }}>&#128202;</div>
-                <div style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 15, fontWeight: 600, color: 'rgba(232,236,241,0.3)' }}>No data to display</div>
-                <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: 'rgba(232,236,241,0.15)' }}>Try adjusting your filters or showing hidden elements</div>
+                <div style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 15, fontWeight: 600, color: 'rgba(232,236,241,0.6)' }}>No data to display</div>
+                <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: 'rgba(232,236,241,0.5)' }}>Try adjusting your filters or showing hidden elements</div>
               </div>
             ) : (
             <ResponsiveContainer width="100%" height={380}>
@@ -278,7 +273,7 @@ export default function Builder() {
             </div>
           </div>
           <ExportBar onPNGClick={() => setShowPNGModal(true)} onShareClick={() => setShowShareModal(true)} />
-          <div style={{ marginTop: 12, fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.15)', display: 'flex', justifyContent: 'space-between' }}>
+          <div style={{ marginTop: 12, fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.5)', display: 'flex', justifyContent: 'space-between' }}>
             <span>Data: SOCRadar Threat Intelligence • {chartMonthLabels[0]}–{chartMonthLabels[chartMonthLabels.length - 1]}{country ? ` • ${country}` : ''}{industry ? ` • ${industry}` : ''}</span>
             <span>{visibleData.length} of {rawData.length} shown</span>
           </div>

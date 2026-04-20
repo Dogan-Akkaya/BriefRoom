@@ -1,4 +1,5 @@
 import { useState, useCallback } from 'react'
+import { BrandChip } from '../lib/sourceBrands'
 
 // Lightweight SVG chart placeholder — no Recharts dependency
 function MiniChart({ data, labels, color, type }) {
@@ -47,8 +48,10 @@ export default function ReportCard({ report, onClick }) {
   return (
     <div
       style={{
-        background: 'rgba(59,130,246,0.03)',
-        border: `1px solid ${hovered ? 'rgba(59,130,246,0.15)' : 'rgba(59,130,246,0.08)'}`,
+        background: 'rgba(12,16,28,0.72)',
+        backdropFilter: 'blur(18px) saturate(120%)',
+        WebkitBackdropFilter: 'blur(18px) saturate(120%)',
+        border: `1px solid ${hovered ? 'rgba(59,130,246,0.28)' : 'rgba(59,130,246,0.14)'}`,
         borderRadius: 18,
         padding: 22,
         cursor: 'pointer',
@@ -56,18 +59,18 @@ export default function ReportCard({ report, onClick }) {
         overflow: 'hidden',
         transition: 'all 0.3s cubic-bezier(0.16,1,0.3,1)',
         transform: hovered ? 'translateY(-3px)' : 'none',
-        boxShadow: hovered ? '0 16px 40px rgba(0,0,0,0.3)' : 'none',
+        boxShadow: hovered ? '0 16px 40px rgba(0,0,0,0.45)' : '0 4px 18px rgba(0,0,0,0.25)',
       }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onClick={onClick}
     >
-      <span style={{ position: 'absolute', top: 14, right: 14, fontFamily: "'JetBrains Mono'", fontSize: 9, background: 'rgba(255,255,255,0.04)', color: 'rgba(232,236,241,0.2)', padding: '2px 7px', borderRadius: 4, letterSpacing: '0.04em' }}>External Source</span>
+      <span style={{ position: 'absolute', top: 14, right: 14, fontFamily: "'JetBrains Mono'", fontSize: 9, background: 'rgba(255,255,255,0.04)', color: 'rgba(232,236,241,0.5)', padding: '2px 7px', borderRadius: 4, letterSpacing: '0.04em' }}>External Source</span>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12 }}>
-        <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, fontWeight: 600, background: 'rgba(59,130,246,0.08)', color: 'rgba(232,236,241,0.6)', padding: '3px 9px', borderRadius: 6 }}>{report.sourceShort}</span>
-        <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.25)' }}>{report.year}</span>
-        <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 9, color: 'rgba(232,236,241,0.3)', background: 'rgba(255,255,255,0.03)', padding: '3px 8px', borderRadius: 5 }}>{report.category}</span>
+        <BrandChip source={report.source} size="lg" />
+        <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.55)' }}>{report.year}</span>
+        <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 9, color: 'rgba(232,236,241,0.6)', background: 'rgba(255,255,255,0.03)', padding: '3px 8px', borderRadius: 5 }}>{report.category}</span>
       </div>
 
       <div style={{ marginBottom: 14, borderRadius: 10, overflow: 'hidden', background: 'rgba(0,0,0,0.15)', padding: '8px 4px 0' }}>
@@ -75,10 +78,10 @@ export default function ReportCard({ report, onClick }) {
       </div>
 
       <h4 style={{ fontSize: 15, fontWeight: 600, color: '#E8ECF1', lineHeight: 1.35, marginBottom: 5 }}>{report.title}</h4>
-      <p style={{ fontSize: 11, color: 'rgba(232,236,241,0.32)', lineHeight: 1.55, marginBottom: 14 }}>{report.description}</p>
+      <p style={{ fontSize: 11, color: 'rgba(232,236,241,0.6)', lineHeight: 1.55, marginBottom: 14 }}>{report.description}</p>
 
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: 10, borderTop: '1px solid rgba(59,130,246,0.06)' }}>
-        <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.18)' }}>Source: {report.source}</span>
+        <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.45)' }}>Source: {report.source}</span>
         <span style={{ fontSize: 11, color: 'rgba(59,130,246,0.4)', fontFamily: "'JetBrains Mono'", fontSize: 10 }}>Click to preview</span>
       </div>
     </div>

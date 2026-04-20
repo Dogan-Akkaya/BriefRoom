@@ -19,7 +19,7 @@ export default function Navbar() {
     { label: "Home", path: "/", activeColor: "#FF4562", icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: 2}}><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>, exact: true },
     { label: "Popular Charts", path: "/popular", activeColor: "#FF4562" },
     { label: "Global Reports", path: "/reports", activeColor: "#3B82F6" },
-    { label: "Custom Builder", path: "/builder", activeColor: "#FF4562" },
+    { label: "Custom Builder", path: "/explore", activeColor: "#FF4562" },
     { label: "Methodology", path: "/methodology", activeColor: "#FF4562" },
   ];
 

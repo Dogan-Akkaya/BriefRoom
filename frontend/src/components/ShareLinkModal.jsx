@@ -164,7 +164,7 @@ export default function ShareLinkModal({ onClose, categoryId }) {
         <p
           style={{
             fontSize: 11,
-            color: 'rgba(232,236,241,0.25)',
+            color: 'rgba(232,236,241,0.55)',
             textAlign: 'center',
             margin: '14px 0 0',
           }}

@@ -1,7 +1,7 @@
 # Brief Room
 
 ## What is this?
-Brief Room is a CISO-facing cyber threat intelligence visualization tool by SOCRadar. It provides presentation-ready charts that security leaders can search, customize, and export as PNG/CSV for board briefings.
+Brief Room is a CISO-facing cyber threat intelligence visualization tool by SOCRadar. It provides presentation-ready charts that security leaders can search, customize, and export as PNG for board briefings.
 
 **Target users:** CISOs, Cybersecurity Managers, Threat Intel analysts.
 **Production target:** socradar.io/labs

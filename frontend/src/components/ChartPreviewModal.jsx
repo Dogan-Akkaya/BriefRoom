@@ -175,7 +175,7 @@ export default function ChartPreviewModal({ chart, type, onClose, onCustomize })
                     <div style={{
                       fontFamily: "'JetBrains Mono', monospace",
                       fontSize: 9, letterSpacing: '0.1em', textTransform: 'uppercase',
-                      color: 'rgba(232,236,241,0.3)', marginBottom: 6,
+                      color: 'rgba(232,236,241,0.6)', marginBottom: 6,
                     }}>
                       {m.label}
                     </div>
@@ -255,7 +255,7 @@ export default function ChartPreviewModal({ chart, type, onClose, onCustomize })
                 fontFamily: "'JetBrains Mono', monospace",
                 fontSize: 9,
                 background: 'rgba(255,255,255,0.04)',
-                color: 'rgba(232,236,241,0.2)',
+                color: 'rgba(232,236,241,0.5)',
                 padding: '3px 8px', borderRadius: 4,
                 letterSpacing: '0.04em',
               }}>
@@ -279,13 +279,13 @@ export default function ChartPreviewModal({ chart, type, onClose, onCustomize })
             }}>
               <span style={{
                 fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 11, color: 'rgba(232,236,241,0.3)',
+                fontSize: 11, color: 'rgba(232,236,241,0.6)',
               }}>
                 {chart.year}
               </span>
               <span style={{
                 fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 9, color: 'rgba(232,236,241,0.3)',
+                fontSize: 9, color: 'rgba(232,236,241,0.6)',
                 background: 'rgba(255,255,255,0.03)',
                 padding: '3px 8px', borderRadius: 5,
               }}>
@@ -319,7 +319,7 @@ export default function ChartPreviewModal({ chart, type, onClose, onCustomize })
             {/* Source attribution */}
             <div style={{
               fontFamily: "'JetBrains Mono', monospace",
-              fontSize: 10, color: 'rgba(232,236,241,0.18)',
+              fontSize: 10, color: 'rgba(232,236,241,0.45)',
               marginBottom: 18,
             }}>
               Source: {chart.source}

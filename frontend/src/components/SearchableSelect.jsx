@@ -87,7 +87,7 @@ export default function SearchableSelect({ value, onChange, options = [], placeh
       right: 12,
       top: label ? 32 : 12,
       pointerEvents: 'none',
-      color: 'rgba(232,236,241,0.3)',
+      color: 'rgba(232,236,241,0.6)',
       fontSize: 10,
       transition: 'transform 0.2s ease',
       transform: open ? 'rotate(180deg)' : 'rotate(0deg)',
@@ -124,7 +124,7 @@ export default function SearchableSelect({ value, onChange, options = [], placeh
     noResults: {
       padding: '10px 14px',
       fontSize: 12,
-      color: 'rgba(232,236,241,0.3)',
+      color: 'rgba(232,236,241,0.6)',
       fontStyle: 'italic',
     },
   }

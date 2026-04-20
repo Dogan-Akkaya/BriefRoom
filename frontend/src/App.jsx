@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Toast from './components/Toast'
 import Landing from './routes/Landing'
@@ -8,6 +8,9 @@ import Popular from './routes/Popular'
 import Methodology from './routes/Methodology'
 import StaticPage from './routes/StaticPage'
 import Reports from './routes/Reports'
+import Explore from './routes/Explore'
+import WizardScreen1 from './components/explore/WizardScreen1'
+import WizardScreen2 from './components/explore/WizardScreen2'
 
 class ErrorBoundary extends React.Component {
   constructor(props) { super(props); this.state = { error: null } }
@@ -34,7 +37,14 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/builder" element={<Builder />} />
+          {/* Custom Builder wizard */}
+          <Route path="/explore" element={<Explore />}>
+            <Route index element={<WizardScreen1 />} />
+            <Route path=":dim/:value" element={<WizardScreen2 />} />
+            <Route path=":dim/:value/:dim2/:value2" element={<WizardScreen2 />} />
+          </Route>
+          {/* Legacy /builder (no id) redirects into the wizard */}
+          <Route path="/builder" element={<Navigate to="/explore" replace />} />
           <Route path="/builder/:categoryId" element={<Builder />} />
           <Route path="/popular" element={<Popular />} />
           <Route path="/methodology" element={<Methodology />} />
