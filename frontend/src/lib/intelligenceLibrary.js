@@ -15,7 +15,7 @@
 // with async fetchers. Schema is wire-compatible.
 // -----------------------------------------------------------------------------
 
-import { INDUSTRIES, ALL_REGIONS, CATEGORIES, MONTHS } from './data'
+import { INDUSTRIES, ALL_REGIONS, CATEGORIES, MONTHS, GLOBAL_REPORTS } from './data'
 
 // ---------- Slug helpers (URL <-> label) -----------------------------------
 
@@ -765,6 +765,47 @@ function generateCoverage(existing) {
   return out
 }
 
+// ---------- GLOBAL_REPORTS → library items (Phase A merge) ------------------
+// External vendor reports join the library as type='report' items so they can
+// be queried through the same selectors. The legacy GLOBAL_REPORTS export in
+// data.js stays intact for /reports page consumers.
+
+// Category (free-text on GLOBAL_REPORTS) → threat_type tag(s) (CATEGORIES ids)
+const REPORT_CATEGORY_TO_THREAT_TYPE = {
+  'Data Breaches':     ['data_leaks'],
+  'Threat Actors':     ['ransomware', 'dark_web_mentions'],
+  'Ransomware':        ['ransomware'],
+  'Detection':         ['data_leaks'],
+  'Intrusion':         ['vulnerability', 'ransomware'],
+  'eCrime':            ['ransomware', 'phishing'],
+  'Threat Landscape':  ['ransomware', 'phishing', 'vulnerability'],
+}
+
+function globalReportToItem(r) {
+  return {
+    id: `rep-${r.id}`,
+    type: 'report',
+    title: r.title,
+    dataset: {
+      labels: r.dummyLabels,
+      series: [{ name: r.title, values: r.dummyData, color: r.color }],
+    },
+    preferred_chart: r.chartType,
+    source: `${r.source} ${r.year}`,
+    industry: [],            // GLOBAL_REPORTS aren't sector-scoped today
+    region: [],              // nor region-scoped
+    threat_type: REPORT_CATEGORY_TO_THREAT_TYPE[r.category] || [],
+    featured: false,         // reports don't compete for the Popular grid
+    tags: ['external-report', r.category],
+    updated_at: `${r.year}-01-01`,
+    real: true,
+    display: { detail: r.description },
+    external_url: null,      // placeholder — add when report URLs are tracked
+  }
+}
+
+const REPORT_ITEMS = GLOBAL_REPORTS.map(globalReportToItem)
+
 // ---------- Assemble library + selectors ------------------------------------
 
 // Every hand-crafted item is flagged `real: true` — they carry vendor/publication
@@ -772,10 +813,18 @@ function generateCoverage(existing) {
 // Generator output stays unflagged (synthetic backfill).
 const HAND_CRAFTED_REAL = HAND_CRAFTED.map(item => ({ ...item, real: true }))
 
-export const INTELLIGENCE_LIBRARY = [...HAND_CRAFTED_REAL, ...generateCoverage(HAND_CRAFTED_REAL)]
+export const INTELLIGENCE_LIBRARY = [
+  ...HAND_CRAFTED_REAL,
+  ...REPORT_ITEMS,
+  ...generateCoverage(HAND_CRAFTED_REAL),
+]
 
 export const popularCharts = () =>
   INTELLIGENCE_LIBRARY.filter(i => i.featured && i.type === 'chart')
+
+/** External-report items (mirror of GLOBAL_REPORTS in library shape). */
+export const reports = () =>
+  INTELLIGENCE_LIBRARY.filter(i => i.type === 'report')
 
 const resolveValue = (dim, valueOrSlug) => {
   if (dim === 'threat_type') return valueOrSlug

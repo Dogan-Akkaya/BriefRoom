@@ -14,27 +14,33 @@ const ALL_REGIONS = ['North America', 'Europe', 'Middle East', 'Asia Pacific', '
 const CATEGORIES = [
   { id: 'ransomware', label: 'Ransomware', hasData: true },
   { id: 'phishing', label: 'Phishing', hasData: true },
-  { id: 'infostealer', label: 'Infostealer', hasData: false },
-  { id: 'logs_on_sale', label: 'Logs on Sale', hasData: false },
+  { id: 'infostealer', label: 'Infostealer', hasData: true },
+  { id: 'logs_on_sale', label: 'Logs on Sale', hasData: true },
   { id: 'data_leaks', label: 'Data Leaks', hasData: true },
-  { id: 'employee_exposure', label: 'Employee Exposure', hasData: false },
+  { id: 'employee_exposure', label: 'Employee Exposure', hasData: true },
   { id: 'dark_web_mentions', label: 'Dark Web', hasData: true },
   { id: 'vulnerability', label: 'Vulnerability', hasData: true },
-  { id: 'ddos', label: 'DDoS', hasData: false },
+  { id: 'ddos', label: 'DDoS', hasData: true },
   { id: 'supply_chain', label: 'Supply Chain', hasData: true },
 ]
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+// Stub: the library now also imports GLOBAL_REPORTS. Mock a minimal shape the
+// globalReportToItem() converter expects so we can execute the module.
+const GLOBAL_REPORTS = [
+  { id: 'mock-dbir', source: 'Verizon DBIR', sourceShort: 'DBIR', title: 'Mock Attack Patterns', year: 2025, category: 'Data Breaches', color: '#8B5CF6', description: 'Mock.', chartType: 'bar', dummyData: [1, 2, 3], dummyLabels: ['a', 'b', 'c'] },
+]
 
 let src = readFileSync(new URL('../src/lib/intelligenceLibrary.js', import.meta.url), 'utf8')
-src = src.replace("import { INDUSTRIES, ALL_REGIONS, CATEGORIES, MONTHS } from './data'", '')
+// Strip any `import ... from './data'` line (handles additions like GLOBAL_REPORTS).
+src = src.replace(/^import\s*\{[^}]+\}\s*from\s*['"]\.\/data['"]\s*;?\s*$/m, '')
 
 const fn = eval(
-  `(function(INDUSTRIES, ALL_REGIONS, CATEGORIES, MONTHS) {
+  `(function(INDUSTRIES, ALL_REGIONS, CATEGORIES, MONTHS, GLOBAL_REPORTS) {
     ${src.replace(/export const /g, 'var ').replace(/export /g, '')}
-    return { INTELLIGENCE_LIBRARY, popularCharts, sliceItems, crossSliceItems, crossSliceCounts }
+    return { INTELLIGENCE_LIBRARY, popularCharts, reports, sliceItems, crossSliceItems, crossSliceCounts }
   })`
 )
-const lib = fn(INDUSTRIES, ALL_REGIONS, CATEGORIES, MONTHS)
+const lib = fn(INDUSTRIES, ALL_REGIONS, CATEGORIES, MONTHS, GLOBAL_REPORTS)
 
 let errors = 0
 const fail = (msg) => { console.error('\u2717 ' + msg); errors++ }
@@ -62,20 +68,31 @@ const featured = lib.popularCharts()
 console.log(`\nFeatured charts: ${featured.length}`)
 if (featured.length !== 12) fail(`Expected 12 featured charts, got ${featured.length}`)
 
+if (typeof lib.reports === 'function') {
+  console.log(`Report items:    ${lib.reports().length}`)
+}
+
 console.log('\n--- Schema checks ---')
 const ids = new Set()
 for (const item of lib.INTELLIGENCE_LIBRARY) {
   if (!item.id) { fail(`item missing id: ${JSON.stringify(item).slice(0, 80)}`); continue }
   if (ids.has(item.id)) fail(`duplicate id: ${item.id}`)
   ids.add(item.id)
-  if (!['stat', 'chart'].includes(item.type)) fail(`${item.id}: bad type ${item.type}`)
+  if (!['stat', 'chart', 'report'].includes(item.type)) fail(`${item.id}: bad type ${item.type}`)
   if (!item.source) fail(`${item.id}: missing source`)
   if (!item.title) fail(`${item.id}: missing title`)
-  if (!Array.isArray(item.industry) || !item.industry.length) fail(`${item.id}: empty industry[]`)
-  if (!Array.isArray(item.region) || !item.region.length) fail(`${item.id}: empty region[]`)
-  if (!Array.isArray(item.threat_type) || !item.threat_type.length) fail(`${item.id}: empty threat_type[]`)
-  if (item.type === 'chart') {
-    if (!item.dataset) fail(`${item.id}: chart missing dataset`)
+  // Dimension arrays are required for stat + chart items. Reports may have
+  // empty dimensions because GLOBAL_REPORTS aren't sector/region-scoped today.
+  if (item.type !== 'report') {
+    if (!Array.isArray(item.industry) || !item.industry.length) fail(`${item.id}: empty industry[]`)
+    if (!Array.isArray(item.region) || !item.region.length) fail(`${item.id}: empty region[]`)
+    if (!Array.isArray(item.threat_type) || !item.threat_type.length) fail(`${item.id}: empty threat_type[]`)
+  } else {
+    // Reports: at minimum a threat_type tag so slice queries can reach them.
+    if (!Array.isArray(item.threat_type)) fail(`${item.id}: report missing threat_type[]`)
+  }
+  if (item.type === 'chart' || item.type === 'report') {
+    if (!item.dataset) fail(`${item.id}: ${item.type} missing dataset`)
     if (item.dataset && (!item.dataset.labels || !item.dataset.series)) fail(`${item.id}: dataset missing labels/series`)
   }
   if (item.type === 'stat') {

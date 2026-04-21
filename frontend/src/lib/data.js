@@ -96,16 +96,93 @@ export const DATA_POINTS_BY_CATEGORY = {
   ],
 }
 
-// Seeded RNG data generator — uses composite key for unique data per category+datapoint+filters
+// Record aggregation (Phase C) — when real incident records exist for a
+// category, Builder aggregates them instead of producing seeded noise.
+// See src/lib/records/ for per-category record arrays + schemas.
+import { getRecords } from './records'
+
+// Parse Builder's colon-delimited filter string into its 3 fields.
+function parseFilterSuffix(filterSuffix) {
+  const parts = (filterSuffix || '').split(':')
+  return {
+    country: parts[0] || '',
+    industry: parts[1] || '',
+    threatGroup: parts[2] || '',
+  }
+}
+
+// Apply Builder filters to a record array. Records use victim_* or target_*
+// field names depending on category — we accept either.
+function filterRecords(records, { country, industry, threatGroup }) {
+  return records.filter(r => {
+    if (country) {
+      const c = r.victim_country || r.target_country || r.company_country || ''
+      if (c !== country) return false
+    }
+    if (industry) {
+      const i = r.victim_industry || r.target_industry || r.company_industry || ''
+      if (i !== industry) return false
+    }
+    if (threatGroup && threatGroup !== 'All Groups') {
+      if ((r.threat_group || '') !== threatGroup) return false
+    }
+    return true
+  })
+}
+
+// Aggregate records into the chart-ready { name, Jan..Dec, color }[] shape.
+// Returns null when no spec is wired for (catId, dpId) — caller falls through
+// to the seeded RNG. When real data arrives for a category, add a spec here.
+// Signature kept narrow on purpose; this is a scaffold, not a finished engine.
+function aggregateRecords(records, catId, dpId, filterSuffix) {
+  const filters = parseFilterSuffix(filterSuffix)
+  const filtered = filterRecords(records, filters)
+  if (filtered.length === 0) return null
+
+  // Aggregation specs live here. Empty today → always returns null → seeded
+  // fallback kicks in. Flesh out per category when records arrive.
+  //
+  // Example spec (commented, for when vulnerability records get populated):
+  //
+  //   if (catId === 'vulnerability' && dpId === 'cve_volume') {
+  //     return groupByElementPerMonth(filtered, {
+  //       dimension: r => r.vulnerability_class,
+  //       elements: DATA_POINTS_BY_CATEGORY.vulnerability
+  //         .find(d => d.id === 'cve_volume').elements,
+  //       dateField: 'disclosed_at',
+  //     })
+  //   }
+  return null
+}
+
+// Seeded RNG data generator — uses composite key for unique data per category+datapoint+filters.
+// Phase C: prefers record aggregation when real records exist for the category;
+// falls back to the seeded logic below (unchanged) when none match or no spec is defined.
 export function generateData(compositeKey, filterSuffix = '') {
+  const parts = compositeKey.split('/')
+  const catId = parts[0]
+  const dpId = parts[1]
+
+  // --- Records-first path (empty arrays today → always returns null) ---
+  try {
+    const records = getRecords(catId)
+    if (records && records.length > 0) {
+      const aggregated = aggregateRecords(records, catId, dpId, filterSuffix)
+      if (aggregated && aggregated.length > 0) return aggregated
+    }
+  } catch (err) {
+    // Defensive: any aggregation error falls through to the seeded path so
+    // the Builder never renders empty due to a bug in a new aggregation spec.
+    if (typeof console !== 'undefined') {
+      console.warn('[generateData] record aggregation failed — seeded fallback used:', err)
+    }
+  }
+
+  // --- Seeded fallback (original behaviour, unchanged) ---
   const fullKey = filterSuffix ? `${compositeKey}:${filterSuffix}` : compositeKey
   const seed = fullKey.split('').reduce((a, c) => a + c.charCodeAt(0), 0)
   const rng = (i) => Math.abs(Math.sin(seed * 9301 + i * 49297) * 233280) % 1
 
-  // Look up elements from DATA_POINTS_BY_CATEGORY if key contains underscore
-  const parts = compositeKey.split('/')
-  const catId = parts[0]
-  const dpId = parts[1]
   let elementNames
 
   if (dpId && DATA_POINTS_BY_CATEGORY[catId]) {
