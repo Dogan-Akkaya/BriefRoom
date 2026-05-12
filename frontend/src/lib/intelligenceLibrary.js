@@ -38,6 +38,18 @@ export const slugToLabel = (dim, slug) => {
 
 export const threatTypeLabel = (id) => THREAT_TYPE_LABEL[id] || id
 
+// Single source of truth for the "primary topic" chip on a report card or
+// detail header. Returns the canonical Threat Type label for the first
+// entry in `threat_type[]` — falling back to the legacy free-text
+// `category` field only if no threat type is set. This unifies the
+// taxonomy: there is now one dimension (threat_type), not two.
+export function primaryThreatLabel(report) {
+  if (!report) return ''
+  const first = Array.isArray(report.threat_type) ? report.threat_type[0] : null
+  if (first) return threatTypeLabel(first)
+  return report.category || ''
+}
+
 // Canonical list of available dimension values (for wizard tabs)
 export const DIMENSION_VALUES = {
   industry: INDUSTRIES,

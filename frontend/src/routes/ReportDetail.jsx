@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import { ResponsiveContainer, BarChart, Bar, LineChart, Line, AreaChart, Area, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, LabelList } from 'recharts'
-import { reportById } from '../lib/intelligenceLibrary'
+import { reportById, primaryThreatLabel } from '../lib/intelligenceLibrary'
 import { BrandChip, sourceBrand } from '../lib/sourceBrands'
 import KnowledgeGraphBG from '../components/KnowledgeGraphBG'
 import SliceStatCard from '../components/explore/SliceStatCard'
@@ -253,7 +253,10 @@ function toModalChart(item, meta, fallbackSource = '') {
     title: item.title,
     description: item.description || meta.description || '',
     year: meta.year,
-    category: meta.category || '',
+    // Modal's "category" chip now reflects the canonical Threat Type (unified
+    // taxonomy). Falls back to the legacy free-text field only if no
+    // threat_type is set.
+    category: primaryThreatLabel(meta) || meta.category || '',
     source: sourceStr,
     sourceShort: brand?.short || (sourceStr ? sourceStr.split(/\s+/)[0] : 'Source'),
     dummyData: values,
@@ -345,14 +348,18 @@ export default function ReportDetail() {
               <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14, flexWrap: 'wrap' }}>
                 <BrandChip source={meta.source || data.source} size="lg" />
                 <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: 'rgba(232,236,241,0.6)' }}>{meta.year}</span>
-                {meta.category && (
-                  <span style={{
-                    fontFamily: "'JetBrains Mono'", fontSize: 10,
-                    color: 'rgba(232,236,241,0.7)',
-                    background: 'rgba(255,255,255,0.04)',
-                    padding: '4px 9px', borderRadius: 6,
-                  }}>{meta.category}</span>
-                )}
+                {(() => {
+                  const label = primaryThreatLabel(meta)
+                  if (!label) return null
+                  return (
+                    <span style={{
+                      fontFamily: "'JetBrains Mono'", fontSize: 10,
+                      color: 'rgba(232,236,241,0.7)',
+                      background: 'rgba(255,255,255,0.04)',
+                      padding: '4px 9px', borderRadius: 6,
+                    }}>{label}</span>
+                  )
+                })()}
                 <span style={{
                   fontFamily: "'JetBrains Mono'", fontSize: 9,
                   color: 'rgba(96,165,250,0.85)',

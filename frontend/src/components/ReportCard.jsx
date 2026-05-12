@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { BrandChip } from '../lib/sourceBrands'
-import { threatTypeLabel } from '../lib/intelligenceLibrary'
+import { threatTypeLabel, primaryThreatLabel } from '../lib/intelligenceLibrary'
 import { methodologyBias, sourceType } from '../lib/methodologyBias'
 
 // "2025-12-10" → "Dec 2025". Falls back to year when only year is set.
@@ -144,7 +144,7 @@ export default function ReportCard({ report, onClick, match }) {
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10, flexWrap: 'wrap' }}>
         <BrandChip source={report.source} size="lg" />
         <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.55)' }}>{formatReportDate(report)}</span>
-        <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 9, color: 'rgba(232,236,241,0.6)', background: 'rgba(255,255,255,0.03)', padding: '3px 8px', borderRadius: 5 }}>{report.category}</span>
+        <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 9, color: 'rgba(232,236,241,0.6)', background: 'rgba(255,255,255,0.03)', padding: '3px 8px', borderRadius: 5 }}>{primaryThreatLabel(report)}</span>
         {findingsCount != null && (
           <span style={{
             fontFamily: "'JetBrains Mono'",

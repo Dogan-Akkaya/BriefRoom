@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { INTELLIGENCE_LIBRARY, globalReports, threatTypeLabel } from '../lib/intelligenceLibrary'
+import { INTELLIGENCE_LIBRARY, globalReports, threatTypeLabel, primaryThreatLabel } from '../lib/intelligenceLibrary'
 import { MANUAL_REPORT_RAW_BY_ID } from '../lib/manualData'
 import { CATEGORIES, INDUSTRIES } from '../lib/data'
 import ReportCard from '../components/ReportCard'
@@ -11,6 +11,11 @@ import SliceStatCard from '../components/explore/SliceStatCard'
 import SearchableSelect from '../components/SearchableSelect'
 import { BrandChip, sourceBrand } from '../lib/sourceBrands'
 import { sourceType } from '../lib/methodologyBias'
+
+// Canonical ordering for the Source Type filter — Government first to surface
+// authoritative sources, Survey last because it's the smallest sample-method
+// category. Anything new appears alphabetically at the end of the seen-set.
+const SOURCE_TYPE_ORDER = ['Government', 'Vendor', 'IR-based', 'Consortium', 'Consulting', 'Insurance', 'Survey']
 
 const MONTH_NAMES = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
 function formatReportDate(report) {
@@ -25,7 +30,7 @@ function formatReportDate(report) {
 
 // Sentinel values shown as the first option in each SearchableSelect.
 const ALL_SOURCES = 'All sources'
-const ALL_CATEGORIES = 'All categories'
+const ALL_SOURCE_TYPES = 'All source types'
 const ALL_THREAT_TYPES = 'All threat types'
 const ALL_INDUSTRIES = 'All industries'
 const ALL_REGIONS = 'All regions'
@@ -56,7 +61,7 @@ export default function Reports() {
   const navigate = useNavigate()
   const [previewReport, setPreviewReport] = useState(null)
   const [sourceFilter, setSourceFilter] = useState(ALL_SOURCES)
-  const [categoryFilter, setCategoryFilter] = useState(ALL_CATEGORIES)
+  const [sourceTypeFilter, setSourceTypeFilter] = useState(ALL_SOURCE_TYPES)
   const [threatTypeFilter, setThreatTypeFilter] = useState(ALL_THREAT_TYPES)
   const [industryFilter, setIndustryFilter] = useState(ALL_INDUSTRIES)
   const [yearFilter, setYearFilter] = useState('All')
@@ -84,13 +89,19 @@ export default function Reports() {
     return [ALL_SOURCES, ...sorted]
   }, [allReports])
 
-  const CATEGORY_OPTIONS = useMemo(() => {
-    const counts = new Map()
+  // Source Type filter — derived from sourceType() so the dropdown only
+  // surfaces categories at least one report actually has. Replaces the
+  // old free-text Category filter, which overlapped Threat Type.
+  const SOURCE_TYPE_OPTIONS = useMemo(() => {
+    const seen = new Set()
     for (const r of allReports) {
-      if (r.category) counts.set(r.category, (counts.get(r.category) || 0) + 1)
+      const t = sourceType(r.source)
+      if (t) seen.add(t)
     }
-    const sorted = [...counts.entries()].sort((a, b) => b[1] - a[1]).map(([k]) => k)
-    return [ALL_CATEGORIES, ...sorted]
+    const ordered = SOURCE_TYPE_ORDER.filter((t) => seen.has(t))
+    // Anything seen but not in our canonical order list — append at end.
+    for (const t of seen) if (!SOURCE_TYPE_ORDER.includes(t)) ordered.push(t)
+    return [ALL_SOURCE_TYPES, ...ordered]
   }, [allReports])
 
   // Only surface threat-type / industry / region values that real reports
@@ -139,7 +150,7 @@ export default function Reports() {
       : null
     return allReports.filter((r) => {
       if (!sourceMatch(r, sourceFilter)) return false
-      if (categoryFilter !== ALL_CATEGORIES && r.category !== categoryFilter) return false
+      if (sourceTypeFilter !== ALL_SOURCE_TYPES && sourceType(r.source) !== sourceTypeFilter) return false
       if (yearFilter !== 'All' && String(r.year) !== yearFilter) return false
       if (regionFilter !== ALL_REGIONS) {
         if (!Array.isArray(r.region) || !r.region.includes(regionFilter)) return false
@@ -152,7 +163,7 @@ export default function Reports() {
       }
       return true
     })
-  }, [allReports, sourceFilter, categoryFilter, threatTypeFilter, industryFilter, yearFilter, regionFilter])
+  }, [allReports, sourceFilter, sourceTypeFilter, threatTypeFilter, industryFilter, yearFilter, regionFilter])
 
   // Findings count summary — sum across the filtered subset.
   const findingsCount = useMemo(
@@ -163,7 +174,7 @@ export default function Reports() {
 
   const isFiltered =
     sourceFilter !== ALL_SOURCES ||
-    categoryFilter !== ALL_CATEGORIES ||
+    sourceTypeFilter !== ALL_SOURCE_TYPES ||
     threatTypeFilter !== ALL_THREAT_TYPES ||
     industryFilter !== ALL_INDUSTRIES ||
     yearFilter !== 'All' ||
@@ -204,7 +215,7 @@ export default function Reports() {
 
   const clearAll = () => {
     setSourceFilter(ALL_SOURCES)
-    setCategoryFilter(ALL_CATEGORIES)
+    setSourceTypeFilter(ALL_SOURCE_TYPES)
     setThreatTypeFilter(ALL_THREAT_TYPES)
     setIndustryFilter(ALL_INDUSTRIES)
     setYearFilter('All')
@@ -288,19 +299,19 @@ export default function Reports() {
           />
 
           <SearchableSelect
-            label="Category"
-            value={categoryFilter}
-            options={CATEGORY_OPTIONS}
-            onChange={setCategoryFilter}
-            placeholder={ALL_CATEGORIES}
-          />
-
-          <SearchableSelect
             label="Threat Type"
             value={threatTypeFilter}
             options={THREAT_TYPE_OPTIONS}
             onChange={setThreatTypeFilter}
             placeholder={ALL_THREAT_TYPES}
+          />
+
+          <SearchableSelect
+            label="Source Type"
+            value={sourceTypeFilter}
+            options={SOURCE_TYPE_OPTIONS}
+            onChange={setSourceTypeFilter}
+            placeholder={ALL_SOURCE_TYPES}
           />
 
           <SearchableSelect
@@ -671,7 +682,7 @@ function FeaturedCard({ report, onClick, match }) {
           background: 'rgba(255,255,255,0.03)',
           padding: '3px 8px',
           borderRadius: 5,
-        }}>{report.category}</span>
+        }}>{primaryThreatLabel(report)}</span>
         {report.report_meta?.card_count_total != null && (
           <span style={{
             fontFamily: "'JetBrains Mono', monospace",
