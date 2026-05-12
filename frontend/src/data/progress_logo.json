@@ -42,9 +42,9 @@
       "slug": "mandiant",
       "file": "/logos/sources/mandiant.svg",
       "confidence": "high",
-      "bg": "transparent",
+      "bg": "white",
       "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Mandiant_logo.svg",
-      "notes": "Official Mandiant wordmark in burgundy (#960a2c). Also covers Mandiant M-Trends."
+      "notes": "Official Mandiant wordmark in burgundy (#960a2c). Burgundy on dark navy is low-contrast — needs white card. Also covers Mandiant M-Trends."
     },
     {
       "name": "Unit 42",
@@ -60,9 +60,9 @@
       "slug": "enisa",
       "file": "/logos/sources/enisa.svg",
       "confidence": "high",
-      "bg": "transparent",
+      "bg": "white",
       "source_url": "https://www.enisa.europa.eu/sites/default/files/enisa-logo.svg",
-      "notes": "Official ENISA logo from enisa.europa.eu (EU blue + yellow stars motif)."
+      "notes": "Official ENISA logo (EU blue palette). Dark blues on dark navy read poorly — needs white card."
     },
     {
       "name": "Cloudflare",
@@ -168,9 +168,9 @@
       "slug": "black-duck",
       "file": "/logos/sources/black-duck.svg",
       "confidence": "high",
-      "bg": "transparent",
+      "bg": "white",
       "source_url": "https://www.blackduck.com/content/dam/black-duck/style-guide/header/BlackDuckLogo.svg",
-      "notes": "Official Black Duck logo from their style guide path (purple gradient + duck mark)."
+      "notes": "Official Black Duck logo — purple duck mark + black 'Black Duck' wordmark. Wordmark is black-on-transparent so the chip needs a white card to read on the dark theme."
     },
     {
       "name": "F5 Labs",
@@ -204,9 +204,9 @@
       "slug": "sophos",
       "file": "/logos/sources/sophos.svg",
       "confidence": "high",
-      "bg": "transparent",
+      "bg": "white",
       "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Sophos_logo.svg",
-      "notes": "Official Sophos navy-blue (#495390) wordmark."
+      "notes": "Official Sophos navy-blue (#495390) wordmark — navy on dark navy reads poorly, needs white card."
     },
     {
       "name": "Zscaler",
@@ -222,9 +222,9 @@
       "slug": "microsoft",
       "file": "/logos/sources/microsoft.svg",
       "confidence": "high",
-      "bg": "transparent",
+      "bg": "white",
       "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
-      "notes": "Official Microsoft logo (four-colour squares + grey wordmark). Microsoft Security is the same parent brand."
+      "notes": "Official Microsoft logo (four-colour squares + grey #737373 wordmark). Grey-on-dark-navy is borderline; white card is the Microsoft brand-guideline-compliant rendering anyway. Microsoft Security shares the same parent identity."
     },
     {
       "name": "Rapid7",

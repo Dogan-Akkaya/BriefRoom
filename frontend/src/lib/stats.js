@@ -19,11 +19,13 @@ const vendorsWithLogo = logoProgress.logos.filter((l) => !!l.file).length
 
 const m = manualDataStats()
 
+// Three real, countable stats. We pulled the "100% sourced / 0 synthesised"
+// tile because it read as over-justification — the Methodology page makes
+// that promise once, the hero shouldn't repeat it.
 export const heroStats = [
   { n: m.reportRaw, s: '', l: 'Vendor reports indexed' },
   { n: vendorsWithLogo, s: '', l: 'Vendors covered' },
   { n: totalFindings, s: '+', l: 'Verified findings' },
-  { n: 100, s: '%', l: 'Sourced — 0 synthesised' },
 ]
 
 // Used in the "Browse All N+" button label.

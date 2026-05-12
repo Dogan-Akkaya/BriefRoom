@@ -67,7 +67,7 @@ export default function Landing() {
             Explore ransomware, phishing, and dark web threat data through ready-made charts. Tailored for industry and region for security reporting.
           </p>
           <p style={{ fontSize: 12, color: 'rgba(232,236,241,0.5)', fontFamily: "'JetBrains Mono'", letterSpacing: '0.06em', margin: '0 auto 36px', opacity: loaded ? 1 : 0, transition: 'all 0.8s cubic-bezier(0.16,1,0.3,1) 0.6s' }}>
-            Free &bull; PNG export &bull; 0 synthesised numbers
+            Free &bull; PNG export
           </p>
 
           {/* Search */}

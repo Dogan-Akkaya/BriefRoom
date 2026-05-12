@@ -305,8 +305,8 @@ export default function ReportDetail() {
     <div style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden' }}>
       <KnowledgeGraphBG />
       <div aria-hidden="true" style={{
-        position: 'absolute', top: 0, left: 0, right: 0, height: 420, zIndex: 1,
-        background: 'linear-gradient(180deg, rgba(10,14,26,0.7) 0%, rgba(10,14,26,0.35) 55%, rgba(10,14,26,0) 100%)',
+        position: 'absolute', top: 0, left: 0, right: 0, height: 560, zIndex: 1,
+        background: 'linear-gradient(180deg, rgba(10,14,26,0.92) 0%, rgba(10,14,26,0.65) 40%, rgba(10,14,26,0.28) 75%, rgba(10,14,26,0) 100%)',
         pointerEvents: 'none',
       }} />
       <div style={{ position: 'relative', zIndex: 2, paddingTop: 80, paddingBottom: 80, maxWidth: 1280, margin: '0 auto', paddingLeft: 24, paddingRight: 24 }}>

@@ -247,10 +247,12 @@ export default function Reports() {
     <div style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden' }}>
       <KnowledgeGraphBG />
       {/* Scrim — vertical gradient under the hero area to lift WCAG AA
-          contrast on the H1 sitting over the constellation. */}
+          contrast on the H1 sitting over the constellation. The canvas is
+          now capped at 35% opacity (KnowledgeGraphBG.jsx); this scrim
+          finishes the job under the hero where text density is highest. */}
       <div aria-hidden="true" style={{
-        position: 'absolute', top: 0, left: 0, right: 0, height: 360, zIndex: 1,
-        background: 'linear-gradient(180deg, rgba(10,14,26,0.62) 0%, rgba(10,14,26,0.32) 55%, rgba(10,14,26,0) 100%)',
+        position: 'absolute', top: 0, left: 0, right: 0, height: 520, zIndex: 1,
+        background: 'linear-gradient(180deg, rgba(10,14,26,0.88) 0%, rgba(10,14,26,0.6) 40%, rgba(10,14,26,0.25) 75%, rgba(10,14,26,0) 100%)',
         pointerEvents: 'none',
       }} />
       <div style={{ position: 'relative', zIndex: 2, paddingTop: 80, paddingBottom: 80, maxWidth: 1280, margin: '0 auto', paddingLeft: 24, paddingRight: 24 }}>

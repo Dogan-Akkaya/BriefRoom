@@ -256,6 +256,10 @@ export default function KnowledgeGraphBG() {
         inset: 0,
         zIndex: 0,
         pointerEvents: 'none',
+        // Cap the canvas at ~35% opacity so the constellation reads as a
+        // texture rather than competing with body text — the dots/lines were
+        // riding on top of card titles and the H1 on /reports otherwise.
+        opacity: 0.35,
       }}
       aria-hidden="true"
     />
