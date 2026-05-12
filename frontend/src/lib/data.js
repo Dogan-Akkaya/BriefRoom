@@ -27,22 +27,16 @@ export const DATA_POINTS_BY_CATEGORY = {
   ransomware: [
     { id: 'attack_volume', label: 'Attack Volume', elements: ['Healthcare', 'Finance', 'Manufacturing', 'Government', 'Education', 'Energy', 'Retail', 'Technology'] },
     { id: 'ransom_demands', label: 'Ransom Demands ($)', elements: ['< $100K', '$100K-$500K', '$500K-$1M', '$1M-$5M', '$5M-$10M', '> $10M'] },
-    { id: 'recovery_time', label: 'Recovery Time (days)', elements: ['Healthcare', 'Finance', 'Manufacturing', 'Government', 'Education', 'Energy'] },
-    { id: 'payment_rate', label: 'Payment Rate (%)', elements: ['0-10%', '10-25%', '25-50%', '50-75%', '75-100%', 'Undisclosed'] },
     { id: 'targeted_sectors', label: 'Targeted Sectors', elements: ['Healthcare', 'Financial Services', 'Manufacturing', 'Government', 'Technology', 'Education', 'Energy', 'Retail'] },
   ],
   phishing: [
     { id: 'campaign_volume', label: 'Campaign Volume', elements: ['Email', 'SMS/Smishing', 'QR Code', 'Social Media', 'Spear Phishing', 'Voice/Vishing'] },
-    { id: 'click_rate', label: 'Click-Through Rate (%)', elements: ['Healthcare', 'Finance', 'Education', 'Government', 'Retail', 'Technology'] },
-    { id: 'bec_losses', label: 'BEC Losses ($)', elements: ['Wire Transfer', 'Gift Cards', 'Payroll Diversion', 'Invoice Fraud', 'Real Estate', 'Vendor Impersonation'] },
     { id: 'delivery_vectors', label: 'Delivery Vectors', elements: ['Email Link', 'Attachment', 'QR Code', 'SMS', 'Voice', 'Social Media'] },
     { id: 'impersonation', label: 'Impersonation Targets', elements: ['Microsoft', 'Google', 'Okta', 'Salesforce', 'DHL', 'DocuSign', 'LinkedIn', 'Apple'] },
   ],
   data_leaks: [
     { id: 'records_exposed', label: 'Records Exposed', elements: ['PII Records', 'Financial Data', 'Credentials', 'Health Records', 'Intellectual Property', 'Source Code'] },
-    { id: 'breach_cost', label: 'Breach Cost ($M)', elements: ['Healthcare', 'Financial', 'Pharma', 'Technology', 'Energy', 'Education', 'Government', 'Retail'] },
     { id: 'root_causes', label: 'Root Causes', elements: ['Stolen Creds', 'Phishing', 'Misconfiguration', 'Vulnerability', 'Insider Threat', 'Physical', 'Unknown'] },
-    { id: 'time_to_detect', label: 'Time to Detect (days)', elements: ['Healthcare', 'Finance', 'Government', 'Technology', 'Retail', 'Energy'] },
     { id: 'leak_sources', label: 'Leak Sources', elements: ['Dark Web Forums', 'Paste Sites', 'Telegram', 'Ransomware Sites', 'Public Repos', 'Social Media'] },
   ],
   vulnerability: [
@@ -55,13 +49,11 @@ export const DATA_POINTS_BY_CATEGORY = {
   supply_chain: [
     { id: 'incident_count', label: 'Incident Count', elements: ['npm', 'PyPI', 'Maven', 'Docker Hub', 'GitHub Actions', 'NuGet', 'RubyGems', 'Go Modules'] },
     { id: 'malicious_packages', label: 'Malicious Packages', elements: ['Typosquatting', 'Dependency Confusion', 'Account Takeover', 'Build Injection', 'Backdoor', 'Data Exfil'] },
-    { id: 'third_party_rate', label: 'Third-Party Breach Rate', elements: ['SaaS Vendors', 'Cloud Providers', 'Managed Services', 'Hardware Supply', 'Open Source Deps', 'Contractors'] },
     { id: 'impact_sector', label: 'Impact by Sector', elements: ['Technology', 'Financial', 'Healthcare', 'Government', 'Manufacturing', 'Retail'] },
     { id: 'attack_vectors', label: 'Attack Vectors', elements: ['Open Source', 'CI/CD Pipeline', 'Cloud Provider', 'SaaS Vendor', 'Managed Services', 'CDN/Infrastructure'] },
   ],
   dark_web_mentions: [
     { id: 'credential_listings', label: 'Credential Listings', elements: ['Corporate Email', 'VPN Credentials', 'Cloud Accounts', 'Database Access', 'Admin Panels', 'API Keys'] },
-    { id: 'access_pricing', label: 'Access Broker Pricing ($)', elements: ['Corporate VPN', 'RDP', 'Citrix', 'Cloud Admin', 'Domain Admin', 'Database', 'Email Server'] },
     { id: 'market_activity', label: 'Market Activity', elements: ['Forums', 'Telegram', 'Marketplaces', 'Paste Sites', 'IRC/Discord', 'Private Channels'] },
     { id: 'forum_posts', label: 'Forum Posts', elements: ['Brand Name', 'Executives', 'Products', 'Domains', 'Code Repos', 'Partners'] },
     { id: 'data_types', label: 'Data Types Listed', elements: ['Credentials', 'PII', 'Credit Cards', 'Health Records', 'Corporate Docs', 'Source Code'] },
@@ -77,8 +69,6 @@ export const DATA_POINTS_BY_CATEGORY = {
     { id: 'listings_volume', label: 'Listings Volume', elements: ['Corporate VPN', 'RDP', 'Citrix', 'Cloud Admin', 'Domain Admin', 'Database', 'Email Server'] },
     { id: 'price_tiers', label: 'Price Tiers ($)', elements: ['< $100', '$100-$500', '$500-$2K', '$2K-$10K', '$10K+'] },
     { id: 'access_types', label: 'Access Types', elements: ['RDP', 'VPN', 'Citrix', 'SSH', 'Cloud Console', 'Web Shell'] },
-    { id: 'seller_rep', label: 'Seller Reputation', elements: ['Verified', 'Established', 'New', 'Unverified'] },
-    { id: 'buyer_sectors', label: 'Buyer Sectors', elements: ['Ransomware Affiliates', 'Initial Access Brokers', 'Data Brokers', 'Nation-State', 'Researchers'] },
   ],
   employee_exposure: [
     { id: 'pii_types', label: 'PII Types', elements: ['Email', 'Phone', 'Home Address', 'SSN / National ID', 'Salary', 'Medical'] },
@@ -89,10 +79,7 @@ export const DATA_POINTS_BY_CATEGORY = {
   ],
   ddos: [
     { id: 'attack_vectors', label: 'Attack Vectors', elements: ['UDP Flood', 'SYN Flood', 'HTTP Flood', 'DNS Amplification', 'NTP Reflection', 'QUIC Flood'] },
-    { id: 'peak_bandwidth', label: 'Peak Bandwidth', elements: ['< 10 Gbps', '10-100 Gbps', '100-500 Gbps', '500 Gbps - 1 Tbps', '1-3 Tbps', '3+ Tbps'] },
-    { id: 'duration', label: 'Attack Duration', elements: ['< 5 min', '5-15 min', '15-60 min', '1-6 hours', '6+ hours'] },
     { id: 'target_sectors', label: 'Target Sectors', elements: ['Financial Services', 'Technology', 'Telecommunications', 'Government', 'Gaming', 'Healthcare'] },
-    { id: 'booter_services', label: 'Booter Tier', elements: ['Low-end', 'Mid-tier', 'Premium', 'Custom', 'Nation-state-linked'] },
   ],
 }
 
@@ -317,18 +304,6 @@ export const INDUSTRIES = [
   'Telecommunications', 'Education', 'Transportation',
 ]
 
-// Global Threat Reports — fixed charts from trusted external sources
-export const GLOBAL_REPORTS = [
-  { id: 'ibm-breach-cost', source: 'IBM X-Force', sourceShort: 'IBM', title: 'Cost of a Data Breach by Industry', year: 2025, category: 'Data Breaches', color: '#3B82F6', description: 'Healthcare leads at $10.9M average breach cost, followed by financial services at $5.9M. Overall average reached $4.88M globally.', chartType: 'bar', dummyData: [10.9, 5.9, 4.8, 4.7, 4.6, 3.7, 2.6], dummyLabels: ['Healthcare', 'Financial', 'Pharma', 'Tech', 'Energy', 'Education', 'Gov'] },
-  { id: 'ibm-breach-lifecycle', source: 'IBM X-Force', sourceShort: 'IBM', title: 'Average Breach Lifecycle (days)', year: 2025, category: 'Data Breaches', color: '#3B82F6', description: 'Mean time to identify a breach: 194 days. Mean time to contain: 68 days. Total lifecycle: 262 days average.', chartType: 'line', dummyData: [287, 280, 277, 272, 268, 262], dummyLabels: ['2020', '2021', '2022', '2023', '2024', '2025'] },
-  { id: 'cs-threat-actors', source: 'CrowdStrike', sourceShort: 'CS', title: 'Top Threat Actors by Region', year: 2025, category: 'Threat Actors', color: '#EF4444', description: 'Nation-state actors from China, Russia, and Iran remain the most prolific. eCrime groups increasingly target healthcare and manufacturing.', chartType: 'bar', dummyData: [142, 98, 76, 45, 38, 28], dummyLabels: ['China', 'Russia', 'Iran', 'N. Korea', 'Criminal', 'Other'] },
-  { id: 'cs-ecrime-index', source: 'CrowdStrike', sourceShort: 'CS', title: 'eCrime Index Trend 2020-2025', year: 2025, category: 'eCrime', color: '#EF4444', description: 'The CrowdStrike eCrime Index (ECX) tracks the volume and sophistication of cybercriminal activity. 2025 saw a 34% increase.', chartType: 'line', dummyData: [100, 118, 135, 158, 182, 210], dummyLabels: ['2020', '2021', '2022', '2023', '2024', '2025'] },
-  { id: 'vz-attack-patterns', source: 'Verizon DBIR', sourceShort: 'DBIR', title: 'Attack Patterns by Industry', year: 2025, category: 'Data Breaches', color: '#8B5CF6', description: 'System intrusion, social engineering, and basic web application attacks account for 83% of all breaches across industries.', chartType: 'bar', dummyData: [38, 27, 18, 9, 5, 3], dummyLabels: ['System Intrusion', 'Social Eng.', 'Web App', 'Misuse', 'Error', 'Other'] },
-  { id: 'vz-threat-actions', source: 'Verizon DBIR', sourceShort: 'DBIR', title: 'Threat Action Varieties in Breaches', year: 2025, category: 'Data Breaches', color: '#8B5CF6', description: 'Use of stolen credentials remains the #1 action in breaches at 31%, followed by ransomware deployment at 24%.', chartType: 'bar', dummyData: [31, 24, 18, 12, 9, 6], dummyLabels: ['Stolen Creds', 'Ransomware', 'Phishing', 'Exploit Vuln', 'Backdoor', 'Other'] },
-  { id: 'mand-dwell-time', source: 'Mandiant M-Trends', sourceShort: 'Mandiant', title: 'Median Dwell Time 2016-2025', year: 2025, category: 'Detection', color: '#F59E0B', description: 'Global median dwell time dropped to 10 days in 2025, continuing a decade-long decline from 146 days in 2016.', chartType: 'line', dummyData: [146, 99, 78, 56, 24, 21, 16, 13, 11, 10], dummyLabels: ['2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'] },
-  { id: 'mand-initial-vectors', source: 'Mandiant M-Trends', sourceShort: 'Mandiant', title: 'Initial Infection Vectors', year: 2025, category: 'Intrusion', color: '#F59E0B', description: 'Exploits remain the top initial access vector at 38%, with phishing second at 22%. Supply chain compromises rose to 12%.', chartType: 'bar', dummyData: [38, 22, 15, 12, 8, 5], dummyLabels: ['Exploits', 'Phishing', 'Stolen Creds', 'Supply Chain', 'Brute Force', 'Other'] },
-  { id: 'pa-ransomware-leaks', source: 'Palo Alto Unit 42', sourceShort: 'Unit 42', title: 'Ransomware Leak Site Activity', year: 2025, category: 'Ransomware', color: '#10B981', description: 'Ransomware leak site postings increased 49% YoY. LockBit, BlackCat, and Cl0p accounted for 58% of all posts.', chartType: 'line', dummyData: [320, 380, 420, 510, 580, 650, 720, 810, 880, 940, 1020, 1100], dummyLabels: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'] },
-  { id: 'pa-ransom-demand', source: 'Palo Alto Unit 42', sourceShort: 'Unit 42', title: 'Average Ransom Demand by Sector ($K)', year: 2025, category: 'Ransomware', color: '#10B981', description: 'Healthcare faced the highest average demands at $1.4M, while education saw the steepest increase at +67% YoY.', chartType: 'bar', dummyData: [1400, 1200, 980, 850, 720, 580], dummyLabels: ['Healthcare', 'Finance', 'Mfg', 'Gov', 'Tech', 'Education'] },
-  { id: 'enisa-top-threats', source: 'ENISA', sourceShort: 'ENISA', title: 'Top Threats in EU 2025', year: 2025, category: 'Threat Landscape', color: '#06B6D4', description: 'Ransomware remains the prime threat in the EU, followed by malware and social engineering. Supply chain attacks entered the top 5.', chartType: 'bar', dummyData: [92, 78, 65, 52, 48, 35, 28], dummyLabels: ['Ransomware', 'Malware', 'Social Eng.', 'DDoS', 'Supply Chain', 'Data Breach', 'Disinformation'] },
-  { id: 'enisa-sector-landscape', source: 'ENISA', sourceShort: 'ENISA', title: 'Threat Landscape by Sector (EU)', year: 2025, category: 'Threat Landscape', color: '#06B6D4', description: 'Public administration and digital infrastructure remain the most targeted sectors in the EU, accounting for 38% of incidents.', chartType: 'bar', dummyData: [22, 16, 14, 12, 11, 9, 8, 8], dummyLabels: ['Public Admin', 'Digital Infra', 'Finance', 'Transport', 'Health', 'Energy', 'Telecom', 'Other'] },
-]
+// GLOBAL_REPORTS retired — vendor reports now live in src/data/manual/global-reports/*.json
+// (generated by scripts/ingest/ingest-global-reports.mjs from Global-reports-inputs/).
+// Consumers should use `globalReports()` from intelligenceLibrary.js instead.

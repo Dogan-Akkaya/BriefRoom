@@ -99,7 +99,7 @@ export default function Methodology() {
             color: 'rgba(232,236,241,0.45)',
             maxWidth: 560,
           }}>
-            Every chart in Brief Room is backed by verifiable intelligence. Here is how we collect, validate, and present cybersecurity data.
+            Brief Room v1 mirrors authoritative cybersecurity reports from 42 vendors and agencies. Every card on Global Reports is traceable to the original PDF — here's how we collect, curate, and present that intelligence.
           </p>
         </div>
 
@@ -108,19 +108,22 @@ export default function Methodology() {
           <span style={labelStyle}>01</span>
           <h2 style={sectionTitle}>Data Collection</h2>
           <p style={{ fontSize: 14, color: 'rgba(232,236,241,0.45)', lineHeight: 1.7, marginBottom: 14 }}>
-            Brief Room blends <strong style={{ color: '#E8ECF1' }}>32 verified vendor-sourced data points</strong> (IBM X-Force, Verizon DBIR, Mandiant M-Trends, CrowdStrike, Cloudflare, ENISA, SOCRadar, and others) with <strong style={{ color: '#E8ECF1' }}>75 internal synthetic baselines</strong> and a deterministic coverage generator that fills any remaining gap — ensuring every industry, region, and threat type always renders at least 12 items. Real data is prioritized in every slice; synthetic items appear only when no verified source exists for the selected dimensions.
+            v1 mirrors <strong style={{ color: '#E8ECF1' }}>42 vendor reports</strong> across the cybersecurity industry, with <strong style={{ color: '#E8ECF1' }}>1,100+ extracted findings</strong> — headline stats, charts, and analyst quotes. Each finding is tagged with industry, region, and threat type, and links back to the source PDF or landing page. Reports are pulled in as their publishers release them; we don't synthesize numbers.
           </p>
           <p style={{ fontSize: 14, color: 'rgba(232,236,241,0.45)', lineHeight: 1.7, marginBottom: 14 }}>
-            We aggregate intelligence from the following authoritative sources:
+            Current report sources include:
           </p>
           <ul style={listStyle}>
-            <li><strong style={{ color: '#FF4562' }}>SOCRadar Intel</strong> -- Proprietary threat intelligence from SOCRadar's global sensor network</li>
-            <li><strong style={{ color: '#FF4562' }}>MITRE ATT&CK</strong> -- Adversary tactics, techniques, and procedures mapping</li>
-            <li><strong style={{ color: '#FF4562' }}>CISA KEV</strong> -- Known Exploited Vulnerabilities catalog</li>
-            <li><strong style={{ color: '#FF4562' }}>NVD</strong> -- National Vulnerability Database for CVE scoring and metadata</li>
-            <li><strong style={{ color: '#FF4562' }}>Verizon DBIR</strong> -- Data Breach Investigations Report annual findings</li>
-            <li><strong style={{ color: '#FF4562' }}>FBI IC3</strong> -- Internet Crime Complaint Center annual reports and alerts</li>
+            <li><strong style={{ color: '#FF4562' }}>Annual flagships</strong> -- Verizon DBIR, Mandiant M-Trends, IBM X-Force, CrowdStrike Global Threat Report, Microsoft Digital Defense Report</li>
+            <li><strong style={{ color: '#FF4562' }}>Ransomware-focused</strong> -- Sophos State of Ransomware, Coveware Quarterly, Zscaler ThreatLabz, Huntress, Rapid7</li>
+            <li><strong style={{ color: '#FF4562' }}>Identity &amp; phishing</strong> -- Proofpoint, KnowBe4, Hoxhunt, Okta, Constella Intelligence</li>
+            <li><strong style={{ color: '#FF4562' }}>Supply chain &amp; OSS</strong> -- Sonatype, Black Duck, SecurityScorecard, Cisco Talos</li>
+            <li><strong style={{ color: '#FF4562' }}>Government &amp; standards</strong> -- CISA, FBI IC3, NCSC (UK), ENISA, World Economic Forum</li>
+            <li><strong style={{ color: '#FF4562' }}>SOCRadar Annual Dark Web Report</strong> -- our own corner of the dark web monitoring stack</li>
           </ul>
+          <p style={{ fontSize: 12, color: 'rgba(232,236,241,0.4)', lineHeight: 1.7, marginTop: 14, fontStyle: 'italic' }}>
+            Plus 16 more from Bitdefender, Censys, Check Point, Cloudflare, Coalition, CYFIRMA, ESET, F5 Labs, Fortinet, FS-ISAC, KELA, PwC, Red Canary, Trellix, Palo Alto Unit 42, and others.
+          </p>
         </div>
 
         {/* Update Cadence */}
@@ -128,13 +131,13 @@ export default function Methodology() {
           <span style={labelStyle}>02</span>
           <h2 style={sectionTitle}>Update Cadence</h2>
           <p style={{ fontSize: 14, color: 'rgba(232,236,241,0.45)', lineHeight: 1.7, marginBottom: 14 }}>
-            Data freshness varies by source type and collection method:
+            Vendor reports drop on their own clocks. We add new editions as they publish:
           </p>
           <ul style={listStyle}>
-            <li><strong style={{ color: '#3B82F6' }}>Daily</strong> -- CVE feeds, exploit availability checks, phishing URL ingestion</li>
-            <li><strong style={{ color: '#3B82F6' }}>Weekly</strong> -- Dark web monitoring, credential listing scans, marketplace tracking</li>
-            <li><strong style={{ color: '#3B82F6' }}>Monthly</strong> -- Manual curation, analyst review, trend recalculation</li>
-            <li><strong style={{ color: '#3B82F6' }}>Quarterly</strong> -- Major report ingestion (DBIR, IC3), benchmark recalibration</li>
+            <li><strong style={{ color: '#3B82F6' }}>Annual flagships</strong> -- DBIR, M-Trends, X-Force land once per year; we re-ingest within ~2 weeks of public release</li>
+            <li><strong style={{ color: '#3B82F6' }}>Quarterly trackers</strong> -- Coveware Q-reports, Cloudflare DDoS quarterly, Trellix monthly — same release-week cadence</li>
+            <li><strong style={{ color: '#3B82F6' }}>Ad-hoc</strong> -- one-off APT profiles, breach reports, and government year-in-review pieces as they appear</li>
+            <li><strong style={{ color: '#3B82F6' }}>Re-extraction</strong> -- existing reports get re-extracted when we improve the ingestion pipeline (rare, transparent in the cards)</li>
           </ul>
         </div>
 
@@ -143,28 +146,29 @@ export default function Methodology() {
           <span style={labelStyle}>03</span>
           <h2 style={sectionTitle}>Data Quality</h2>
           <p style={{ fontSize: 14, color: 'rgba(232,236,241,0.45)', lineHeight: 1.7, marginBottom: 14 }}>
-            Every data point undergoes a multi-stage validation pipeline:
+            We optimise for trust over volume:
           </p>
           <ul style={listStyle}>
-            <li><strong style={{ color: '#10B981' }}>Source Attribution</strong> -- All charts display their underlying sources so you can verify independently</li>
-            <li><strong style={{ color: '#10B981' }}>Peer Review</strong> -- SOCRadar analysts review aggregated datasets before publication to catch anomalies and bias</li>
-            <li><strong style={{ color: '#10B981' }}>Cross-referencing</strong> -- Metrics are corroborated against at least two independent sources wherever possible</li>
+            <li><strong style={{ color: '#10B981' }}>Source attribution</strong> -- every card carries the vendor's brand chip and a direct link to the original report</li>
+            <li><strong style={{ color: '#10B981' }}>Curated extraction</strong> -- we pull the top ~10 findings per report into the searchable library; the full set (20–35 per report) lives on the report's drill-down page</li>
+            <li><strong style={{ color: '#10B981' }}>Page references</strong> -- where the vendor labels a chart by section or page, that label travels with the card so you can validate against the source</li>
+            <li><strong style={{ color: '#10B981' }}>No synthesis</strong> -- v1 never generates numbers. If a finding isn't in a real report, it isn't here.</li>
           </ul>
         </div>
 
         {/* Coverage */}
         <div style={cardStyle}>
           <span style={labelStyle}>04</span>
-          <h2 style={sectionTitle}>Coverage</h2>
+          <h2 style={sectionTitle}>Coverage (v1)</h2>
           <p style={{ fontSize: 14, color: 'rgba(232,236,241,0.45)', lineHeight: 1.7, marginBottom: 14 }}>
-            Brief Room intelligence spans a broad global footprint:
+            The numbers, with no rounding:
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 16, marginTop: 18 }}>
             {[
-              { value: '31', label: 'Countries', desc: 'Global threat telemetry coverage' },
-              { value: '10', label: 'Industries', desc: 'Sector-specific benchmarks' },
-              { value: '10', label: 'Threat Categories', desc: 'From ransomware to supply chain' },
-              { value: '130+', label: 'Data Points', desc: 'Charts and stats across slices' },
+              { value: '42', label: 'Vendor Reports', desc: 'Curated from 2024–2026 publications' },
+              { value: '1,100+', label: 'Findings', desc: 'Stats, charts, and quotes extracted' },
+              { value: '14', label: 'Categories', desc: 'Ransomware, Phishing, Supply Chain, ...' },
+              { value: '6', label: 'Regions', desc: 'NA, Europe, APAC, MEA, LATAM, Africa' },
             ].map((item, i) => (
               <div key={i} style={{ padding: '16px 14px', background: 'rgba(255,255,255,0.02)', borderRadius: 12, border: '1px solid rgba(255,255,255,0.04)' }}>
                 <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 28, fontWeight: 700, color: '#FF4562', marginBottom: 4 }}>{item.value}</div>
@@ -173,6 +177,24 @@ export default function Methodology() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* What's in beta */}
+        <div style={cardStyle}>
+          <span style={{ ...labelStyle, color: 'rgba(96,165,250,0.55)' }}>05</span>
+          <h2 style={sectionTitle}>What's still in progress</h2>
+          <p style={{ fontSize: 14, color: 'rgba(232,236,241,0.45)', lineHeight: 1.7, marginBottom: 14 }}>
+            v1 ships with Global Reports as the working surface. These are next:
+          </p>
+          <ul style={listStyle}>
+            <li><strong style={{ color: '#60A5FA' }}>Popular Charts</strong> -- a curated wall of the most-presented charts across the library</li>
+            <li><strong style={{ color: '#60A5FA' }}>Custom Builder</strong> -- pick a threat category and slice by industry, region, and time window</li>
+            <li><strong style={{ color: '#60A5FA' }}>Threat-type slice views</strong> -- the wizard at <code style={{ background: 'rgba(255,255,255,0.05)', padding: '1px 6px', borderRadius: 4 }}>/explore</code> drilled by dimension</li>
+            <li><strong style={{ color: '#60A5FA' }}>PNG export</strong> -- one-click chart downloads with vendor attribution baked in</li>
+          </ul>
+          <p style={{ fontSize: 14, color: 'rgba(232,236,241,0.45)', lineHeight: 1.7, marginTop: 14 }}>
+            All four surfaces are reachable today — they just show a friendly under-construction wall on top. The data foundation is being expanded behind the scenes; we'll lift the wall on each one as it stabilises.
+          </p>
         </div>
 
       </div>

@@ -1,0 +1,1107 @@
+{
+  "source": "Sonatype",
+  "source_short": "Sonatype",
+  "year": 2026,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/sonatype-state-of-software-supply-chain-2026.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.983Z. Curated top 10 of 24 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-sonatype-state-of-software-supply-chain-2026",
+      "title": "2026 State of the Software Supply Chain",
+      "year": 2026,
+      "category": "Supply Chain",
+      "color": "#A6CE39",
+      "description": "Sonatype identified more than 454,600 new malicious open source packages across npm, PyPI, Maven Central, NuGet, and Hugging Face throughout 2025. This represents a major escalation in industrialized supply chain attacks targeting developer ecosystems.",
+      "external_url": "https://www.sonatype.com/state-of-the-software-supply-chain/introduction",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "npm",
+          "PyPI",
+          "Maven Central",
+          "NuGet"
+        ],
+        "series": [
+          {
+            "name": "YoY growth (%)",
+            "values": [
+              65.43,
+              50.64,
+              19.42,
+              17
+            ],
+            "color": "#A6CE39"
+          }
+        ]
+      },
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "vulnerability"
+      ],
+      "tags": [
+        "external-report",
+        "registry-growth",
+        "year-over-year",
+        "registries",
+        "npm",
+        "maven",
+        "pypi",
+        "nuget",
+        "malware-taxonomy",
+        "repository-abuse",
+        "exfiltration",
+        "droppers",
+        "lazarus",
+        "backdoor",
+        "secrets-exfiltration",
+        "false-positives",
+        "false-negatives",
+        "nvd-quality",
+        "maven-central",
+        "cloud-concentration",
+        "infrastructure-strain",
+        "malware-growth",
+        "industrialization",
+        "growth",
+        "downloads",
+        "reuse",
+        "open-source-malware",
+        "hugging-face",
+        "consumption"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2026-01-28",
+      "report_meta": {
+        "report_id": "sonatype-state-of-software-supply-chain-2026",
+        "organization_id": "sonatype",
+        "publication_date": "2026-01-28",
+        "extracted_on": "2026-05-11",
+        "source_url": "https://www.sonatype.com/state-of-the-software-supply-chain/introduction",
+        "card_count_total": 24,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "sonatype-state-of-software-supply-chain-2026-registry-yoy-growth"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "sonatype-state-of-software-supply-chain-2026-registry-yoy-growth",
+      "title": "Year-over-year download growth by registry",
+      "description": "npm led growth at 65.4% YoY, followed closely by PyPI at 50.6%. Maven Central and NuGet posted lower but still healthy double-digit growth, signalling continued mainstream adoption of Java and .NET dependencies.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Supply Chain",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "registry-growth",
+        "year-over-year"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Software Infrastructure Growth",
+      "comparison": "vs 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "npm",
+          "PyPI",
+          "Maven Central",
+          "NuGet"
+        ],
+        "series": [
+          {
+            "name": "YoY growth (%)",
+            "values": [
+              65.43,
+              50.64,
+              19.42,
+              17
+            ],
+            "color": "#A6CE39"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "sonatype-state-of-software-supply-chain-2026-registry-downloads",
+      "title": "2025 downloads by registry",
+      "description": "npm dwarfs the other three registries in raw 2025 download volume, capturing roughly 81% of the aggregate. Maven Central and PyPI sit in a similar band, while NuGet trails the pack.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Supply Chain",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "registries",
+        "npm",
+        "maven",
+        "pypi",
+        "nuget"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Software Infrastructure Growth",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "npm",
+          "Maven Central",
+          "PyPI",
+          "NuGet"
+        ],
+        "series": [
+          {
+            "name": "2025 downloads (billions)",
+            "values": [
+              7970,
+              839.05,
+              804.97,
+              223.37
+            ],
+            "color": "#A6CE39"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "sonatype-state-of-software-supply-chain-2026-malware-categories",
+      "title": "Open source malware by threat category",
+      "description": "Repository abuse and Potentially Unwanted Applications dominate the malicious package taxonomy in 2025, together accounting for over 83% of detected behaviours. Exfiltration, droppers, and backdoors form the next tier of high-impact tradecraft.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Supply Chain",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "malware-taxonomy",
+        "repository-abuse",
+        "exfiltration",
+        "droppers"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Open Source Malware",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Repository abuse",
+          "PUA",
+          "Host info exfiltration",
+          "Secrets exfiltration",
+          "Droppers/loaders",
+          "Backdoors",
+          "Obfuscated code",
+          "Data corruption"
+        ],
+        "series": [
+          {
+            "name": "Share of malicious packages (%)",
+            "values": [
+              55.9,
+              27.5,
+              5.7,
+              3.9,
+              2.7,
+              2.1,
+              1.6,
+              0.62
+            ],
+            "color": "#A6CE39"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "sonatype-state-of-software-supply-chain-2026-lazarus-composition",
+      "title": "Lazarus Group package behaviour profile",
+      "description": "Nearly every Lazarus package contained a dropper component, with secrets exfiltration appearing in roughly two-thirds and backdoor functionality in almost a third. The compositions are stacked, not exclusive — 77% of packages carried two or more threat types.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "lazarus",
+        "droppers",
+        "backdoor",
+        "secrets-exfiltration"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Open Source Malware - Lazarus",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Droppers",
+          "Secrets exfiltration",
+          "Backdoor functionality"
+        ],
+        "series": [
+          {
+            "name": "Lazarus packages (%)",
+            "values": [
+              98,
+              64,
+              29
+            ],
+            "color": "#A6CE39"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "sonatype-state-of-software-supply-chain-2026-false-negatives",
+      "title": "Vulnerability data quality issues",
+      "description": "Comparing NVD records against Sonatype's enriched intelligence surfaced 167,286 false negatives — exploitable components that the public source failed to flag — alongside 20,362 false positives. The gap underscores the cost of relying solely on public CVE data.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "false-positives",
+        "false-negatives",
+        "nvd-quality"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Vulnerability Management",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "False negatives",
+          "False positives"
+        ],
+        "series": [
+          {
+            "name": "Records",
+            "values": [
+              167286,
+              20362
+            ],
+            "color": "#A6CE39"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "sonatype-state-of-software-supply-chain-2026-cloud-concentration",
+      "title": "Maven Central traffic concentration by source",
+      "description": "108 billion of the 125 billion Maven Central requests in 2025 came from just the top three cloud service providers, versus 17 billion from all other users combined. The findings warn of fragile concentration in OSS distribution infrastructure.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Supply Chain",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "maven-central",
+        "cloud-concentration",
+        "infrastructure-strain"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Software Infrastructure Strain",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Top 3 cloud providers",
+          "All other users"
+        ],
+        "series": [
+          {
+            "name": "Requests (billions)",
+            "values": [
+              108,
+              17
+            ],
+            "color": "#A6CE39"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "stat",
+      "id": "sonatype-state-of-software-supply-chain-2026-malware-growth",
+      "title": "Open source malware YoY growth",
+      "description": "Open source malware grew 75% year-over-year in 2025, as attackers industrialized campaigns and state-linked groups advanced from simple droppers and crypto miners to multi-stage payload chains.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Supply Chain",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "malware-growth",
+        "year-over-year",
+        "industrialization"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Open Source Malware",
+      "comparison": "vs 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+75% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "sonatype-state-of-software-supply-chain-2026-downloads-yoy",
+      "title": "OSS download growth year-over-year",
+      "description": "Aggregate downloads across Maven Central, PyPI, npm, and NuGet rose 67% year-over-year in 2025. The world did not just build more software but reused more of it, more often.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Supply Chain",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "growth",
+        "downloads",
+        "reuse"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Software Infrastructure Growth",
+      "comparison": "vs 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+67% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "sonatype-state-of-software-supply-chain-2026-new-malware-packages",
+      "title": "New malicious OSS packages discovered in 2025",
+      "description": "Sonatype identified more than 454,600 new malicious open source packages across npm, PyPI, Maven Central, NuGet, and Hugging Face throughout 2025. This represents a major escalation in industrialized supply chain attacks targeting developer ecosystems.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Supply Chain",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "open-source-malware",
+        "npm",
+        "pypi",
+        "hugging-face"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Open Source Malware",
+      "comparison": "vs 2024",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "454,600+"
+    },
+    {
+      "type": "stat",
+      "id": "sonatype-state-of-software-supply-chain-2026-total-downloads",
+      "title": "OSS downloads across the four largest registries",
+      "description": "Open source consumption hit 9.8 trillion downloads across Maven Central, PyPI, npm, and NuGet in 2025, a 67% increase year-over-year. The growth highlights the scale of dependency reuse driving both productivity and risk.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Supply Chain",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "downloads",
+        "registries",
+        "consumption"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Software Infrastructure Growth",
+      "comparison": "vs 2024",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "9.8T"
+    },
+    {
+      "type": "stat",
+      "id": "sonatype-state-of-software-supply-chain-2026-npm-share",
+      "title": "Share of OSS malware hosted on npm",
+      "description": "99% of all open source malware identified in 2025 occurred on the npm ecosystem. JavaScript's enormous publishing volume, low barrier to entry, and tight integration with developer tooling make it the highest-velocity attack surface.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Supply Chain",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "npm",
+        "ecosystem-share",
+        "javascript"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Open Source Malware",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "99%"
+    },
+    {
+      "type": "stat",
+      "id": "sonatype-state-of-software-supply-chain-2026-cve-no-cvss",
+      "title": "Open source CVEs lacking NVD CVSS scores",
+      "description": "65% of open source CVEs analysed in 2025 did not have an NVD-assigned CVSS score, leaving defenders without baseline severity context. When Sonatype scored those records, 46% rated as High or Critical.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "nvd",
+        "cvss",
+        "scoring-gaps"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Vulnerability Management",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "65%"
+    },
+    {
+      "type": "stat",
+      "id": "sonatype-state-of-software-supply-chain-2026-fixes-available",
+      "title": "Vulnerable downloads that had fixes available",
+      "description": "Approximately 95% of vulnerable component downloads in 2025 had a fixed version available upstream; only ~0.5% lacked any remediation path. The data reframes most software supply chain risk as an avoidable consumption problem.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "remediation",
+        "avoidable-risk",
+        "fixes-available"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Vulnerability Management",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "~95%"
+    },
+    {
+      "type": "stat",
+      "id": "sonatype-state-of-software-supply-chain-2026-gpt5-hallucination",
+      "title": "GPT-5 dependency version hallucination rate",
+      "description": "When operating without real-time intelligence, GPT-5 hallucinated 27.8% of component versions across 37,000 analysed upgrade recommendations — and in some cases suggested actual malicious packages. AI assistants are becoming a new vector for supply chain risk.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "AI Security",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "ai-hallucination",
+        "gpt-5",
+        "slopsquatting",
+        "ai-coding-assistants"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI Agents",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "27.8%"
+    },
+    {
+      "type": "stat",
+      "id": "sonatype-state-of-software-supply-chain-2026-oss-share-apps",
+      "title": "OSS share of modern applications",
+      "description": "Open source comprises 80–90% of the code in modern applications, making the dependency graph the dominant attack surface and the focal point of new regulatory regimes such as the EU Cyber Resilience Act.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Supply Chain",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "oss-share",
+        "modern-applications",
+        "attack-surface"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Regulation",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "80-90%"
+    },
+    {
+      "type": "stat",
+      "id": "sonatype-state-of-software-supply-chain-2026-cumulative-malware",
+      "title": "Cumulative known and blocked OSS malware",
+      "description": "The total cumulative count of known and blocked malicious packages reached 1.233 million across npm, PyPI, Maven Central, NuGet, and Hugging Face by end of 2025. The figure reflects Sonatype's full historical detection corpus since 2019.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Supply Chain",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "open-source-malware",
+        "cumulative",
+        "blocked-packages"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Open Source Malware",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "1.233M"
+    },
+    {
+      "type": "stat",
+      "id": "sonatype-state-of-software-supply-chain-2026-lazarus-packages",
+      "title": "Lazarus Group malicious packages tracked",
+      "description": "North Korea-linked Lazarus Group was attributed to 800+ malicious packages in 2025, with 97% concentrated on npm. The group advanced from droppers and crypto miners to five-stage payload chains targeting developers.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Technology",
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "lazarus",
+        "north-korea",
+        "state-linked",
+        "npm"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Open Source Malware - Lazarus",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "800+"
+    },
+    {
+      "type": "stat",
+      "id": "sonatype-state-of-software-supply-chain-2026-shai-hulud",
+      "title": "Packages compromised by Shai-Hulud worm",
+      "description": "In September 2025 the first self-replicating npm malware, dubbed Shai-Hulud, compromised over 500 packages within days of release. The worm marked a tradecraft shift from single-package attacks toward autonomous propagation.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Supply Chain",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "shai-hulud",
+        "worm",
+        "self-replicating",
+        "npm"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Open Source Malware - Campaigns",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "500+"
+    },
+    {
+      "type": "stat",
+      "id": "sonatype-state-of-software-supply-chain-2026-indonesianfoods",
+      "title": "Malicious packages from IndonesianFoods campaign",
+      "description": "The IndonesianFoods campaign generated 169,538 malicious packages, designed to self-replicate every seven seconds. It illustrates how modern OSS malware operates at machine speed against registries with weak abuse controls.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Supply Chain",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "indonesianfoods",
+        "self-replication",
+        "npm",
+        "automation"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Open Source Malware - Campaigns",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "169,538"
+    },
+    {
+      "type": "stat",
+      "id": "sonatype-state-of-software-supply-chain-2026-nvd-median-days",
+      "title": "Median NVD time-to-score open source CVEs",
+      "description": "The NVD took a median of 41 days to score open source CVEs in 2025, with some taking up to a year. 47% of 2025 CVEs required more than 3 months to receive complete NVD records.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "nvd",
+        "remediation-time",
+        "cve-backlog"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Vulnerability Management",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "days",
+      "card_style": "number",
+      "value": "41 days"
+    },
+    {
+      "type": "stat",
+      "id": "sonatype-state-of-software-supply-chain-2026-log4j-vulnerable",
+      "title": "Vulnerable Log4j downloads in 2025",
+      "description": "Nearly 200 million vulnerable Log4j versions were downloaded in 2025, representing 13% of all Log4j downloads. Despite patches existing for years, organisations continue to pull known-bad versions into builds.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology",
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "log4j",
+        "log4shell",
+        "vulnerable-downloads",
+        "remediation-gap"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Vulnerability Management",
+      "comparison": null,
+      "trend": "decreasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "~200M"
+    },
+    {
+      "type": "stat",
+      "id": "sonatype-state-of-software-supply-chain-2026-eol-cve-versions",
+      "title": "EOL package versions with CVEs and no patch",
+      "description": "Sonatype identified 81,000+ package versions that are both end-of-life and carry known CVEs, making them structurally unpatchable. Combined with 5–15% of enterprise dependencies being EOL, this represents a major hidden risk pool.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "end-of-life",
+        "unpatchable",
+        "legacy",
+        "technical-debt"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Vulnerability Management - EOL",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "81K+"
+    },
+    {
+      "type": "stat",
+      "id": "sonatype-state-of-software-supply-chain-2026-npm-cvss9",
+      "title": "npm releases linked to CVSS 9.0+ vulnerabilities",
+      "description": "838,778 npm releases in 2025 were associated with vulnerabilities scored CVSS 9.0 or higher. The figure quantifies the critical-severity blast radius developers pull through their lockfiles.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "npm",
+        "critical-vulnerabilities",
+        "cvss9"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Vulnerability Management",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "838,778"
+    },
+    {
+      "type": "stat",
+      "id": "sonatype-state-of-software-supply-chain-2026-trust-quote",
+      "title": "Trust at scale is the central engineering challenge",
+      "description": "Sonatype frames the 2026 report's thesis: as software reuse accelerates and AI agents enter the dependency loop, the ability to verify components and remediate risks at planetary scale has overtaken raw productivity as the dominant concern.",
+      "source": "Sonatype",
+      "source_short": "Sonatype",
+      "color": "#A6CE39",
+      "year": 2026,
+      "category": "Supply Chain",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "narrative",
+        "executive-summary",
+        "trust"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Introduction",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Trust at scale is now the central engineering and business challenge of modern software.\""
+    }
+  ]
+}

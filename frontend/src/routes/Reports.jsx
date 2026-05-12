@@ -1,29 +1,34 @@
 import React, { useState, useMemo, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { GLOBAL_REPORTS } from '../lib/data'
-import { INTELLIGENCE_LIBRARY } from '../lib/intelligenceLibrary'
+import { INTELLIGENCE_LIBRARY, globalReports, threatTypeLabel } from '../lib/intelligenceLibrary'
+import { CATEGORIES, INDUSTRIES } from '../lib/data'
 import ReportCard from '../components/ReportCard'
 import ChartPreviewModal from '../components/ChartPreviewModal'
 import Reveal from '../components/Reveal'
 import KnowledgeGraphBG from '../components/KnowledgeGraphBG'
 import SliceStatCard from '../components/explore/SliceStatCard'
-import { BrandChip } from '../lib/sourceBrands'
+import SearchableSelect from '../components/SearchableSelect'
+import { BrandChip, sourceBrand } from '../lib/sourceBrands'
 
-const SOURCES = ['All', 'IBM', 'CrowdStrike', 'Verizon DBIR', 'Mandiant', 'Unit 42', 'ENISA']
-// Aligned with unique GLOBAL_REPORTS[].category values (see data.js).
-const CATEGORIES = ['All', 'Data Breaches', 'Detection', 'Intrusion', 'Ransomware', 'Threat Actors', 'Threat Landscape', 'eCrime']
-const YEARS = ['All', '2025', '2024']
-const REGION_OPTIONS = ['Global', 'North America', 'Europe', 'Asia Pacific', 'Middle East', 'Latin America', 'Africa']
+// Sentinel values shown as the first option in each SearchableSelect.
+const ALL_SOURCES = 'All sources'
+const ALL_CATEGORIES = 'All categories'
+const ALL_THREAT_TYPES = 'All threat types'
+const ALL_INDUSTRIES = 'All industries'
+const ALL_REGIONS = 'All regions'
 
+// Label ↔ id maps for threat_type (canonical taxonomy lives as ids on items
+// but the dropdown shows human labels).
+const THREAT_TYPE_LABEL_TO_ID = Object.fromEntries(
+  CATEGORIES.map((c) => [c.label, c.id])
+)
+
+// Source filter operates on the brand's short label so vendors with multiple
+// reports (e.g. Sophos × 2) collapse to a single chip.
 const sourceMatch = (report, filter) => {
-  if (filter === 'All') return true
-  if (filter === 'IBM') return report.sourceShort === 'IBM'
-  if (filter === 'CrowdStrike') return report.sourceShort === 'CS'
-  if (filter === 'Verizon DBIR') return report.sourceShort === 'DBIR'
-  if (filter === 'Mandiant') return report.sourceShort === 'Mandiant'
-  if (filter === 'Unit 42') return report.sourceShort === 'Unit 42'
-  if (filter === 'ENISA') return report.sourceShort === 'ENISA'
-  return true
+  if (filter === ALL_SOURCES) return true
+  const brand = sourceBrand(report.source)
+  return brand?.name === filter || brand?.short === filter
 }
 
 const glass = {
@@ -37,10 +42,12 @@ const glass = {
 export default function Reports() {
   const navigate = useNavigate()
   const [previewReport, setPreviewReport] = useState(null)
-  const [sourceFilter, setSourceFilter] = useState('All')
-  const [categoryFilter, setCategoryFilter] = useState('All')
+  const [sourceFilter, setSourceFilter] = useState(ALL_SOURCES)
+  const [categoryFilter, setCategoryFilter] = useState(ALL_CATEGORIES)
+  const [threatTypeFilter, setThreatTypeFilter] = useState(ALL_THREAT_TYPES)
+  const [industryFilter, setIndustryFilter] = useState(ALL_INDUSTRIES)
   const [yearFilter, setYearFilter] = useState('All')
-  const [regionFilter, setRegionFilter] = useState('Global')
+  const [regionFilter, setRegionFilter] = useState(ALL_REGIONS)
 
   useEffect(() => { document.title = 'Global Threat Reports — IBM, CrowdStrike, Verizon DBIR | Brief Room' }, [])
 
@@ -50,14 +57,119 @@ export default function Reports() {
     []
   )
 
+  // All reports + option lists derived from the data we actually have.
+  const allReports = useMemo(() => globalReports(), [])
+
+  const SOURCE_OPTIONS = useMemo(() => {
+    const counts = new Map()
+    for (const r of allReports) {
+      const brand = sourceBrand(r.source)
+      const label = brand?.name || r.source
+      counts.set(label, (counts.get(label) || 0) + 1)
+    }
+    const sorted = [...counts.entries()].sort((a, b) => b[1] - a[1]).map(([k]) => k)
+    return [ALL_SOURCES, ...sorted]
+  }, [allReports])
+
+  const CATEGORY_OPTIONS = useMemo(() => {
+    const counts = new Map()
+    for (const r of allReports) {
+      if (r.category) counts.set(r.category, (counts.get(r.category) || 0) + 1)
+    }
+    const sorted = [...counts.entries()].sort((a, b) => b[1] - a[1]).map(([k]) => k)
+    return [ALL_CATEGORIES, ...sorted]
+  }, [allReports])
+
+  // Only surface threat-type / industry / region values that real reports
+  // actually carry — keeps the dropdowns honest as the library grows.
+  const THREAT_TYPE_OPTIONS = useMemo(() => {
+    const counts = new Map()
+    for (const r of allReports) {
+      for (const t of r.threat_type || []) {
+        const label = threatTypeLabel(t)
+        if (label) counts.set(label, (counts.get(label) || 0) + 1)
+      }
+    }
+    const sorted = [...counts.entries()].sort((a, b) => b[1] - a[1]).map(([k]) => k)
+    return [ALL_THREAT_TYPES, ...sorted]
+  }, [allReports])
+
+  const INDUSTRY_OPTIONS = useMemo(() => {
+    const counts = new Map()
+    for (const r of allReports) {
+      for (const ind of r.industry || []) counts.set(ind, (counts.get(ind) || 0) + 1)
+    }
+    // Keep the canonical INDUSTRIES order so the dropdown is consistent run-to-run,
+    // but only include ones at least one report touches.
+    const present = INDUSTRIES.filter((i) => counts.has(i))
+    return [ALL_INDUSTRIES, ...present]
+  }, [allReports])
+
+  const REGION_OPTIONS = useMemo(() => {
+    const order = ['North America', 'Europe', 'Asia Pacific', 'Middle East', 'Latin America', 'Africa']
+    const seen = new Set()
+    for (const r of allReports) {
+      for (const reg of r.region || []) seen.add(reg)
+    }
+    return [ALL_REGIONS, ...order.filter((r) => seen.has(r))]
+  }, [allReports])
+
+  const YEAR_OPTIONS = useMemo(() => {
+    const set = new Set()
+    for (const r of allReports) if (r.year) set.add(String(r.year))
+    return ['All', ...[...set].sort().reverse()]
+  }, [allReports])
+
   const filtered = useMemo(() => {
-    return GLOBAL_REPORTS.filter((r) => {
+    const threatTypeId = threatTypeFilter !== ALL_THREAT_TYPES
+      ? THREAT_TYPE_LABEL_TO_ID[threatTypeFilter]
+      : null
+    return allReports.filter((r) => {
       if (!sourceMatch(r, sourceFilter)) return false
-      if (categoryFilter !== 'All' && r.category !== categoryFilter) return false
+      if (categoryFilter !== ALL_CATEGORIES && r.category !== categoryFilter) return false
       if (yearFilter !== 'All' && String(r.year) !== yearFilter) return false
+      if (regionFilter !== ALL_REGIONS) {
+        if (!Array.isArray(r.region) || !r.region.includes(regionFilter)) return false
+      }
+      if (threatTypeId) {
+        if (!Array.isArray(r.threat_type) || !r.threat_type.includes(threatTypeId)) return false
+      }
+      if (industryFilter !== ALL_INDUSTRIES) {
+        if (!Array.isArray(r.industry) || !r.industry.includes(industryFilter)) return false
+      }
       return true
     })
-  }, [sourceFilter, categoryFilter, yearFilter])
+  }, [allReports, sourceFilter, categoryFilter, threatTypeFilter, industryFilter, yearFilter, regionFilter])
+
+  // Findings count summary — sum across the filtered subset.
+  const findingsCount = useMemo(
+    () => filtered.reduce((n, r) => n + (r.report_meta?.card_count_total || 0), 0),
+    [filtered]
+  )
+  const totalReports = allReports.length
+
+  const isFiltered =
+    sourceFilter !== ALL_SOURCES ||
+    categoryFilter !== ALL_CATEGORIES ||
+    threatTypeFilter !== ALL_THREAT_TYPES ||
+    industryFilter !== ALL_INDUSTRIES ||
+    yearFilter !== 'All' ||
+    regionFilter !== ALL_REGIONS
+
+  const clearAll = () => {
+    setSourceFilter(ALL_SOURCES)
+    setCategoryFilter(ALL_CATEGORIES)
+    setThreatTypeFilter(ALL_THREAT_TYPES)
+    setIndustryFilter(ALL_INDUSTRIES)
+    setYearFilter('All')
+    setRegionFilter(ALL_REGIONS)
+  }
+
+  const openReport = (report) => {
+    const id = report.report_meta?.report_id
+    if (id) navigate(`/reports/${id}`)
+    else setPreviewReport(report)
+  }
 
   const chipStyle = (active) => ({
     display: 'inline-block',
@@ -92,80 +204,77 @@ export default function Reports() {
       <div style={{ display: 'flex', gap: 28, alignItems: 'flex-start', flexWrap: 'wrap' }}>
         {/* Left Sidebar */}
         <div style={{
-          width: 220,
-          minWidth: 180,
+          width: 240,
+          minWidth: 200,
           position: 'sticky',
           top: 100,
           ...glass,
           padding: '20px 16px',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 16,
         }}>
           {/* Clear all */}
-          {(sourceFilter !== 'All' || categoryFilter !== 'All' || yearFilter !== 'All' || regionFilter !== 'Global') && (
+          {isFiltered && (
             <button
-              onClick={() => { setSourceFilter('All'); setCategoryFilter('All'); setYearFilter('All'); setRegionFilter('Global') }}
-              style={{ background: 'rgba(255,69,98,0.06)', border: '1px solid rgba(255,69,98,0.15)', borderRadius: 8, padding: '7px 0', width: '100%', color: '#FF4562', fontSize: 11, fontFamily: "'JetBrains Mono', monospace", cursor: 'pointer', transition: 'all 0.2s', marginBottom: 16 }}
+              onClick={clearAll}
+              style={{ background: 'rgba(255,69,98,0.06)', border: '1px solid rgba(255,69,98,0.15)', borderRadius: 8, padding: '7px 0', width: '100%', color: '#FF4562', fontSize: 11, fontFamily: "'JetBrains Mono', monospace", cursor: 'pointer', transition: 'all 0.2s' }}
             >
               Clear all filters
             </button>
           )}
-          {/* Source */}
-          <span style={sectionLabel}>Source</span>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 22 }}>
-            {SOURCES.map((s) => (
-              <span key={s} style={chipStyle(sourceFilter === s)} onClick={() => setSourceFilter(s)}>
-                {s}
-              </span>
-            ))}
-          </div>
 
-          {/* Category */}
-          <span style={sectionLabel}>Category</span>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 22 }}>
-            {CATEGORIES.map((c) => (
-              <span key={c} style={chipStyle(categoryFilter === c)} onClick={() => setCategoryFilter(c)}>
-                {c}
-              </span>
-            ))}
-          </div>
+          <SearchableSelect
+            label="Source"
+            value={sourceFilter}
+            options={SOURCE_OPTIONS}
+            onChange={setSourceFilter}
+            placeholder={ALL_SOURCES}
+          />
 
-          {/* Year */}
-          <span style={sectionLabel}>Year</span>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-            {YEARS.map((y) => (
-              <span key={y} style={chipStyle(yearFilter === y)} onClick={() => setYearFilter(y)}>
-                {y}
-              </span>
-            ))}
-          </div>
+          <SearchableSelect
+            label="Category"
+            value={categoryFilter}
+            options={CATEGORY_OPTIONS}
+            onChange={setCategoryFilter}
+            placeholder={ALL_CATEGORIES}
+          />
 
-          {/* Country / Region */}
-          <span style={sectionLabel}>Country / Region</span>
-          <select
+          <SearchableSelect
+            label="Threat Type"
+            value={threatTypeFilter}
+            options={THREAT_TYPE_OPTIONS}
+            onChange={setThreatTypeFilter}
+            placeholder={ALL_THREAT_TYPES}
+          />
+
+          <SearchableSelect
+            label="Industry"
+            value={industryFilter}
+            options={INDUSTRY_OPTIONS}
+            onChange={setIndustryFilter}
+            placeholder={ALL_INDUSTRIES}
+          />
+
+          <SearchableSelect
+            label="Region"
             value={regionFilter}
-            onChange={e => setRegionFilter(e.target.value)}
-            style={{
-              width: '100%',
-              fontFamily: "'JetBrains Mono', monospace",
-              fontSize: 11,
-              padding: '8px 10px',
-              borderRadius: 10,
-              border: '1px solid rgba(59,130,246,0.08)',
-              background: 'rgba(59,130,246,0.03)',
-              backdropFilter: 'blur(12px)',
-              color: 'rgba(232,236,241,0.55)',
-              outline: 'none',
-              cursor: 'pointer',
-              appearance: 'none',
-              WebkitAppearance: 'none',
-              backgroundImage: `url("data:image/svg+xml,%3Csvg width='10' height='6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0l5 6 5-6z' fill='rgba(232,236,241,0.3)'/%3E%3C/svg%3E")`,
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: 'right 10px center',
-            }}
-          >
-            {REGION_OPTIONS.map(o => (
-              <option key={o} value={o} style={{ background: '#12162A', color: '#E8ECF1' }}>{o}</option>
-            ))}
-          </select>
+            options={REGION_OPTIONS}
+            onChange={setRegionFilter}
+            placeholder={ALL_REGIONS}
+          />
+
+          {/* Year stays as chips — small fixed set, faster than a dropdown */}
+          <div>
+            <span style={sectionLabel}>Year</span>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+              {YEAR_OPTIONS.map((y) => (
+                <span key={y} style={chipStyle(yearFilter === y)} onClick={() => setYearFilter(y)}>
+                  {y}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Main Content */}
@@ -212,13 +321,69 @@ export default function Reports() {
                 cursor: 'pointer',
                 fontFamily: "'Satoshi', sans-serif",
                 transition: 'all 0.2s',
-                marginBottom: 48,
+                marginBottom: 28,
               }}
               onClick={() => navigate('/')}
             >
               &#8592; Back to home
             </button>
           </Reveal>
+
+          {/* Inventory summary — what's actually in the library, filtered or not */}
+          <div style={{
+            display: 'flex',
+            alignItems: 'baseline',
+            gap: 18,
+            flexWrap: 'wrap',
+            marginBottom: 24,
+            paddingBottom: 16,
+            borderBottom: '1px solid rgba(255,255,255,0.05)',
+          }}>
+            <div style={{
+              fontFamily: "'Plus Jakarta Sans', sans-serif",
+              fontSize: 22,
+              fontWeight: 700,
+              color: '#E8ECF1',
+              letterSpacing: '-0.01em',
+            }}>
+              {filtered.length}
+              <span style={{
+                fontSize: 14,
+                fontWeight: 500,
+                color: 'rgba(232,236,241,0.45)',
+                marginLeft: 6,
+              }}>
+                {isFiltered ? `of ${totalReports} reports` : `reports`}
+              </span>
+            </div>
+            <div style={{
+              fontFamily: "'JetBrains Mono', monospace",
+              fontSize: 10,
+              letterSpacing: '0.12em',
+              textTransform: 'uppercase',
+              color: 'rgba(232,236,241,0.5)',
+            }}>
+              {findingsCount.toLocaleString()} findings extracted
+            </div>
+            <div style={{ flex: 1 }} />
+            {isFiltered && (
+              <button
+                onClick={clearAll}
+                style={{
+                  fontSize: 11,
+                  fontFamily: "'JetBrains Mono', monospace",
+                  color: '#FF4562',
+                  background: 'none',
+                  border: 'none',
+                  cursor: 'pointer',
+                  padding: 0,
+                  letterSpacing: '0.04em',
+                }}
+              >
+                Reset filters →
+              </button>
+            )}
+          </div>
 
           <div style={{
             display: 'grid',
@@ -231,14 +396,14 @@ export default function Reports() {
               if (isFeatured) {
                 return (
                   <Reveal key={report.id} delay={i * 60} style={{ gridColumn: 'span 2' }}>
-                    <FeaturedCard report={report} onClick={() => setPreviewReport(report)} />
+                    <FeaturedCard report={report} onClick={() => openReport(report)} />
                   </Reveal>
                 )
               }
 
               return (
                 <Reveal key={report.id} delay={i * 60}>
-                  <ReportCard report={report} onClick={() => setPreviewReport(report)} />
+                  <ReportCard report={report} onClick={() => openReport(report)} />
                 </Reveal>
               )
             })}
@@ -359,6 +524,12 @@ function FeaturedMiniChart({ data, labels, color, type }) {
 function FeaturedCard({ report, onClick }) {
   const [hovered, setHovered] = useState(false)
 
+  const dataset = report.dataset
+  const chartType = report.preferred_chart || report.chartType || 'bar'
+  const hasChart = dataset?.series?.[0]?.values?.length > 0
+  const series = hasChart ? dataset.series[0] : null
+  const externalUrl = report.external_url
+
   return (
     <div
       style={{
@@ -409,7 +580,7 @@ function FeaturedCard({ report, onClick }) {
         letterSpacing: '0.04em',
       }}>External Source</span>
 
-      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12, flexWrap: 'wrap' }}>
         <BrandChip source={report.source} size="lg" />
         <span style={{
           fontFamily: "'JetBrains Mono', monospace",
@@ -424,7 +595,37 @@ function FeaturedCard({ report, onClick }) {
           padding: '3px 8px',
           borderRadius: 5,
         }}>{report.category}</span>
+        {report.report_meta?.card_count_total != null && (
+          <span style={{
+            fontFamily: "'JetBrains Mono', monospace",
+            fontSize: 9,
+            color: 'rgba(96,165,250,0.85)',
+            background: 'rgba(59,130,246,0.10)',
+            border: '1px solid rgba(59,130,246,0.18)',
+            padding: '2px 7px',
+            borderRadius: 5,
+            letterSpacing: '0.06em',
+          }}>{report.report_meta.card_count_total} findings</span>
+        )}
       </div>
+
+      {(report.threat_type || []).length > 0 && (
+        <div style={{ display: 'flex', gap: 5, marginBottom: 16, flexWrap: 'wrap' }}>
+          {(report.threat_type || []).slice(0, 4).map((t) => (
+            <span key={t} style={{
+              fontFamily: "'JetBrains Mono', monospace",
+              fontSize: 9,
+              color: 'rgba(232,236,241,0.55)',
+              background: 'rgba(255,255,255,0.025)',
+              border: '1px solid rgba(255,255,255,0.05)',
+              padding: '2px 7px',
+              borderRadius: 5,
+              letterSpacing: '0.04em',
+              textTransform: 'uppercase',
+            }}>{threatTypeLabel(t)}</span>
+          ))}
+        </div>
+      )}
 
       <div style={{ display: 'flex', gap: 24, alignItems: 'flex-start' }}>
         {/* Larger chart area */}
@@ -439,12 +640,38 @@ function FeaturedCard({ report, onClick }) {
           display: 'flex',
           alignItems: 'center',
         }}>
-          <FeaturedMiniChart
-            data={report.dummyData}
-            labels={report.dummyLabels}
-            color={report.color}
-            type={report.chartType}
-          />
+          {hasChart ? (
+            <FeaturedMiniChart
+              data={series.values}
+              labels={dataset.labels}
+              color={series.color || report.color}
+              type={chartType}
+            />
+          ) : (
+            <div style={{
+              width: '100%',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: report.color || '#60A5FA',
+              fontFamily: "'Plus Jakarta Sans', sans-serif",
+            }}>
+              <div style={{ fontSize: 48, fontWeight: 700, letterSpacing: '-0.02em' }}>
+                {report.report_meta?.card_count_total
+                  ? `${report.report_meta.card_count_total}`
+                  : '—'}
+              </div>
+              <div style={{
+                marginTop: 8,
+                fontSize: 10,
+                fontFamily: "'JetBrains Mono', monospace",
+                color: 'rgba(232,236,241,0.45)',
+                letterSpacing: '0.12em',
+                textTransform: 'uppercase',
+              }}>findings extracted</div>
+            </div>
+          )}
         </div>
 
         {/* Text content */}
@@ -476,23 +703,44 @@ function FeaturedCard({ report, onClick }) {
             marginBottom: 20,
           }}>Source: {report.source}</div>
 
-          <button
-            onClick={(e) => e.stopPropagation()}
-            style={{
-              padding: '8px 20px',
-              fontSize: 12,
-              fontWeight: 600,
-              borderRadius: 9,
-              background: 'rgba(59,130,246,0.14)',
-              color: '#60A5FA',
-              border: '1px solid rgba(59,130,246,0.2)',
-              cursor: 'pointer',
-              fontFamily: "'Satoshi', sans-serif",
-              transition: 'all 0.2s',
-            }}
-          >
-            Download PNG
-          </button>
+          <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+            <span
+              style={{
+                padding: '8px 20px',
+                fontSize: 12,
+                fontWeight: 600,
+                borderRadius: 9,
+                background: 'rgba(59,130,246,0.14)',
+                color: '#60A5FA',
+                border: '1px solid rgba(59,130,246,0.2)',
+                fontFamily: "'Satoshi', sans-serif",
+              }}
+            >
+              View findings →
+            </span>
+            {externalUrl && (
+              <a
+                href={externalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                style={{
+                  padding: '8px 18px',
+                  fontSize: 12,
+                  fontWeight: 600,
+                  borderRadius: 9,
+                  background: 'rgba(255,255,255,0.04)',
+                  color: 'rgba(232,236,241,0.75)',
+                  border: '1px solid rgba(255,255,255,0.1)',
+                  textDecoration: 'none',
+                  fontFamily: "'Satoshi', sans-serif",
+                  transition: 'all 0.2s',
+                }}
+              >
+                Open original ↗
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </div>

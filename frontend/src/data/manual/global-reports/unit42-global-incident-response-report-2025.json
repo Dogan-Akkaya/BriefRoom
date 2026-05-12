@@ -1,0 +1,1123 @@
+{
+  "source": "Palo Alto Networks Unit 42",
+  "source_short": "Unit 42",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/unit42-global-incident-response-report-2025.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.992Z. Curated top 10 of 23 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-unit42-global-incident-response-report-2025",
+      "title": "2025 Unit 42 Global Incident Response Report",
+      "year": 2025,
+      "category": "Phishing",
+      "color": "#FA582D",
+      "description": "Social engineering was the dominant intrusion method across Unit 42's incident response caseload between May 2024 and May 2025. It overtook traditional technical exploitation by targeting human workflows and trust systems.",
+      "external_url": "https://unit42.paloaltonetworks.com/2025-unit-42-global-incident-response-report/",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "All incidents",
+          "Social engineering incidents"
+        ],
+        "series": [
+          {
+            "name": "Data exposure rate",
+            "values": [
+              44,
+              60
+            ],
+            "color": "#FA582D"
+          }
+        ]
+      },
+      "industry": [
+        "Manufacturing",
+        "Technology",
+        "Healthcare",
+        "Financial Services",
+        "Retail & E-Commerce",
+        "Government"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Middle East"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "phishing",
+        "ransomware",
+        "infostealer"
+      ],
+      "tags": [
+        "external-report",
+        "data-exposure",
+        "comparison",
+        "baseline",
+        "initial-access",
+        "seo-poisoning",
+        "smishing",
+        "mfa-bombing",
+        "privileged-accounts",
+        "impersonation",
+        "vishing",
+        "bec",
+        "geography",
+        "methodology",
+        "regional-split",
+        "mena",
+        "industry-ranking",
+        "social-engineering",
+        "sector-impact",
+        "ai",
+        "genai",
+        "agentic-ai",
+        "deepfake",
+        "voice-cloning",
+        "alert-fatigue",
+        "edr-gaps",
+        "mfa",
+        "over-permissioned",
+        "control-gaps",
+        "redline",
+        "lumma",
+        "lampion",
+        "rat",
+        "clickfix",
+        "unit42",
+        "identity-weakness"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2026-05-11",
+      "report_meta": {
+        "report_id": "unit42-global-incident-response-report-2025",
+        "organization_id": "unit42",
+        "publication_date": null,
+        "extracted_on": "2026-05-11",
+        "source_url": "https://unit42.paloaltonetworks.com/2025-unit-42-global-incident-response-report/",
+        "card_count_total": 23,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "unit42-global-incident-response-report-2025-data-exposure-compare"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "unit42-global-incident-response-report-2025-data-exposure-compare",
+      "title": "Data exposure: social engineering vs all incidents",
+      "description": "Social engineering intrusions produced data exposure in 60% of cases compared with 44% across all incidents — a 16 percentage point gap. The delta reflects how identity-based access accelerates the path to exfiltration.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Data Breaches",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "phishing"
+      ],
+      "tags": [
+        "data-exposure",
+        "comparison",
+        "baseline"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Data Exposure Risk",
+      "comparison": "+16pp vs all-incident baseline",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "All incidents",
+          "Social engineering incidents"
+        ],
+        "series": [
+          {
+            "name": "Data exposure rate",
+            "values": [
+              44,
+              60
+            ],
+            "color": "#FA582D"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "unit42-global-incident-response-report-2025-initial-access-mix",
+      "title": "Initial access vectors among social engineering intrusions",
+      "description": "Within social engineering-driven intrusions, phishing accounted for 65% of cases. The remaining 35% used less conventional methods including SEO poisoning, malvertising, smishing, and MFA bombing.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "initial-access",
+        "seo-poisoning",
+        "smishing",
+        "mfa-bombing"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Initial Access Statistics",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Phishing",
+          "Other (SEO poisoning, malvertising, smishing, MFA bombing)"
+        ],
+        "series": [
+          {
+            "name": "Share of social engineering intrusions",
+            "values": [
+              65,
+              35
+            ],
+            "color": "#FA582D"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "unit42-global-incident-response-report-2025-se-tactics-breakdown",
+      "title": "Social engineering tactic share by case",
+      "description": "Among social engineering intrusions, 66% targeted privileged accounts, 45% used impersonation of internal personnel to build trust, and 23% involved callback or voice-based techniques. Tactics frequently overlap within the same incident.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "privileged-accounts",
+        "impersonation",
+        "vishing",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Initial Access Statistics",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Targeted privileged accounts",
+          "Impersonated internal personnel",
+          "Callback / voice-based"
+        ],
+        "series": [
+          {
+            "name": "Share of social engineering cases",
+            "values": [
+              66,
+              45,
+              23
+            ],
+            "color": "#FA582D"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "unit42-global-incident-response-report-2025-region-distribution",
+      "title": "Affected organizations by region",
+      "description": "Unit 42 IR clients spanned 49 countries, with North America accounting for roughly 73% and the remaining 27% split across Europe, the Middle East, and Asia-Pacific. The geography reflects Unit 42's caseload, not global incident distribution.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Middle East"
+      ],
+      "threat_type": [
+        "phishing",
+        "ransomware"
+      ],
+      "tags": [
+        "geography",
+        "methodology",
+        "regional-split",
+        "bec",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Data and Methodology",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "North America",
+          "EMEA + APAC (combined)"
+        ],
+        "series": [
+          {
+            "name": "Share of affected organizations",
+            "values": [
+              73,
+              27
+            ],
+            "color": "#FA582D"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "unit42-global-incident-response-report-2025-top-industries",
+      "title": "Industries most impacted by social engineering",
+      "description": "Manufacturing was the most impacted sector when isolating for social engineering, followed by high technology, healthcare, finance, professional services, retail, and state/federal government. The list reflects relative case concentration in Unit 42's IR engagements.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Manufacturing",
+        "Technology",
+        "Healthcare",
+        "Financial Services",
+        "Retail & E-Commerce",
+        "Government"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "industry-ranking",
+        "social-engineering",
+        "sector-impact",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Data and Methodology",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Manufacturing",
+          "High Technology",
+          "Healthcare",
+          "Finance",
+          "Professional Services",
+          "Retail",
+          "State/Federal Government"
+        ],
+        "series": [
+          {
+            "name": "Relative ranking (1 = most impacted)",
+            "values": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "color": "#FA582D"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "unit42-global-incident-response-report-2025-ai-layers",
+      "title": "AI-enabled attacker tooling: three layers",
+      "description": "Unit 42 categorizes attacker AI tooling into automation (rule-based intrusion acceleration), generative AI (human-like email/voice/chat content), and agentic AI (autonomous multi-step task execution). Automation is most prevalent today; agentic AI adoption remains limited but growing.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "ai",
+        "genai",
+        "agentic-ai",
+        "deepfake",
+        "voice-cloning",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI's Role in Social Engineering",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Automation",
+          "Generative AI",
+          "Agentic AI"
+        ],
+        "series": [
+          {
+            "name": "Relative observed adoption (qualitative)",
+            "values": [
+              3,
+              2,
+              1
+            ],
+            "color": "#FA582D"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "unit42-global-incident-response-report-2025-contributing-factors",
+      "title": "Six contributing factors to successful intrusions",
+      "description": "Unit 42 identified six recurring patterns enabling social engineering success: missed alert escalation, failure to action alerts, insufficient EDR/endpoint logging, lack of centralized AV/EDR and tamper protection, weak or absent MFA, and excessive permissions.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Detection",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "alert-fatigue",
+        "edr-gaps",
+        "mfa",
+        "over-permissioned",
+        "control-gaps",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Contributing Factors to Successful Attacks",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Failure to escalate alerts",
+          "Failure to action alerts",
+          "Insufficient EDR/endpoint logging",
+          "No centralized AV/EDR & tamper protection",
+          "Weak or absent MFA",
+          "Excessive permissions"
+        ],
+        "series": [
+          {
+            "name": "Contributing factor (presence flagged in cases)",
+            "values": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "color": "#FA582D"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "unit42-global-incident-response-report-2025-payload-families",
+      "title": "Common ClickFix payload families",
+      "description": "ClickFix campaigns favored off-the-shelf credential-harvesting malware including RedLine and Lumma infostealers, Lampion banking Trojan, and follow-on remote access Trojans. Most payloads are not novel — attackers change delivery and timing rather than tooling.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [
+        "Retail & E-Commerce",
+        "Healthcare",
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer",
+        "phishing"
+      ],
+      "tags": [
+        "redline",
+        "lumma",
+        "lampion",
+        "rat",
+        "clickfix"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Common Payloads and Behavioral Patterns",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "RedLine (infostealer)",
+          "Lumma (infostealer)",
+          "Lampion (banking Trojan)",
+          "Remote Access Trojans"
+        ],
+        "series": [
+          {
+            "name": "Observed in ClickFix-related cases",
+            "values": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "color": "#FA582D"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "unit42-global-incident-response-report-2025-social-eng-share",
+      "title": "Social engineering drove 36% of all incidents",
+      "description": "Social engineering was the dominant intrusion method across Unit 42's incident response caseload between May 2024 and May 2025. It overtook traditional technical exploitation by targeting human workflows and trust systems.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Manufacturing",
+        "Technology",
+        "Healthcare",
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "social-engineering",
+        "initial-access",
+        "unit42",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Executive Summary",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "36%"
+    },
+    {
+      "type": "stat",
+      "id": "unit42-global-incident-response-report-2025-privileged-target",
+      "title": "66% of social engineering targeted privileged accounts",
+      "description": "Where social engineering was the initial access vector, two-thirds of attacks aimed directly at privileged accounts. Attackers concentrate on identities with the broadest blast radius.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "privileged-accounts",
+        "identity-weakness",
+        "social-engineering",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Social Engineering by the Numbers",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "66%"
+    },
+    {
+      "type": "stat",
+      "id": "unit42-global-incident-response-report-2025-vishing-share",
+      "title": "23% used callback or voice-based techniques",
+      "description": "Nearly a quarter of social engineering intrusions involved callback or voice-based vectors such as vishing. This includes help desk calls and impersonation of executives by phone.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "vishing",
+        "callback-phishing",
+        "voice-based",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Social Engineering by the Numbers",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "23%"
+    },
+    {
+      "type": "stat",
+      "id": "unit42-global-incident-response-report-2025-bec-exposure",
+      "title": "~60% of BEC cases caused data exposure",
+      "description": "Roughly half of social engineering incidents were business email compromises, and nearly 60% of all BEC cases produced data exposure. Threat actors moved quickly from access to exfiltration or credential harvesting.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Financial Services",
+        "Technology",
+        "Manufacturing"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "data_leaks"
+      ],
+      "tags": [
+        "bec",
+        "data-exposure",
+        "credential-harvesting"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Data Exposure Risk",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "~60%"
+    },
+    {
+      "type": "stat",
+      "id": "unit42-global-incident-response-report-2025-na-share",
+      "title": "73% of affected orgs in North America",
+      "description": "Approximately 73% of organizations in the Unit 42 IR caseload were headquartered in North America, with the remaining 27% spread across Europe, the Middle East, and Asia-Pacific. The dataset spans 49 unique countries.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing",
+        "ransomware"
+      ],
+      "tags": [
+        "geography",
+        "methodology",
+        "north-america",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Data and Methodology",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "73%"
+    },
+    {
+      "type": "stat",
+      "id": "unit42-global-incident-response-report-2025-domain-admin-40min",
+      "title": "Domain admin in under 40 minutes",
+      "description": "One documented case saw an attacker reach domain administrator access in less than 40 minutes using only built-in tools. The intrusion relied on social engineering of help desk staff rather than malware.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "dwell-time",
+        "muddled-libra",
+        "lolbins",
+        "privilege-escalation"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Executive Summary",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "minutes",
+      "card_style": "number",
+      "value": "<40 min"
+    },
+    {
+      "type": "stat",
+      "id": "unit42-global-incident-response-report-2025-helpdesk-350gb",
+      "title": "350 GB exfiltrated via help desk deception",
+      "description": "A single help desk impersonation case enabled an attacker to obtain an MFA reset and laterally exfiltrate more than 350 GB of data without triggering EDR. The intrusion used no malware, relying entirely on legitimate administrative tools.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "phishing"
+      ],
+      "tags": [
+        "help-desk",
+        "mfa-reset",
+        "lolbins",
+        "exfiltration"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Case Studies from Incident Response",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "350 GB"
+    },
+    {
+      "type": "stat",
+      "id": "unit42-global-incident-response-report-2025-clickfix-cases",
+      "title": "ClickFix used in 8+ confirmed IR cases",
+      "description": "Between May 2024 and May 2025, ClickFix served as the initial access vector in at least eight confirmed incident response cases. The technique uses fake browser alerts, fraudulent update prompts, and drive-by downloads.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Healthcare",
+        "Retail & E-Commerce",
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "infostealer"
+      ],
+      "tags": [
+        "clickfix",
+        "seo-poisoning",
+        "malvertising",
+        "initial-access"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "At-Scale Attacks",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "8+"
+    },
+    {
+      "type": "stat",
+      "id": "unit42-global-incident-response-report-2025-cases-analyzed",
+      "title": "700+ incident response cases analyzed",
+      "description": "The report draws from more than 700 incident response engagements handled between May 2024 and May 2025. Affected clients ranged from organizations with fewer than 50 personnel to Fortune 500 and Global 2000 enterprises.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "ransomware"
+      ],
+      "tags": [
+        "methodology",
+        "ir-caseload",
+        "sample-size",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Data and Methodology",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "700+"
+    },
+    {
+      "type": "stat",
+      "id": "unit42-global-incident-response-report-2025-rat-90min",
+      "title": "90 minutes from RAT install to staged exfiltration",
+      "description": "In a retail-sector ClickFix case, a fake update prompt led an employee to install a remote access Trojan. Within 90 minutes the attacker had captured order management credentials and staged outbound data transfers.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing",
+        "infostealer"
+      ],
+      "tags": [
+        "clickfix",
+        "rat",
+        "credential-theft",
+        "speed-to-impact"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Common Payloads and Behavioral Patterns",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "minutes",
+      "card_style": "number",
+      "value": "90 min"
+    },
+    {
+      "type": "stat",
+      "id": "unit42-global-incident-response-report-2025-countries-covered",
+      "title": "49 countries represented in IR caseload",
+      "description": "Affected organizations were headquartered in 49 unique countries, reflecting Unit 42's global incident response footprint. Caseload composition ranges from sub-50-person organizations to Fortune 500 and Global 2000 enterprises.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Middle East"
+      ],
+      "threat_type": [
+        "phishing",
+        "ransomware"
+      ],
+      "tags": [
+        "methodology",
+        "geography",
+        "coverage",
+        "bec",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Data and Methodology",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "49"
+    },
+    {
+      "type": "stat",
+      "id": "unit42-global-incident-response-report-2025-exec-quote",
+      "title": "Why social engineering works",
+      "description": "The report's closing assessment frames social engineering as a systemic, identity-centric threat rather than a sophistication problem. Defenders must move beyond traditional user awareness toward layered technical controls and zero-trust verification.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "narrative",
+        "key-takeaway",
+        "zero-trust",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Key Takeaway",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Social engineering works not because attackers are sophisticated, but because people still trust too easily, compromising organizational security.\""
+    },
+    {
+      "type": "stat",
+      "id": "unit42-global-incident-response-report-2025-attribution-quote",
+      "title": "Attribution: financially motivated and nation-state mix",
+      "description": "Unit 42 attributes most social engineering intrusions to financially motivated cybercrime groups such as Muddled Libra, alongside nation-state operations from Iran-affiliated Agent Serpens and North Korean synthetic-insider campaigns posing as remote employees.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "ransomware"
+      ],
+      "tags": [
+        "muddled-libra",
+        "agent-serpens",
+        "north-korea",
+        "financially-motivated",
+        "attribution",
+        "bec",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Motivation / Threat Actor Profiles",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Nearly all social engineering intrusions between May 2024 and May 2025 were financially motivated, with threat actors seeking to monetize access through data theft, extortion, ransomware, or credential resale.\""
+    },
+    {
+      "type": "stat",
+      "id": "unit42-global-incident-response-report-2025-data-exposure-rate",
+      "title": "60% of social engineering led to data exposure",
+      "description": "Social engineering attacks resulted in data exposure in 60% of cases, 16 points higher than the overall incident rate of 44%. Exposure included direct exfiltration, credential theft, and unauthorized system access.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Data Breaches",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "phishing"
+      ],
+      "tags": [
+        "data-exposure",
+        "exfiltration",
+        "social-engineering"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Data Exposure Risk",
+      "comparison": "+16pp vs all-incident baseline (44%)",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "60%"
+    },
+    {
+      "type": "stat",
+      "id": "unit42-global-incident-response-report-2025-non-phishing-share",
+      "title": "1 in 3 incidents used non-phishing social engineering",
+      "description": "More than one third of incidents involved non-phishing techniques including SEO poisoning, fake system prompts, and help desk manipulation. The mix is broadening beyond email-based lures.",
+      "source": "Palo Alto Networks Unit 42",
+      "source_short": "Unit 42",
+      "color": "#FA582D",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "non-phishing",
+        "seo-poisoning",
+        "help-desk",
+        "smishing",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Initial Access Statistics",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "~35%"
+    }
+  ]
+}

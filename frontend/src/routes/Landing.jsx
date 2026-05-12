@@ -9,8 +9,7 @@ import CategoryPicker from '../components/CategoryPicker'
 import ReportCard from '../components/ReportCard'
 import SearchPanel from '../components/SearchPanel'
 import ChartPreviewModal from '../components/ChartPreviewModal'
-import { GLOBAL_REPORTS } from '../lib/data'
-import { popularCharts, threatTypeLabel } from '../lib/intelligenceLibrary'
+import { popularCharts, globalReports, threatTypeLabel } from '../lib/intelligenceLibrary'
 
 // Adapter: Intelligence Library item → PopularChartCard props (mirrors /popular)
 function toCardProps(item) {
@@ -192,9 +191,16 @@ export default function Landing() {
           </div>
         </Reveal>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16 }}>
-          {GLOBAL_REPORTS.slice(0, 3).map((r, i) => (
+          {globalReports().slice(0, 3).map((r, i) => (
             <Reveal key={r.id} delay={i * 70}>
-              <ReportCard report={r} onClick={() => { setPreviewChart(r); setPreviewType('report') }} />
+              <ReportCard
+                report={r}
+                onClick={() => {
+                  const rid = r.report_meta?.report_id
+                  if (rid) navigate(`/reports/${rid}`)
+                  else { setPreviewChart(r); setPreviewType('report') }
+                }}
+              />
             </Reveal>
           ))}
         </div>

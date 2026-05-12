@@ -1,53 +1,128 @@
 // Brand chip metadata for known vendor sources.
-// Returns { short, color, name } when the source string matches a known vendor,
-// null otherwise. Lookup is substring-based (case-insensitive) so variants like
-// "SOCRadar ThreatVision 2026", "SOCRadar Dark Web Monitoring", "Verizon DBIR"
-// all match the same entry.
 //
-// When renaming sources in data.js / intelligenceLibrary.js, keep one of the
-// keywords below in the string so the brand chip keeps resolving.
-
-const BRANDS = [
-  // keyword (lowercase substring), short label, brand color, full name
-  { k: 'socradar',          short: 'SR',    color: '#FF4562', name: 'SOCRadar' },
-  { k: 'ibm',               short: 'IBM',   color: '#1F70C1', name: 'IBM X-Force' },
-  { k: 'x-force',           short: 'IBM',   color: '#1F70C1', name: 'IBM X-Force' },
-  { k: 'crowdstrike',       short: 'CS',    color: '#EC1A2B', name: 'CrowdStrike' },
-  { k: 'overwatch',         short: 'CS',    color: '#EC1A2B', name: 'CrowdStrike OverWatch' },
-  { k: 'verizon',           short: 'DBIR',  color: '#CD040B', name: 'Verizon DBIR' },
-  { k: 'dbir',              short: 'DBIR',  color: '#CD040B', name: 'Verizon DBIR' },
-  { k: 'mandiant',          short: 'MND',   color: '#E91F26', name: 'Mandiant' },
-  { k: 'm-trends',          short: 'MND',   color: '#E91F26', name: 'Mandiant M-Trends' },
-  { k: 'unit 42',           short: 'U42',   color: '#FA582D', name: 'Unit 42' },
-  { k: 'palo alto',         short: 'U42',   color: '#FA582D', name: 'Palo Alto Unit 42' },
-  { k: 'enisa',             short: 'ENI',   color: '#003399', name: 'ENISA' },
-  { k: 'cloudflare',        short: 'CF',    color: '#F38020', name: 'Cloudflare' },
-  { k: 'akamai',            short: 'AK',    color: '#009CDA', name: 'Akamai' },
-  { k: 'kaspersky',         short: 'KL',    color: '#12B26D', name: 'Kaspersky' },
-  { k: 'check point',       short: 'CP',    color: '#DA291C', name: 'Check Point' },
-  { k: 'dragos',            short: 'DG',    color: '#0099CC', name: 'Dragos' },
-  { k: 'pci ssc',           short: 'PCI',   color: '#003B7A', name: 'PCI SSC' },
-  { k: 'nvd',               short: 'NVD',   color: '#0B5EA8', name: 'NVD' },
-  { k: 'cisa',              short: 'CISA',  color: '#0033A0', name: 'CISA KEV' },
-  { k: 'fbi ic3',           short: 'IC3',   color: '#1B3E89', name: 'FBI IC3' },
-]
-
-export function sourceBrand(source) {
-  if (!source) return null
-  const s = String(source).toLowerCase()
-  for (const b of BRANDS) if (s.includes(b.k)) return { short: b.short, color: b.color, name: b.name }
-  return null
-}
+// The data + lookup function live in `sourceBrandsData.mjs` (Node-importable)
+// so the Node ingestion validators can use the same lookup without a separate
+// mirror. This file adds the React BrandChip component and re-exports the
+// lookup for existing consumers.
+//
+// BrandChip prefers a real vendor logo when one is catalogued in
+// `src/data/progress_logo.json`. Brands without a logo (e.g. NVD) and any
+// `source` strings that don't match a known vendor fall back to the 3-letter
+// monogram chip. Dark wordmarks (PwC, Bitdefender, etc.) are wrapped in a
+// white card so they stay legible on the dark theme.
 
 import { useState } from 'react'
+import { sourceBrand } from './sourceBrandsData.mjs'
+import logoProgress from '../data/progress_logo.json'
+export { sourceBrand }
 
-// Small inline JSX chip renderer. Kept here so multiple components share the same visual.
-// Hover reveals the full brand name as a tooltip above the chip.
+// slug → { file, bg, confidence } for fast lookup at render time.
+const LOGO_BY_SLUG = Object.fromEntries(
+  logoProgress.logos
+    .filter((l) => l.file)
+    .map((l) => [l.slug, { file: l.file, bg: l.bg, confidence: l.confidence }])
+)
+
+function Tooltip({ name, color }) {
+  return (
+    <span
+      role="tooltip"
+      style={{
+        position: 'absolute',
+        bottom: 'calc(100% + 6px)',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        whiteSpace: 'nowrap',
+        padding: '5px 10px',
+        borderRadius: 6,
+        background: 'rgba(10,14,26,0.96)',
+        border: `1px solid ${color}55`,
+        color: '#E8ECF1',
+        fontFamily: "'Satoshi', 'DM Sans', sans-serif",
+        fontSize: 11,
+        fontWeight: 500,
+        letterSpacing: '0.01em',
+        lineHeight: 1.2,
+        boxShadow: '0 6px 22px rgba(0,0,0,0.5)',
+        zIndex: 1000,
+        pointerEvents: 'none',
+      }}
+    >
+      {name}
+      <span
+        aria-hidden="true"
+        style={{
+          position: 'absolute',
+          top: '100%',
+          left: '50%',
+          transform: 'translateX(-50%)',
+          width: 0, height: 0,
+          borderLeft: '5px solid transparent',
+          borderRight: '5px solid transparent',
+          borderTop: `5px solid ${color}55`,
+        }}
+      />
+    </span>
+  )
+}
+
 export function BrandChip({ source, size = 'sm', style = {} }) {
   const [hovered, setHovered] = useState(false)
+  const [imgFailed, setImgFailed] = useState(false)
   const brand = sourceBrand(source)
   if (!brand) return null
-  const dims = size === 'lg'
+
+  const logo = brand.slug ? LOGO_BY_SLUG[brand.slug] : null
+  const useLogo = !!logo && !imgFailed
+  const lg = size === 'lg'
+
+  // Logo chip: image inside a slim container. White card when the logo is
+  // dark-on-transparent (would otherwise be invisible on our dark UI).
+  if (useLogo) {
+    const isWhiteBg = logo.bg === 'white'
+    const height = lg ? 24 : 18
+    return (
+      <span
+        aria-label={brand.name}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+        style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          height,
+          padding: isWhiteBg ? (lg ? '3px 8px' : '2px 6px') : (lg ? '2px 4px' : '1px 3px'),
+          borderRadius: lg ? 6 : 5,
+          background: isWhiteBg ? '#FFFFFF' : 'transparent',
+          border: isWhiteBg
+            ? '1px solid rgba(255,255,255,0.18)'
+            : `1px solid ${brand.color}33`,
+          lineHeight: 1,
+          position: 'relative',
+          cursor: 'default',
+          ...style,
+        }}
+      >
+        <img
+          src={logo.file}
+          alt={brand.name}
+          onError={() => setImgFailed(true)}
+          style={{
+            height: '100%',
+            width: 'auto',
+            maxWidth: lg ? 110 : 80,
+            objectFit: 'contain',
+            display: 'block',
+          }}
+        />
+        {hovered && <Tooltip name={brand.name} color={brand.color} />}
+      </span>
+    )
+  }
+
+  // Fallback: monogram chip (used for NVD and any vendor without a logo file,
+  // or if the image fails to load).
+  const dims = lg
     ? { padX: 10, padY: 5, fontSize: 11, borderRadius: 6 }
     : { padX: 7, padY: 3, fontSize: 9, borderRadius: 5 }
   return (
@@ -74,46 +149,7 @@ export function BrandChip({ source, size = 'sm', style = {} }) {
       }}
     >
       {brand.short}
-      {hovered && (
-        <span
-          role="tooltip"
-          style={{
-            position: 'absolute',
-            bottom: 'calc(100% + 6px)',
-            left: '50%',
-            transform: 'translateX(-50%)',
-            whiteSpace: 'nowrap',
-            padding: '5px 10px',
-            borderRadius: 6,
-            background: 'rgba(10,14,26,0.96)',
-            border: `1px solid ${brand.color}55`,
-            color: '#E8ECF1',
-            fontFamily: "'Satoshi', 'DM Sans', sans-serif",
-            fontSize: 11,
-            fontWeight: 500,
-            letterSpacing: '0.01em',
-            lineHeight: 1.2,
-            boxShadow: '0 6px 22px rgba(0,0,0,0.5)',
-            zIndex: 1000,
-            pointerEvents: 'none',
-          }}
-        >
-          {brand.name}
-          <span
-            aria-hidden="true"
-            style={{
-              position: 'absolute',
-              top: '100%',
-              left: '50%',
-              transform: 'translateX(-50%)',
-              width: 0, height: 0,
-              borderLeft: '5px solid transparent',
-              borderRight: '5px solid transparent',
-              borderTop: `5px solid ${brand.color}55`,
-            }}
-          />
-        </span>
-      )}
+      {hovered && <Tooltip name={brand.name} color={brand.color} />}
     </span>
   )
 }

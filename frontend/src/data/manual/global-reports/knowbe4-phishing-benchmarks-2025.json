@@ -1,0 +1,1133 @@
+{
+  "source": "KnowBe4",
+  "source_short": "KnowBe4",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/knowbe4-phishing-benchmarks-2025.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.959Z. Curated top 10 of 22 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-knowbe4-phishing-benchmarks-2025",
+      "title": "2025 Phishing By Industry Benchmarking Report",
+      "year": 2025,
+      "category": "Phishing",
+      "color": "#339933",
+      "description": "After 12 months of ongoing KnowBe4 security awareness training, the global average Phish-prone Percentage fell from 33.1% to 4.1% — an 86% reduction in phishing susceptibility.",
+      "external_url": "https://www.content.shi.com/cms-content/accelerator/media/pdfs/partner/knowbe4/knowbe4-081825-2025-pib-na-report.pdf",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "North America",
+          "Africa",
+          "Asia",
+          "Australia & New Zealand",
+          "Europe",
+          "South America",
+          "United Kingdom & Ireland"
+        ],
+        "series": [
+          {
+            "name": "Baseline",
+            "values": [
+              37.1,
+              34.9,
+              28.6,
+              36.8,
+              32.5,
+              39.1,
+              32.9
+            ],
+            "color": "#339933"
+          },
+          {
+            "name": "90 Days",
+            "values": [
+              19.6,
+              21.1,
+              17.9,
+              19.9,
+              20.7,
+              18.2,
+              19
+            ],
+            "color": "#7ABF6A"
+          },
+          {
+            "name": "1 Year+",
+            "values": [
+              3.9,
+              5.3,
+              5.2,
+              4.9,
+              5,
+              4.5,
+              4.8
+            ],
+            "color": "#1F5C1F"
+          }
+        ]
+      },
+      "industry": [
+        "Healthcare",
+        "Financial Services",
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Latin America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "external-report",
+        "regional",
+        "training-progression",
+        "multi-series",
+        "latam",
+        "north-america",
+        "organization-size",
+        "training-journey",
+        "global",
+        "ppp-reduction",
+        "90-day",
+        "enterprise",
+        "baseline-ppp",
+        "industry-comparison",
+        "at-risk-sectors",
+        "industry:insurance",
+        "industry:pharma",
+        "global-baseline",
+        "improvement-rate",
+        "training-effectiveness",
+        "sector-improvement",
+        "mid-market",
+        "industry:hospitality",
+        "sat",
+        "click-rate-reduction"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2025-05-13",
+      "report_meta": {
+        "report_id": "knowbe4-phishing-benchmarks-2025",
+        "organization_id": "knowbe4",
+        "publication_date": "2025-05-13",
+        "extracted_on": "2026-05-11",
+        "source_url": "https://www.content.shi.com/cms-content/accelerator/media/pdfs/partner/knowbe4/knowbe4-081825-2025-pib-na-report.pdf",
+        "card_count_total": 22,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "knowbe4-phishing-benchmarks-2025-chart-region-3phase"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "knowbe4-phishing-benchmarks-2025-chart-region-3phase",
+      "title": "Phish-prone Percentage by region across all three training phases",
+      "description": "Multi-series comparison of regional Phish-prone Percentage at baseline, after 90 days of training, and after one year. Every region collapses to single-digit click rates by the one-year mark.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Latin America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "regional",
+        "training-progression",
+        "multi-series",
+        "latam"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "2025 International Phishing Benchmarks",
+      "comparison": "phase-over-phase",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "North America",
+          "Africa",
+          "Asia",
+          "Australia & New Zealand",
+          "Europe",
+          "South America",
+          "United Kingdom & Ireland"
+        ],
+        "series": [
+          {
+            "name": "Baseline",
+            "values": [
+              37.1,
+              34.9,
+              28.6,
+              36.8,
+              32.5,
+              39.1,
+              32.9
+            ],
+            "color": "#339933"
+          },
+          {
+            "name": "90 Days",
+            "values": [
+              19.6,
+              21.1,
+              17.9,
+              19.9,
+              20.7,
+              18.2,
+              19
+            ],
+            "color": "#7ABF6A"
+          },
+          {
+            "name": "1 Year+",
+            "values": [
+              3.9,
+              5.3,
+              5.2,
+              4.9,
+              5,
+              4.5,
+              4.8
+            ],
+            "color": "#1F5C1F"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "knowbe4-phishing-benchmarks-2025-chart-na-org-size",
+      "title": "North America: PPP by organization size across training phases",
+      "description": "North American Phish-prone Percentage broken out by organization size and training phase. Large enterprises start the worst (42%) but show the biggest absolute improvement, dropping to 4.1% after one year.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "north-america",
+        "organization-size",
+        "training-progression"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "North America Phish-prone Percentage",
+      "comparison": "phase-over-phase",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "1–249",
+          "250–999",
+          "1,000+"
+        ],
+        "series": [
+          {
+            "name": "Baseline",
+            "values": [
+              26,
+              31.1,
+              42
+            ],
+            "color": "#339933"
+          },
+          {
+            "name": "90 Days",
+            "values": [
+              21.1,
+              21.2,
+              18.5
+            ],
+            "color": "#7ABF6A"
+          },
+          {
+            "name": "1 Year+",
+            "values": [
+              3.7,
+              3.9,
+              4.1
+            ],
+            "color": "#1F5C1F"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "knowbe4-phishing-benchmarks-2025-chart-global-3phase",
+      "title": "Global training journey: baseline → 90 days → 1 year",
+      "description": "The headline KnowBe4 narrative in a single chart: global PPP collapses from 33.1% at baseline to roughly 19% after 90 days of training and to 4.1% after one year — an 86% net reduction.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "training-journey",
+        "global",
+        "ppp-reduction"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Key Findings",
+      "comparison": "phase-over-phase",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Baseline",
+          "90 Days",
+          "1 Year+"
+        ],
+        "series": [
+          {
+            "name": "Global PPP",
+            "values": [
+              33.1,
+              19,
+              4.1
+            ],
+            "color": "#339933"
+          }
+        ]
+      },
+      "preferred_chart": "line"
+    },
+    {
+      "type": "chart",
+      "id": "knowbe4-phishing-benchmarks-2025-chart-na-90day-paradox",
+      "title": "Large NA orgs see the steepest 90-day drop",
+      "description": "After only 90 days of training, large North American organizations (1,000+ employees) cut their click rate from 42% to 18.5% — the biggest absolute reduction at the 90-day mark, outpacing both small and mid-size peers.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "north-america",
+        "90-day",
+        "enterprise"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "North America | By Erich Kron",
+      "comparison": "baseline vs 90 days",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "1–249",
+          "250–999",
+          "1,000+"
+        ],
+        "series": [
+          {
+            "name": "Baseline",
+            "values": [
+              26,
+              31.1,
+              42
+            ],
+            "color": "#339933"
+          },
+          {
+            "name": "90-Day PPP",
+            "values": [
+              21.1,
+              21.2,
+              18.5
+            ],
+            "color": "#7ABF6A"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "knowbe4-phishing-benchmarks-2025-chart-region-baseline",
+      "title": "Baseline Phish-prone Percentage by region",
+      "description": "Baseline (pre-training) Phish-prone Percentage across the seven KnowBe4 reporting regions. South America, North America and Australia & New Zealand top the at-risk ranking; Asia and the UK & Ireland sit at the bottom.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Latin America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "regional",
+        "baseline-ppp",
+        "latam"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "2025 International Phishing Benchmarks",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "South America",
+          "North America",
+          "Australia & New Zealand",
+          "Africa",
+          "United Kingdom & Ireland",
+          "Europe",
+          "Asia"
+        ],
+        "series": [
+          {
+            "name": "Baseline PPP",
+            "values": [
+              39.1,
+              37.1,
+              36.8,
+              34.9,
+              32.9,
+              32.5,
+              28.6
+            ],
+            "color": "#339933"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "knowbe4-phishing-benchmarks-2025-chart-top-industries",
+      "title": "Top three most phish-prone industries (global baseline)",
+      "description": "Globally, Healthcare & Pharmaceuticals, Insurance, and Retail & Wholesale ranked as the three industries with the highest baseline Phish-prone Percentage in the 2025 dataset.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Healthcare",
+        "Financial Services",
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "industry-comparison",
+        "at-risk-sectors",
+        "industry:insurance",
+        "industry:pharma"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Key Findings",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Healthcare & Pharmaceuticals",
+          "Insurance",
+          "Retail & Wholesale"
+        ],
+        "series": [
+          {
+            "name": "Baseline PPP",
+            "values": [
+              41.9,
+              39.2,
+              36.5
+            ],
+            "color": "#339933"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "knowbe4-phishing-benchmarks-2025-chart-org-size-global",
+      "title": "Global baseline PPP by organization size",
+      "description": "Baseline Phish-prone Percentage scales clearly with workforce size: small organizations (1–250) sit at 24.6% while enterprises of 10,000+ employees reach 40.5%, a 16-point gap.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "organization-size",
+        "global-baseline"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Organization Size Impact",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "1–250",
+          "1,000–9,999 (est.)",
+          "10,000+"
+        ],
+        "series": [
+          {
+            "name": "Baseline PPP",
+            "values": [
+              24.6,
+              33.1,
+              40.5
+            ],
+            "color": "#339933"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "knowbe4-phishing-benchmarks-2025-chart-region-improvement",
+      "title": "Regional improvement rates after one year of training",
+      "description": "All regions exceeded an 80% improvement rate after a year of training, with North America (89.5%) and South America (88.9%) leading. The chart visualizes the percentage reduction in PPP from baseline to one year for each region.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Latin America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "improvement-rate",
+        "regional",
+        "training-effectiveness",
+        "latam"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "2025 International Phishing Benchmarks",
+      "comparison": null,
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "North America",
+          "South America",
+          "Australia & New Zealand",
+          "United Kingdom & Ireland",
+          "Europe",
+          "Africa",
+          "Asia"
+        ],
+        "series": [
+          {
+            "name": "PPP improvement after 1 year",
+            "values": [
+              89.5,
+              88.9,
+              86.7,
+              85.4,
+              84.6,
+              84.8,
+              81.8
+            ],
+            "color": "#339933"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "knowbe4-phishing-benchmarks-2025-chart-sector-improvement",
+      "title": "Sectors with the strongest training payoff (1,000–9,999 employees)",
+      "description": "For mid-to-large organizations (1,000–9,999 employees), Healthcare & Pharmaceuticals, Hospitality, and Legal each achieved a 91% Phish-prone Percentage improvement after 12 months of training — the highest sector returns recorded.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Healthcare",
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "sector-improvement",
+        "training-effectiveness",
+        "mid-market",
+        "industry:hospitality",
+        "industry:pharma"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Key Findings",
+      "comparison": null,
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Healthcare & Pharma",
+          "Hospitality",
+          "Legal"
+        ],
+        "series": [
+          {
+            "name": "PPP improvement after 12 months",
+            "values": [
+              91,
+              91,
+              91
+            ],
+            "color": "#339933"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "knowbe4-phishing-benchmarks-2025-training-reduction-1yr",
+      "title": "Training drives an 86% drop in click rates after one year",
+      "description": "After 12 months of ongoing KnowBe4 security awareness training, the global average Phish-prone Percentage fell from 33.1% to 4.1% — an 86% reduction in phishing susceptibility.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "training-effectiveness",
+        "sat",
+        "click-rate-reduction"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Key Findings",
+      "comparison": "vs untrained baseline (33.1% → 4.1%)",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "-86%"
+    },
+    {
+      "type": "stat",
+      "id": "knowbe4-phishing-benchmarks-2025-90day-reduction",
+      "title": "Over 40% reduction after just 90 days of training",
+      "description": "Organizations implementing security awareness training see Phish-prone Percentage drop by more than 40% within the first three months, demonstrating that meaningful human-risk reduction is achievable on a quarterly cadence.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "training-effectiveness",
+        "90-day",
+        "sat"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Key Findings",
+      "comparison": "vs untrained baseline",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "-40%"
+    },
+    {
+      "type": "stat",
+      "id": "knowbe4-phishing-benchmarks-2025-large-org-baseline",
+      "title": "Large enterprises have a 40.5% baseline click rate",
+      "description": "Organizations with 10,000+ employees show a global baseline Phish-prone Percentage of 40.5%, compared with 24.6% for small organizations of 1–250 employees — larger workforces present a materially larger attack surface.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "enterprise",
+        "organization-size",
+        "ppp"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Organization Size",
+      "comparison": "vs 24.6% for 1–250 employee orgs",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "40.5%"
+    },
+    {
+      "type": "stat",
+      "id": "knowbe4-phishing-benchmarks-2025-na-improvement",
+      "title": "North America posts the largest improvement rate at 89.5%",
+      "description": "Among all regions tracked, North America achieved the highest average improvement rate (89.5%) after one year of ongoing training, narrowly ahead of South America at 88.9%. Every region surveyed exceeded 80% improvement.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "improvement-rate",
+        "training-effectiveness",
+        "regional"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "2025 International Phishing Benchmarks",
+      "comparison": "vs 88.9% in South America",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "89.5%"
+    },
+    {
+      "type": "stat",
+      "id": "knowbe4-phishing-benchmarks-2025-us-ransomware-target",
+      "title": "U.S. accounts for 51.7% of global ransomware attacks",
+      "description": "Per Intel 471 data cited in the KnowBe4 benchmark, the United States accounted for 51.7% of the 4,205 global ransomware attacks analyzed in 2024, with Canada the second most-targeted country — underscoring why North American human-risk reduction matters disproportionately.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing"
+      ],
+      "tags": [
+        "us",
+        "ransomware-targeting",
+        "intel-471-citation"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "North America | By Erich Kron",
+      "comparison": "of 4,205 global attacks",
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "51.7%"
+    },
+    {
+      "type": "stat",
+      "id": "knowbe4-phishing-benchmarks-2025-global-baseline-ppp",
+      "title": "Global baseline Phish-prone Percentage",
+      "description": "Across 14.5 million users in 62,400 organizations, KnowBe4 found that 33.1% of untrained employees clicked a simulated phishing link before any security awareness training — meaning roughly one in three workers is susceptible at baseline.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "phish-prone-percentage",
+        "ppp",
+        "baseline",
+        "human-risk"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "2025 International Phishing Benchmarks",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "33.1%"
+    },
+    {
+      "type": "stat",
+      "id": "knowbe4-phishing-benchmarks-2025-healthcare-na-large",
+      "title": "Healthcare's staggering 54.8% click rate in large North American orgs",
+      "description": "Healthcare & Pharmaceuticals organizations with 1,000+ employees in North America showed an initial click rate of 54.8% — more than half of all users fell for the simulated phish before any training was delivered.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Healthcare"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "healthcare",
+        "enterprise",
+        "baseline-ppp",
+        "industry:pharma"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "North America | By Erich Kron",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "54.8%"
+    },
+    {
+      "type": "stat",
+      "id": "knowbe4-phishing-benchmarks-2025-study-scope",
+      "title": "67.7 million simulated phishing tests analyzed",
+      "description": "The 2025 benchmark draws on 67.7 million simulated phishing tests delivered to 14.5 million users across 62,400 organizations spanning 19 industries and seven geographical regions over a three-year period.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "methodology",
+        "dataset-scope"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Methodology",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "67.7M"
+    },
+    {
+      "type": "stat",
+      "id": "knowbe4-phishing-benchmarks-2025-quote-2of5",
+      "title": "Two out of five users in large NA orgs clicked",
+      "description": "Erich Kron, KnowBe4 security advocate, on the gravity of the North American baseline finding: in large enterprises, more than two in five users took the bait — a sobering reminder of how exposed human risk leaves organizations before any training is layered in.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "narrative",
+        "enterprise",
+        "human-risk"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "North America | By Erich Kron",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"This means that in large organizations, more than two out of every five users clicked on simulated phishing attacks.\""
+    },
+    {
+      "type": "stat",
+      "id": "knowbe4-phishing-benchmarks-2025-quote-emotion",
+      "title": "Social engineering is an attack on human emotions",
+      "description": "KnowBe4 frames phishing, smishing, vishing and BEC as a fundamentally psychological problem — adversaries exploit emotional exhaustion and System-1 thinking to bypass otherwise capable defenders.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "ransomware"
+      ],
+      "tags": [
+        "narrative",
+        "social-engineering",
+        "human-factor",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Social Engineering Is a Mental Game",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Social engineering — the primary way ransomware spreads and the key factor behind BEC attacks and other phishing/vishing/smishing attacks — is an attack on human emotions.\""
+    },
+    {
+      "type": "stat",
+      "id": "knowbe4-phishing-benchmarks-2025-spark-na-progression",
+      "title": "North America click rate progression: 37.1% → 3.9%",
+      "description": "Average North American Phish-prone Percentage across the three KnowBe4 measurement phases: baseline, 90 days of training, and after one year. The trajectory shows steep, sustained reduction.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "training-effectiveness",
+        "trend",
+        "regional"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "North America Phish-prone Percentage",
+      "comparison": "baseline vs 1 year+",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "37.1% → 3.9%"
+    },
+    {
+      "type": "stat",
+      "id": "knowbe4-phishing-benchmarks-2025-spark-healthcare-large",
+      "title": "Healthcare large orgs: 54.8% → 3.7% after one year",
+      "description": "Healthcare & Pharmaceutical organizations with 1,000+ employees in North America dropped their initial 54.8% click rate to just 3.7% after one year of continuous training — one of the most dramatic improvements in the dataset.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Healthcare"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "healthcare",
+        "training-effectiveness",
+        "enterprise",
+        "industry:pharma"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Tools and Education Can Make the Difference",
+      "comparison": "baseline vs 1 year+",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "54.8% → 3.7%"
+    },
+    {
+      "type": "stat",
+      "id": "knowbe4-phishing-benchmarks-2025-spark-org-size-baseline",
+      "title": "Baseline click rate climbs with organization size",
+      "description": "Global baseline Phish-prone Percentage scales steadily with workforce size, jumping from 24.6% at sub-250-employee organizations to 40.5% at 10,000+ employee enterprises.",
+      "source": "KnowBe4",
+      "source_short": "KnowBe4",
+      "color": "#339933",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "organization-size",
+        "enterprise-risk"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Organization Size",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "40.5% at 10K+"
+    }
+  ]
+}

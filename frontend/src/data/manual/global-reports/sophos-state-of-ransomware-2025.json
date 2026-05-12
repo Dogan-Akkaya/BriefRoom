@@ -1,0 +1,1183 @@
+{
+  "source": "Sophos",
+  "source_short": "Sophos",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/sophos-state-of-ransomware-2025.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.989Z. Curated top 10 of 22 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-sophos-state-of-ransomware-2025",
+      "title": "The State of Ransomware 2025",
+      "year": 2025,
+      "category": "Ransomware",
+      "color": "#0E4F88",
+      "description": "For the third year running, victims identified exploited vulnerabilities as the most common technical root cause of ransomware attacks. They were used to penetrate organizations in 32% of incidents in 2025.",
+      "external_url": "https://www.sophos.com/en-us/content/state-of-ransomware",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "Exploited vulnerability",
+          "Compromised credentials",
+          "Malicious email",
+          "Phishing",
+          "Brute force attack",
+          "Download"
+        ],
+        "series": [
+          {
+            "name": "2023",
+            "values": [
+              36,
+              29,
+              18,
+              13,
+              3,
+              1
+            ],
+            "color": "#9CC3E3"
+          },
+          {
+            "name": "2024",
+            "values": [
+              32,
+              29,
+              19,
+              11,
+              3,
+              1
+            ],
+            "color": "#3D7AB3"
+          },
+          {
+            "name": "2025",
+            "values": [
+              32,
+              23,
+              23,
+              18,
+              6,
+              2
+            ],
+            "color": "#0E4F88"
+          }
+        ]
+      },
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "vulnerability",
+        "phishing"
+      ],
+      "tags": [
+        "external-report",
+        "root-cause",
+        "attack-vector",
+        "trend",
+        "encryption",
+        "six-year",
+        "ransom-demand",
+        "ransom-payment",
+        "company-size",
+        "human-impact",
+        "burnout",
+        "team-stress",
+        "six-year-trend",
+        "exploited-vulnerability",
+        "median",
+        "recovery-cost",
+        "business-impact"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2025-06-01",
+      "report_meta": {
+        "report_id": "sophos-state-of-ransomware-2025",
+        "organization_id": "sophos",
+        "publication_date": "2025-06-01",
+        "extracted_on": "2026-05-06",
+        "source_url": "https://www.sophos.com/en-us/content/state-of-ransomware",
+        "card_count_total": 22,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "sophos-state-of-ransomware-2025-chart-technical-root-cause"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "sophos-state-of-ransomware-2025-chart-technical-root-cause",
+      "title": "Technical root cause of attacks, 2023-2025",
+      "description": "Exploited vulnerabilities lead as the top technical root cause for the third year running. Phishing rose sharply from 11% to 18%, while compromised credentials dropped from 29% to 23%.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "vulnerability",
+        "phishing"
+      ],
+      "tags": [
+        "root-cause",
+        "attack-vector",
+        "trend"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Technical root cause of attacks",
+      "comparison": "2023 vs 2024 vs 2025",
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Exploited vulnerability",
+          "Compromised credentials",
+          "Malicious email",
+          "Phishing",
+          "Brute force attack",
+          "Download"
+        ],
+        "series": [
+          {
+            "name": "2023",
+            "values": [
+              36,
+              29,
+              18,
+              13,
+              3,
+              1
+            ],
+            "color": "#9CC3E3"
+          },
+          {
+            "name": "2024",
+            "values": [
+              32,
+              29,
+              19,
+              11,
+              3,
+              1
+            ],
+            "color": "#3D7AB3"
+          },
+          {
+            "name": "2025",
+            "values": [
+              32,
+              23,
+              23,
+              18,
+              6,
+              2
+            ],
+            "color": "#0E4F88"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "sophos-state-of-ransomware-2025-chart-encryption-trend",
+      "title": "Data encryption outcome trend, 2020-2025",
+      "description": "Tracks the share of ransomware attacks resulting in data encryption, stopped before encryption, and extortion-only (no encryption) over six years. Encryption rates dropped from 73% in 2020 to 50% in 2025, while extortion-only doubled to 6%.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "encryption",
+        "trend",
+        "six-year"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Data encryption",
+      "comparison": "six-year trend",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "series": [
+          {
+            "name": "Data encrypted",
+            "values": [
+              73,
+              54,
+              65,
+              76,
+              70,
+              50
+            ],
+            "color": "#0E4F88"
+          },
+          {
+            "name": "Attack stopped before encryption",
+            "values": [
+              24,
+              39,
+              31,
+              21,
+              27,
+              44
+            ],
+            "color": "#3D7AB3"
+          },
+          {
+            "name": "Extortion only (no encryption)",
+            "values": [
+              3,
+              7,
+              4,
+              3,
+              3,
+              6
+            ],
+            "color": "#9CC3E3"
+          }
+        ]
+      },
+      "preferred_chart": "line"
+    },
+    {
+      "type": "chart",
+      "id": "sophos-state-of-ransomware-2025-chart-demand-vs-payment-revenue",
+      "title": "Median ransom demand vs payment by company revenue",
+      "description": "Ransom demands rise sharply with company revenue. The largest revenue organizations ($5B+) saw the greatest reduction, paying just 36% of the initial demand on average. Smaller revenue cohorts ($10-50M) paid 97% of the median demand.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ransom-demand",
+        "ransom-payment",
+        "company-size"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "How actual payments stack up with the initial demand",
+      "comparison": "demand vs payment by revenue band",
+      "trend": "unknown",
+      "value_unit": "usd",
+      "dataset": {
+        "labels": [
+          "$10M-$50M",
+          "$50M-$250M",
+          "$250M-$500M",
+          "$500M-$1B",
+          "$1B-$5B",
+          "$5B plus"
+        ],
+        "series": [
+          {
+            "name": "Median ransom demand (USD)",
+            "values": [
+              109670,
+              347454,
+              1852200,
+              2460000,
+              4950000,
+              5500000
+            ],
+            "color": "#0E4F88"
+          },
+          {
+            "name": "Median ransom payment (USD)",
+            "values": [
+              106310,
+              169364,
+              1900000,
+              1000000,
+              3000000,
+              2000000
+            ],
+            "color": "#9CC3E3"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "sophos-state-of-ransomware-2025-chart-human-consequences",
+      "title": "Human consequences on IT/security teams",
+      "description": "Every organization that had data encrypted reported direct repercussions for the IT/cybersecurity team. Top impacts include increased anxiety, pressure from senior leaders, and changes to team priorities or workload.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "human-impact",
+        "burnout",
+        "team-stress"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Human consequences of ransomware",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Increased anxiety/stress",
+          "Increased pressure from leaders",
+          "Change of team priorities",
+          "Ongoing increase in workload",
+          "Changes to team structure",
+          "Feelings of guilt",
+          "Increased recognition",
+          "Staff absence (stress/mental health)",
+          "Team leadership replaced"
+        ],
+        "series": [
+          {
+            "name": "% of teams reporting",
+            "values": [
+              41,
+              40,
+              38,
+              38,
+              37,
+              34,
+              31,
+              31,
+              25
+            ],
+            "color": "#0E4F88"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "sophos-state-of-ransomware-2025-encryption-rate-decline",
+      "title": "Data encryption rate hits six-year low",
+      "description": "Data encryption is at the lowest reported level in six years, with 50% of attacks now resulting in data encryption, down from 70% in 2024. This suggests organizations are increasingly capable of stopping attacks before the encrypted payload is deployed.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "encryption",
+        "six-year-trend"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Data encryption",
+      "comparison": "vs 70% in 2024",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "sparkline",
+      "value": "50%",
+      "spark": [
+        73,
+        54,
+        65,
+        76,
+        70,
+        50
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "sophos-state-of-ransomware-2025-ransom-paid-rate",
+      "title": "Ransom payment rate remains elevated",
+      "description": "49% of victims paid the ransom to get their data back. While this is a slight drop from last year's 56%, it remains the second highest ransom payment rate in six years.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ransom-payment",
+        "six-year-trend"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Recovery of encrypted data",
+      "comparison": "vs 56% in 2024",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "sparkline",
+      "value": "49%",
+      "spark": [
+        26,
+        32,
+        46,
+        46,
+        56,
+        49
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "sophos-state-of-ransomware-2025-exploited-vulnerabilities-root-cause",
+      "title": "Exploited vulnerabilities lead root causes",
+      "description": "For the third year running, victims identified exploited vulnerabilities as the most common technical root cause of ransomware attacks. They were used to penetrate organizations in 32% of incidents in 2025.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "vulnerability"
+      ],
+      "tags": [
+        "root-cause",
+        "exploited-vulnerability"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Why organizations fall victim to ransomware",
+      "comparison": "third year as #1 cause",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "32%"
+    },
+    {
+      "type": "stat",
+      "id": "sophos-state-of-ransomware-2025-median-ransom-demand",
+      "title": "Median ransom demand drops one-third",
+      "description": "The median ransom demand fell 34% year-over-year, coming in at $1,324,439 in 2025 compared to $2 million in 2024. The drop was driven by a decrease in demands of $5M+, which fell from 30% to 24% of cases.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ransom-demand",
+        "median"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransom demands",
+      "comparison": "-34% vs $2M in 2024",
+      "trend": "decreasing",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$1.32M"
+    },
+    {
+      "type": "stat",
+      "id": "sophos-state-of-ransomware-2025-median-ransom-payment",
+      "title": "Median ransom payment cut in half",
+      "description": "The median ransom payment fell 50% in the last year, down from $2 million in 2024 to $1 million in 2025. The primary driver is a reduction in payments of $5M or more, down from 31% in 2024 to 20% in 2025.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ransom-payment",
+        "median"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransom payments",
+      "comparison": "-50% YoY",
+      "trend": "decreasing",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$1M"
+    },
+    {
+      "type": "stat",
+      "id": "sophos-state-of-ransomware-2025-recovery-cost",
+      "title": "Recovery cost falls 44% year-over-year",
+      "description": "Excluding any ransom paid, the average cost to recover from a ransomware attack dropped 44% over the last year, coming in at $1.53 million, down from $2.73 million in 2024.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "recovery-cost",
+        "business-impact"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Recovery costs",
+      "comparison": "-44% vs $2.73M in 2024",
+      "trend": "decreasing",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$1.53M"
+    },
+    {
+      "type": "stat",
+      "id": "sophos-state-of-ransomware-2025-quote-encryption-low",
+      "title": "Encryption at lowest level in six years",
+      "description": "Sophos researchers note a marked drop in attacks that resulted in data encryption, signaling improved defensive posture across surveyed organizations.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "key-finding",
+        "encryption"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Key findings",
+      "comparison": null,
+      "trend": "decreasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Data encryption is at the lowest level in six years, with 50% of attacks now resulting in data encryption, down from 70% in 2024.\""
+    },
+    {
+      "type": "chart",
+      "id": "sophos-state-of-ransomware-2025-chart-recovery-methods",
+      "title": "Recovery via backups vs ransom payments, 2020-2025",
+      "description": "Use of backups to restore encrypted data is at its lowest level in six years (54%), while the ransom payment rate of 49% remains the second highest in six years. The gap between the two recovery methods has narrowed considerably.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "recovery",
+        "backups",
+        "ransom-payment"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Recovery of encrypted data",
+      "comparison": "six-year trend",
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "series": [
+          {
+            "name": "Used backups to restore data",
+            "values": [
+              73,
+              57,
+              70,
+              68,
+              56,
+              54
+            ],
+            "color": "#0E4F88"
+          },
+          {
+            "name": "Paid ransom and got data back",
+            "values": [
+              26,
+              32,
+              46,
+              46,
+              56,
+              49
+            ],
+            "color": "#3D7AB3"
+          }
+        ]
+      },
+      "preferred_chart": "line"
+    },
+    {
+      "type": "chart",
+      "id": "sophos-state-of-ransomware-2025-chart-recovery-time-trend",
+      "title": "Recovery time from ransomware attacks, 2022-2025",
+      "description": "Organizations are recovering faster. The share of victims fully recovered within a day climbed from 8% in 2023 to 16% in 2025, while the within-a-week share jumped from 35% in 2024 to 53% in 2025.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "recovery-time",
+        "resilience",
+        "trend"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Recovery time",
+      "comparison": "four-year trend",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Less than a day",
+          "Up to a week",
+          "Up to 1 month",
+          "1-3 months",
+          "3-6 months"
+        ],
+        "series": [
+          {
+            "name": "2022",
+            "values": [
+              14,
+              39,
+              30,
+              8,
+              8
+            ],
+            "color": "#C9DFF0"
+          },
+          {
+            "name": "2023",
+            "values": [
+              8,
+              39,
+              29,
+              18,
+              6
+            ],
+            "color": "#9CC3E3"
+          },
+          {
+            "name": "2024",
+            "values": [
+              7,
+              28,
+              37,
+              27,
+              4
+            ],
+            "color": "#3D7AB3"
+          },
+          {
+            "name": "2025",
+            "values": [
+              16,
+              37,
+              28,
+              16,
+              2
+            ],
+            "color": "#0E4F88"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "sophos-state-of-ransomware-2025-chart-operational-root-cause",
+      "title": "Operational root causes of ransomware attacks",
+      "description": "Victims typically face multiple operational challenges, citing 2.7 factors on average. Lack of expertise narrowly tops the list, followed by an unknown security gap and lack of people/capacity.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "operational-root-cause",
+        "skills-gap",
+        "security-gap"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Operational root cause of incidents",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Lack of expertise",
+          "Unknown security gap",
+          "Lack of people/capacity",
+          "Lack of protection",
+          "Known security gap",
+          "Poor quality protection",
+          "Human error"
+        ],
+        "series": [
+          {
+            "name": "% of victims citing factor",
+            "values": [
+              40.2,
+              40.1,
+              39.4,
+              39,
+              38.2,
+              37.1,
+              34.2
+            ],
+            "color": "#0E4F88"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "sophos-state-of-ransomware-2025-chart-recovery-cost-size",
+      "title": "Average ransomware recovery cost by company size",
+      "description": "Recovery costs (excluding ransom paid) climb with organization size and plateau for companies between 1,001 and 5,000 employees. The smallest cohort (100-250) reports $638K while the largest cohort reports $1.83M.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "recovery-cost",
+        "company-size",
+        "business-impact"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Recovery costs",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "usd",
+      "dataset": {
+        "labels": [
+          "100-250 employees",
+          "251-500 employees",
+          "501-1,000 employees",
+          "1,001-3,000 employees",
+          "3,001-5,000 employees"
+        ],
+        "series": [
+          {
+            "name": "Average recovery cost (USD)",
+            "values": [
+              638536,
+              1078763,
+              1570927,
+              1836505,
+              1834861
+            ],
+            "color": "#0E4F88"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "sophos-state-of-ransomware-2025-recovered-week",
+      "title": "More than half recover within a week",
+      "description": "Organizations are getting faster at recovering from ransomware attacks, with 53% fully recovered after a week — a significant jump from 35% in 2024. Almost all victims (97%) were fully recovered three months on from the attack.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "recovery-time",
+        "resilience"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Recovery time",
+      "comparison": "vs 35% in 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "53%"
+    },
+    {
+      "type": "stat",
+      "id": "sophos-state-of-ransomware-2025-lack-of-expertise",
+      "title": "Lack of expertise top operational gap",
+      "description": "Lack of expertise — not having the skills or knowledge to detect and stop the attack in time — was the most common operational root cause cited by victims. It contributed to falling victim to ransomware in 40.2% of incidents.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "operational-root-cause",
+        "skills-gap"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Operational root cause of incidents",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "40.2%"
+    },
+    {
+      "type": "stat",
+      "id": "sophos-state-of-ransomware-2025-data-theft-with-encryption",
+      "title": "Data theft alongside encryption",
+      "description": "28% of organizations that had their data encrypted also experienced data exfiltration. Adversaries don't only encrypt data — they also steal it, with 14% of all ransomware victims reporting theft.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "data-exfiltration",
+        "double-extortion"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Data theft",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "28%"
+    },
+    {
+      "type": "stat",
+      "id": "sophos-state-of-ransomware-2025-data-recovered",
+      "title": "Vast majority recover encrypted data",
+      "description": "97% of organizations that had data encrypted were able to recover it. Just over half (54%) used backups while 49% paid the ransom to recover.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "recovery",
+        "data-restoration"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Recovery of encrypted data",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "97%"
+    },
+    {
+      "type": "stat",
+      "id": "sophos-state-of-ransomware-2025-payment-vs-demand",
+      "title": "Victims paid 85% of initial demand on average",
+      "description": "Among 826 organizations sharing both their initial demand and actual payment, victims paid on average 85% of the initial ransom demand. 53% paid less than the ask, 29% matched it, and 18% paid more.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "negotiation",
+        "demand-vs-payment"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "How actual payments stack up with the initial demand",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "85%"
+    },
+    {
+      "type": "stat",
+      "id": "sophos-state-of-ransomware-2025-team-stress",
+      "title": "Increased anxiety on cybersecurity teams",
+      "description": "41% of IT/cybersecurity teams say they have increased anxiety or stress about future attacks following a ransomware incident where data was encrypted. Every organization that had data encrypted reported direct repercussions for the team.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "human-impact",
+        "burnout",
+        "mental-health"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Human consequences of ransomware",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "41%"
+    },
+    {
+      "type": "stat",
+      "id": "sophos-state-of-ransomware-2025-quote-leadership-replaced",
+      "title": "Leadership replaced after attack",
+      "description": "The human consequences of ransomware extend well beyond technical recovery — in a quarter of cases, IT/cybersecurity team leadership was replaced following the attack.",
+      "source": "Sophos",
+      "source_short": "Sophos",
+      "color": "#0E4F88",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "human-impact",
+        "leadership",
+        "consequences"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Key findings",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"In one quarter of cases, the team's leadership was replaced as a consequence of the attack.\""
+    }
+  ]
+}

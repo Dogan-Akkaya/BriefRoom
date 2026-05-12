@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { POPULAR, GLOBAL_REPORTS, CATEGORIES } from '../lib/data'
+import { POPULAR, CATEGORIES } from '../lib/data'
+import { globalReports } from '../lib/intelligenceLibrary'
 
 const FILTER_CHIPS = [
   { key: 'industry', label: 'Industry', prefix: 'industry:' },
@@ -54,7 +55,7 @@ export default function SearchPanel() {
     if (!q && !hasFilters) return null
 
     let popularMatches = POPULAR
-    let reportMatches = GLOBAL_REPORTS
+    let reportMatches = globalReports()
     let categoryMatches = CATEGORIES.filter(c => c.hasData)
 
     // Apply text query
@@ -331,16 +332,19 @@ export default function SearchPanel() {
         })}
 
         {renderSectionHeader('Global Reports', '#3B82F6')}
-        {GLOBAL_REPORTS.slice(0, 2).map((r, i) => (
-          <ResultItem
-            key={`rep-${i}`}
-            badge={r.sourceShort}
-            onClick={() => closeAndNavigate('/reports')}
-            icon={<span style={typeIconDot('#3B82F6')} />}
-          >
-            {r.sourceShort}: {r.title}
-          </ResultItem>
-        ))}
+        {globalReports().slice(0, 2).map((r, i) => {
+          const rid = r.report_meta?.report_id
+          return (
+            <ResultItem
+              key={`rep-${i}`}
+              badge={r.sourceShort}
+              onClick={() => closeAndNavigate(rid ? `/reports/${rid}` : '/reports')}
+              icon={<span style={typeIconDot('#3B82F6')} />}
+            >
+              {r.sourceShort}: {r.title}
+            </ResultItem>
+          )
+        })}
       </>
     )
   }

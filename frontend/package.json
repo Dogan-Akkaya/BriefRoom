@@ -7,7 +7,16 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "ingest": "node scripts/ingest/run-all.mjs",
+    "ingest:ransomware": "node scripts/ingest/ingest-threatvision-ransomware.mjs",
+    "ingest:darkweb": "node scripts/ingest/ingest-threatvision-darkweb.mjs",
+    "ingest:global-reports": "node scripts/ingest/ingest-global-reports.mjs",
+    "validate": "node scripts/validate-all.mjs",
+    "validate:library": "node scripts/validate-library.mjs",
+    "validate:records": "node scripts/validate-records.mjs",
+    "validate:manual": "node scripts/validate-manual.mjs",
+    "validate:inputs": "node scripts/validate-global-reports-inputs.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.100.0",

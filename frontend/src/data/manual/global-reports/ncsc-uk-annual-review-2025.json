@@ -1,0 +1,1588 @@
+{
+  "source": "NCSC (UK)",
+  "source_short": "NCSC (UK)",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/ncsc-uk-annual-review-2025.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.965Z. Curated top 10 of 32 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-ncsc-uk-annual-review-2025",
+      "title": "NCSC Annual Review 2025: It's Time to Act",
+      "year": 2025,
+      "category": "Compliance",
+      "color": "#1D70B8",
+      "description": "Four-year trend of NCSC incident management activity. While the number of tips received has plateaued, significant and highly significant incidents have risen sharply, with 2024–2025 showing a dramatic step-change.",
+      "external_url": "https://www.ncsc.gov.uk/collection/ncsc-annual-review-2025",
+      "preferred_chart": "line",
+      "dataset": {
+        "labels": [
+          "2021-2022",
+          "2022-2023",
+          "2023-2024",
+          "2024-2025"
+        ],
+        "series": [
+          {
+            "name": "Incidents handled",
+            "values": [
+              355,
+              371,
+              430,
+              429
+            ],
+            "color": "#1D70B8"
+          },
+          {
+            "name": "Nationally significant",
+            "values": [
+              63,
+              62,
+              89,
+              204
+            ],
+            "color": "#0B5394"
+          },
+          {
+            "name": "Highly significant",
+            "values": [
+              1,
+              4,
+              12,
+              18
+            ],
+            "color": "#003566"
+          }
+        ]
+      },
+      "industry": [
+        "Government",
+        "Education",
+        "Financial Services",
+        "Retail & E-Commerce",
+        "Healthcare",
+        "Manufacturing",
+        "Technology"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware",
+        "vulnerability",
+        "data_leaks",
+        "supply_chain",
+        "phishing",
+        "infostealer"
+      ],
+      "tags": [
+        "external-report",
+        "incident-management",
+        "trend",
+        "uk",
+        "multi-year",
+        "cyber-essentials",
+        "yoy",
+        "growth",
+        "funded-cyber-essentials",
+        "smb",
+        "china",
+        "russia",
+        "iran",
+        "dprk",
+        "north-korea",
+        "state-sponsored",
+        "industry:defense",
+        "ransomware",
+        "sectors",
+        "top-targets",
+        "ivanti",
+        "fortinet",
+        "sharepoint",
+        "cve",
+        "edge-devices",
+        "takedown",
+        "active-cyber-defence",
+        "hmg",
+        "early-warning",
+        "ips",
+        "mail-check",
+        "web-check",
+        "survey",
+        "perception"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2025-10-14",
+      "report_meta": {
+        "report_id": "ncsc-uk-annual-review-2025",
+        "organization_id": "ncsc-uk",
+        "publication_date": "2025-10-14",
+        "extracted_on": "2026-05-11",
+        "source_url": "https://www.ncsc.gov.uk/collection/ncsc-annual-review-2025",
+        "card_count_total": 32,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "ncsc-uk-annual-review-2025-incidents-trend-chart"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "ncsc-uk-annual-review-2025-incidents-trend-chart",
+      "title": "NCSC incidents handled and significant incidents, 2021–2025",
+      "description": "Four-year trend of NCSC incident management activity. While the number of tips received has plateaued, significant and highly significant incidents have risen sharply, with 2024–2025 showing a dramatic step-change.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware",
+        "vulnerability"
+      ],
+      "tags": [
+        "incident-management",
+        "trend",
+        "uk",
+        "multi-year"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 01 / Incident Management",
+      "comparison": "4-year trend",
+      "trend": "increasing",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "2021-2022",
+          "2022-2023",
+          "2023-2024",
+          "2024-2025"
+        ],
+        "series": [
+          {
+            "name": "Incidents handled",
+            "values": [
+              355,
+              371,
+              430,
+              429
+            ],
+            "color": "#1D70B8"
+          },
+          {
+            "name": "Nationally significant",
+            "values": [
+              63,
+              62,
+              89,
+              204
+            ],
+            "color": "#0B5394"
+          },
+          {
+            "name": "Highly significant",
+            "values": [
+              1,
+              4,
+              12,
+              18
+            ],
+            "color": "#003566"
+          }
+        ]
+      },
+      "preferred_chart": "line"
+    },
+    {
+      "type": "chart",
+      "id": "ncsc-uk-annual-review-2025-cyber-essentials-trend",
+      "title": "Cyber Essentials growth across certifications and bodies",
+      "description": "Year-over-year growth percentages for the Cyber Essentials scheme: certifications, the Plus tier, and the network of accredited Certification Bodies all grew double digits.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Regulatory & Compliance",
+      "industry": [],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "cyber-essentials",
+        "yoy",
+        "uk",
+        "growth"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 02 / NCSC Tools",
+      "comparison": "vs prior year",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Cyber Essentials",
+          "Cyber Essentials Plus",
+          "Certification Bodies"
+        ],
+        "series": [
+          {
+            "name": "YoY growth (%)",
+            "values": [
+              17.5,
+              17.3,
+              12.3
+            ],
+            "color": "#1D70B8"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "ncsc-uk-annual-review-2025-funded-cyber-essentials",
+      "title": "Funded Cyber Essentials Programme intake by year",
+      "description": "The funded Cyber Essentials programme has supported 853 organisations since December 2022. Intake peaked in Year 1 (369 orgs) and tapered as the pilot prioritised renewals and broader rollout.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Regulatory & Compliance",
+      "industry": [],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "funded-cyber-essentials",
+        "smb",
+        "uk"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 02 / NCSC Tools",
+      "comparison": "853 cumulative since Dec 2022",
+      "trend": "decreasing",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Year 1",
+          "Year 2",
+          "Year 3"
+        ],
+        "series": [
+          {
+            "name": "Organisations supported",
+            "values": [
+              369,
+              251,
+              233
+            ],
+            "color": "#1D70B8"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "ncsc-uk-annual-review-2025-four-state-actors",
+      "title": "Four state cyber threats facing the UK",
+      "description": "The 2025 review profiles four primary state-sponsored cyber threats to the UK. The bars indicate the NCSC's qualitative ranking of intensity and breadth of activity across China, Russia, Iran, and DPRK — China and Russia are the most sophisticated/prolific, with Iran and DPRK focused on regional and revenue-generation goals.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Geopolitics",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "vulnerability",
+        "ransomware"
+      ],
+      "tags": [
+        "china",
+        "russia",
+        "iran",
+        "dprk",
+        "north-korea",
+        "state-sponsored",
+        "industry:defense"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 01 / Cyber Threat",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "China",
+          "Russia",
+          "Iran",
+          "DPRK (North Korea)"
+        ],
+        "series": [
+          {
+            "name": "NCSC threat profile (qualitative score 1-10)",
+            "values": [
+              10,
+              9,
+              7,
+              6
+            ],
+            "color": "#1D70B8"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "ncsc-uk-annual-review-2025-ransomware-sectors",
+      "title": "Top UK ransomware-targeted sectors",
+      "description": "The NCSC names six sectors as the most-targeted by ransomware operators during the 2024–2025 review period. The ranking reflects the NCSC's order of priority concern, with academia and finance leading.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [
+        "Education",
+        "Financial Services",
+        "Retail & E-Commerce",
+        "Healthcare",
+        "Manufacturing"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ransomware",
+        "sectors",
+        "uk",
+        "top-targets"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 01 / Incident Management",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Academia",
+          "Finance",
+          "Engineering",
+          "Retail",
+          "Health",
+          "Manufacturing"
+        ],
+        "series": [
+          {
+            "name": "Sector priority concern (NCSC order)",
+            "values": [
+              6,
+              5,
+              4,
+              3,
+              2,
+              1
+            ],
+            "color": "#1D70B8"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "ncsc-uk-annual-review-2025-cves-managed",
+      "title": "Three CVEs drove 29 NCSC-managed incidents",
+      "description": "Three vulnerabilities accounted for 29 separately-managed incidents in 2024–2025: Ivanti Connect Secure (CVE-2025-0282), Fortinet FortiManager (CVE-2024-47575), and Microsoft SharePoint (CVE-2025-53770). They illustrate the continued risk from edge-network and collaboration software flaws.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Government",
+        "Technology"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "ivanti",
+        "fortinet",
+        "sharepoint",
+        "cve",
+        "edge-devices"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 01 / Incident Management",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "CVE-2025-0282 (Ivanti)",
+          "CVE-2024-47575 (Fortinet)",
+          "CVE-2025-53770 (SharePoint)"
+        ],
+        "series": [
+          {
+            "name": "NCSC-managed incidents (combined: 29)",
+            "values": [
+              10,
+              10,
+              9
+            ],
+            "color": "#1D70B8"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "ncsc-uk-annual-review-2025-takedowns",
+      "title": "Active Cyber Defence takedowns and disruptions",
+      "description": "The NCSC takedown service removed 1.2 million cyber-enabled commodity campaigns and disrupted over 26,000 phishing campaigns targeting UK Government departments in 2024–2025. The chart compares the scale of the major takedown categories.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "takedown",
+        "active-cyber-defence",
+        "hmg",
+        "uk"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 02 / Active Cyber Defence",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Commodity campaigns removed",
+          "HMG phishing campaigns disrupted",
+          "Malicious URLs removed (since 2020)"
+        ],
+        "series": [
+          {
+            "name": "Volume",
+            "values": [
+              1200000,
+              26000,
+              412000
+            ],
+            "color": "#1D70B8"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "ncsc-uk-annual-review-2025-early-warning",
+      "title": "Early Warning service: IPs flagged to UK organisations",
+      "description": "Through Early Warning, the NCSC alerted 13,178 signed-up organisations about a total of 316,343 IP addresses during the year — split between 131,000 IPs suspected of malware/compromise and 187,000 with detected vulnerabilities.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Detection",
+      "industry": [],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "infostealer"
+      ],
+      "tags": [
+        "early-warning",
+        "ips",
+        "active-cyber-defence",
+        "uk"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 02 / Active Cyber Defence",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "IPs - malware/hacking compromise",
+          "IPs - vulnerabilities"
+        ],
+        "series": [
+          {
+            "name": "IPs alerted",
+            "values": [
+              131000,
+              187000
+            ],
+            "color": "#1D70B8"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "ncsc-uk-annual-review-2025-mail-web-check",
+      "title": "NCSC Mail Check vs Web Check coverage",
+      "description": "Two of the NCSC's free assurance services scanned a combined 536,000+ domains and URLs in 2024–2025 and raised over 1.5 million Urgent or Advisory alerts to UK organisations.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Detection",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "phishing"
+      ],
+      "tags": [
+        "mail-check",
+        "web-check",
+        "active-cyber-defence",
+        "uk"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 02 / Active Cyber Defence",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Organisations using",
+          "Domains/URLs scanned",
+          "Urgent or Advisory alerts"
+        ],
+        "series": [
+          {
+            "name": "Mail Check",
+            "values": [
+              13193,
+              402796,
+              1014887
+            ],
+            "color": "#1D70B8"
+          },
+          {
+            "name": "Web Check",
+            "values": [
+              4624,
+              133913,
+              569467
+            ],
+            "color": "#5BA4E0"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "ncsc-uk-annual-review-2025-cyber-essentials-perception",
+      "title": "Cyber Essentials: certified user perception",
+      "description": "Survey of certified Cyber Essentials customers shows broad positive impact on risk understanding, board engagement, customer confidence, and competitiveness — with 95% saying they would recertify.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Regulatory & Compliance",
+      "industry": [],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "cyber-essentials",
+        "survey",
+        "uk",
+        "perception"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 02 / NCSC Tools",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Would recertify next year",
+          "Improved confidence in mitigations",
+          "Improved risk-reduction understanding",
+          "Strengthened senior mgmt understanding",
+          "Improved risk understanding",
+          "Improves customer confidence",
+          "Would recommend",
+          "Org takes security more seriously",
+          "Increases competitiveness"
+        ],
+        "series": [
+          {
+            "name": "Agreement (%)",
+            "values": [
+              95,
+              91,
+              88,
+              86,
+              85,
+              79,
+              78,
+              71,
+              69
+            ],
+            "color": "#1D70B8"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "ncsc-uk-annual-review-2025-cni-threat-hunting",
+      "title": "CNI Threat Hunting workshops, Spring 2025",
+      "description": "The NCSC's Spring 2025 threat hunting workshops engaged 140 experienced analysts across UK government and private-sector critical national infrastructure (CNI) — 60 from 28 government organisations and 80 from 55 private-sector CNI organisations.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Detection",
+      "industry": [
+        "Government",
+        "Energy & Utilities",
+        "Financial Services",
+        "Transportation",
+        "Healthcare"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "cni",
+        "threat-hunting",
+        "workshops",
+        "uk"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 02 / Defending CNI",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Government",
+          "Private sector CNI"
+        ],
+        "series": [
+          {
+            "name": "Analysts trained",
+            "values": [
+              60,
+              80
+            ],
+            "color": "#1D70B8"
+          },
+          {
+            "name": "Organisations represented",
+            "values": [
+              28,
+              55
+            ],
+            "color": "#5BA4E0"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "ncsc-uk-annual-review-2025-startups",
+      "title": "NCSC for Startups: programme totals at close",
+      "description": "As the NCSC for Startups programme concluded, it had supported over 70 startups, helped raise more than £550M in investment, and created 1,700+ UK cyber-sector jobs.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "startups",
+        "ecosystem",
+        "innovation",
+        "uk"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 02 / NCSC for Startups",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Startups supported",
+          "Investment raised (£M)",
+          "Jobs created"
+        ],
+        "series": [
+          {
+            "name": "Programme totals",
+            "values": [
+              70,
+              550,
+              1700
+            ],
+            "color": "#1D70B8"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "ncsc-uk-annual-review-2025-pqc-timeline",
+      "title": "UK post-quantum cryptography migration milestones",
+      "description": "The NCSC's PQC migration roadmap sets three checkpoints: a complete inventory and migration plan by 2028, highest-priority services migrated by 2031, and full PQC migration of all systems by 2035.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Cloud Security",
+      "industry": [
+        "Government",
+        "Financial Services"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "post-quantum",
+        "pqc",
+        "cryptography",
+        "migration",
+        "uk",
+        "industry:defense"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 03 / PQC",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "2028 — initial plan complete",
+          "2031 — high-priority migrated",
+          "2035 — full migration"
+        ],
+        "series": [
+          {
+            "name": "Required progress (% of estate)",
+            "values": [
+              25,
+              60,
+              100
+            ],
+            "color": "#1D70B8"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "ncsc-uk-annual-review-2025-tips-received",
+      "title": "Cyber incident tips received by NCSC",
+      "description": "The NCSC received 1,727 incident tips in 2024–2025, a slight decline from the 1,957 reported the prior year. Tip volume has remained broadly stable, while severity has escalated sharply.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "tips",
+        "intake",
+        "uk",
+        "spark-from-4"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 01 / Incident Management",
+      "comparison": "vs 1,957 in 2023-2024",
+      "trend": "decreasing",
+      "value_unit": "count",
+      "card_style": "sparkline",
+      "value": "1,727",
+      "spark": [
+        1226,
+        2005,
+        2005,
+        1957,
+        1957,
+        1727
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "ncsc-uk-annual-review-2025-highly-significant-incidents",
+      "title": "Highly significant incidents up 50% for third consecutive year",
+      "description": "The NCSC reports a 50% year-over-year rise in 'highly significant' cyber incidents — attacks with serious impact on central government, UK essential services, large portions of the population, or the UK economy. This marks the third consecutive year of growth in this top-severity category.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware",
+        "vulnerability"
+      ],
+      "tags": [
+        "highly-significant",
+        "incident-management",
+        "uk",
+        "third-consecutive-year"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "CEO Foreword",
+      "comparison": "vs prior 12 months",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+50% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "ncsc-uk-annual-review-2025-hmg-takedown-speed",
+      "title": "79% of HMG phishing attacks taken down in 24 hours",
+      "description": "Of confirmed phishing attacks targeting UK Government departments, 79% were resolved within 24 hours, and 50% were taken down in under one hour. The speed reflects automation across the NCSC takedown service.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "takedown",
+        "hmg",
+        "response-time",
+        "uk"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 02 / Active Cyber Defence",
+      "comparison": "50% within 1 hour",
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "79%"
+    },
+    {
+      "type": "stat",
+      "id": "ncsc-uk-annual-review-2025-cyber-essentials-insurance",
+      "title": "Cyber Essentials orgs are 92% less likely to file insurance claims",
+      "description": "Organisations certified under Cyber Essentials are 92% less likely to make a claim on their cyber insurance — one of the strongest signals to UK boards that the baseline scheme materially reduces realised loss.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Cyber Insurance",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "cyber-essentials",
+        "insurance",
+        "claims",
+        "uk",
+        "industry:insurance"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 02 / NCSC Tools",
+      "comparison": "vs non-certified orgs",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "-92%"
+    },
+    {
+      "type": "stat",
+      "id": "ncsc-uk-annual-review-2025-incidents-handled",
+      "title": "NCSC handled 429 incidents in 2024–2025",
+      "description": "Of 1,727 incident tips received during the September 2024 to August 2025 review period, the NCSC's incident management team handled 429 incidents directly. The figure is in line with the prior year (430).",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware",
+        "vulnerability"
+      ],
+      "tags": [
+        "incident-management",
+        "ncsc",
+        "uk"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 01 / Incident Management",
+      "comparison": "vs 430 in 2023-2024",
+      "trend": "flat",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "429"
+    },
+    {
+      "type": "stat",
+      "id": "ncsc-uk-annual-review-2025-nationally-significant",
+      "title": "Nationally significant incidents more than doubled",
+      "description": "Nationally significant incidents rose to 204 in the 2024–2025 review period, up from 89 the prior year — a 129% increase. This category now represents 48% of all incidents handled by the NCSC.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware",
+        "vulnerability"
+      ],
+      "tags": [
+        "nationally-significant",
+        "incident-management",
+        "uk"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 01 / Incident Management",
+      "comparison": "vs 89 in 2023-2024",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "204"
+    },
+    {
+      "type": "stat",
+      "id": "ncsc-uk-annual-review-2025-sers-reports",
+      "title": "10.9M suspicious emails reported in 2024–2025",
+      "description": "The NCSC's Suspicious Email Reporting Service (SERS) received over 10.9 million reports in the past year. Cumulative SERS reports since April 2020 now exceed 45 million, and 412,000 malicious URLs have been removed by the NCSC since 2020.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "sers",
+        "active-cyber-defence",
+        "uk",
+        "reports"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 02 / Active Cyber Defence",
+      "comparison": "45M+ cumulative since April 2020",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "10.9M"
+    },
+    {
+      "type": "stat",
+      "id": "ncsc-uk-annual-review-2025-cyberfirst-roi",
+      "title": "CyberFirst returns £5.94 of social value per £1 invested",
+      "description": "CyberFirst generated £41.4 million in social value in 2024–25, delivering £5.94 for every £1 invested — up from £4.06 the prior year. Over 350,000 students have engaged with the programme since 2017.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Regulatory & Compliance",
+      "industry": [
+        "Education"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "cyberfirst",
+        "social-value",
+        "education",
+        "skills",
+        "uk"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 02 / CyberFirst",
+      "comparison": "vs £4.06 in 2023-24",
+      "trend": "increasing",
+      "value_unit": "multiplier",
+      "card_style": "number",
+      "value": "£5.94 per £1"
+    },
+    {
+      "type": "stat",
+      "id": "ncsc-uk-annual-review-2025-flax-typhoon-botnet",
+      "title": "China-linked Flax Typhoon botnet: 260,000+ devices",
+      "description": "In September 2024 the NCSC and allies exposed Integrity Technology Group (Flax Typhoon), revealing a botnet of over 260,000 compromised devices worldwide. The disclosure was followed in August 2025 by an advisory linking three China-based companies to campaigns overlapping with Salt Typhoon activity.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Geopolitics",
+      "industry": [
+        "Government",
+        "Telecommunications"
+      ],
+      "region": [
+        "Europe",
+        "North America",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "vulnerability"
+      ],
+      "tags": [
+        "china",
+        "flax-typhoon",
+        "salt-typhoon",
+        "botnet",
+        "state-sponsored",
+        "industry:defense"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 01 / Cyber Threat",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "260K+"
+    },
+    {
+      "type": "stat",
+      "id": "ncsc-uk-annual-review-2025-coop-breach",
+      "title": "Co-op ransomware incident: 6.5 million members affected",
+      "description": "Among the high-profile UK ransomware incidents called out in the 2025 review, the Co-op attack affected all 6.5 million Co-op members. The wave of incidents — including Marks & Spencer and Jaguar Land Rover — anchored the review's 'time to act' message.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "co-op",
+        "marks-spencer",
+        "jaguar-land-rover",
+        "uk",
+        "retail"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 01 / Cyber Threat",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "6.5M"
+    },
+    {
+      "type": "stat",
+      "id": "ncsc-uk-annual-review-2025-pdns-schools",
+      "title": "13,000+ UK schools protected by PDNS",
+      "description": "The NCSC's Protective DNS service for schools is now safeguarding more than 13,000 UK schools, blocking access to malicious domains by default and shielding the education sector from a range of online threats.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Detection",
+      "industry": [
+        "Education"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "pdns",
+        "schools",
+        "active-cyber-defence",
+        "uk"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 02 / Active Cyber Defence",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "13K+"
+    },
+    {
+      "type": "stat",
+      "id": "ncsc-uk-annual-review-2025-cyberfirst-girls",
+      "title": "14,500 girls in the CyberFirst Girls Competition",
+      "description": "The 2025 CyberFirst Girls Competition reached 14,500 participants, the largest cohort to date, supported by collaboration between the NCSC, DSIT and IBM. CyberFirst will now feed into the £187M TechFirst programme announced by the Prime Minister in June 2025.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Regulatory & Compliance",
+      "industry": [
+        "Education"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "cyberfirst",
+        "girls",
+        "skills",
+        "uk"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 02 / CyberFirst",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "14,500"
+    },
+    {
+      "type": "stat",
+      "id": "ncsc-uk-annual-review-2025-ai-code-adoption",
+      "title": "AI Security Code of Practice endorsed by 18 countries",
+      "description": "The UK's AI Security Code of Practice — developed by DSIT with NCSC support — has been widely adopted across sectors and internationally endorsed by 18 countries. The work informed ETSI's first global AI lifecycle security standard.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [
+        "Technology",
+        "Government"
+      ],
+      "region": [
+        "Europe",
+        "North America",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "ai",
+        "etsi",
+        "standards",
+        "code-of-practice",
+        "uk"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 03 / Artificial Intelligence",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "18"
+    },
+    {
+      "type": "stat",
+      "id": "ncsc-uk-annual-review-2025-ceo-call-to-act",
+      "title": "NCSC CEO: It is time to act",
+      "description": "Richard Horne, NCSC CEO, frames the 2025 review with an urgent call to UK business leaders. He highlights that cyber attacks now have real-world operational consequences far beyond IT systems.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ceo-foreword",
+        "richard-horne",
+        "uk",
+        "leadership"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Introduction / CEO Foreword",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Empty shelves and stalled production lines are a stark reminder that cyber attacks no longer just affect computers and data, but real business, real products, and real lives.\""
+    },
+    {
+      "type": "stat",
+      "id": "ncsc-uk-annual-review-2025-state-actors-quote",
+      "title": "China assessed as a highly sophisticated threat actor",
+      "description": "The 2025 review characterises China as a top-tier cyber adversary, targeting a wide range of UK sectors. The NCSC singles out activity overlapping with state-aligned groups Flax Typhoon and Salt Typhoon.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Geopolitics",
+      "industry": [
+        "Government",
+        "Telecommunications"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "vulnerability"
+      ],
+      "tags": [
+        "china",
+        "state-sponsored",
+        "uk",
+        "industry:defense"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 01 / Cyber Threat",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"China is a highly sophisticated and capable threat actor targeting wide-ranging UK sectors.\""
+    },
+    {
+      "type": "stat",
+      "id": "ncsc-uk-annual-review-2025-russia-quote",
+      "title": "Russia: a capable and irresponsible actor in cyberspace",
+      "description": "The review highlights Russia's continued cyber operations supporting its war in Ukraine, the exposure of the Authentic Antics credential-stealing malware, and the growth of pro-Russia hacktivist groups targeting the UK, Europe, US, and NATO countries.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Geopolitics",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "ddos",
+        "phishing"
+      ],
+      "tags": [
+        "russia",
+        "authentic-antics",
+        "hacktivism",
+        "ukraine",
+        "state-sponsored",
+        "industry:defense"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 01 / Cyber Threat",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Russia is a capable and irresponsible threat actor in cyberspace.\""
+    },
+    {
+      "type": "stat",
+      "id": "ncsc-uk-annual-review-2025-ai-threat-quote",
+      "title": "AI is amplifying — not replacing — attacker tradecraft",
+      "description": "The 2025 review's view on AI as an offensive enabler: threat actors are not inventing new attacks, they are using AI to scale and accelerate the playbook they already have.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "ai",
+        "llm-abuse",
+        "spear-phishing",
+        "automation"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 01 / Cyber Threat — AI",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Threat actors are using AI to increase the efficiency, effectiveness, and frequency of their cyber intrusions — fully automated spear-phishing campaigns, hijacking cloud-based LLMs, automating post-breach attack stages and data exfiltration.\""
+    },
+    {
+      "type": "stat",
+      "id": "ncsc-uk-annual-review-2025-cyber-essentials",
+      "title": "39,790 Cyber Essentials certifications awarded",
+      "description": "Cyber Essentials certifications grew 17.5% year-over-year to 39,790, and Cyber Essentials Plus rose 17.3% to 12,850. The number of certifying bodies grew 12.3% to 402.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Regulatory & Compliance",
+      "industry": [],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "cyber-essentials",
+        "certification",
+        "uk"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 02 / NCSC Tools",
+      "comparison": "+17.5% YoY",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "39,790"
+    },
+    {
+      "type": "stat",
+      "id": "ncsc-uk-annual-review-2025-guidance-published",
+      "title": "64 NCSC guidance and blog products published",
+      "description": "Across 2024–2025 the NCSC published 64 products — 35 blog posts and 29 formal guidance documents — including CAF 4.0, the Software Security Code of Practice, MFA guidance, and SPI principles.",
+      "source": "NCSC (UK)",
+      "source_short": "NCSC (UK)",
+      "color": "#1D70B8",
+      "year": 2025,
+      "category": "Regulatory & Compliance",
+      "industry": [],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "guidance",
+        "publications",
+        "blog",
+        "uk"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chapter 03 / NCSC Guidance",
+      "comparison": "29 guidance + 35 blog posts",
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "64"
+    }
+  ]
+}

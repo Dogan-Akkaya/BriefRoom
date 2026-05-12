@@ -1,0 +1,1218 @@
+{
+  "source": "Mandiant (Google Cloud)",
+  "source_short": "Mandiant",
+  "year": 2026,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/mandiant-mtrends-2026.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.960Z. Curated top 10 of 26 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-mandiant-mtrends-2026",
+      "title": "M-Trends 2026",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "color": "#FF6900",
+      "description": "Mandiant's global median dwell time increased from 11 days in 2024 to 14 days in 2025, driven by long-term espionage and DPRK IT worker operations establishing stealthy, persistent access on edge devices that lack standard telemetry.",
+      "external_url": "https://services.google.com/fh/files/misc/m-trends-2026-executive-edition-en.pdf",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "Exploit",
+          "Voice phishing",
+          "Email phishing",
+          "Prior compromise (other)"
+        ],
+        "series": [
+          {
+            "name": "Share of incidents",
+            "values": [
+              32,
+              11,
+              6,
+              30
+            ],
+            "color": "#FF6900"
+          }
+        ]
+      },
+      "industry": [
+        "Technology",
+        "Financial Services",
+        "Healthcare"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "phishing",
+        "ransomware",
+        "dark_web_mentions",
+        "data_leaks",
+        "infostealer"
+      ],
+      "tags": [
+        "external-report",
+        "initial-access",
+        "vishing",
+        "exploits",
+        "social-engineering",
+        "year-over-year",
+        "motivation",
+        "espionage",
+        "detection-source",
+        "internal-detection",
+        "industry-targeting",
+        "top-verticals",
+        "malware-rankings",
+        "goldvein",
+        "redbike",
+        "cobalt-strike",
+        "extortion",
+        "malware-families",
+        "backdoors",
+        "helpdesk",
+        "spark-from-5",
+        "dwell-time",
+        "median",
+        "edge-devices",
+        "spark-from-10"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2026-05-11",
+      "report_meta": {
+        "report_id": "mandiant-mtrends-2026",
+        "organization_id": "mandiant",
+        "publication_date": null,
+        "extracted_on": "2026-05-11",
+        "source_url": "https://services.google.com/fh/files/misc/m-trends-2026-executive-edition-en.pdf",
+        "card_count_total": 26,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "mandiant-mtrends-2026-initial-vectors"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "mandiant-mtrends-2026-initial-vectors",
+      "title": "Initial infection vectors, 2025",
+      "description": "Exploits remained the most common initial infection vector for the sixth consecutive year at 32%. Voice phishing surged to the second spot at 11%, while email phishing fell to 6% from 14% in 2024.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "phishing"
+      ],
+      "tags": [
+        "initial-access",
+        "vishing",
+        "exploits"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "By the Numbers",
+      "comparison": "vs 2024",
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Exploit",
+          "Voice phishing",
+          "Email phishing",
+          "Prior compromise (other)"
+        ],
+        "series": [
+          {
+            "name": "Share of incidents",
+            "values": [
+              32,
+              11,
+              6,
+              30
+            ],
+            "color": "#FF6900"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "mandiant-mtrends-2026-phishing-yoy",
+      "title": "Voice phishing surges as email phishing declines",
+      "description": "Voice-based social engineering rose sharply in 2025 to 11% of initial infection vectors, while email phishing fell from 14% in 2024 to 6% in 2025. The distinction matters because interactive attacks resist automated controls.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "vishing",
+        "social-engineering",
+        "year-over-year"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "By the Numbers",
+      "comparison": "2025 vs 2024",
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "2024",
+          "2025"
+        ],
+        "series": [
+          {
+            "name": "Email phishing",
+            "values": [
+              14,
+              6
+            ],
+            "color": "#FF6900"
+          },
+          {
+            "name": "Voice phishing",
+            "values": [
+              4,
+              11
+            ],
+            "color": "#FFB07A"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "mandiant-mtrends-2026-threat-cluster-motivation",
+      "title": "Threat cluster motivation shifted in 2025",
+      "description": "Financially motivated groups fell to 41% of threat clusters observed in 2025 (down from 55% in 2024), while cyber espionage groups doubled their share to 16% (up from 8%).",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "motivation",
+        "espionage",
+        "year-over-year"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "By the Numbers",
+      "comparison": "2025 vs 2024",
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "2024",
+          "2025"
+        ],
+        "series": [
+          {
+            "name": "Financially motivated",
+            "values": [
+              55,
+              41
+            ],
+            "color": "#FF6900"
+          },
+          {
+            "name": "Cyber espionage",
+            "values": [
+              8,
+              16
+            ],
+            "color": "#FFB07A"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "mandiant-mtrends-2026-detection-source",
+      "title": "How breaches were detected in 2025",
+      "description": "Internal detection rose to 52% of incidents in 2025 (up from 43% in 2024), external notifications fell to 34% (down from 43%), and adversaries informed organizations of a compromise 14% of the time.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Detection",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "detection-source",
+        "internal-detection",
+        "year-over-year"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "By the Numbers",
+      "comparison": "2025 vs 2024",
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Internal",
+          "External",
+          "Adversary"
+        ],
+        "series": [
+          {
+            "name": "2024",
+            "values": [
+              43,
+              43,
+              14
+            ],
+            "color": "#FFB07A"
+          },
+          {
+            "name": "2025",
+            "values": [
+              52,
+              34,
+              14
+            ],
+            "color": "#FF6900"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "mandiant-mtrends-2026-targeted-industries",
+      "title": "Most-targeted industries in 2025",
+      "description": "High tech overtook financial services as the most targeted vertical in 2025, followed by financial, business and professional services, and healthcare. Investigations spanned more than 16 industry verticals.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [
+        "Technology",
+        "Financial Services",
+        "Healthcare"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "industry-targeting",
+        "top-verticals"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "By the Numbers",
+      "comparison": "High tech leapfrogged financial sector",
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "High tech",
+          "Financial",
+          "Business & professional services",
+          "Healthcare"
+        ],
+        "series": [
+          {
+            "name": "Industry rank (1 = top)",
+            "values": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "color": "#FF6900"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "mandiant-mtrends-2026-top-malware-families",
+      "title": "Top malware families and Cobalt Strike's drop",
+      "description": "After five consecutive years as the most frequently observed malware family, Cobalt Strike BEACON fell to fourth in 2025. GOLDVEIN.JAVA downloader took the top spot, followed by REDBIKE (Akira) ransomware.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "malware-rankings",
+        "goldvein",
+        "redbike",
+        "cobalt-strike"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "By the Numbers",
+      "comparison": "vs prior 5 years",
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "GOLDVEIN.JAVA",
+          "REDBIKE (Akira)",
+          "Other",
+          "Cobalt Strike BEACON"
+        ],
+        "series": [
+          {
+            "name": "Rank in 2025 (1 = top)",
+            "values": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "color": "#FF6900"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "mandiant-mtrends-2026-ransomware-detection",
+      "title": "Detection source for ransomware incidents",
+      "description": "In ransomware cases, adversaries notified the target 44% of the time, internal detection occurred 41% of the time, and external entities notified 15%. The high adversary share is consistent with the ransomware business model.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "detection-source",
+        "extortion"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "By the Numbers",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Adversary",
+          "Internal",
+          "External"
+        ],
+        "series": [
+          {
+            "name": "Ransomware incidents",
+            "values": [
+              44,
+              41,
+              15
+            ],
+            "color": "#FF6900"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "mandiant-mtrends-2026-malware-family-mix",
+      "title": "Malware family categories observed",
+      "description": "Of malware families observed in 2025 investigations, 36% were backdoors, 11% downloaders, 10% ransomware, 10% droppers, and 9% credential stealers, reflecting heavy reliance on stealth and follow-on access tooling.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "infostealer"
+      ],
+      "tags": [
+        "malware-families",
+        "backdoors"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "By the Numbers",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Backdoors",
+          "Downloaders",
+          "Ransomware",
+          "Droppers",
+          "Credential stealers"
+        ],
+        "series": [
+          {
+            "name": "Share of malware families",
+            "values": [
+              36,
+              11,
+              10,
+              10,
+              9
+            ],
+            "color": "#FF6900"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "mandiant-mtrends-2026-voice-phishing-sparkline",
+      "title": "Voice phishing climbs to second vector",
+      "description": "Voice phishing surged to 11% of initial infection vectors in 2025, becoming the second most common entry point and overtaking email phishing for the first time as attackers shift to interactive social engineering.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "vishing",
+        "social-engineering",
+        "helpdesk",
+        "spark-from-5"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "By the Numbers",
+      "comparison": "now second-most-common vector",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "sparkline",
+      "value": "11%",
+      "spark": [
+        1,
+        2,
+        3,
+        3,
+        4,
+        11
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "mandiant-mtrends-2026-dwell-time-trend",
+      "title": "Global median dwell time rose to 14 days",
+      "description": "Mandiant's global median dwell time increased from 11 days in 2024 to 14 days in 2025, driven by long-term espionage and DPRK IT worker operations establishing stealthy, persistent access on edge devices that lack standard telemetry.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Incident Response",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "dwell-time",
+        "median",
+        "edge-devices",
+        "espionage",
+        "spark-from-10"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "By the Numbers",
+      "comparison": "up from 11 days in 2024",
+      "trend": "increasing",
+      "value_unit": "days",
+      "card_style": "sparkline",
+      "value": "14 days",
+      "spark": [
+        416,
+        146,
+        78,
+        56,
+        16,
+        14
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "mandiant-mtrends-2026-handoff-sparkline",
+      "title": "Hand-off time crashed from hours to seconds",
+      "description": "The median window between initial access and hand-off to a secondary threat group has collapsed dramatically, from over 8 hours in 2022 to just 22 seconds in 2025 (values shown in seconds).",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "eCrime",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "hand-off",
+        "trend",
+        "initial-access-broker",
+        "spark-from-4"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "A Minor Infection Today Can Be a Ransomware Attack Tomorrow",
+      "comparison": "vs 8+ hours in 2022",
+      "trend": "decreasing",
+      "value_unit": "seconds",
+      "card_style": "sparkline",
+      "value": "22 seconds",
+      "spark": [
+        28800,
+        14400,
+        14400,
+        3600,
+        3600,
+        22
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "mandiant-mtrends-2026-financial-motivation-decline",
+      "title": "Financially motivated activity at 41%",
+      "description": "Financially motivated threat clusters represented 41% of activity observed by Mandiant in 2025, a notable decline from 55% in 2024 as espionage-aligned activity rose.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "financially-motivated",
+        "motivation-share"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "By the Numbers",
+      "comparison": "down from 55% in 2024",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "41%"
+    },
+    {
+      "type": "stat",
+      "id": "mandiant-mtrends-2026-espionage-doubled",
+      "title": "Cyber espionage share doubled to 16%",
+      "description": "Cyber espionage threat clusters grew from 8% of observed activity in 2024 to 16% in 2025, reflecting heightened state-aligned operations and DPRK IT worker incidents.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "espionage",
+        "state-aligned",
+        "dprk"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "By the Numbers",
+      "comparison": "up from 8% in 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "16%"
+    },
+    {
+      "type": "stat",
+      "id": "mandiant-mtrends-2026-internal-detection",
+      "title": "Internal detection climbed to 52%",
+      "description": "Organizations first identified malicious activity themselves in 52% of investigations in 2025, an improvement from 43% in 2024 that suggests maturing detection capabilities.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Detection",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "internal-detection"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "By the Numbers",
+      "comparison": "up from 43% in 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "52%"
+    },
+    {
+      "type": "stat",
+      "id": "mandiant-mtrends-2026-exploit-vector-sixth-year",
+      "title": "Exploits remain top vector 6 years running",
+      "description": "Exploits were the most common initial infection vector at 32% in 2025, marking the sixth consecutive year vulnerabilities have led Mandiant's rankings. Zero-day and n-day attacks against internet-facing systems continue to drive incidents.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "exploits",
+        "zero-day",
+        "initial-access",
+        "six-year-streak"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "By the Numbers",
+      "comparison": "top vector since 2020",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "32%"
+    },
+    {
+      "type": "stat",
+      "id": "mandiant-mtrends-2026-handoff-22-seconds",
+      "title": "Time-to-hand-off collapsed to 22 seconds",
+      "description": "The median time between an initial access event and the hand-off to a secondary threat group dropped from more than 8 hours in 2022 to just 22 seconds in 2025. Initial access partners now pre-stage tooling for follow-on groups instead of selling access on underground markets.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "eCrime",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "initial-access-broker",
+        "hand-off",
+        "pre-staging"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "A Minor Infection Today Can Be a Ransomware Attack Tomorrow",
+      "comparison": "down from 8+ hours in 2022",
+      "trend": "decreasing",
+      "value_unit": "seconds",
+      "card_style": "number",
+      "value": "22 seconds"
+    },
+    {
+      "type": "stat",
+      "id": "mandiant-mtrends-2026-ransomware-initial-vector",
+      "title": "30% of ransomware starts with prior compromise",
+      "description": "In ransomware-related incidents, prior compromise was the most frequently observed initial infection vector at 30%, reflecting the rise of initial access partners pre-staging access for follow-on groups.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "initial-access",
+        "prior-compromise",
+        "iab"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "By the Numbers",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "30%"
+    },
+    {
+      "type": "stat",
+      "id": "mandiant-mtrends-2026-adversary-notification",
+      "title": "Adversaries inform victims 14% of the time",
+      "description": "Across all 2025 investigations, threat actors themselves notified the targeted organization of a compromise in 14% of cases, primarily driven by ransomware extortion notes.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Detection",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "adversary-notification",
+        "extortion"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "By the Numbers",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "14%"
+    },
+    {
+      "type": "stat",
+      "id": "mandiant-mtrends-2026-backdoors-share",
+      "title": "36% of malware families were backdoors",
+      "description": "Backdoors dominated malware families observed in 2025 at 36% share, reflecting attacker emphasis on persistence and follow-on access over disruptive payloads.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "backdoors",
+        "malware-mix",
+        "persistence"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "By the Numbers",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "36%"
+    },
+    {
+      "type": "stat",
+      "id": "mandiant-mtrends-2026-frontline-hours",
+      "title": "Over 500K hours of frontline IR",
+      "description": "M-Trends 2026 is grounded in more than 500,000 hours of frontline incident investigations conducted by Mandiant in 2025, combined with Google Threat Intelligence Group (GTIG) telemetry.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "methodology",
+        "incident-response"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Foreword",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "hours",
+      "card_style": "number",
+      "value": "500K+ hours"
+    },
+    {
+      "type": "stat",
+      "id": "mandiant-mtrends-2026-industries-covered",
+      "title": "16+ industries impacted",
+      "description": "Mandiant investigations in 2025 spanned more than 16 industry verticals, signalling broad and indiscriminate threat actor targeting across the global economy.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "industry-coverage"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "By the Numbers",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "16+ industries"
+    },
+    {
+      "type": "stat",
+      "id": "mandiant-mtrends-2026-espionage-dwell-122",
+      "title": "Espionage dwell time: 122 days",
+      "description": "Cyber espionage and North Korean IT worker incidents had a median dwell time of 122 days in 2025, reflecting deliberate, stealthy long-term access objectives.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "dwell-time",
+        "dprk",
+        "espionage"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "By the Numbers",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "days",
+      "card_style": "number",
+      "value": "122 days"
+    },
+    {
+      "type": "stat",
+      "id": "mandiant-mtrends-2026-brickstorm-dwell",
+      "title": "BRICKSTORM averaging 393 days dwell",
+      "description": "Cases involving the stealthy BRICKSTORM backdoor averaged 393 days of dwell time, far beyond standard 90-day log retention windows and leaving organizations blind to the initial access vector.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Incident Response",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "brickstorm",
+        "dwell-time",
+        "edge-devices",
+        "logging"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Multi-Year Intrusions Highlighting Extreme Persistence",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "days",
+      "card_style": "number",
+      "value": "393 days"
+    },
+    {
+      "type": "stat",
+      "id": "mandiant-mtrends-2026-foreword-quote",
+      "title": "Hand-offs happening in under 30 seconds",
+      "description": "Mandiant's foreword underscores how initial access partners now work directly with secondary groups instead of selling access on underground markets, collapsing the response window for defenders.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "eCrime",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "foreword",
+        "hand-off",
+        "narrative"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Foreword",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"We are observing a rising trend where initial access partners work directly with secondary groups rather than selling access on underground markets. This results in a 'hand-off' that sometimes occurs in less than 30 seconds, creating a scenario where 'minor' alerts can very quickly become major compromises.\""
+    },
+    {
+      "type": "stat",
+      "id": "mandiant-mtrends-2026-recovery-denial-quote",
+      "title": "Ransomware is now recovery denial",
+      "description": "Mandiant frames ransomware as a resilience problem: attackers are no longer just encrypting data, they are systematically destroying the ability to recover by targeting backups, identity services, and virtualization layers.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "recovery-denial",
+        "backups",
+        "narrative"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware is Now a Resilience Problem",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Ransomware groups are no longer just encrypting data; they are actively destroying the ability to recover. They target the most critical systems, effectively forcing a choice: pay or rebuild.\""
+    },
+    {
+      "type": "stat",
+      "id": "mandiant-mtrends-2026-edge-devices-quote",
+      "title": "Edge devices as long-term blind spots",
+      "description": "Mandiant highlights how undetected long-term access on edge devices that lack telemetry has become a defining trait of 2025 intrusions, fuelling the dwell-time rise.",
+      "source": "Mandiant (Google Cloud)",
+      "source_short": "Mandiant",
+      "color": "#FF6900",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "edge-devices",
+        "stealth",
+        "persistence",
+        "narrative"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Foreword",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"A subset of adversaries are remaining undetected on networks for longer periods of time, often by establishing persistence in edge devices that typically lack standard telemetry.\""
+    }
+  ]
+}

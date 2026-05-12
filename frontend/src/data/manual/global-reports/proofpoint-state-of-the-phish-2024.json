@@ -1,0 +1,1157 @@
+{
+  "source": "Proofpoint",
+  "source_short": "Proofpoint",
+  "year": 2024,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/proofpoint-state-of-the-phish-2024.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.974Z. Curated top 10 of 27 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-proofpoint-state-of-the-phish-2024",
+      "title": "2024 State of the Phish",
+      "year": 2024,
+      "category": "Phishing",
+      "color": "#1E66FF",
+      "description": "Across a survey of 7,500 end users in 15 countries, 71% admitted to taking a risky action such as reusing or sharing passwords, clicking unknown links, or handing credentials to an untrustworthy source. 96% of them did so knowing the action was risky.",
+      "external_url": "https://www.proofpoint.com/sites/default/files/threat-reports/pfpt-us-tr-state-of-the-phish-2024.pdf",
+      "preferred_chart": null,
+      "dataset": null,
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing",
+        "ransomware"
+      ],
+      "tags": [
+        "external-report",
+        "risky-behavior",
+        "user-behavior",
+        "security-awareness",
+        "global",
+        "successful-phishing",
+        "breach-impact",
+        "fines",
+        "bec",
+        "training-gap",
+        "awareness",
+        "mfa",
+        "perception-gap",
+        "account-takeover",
+        "ransomware",
+        "infection-rate",
+        "repeat-incidents",
+        "ransom-payment",
+        "extortion",
+        "negotiation",
+        "click-rate",
+        "failure-rate",
+        "simulation",
+        "benchmark",
+        "reporting-rate",
+        "user-resilience",
+        "phishalarm",
+        "industry-benchmark",
+        "finance",
+        "construction",
+        "agriculture",
+        "industry:construction",
+        "industry:agriculture"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2024-02-27",
+      "report_meta": {
+        "report_id": "proofpoint-state-of-the-phish-2024",
+        "organization_id": "proofpoint",
+        "publication_date": "2024-02-27",
+        "extracted_on": "2026-05-11",
+        "source_url": "https://www.proofpoint.com/sites/default/files/threat-reports/pfpt-us-tr-state-of-the-phish-2024.pdf",
+        "card_count_total": 27,
+        "card_count_in_library": 10,
+        "hero_kind": "stat",
+        "hero_card_id": null
+      }
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-risky-action-rate",
+      "title": "71% of users took a risky action in 2023",
+      "description": "Across a survey of 7,500 end users in 15 countries, 71% admitted to taking a risky action such as reusing or sharing passwords, clicking unknown links, or handing credentials to an untrustworthy source. 96% of them did so knowing the action was risky.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "risky-behavior",
+        "user-behavior",
+        "security-awareness",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Key Findings / Security Behaviors and Attitudes",
+      "comparison": "96% knew the action was risky",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "71%"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-successful-phishing",
+      "title": "71% of organizations suffered a successful phishing attack",
+      "description": "71% of organizations experienced at least one successful phishing attack in 2023, down from 84% in 2022. Even as the incidence dropped, financial penalties from phishing rose 144% year over year and reputational damage reports rose 50%.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "successful-phishing",
+        "breach-impact",
+        "fines",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attack consequences",
+      "comparison": "down from 84% in 2022",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "71%"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-bec-org-rate",
+      "title": "73% of organizations hit by BEC, but only 29% train for it",
+      "description": "73% of organizations reported a BEC attack in 2023, yet only 29% of security awareness programs teach users specifically about BEC threats — exposing a wide gap between attack prevalence and dedicated training coverage.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "bec",
+        "training-gap",
+        "awareness",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attack consequences",
+      "comparison": "29% of orgs train users on BEC",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "73%"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-mfa-overconfidence",
+      "title": "89% of security pros still believe MFA stops account takeover",
+      "description": "89% of surveyed security professionals agree MFA can completely protect against account compromise, and 84% of their organizations rely on MFA as the primary control against account takeover — even though Proofpoint sees more than 1 million MFA-bypass phishing attacks every month.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "mfa",
+        "perception-gap",
+        "account-takeover",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Growing threats",
+      "comparison": "84% of orgs rely on MFA to prevent ATO",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "89%"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-ransomware-rate",
+      "title": "69% of organizations infected by ransomware",
+      "description": "The share of organizations hit by a ransomware attack climbed five percentage points to 69% in 2023. Nearly 60% of those affected reported four or more separate ransomware incidents over the year, reinforcing that ransomware remains a persistent and lucrative form of attack.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ransomware",
+        "infection-rate",
+        "repeat-incidents",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware still a major concern",
+      "comparison": "up 5 points YoY; ~60% hit 4+ times",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "69%"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-ransom-payment-rate",
+      "title": "Global ransom payment rate falls to 54%",
+      "description": "Among organizations infected with ransomware, the rate that agreed to pay attackers fell to 54% in 2023 — down from 58% in 2022 and 64% in 2021. Fewer victims regained data after paying, and 15% of organizations refused additional ransom demands (up from 6% in 2022).",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ransom-payment",
+        "extortion",
+        "negotiation",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware still a major concern",
+      "comparison": "64% (2021) → 58% (2022) → 54% (2023)",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "54%"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-overall-failure-rate",
+      "title": "Average simulated phishing click-through rate of 9.3%",
+      "description": "Across 183 million Proofpoint phishing simulations, the average failure (click) rate dropped slightly to 9.3% in 2023, from 10% in 2022 — meaning roughly one in eleven users still clicks, enters credentials, or opens a malicious attachment.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Security Awareness",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "click-rate",
+        "failure-rate",
+        "simulation",
+        "benchmark",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Organizational Benchmarks",
+      "comparison": "down from 10% in 2022",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "9.3%"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-reporting-rate",
+      "title": "User reporting rate climbs to 18.3%",
+      "description": "Reporting rates for simulated phishing rose to 18.3% in 2023, up from 17% in 2022. Reporting is a critical indicator of awareness, showing users can recognize a suspicious message and flag it to security rather than ignore or delete it.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Security Awareness",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "reporting-rate",
+        "user-resilience",
+        "phishalarm",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Organizational Benchmarks",
+      "comparison": "17% in 2022",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "18.3%"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-best-industry-finance",
+      "title": "Finance leads industries with 9% phishing failure rate (-7 pts)",
+      "description": "Finance was the most-improved industry in 2023, with its simulated phishing failure rate dropping from 16% to 9% — a seven-point decline year over year and a tie for the lowest failure rate in the benchmark.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Security Awareness",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "industry-benchmark",
+        "finance",
+        "failure-rate",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Current Industry Failure Rate",
+      "comparison": "16% in 2022 → 9% in 2023",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "9%"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-worst-industry-construction",
+      "title": "Construction and Agriculture saw the biggest failure-rate increases",
+      "description": "Construction and Agriculture were tied for the worst year-over-year change, with simulated phishing failure rates each climbing three percentage points from 2022 — pointing to a widening human-risk gap in industries with high frontline and field-based workforces.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Security Awareness",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "industry-benchmark",
+        "failure-rate",
+        "construction",
+        "agriculture",
+        "global",
+        "industry:construction",
+        "industry:agriculture"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Current Industry Failure Rate",
+      "comparison": "Worst YoY change in benchmark",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+3 pts"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-sat-coverage",
+      "title": "99% of organizations run a security awareness program, but only 53% train everyone",
+      "description": "99% of surveyed organizations have a security awareness program of some kind. Only 53% say they train every employee in the organization (down from 56% the prior year), 41% train specific roles or departments, and 6% train only specific individuals — leaving meaningful population gaps.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Security Awareness",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "awareness-coverage",
+        "training-scope",
+        "sat",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Current state of security awareness",
+      "comparison": "down from 56% in 2022",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "53%"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-genai-training-gap",
+      "title": "Only 23% of organizations train users on generative AI safety",
+      "description": "Despite attackers using generative AI to craft more convincing multilingual lures, only 23% of organizations educate users on generative AI safety. That mirrors the 23% who train on TOAD attacks — two of the fastest-growing 2024 threat vectors with the lowest training coverage.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Security Awareness",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "genai",
+        "training-gap",
+        "ai-risk",
+        "data-loss",
+        "bec",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Growing threats",
+      "comparison": "Matches the 23% who train on TOAD",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "23%"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-simulated-phishing-coverage",
+      "title": "Only 34% of organizations run simulated phishing attacks",
+      "description": "Despite the high volume of malicious email in the threat landscape, just 34% of organizations include simulated phishing in their security-awareness programs. Computer-based training (45%) remains the most common tactic, while smishing/vishing simulations and gamified contests are gaining traction (the latter up 23% YoY).",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Security Awareness",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "phishing-simulation",
+        "training-methods",
+        "sat",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Current state of security awareness",
+      "comparison": "45% use computer-based training",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "34%"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-onedrive-template",
+      "title": "OneDrive deactivation lure has the highest 10% failure rate",
+      "description": "Microsoft branding appeared in 7 of the top 10 phishing-simulation templates run by Proofpoint customers. A 'Microsoft deactivation of old OneDrive account' lure produced the highest failure rate (10%) — exploiting loss aversion and urgency, the emotional triggers at the core of effective social engineering.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "template-failure",
+        "microsoft",
+        "onedrive",
+        "social-engineering",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Organizational Benchmarks",
+      "comparison": "7 of top 10 templates are Microsoft-branded",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "10%"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-responsibility-gap",
+      "title": "85% of security pros say employees feel responsible — but only 41% of users agree",
+      "description": "85% of security professionals say most employees know they are responsible for security. Reality from the user survey looks very different: only 41% of employees said they bear responsibility, 7% said they aren't responsible at all, and 52% weren't sure — a 44-point perception gap that explains why awareness alone fails to change behavior.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Security Awareness",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "responsibility-gap",
+        "perception",
+        "culture",
+        "behavior-change",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Security Behaviors and Attitudes",
+      "comparison": "44-point perception gap",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "41% vs 85%"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-ease-of-use",
+      "title": "94% of users say easier security would motivate them to follow it",
+      "description": "94% of end users agree that making security easier would motivate them to be more attentive to it — outranking rewards (89%), leadership engagement (87%), more training (85%), and punishment (71%). Yet 83% of security teams respond with more training and 81% with more controls or restrictions, widening the gap between security operations and user motivation.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Security Awareness",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "user-motivation",
+        "behavior-change",
+        "friction",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Areas for improvement",
+      "comparison": "83% of security teams default to more training",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "94%"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-attack-prevalence-mix",
+      "title": "Bulk phishing remains most prevalent attack type at 76%",
+      "description": "Survey respondents say bulk phishing is the most prevalent attack they face (76%), followed by spear phishing (74%), social media attacks (73%), BEC (75%), ransomware (76%), smishing (75%), and vishing (67%). Even USB drop attacks were reported by 60% of organizations — proof that attackers will reuse any tactic if there is a chance it works.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing",
+        "ransomware"
+      ],
+      "tags": [
+        "attack-prevalence",
+        "smishing",
+        "vishing",
+        "supply-chain",
+        "bec",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat prevalence",
+      "comparison": "Smishing 75%, Vishing 67%, USB drop 60%",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "76%"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-bec-monthly",
+      "title": "66 million BEC attacks blocked every month",
+      "description": "Proofpoint detected and blocked an average of 66 million targeted business email compromise (BEC) attacks per month. BEC activity is rising in non-English-speaking markets, with Japan up 35%, Korea up 31%, and the UAE up 29% year over year — partly driven by attackers using generative AI to craft convincing multilingual lures.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "bec",
+        "ai-enabled",
+        "monthly-volume",
+        "global",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "BEC attacks benefit from AI",
+      "comparison": "Japan +35%, Korea +31%, UAE +29% YoY",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "66M"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-toad-monthly",
+      "title": "10 million TOAD (callback phishing) messages per month",
+      "description": "Proofpoint observes an average of 10 million telephone-oriented attack delivery (TOAD) messages every month, with a peak of more than 13 million in August 2023. These lures contain only a phone number and bait users into calling cybercriminal call centers that walk them into granting remote access or installing malware.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "toad",
+        "callback-phishing",
+        "vishing",
+        "social-engineering",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Growing threats",
+      "comparison": "Peak 13M in August 2023",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "10M"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-evilproxy-mfa",
+      "title": "1 million+ MFA-bypass attacks via EvilProxy every month",
+      "description": "Proofpoint tracks more than 1 million phishing threats per month using the EvilProxy MFA-bypass framework, which proxies authentication to steal session tokens and one-time codes. Despite this, 89% of security professionals still believe MFA provides complete protection against account takeover.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "mfa-bypass",
+        "evilproxy",
+        "account-takeover",
+        "aitm",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Growing threats",
+      "comparison": "89% of security pros still trust MFA fully",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "1M+"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-microsoft-brand-abuse",
+      "title": "68 million malicious messages abused the Microsoft brand",
+      "description": "Microsoft remains the world's most abused brand in phishing, with more than 68 million malicious messages referencing Microsoft or its products in 2023. Office 365 alone appeared in over 20 million threat emails. Adobe (9.4M) and DHL (8.8M) rounded out the top three, each at less than one-seventh of Microsoft's volume.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "brand-abuse",
+        "microsoft",
+        "office365",
+        "impersonation",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Microsoft remains most-abused brand",
+      "comparison": "Adobe 9.4M, DHL 8.8M, Google 6.1M",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "68M"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-simulation-volume",
+      "title": "183 million phishing simulations sent in 12 months",
+      "description": "Proofpoint customers ran 183 million simulated phishing tests over a 12-month period. Link-based tests made up 59% of simulations, data-entry tests 30%, and attachment-based tests 10%. Attachment-based tests carried the highest failure rate, at 17%.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Security Awareness",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "phishing-simulation",
+        "benchmarks",
+        "training",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Organizational Benchmarks",
+      "comparison": "Attachment tests = highest failure (17%)",
+      "trend": "flat",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "183M"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-resilience-factor",
+      "title": "Average resilience factor reaches 2.0",
+      "description": "Proofpoint's Resilience Factor — the ratio of users who report phishing to those who fall for it — rose to 2.0 in 2023, up from 1.7 in 2022 and 1.5 in 2021. For the third year running, organizations got better at turning users into a detection layer rather than a vulnerability.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Security Awareness",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "resilience-factor",
+        "report-to-fail-ratio",
+        "benchmark",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Organizational Benchmarks",
+      "comparison": "1.5 (2021) → 1.7 (2022) → 2.0 (2023)",
+      "trend": "increasing",
+      "value_unit": "ratio",
+      "card_style": "number",
+      "value": "2.0"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-user-reported-threats",
+      "title": "24 million suspicious emails reported by end users",
+      "description": "Proofpoint customers' end users reported 24 million suspicious emails over a 12-month period, up from 18 million the prior year. Those reports contained nearly 2 million unique threats — with credential phishing dominating at 930,707 unique threats, followed by malware (~877k) and banking trojans (~52.6k).",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "user-reporting",
+        "threat-intel",
+        "credential-phishing",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Organizational Benchmarks",
+      "comparison": "18M reported in 2022",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "24M"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-survey-scope",
+      "title": "Report draws on 7,500 users, 1,050 pros, and 15 countries",
+      "description": "The 2024 State of the Phish is built on a survey of 7,500 end users and 1,050 security professionals across 15 countries, plus telemetry from 183 million simulated phishing messages and more than 24 million end-user-reported emails analyzed over a 12-month period.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "methodology",
+        "survey",
+        "scope",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Introduction",
+      "comparison": "1,050 security pros, 15 countries, 183M simulations",
+      "trend": "flat",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "7,500 users"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-toad-training-gap",
+      "title": "Only 23% of organizations train users on TOAD attacks",
+      "description": "Despite an average of 10 million callback-phishing (TOAD) messages every month, just 23% of organizations train their users to recognize and prevent TOAD attacks — leaving employees largely unprepared for one of the fastest-growing social-engineering vectors.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "toad",
+        "training-gap",
+        "callback-phishing",
+        "vishing",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Growing threats",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "23%"
+    },
+    {
+      "type": "stat",
+      "id": "proofpoint-state-of-the-phish-2024-qr-code-phishing",
+      "title": "QR-code phishing (quishing) emerges as a major lure",
+      "description": "Proofpoint observed a sharp increase in QR codes used in place of malicious links or attachments. Quishing evades automated URL scanning and shifts the victim onto a mobile device — a context many users have never been trained to evaluate, and where it is impossible to tell from a glance whether a code leads to a phishing site or malware download.",
+      "source": "Proofpoint",
+      "source_short": "Proofpoint",
+      "color": "#1E66FF",
+      "year": 2024,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "quishing",
+        "qr-code",
+        "mobile",
+        "evasion",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Growing threats",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "It is also impossible to tell just by looking if a QR code leads to a phishing site or malware download."
+    }
+  ]
+}

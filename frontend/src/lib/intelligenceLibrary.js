@@ -15,7 +15,8 @@
 // with async fetchers. Schema is wire-compatible.
 // -----------------------------------------------------------------------------
 
-import { INDUSTRIES, ALL_REGIONS, CATEGORIES, MONTHS, GLOBAL_REPORTS } from './data'
+import { INDUSTRIES, ALL_REGIONS, CATEGORIES, MONTHS } from './data'
+import { MANUAL_LIBRARY_ITEMS, MANUAL_REPORT_ITEMS, MANUAL_REPORT_RAW_BY_ID } from './manualData'
 
 // ---------- Slug helpers (URL <-> label) -----------------------------------
 
@@ -765,47 +766,6 @@ function generateCoverage(existing) {
   return out
 }
 
-// ---------- GLOBAL_REPORTS → library items (Phase A merge) ------------------
-// External vendor reports join the library as type='report' items so they can
-// be queried through the same selectors. The legacy GLOBAL_REPORTS export in
-// data.js stays intact for /reports page consumers.
-
-// Category (free-text on GLOBAL_REPORTS) → threat_type tag(s) (CATEGORIES ids)
-const REPORT_CATEGORY_TO_THREAT_TYPE = {
-  'Data Breaches':     ['data_leaks'],
-  'Threat Actors':     ['ransomware', 'dark_web_mentions'],
-  'Ransomware':        ['ransomware'],
-  'Detection':         ['data_leaks'],
-  'Intrusion':         ['vulnerability', 'ransomware'],
-  'eCrime':            ['ransomware', 'phishing'],
-  'Threat Landscape':  ['ransomware', 'phishing', 'vulnerability'],
-}
-
-function globalReportToItem(r) {
-  return {
-    id: `rep-${r.id}`,
-    type: 'report',
-    title: r.title,
-    dataset: {
-      labels: r.dummyLabels,
-      series: [{ name: r.title, values: r.dummyData, color: r.color }],
-    },
-    preferred_chart: r.chartType,
-    source: `${r.source} ${r.year}`,
-    industry: [],            // GLOBAL_REPORTS aren't sector-scoped today
-    region: [],              // nor region-scoped
-    threat_type: REPORT_CATEGORY_TO_THREAT_TYPE[r.category] || [],
-    featured: false,         // reports don't compete for the Popular grid
-    tags: ['external-report', r.category],
-    updated_at: `${r.year}-01-01`,
-    real: true,
-    display: { detail: r.description },
-    external_url: null,      // placeholder — add when report URLs are tracked
-  }
-}
-
-const REPORT_ITEMS = GLOBAL_REPORTS.map(globalReportToItem)
-
 // ---------- Assemble library + selectors ------------------------------------
 
 // Every hand-crafted item is flagged `real: true` — they carry vendor/publication
@@ -813,18 +773,37 @@ const REPORT_ITEMS = GLOBAL_REPORTS.map(globalReportToItem)
 // Generator output stays unflagged (synthetic backfill).
 const HAND_CRAFTED_REAL = HAND_CRAFTED.map(item => ({ ...item, real: true }))
 
+// Manual items contributed via src/data/manual/**/*.json (including the
+// auto-ingested global-reports/ subfolder). Default real:true unless the JSON
+// explicitly sets real:false. They feed the generator alongside
+// HAND_CRAFTED_REAL, so coverage backfill shrinks proportionally.
+const MANUAL_LIBRARY_REAL = MANUAL_LIBRARY_ITEMS.map(item => ({ ...item, real: item.real !== false }))
+const MANUAL_REPORT_REAL = MANUAL_REPORT_ITEMS.map(item => ({ ...item, real: item.real !== false }))
+
+const REAL_SEED = [...HAND_CRAFTED_REAL, ...MANUAL_LIBRARY_REAL]
+
 export const INTELLIGENCE_LIBRARY = [
-  ...HAND_CRAFTED_REAL,
-  ...REPORT_ITEMS,
-  ...generateCoverage(HAND_CRAFTED_REAL),
+  ...REAL_SEED,
+  ...MANUAL_REPORT_REAL,
+  ...generateCoverage(REAL_SEED),
 ]
 
 export const popularCharts = () =>
   INTELLIGENCE_LIBRARY.filter(i => i.featured && i.type === 'chart')
 
-/** External-report items (mirror of GLOBAL_REPORTS in library shape). */
+/** External-report items (vendor mirror). */
 export const reports = () =>
   INTELLIGENCE_LIBRARY.filter(i => i.type === 'report')
+
+/** Alias for clarity — used by Reports.jsx and Landing.jsx. */
+export const globalReports = reports
+
+/**
+ * Raw drill-down payload for `/reports/:reportId`. Returns the report's full
+ * card array (curated + retained), un-filtered by library_include. Returns null
+ * if no manual file produced this report_id.
+ */
+export const reportById = (reportId) => MANUAL_REPORT_RAW_BY_ID[reportId] || null
 
 const resolveValue = (dim, valueOrSlug) => {
   if (dim === 'threat_type') return valueOrSlug

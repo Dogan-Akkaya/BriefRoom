@@ -14,6 +14,22 @@ dist-ssr
 .vite/
 archive/
 
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Local probe / response dumps from ingestion runs (may contain sensitive raw API data)
+_debug/
+**/_debug/
+
+# Reference / scratch — kept locally, not deployed
+Labs Compliance/
+.playwright-mcp/
+/custom_build_choose1_choose2_transition.html
+/global_reports_knowledge_graph_v3.html
+*.tmp.html
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

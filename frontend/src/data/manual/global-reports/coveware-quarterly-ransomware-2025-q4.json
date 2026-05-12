@@ -1,0 +1,1107 @@
+{
+  "source": "Coveware",
+  "source_short": "Coveware",
+  "year": 2026,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/coveware-quarterly-ransomware-2025-q4.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.943Z. Curated top 10 of 22 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-coveware-quarterly-ransomware-2025-q4",
+      "title": "Coveware Q4 2025 Ransomware Marketplace Report: Mass Data Exfiltration Campaigns Lose Their Edge",
+      "year": 2026,
+      "category": "Ransomware",
+      "color": "#003366",
+      "description": "The median ransom payment rose to $325,000 in Q4 2025, a 132% increase from Q3 2025. The spike reflects fewer but larger settlements concentrated on cases involving encryption-related operational disruption rather than data-exfiltration pressure.",
+      "external_url": "https://www.coveware.com/blog/2026/2/3/mass-data-exfiltration-campaigns-lose-their-edge-in-q4-2025",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "Akira",
+          "Qilin",
+          "Lone Wolf",
+          "CL0P",
+          "Silent Ransom",
+          "Shiny Hunters"
+        ],
+        "series": [
+          {
+            "name": "Market share (Q4 2025)",
+            "values": [
+              14,
+              13,
+              12,
+              7,
+              6,
+              4
+            ],
+            "color": "#003366"
+          }
+        ]
+      },
+      "industry": [
+        "Healthcare",
+        "Technology",
+        "Financial Services",
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "supply_chain",
+        "data_leaks",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "external-report",
+        "ransomware-variants",
+        "akira",
+        "qilin",
+        "clop",
+        "market-share",
+        "moveit",
+        "supply-chain",
+        "mass-exploitation",
+        "oracle-ebs",
+        "ransom-payment",
+        "median",
+        "average",
+        "trend",
+        "industry-targeting",
+        "victimology",
+        "sector-breakdown",
+        "company-size",
+        "smb",
+        "victim-profile",
+        "mitre-attack",
+        "ttp",
+        "tactics",
+        "initial-access",
+        "vpn",
+        "rdp",
+        "oauth",
+        "social-engineering",
+        "payment-rate",
+        "victim-behavior",
+        "historical-low",
+        "spark-from-8",
+        "median-ransom",
+        "negotiation",
+        "average-ransom",
+        "skewed-economics"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2026-02-03",
+      "report_meta": {
+        "report_id": "coveware-quarterly-ransomware-2025-q4",
+        "organization_id": "coveware",
+        "publication_date": "2026-02-03",
+        "extracted_on": "2026-05-11",
+        "source_url": "https://www.coveware.com/blog/2026/2/3/mass-data-exfiltration-campaigns-lose-their-edge-in-q4-2025",
+        "card_count_total": 22,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "coveware-quarterly-ransomware-2025-q4-top-variants"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "coveware-quarterly-ransomware-2025-q4-top-variants",
+      "title": "Top ransomware variants by market share",
+      "description": "Akira (14%) and Qilin (13%) led Coveware's Q4 2025 variant rankings, with the encryption-focused groups outperforming exfiltration-only operators. CL0P and Silent Ransom are new to the top variants list this quarter; Shiny Hunters slipped two positions.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ransomware-variants",
+        "akira",
+        "qilin",
+        "clop",
+        "market-share"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top Ransomware Variants",
+      "comparison": "vs Q3 2025 variant rankings",
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Akira",
+          "Qilin",
+          "Lone Wolf",
+          "CL0P",
+          "Silent Ransom",
+          "Shiny Hunters"
+        ],
+        "series": [
+          {
+            "name": "Market share (Q4 2025)",
+            "values": [
+              14,
+              13,
+              12,
+              7,
+              6,
+              4
+            ],
+            "color": "#003366"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "coveware-quarterly-ransomware-2025-q4-clop-decline",
+      "title": "CL0P mass-exploitation campaigns yield diminishing returns",
+      "description": "Coveware tracks CL0P's five major mass-exploitation campaigns and shows payment rates collapsing from ~25% on Accellion (2021) to ~0% on Cleo MFT (2024), with the Q4 2025 Oracle EBS campaign generating one of the lowest engagement levels yet despite ideal extortion conditions.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "supply_chain",
+        "data_leaks"
+      ],
+      "tags": [
+        "clop",
+        "moveit",
+        "supply-chain",
+        "mass-exploitation",
+        "oracle-ebs"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "CL0P Campaign History & Declining Returns",
+      "comparison": "vs prior CL0P campaigns",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Accellion (Q1 2021)",
+          "GoAnywhere MFT (2023)",
+          "MOVEit (2023)",
+          "Cleo MFT (2024)",
+          "Oracle EBS (Q4 2025)"
+        ],
+        "series": [
+          {
+            "name": "Estimated payment rate",
+            "values": [
+              25,
+              20,
+              2.5,
+              0,
+              0.5
+            ],
+            "color": "#003366"
+          }
+        ]
+      },
+      "preferred_chart": "line"
+    },
+    {
+      "type": "chart",
+      "id": "coveware-quarterly-ransomware-2025-q4-ransom-divergence",
+      "title": "Average vs median ransom payments diverge sharply",
+      "description": "Coveware's Q4 2025 data shows the gap between average and median payments widening as a small number of outsized settlements pull the mean far above the typical case. The divergence underscores skewed economics where most victims pay modestly, but a few pay very large sums.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ransom-payment",
+        "median",
+        "average",
+        "trend"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Key Financial Metrics",
+      "comparison": "Q1 2024 through Q4 2025",
+      "trend": "increasing",
+      "value_unit": "usd",
+      "dataset": {
+        "labels": [
+          "Q1 2024",
+          "Q2 2024",
+          "Q3 2024",
+          "Q4 2024",
+          "Q1 2025",
+          "Q2 2025",
+          "Q3 2025",
+          "Q4 2025"
+        ],
+        "series": [
+          {
+            "name": "Average ransom payment ($K)",
+            "values": [
+              550,
+              480,
+              380,
+              553,
+              1130,
+              805,
+              377,
+              592
+            ],
+            "color": "#003366"
+          },
+          {
+            "name": "Median ransom payment ($K)",
+            "values": [
+              200,
+              170,
+              150,
+              200,
+              400,
+              250,
+              140,
+              325
+            ],
+            "color": "#5a8fc4"
+          }
+        ]
+      },
+      "preferred_chart": "line"
+    },
+    {
+      "type": "chart",
+      "id": "coveware-quarterly-ransomware-2025-q4-industry-mix",
+      "title": "Most targeted industries in Q4 2025",
+      "description": "Professional Services (18.92%) and Healthcare (15.32%) absorbed the largest share of ransomware cases handled by Coveware in Q4 2025. The mix reflects attackers' preference for downtime-sensitive verticals with strong pressure to restore operations quickly.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [
+        "Healthcare",
+        "Technology",
+        "Financial Services",
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "industry-targeting",
+        "victimology",
+        "sector-breakdown"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Industry & Victim Profile",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Professional Services",
+          "Healthcare",
+          "Tech Hardware & Equipment",
+          "Consumer Services",
+          "Software Services",
+          "Financial Services",
+          "Retailing",
+          "Public Sector"
+        ],
+        "series": [
+          {
+            "name": "Share of Q4 2025 cases",
+            "values": [
+              18.92,
+              15.32,
+              9.91,
+              9.01,
+              7.21,
+              6.31,
+              6.31,
+              5.41
+            ],
+            "color": "#003366"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "coveware-quarterly-ransomware-2025-q4-company-size",
+      "title": "Ransomware victims skew to small and mid-size firms",
+      "description": "More than two-thirds of Q4 2025 ransomware incidents hit organizations with fewer than 1,000 employees: 38% had 11-100 employees and 31% had 101-1,000. Coveware reads this as evidence that attackers continue to target smaller, operationally constrained organizations rather than global enterprises.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "company-size",
+        "smb",
+        "victim-profile"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Company Size Distribution",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "11-100",
+          "101-1,000",
+          "1,001-10,000",
+          "25,001-50,000",
+          "50,001-100,000",
+          "Over 100,000"
+        ],
+        "series": [
+          {
+            "name": "Share of Q4 2025 attacks",
+            "values": [
+              38,
+              31,
+              17,
+              0,
+              3,
+              2
+            ],
+            "color": "#003366"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "coveware-quarterly-ransomware-2025-q4-mitre-tactics",
+      "title": "MITRE ATT&CK tactics observed in Q4 2025",
+      "description": "Coveware mapped Q4 2025 case telemetry to the MITRE ATT&CK framework, with Lateral Movement (65%) and Exfiltration (61% observed) appearing in most engagements. Defense Evasion, Impact, and Credential Access round out the top five recurring tactics.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "mitre-attack",
+        "ttp",
+        "tactics"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "MITRE ATT&CK Tactics",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Lateral Movement",
+          "Exfiltration",
+          "Defense Evasion",
+          "Impact",
+          "Credential Access"
+        ],
+        "series": [
+          {
+            "name": "Share of Q4 2025 cases",
+            "values": [
+              65,
+              61,
+              43,
+              41,
+              39
+            ],
+            "color": "#003366"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "coveware-quarterly-ransomware-2025-q4-attack-vectors",
+      "title": "Initial access shifts toward remote and identity abuse",
+      "description": "Coveware's qualitative ranking of Q4 2025 initial attack vectors places Remote Access Compromise far in front, followed by Software Vulnerability Exploitation and Phishing / Social Engineering. The mix reflects attackers abusing legitimate access workflows and exploiting unpatched edge systems rather than relying on user-clicked malware.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "initial-access",
+        "vpn",
+        "rdp",
+        "oauth",
+        "social-engineering"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Initial Attack Vectors",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Remote Access Compromise",
+          "Software Vulnerability Exploitation",
+          "Phishing / Social Engineering",
+          "Other"
+        ],
+        "series": [
+          {
+            "name": "Relative prevalence (Q4 2025)",
+            "values": [
+              55,
+              25,
+              15,
+              5
+            ],
+            "color": "#003366"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "stat",
+      "id": "coveware-quarterly-ransomware-2025-q4-payment-rate",
+      "title": "Ransom payment rate hits new historical low",
+      "description": "Only roughly 20% of ransomware victims paid a ransom in Q4 2025, the lowest share Coveware has recorded. The drop extends a multi-year downward trajectory observed since 2020, as improved backups and recovery planning let more organizations restore operations without engaging attackers.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "payment-rate",
+        "victim-behavior",
+        "historical-low",
+        "spark-from-8"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Payment Rate Trends",
+      "comparison": "vs prior quarters since 2020",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "sparkline",
+      "value": "~20%",
+      "spark": [
+        37,
+        34,
+        28,
+        27,
+        23,
+        20
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "coveware-quarterly-ransomware-2025-q4-median-payment",
+      "title": "Median ransom payment jumps 132% QoQ",
+      "description": "The median ransom payment rose to $325,000 in Q4 2025, a 132% increase from Q3 2025. The spike reflects fewer but larger settlements concentrated on cases involving encryption-related operational disruption rather than data-exfiltration pressure.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "median-ransom",
+        "ransom-payment",
+        "negotiation",
+        "spark-from-8"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Key Financial Metrics",
+      "comparison": "+132% from Q3 2025",
+      "trend": "increasing",
+      "value_unit": "usd",
+      "card_style": "sparkline",
+      "value": "$325K",
+      "spark": [
+        200,
+        170,
+        200,
+        400,
+        140,
+        325
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "coveware-quarterly-ransomware-2025-q4-average-payment",
+      "title": "Average ransom payment climbs to $591,988",
+      "description": "Coveware's average ransom payment reached $591,988 in Q4 2025, up 57% from Q3 2025. The divergence from the median underscores skewed economics, with a small number of outsized settlements pulling the mean upward.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "average-ransom",
+        "ransom-payment",
+        "skewed-economics",
+        "spark-from-8"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Key Financial Metrics",
+      "comparison": "+57% from Q3 2025",
+      "trend": "increasing",
+      "value_unit": "usd",
+      "card_style": "sparkline",
+      "value": "$591,988",
+      "spark": [
+        550,
+        480,
+        553,
+        1130,
+        377,
+        592
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "coveware-quarterly-ransomware-2025-q4-median-company-size",
+      "title": "Median victim shrinks to 200 employees",
+      "description": "The median size of organizations impacted dropped 45% from Q3 2025 to just 200 employees. Coveware says ransomware actors continue to skew toward smaller, operationally constrained targets where downtime pressure is acute and defenses thinner.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "smb-targeting",
+        "victim-profile",
+        "company-size"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Company Size Distribution",
+      "comparison": "-45% from Q3 2025",
+      "trend": "decreasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "200"
+    },
+    {
+      "type": "stat",
+      "id": "coveware-quarterly-ransomware-2025-q4-dxf-payment-rate",
+      "title": "Data exfiltration-only payment rate stuck at ~25%",
+      "description": "Even in cases without encryption, only about a quarter of victims paid in Q4 2025. Coveware notes this rate is structurally low and demonstrates that pure data-exfiltration extortion continues to convert poorly for threat actors.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "data-exfiltration",
+        "extortion",
+        "payment-rate"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Key Financial Metrics",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "~25%"
+    },
+    {
+      "type": "stat",
+      "id": "coveware-quarterly-ransomware-2025-q4-lateral-movement",
+      "title": "Lateral movement observed in 65% of incidents",
+      "description": "Lateral Movement (MITRE ATT&CK TA0008) was the most frequently observed tactic in Q4 2025 cases, appearing in 65% of intrusions. The dominance underscores how readily attackers expand from initial footholds once inside.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "mitre-attack",
+        "lateral-movement",
+        "ttp"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "MITRE ATT&CK Tactics",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "65%"
+    },
+    {
+      "type": "stat",
+      "id": "coveware-quarterly-ransomware-2025-q4-exfiltration-rate",
+      "title": "Exfiltration confirmed in 94% of cases overall",
+      "description": "Data exfiltration was confirmed in 94% of all Coveware-handled incidents in Q4 2025, including 62% of cases where encryption was also present. The number reflects quieter, faster theft methods and the entrenchment of extortion-only pressure models.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "exfiltration",
+        "double-extortion",
+        "mitre-attack"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "MITRE ATT&CK Tactics",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "94%"
+    },
+    {
+      "type": "stat",
+      "id": "coveware-quarterly-ransomware-2025-q4-encryption-rate",
+      "title": "Encryption confirmed in 68% of Impact cases",
+      "description": "Of the 41% of Q4 2025 cases where MITRE Impact (TA0040) tactics were observed, encryption was confirmed in 68% of them. The figure reinforces Coveware's view that encryption-based operational disruption remains the strongest lever for inducing payment.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "encryption",
+        "impact",
+        "mitre-attack"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "MITRE ATT&CK Tactics",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "68%"
+    },
+    {
+      "type": "stat",
+      "id": "coveware-quarterly-ransomware-2025-q4-akira-share",
+      "title": "Akira reclaims top variant slot at 14%",
+      "description": "Akira led all ransomware variants Coveware tracked in Q4 2025, accounting for 14% of cases. Coveware expects encryption-reliant actors like Akira and Qilin to continue outperforming data-exfiltration-only operators on conversion to payment.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "akira",
+        "ransomware-variants",
+        "market-share"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top Ransomware Variants",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "14%"
+    },
+    {
+      "type": "stat",
+      "id": "coveware-quarterly-ransomware-2025-q4-professional-services",
+      "title": "Professional services hit hardest at 18.9%",
+      "description": "Professional Services firms absorbed the largest share of Coveware's Q4 2025 ransomware caseload at 18.92%. Coveware attributes the concentration to high downtime sensitivity and pressure to restore client-facing operations quickly.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "professional-services",
+        "industry-targeting"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Industry & Victim Profile",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "18.9%"
+    },
+    {
+      "type": "stat",
+      "id": "coveware-quarterly-ransomware-2025-q4-healthcare-share",
+      "title": "Healthcare 15.3% of Q4 ransomware caseload",
+      "description": "Healthcare organizations accounted for 15.32% of ransomware cases handled by Coveware in Q4 2025, the second-most targeted sector. Pressure to restore patient-care systems quickly keeps the sector firmly in attackers' sights.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [
+        "Healthcare"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "healthcare",
+        "industry-targeting"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Industry & Victim Profile",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "15.3%"
+    },
+    {
+      "type": "stat",
+      "id": "coveware-quarterly-ransomware-2025-q4-defensive-evolution",
+      "title": "Largest defensive shift in five years",
+      "description": "Coveware describes the steady decline in ransom payment rates as one of the most meaningful defensive evolutions of the past five years, driven by better backups, mature legal counsel, and a clearer view of payment's long-term risks.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Incident Response",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "defense",
+        "resilience",
+        "backups"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Strategic Implications",
+      "comparison": null,
+      "trend": "decreasing",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "5-year shift"
+    },
+    {
+      "type": "stat",
+      "id": "coveware-quarterly-ransomware-2025-q4-exec-quote",
+      "title": "DXF-only extortion is a legal problem, not a negotiation",
+      "description": "Coveware reframes data-exfiltration-only extortion as something to be managed through legal, regulatory, and communications planning rather than ransom negotiation. The framing captures the report's central strategic conclusion for Q4 2025.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "strategy",
+        "extortion",
+        "communications"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Strategic Implications",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"DXF-only extortion is best managed as a legal, regulatory, and communications challenge, not a negotiation problem.\""
+    },
+    {
+      "type": "stat",
+      "id": "coveware-quarterly-ransomware-2025-q4-attacker-access-quote",
+      "title": "Attackers operating within controls, not breaking them",
+      "description": "Coveware highlights that remote access compromise dominates Q4 2025 entry vectors because adversaries are abusing legitimate provisioning, OAuth, and delegated-trust workflows. This shifts the defensive challenge from prevention of intrusion to scrutiny of granted access.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "initial-access",
+        "identity",
+        "oauth",
+        "remote-access"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Initial Attack Vectors",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Attackers are not breaking controls so much as operating within them: logging in, being provisioned, or inheriting access through workflows designed for legitimate use.\""
+    },
+    {
+      "type": "stat",
+      "id": "coveware-quarterly-ransomware-2025-q4-reextortion-quote",
+      "title": "Stolen data is retained, resold, or re-leveraged",
+      "description": "Coveware argues that even paying victims gain little durable protection because exfiltrated data continues to circulate. The view is reshaping how legal counsel and incident responders frame the value of payment.",
+      "source": "Coveware",
+      "source_short": "Coveware",
+      "color": "#003366",
+      "year": 2026,
+      "category": "Cyber Insurance",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "re-extortion",
+        "data-leaks",
+        "insurance"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Why Data Exfiltration Pressure Has Failed",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Stolen data is frequently retained, resold, or re-leveraged, regardless of payment.\""
+    }
+  ]
+}

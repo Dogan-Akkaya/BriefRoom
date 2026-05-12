@@ -1,0 +1,975 @@
+{
+  "reportId": "f5-labs-advanced-persistent-bots-2025",
+  "title": "2025 Advanced Persistent Bots Report",
+  "source": "F5 Labs",
+  "sourceShort": "F5 Labs",
+  "organizationId": "f5-labs",
+  "publicationDate": "2025-03-28",
+  "year": 2025,
+  "sourceUrl": "https://www.f5.com/labs/articles/2025-advanced-persistent-bots-report",
+  "extractedOn": "2026-05-11",
+  "color": "#C8102E",
+  "cards": [
+    {
+      "id": "f5-labs-apb-2025-overall-automation-share",
+      "type": "stat",
+      "cardStyle": "number",
+      "title": "Bots are 10.2% of all HTTP traffic across F5 customers",
+      "description": "Out of 200+ billion web and API transactions analyzed (Nov 2023 - Sep 2024), 10.2% (21.22B requests) were automated traffic. F5 mitigated 4.8% as unwanted bots, 3.5% were monitoring-mode flagged automation, and 2.0% were known financial aggregators.",
+      "value": "10.2%",
+      "quote": null,
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "F5 Labs",
+      "sourceShort": "F5 Labs",
+      "color": "#C8102E",
+      "year": 2025,
+      "category": "Bots & Automation",
+      "industry": [],
+      "region": [
+        "Global"
+      ],
+      "threatType": [
+        "bots"
+      ],
+      "tags": [
+        "http-traffic-share",
+        "200b-transactions",
+        "bot-defense"
+      ],
+      "featured": false,
+      "comparison": "21.22B of 200B+ transactions",
+      "trend": "stable",
+      "valueUnit": "percent",
+      "pageOrSection": "Executive Summary",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "f5-labs-apb-2025-automation-breakdown",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Composition of automated HTTP traffic in F5 dataset",
+      "description": "Breakdown of the 10.2% automated share of HTTP traffic: 4.8% unwanted bots mitigated by F5, 3.5% flagged automation in monitoring mode, and 2.0% known financial aggregators - across 200+ billion transactions.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Unwanted bots mitigated",
+          "Flagged automation (monitoring)",
+          "Financial aggregators"
+        ],
+        "series": [
+          {
+            "name": "Share of all HTTP traffic (%)",
+            "values": [
+              4.8,
+              3.5,
+              2.0
+            ],
+            "color": "#C8102E"
+          }
+        ]
+      },
+      "preferredChart": "bar",
+      "source": "F5 Labs",
+      "sourceShort": "F5 Labs",
+      "color": "#C8102E",
+      "year": 2025,
+      "category": "Bots & Automation",
+      "industry": [],
+      "region": [
+        "Global"
+      ],
+      "threatType": [
+        "bots",
+        "credential_stuffing"
+      ],
+      "tags": [
+        "traffic-mix",
+        "mitigation"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "stable",
+      "valueUnit": "percent",
+      "pageOrSection": "Headline Findings",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "f5-labs-apb-2025-web-industry-automation",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Web automation share by industry (top sectors)",
+      "description": "Hospitality leads all web sectors at 44.8% automated traffic, followed by Technology at 33.5% (login endpoints), Healthcare at 32.6%, and eCommerce at 22.7%. Insurance recorded the lowest rate of automated attacks.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Hospitality",
+          "Technology (login)",
+          "Healthcare",
+          "eCommerce"
+        ],
+        "series": [
+          {
+            "name": "Automated share of web traffic (%)",
+            "values": [
+              44.8,
+              33.5,
+              32.6,
+              22.7
+            ],
+            "color": "#C8102E"
+          }
+        ]
+      },
+      "preferredChart": "bar",
+      "source": "F5 Labs",
+      "sourceShort": "F5 Labs",
+      "color": "#C8102E",
+      "year": 2025,
+      "category": "Bots & Automation",
+      "industry": [
+        "Hospitality",
+        "Technology",
+        "Healthcare",
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "Global"
+      ],
+      "threatType": [
+        "bots"
+      ],
+      "tags": [
+        "web",
+        "sector-breakdown",
+        "hospitality"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "stable",
+      "valueUnit": "percent",
+      "pageOrSection": "Industry Breakdown - Web",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "f5-labs-apb-2025-mobile-api-industry",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Mobile API automation by industry",
+      "description": "Entertainment dominates mobile-API automation at 23.0% (down from 34.5% in 2023), while eCommerce mobile APIs run at 4.5%. Telecommunications mobile APIs show the highest advanced-bot sophistication of any sector.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Entertainment",
+          "eCommerce"
+        ],
+        "series": [
+          {
+            "name": "Automated share of mobile API traffic (%)",
+            "values": [
+              23.0,
+              4.5
+            ],
+            "color": "#C8102E"
+          }
+        ]
+      },
+      "preferredChart": "bar",
+      "source": "F5 Labs",
+      "sourceShort": "F5 Labs",
+      "color": "#C8102E",
+      "year": 2025,
+      "category": "Bots & Automation",
+      "industry": [
+        "Entertainment",
+        "Retail & E-Commerce",
+        "Telecommunications"
+      ],
+      "region": [
+        "Global"
+      ],
+      "threatType": [
+        "bots",
+        "api_attacks"
+      ],
+      "tags": [
+        "mobile-api",
+        "sector-breakdown"
+      ],
+      "featured": false,
+      "comparison": "Entertainment 23.0% vs 34.5% in 2023",
+      "trend": "decreasing",
+      "valueUnit": "percent",
+      "pageOrSection": "Industry Breakdown - Mobile API",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "f5-labs-apb-2025-web-yoy-changes",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Year-over-year change in web automation by sector",
+      "description": "60% of industry-platform combos saw decreased automation. Telecom (-18.5%), Healthcare (-10.0%), and Airlines (-9.2%) posted the largest declines, while Hospitality (+18.3%) and QSR (+11.2%) saw automation surge.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Telecom",
+          "Healthcare",
+          "Airlines",
+          "Hospitality",
+          "QSR"
+        ],
+        "series": [
+          {
+            "name": "YoY change in web automation (pp)",
+            "values": [
+              -18.5,
+              -10.0,
+              -9.2,
+              18.3,
+              11.2
+            ],
+            "color": "#C8102E"
+          }
+        ]
+      },
+      "preferredChart": "bar",
+      "source": "F5 Labs",
+      "sourceShort": "F5 Labs",
+      "color": "#C8102E",
+      "year": 2025,
+      "category": "Bots & Automation",
+      "industry": [
+        "Telecommunications",
+        "Healthcare",
+        "Transportation",
+        "Hospitality",
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "Global"
+      ],
+      "threatType": [
+        "bots"
+      ],
+      "tags": [
+        "yoy",
+        "web",
+        "sector-trend"
+      ],
+      "featured": false,
+      "comparison": "vs prior 2024 edition",
+      "trend": "mixed",
+      "valueUnit": "percent",
+      "pageOrSection": "Year-over-Year Changes",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "f5-labs-apb-2025-web-sophistication-mix",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Bot sophistication on web platforms",
+      "description": "24.0% of automated web traffic is advanced bots, 21.5% intermediate, and approximately 54.5% basic. Advanced bots execute JavaScript, simulate full browser user behavior, and generate device telemetry.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Basic",
+          "Advanced",
+          "Intermediate"
+        ],
+        "series": [
+          {
+            "name": "Share of automated web traffic (%)",
+            "values": [
+              54.5,
+              24.0,
+              21.5
+            ],
+            "color": "#C8102E"
+          }
+        ]
+      },
+      "preferredChart": "pie",
+      "source": "F5 Labs",
+      "sourceShort": "F5 Labs",
+      "color": "#C8102E",
+      "year": 2025,
+      "category": "Bots & Automation",
+      "industry": [],
+      "region": [
+        "Global"
+      ],
+      "threatType": [
+        "bots"
+      ],
+      "tags": [
+        "sophistication",
+        "web",
+        "advanced-bots"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "stable",
+      "valueUnit": "percent",
+      "pageOrSection": "Bot Sophistication",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "f5-labs-apb-2025-mobile-sophistication-mix",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Bot sophistication on mobile APIs",
+      "description": "Mobile APIs see a different mix than the web: 40.0% intermediate, 13.5% advanced, and approximately 46.5% basic bots. Operators tune sophistication to bypass mobile SDK token defenses.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Basic",
+          "Intermediate",
+          "Advanced"
+        ],
+        "series": [
+          {
+            "name": "Share of automated mobile API traffic (%)",
+            "values": [
+              46.5,
+              40.0,
+              13.5
+            ],
+            "color": "#C8102E"
+          }
+        ]
+      },
+      "preferredChart": "pie",
+      "source": "F5 Labs",
+      "sourceShort": "F5 Labs",
+      "color": "#C8102E",
+      "year": 2025,
+      "category": "Bots & Automation",
+      "industry": [],
+      "region": [
+        "Global"
+      ],
+      "threatType": [
+        "bots",
+        "api_attacks"
+      ],
+      "tags": [
+        "sophistication",
+        "mobile-api"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "stable",
+      "valueUnit": "percent",
+      "pageOrSection": "Bot Sophistication",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "f5-labs-apb-2025-advanced-bot-sectors",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Sectors with most advanced bots on the web",
+      "description": "General Retail leads at 47.78% advanced bots, followed by Airlines at 43.10% and Banking at 37.90%. These verticals attract the most resourced bot operators thanks to direct monetization paths.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "General Retail",
+          "Airlines",
+          "Banking"
+        ],
+        "series": [
+          {
+            "name": "Advanced bot share of automation (%)",
+            "values": [
+              47.78,
+              43.1,
+              37.9
+            ],
+            "color": "#C8102E"
+          }
+        ]
+      },
+      "preferredChart": "bar",
+      "source": "F5 Labs",
+      "sourceShort": "F5 Labs",
+      "color": "#C8102E",
+      "year": 2025,
+      "category": "Bots & Automation",
+      "industry": [
+        "Retail & E-Commerce",
+        "Transportation",
+        "Financial Services"
+      ],
+      "region": [
+        "Global"
+      ],
+      "threatType": [
+        "bots"
+      ],
+      "tags": [
+        "advanced-bots",
+        "sector-breakdown",
+        "web"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "stable",
+      "valueUnit": "percent",
+      "pageOrSection": "Bot Sophistication - Industry",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "f5-labs-apb-2025-credential-stuffing-web",
+      "type": "stat",
+      "cardStyle": "number",
+      "title": "Credential stuffing share of web auth traffic",
+      "description": "On web platforms, 10.6% of authentication traffic was credential stuffing across F5 customers. Technology logins peaked at 33.5%, General Retail at 25.7%, and Gaming at 19.6%.",
+      "value": "10.6%",
+      "quote": null,
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "F5 Labs",
+      "sourceShort": "F5 Labs",
+      "color": "#C8102E",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [
+        "Technology",
+        "Retail & E-Commerce",
+        "Gaming"
+      ],
+      "region": [
+        "Global"
+      ],
+      "threatType": [
+        "credential_stuffing",
+        "bots"
+      ],
+      "tags": [
+        "auth-endpoint",
+        "ato",
+        "web"
+      ],
+      "featured": false,
+      "comparison": "Tech 33.5% / Retail 25.7% / Gaming 19.6%",
+      "trend": "stable",
+      "valueUnit": "percent",
+      "pageOrSection": "Credential Stuffing - Web",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "f5-labs-apb-2025-credential-stuffing-mobile",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Credential stuffing on mobile APIs by industry",
+      "description": "Mobile API auth traffic ran 5.2% credential stuffing overall, but Entertainment and eCommerce both peaked at 24.0% - signaling concentrated account-takeover pressure on consumer apps.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Entertainment",
+          "eCommerce",
+          "General Retail",
+          "Overall mobile API"
+        ],
+        "series": [
+          {
+            "name": "Credential stuffing share of auth traffic (%)",
+            "values": [
+              24.0,
+              24.0,
+              7.1,
+              5.2
+            ],
+            "color": "#C8102E"
+          }
+        ]
+      },
+      "preferredChart": "bar",
+      "source": "F5 Labs",
+      "sourceShort": "F5 Labs",
+      "color": "#C8102E",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [
+        "Entertainment",
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "Global"
+      ],
+      "threatType": [
+        "credential_stuffing",
+        "api_attacks"
+      ],
+      "tags": [
+        "mobile-api",
+        "ato",
+        "auth-endpoint"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "stable",
+      "valueUnit": "percent",
+      "pageOrSection": "Credential Stuffing - Mobile API",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "f5-labs-apb-2025-telecom-mobile-advanced-cs",
+      "type": "stat",
+      "cardStyle": "number",
+      "title": "Telecom mobile APIs face 50% advanced credential stuffing",
+      "description": "Half of all credential-stuffing attempts on Telecommunications mobile APIs come from advanced bots - the highest advanced-attack share of any sector. eCommerce mobile APIs follow at 44.82% advanced.",
+      "value": "50%",
+      "quote": null,
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "F5 Labs",
+      "sourceShort": "F5 Labs",
+      "color": "#C8102E",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [
+        "Telecommunications",
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "Global"
+      ],
+      "threatType": [
+        "credential_stuffing",
+        "api_attacks"
+      ],
+      "tags": [
+        "advanced-bots",
+        "telecom",
+        "mobile-api"
+      ],
+      "featured": false,
+      "comparison": "eCommerce 44.82% advanced",
+      "trend": "increasing",
+      "valueUnit": "percent",
+      "pageOrSection": "Credential Stuffing Sophistication",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "f5-labs-apb-2025-content-scraping-share",
+      "type": "stat",
+      "cardStyle": "number",
+      "title": "Bots make up 50%+ of web content requests",
+      "description": "Web scrapers are the single largest bot category, accounting for more than half of all content requests on protected web properties. Ratings flows run 91.44% advanced bots, while pure scraping is 90.48% basic.",
+      "value": ">50%",
+      "quote": null,
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "F5 Labs",
+      "sourceShort": "F5 Labs",
+      "color": "#C8102E",
+      "year": 2025,
+      "category": "Bots & Automation",
+      "industry": [],
+      "region": [
+        "Global"
+      ],
+      "threatType": [
+        "bots"
+      ],
+      "tags": [
+        "scraping",
+        "content",
+        "ai-agents"
+      ],
+      "featured": false,
+      "comparison": "Ratings 91.44% advanced; Scraping 90.48% basic",
+      "trend": "increasing",
+      "valueUnit": "percent",
+      "pageOrSection": "Flow-Type Analysis",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "f5-labs-apb-2025-ai-driven-scraping-growth",
+      "type": "stat",
+      "cardStyle": "number",
+      "title": "AI agents drive 47.7% YoY rise in web content scraping",
+      "description": "Web content-scraping traffic grew 47.7% year over year, with F5 attributing the surge to AI-agent activity from OpenAI, Anthropic, Perplexity, and Google. Gift Card flows (-13.6%) and Web Shop (-7.6%) declined over the same period.",
+      "value": "+47.7%",
+      "quote": null,
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "F5 Labs",
+      "sourceShort": "F5 Labs",
+      "color": "#C8102E",
+      "year": 2025,
+      "category": "Bots & Automation",
+      "industry": [],
+      "region": [
+        "Global"
+      ],
+      "threatType": [
+        "bots"
+      ],
+      "tags": [
+        "ai-agents",
+        "openai",
+        "anthropic",
+        "perplexity",
+        "yoy"
+      ],
+      "featured": false,
+      "comparison": "vs prior 12-month baseline",
+      "trend": "increasing",
+      "valueUnit": "percent",
+      "pageOrSection": "AI Agents and Scraping",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "f5-labs-apb-2025-l7-flow-automation",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Layer-7 web flow automation by use case",
+      "description": "Automation concentrates in specific layer-7 flows: 50%+ of content requests, ~25% of Search, and 20%+ of Add-to-Cart traffic comes from bots - especially reseller bots competing for inventory.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Content / Scraping",
+          "Search",
+          "Add to Cart"
+        ],
+        "series": [
+          {
+            "name": "Automated share of flow (%)",
+            "values": [
+              50,
+              25,
+              20
+            ],
+            "color": "#C8102E"
+          }
+        ]
+      },
+      "preferredChart": "bar",
+      "source": "F5 Labs",
+      "sourceShort": "F5 Labs",
+      "color": "#C8102E",
+      "year": 2025,
+      "category": "Bots & Automation",
+      "industry": [
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "Global"
+      ],
+      "threatType": [
+        "bots"
+      ],
+      "tags": [
+        "layer-7",
+        "flow-type",
+        "reseller-bots"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "increasing",
+      "valueUnit": "percent",
+      "pageOrSection": "Flow-Type Analysis",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "f5-labs-apb-2025-residential-proxy-cellular",
+      "type": "stat",
+      "cardStyle": "number",
+      "title": "Every cellular IP now carries some bot traffic",
+      "description": "F5 monitors 20+ distinct proxyware families. Marketing claims of 100M+ residential proxy nodes are overstated - in practice only 2-3 million nodes are reachable per day, but coverage of cellular IP space is near-total.",
+      "value": "20+",
+      "quote": "Virtually every single cellular IP address passes some bot traffic.",
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "F5 Labs",
+      "sourceShort": "F5 Labs",
+      "color": "#C8102E",
+      "year": 2025,
+      "category": "Bots & Automation",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Global"
+      ],
+      "threatType": [
+        "bots"
+      ],
+      "tags": [
+        "residential-proxy",
+        "proxyware",
+        "cellular",
+        "ip-reputation"
+      ],
+      "featured": false,
+      "comparison": "Claims 100M+ vs ~2-3M reachable per day",
+      "trend": "increasing",
+      "valueUnit": "count",
+      "pageOrSection": "Residential Proxy Ecosystem",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "f5-labs-apb-2025-proxylib-android-apps",
+      "type": "stat",
+      "cardStyle": "number",
+      "title": "PROXYLIB ecosystem spans 28+ repackaged Android apps",
+      "description": "F5 documented at least 28 repackaged Android applications using the PROXYLIB SDK, communicating with 7+ primary C2 domains and reselling residential exit nodes under 6+ rebrands (asocks.com, ake.net, blackproxy.io, nexusnet.io, sx.org, any-page.io).",
+      "value": "28+",
+      "quote": null,
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "F5 Labs",
+      "sourceShort": "F5 Labs",
+      "color": "#C8102E",
+      "year": 2025,
+      "category": "Bots & Automation",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "Global"
+      ],
+      "threatType": [
+        "bots",
+        "supply_chain",
+        "infostealer"
+      ],
+      "tags": [
+        "proxylib",
+        "android",
+        "residential-proxy",
+        "lumiapps",
+        "appmonetize"
+      ],
+      "featured": false,
+      "comparison": "7+ C2 domains; 6+ proxy rebrands",
+      "trend": "increasing",
+      "valueUnit": "count",
+      "pageOrSection": "PROXYLIB Ecosystem",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "f5-labs-apb-2025-mitigation-mobile-effect",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Mobile API automation drops 85% once mitigation is enabled",
+      "description": "Median unauthorized automation on mobile APIs falls from 6.11% in monitoring mode to 0.90% when F5 mitigation is enabled. Zero unauthorized bots reached origin servers across the dataset.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Monitoring mode",
+          "Mitigation enabled"
+        ],
+        "series": [
+          {
+            "name": "Median unauthorized automation (%)",
+            "values": [
+              6.11,
+              0.9
+            ],
+            "color": "#C8102E"
+          }
+        ]
+      },
+      "preferredChart": "bar",
+      "source": "F5 Labs",
+      "sourceShort": "F5 Labs",
+      "color": "#C8102E",
+      "year": 2025,
+      "category": "Bots & Automation",
+      "industry": [],
+      "region": [
+        "Global"
+      ],
+      "threatType": [
+        "bots",
+        "api_attacks"
+      ],
+      "tags": [
+        "mitigation",
+        "mobile-api",
+        "before-after"
+      ],
+      "featured": false,
+      "comparison": "-85% median reduction",
+      "trend": "decreasing",
+      "valueUnit": "percent",
+      "pageOrSection": "Mitigation Effectiveness",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "f5-labs-apb-2025-web-mitigation-retries",
+      "type": "stat",
+      "cardStyle": "number",
+      "title": "71.4% of web flows see MORE bot retries after mitigation",
+      "description": "On the web, the median unauthorized automation actually ticked up from 7.04% (monitoring) to 7.94% (mitigation enabled) - and 71.4% of flows saw increased automation attempts post-mitigation. The rise reflects persistent operator retries, not control failure: zero unauthorized bots reached origin servers.",
+      "value": "71.4%",
+      "quote": null,
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "F5 Labs",
+      "sourceShort": "F5 Labs",
+      "color": "#C8102E",
+      "year": 2025,
+      "category": "Bots & Automation",
+      "industry": [],
+      "region": [
+        "Global"
+      ],
+      "threatType": [
+        "bots"
+      ],
+      "tags": [
+        "mitigation",
+        "persistence",
+        "retries",
+        "web"
+      ],
+      "featured": false,
+      "comparison": "7.04% monitoring vs 7.94% mitigated median",
+      "trend": "increasing",
+      "valueUnit": "percent",
+      "pageOrSection": "Mitigation Effectiveness",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "f5-labs-apb-2025-hospitality-seasonality",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Hospitality web automation peaks at 55% in July",
+      "description": "Hospitality web bot traffic swings from a 34.01% low in May to a 54.90% peak in July, tracking summer travel booking activity. The seasonality pattern signals scraping and account-stuffing against loyalty programs.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "May (low)",
+          "July (peak)"
+        ],
+        "series": [
+          {
+            "name": "Hospitality web automation (%)",
+            "values": [
+              34.01,
+              54.9
+            ],
+            "color": "#C8102E"
+          }
+        ]
+      },
+      "preferredChart": "bar",
+      "source": "F5 Labs",
+      "sourceShort": "F5 Labs",
+      "color": "#C8102E",
+      "year": 2025,
+      "category": "Bots & Automation",
+      "industry": [
+        "Hospitality"
+      ],
+      "region": [
+        "Global"
+      ],
+      "threatType": [
+        "bots",
+        "credential_stuffing"
+      ],
+      "tags": [
+        "seasonality",
+        "hospitality",
+        "travel"
+      ],
+      "featured": false,
+      "comparison": "May 34.01% vs July 54.90%",
+      "trend": "increasing",
+      "valueUnit": "percent",
+      "pageOrSection": "Seasonality",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "f5-labs-apb-2025-entertainment-mobile-seasonality",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Entertainment mobile API automation swings 5x by month",
+      "description": "Entertainment mobile API bot traffic ranges from a 41.29% high in November to an 8.21% low in June, recovering to 14.82% by September. Streaming launch cycles drive the peaks.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "November (peak)",
+          "June (low)",
+          "September"
+        ],
+        "series": [
+          {
+            "name": "Entertainment mobile API automation (%)",
+            "values": [
+              41.29,
+              8.21,
+              14.82
+            ],
+            "color": "#C8102E"
+          }
+        ]
+      },
+      "preferredChart": "line",
+      "source": "F5 Labs",
+      "sourceShort": "F5 Labs",
+      "color": "#C8102E",
+      "year": 2025,
+      "category": "Bots & Automation",
+      "industry": [
+        "Entertainment"
+      ],
+      "region": [
+        "Global"
+      ],
+      "threatType": [
+        "bots",
+        "api_attacks",
+        "credential_stuffing"
+      ],
+      "tags": [
+        "seasonality",
+        "entertainment",
+        "mobile-api",
+        "streaming"
+      ],
+      "featured": false,
+      "comparison": "Nov 41.29% vs Jun 8.21%",
+      "trend": "mixed",
+      "valueUnit": "percent",
+      "pageOrSection": "Seasonality",
+      "updatedAt": "2026-05-11"
+    }
+  ]
+}

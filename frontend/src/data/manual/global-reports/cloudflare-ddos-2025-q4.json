@@ -1,0 +1,1127 @@
+{
+  "source": "Cloudflare",
+  "source_short": "Cloudflare",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/cloudflare-ddos-2025-q4.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.939Z. Curated top 10 of 23 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-cloudflare-ddos-2025-q4",
+      "title": "DDoS Threat Report for 2025 Q4",
+      "year": 2025,
+      "category": "DDoS",
+      "color": "#F38020",
+      "description": "Cloudflare's autonomous systems mitigated 5,376 DDoS attacks every hour on average across 2025, split between network-layer (L3/4) and HTTP-layer (L7) traffic. Network-layer attacks dominate the hourly mix.",
+      "external_url": "https://blog.cloudflare.com/ddos-threat-report-2025-q4/",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "2024",
+          "2025"
+        ],
+        "series": [
+          {
+            "name": "Network-layer attacks (millions)",
+            "values": [
+              11.4,
+              34.4
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "industry": [
+        "Telecommunications",
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Latin America"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "external-report",
+        "network-layer",
+        "yoy",
+        "l3-l4",
+        "aisuru-kimwolf",
+        "peak-vs-average",
+        "campaign",
+        "industry-ranking",
+        "targets",
+        "geo-targets",
+        "ranking",
+        "q4-2025",
+        "source-countries",
+        "origination",
+        "latam",
+        "l7",
+        "hourly-rate",
+        "mitigation",
+        "hyper-volumetric",
+        "syn-flood",
+        "mirai",
+        "ssdp",
+        "multi-vector",
+        "q1-2025",
+        "asn",
+        "cloud-abuse",
+        "source",
+        "mitigation-rate",
+        "hourly",
+        "trend"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2026-05-11",
+      "report_meta": {
+        "report_id": "cloudflare-ddos-2025-q4",
+        "organization_id": "cloudflare",
+        "publication_date": null,
+        "extracted_on": "2026-05-11",
+        "source_url": "https://blog.cloudflare.com/ddos-threat-report-2025-q4/",
+        "card_count_total": 23,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "cloudflare-ddos-2025-q4-network-layer-tripled"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-ddos-2025-q4-network-layer-tripled",
+      "title": "Network-layer DDoS attacks tripled in 2025",
+      "description": "Network-layer (L3/4) DDoS attacks rose from 11.4 million in 2024 to 34.4 million in 2025, more than tripling year over year. The category drove most of the year's overall growth.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "network-layer",
+        "yoy",
+        "l3-l4"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attack Volume Surge",
+      "comparison": "vs 2024",
+      "trend": "increasing",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "2024",
+          "2025"
+        ],
+        "series": [
+          {
+            "name": "Network-layer attacks (millions)",
+            "values": [
+              11.4,
+              34.4
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-ddos-2025-q4-xmas-peaks",
+      "title": "Aisuru-Kimwolf campaign: average vs peak attack size",
+      "description": "Across the Q4 hyper-volumetric campaign, average attack sizes reached 4 Tbps, 3 Bpps and 54 Mrps, while peaks hit 24 Tbps, 9 Bpps and 205 Mrps. Bit-rate values normalized to Tbps for visualization.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [
+        "Telecommunications",
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "aisuru-kimwolf",
+        "peak-vs-average",
+        "campaign"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "The Night Before Christmas Campaign",
+      "comparison": "peak vs average",
+      "trend": "increasing",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Tbps",
+          "Bpps",
+          "Mrps"
+        ],
+        "series": [
+          {
+            "name": "Average",
+            "values": [
+              4,
+              3,
+              54
+            ],
+            "color": "#F38020"
+          },
+          {
+            "name": "Peak",
+            "values": [
+              24,
+              9,
+              205
+            ],
+            "color": "#8B3A0E"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-ddos-2025-q4-top-target-industries",
+      "title": "Top targeted industries in Q4 2025",
+      "description": "Telecommunications and Service Providers became the most-attacked industry in Q4 2025, displacing IT & Services. Gambling, Gaming, Computer Software and Business Services round out the top six.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [
+        "Telecommunications",
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "industry-ranking",
+        "targets"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Target Industry Analysis",
+      "comparison": "Telecom overtakes IT & Services",
+      "trend": "unknown",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Telecom & Service Providers",
+          "IT & Services",
+          "Gambling & Casinos",
+          "Gaming",
+          "Computer Software",
+          "Business Services"
+        ],
+        "series": [
+          {
+            "name": "Industry rank (1 = most attacked)",
+            "values": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-ddos-2025-q4-top-target-locations",
+      "title": "Top 10 most-attacked locations in Q4 2025",
+      "description": "China remained the top targeted location in Q4 2025, with Hong Kong jumping 12 spots to #2 and the UK leaping 36 places to #6. Values are inverse rank (11 minus rank) so taller bars represent more-attacked locations.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [],
+      "region": [
+        "Asia Pacific",
+        "Europe",
+        "North America"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "geo-targets",
+        "ranking",
+        "q4-2025"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Geographic Distribution",
+      "comparison": "UK +36 spots; Hong Kong +12 spots",
+      "trend": "unknown",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "China",
+          "Hong Kong",
+          "Germany",
+          "Brazil",
+          "United States",
+          "United Kingdom",
+          "Vietnam",
+          "Azerbaijan",
+          "India",
+          "Singapore"
+        ],
+        "series": [
+          {
+            "name": "Inverse rank score",
+            "values": [
+              10,
+              9,
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-ddos-2025-q4-top-source-countries",
+      "title": "Top 10 attack source countries in Q4 2025",
+      "description": "Bangladesh dethroned Indonesia as the top DDoS source country in Q4 2025, while Argentina jumped 20 spots to #4. Values are inverse rank so taller bars represent larger attack origination.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [],
+      "region": [
+        "Asia Pacific",
+        "Latin America",
+        "Europe"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "source-countries",
+        "origination",
+        "ranking",
+        "latam"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Geographic Distribution",
+      "comparison": "Bangladesh overtakes Indonesia; Argentina +20",
+      "trend": "unknown",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Bangladesh",
+          "Ecuador",
+          "Indonesia",
+          "Argentina",
+          "Hong Kong",
+          "Ukraine",
+          "Vietnam",
+          "Taiwan",
+          "Singapore",
+          "Peru"
+        ],
+        "series": [
+          {
+            "name": "Inverse rank score",
+            "values": [
+              10,
+              9,
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-ddos-2025-q4-network-vs-http-hourly",
+      "title": "Average DDoS attacks mitigated per hour (2025)",
+      "description": "Cloudflare's autonomous systems mitigated 5,376 DDoS attacks every hour on average across 2025, split between network-layer (L3/4) and HTTP-layer (L7) traffic. Network-layer attacks dominate the hourly mix.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "l3-l4",
+        "l7",
+        "hourly-rate",
+        "mitigation"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attack Volume Surge",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Network-layer (L3/4)",
+          "HTTP-based (L7)"
+        ],
+        "series": [
+          {
+            "name": "Attacks per hour",
+            "values": [
+              3925,
+              1451
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-ddos-2025-q4-xmas-campaign-mix",
+      "title": "'Night Before Christmas' hyper-volumetric attack mix",
+      "description": "Starting December 19, 2025, the Aisuru-Kimwolf botnet launched 902 hyper-volumetric DDoS incidents averaging 53 per day, split across packet-, bit-, and request-intensive vectors.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [
+        "Telecommunications",
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "aisuru-kimwolf",
+        "campaign",
+        "hyper-volumetric"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "The Night Before Christmas Campaign",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Packet-intensive",
+          "Bit-intensive",
+          "Request-intensive"
+        ],
+        "series": [
+          {
+            "name": "Hyper-volumetric attacks",
+            "values": [
+              384,
+              329,
+              189
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-ddos-2025-q4-q1-campaign",
+      "title": "Q1 2025 18-day network-layer campaign targets",
+      "description": "An 18-day Q1 2025 multi-vector campaign generated 13.5 million attacks, divided between Magic Transit customers (6.9M) and Cloudflare's own infrastructure (6.6M). Vectors included SYN floods, Mirai-generated attacks and SSDP amplification.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "syn-flood",
+        "mirai",
+        "ssdp",
+        "multi-vector",
+        "q1-2025"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Network-Layer Attack Campaign (Q1 2025)",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Magic Transit customers",
+          "Cloudflare infrastructure"
+        ],
+        "series": [
+          {
+            "name": "Attacks (millions)",
+            "values": [
+              6.9,
+              6.6
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-ddos-2025-q4-top-source-asns",
+      "title": "Top 5 attack source ASNs in Q4 2025",
+      "description": "Cloud computing platforms dominated DDoS origination in Q4 2025. DigitalOcean led, followed by Microsoft, Tencent, Oracle and Hetzner — underlining cloud abuse as a primary attack pipeline.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "asn",
+        "cloud-abuse",
+        "source"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Network Infrastructure Analysis",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "DigitalOcean (AS14061)",
+          "Microsoft (AS8075)",
+          "Tencent (AS132203)",
+          "Oracle (AS31898)",
+          "Hetzner (AS24940)"
+        ],
+        "series": [
+          {
+            "name": "Inverse rank score",
+            "values": [
+              5,
+              4,
+              3,
+              2,
+              1
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-ddos-2025-q4-hourly-trend",
+      "title": "Hourly DDoS mitigation rate growth",
+      "description": "Cloudflare's average hourly DDoS mitigation rate climbed steadily through 2025, finishing at 5,376 attacks blocked every hour. The sparkline traces an approximate quarterly progression.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "mitigation-rate",
+        "hourly",
+        "trend"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attack Volume Surge",
+      "comparison": "doubling YoY",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "sparkline",
+      "value": "5,376/hr",
+      "spark": [
+        3400,
+        3900,
+        4500,
+        4900,
+        5100,
+        5376
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-ddos-2025-q4-qoq-growth",
+      "title": "Q4 2025 DDoS attack growth vs Q3",
+      "description": "Total DDoS attack volume rose 31% from Q3 to Q4 2025, and was 58% higher than the equivalent Q4 in 2024, marking sustained quarterly escalation.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "qoq",
+        "trend"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Q4 2025 Highlights",
+      "comparison": "+31% vs Q3 2025; +58% vs Q4 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+31% QoQ"
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-ddos-2025-q4-hypervol-size-growth",
+      "title": "Hyper-volumetric attack size growth since late 2024",
+      "description": "The size of hyper-volumetric DDoS attacks ballooned more than 700% in 2025 compared with the largest attacks observed in late 2024, with Q4 alone adding a 40% jump over Q3.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "hyper-volumetric",
+        "scale",
+        "growth"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Hyper-Volumetric DDoS Escalation",
+      "comparison": "vs late 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+700%"
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-ddos-2025-q4-growth-since-2023",
+      "title": "DDoS attack growth since 2023",
+      "description": "Cloudflare's mitigated DDoS attacks have grown 236% since 2023, reflecting both a larger Internet footprint and increasingly aggressive botnet activity led by Mirai-class and Aisuru-Kimwolf variants.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "multi-year-trend",
+        "growth"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Annual 2025 Metrics",
+      "comparison": "vs 2023",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+236%"
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-ddos-2025-q4-hypervol-qoq",
+      "title": "Hyper-volumetric attack QoQ growth in Q4",
+      "description": "Hyper-volumetric DDoS incidents rose 40% from Q3 to Q4 2025, capping a year of record-setting attack scale led by the Aisuru-Kimwolf botnet.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "hyper-volumetric",
+        "qoq"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Q4 2025 Highlights",
+      "comparison": "vs Q3 2025",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+40% QoQ"
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-ddos-2025-q4-peak-tbps",
+      "title": "Record-setting DDoS peak in Q4 2025",
+      "description": "Cloudflare mitigated a record 31.4 Tbps DDoS attack during Q4 2025, the largest publicly disclosed DDoS attack to date. The assault lasted only 35 seconds but defined the year's escalation in attack scale.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [
+        "Telecommunications",
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "hyper-volumetric",
+        "aisuru-kimwolf",
+        "record-attack",
+        "tbps"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Executive Summary",
+      "comparison": "new record vs. prior public peaks",
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "31.4 Tbps"
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-ddos-2025-q4-total-attacks-2025",
+      "title": "Total DDoS attacks mitigated in 2025",
+      "description": "Cloudflare mitigated 47.1 million DDoS attacks across 2025, more than doubling year over year. This represents a 121% surge versus 2024 and a 236% increase since 2023.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "annual-total",
+        "yoy-growth"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Key Statistics",
+      "comparison": "+121% YoY vs 2024",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "47.1M"
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-ddos-2025-q4-peak-mrps",
+      "title": "Peak HTTP DDoS rate during Q4 campaign",
+      "description": "The Aisuru-Kimwolf 'Night Before Christmas' campaign drove peak HTTP DDoS rates of 205 million requests per second — Cloudflare compares this to the combined populations of the UK, Germany and Spain all hitting Enter simultaneously.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [
+        "Telecommunications",
+        "Technology"
+      ],
+      "region": [
+        "Europe",
+        "North America"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "http-ddos",
+        "mrps",
+        "aisuru-kimwolf",
+        "l7"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "The Night Before Christmas Campaign",
+      "comparison": "new peak",
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "205 Mrps"
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-ddos-2025-q4-network-share",
+      "title": "Network-layer share of Q4 DDoS incidents",
+      "description": "In Q4 2025, network-layer (L3/4) attacks made up 78% of all DDoS incidents Cloudflare mitigated, with HTTP DDoS attacks comprising the remainder.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "l3-l4",
+        "mix",
+        "share"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Q4 2025 Highlights",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "78%"
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-ddos-2025-q4-aisuru-botnet-size",
+      "title": "Aisuru-Kimwolf botnet size",
+      "description": "The Aisuru-Kimwolf botnet powering the Q4 hyper-volumetric campaign is estimated at 1 to 4 million compromised Android TV devices distributed worldwide.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Europe",
+        "North America"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "aisuru-kimwolf",
+        "botnet",
+        "iot",
+        "android-tv"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "The Night Before Christmas Campaign",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "1-4M devices"
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-ddos-2025-q4-record-duration",
+      "title": "Duration of the record 31.4 Tbps attack",
+      "description": "The record 31.4 Tbps Q4 2025 DDoS attack lasted just 35 seconds, illustrating the trend toward extremely high-intensity, short-duration hyper-volumetric assaults.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "record",
+        "short-duration",
+        "hyper-volumetric"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Hyper-Volumetric DDoS Escalation",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "seconds",
+      "card_style": "number",
+      "value": "35s"
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-ddos-2025-q4-botnet-feed-adoption",
+      "title": "Networks subscribed to Cloudflare's DDoS Botnet Threat Feed",
+      "description": "Over 800 networks worldwide have adopted Cloudflare's free DDoS Botnet Threat Feed for Service Providers, using it to identify and take down abusive IPs and compromised accounts upstream.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [
+        "Telecommunications",
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "threat-intel",
+        "feed",
+        "adoption"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Defense Community Resources",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "800+"
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-ddos-2025-q4-quote-tripled",
+      "title": "Network-layer attacks 'more than tripled'",
+      "description": "Cloudforce One's framing of 2025's defining network-layer trend captures the shift from incremental growth to multi-fold escalation.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "network-layer",
+        "yoy",
+        "narrative"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attack Volume Surge",
+      "comparison": "2025 vs 2024",
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Network-layer attacks experienced the most substantial growth, more than tripled year over year, reaching 34.4 million incidents compared to 11.4 million in 2024.\""
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-ddos-2025-q4-quote-night-before-christmas",
+      "title": "On the scale of a 205 Mrps assault",
+      "description": "Cloudflare's analogy for the peak HTTP DDoS rate underscores the human scale of hyper-volumetric Layer 7 attacks driven by the Aisuru-Kimwolf botnet.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [
+        "Telecommunications",
+        "Technology"
+      ],
+      "region": [
+        "Europe",
+        "North America"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "analogy",
+        "narrative",
+        "aisuru-kimwolf"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Critical Infrastructure Impact",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"The scale of a 205 Mrps DDoS attack is comparable to the combined populations of the UK, Germany, and Spain all simultaneously typing a website address and hitting 'enter' at the same second.\""
+    }
+  ]
+}

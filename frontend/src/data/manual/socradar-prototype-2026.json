@@ -1,0 +1,207 @@
+{
+  "source": "SOCRadar (briefradar_v2 prototype seed)",
+  "source_short": "SOCRadar",
+  "year": 2026,
+  "real": true,
+  "notes": "Initial port of backend/migrations/002_seed.sql. 9 charts covering 6 categories. Per-item `source` override carries the cited attribution where it differs (IBM/Ponemon, NVD).",
+  "items": [
+    {
+      "type": "chart",
+      "id": "socradar-rw-volume-by-industry-q1-2026",
+      "title": "Ransomware Attack Volume by Industry",
+      "dataset": {
+        "labels": ["Healthcare", "Financial Services", "Manufacturing", "Government", "Technology", "Energy & Utilities", "Education", "Retail & E-Commerce"],
+        "series": [
+          { "name": "Q4 2025", "values": [82, 90, 60, 52, 42, 35, 30, 22], "color": "#FF456288" },
+          { "name": "Q1 2026", "values": [98, 87, 72, 58, 45, 38, 32, 24], "color": "#FF4562" }
+        ]
+      },
+      "preferred_chart": "bar",
+      "industry": ["Healthcare", "Financial Services", "Manufacturing", "Government", "Technology", "Energy & Utilities", "Education", "Retail & E-Commerce"],
+      "region": ["North America", "Europe", "Asia Pacific", "Latin America", "Middle East", "Africa"],
+      "threat_type": ["ransomware"],
+      "featured": false,
+      "tags": ["by-industry", "quarterly"],
+      "updated_at": "2026-03-31"
+    },
+    {
+      "type": "chart",
+      "id": "socradar-rw-payment-trend-2025-2026",
+      "title": "Average Ransom Payment Trend",
+      "dataset": {
+        "labels": ["Q1 2025", "Q2 2025", "Q3 2025", "Q4 2025", "Q1 2026"],
+        "series": [
+          { "name": "Avg payment ($K)", "values": [980, 1050, 1120, 1150, 1200], "color": "#FF4562" }
+        ]
+      },
+      "preferred_chart": "line",
+      "industry": ["Financial Services", "Healthcare", "Technology", "Government", "Manufacturing", "Energy & Utilities", "Retail & E-Commerce", "Telecommunications", "Education", "Transportation"],
+      "region": ["North America", "Europe", "Asia Pacific", "Latin America", "Middle East", "Africa"],
+      "threat_type": ["ransomware"],
+      "featured": false,
+      "tags": ["trend", "quarterly", "global"],
+      "updated_at": "2026-03-31",
+      "display": {
+        "trend": "+22% YoY",
+        "up": true,
+        "detail": "Avg ransom payment crossed $1.2M in Q1 2026 — a 22% increase over Q1 2025.",
+        "metrics": [
+          { "label": "Q1 2026 avg", "value": "$1.2M" },
+          { "label": "YoY change", "value": "+22%" }
+        ]
+      }
+    },
+    {
+      "type": "chart",
+      "id": "socradar-rw-top-groups-q1-2026",
+      "title": "Top Ransomware Groups by Posting Volume",
+      "dataset": {
+        "labels": ["LockBit 4.0", "BlackCat/ALPHV", "Cl0p", "Play", "Royal", "Akira", "Medusa", "NoEscape"],
+        "series": [
+          { "name": "Q4 2025", "values": [118, 82, 72, 55, 45, 35, 28, 22], "color": "#FF456288" },
+          { "name": "Q1 2026", "values": [142, 98, 85, 67, 52, 48, 38, 31], "color": "#FF4562" }
+        ]
+      },
+      "preferred_chart": "bar",
+      "industry": ["Financial Services", "Healthcare", "Technology", "Government", "Manufacturing", "Energy & Utilities", "Retail & E-Commerce", "Telecommunications", "Education", "Transportation"],
+      "region": ["North America", "Europe", "Asia Pacific", "Latin America", "Middle East", "Africa"],
+      "threat_type": ["ransomware"],
+      "featured": false,
+      "tags": ["by-actor", "quarterly", "leak-sites"],
+      "updated_at": "2026-03-31"
+    },
+    {
+      "type": "chart",
+      "id": "socradar-phish-click-rates-q1-2026",
+      "title": "Phishing Click-Through Rates by Sector",
+      "dataset": {
+        "labels": ["Healthcare", "Financial Services", "Education", "Government", "Retail & E-Commerce", "Technology"],
+        "series": [
+          { "name": "Q4 2025", "values": [4.8, 3.5, 4.1, 2.8, 2.6, 2.0], "color": "#F59E0B88" },
+          { "name": "Q1 2026", "values": [5.2, 3.8, 4.6, 3.1, 2.9, 2.2], "color": "#F59E0B" }
+        ]
+      },
+      "preferred_chart": "bar",
+      "industry": ["Healthcare", "Financial Services", "Education", "Government", "Retail & E-Commerce", "Technology"],
+      "region": ["North America", "Europe", "Asia Pacific", "Latin America", "Middle East", "Africa"],
+      "threat_type": ["phishing"],
+      "featured": false,
+      "tags": ["by-industry", "quarterly", "click-rate"],
+      "updated_at": "2026-03-31"
+    },
+    {
+      "type": "chart",
+      "id": "ibm-breach-cost-by-industry-2026",
+      "title": "Cost of a Data Breach by Industry (2026)",
+      "source": "IBM / Ponemon Institute 2026",
+      "dataset": {
+        "labels": ["Healthcare", "Financial Services", "Pharmaceuticals", "Technology", "Energy & Utilities", "Education", "Government", "Retail & E-Commerce"],
+        "series": [
+          { "name": "Avg breach cost ($M)", "values": [10.9, 5.9, 4.8, 4.7, 4.6, 3.7, 2.6, 2.4], "color": "#3B82F6" }
+        ]
+      },
+      "preferred_chart": "bar",
+      "industry": ["Healthcare", "Financial Services", "Technology", "Energy & Utilities", "Education", "Government", "Retail & E-Commerce"],
+      "region": ["North America", "Europe", "Asia Pacific", "Latin America", "Middle East", "Africa"],
+      "threat_type": ["data_leaks"],
+      "featured": false,
+      "tags": ["by-industry", "yearly", "cost"],
+      "updated_at": "2026-03-31"
+    },
+    {
+      "type": "chart",
+      "id": "ibm-breach-cost-trend-2020-2026",
+      "title": "Average Data Breach Cost (Global, 2020–2026)",
+      "source": "IBM / Ponemon Institute 2026",
+      "dataset": {
+        "labels": ["2020", "2021", "2022", "2023", "2024", "2025", "2026"],
+        "series": [
+          { "name": "Avg breach cost ($M)", "values": [3.86, 4.24, 4.35, 4.45, 4.88, 4.95, 4.90], "color": "#3B82F6" }
+        ]
+      },
+      "preferred_chart": "line",
+      "industry": ["Financial Services", "Healthcare", "Technology", "Government", "Manufacturing", "Energy & Utilities", "Retail & E-Commerce", "Telecommunications", "Education", "Transportation"],
+      "region": ["North America", "Europe", "Asia Pacific", "Latin America", "Middle East", "Africa"],
+      "threat_type": ["data_leaks"],
+      "featured": false,
+      "tags": ["trend", "yearly", "global", "cost"],
+      "updated_at": "2026-03-31",
+      "display": {
+        "trend": "+27% since 2020",
+        "up": true,
+        "detail": "Average global breach cost rose from $3.86M (2020) to $4.90M (2026), with a peak at $4.95M in 2025.",
+        "metrics": [
+          { "label": "2026 avg", "value": "$4.9M" },
+          { "label": "Since 2020", "value": "+27%" }
+        ]
+      }
+    },
+    {
+      "type": "chart",
+      "id": "nvd-cve-volume-by-type-q1-2026",
+      "title": "CVE Volume by Vulnerability Type",
+      "source": "NVD",
+      "dataset": {
+        "labels": ["RCE", "Priv Esc", "XSS", "SQLi", "SSRF", "Auth Bypass"],
+        "series": [
+          { "name": "Q4 2025", "values": [290, 250, 200, 160, 128, 105], "color": "#A855F788" },
+          { "name": "Q1 2026", "values": [340, 285, 220, 175, 142, 118], "color": "#A855F7" }
+        ]
+      },
+      "preferred_chart": "bar",
+      "industry": ["Financial Services", "Healthcare", "Technology", "Government", "Manufacturing", "Energy & Utilities", "Retail & E-Commerce", "Telecommunications", "Education", "Transportation"],
+      "region": ["North America", "Europe", "Asia Pacific", "Latin America", "Middle East", "Africa"],
+      "threat_type": ["vulnerability"],
+      "featured": false,
+      "tags": ["by-class", "quarterly", "cve"],
+      "updated_at": "2026-03-31"
+    },
+    {
+      "type": "chart",
+      "id": "socradar-supply-incidents-by-ecosystem-q1-2026",
+      "title": "Supply Chain Incidents by Ecosystem",
+      "dataset": {
+        "labels": ["npm", "PyPI", "Maven", "Docker Hub", "GitHub Actions", "NuGet"],
+        "series": [
+          { "name": "Q4 2025", "values": [52, 45, 32, 40, 38, 22], "color": "#EC489988" },
+          { "name": "Q1 2026", "values": [85, 72, 48, 62, 55, 35], "color": "#EC4899" }
+        ]
+      },
+      "preferred_chart": "bar",
+      "industry": ["Technology", "Financial Services", "Healthcare", "Government", "Manufacturing", "Retail & E-Commerce"],
+      "region": ["North America", "Europe", "Asia Pacific", "Latin America", "Middle East", "Africa"],
+      "threat_type": ["supply_chain"],
+      "featured": false,
+      "tags": ["by-ecosystem", "quarterly", "packages"],
+      "updated_at": "2026-03-31"
+    },
+    {
+      "type": "chart",
+      "id": "socradar-darkweb-access-pricing-q1-2026",
+      "title": "Initial Access Broker Pricing on Dark Web",
+      "dataset": {
+        "labels": ["Corporate VPN", "RDP", "Citrix", "Cloud admin", "Domain admin", "Database"],
+        "series": [
+          { "name": "Q4 2025 ($)", "values": [3800, 2200, 2800, 7200, 10000, 4500], "color": "#14B8A688" },
+          { "name": "Q1 2026 ($)", "values": [4500, 2800, 3200, 8500, 12000, 5200], "color": "#14B8A6" }
+        ]
+      },
+      "preferred_chart": "bar",
+      "industry": ["Financial Services", "Healthcare", "Technology", "Government", "Manufacturing", "Energy & Utilities", "Retail & E-Commerce", "Telecommunications", "Education", "Transportation"],
+      "region": ["North America", "Europe", "Asia Pacific", "Latin America", "Middle East", "Africa"],
+      "threat_type": ["dark_web_mentions"],
+      "featured": false,
+      "tags": ["pricing", "quarterly", "access-brokers"],
+      "updated_at": "2026-03-31",
+      "display": {
+        "trend": "+18% QoQ",
+        "up": true,
+        "detail": "Domain admin access topped pricing at $12,000 in Q1 2026, up 20% QoQ. Corporate VPN access averaged $4,500.",
+        "metrics": [
+          { "label": "Top tier", "value": "$12K" },
+          { "label": "Most listed", "value": "VPN" }
+        ]
+      }
+    }
+  ]
+}

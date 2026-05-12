@@ -1,0 +1,1444 @@
+{
+  "source": "FBI IC3 — Internet Crime Complaint Center",
+  "source_short": "FBI IC3",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/fbi-ic3-internet-crime-report-2025.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.952Z. Curated top 10 of 29 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-fbi-ic3-internet-crime-report-2025",
+      "title": "2025 Internet Crime Report",
+      "year": 2025,
+      "category": "Phishing",
+      "color": "#1B3F8B",
+      "description": "Investment fraud dwarfs every other reported crime category, exceeding BEC by more than 2.8x. Tech-support, personal data breach, and confidence/romance scams round out the top five by dollar losses.",
+      "external_url": "https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "Akira",
+          "Qilin",
+          "INC/Lynx/Sinobi",
+          "BianLian",
+          "Play",
+          "Ransomhub",
+          "Lockbit",
+          "Dragonforce",
+          "SAFEPAY",
+          "Medusa"
+        ],
+        "series": [
+          {
+            "name": "Reported rank (1 = most reported)",
+            "values": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "color": "#1B3F8B"
+          }
+        ]
+      },
+      "industry": [
+        "Healthcare",
+        "Manufacturing",
+        "Government",
+        "Energy & Utilities",
+        "Financial Services"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "data_leaks"
+      ],
+      "tags": [
+        "external-report",
+        "ransomware-variants",
+        "akira",
+        "qilin",
+        "ffkc",
+        "fund-recovery",
+        "critical-infrastructure",
+        "bec",
+        "crime-types",
+        "losses-breakdown",
+        "crypto-crime",
+        "complaint-volume",
+        "age-breakdown",
+        "elder-fraud",
+        "demographics",
+        "state-breakdown",
+        "geography",
+        "ransomware",
+        "industry-targeting",
+        "smb",
+        "cyber-enabled-fraud"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2026-04-23",
+      "report_meta": {
+        "report_id": "fbi-ic3-internet-crime-report-2025",
+        "organization_id": "fbi-ic3",
+        "publication_date": "2026-04-23",
+        "extracted_on": "2026-05-11",
+        "source_url": "https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf",
+        "card_count_total": 29,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "fbi-ic3-internet-crime-report-2025-ransomware-variants"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "fbi-ic3-internet-crime-report-2025-ransomware-variants",
+      "title": "Top 10 reported ransomware variants (2025)",
+      "description": "Akira topped the IC3 ransomware leaderboard for 2025, followed by Qilin and the INC/Lynx/Sinobi family. These ten variants accounted for nearly half (49.8%) of all reported ransomware losses.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [
+        "Healthcare",
+        "Manufacturing",
+        "Government"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ransomware-variants",
+        "akira",
+        "qilin"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top 10 Reported Variants",
+      "comparison": "top 10 = 49.8% of reported ransomware losses",
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Akira",
+          "Qilin",
+          "INC/Lynx/Sinobi",
+          "BianLian",
+          "Play",
+          "Ransomhub",
+          "Lockbit",
+          "Dragonforce",
+          "SAFEPAY",
+          "Medusa"
+        ],
+        "series": [
+          {
+            "name": "Reported rank (1 = most reported)",
+            "values": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "color": "#1B3F8B"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fbi-ic3-internet-crime-report-2025-ffkc-success",
+      "title": "Financial Fraud Kill Chain success rate by critical sector",
+      "description": "Among 655 FFKC actions for critical infrastructure victims, recovery success varied widely. Emergency Services and Energy showed near-perfect recovery (92%, 95%), while Critical Manufacturing trailed at 31%.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [
+        "Energy & Utilities",
+        "Healthcare",
+        "Manufacturing",
+        "Government"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "ffkc",
+        "fund-recovery",
+        "critical-infrastructure",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "FFKC Initiated for Critical Infrastructure",
+      "comparison": "overall 56% across critical sectors",
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Chemical",
+          "Commercial Facilities",
+          "Communications",
+          "Critical Manufacturing",
+          "Defense Industrial Base",
+          "Emergency",
+          "Energy",
+          "Financial",
+          "Food & Agriculture",
+          "Government Facilities",
+          "Healthcare",
+          "Information Technology",
+          "Transportation",
+          "Water/Waste Systems"
+        ],
+        "series": [
+          {
+            "name": "FFKC freeze success rate (%)",
+            "values": [
+              51,
+              31,
+              60,
+              55,
+              48,
+              92,
+              95,
+              53,
+              33,
+              65,
+              67,
+              47,
+              36,
+              100
+            ],
+            "color": "#1B3F8B"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fbi-ic3-internet-crime-report-2025-top-crimes-by-loss",
+      "title": "Top crime types by reported losses (2025)",
+      "description": "Investment fraud dwarfs every other reported crime category, exceeding BEC by more than 2.8x. Tech-support, personal data breach, and confidence/romance scams round out the top five by dollar losses.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "phishing"
+      ],
+      "tags": [
+        "crime-types",
+        "losses-breakdown",
+        "crypto-crime",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "2025 Crime Types — By Complaint Loss",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "usd",
+      "dataset": {
+        "labels": [
+          "Investment",
+          "BEC",
+          "Tech/Customer Support",
+          "Personal Data Breach",
+          "Confidence/Romance",
+          "Govt Impersonation",
+          "Non-Payment/Non-Delivery",
+          "Data Breach",
+          "Employment",
+          "Credit Card/Check Fraud"
+        ],
+        "series": [
+          {
+            "name": "Reported losses (USD)",
+            "values": [
+              8648617756,
+              3046598558,
+              2134675818,
+              1314923988,
+              929287469,
+              797943193,
+              503373587,
+              435240992,
+              362934762,
+              282670235
+            ],
+            "color": "#1B3F8B"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fbi-ic3-internet-crime-report-2025-top-crimes-by-count",
+      "title": "Top crime types by complaint count (2025)",
+      "description": "Phishing/spoofing remains by far the most-reported crime, with 191,561 complaints — more than 2x the next category. Extortion, investment, personal data breach and non-payment/non-delivery follow.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing",
+        "data_leaks"
+      ],
+      "tags": [
+        "crime-types",
+        "complaint-volume",
+        "bec",
+        "crypto-crime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "2025 Crime Types — By Complaint Count",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Phishing/Spoofing",
+          "Extortion",
+          "Investment",
+          "Personal Data Breach",
+          "Non-Payment/Non-Delivery",
+          "Tech/Customer Support",
+          "Govt Impersonation",
+          "Identity Theft",
+          "BEC",
+          "Employment"
+        ],
+        "series": [
+          {
+            "name": "Complaints filed",
+            "values": [
+              191561,
+              89129,
+              72984,
+              67456,
+              56478,
+              47794,
+              32424,
+              31675,
+              24768,
+              24688
+            ],
+            "color": "#1B3F8B"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fbi-ic3-internet-crime-report-2025-losses-by-age",
+      "title": "Reported losses by victim age group",
+      "description": "Older Americans bore the brunt of cybercrime in 2025: victims aged 60+ reported $7.7B in losses, more than 36% of the national total. Losses climb steeply with age while complaint volumes are more evenly distributed.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "phishing"
+      ],
+      "tags": [
+        "age-breakdown",
+        "elder-fraud",
+        "crypto-crime",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "IC3 Complaints in 2025",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "usd",
+      "dataset": {
+        "labels": [
+          "Under 20",
+          "20–29",
+          "30–39",
+          "40–49",
+          "50–59",
+          "60+"
+        ],
+        "series": [
+          {
+            "name": "Reported losses (USD)",
+            "values": [
+              67100000,
+              563100000,
+              1700000000,
+              2957000000,
+              3700000000,
+              7700000000
+            ],
+            "color": "#1B3F8B"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fbi-ic3-internet-crime-report-2025-complaints-by-age",
+      "title": "Complaint counts by victim age group",
+      "description": "Victims aged 60+ filed the most complaints (201,266), but the 40–49 cohort was a close second at 167,066. Younger Americans (under 30) accounted for roughly 14% of all 2025 IC3 complaints.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing",
+        "data_leaks"
+      ],
+      "tags": [
+        "age-breakdown",
+        "demographics",
+        "bec",
+        "crypto-crime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "IC3 Complaints in 2025",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Under 20",
+          "20–29",
+          "30–39",
+          "40–49",
+          "50–59",
+          "60+"
+        ],
+        "series": [
+          {
+            "name": "Complaints",
+            "values": [
+              31254,
+              112069,
+              153293,
+              167066,
+              124820,
+              201266
+            ],
+            "color": "#1B3F8B"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fbi-ic3-internet-crime-report-2025-top-states-by-losses",
+      "title": "Top 10 U.S. states by reported losses",
+      "description": "California led all states with $3.675 billion in reported cybercrime losses in 2025, more than 2x runner-up Texas. The top four (California, Texas, Florida, New York) together account for over $8 billion in reported losses.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing",
+        "data_leaks"
+      ],
+      "tags": [
+        "state-breakdown",
+        "geography",
+        "bec",
+        "crypto-crime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Complaints by State",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "usd",
+      "dataset": {
+        "labels": [
+          "California",
+          "Texas",
+          "Florida",
+          "New York",
+          "New Jersey",
+          "Arizona",
+          "Pennsylvania",
+          "Illinois",
+          "Georgia",
+          "Virginia"
+        ],
+        "series": [
+          {
+            "name": "Reported losses (USD millions)",
+            "values": [
+              3675,
+              1826,
+              1596,
+              1226,
+              660,
+              631,
+              538,
+              535,
+              535,
+              476
+            ],
+            "color": "#1B3F8B"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fbi-ic3-internet-crime-report-2025-top-states-by-complaints",
+      "title": "Top 10 U.S. states by complaint count",
+      "description": "California (116,414) and Texas (97,912) topped state-level complaint volumes, followed by Florida and New York. The top 10 states collectively filed over 500,000 IC3 complaints in 2025.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing",
+        "data_leaks"
+      ],
+      "tags": [
+        "state-breakdown",
+        "geography",
+        "bec",
+        "crypto-crime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Complaints by State",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "California",
+          "Texas",
+          "Florida",
+          "New York",
+          "Illinois",
+          "Pennsylvania",
+          "Arizona",
+          "Ohio",
+          "North Carolina",
+          "Georgia"
+        ],
+        "series": [
+          {
+            "name": "Complaints",
+            "values": [
+              116414,
+              97912,
+              71843,
+              45255,
+              32977,
+              31154,
+              28868,
+              27626,
+              25940,
+              25936
+            ],
+            "color": "#1B3F8B"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fbi-ic3-internet-crime-report-2025-non-critical-ransomware-sectors",
+      "title": "Non-critical sector ransomware complaints by industry",
+      "description": "IC3 received over 1,400 ransomware complaints from organizations outside the 16 critical infrastructure sectors. Legal services topped the list (18%), with contracting, engineering, and consulting firms also heavily targeted.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ransomware",
+        "industry-targeting",
+        "smb"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Non-Critical Sector Ransomware Reporting",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Legal services",
+          "Contracting services",
+          "Engineering/architectural",
+          "Consulting services",
+          "Non-critical manufacturing"
+        ],
+        "series": [
+          {
+            "name": "Share of non-critical sector ransomware complaints (%)",
+            "values": [
+              18,
+              17,
+              10,
+              7,
+              5
+            ],
+            "color": "#1B3F8B"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fbi-ic3-internet-crime-report-2025-cyber-enabled-by-loss",
+      "title": "Top 5 cyber-enabled fraud types by loss",
+      "description": "Among cyber-enabled fraud schemes, investment fraud led with $8.65 billion in losses — nearly 3x BEC's $3.05 billion. Tech-support, romance, and government-impersonation scams round out the top five.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing",
+        "data_leaks"
+      ],
+      "tags": [
+        "cyber-enabled-fraud",
+        "losses-breakdown",
+        "bec",
+        "crypto-crime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Cyber-Enabled Fraud in 2025",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "usd",
+      "dataset": {
+        "labels": [
+          "Investment",
+          "BEC",
+          "Tech Support",
+          "Confidence/Romance",
+          "Govt Impersonation"
+        ],
+        "series": [
+          {
+            "name": "Reported losses (USD)",
+            "values": [
+              8648617756,
+              3046598558,
+              2134675818,
+              929287469,
+              797943193
+            ],
+            "color": "#1B3F8B"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fbi-ic3-internet-crime-report-2025-cyber-enabled-by-count",
+      "title": "Top 5 cyber-enabled fraud types by complaint count",
+      "description": "Extortion (89,129 complaints) was the most-reported cyber-enabled fraud type in 2025, followed by investment, non-payment/non-delivery, tech support, and government impersonation. Volume rankings differ markedly from loss rankings.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "cyber-enabled-fraud",
+        "complaint-volume",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Cyber-Enabled Fraud in 2025",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Extortion",
+          "Investment",
+          "Non-Payment/Non-Delivery",
+          "Tech Support",
+          "Govt Impersonation"
+        ],
+        "series": [
+          {
+            "name": "Complaints filed",
+            "values": [
+              89129,
+              72984,
+              56478,
+              47794,
+              32424
+            ],
+            "color": "#1B3F8B"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "fbi-ic3-internet-crime-report-2025-losses-trend",
+      "title": "Annual IC3 losses 2020–2025",
+      "description": "IC3's reported annual losses climbed from $4.2B in 2020 to $20.9B in 2025 — roughly a 5x increase in six years. The growth has been driven primarily by crypto investment fraud and BEC.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "phishing"
+      ],
+      "tags": [
+        "losses-trend",
+        "historical",
+        "crypto-crime",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Losses by Year",
+      "comparison": "~5x increase from 2020",
+      "trend": "increasing",
+      "value_unit": "usd",
+      "card_style": "sparkline",
+      "value": "$20.9B",
+      "spark": [
+        4.2,
+        6.9,
+        10.3,
+        12.5,
+        16.6,
+        20.877
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "fbi-ic3-internet-crime-report-2025-complaints-trend",
+      "title": "Annual complaints crossed 1M in 2025",
+      "description": "Yearly complaints to IC3 have grown steadily, doubling from roughly 467K in 2019 to over 1 million in 2025. Volume reflects both improving public awareness and the worsening cybercrime landscape.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing",
+        "data_leaks"
+      ],
+      "tags": [
+        "complaints-trend",
+        "bec",
+        "crypto-crime",
+        "spark-from-7"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Complaints by Year",
+      "comparison": "first time over 1M",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "sparkline",
+      "value": "1.01M",
+      "spark": [
+        467,
+        791,
+        847,
+        880,
+        859,
+        1008
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "fbi-ic3-internet-crime-report-2025-total-losses",
+      "title": "Total reported cybercrime losses hit $20.9B in 2025",
+      "description": "Losses reported to IC3 surpassed the $20 billion mark for the first time in 2025, climbing to $20.877 billion. This represents a 26% jump from the $16.6 billion lost in 2024.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing",
+        "data_leaks"
+      ],
+      "tags": [
+        "headline",
+        "losses",
+        "ic3",
+        "bec",
+        "crypto-crime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "IC3 Complaints in 2025",
+      "comparison": "+26% YoY vs $16.6B (2024)",
+      "trend": "increasing",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$20.9B"
+    },
+    {
+      "type": "stat",
+      "id": "fbi-ic3-internet-crime-report-2025-investment-fraud",
+      "title": "Investment fraud losses topped $8.6B — largest category",
+      "description": "Investment fraud was once again the costliest crime type reported to IC3, with $8.65 billion in losses across 72,984 complaints. Crypto-investment 'pig-butchering' schemes drove a large share of these losses.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Cryptocurrency Crime",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "investment-fraud",
+        "pig-butchering",
+        "crypto-crime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "2025 Crime Types — By Complaint Loss",
+      "comparison": "largest loss category in 2025",
+      "trend": "increasing",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$8.65B"
+    },
+    {
+      "type": "stat",
+      "id": "fbi-ic3-internet-crime-report-2025-bec-losses",
+      "title": "BEC losses reached $3.05B in 2025",
+      "description": "Business Email Compromise (BEC) was the second-largest source of reported losses at $3.046 billion. BEC remained a top target for the IC3 Recovery Asset Team's Financial Fraud Kill Chain process.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "bec",
+        "wire-fraud"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "2025 Crime Types — By Complaint Loss",
+      "comparison": "2nd-largest loss category",
+      "trend": "unknown",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$3.05B"
+    },
+    {
+      "type": "stat",
+      "id": "fbi-ic3-internet-crime-report-2025-crypto-losses",
+      "title": "Cryptocurrency-nexus losses reached $11.4B",
+      "description": "Complaints with a cryptocurrency nexus totalled 181,565 (a 21% increase from 2024) and accounted for $11.367 billion in losses — a 22% YoY rise. The average crypto-related loss hit $62,604.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Cryptocurrency Crime",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "cryptocurrency",
+        "investment-fraud",
+        "crypto-crime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Cryptocurrency",
+      "comparison": "+22% YoY losses, +21% YoY complaints",
+      "trend": "increasing",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$11.4B"
+    },
+    {
+      "type": "stat",
+      "id": "fbi-ic3-internet-crime-report-2025-elder-fraud",
+      "title": "Victims aged 60+ lost $7.7B — a 59% YoY spike",
+      "description": "Complainants aged 60 and older filed 201,266 complaints (up 37% YoY) and reported losses of $7.748 billion, a 59% increase from 2024. The average elder-fraud loss was $38,500, with 12,444 seniors losing more than $100,000 each.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "phishing"
+      ],
+      "tags": [
+        "elder-fraud",
+        "seniors",
+        "60-plus",
+        "crypto-crime",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "IC3 Elder Fraud",
+      "comparison": "+59% YoY losses, +37% YoY complaints",
+      "trend": "increasing",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$7.7B"
+    },
+    {
+      "type": "stat",
+      "id": "fbi-ic3-internet-crime-report-2025-recovery-asset-team",
+      "title": "Recovery Asset Team froze $679M of fraudulent transfers",
+      "description": "The IC3 Recovery Asset Team initiated 3,900 Financial Fraud Kill Chain (FFKC) incidents covering $1.16 billion in attempted theft. The team helped freeze $679 million — a 58% recovery rate.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "ffkc",
+        "recovery-asset-team",
+        "fund-recovery",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "IC3 Recovery Asset Team",
+      "comparison": "58% success rate",
+      "trend": "unknown",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$679M"
+    },
+    {
+      "type": "stat",
+      "id": "fbi-ic3-internet-crime-report-2025-ransomware-headline",
+      "title": "3,600+ ransomware complaints reported $32M in losses",
+      "description": "IC3 received more than 3,600 ransomware complaints in 2025 with reported losses exceeding $32 million. The figure excludes lost business, downtime, remediation costs, and unreported incidents — likely understating true impact significantly.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [
+        "Healthcare",
+        "Manufacturing",
+        "Government"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ransomware",
+        "headline"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware",
+      "comparison": "top 3 variants = 49.8% of losses",
+      "trend": "unknown",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$32M"
+    },
+    {
+      "type": "stat",
+      "id": "fbi-ic3-internet-crime-report-2025-operation-level-up",
+      "title": "Operation Level Up saved $500M+ from crypto scams",
+      "description": "Since launching in January 2024, the FBI-led Operation Level Up has notified more than 8,000 cryptocurrency-investment-fraud victims and prevented over $500 million in losses. In 2025 alone, 3,780 victims were notified — 78% of whom were unaware they were being scammed.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Cryptocurrency Crime",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "operation-level-up",
+        "fbi-operations",
+        "crypto-victims",
+        "crypto-crime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Operation Level Up",
+      "comparison": "since Jan 2024 launch",
+      "trend": "unknown",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$500M+"
+    },
+    {
+      "type": "stat",
+      "id": "fbi-ic3-internet-crime-report-2025-call-center-fraud",
+      "title": "Call-center fraud generated $2.9B in losses",
+      "description": "Tech/customer support and government-impersonation scams — typically run from illegal call centers in Southeast Asia and India — generated more than 80,000 complaints and over $2.9 billion in losses in 2025.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "call-center-fraud",
+        "transnational"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Call Center Fraud",
+      "comparison": "80,000+ complaints",
+      "trend": "increasing",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$2.9B"
+    },
+    {
+      "type": "stat",
+      "id": "fbi-ic3-internet-crime-report-2025-complaint-count",
+      "title": "IC3 received over 1 million complaints in 2025",
+      "description": "The Internet Crime Complaint Center logged 1,008,597 complaints in 2025, averaging nearly 3,000 complaints filed per day. It is the first time IC3 has crossed the seven-figure annual complaint threshold.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing",
+        "data_leaks"
+      ],
+      "tags": [
+        "complaints",
+        "volume",
+        "bec",
+        "crypto-crime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "IC3 Complaints in 2025",
+      "comparison": "first time over 1M complaints",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "1.01M"
+    },
+    {
+      "type": "stat",
+      "id": "fbi-ic3-internet-crime-report-2025-avg-loss",
+      "title": "Average reported loss per victim was $20,699",
+      "description": "Across all complaints in 2025, the average reported loss climbed to $20,699 per victim. The figure reflects the rising effectiveness of high-value scams such as investment fraud, BEC and tech-support fraud.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing",
+        "data_leaks"
+      ],
+      "tags": [
+        "average-loss",
+        "victim-impact",
+        "bec",
+        "crypto-crime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "IC3 Complaints in 2025",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$20,699"
+    },
+    {
+      "type": "stat",
+      "id": "fbi-ic3-internet-crime-report-2025-cyber-enabled-share",
+      "title": "Cyber-enabled fraud drove 85% of all reported losses",
+      "description": "Cyber-enabled fraud — schemes that use the internet or technology to steal money, data, or identities — generated $17.697 billion in losses across 452,868 complaints. That is 45% of IC3 complaints but 85% of total dollar losses for the year.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing",
+        "data_leaks"
+      ],
+      "tags": [
+        "cyber-enabled-fraud",
+        "loss-share",
+        "bec",
+        "crypto-crime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Cyber-Enabled Fraud in 2025",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "85%"
+    },
+    {
+      "type": "stat",
+      "id": "fbi-ic3-internet-crime-report-2025-tech-support",
+      "title": "Tech/customer support scams cost $2.13B",
+      "description": "Tech and customer-support impersonation scams generated $2.135 billion in losses across 47,794 complaints. Call-center based fraud rose so sharply that BEC was no longer the dominant Financial Fraud Kill Chain category in 2025.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "tech-support-scam",
+        "call-center-fraud"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "2025 Crime Types — By Complaint Loss",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$2.13B"
+    },
+    {
+      "type": "stat",
+      "id": "fbi-ic3-internet-crime-report-2025-ai-bec",
+      "title": "AI-enabled BEC scams cost businesses over $30M",
+      "description": "In 2025, businesses reported losses exceeding $30 million to BEC scams involving AI. Generative-AI chat tools are being used to craft official-sounding emails that mimic executive or vendor communications.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "ai-enabled-fraud",
+        "generative-ai",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI-Enabled Fraud",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$30M+"
+    },
+    {
+      "type": "stat",
+      "id": "fbi-ic3-internet-crime-report-2025-exec-quote",
+      "title": "Losses surpass $20 billion for the first time",
+      "description": "The FBI emphasized the acceleration of cyber-enabled fraud in its 2025 introduction, noting that investment fraud — and crypto investment scams in particular — were the dominant loss driver.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "phishing"
+      ],
+      "tags": [
+        "foreword",
+        "narrative",
+        "crypto-crime",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Foreword",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"In 2025, losses reported to IC3 continued to climb, surpassing the $20 billion mark. Investment-related fraud was once again the largest component of these losses.\""
+    },
+    {
+      "type": "stat",
+      "id": "fbi-ic3-internet-crime-report-2025-elder-quote",
+      "title": "Elder fraud emerges as a national crisis",
+      "description": "Per accessibility narration of IC3's elder fraud chart, victims aged 60+ saw their losses balloon almost 60% year-over-year, with more than 12,000 seniors each losing six figures.",
+      "source": "FBI IC3 — Internet Crime Complaint Center",
+      "source_short": "FBI IC3",
+      "color": "#1B3F8B",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "phishing"
+      ],
+      "tags": [
+        "elder-fraud",
+        "seniors",
+        "60-plus",
+        "crypto-crime",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "IC3 Elder Fraud",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"201,266 complaints (37% increase from 2024); $7.748 billion losses (59% increase from 2024); $38,500 average loss; 12,444 complainants lost more than $100K.\""
+    }
+  ]
+}

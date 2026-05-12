@@ -1,0 +1,1537 @@
+{
+  "source": "Fortinet (FortiGuard Labs)",
+  "source_short": "Fortinet",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/fortinet-global-threat-landscape-2025.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.953Z. Curated top 10 of 29 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-fortinet-global-threat-landscape-2025",
+      "title": "Fortinet 2025 Global Threat Landscape Report",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "color": "#DA291C",
+      "description": "FortiGuard Labs broke down scanning traffic by protocol. SIP (VoIP) accounted for more than 49% of detected scans, while Modbus TCP showed 1.6%, reflecting industrial control concerns. Other widely scanned services include RDP and IoT protocols.",
+      "external_url": "https://www.fortinet.com/content/dam/fortinet/assets/threat-reports/threat-landscape-report-2025.pdf",
+      "preferred_chart": "pie",
+      "dataset": {
+        "labels": [
+          "SIP (VoIP)",
+          "Modbus TCP",
+          "Other"
+        ],
+        "series": [
+          {
+            "name": "Share of detected scans",
+            "values": [
+              49,
+              1.6,
+              49.4
+            ],
+            "color": "#DA291C"
+          }
+        ]
+      },
+      "industry": [
+        "Telecommunications",
+        "Energy & Utilities",
+        "Manufacturing",
+        "Technology",
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Latin America"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "logs_on_sale",
+        "dark_web_mentions",
+        "infostealer",
+        "ransomware",
+        "phishing"
+      ],
+      "tags": [
+        "external-report",
+        "sip",
+        "modbus",
+        "scanning",
+        "ot",
+        "voip",
+        "sipvicious",
+        "qualys",
+        "nmap",
+        "scanning-tools",
+        "regional",
+        "exploitation",
+        "geography",
+        "latam",
+        "cve",
+        "log4j",
+        "smb",
+        "netcore",
+        "kev",
+        "iot",
+        "routers",
+        "cameras",
+        "botnet",
+        "edge-devices",
+        "iab",
+        "initial-access-broker",
+        "vpn",
+        "rdp",
+        "redline",
+        "vidar",
+        "racoon",
+        "infostealer",
+        "zero-day",
+        "poc",
+        "exploit-broker",
+        "darknet",
+        "ransomhub",
+        "lockbit",
+        "play",
+        "medusa",
+        "raas",
+        "sector-targeting",
+        "manufacturing",
+        "retail"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2025-05-01",
+      "report_meta": {
+        "report_id": "fortinet-global-threat-landscape-2025",
+        "organization_id": "fortinet",
+        "publication_date": "2025-05-01",
+        "extracted_on": "2026-05-11",
+        "source_url": "https://www.fortinet.com/content/dam/fortinet/assets/threat-reports/threat-landscape-report-2025.pdf",
+        "card_count_total": 29,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "fortinet-global-threat-landscape-2025-scanning-protocols-pie"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "fortinet-global-threat-landscape-2025-scanning-protocols-pie",
+      "title": "SIP dominates protocol scanning at 49%",
+      "description": "FortiGuard Labs broke down scanning traffic by protocol. SIP (VoIP) accounted for more than 49% of detected scans, while Modbus TCP showed 1.6%, reflecting industrial control concerns. Other widely scanned services include RDP and IoT protocols.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Threat Landscape",
+      "industry": [
+        "Telecommunications",
+        "Energy & Utilities",
+        "Manufacturing"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "sip",
+        "modbus",
+        "scanning",
+        "ot",
+        "voip"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Cyber Reconnaissance Surge",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "SIP (VoIP)",
+          "Modbus TCP",
+          "Other"
+        ],
+        "series": [
+          {
+            "name": "Share of detected scans",
+            "values": [
+              49,
+              1.6,
+              49.4
+            ],
+            "color": "#DA291C"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "fortinet-global-threat-landscape-2025-scanning-tools",
+      "title": "SIPVicious drives nearly half of all scanning events",
+      "description": "FortiGuard observed that SIPVicious accounts for nearly 50% of scanning events, followed by Qualys at 2.5%. Nmap, Nessus and OpenVAS appear in smaller shares but remain commonly used for vulnerability discovery.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Threat Landscape",
+      "industry": [
+        "Telecommunications",
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "sipvicious",
+        "qualys",
+        "nmap",
+        "scanning-tools"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Cyber Reconnaissance Surge",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "SIPVicious",
+          "Qualys",
+          "Nmap",
+          "Nessus / OpenVAS"
+        ],
+        "series": [
+          {
+            "name": "Share of scanning events",
+            "values": [
+              50,
+              2.5,
+              1,
+              0.5
+            ],
+            "color": "#DA291C"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fortinet-global-threat-landscape-2025-exploitation-by-region",
+      "title": "APAC absorbs 42% of global exploitation attempts",
+      "description": "Of more than 97 billion exploitation attempts recorded in 2024, APAC accounted for 42.4%, followed by EMEA at 26.3%, North America at 20.2% and LATAM at 11.1%. The geographic spread highlights that attackers operate without borders.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "Asia Pacific",
+        "Europe",
+        "North America",
+        "Latin America"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "regional",
+        "exploitation",
+        "geography",
+        "latam"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Global Distribution of Exploitation Attempts",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "APAC",
+          "EMEA",
+          "North America",
+          "LATAM"
+        ],
+        "series": [
+          {
+            "name": "Share of exploitation attempts (%)",
+            "values": [
+              42.4,
+              26.3,
+              20.2,
+              11.1
+            ],
+            "color": "#DA291C"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "fortinet-global-threat-landscape-2025-top-cves-share",
+      "title": "Top exploited CVEs of 2024 by share of attempts",
+      "description": "FortiGuard IPS telemetry surfaced the most attractive entry points for adversaries. The Windows SMB Information Disclosure flaw (CVE-2017-0147) led with 26.7% of attempts, followed by Apache Log4j (CVE-2021-44228) at 11.6% and the Netcore Netis hardcoded password issue (CVE-2019-18935) at 8%.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "cve",
+        "log4j",
+        "smb",
+        "netcore",
+        "kev"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attackers' favorite entry points",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "CVE-2017-0147 (SMB)",
+          "CVE-2021-44228 (Log4j)",
+          "CVE-2019-18935 (Netcore Netis)"
+        ],
+        "series": [
+          {
+            "name": "Share of exploitation attempts (%)",
+            "values": [
+              26.7,
+              11.6,
+              8
+            ],
+            "color": "#DA291C"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fortinet-global-threat-landscape-2025-iot-targets",
+      "title": "IoT exploitation centers on routers and cameras",
+      "description": "Over 20% of all recorded exploitation attempts targeted IoT devices. Netcore Netis routers led at 18.4%, with WiFi P2P GoAhead cameras at 10.5%, Zyxel firewalls and routers at 3.2%, TP-Link Archer AX21 at 2.1%, and GPON routers at 0.9%.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "IoT & Mobile",
+      "industry": [
+        "Telecommunications",
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "iot",
+        "routers",
+        "cameras",
+        "botnet",
+        "edge-devices"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "IoT Device Exploitation",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Netcore Netis Routers",
+          "WiFi P2P GoAhead Cameras",
+          "Zyxel Firewalls/Routers",
+          "TP-Link Archer AX21",
+          "GPON Routers"
+        ],
+        "series": [
+          {
+            "name": "Share of exploitation attempts (%)",
+            "values": [
+              18.4,
+              10.5,
+              3.2,
+              2.1,
+              0.9
+            ],
+            "color": "#DA291C"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fortinet-global-threat-landscape-2025-iab-assets",
+      "title": "Initial Access Brokers favor VPNs and RDP",
+      "description": "Underground IAB listings centered on enterprise access pathways. Corporate VPN credentials made up 20% of sought-after assets, with RDP at 19%, admin panels at 13% and webshells at 12% rounding out the top categories.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Dark Web",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "logs_on_sale",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "iab",
+        "initial-access-broker",
+        "vpn",
+        "rdp"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Business of corporate infiltration",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Corporate VPN",
+          "RDP",
+          "Admin Panels",
+          "Webshells"
+        ],
+        "series": [
+          {
+            "name": "Share of IAB listings (%)",
+            "values": [
+              20,
+              19,
+              13,
+              12
+            ],
+            "color": "#DA291C"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fortinet-global-threat-landscape-2025-infostealer-share",
+      "title": "Redline dominates the infostealer market",
+      "description": "Among infostealers driving the 500% surge in credential logs, Redline led with 60% share, Vidar followed at 27% and Racoon held 12%. Redline's affordability and ease of use have made it the IAB favorite for ransomware operators.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Dark Web",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer",
+        "logs_on_sale"
+      ],
+      "tags": [
+        "redline",
+        "vidar",
+        "racoon",
+        "infostealer"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Credential Theft-as-a-Service",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Redline",
+          "Vidar",
+          "Racoon"
+        ],
+        "series": [
+          {
+            "name": "Share of infostealer activity (%)",
+            "values": [
+              60,
+              27,
+              12
+            ],
+            "color": "#DA291C"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "fortinet-global-threat-landscape-2025-zeroday-exploit-readiness",
+      "title": "Most darknet zero-days ship with working exploit code",
+      "description": "Of the 331 zero-day vulnerabilities identified in darknet forums in 2024, 55% had publicly available proof-of-concept code, 32% featured fully functional exploits, and 30% were actively being used in ransomware and APT campaigns.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "zero-day",
+        "poc",
+        "exploit-broker",
+        "darknet"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Exploit brokers",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "PoC exploit available",
+          "Fully functional exploit",
+          "Actively exploited (ransomware/APT)"
+        ],
+        "series": [
+          {
+            "name": "Share of 331 darknet zero-days (%)",
+            "values": [
+              55,
+              32,
+              30
+            ],
+            "color": "#DA291C"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fortinet-global-threat-landscape-2025-ransomware-top-groups",
+      "title": "Top four ransomware groups drive 37% of victims",
+      "description": "Out of 1,638 identified ransomware victims in 2024, the top four groups concentrated attacks: RansomHub at 13%, LockBit 3.0 at 12%, Play at 8% and Medusa at 4%. Together they account for 37% of all observed activity despite a fragmented landscape.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Ransomware",
+      "industry": [
+        "Manufacturing"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ransomhub",
+        "lockbit",
+        "play",
+        "medusa",
+        "raas"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware landscape",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "RansomHub",
+          "LockBit 3.0",
+          "Play",
+          "Medusa"
+        ],
+        "series": [
+          {
+            "name": "Share of ransomware victims (%)",
+            "values": [
+              13,
+              12,
+              8,
+              4
+            ],
+            "color": "#DA291C"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fortinet-global-threat-landscape-2025-ransomware-sectors",
+      "title": "Manufacturing leads ransomware target sectors",
+      "description": "Among 1,638 identified ransomware victims, manufacturing was the most targeted at 17%, followed by business services at 11%, construction at 9% and retail at 9%. The mix reflects ransomware's continued focus on operationally sensitive verticals.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Ransomware",
+      "industry": [
+        "Manufacturing",
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "sector-targeting",
+        "manufacturing",
+        "retail"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware landscape",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Manufacturing",
+          "Business Services",
+          "Construction",
+          "Retail"
+        ],
+        "series": [
+          {
+            "name": "Share of ransomware victims (%)",
+            "values": [
+              17,
+              11,
+              9,
+              9
+            ],
+            "color": "#DA291C"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fortinet-global-threat-landscape-2025-ransomware-countries",
+      "title": "United States bears 61% of ransomware victim load",
+      "description": "Ransomware victim geography skewed heavily toward English-speaking markets in 2024. The United States accounted for 61% of identified victims, with the United Kingdom at 6% and Canada at 5%.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "us",
+        "uk",
+        "canada",
+        "victim-geography"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware landscape",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "United States",
+          "United Kingdom",
+          "Canada"
+        ],
+        "series": [
+          {
+            "name": "Share of ransomware victims (%)",
+            "values": [
+              61,
+              6,
+              5
+            ],
+            "color": "#DA291C"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fortinet-global-threat-landscape-2025-apt-share",
+      "title": "Lazarus and Kimsuky lead APT activity",
+      "description": "Fortinet's adversary analysis ranked nation-state activity by share of observed APT campaigns. Lazarus led at 21%, followed by Kimsuky at 18%, APT28 at 13%, Volt Typhoon at 12% and APT29 at 10%; the remaining 26% belonged to other groups.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Threat Actors",
+      "industry": [
+        "Government",
+        "Technology",
+        "Education"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "lazarus",
+        "kimsuky",
+        "apt28",
+        "volt-typhoon",
+        "apt29",
+        "espionage"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Adversary Landscape Analysis",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Lazarus",
+          "Kimsuky",
+          "APT28",
+          "Volt Typhoon",
+          "APT29",
+          "Others"
+        ],
+        "series": [
+          {
+            "name": "Share of APT activity (%)",
+            "values": [
+              21,
+              18,
+              13,
+              12,
+              10,
+              26
+            ],
+            "color": "#DA291C"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fortinet-global-threat-landscape-2025-cloud-mitre-tactics",
+      "title": "Discovery dominates cloud attack tactics",
+      "description": "Lacework FortiCNAPP mapped 2024 cloud incidents to MITRE ATT&CK tactics. Discovery led at 25.3%, followed by Initial Access at 14.7%, Persistence at 12.3%, Privilege Escalation at 10.6%, Impact at 8.4%, Credential Access at 7.9%, Lateral Movement at 6.8%, Defense Evasion at 6.1%, Collection at 3.5%, Exfiltration at 3.3% and Execution at 1.2%.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Cloud Security",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "mitre-attack",
+        "cloud",
+        "lacework",
+        "tactics"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Cloud Battlefield - Distribution of MITRE ATT&CK Tactics",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Discovery",
+          "Initial Access",
+          "Persistence",
+          "Privilege Escalation",
+          "Impact",
+          "Credential Access",
+          "Lateral Movement",
+          "Defense Evasion",
+          "Collection",
+          "Exfiltration",
+          "Execution"
+        ],
+        "series": [
+          {
+            "name": "Share of cloud incidents (%)",
+            "values": [
+              25.3,
+              14.7,
+              12.3,
+              10.6,
+              8.4,
+              7.9,
+              6.8,
+              6.1,
+              3.5,
+              3.3,
+              1.2
+            ],
+            "color": "#DA291C"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fortinet-global-threat-landscape-2025-darknet-credential-suppliers",
+      "title": "BestCombo leads darknet credential trade",
+      "description": "Among the most active credential-supplier groups, BestCombo accounted for 20% of activity, followed by BloddyMery at 12% and ValidMail at 12%. IAB leaders sandocan, F13 and JefryG anchored the corporate-access market at 26%, 16% and 12% respectively.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Dark Web",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "logs_on_sale",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "bestcombo",
+        "sandocan",
+        "iab",
+        "darknet-actors"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Business of corporate infiltration",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "BestCombo",
+          "BloddyMery",
+          "ValidMail",
+          "sandocan",
+          "F13",
+          "JefryG"
+        ],
+        "series": [
+          {
+            "name": "Credential suppliers (%)",
+            "values": [
+              20,
+              12,
+              12,
+              0,
+              0,
+              0
+            ],
+            "color": "#DA291C"
+          },
+          {
+            "name": "Initial Access Brokers (%)",
+            "values": [
+              0,
+              0,
+              0,
+              26,
+              16,
+              12
+            ],
+            "color": "#8B0000"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fortinet-global-threat-landscape-2025-hacktivist-share",
+      "title": "RipperSec leads hacktivist Telegram coordination",
+      "description": "Hacktivists adopted more aggressive tactics in 2024 using Telegram as their primary coordination platform. RipperSec accounted for 20% of campaigns, Z-BL4CX-H4T 14%, and DATABASE LEAKS CYBER TEAM INDONESIA 11%, with over 60% of campaigns tied to geopolitical causes.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "Middle East",
+        "Asia Pacific",
+        "Europe"
+      ],
+      "threat_type": [
+        "ddos",
+        "data_leaks"
+      ],
+      "tags": [
+        "hacktivism",
+        "telegram",
+        "rippersec",
+        "geopolitics",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Hacktivism and ransomware",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "RipperSec",
+          "Z-BL4CX-H4T",
+          "DATABASE LEAKS CYBER TEAM INDONESIA"
+        ],
+        "series": [
+          {
+            "name": "Share of hacktivist activity (%)",
+            "values": [
+              20,
+              14,
+              11
+            ],
+            "color": "#DA291C"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fortinet-global-threat-landscape-2025-cloud-new-logins",
+      "title": "Cloud identity compromise signals",
+      "description": "Lacework FortiCNAPP analysis surfaces the dominant early-warning indicators of cloud identity compromise. New logins from unfamiliar geographies appeared in 70% of cases, while new API activity from existing users surfaced in 20% of cases.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Cloud Security",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "cloud-identity",
+        "lacework",
+        "anomaly"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Silent breach: identity compromise in the cloud",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Unfamiliar-geography login",
+          "New API activity for existing user"
+        ],
+        "series": [
+          {
+            "name": "Share of compromise indicators (%)",
+            "values": [
+              70,
+              20
+            ],
+            "color": "#DA291C"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "fortinet-global-threat-landscape-2025-darknet-scanning-trend",
+      "title": "Scanning detections climbed past 1.16 trillion",
+      "description": "FortiGuard Labs' behavioral trend analysis shows scan detections rose steadily through 2024, reaching 1.16 trillion current detections — a 16.7% increase over the 993 billion logged in 2024 baselines. The trend reflects industrialized reconnaissance.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "scanning",
+        "reconnaissance",
+        "behavioral-trend",
+        "spark-from-10"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Behavioral Trend Analysis by Month",
+      "comparison": "+16.7% YoY",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "sparkline",
+      "value": "1.16T",
+      "spark": [
+        78,
+        86,
+        92,
+        95,
+        101,
+        116
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "fortinet-global-threat-landscape-2025-active-scanning-yoy",
+      "title": "Active scanning rose 16.7% worldwide in 2024",
+      "description": "Reconnaissance reached unprecedented levels in 2024 with active scanning growing 16.71% year over year. FortiGuard Labs observed 1.16 trillion current detections versus 993 billion in 2024.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "reconnaissance",
+        "scanning",
+        "automation",
+        "left-of-boom"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Cyber Reconnaissance Surge",
+      "comparison": "YoY growth in scanning",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+16.7% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "fortinet-global-threat-landscape-2025-infostealer-logs-500",
+      "title": "500% surge in infostealer credential logs",
+      "description": "FortiGuard Labs observed a 500% increase in logs from systems compromised by infostealer malware in 2024, with 1.7 billion stolen credential records shared in underground forums. Redline, Vidar and Racoon led the market.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Dark Web",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer",
+        "logs_on_sale"
+      ],
+      "tags": [
+        "redline",
+        "vidar",
+        "racoon",
+        "credential-theft"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Credential Theft-as-a-Service",
+      "comparison": "vs 2023",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+500%"
+    },
+    {
+      "type": "stat",
+      "id": "fortinet-global-threat-landscape-2025-cve-growth",
+      "title": "CVEs grew 39% from 2023 to 2024",
+      "description": "More than 40,000 vulnerabilities were added to the National Vulnerability Database in 2024, representing a 39% increase over 2023. Despite the surge, zero-day attacks account for only a small share of observed threats.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "cve",
+        "nvd",
+        "vulnerability-disclosure"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Exploit brokers",
+      "comparison": "vs 2023",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+39%"
+    },
+    {
+      "type": "stat",
+      "id": "fortinet-global-threat-landscape-2025-credential-records-shared",
+      "title": "100 billion compromised credential records shared on darknet",
+      "description": "In 2024, more than 100 billion records were shared in underground forums, a 42% increase over 2023. Combo lists dominate, with over 50% of darknet posts tied to leaked databases that fuel credential stuffing.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Dark Web",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "logs_on_sale",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "credentials",
+        "combo-lists",
+        "credential-stuffing"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Shedding Light on the Darknet",
+      "comparison": "+42% vs 2023",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "100B+"
+    },
+    {
+      "type": "stat",
+      "id": "fortinet-global-threat-landscape-2025-ivanti-exploit-speed",
+      "title": "Ivanti CVE-2024-21887 weaponized in 6 days",
+      "description": "CVE-2024-21887, a command injection vulnerability in Ivanti products, was exploited just six days after disclosure. It underscores how quickly adversaries act when opportunity aligns with impact, while the 2024 average time-to-exploit held near the 5.4-day 2023 baseline.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "ivanti",
+        "cve-2024-21887",
+        "time-to-exploit",
+        "weaponization"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Exploitation timeline",
+      "comparison": "vs 5.4-day 2023 average",
+      "trend": "flat",
+      "value_unit": "days",
+      "card_style": "number",
+      "value": "6 days"
+    },
+    {
+      "type": "stat",
+      "id": "fortinet-global-threat-landscape-2025-new-ransomware-groups",
+      "title": "13 new ransomware groups emerged in 2024",
+      "description": "The ransomware ecosystem fragmented further with 13 new leak-site operators including RansomHub, HellCat, Argonauts, InterLock, Bashe (APT73/Eraleig), Termite, Sarcoma, Nitrogen, Lynx, Ransomcortex and Valencia. At least six new RaaS services were advertised.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "raas",
+        "ransomhub",
+        "hellcat",
+        "fragmentation"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "RaaS on the darknet",
+      "comparison": "new in 2024",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "13"
+    },
+    {
+      "type": "stat",
+      "id": "fortinet-global-threat-landscape-2025-cloud-unfamiliar-geo",
+      "title": "70% of cloud incidents involved logins from unfamiliar geographies",
+      "description": "Lacework FortiCNAPP telemetry shows that in 70% of observed cloud incidents, attackers gained access via logins from unfamiliar geographies. The finding underscores the critical role of identity monitoring in cloud defense.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Cloud Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "cloud",
+        "identity",
+        "lacework",
+        "geo-anomaly"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Cloud Battlefield",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "70%"
+    },
+    {
+      "type": "stat",
+      "id": "fortinet-global-threat-landscape-2025-rdp-lateral",
+      "title": "RDP-based lateral movement seen in 88% of incidents",
+      "description": "In 2024 incident investigations, RDP-based lateral movement appeared in 88% of cases. Attackers continue to abuse credential-based RDP for east-west movement, leveraging valid accounts to bypass signature detection.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Detection",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "rdp",
+        "lateral-movement",
+        "fortindr",
+        "living-off-the-land"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Post-Exploitation and Lateral Movement",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "88%"
+    },
+    {
+      "type": "stat",
+      "id": "fortinet-global-threat-landscape-2025-exploitation-attempts-total",
+      "title": "Over 97 billion exploitation attempts recorded in 2024",
+      "description": "Fortinet IPS sensors detected more than 97 billion exploitation attempts during 2024, reflecting how cybercriminals are continuously probing exposed systems. The volume highlights increased automation and broader cross-industry targeting.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "ips",
+        "exploitation",
+        "automation",
+        "fortiguard"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "From Exposure to Initial Access and Exploitation",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "97B"
+    },
+    {
+      "type": "stat",
+      "id": "fortinet-global-threat-landscape-2025-scans-per-second",
+      "title": "Adversaries hit 36,000 scans per second globally",
+      "description": "FortiGuard Labs observed billions of scan attempts each month in 2024, equating to roughly 36,000 scans per second. This reflects intensified focus on mapping exposed services such as SIP, RDP, and OT/IoT protocols like Modbus TCP.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2024,
+      "category": "Threat Landscape",
+      "industry": [
+        "Telecommunications",
+        "Energy & Utilities",
+        "Manufacturing"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "scanning",
+        "reconnaissance",
+        "ot",
+        "iot"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Cyber Reconnaissance Surge",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "36K /sec"
+    },
+    {
+      "type": "stat",
+      "id": "fortinet-global-threat-landscape-2025-quote-asymmetry",
+      "title": "FortiGuard on the accelerating adversary advantage",
+      "description": "Fortinet frames the 2024 threat environment as one where automation, commoditization, and AI systematically erode the traditional advantages held by defenders. The report argues for a shift from reactive defense to continuous threat exposure management.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "executive-summary",
+        "ai",
+        "automation"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Acceleration of the Adversary Advantage",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Threat actors are leveraging automation, commoditized tools, and AI to erode the traditional advantages held by defenders systematically.\""
+    },
+    {
+      "type": "stat",
+      "id": "fortinet-global-threat-landscape-2025-quote-caas",
+      "title": "FortiGuard on industrialized cybercrime",
+      "description": "Fortinet calls out the maturing Cybercrime-as-a-Service economy, where specialization across the attack chain has lowered the technical barrier to entry while raising the speed and scale of attacks.",
+      "source": "Fortinet (FortiGuard Labs)",
+      "source_short": "Fortinet",
+      "color": "#DA291C",
+      "year": 2025,
+      "category": "eCrime",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "caas",
+        "cybercrime-as-a-service",
+        "specialization"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Acceleration of the Adversary Advantage",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Cybercrime-as-a-Service (CaaS) groups are using these new tools to embrace specialization, doubling down on specific segments of the attack chain.\""
+    }
+  ]
+}

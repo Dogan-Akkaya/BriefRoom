@@ -1,0 +1,942 @@
+{
+  "source": "PwC",
+  "source_short": "PwC",
+  "year": 2026,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/pwc-annual-threat-dynamics-2026.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.976Z. Curated top 10 of 21 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-pwc-annual-threat-dynamics-2026",
+      "title": "PwC Annual Threat Dynamics 2026: Cyber threats in motion",
+      "year": 2026,
+      "category": "AI Security",
+      "color": "#DC6900",
+      "description": "Manufacturing remained a top sector target in PwC's 2026 dataset, with the majority of observed incidents driven by financially motivated cybercrime rather than espionage or sabotage. Incidents frequently cascaded into broader supply-chain disruption.",
+      "external_url": "https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/annual-threat-dynamics.html",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "Generic phishing",
+          "AI-automated spear-phishing"
+        ],
+        "series": [
+          {
+            "name": "Click-through rate",
+            "values": [
+              12,
+              54
+            ],
+            "color": "#DC6900"
+          }
+        ]
+      },
+      "industry": [
+        "Manufacturing",
+        "Energy & Utilities"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "ransomware",
+        "supply_chain",
+        "vulnerability",
+        "data_leaks",
+        "infostealer",
+        "employee_exposure"
+      ],
+      "tags": [
+        "external-report",
+        "ai-phishing",
+        "click-through",
+        "social-engineering",
+        "bec",
+        "motivation-mix",
+        "manufacturing",
+        "ot",
+        "ai-governance",
+        "access-controls",
+        "policy-gap",
+        "iiot",
+        "executive-concerns",
+        "talent-gap",
+        "governance",
+        "ai-incidents",
+        "year-over-year",
+        "stanford-hai",
+        "personal-ai",
+        "shadow-ai",
+        "enterprise-adoption",
+        "supply-chain",
+        "third-party",
+        "growth",
+        "cybercrime",
+        "sector-targeting",
+        "credentials",
+        "web-app",
+        "stolen-credentials",
+        "initial-access",
+        "identity-abuse",
+        "entry-point"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2026-01-01",
+      "report_meta": {
+        "report_id": "pwc-annual-threat-dynamics-2026",
+        "organization_id": "pwc",
+        "publication_date": "2026-01-01",
+        "extracted_on": "2026-05-11",
+        "source_url": "https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/annual-threat-dynamics.html",
+        "card_count_total": 21,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "pwc-annual-threat-dynamics-2026-ai-spear-phishing-ctr"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "pwc-annual-threat-dynamics-2026-ai-spear-phishing-ctr",
+      "title": "AI-automated spear-phishing click-through 4.5x generic phishing",
+      "description": "PwC cites research showing AI-automated spear-phishing emails achieved a 54% click-through rate versus 12% for generic phishing, underscoring how generative AI raises the conversion rate of social-engineering campaigns at scale.",
+      "source": "PwC",
+      "source_short": "PwC",
+      "color": "#DC6900",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "ai-phishing",
+        "click-through",
+        "social-engineering",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI as a Threat Multiplier",
+      "comparison": "AI vs generic phishing",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Generic phishing",
+          "AI-automated spear-phishing"
+        ],
+        "series": [
+          {
+            "name": "Click-through rate",
+            "values": [
+              12,
+              54
+            ],
+            "color": "#DC6900"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "pwc-annual-threat-dynamics-2026-manufacturing-motivation-mix",
+      "title": "Manufacturing attack motivations, 2025",
+      "description": "PwC's breakdown of motivations behind attacks on the manufacturing sector shows cybercrime dominating, followed by state-aligned espionage. Sabotage and hacktivism account for small but strategically meaningful slices of activity against operational technology environments.",
+      "source": "PwC",
+      "source_short": "PwC",
+      "color": "#DC6900",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Manufacturing"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "supply_chain"
+      ],
+      "tags": [
+        "motivation-mix",
+        "manufacturing",
+        "ot"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Sector Targeting — Manufacturing",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Cybercrime",
+          "Espionage",
+          "Sabotage",
+          "Hacktivism"
+        ],
+        "series": [
+          {
+            "name": "Share of manufacturing attacks",
+            "values": [
+              63,
+              32,
+              3,
+              2
+            ],
+            "color": "#DC6900"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "pwc-annual-threat-dynamics-2026-ai-governance-gap",
+      "title": "AI governance gaps are nearly universal",
+      "description": "PwC highlights two governance failures that explain why AI is amplifying risk: nearly all organisations experiencing AI security incidents lacked proper access controls, and most have no AI governance policy in place at all.",
+      "source": "PwC",
+      "source_short": "PwC",
+      "color": "#DC6900",
+      "year": 2026,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "ai-governance",
+        "access-controls",
+        "policy-gap"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI Governance",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Lacked AI access controls",
+          "Lacked AI governance policy"
+        ],
+        "series": [
+          {
+            "name": "Share of organisations",
+            "values": [
+              97,
+              63
+            ],
+            "color": "#DC6900"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "pwc-annual-threat-dynamics-2026-ot-talent-gap",
+      "title": "Top OT/IIoT security challenges for executives",
+      "description": "PwC's executive-concerns data highlights two structural OT/IIoT security barriers: a shortage of qualified personnel and unclear governance over who owns OT security — both blocking the convergence of IT and OT defence programmes.",
+      "source": "PwC",
+      "source_short": "PwC",
+      "color": "#DC6900",
+      "year": 2026,
+      "category": "OT / ICS",
+      "industry": [
+        "Manufacturing",
+        "Energy & Utilities"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "ransomware"
+      ],
+      "tags": [
+        "ot",
+        "iiot",
+        "executive-concerns",
+        "talent-gap",
+        "governance"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Executive Concerns — OT/IIoT",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Lack of qualified personnel",
+          "Unclear governance/ownership"
+        ],
+        "series": [
+          {
+            "name": "Share citing as top OT/IIoT challenge",
+            "values": [
+              47,
+              39
+            ],
+            "color": "#DC6900"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "pwc-annual-threat-dynamics-2026-ai-incidents-yoy",
+      "title": "AI-related incidents up 56.4% YoY",
+      "description": "PwC cites Stanford HAI data tracking 233 AI-related incidents in 2024, a 56.4% increase over 2023 — quantitative confirmation that adversarial AI exposure is growing alongside enterprise AI adoption.",
+      "source": "PwC",
+      "source_short": "PwC",
+      "color": "#DC6900",
+      "year": 2026,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "ai-incidents",
+        "year-over-year",
+        "stanford-hai"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Future Threat Landscape",
+      "comparison": "233 incidents in 2024 vs 2023 baseline",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+56.4% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "pwc-annual-threat-dynamics-2026-personal-ai-decline",
+      "title": "Personal AI app use for work falls to 47%",
+      "description": "Personal AI app use for work declined from 78% to 47%, reflecting the maturing of enterprise-sanctioned AI tooling — though the gap is now being filled by sanctioned SaaS GenAI usage, which has grown sixfold.",
+      "source": "PwC",
+      "source_short": "PwC",
+      "color": "#DC6900",
+      "year": 2026,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "personal-ai",
+        "shadow-ai",
+        "enterprise-adoption"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI Adoption Trends",
+      "comparison": "down from 78%",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "47%"
+    },
+    {
+      "type": "stat",
+      "id": "pwc-annual-threat-dynamics-2026-supply-chain-4x",
+      "title": "Supply-chain compromises up nearly 4x since 2020",
+      "description": "PwC cites IBM X-Force telemetry showing supply-chain and third-party compromise incidents have grown nearly fourfold since 2020, validating the report's emphasis on managing risk beyond the direct enterprise perimeter.",
+      "source": "PwC",
+      "source_short": "PwC",
+      "color": "#DC6900",
+      "year": 2026,
+      "category": "Supply Chain",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "supply-chain",
+        "third-party",
+        "growth"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Supply Chain Risk",
+      "comparison": "vs 2020 baseline",
+      "trend": "increasing",
+      "value_unit": "multiplier",
+      "card_style": "number",
+      "value": "~4x since 2020"
+    },
+    {
+      "type": "stat",
+      "id": "pwc-annual-threat-dynamics-2026-manufacturing-top-target",
+      "title": "63% of manufacturing attacks are cybercrime-motivated",
+      "description": "Manufacturing remained a top sector target in PwC's 2026 dataset, with the majority of observed incidents driven by financially motivated cybercrime rather than espionage or sabotage. Incidents frequently cascaded into broader supply-chain disruption.",
+      "source": "PwC",
+      "source_short": "PwC",
+      "color": "#DC6900",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [
+        "Manufacturing"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "manufacturing",
+        "cybercrime",
+        "sector-targeting"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Sector Targeting — Manufacturing",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "63%"
+    },
+    {
+      "type": "stat",
+      "id": "pwc-annual-threat-dynamics-2026-credential-breaches",
+      "title": "88% of web-app breaches involve stolen credentials",
+      "description": "PwC reinforces its identity-first thesis with Verizon data showing the overwhelming majority of breaches in web-application attacks rely on stolen credentials — a key reason identity remains the primary attack vector heading into 2026.",
+      "source": "PwC",
+      "source_short": "PwC",
+      "color": "#DC6900",
+      "year": 2026,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "infostealer"
+      ],
+      "tags": [
+        "credentials",
+        "web-app",
+        "stolen-credentials"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Identity-Centric Attack Landscape",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "88%"
+    },
+    {
+      "type": "stat",
+      "id": "pwc-annual-threat-dynamics-2026-identity-entry-point",
+      "title": "Identity abuse is the top entry point at 30%",
+      "description": "PwC cites IBM data showing abuse of user identities is the single most common initial entry point for intrusions, reinforcing the report's central finding that identity has overtaken exploits and email as the primary attack vector.",
+      "source": "PwC",
+      "source_short": "PwC",
+      "color": "#DC6900",
+      "year": 2026,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "employee_exposure",
+        "infostealer"
+      ],
+      "tags": [
+        "initial-access",
+        "identity-abuse",
+        "entry-point"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Identity-Centric Attack Landscape",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "30%"
+    },
+    {
+      "type": "stat",
+      "id": "pwc-annual-threat-dynamics-2026-dprk-it-worker",
+      "title": "DPRK industrialised fraudulent IT-worker scheme",
+      "description": "North Korea-linked operations scaled fraudulent remote-employment schemes and cryptocurrency theft to unprecedented levels in 2025, with stolen identities used to place operatives inside global enterprises while funnelling salaries and stolen funds to the regime.",
+      "source": "PwC",
+      "source_short": "PwC",
+      "color": "#DC6900",
+      "year": 2026,
+      "category": "Geopolitics",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "dprk",
+        "it-worker",
+        "insider-threat",
+        "crypto-theft",
+        "crypto-crime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Geopolitical & Motivational Factors",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "Unprecedented scale"
+    },
+    {
+      "type": "stat",
+      "id": "pwc-annual-threat-dynamics-2026-finserv-fraud",
+      "title": "AWM sector hit by BEC, ransomware, and crypto heists",
+      "description": "PwC's sector view of asset & wealth management (AWM) and financial services shows convergence of business-email compromise with AI-generated deepfakes, ransomware operations, and large heists targeting cryptocurrency platforms — all leveraging identity abuse as the common pivot.",
+      "source": "PwC",
+      "source_short": "PwC",
+      "color": "#DC6900",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "financial-services",
+        "awm",
+        "deepfake",
+        "bec",
+        "crypto-crime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Sector Targeting — Financial Services",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "BEC + ransomware + crypto"
+    },
+    {
+      "type": "stat",
+      "id": "pwc-annual-threat-dynamics-2026-healthcare-hospitality",
+      "title": "Healthcare ransomware crosses into life-safety risk",
+      "description": "PwC continues to flag healthcare and hospitality as ransomware-exposed sectors where attacks disrupt operations and, in healthcare specifically, can become life-threatening — elevating ransomware from an IT-availability issue to a patient-safety issue.",
+      "source": "PwC",
+      "source_short": "PwC",
+      "color": "#DC6900",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [
+        "Healthcare",
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "healthcare",
+        "hospitality",
+        "life-safety",
+        "ransomware",
+        "industry:hospitality"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Sector Targeting — Healthcare",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "Life-threatening"
+    },
+    {
+      "type": "stat",
+      "id": "pwc-annual-threat-dynamics-2026-ai-top-priority",
+      "title": "AI is the #1 cyber investment priority",
+      "description": "PwC reports that AI-driven defence has become the top cybersecurity investment priority among security leaders heading into 2026, paralleling the rise of AI-driven offence. AI is now identified as the most frequently raised client concern by PwC's incident-response team.",
+      "source": "PwC",
+      "source_short": "PwC",
+      "color": "#DC6900",
+      "year": 2026,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "executive-priorities",
+        "ai-defence",
+        "investment"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Executive Concerns",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "#1 priority"
+    },
+    {
+      "type": "stat",
+      "id": "pwc-annual-threat-dynamics-2026-identity-battleground-quote",
+      "title": "Identity is the ultimate battleground",
+      "description": "PwC's headline narrative for 2026 reframes the perimeter: adversaries are no longer breaking in, they are logging in by abusing credentials, session tokens, and federated access to bypass traditional defences.",
+      "source": "PwC",
+      "source_short": "PwC",
+      "color": "#DC6900",
+      "year": 2026,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "employee_exposure",
+        "infostealer"
+      ],
+      "tags": [
+        "identity",
+        "log-in-not-break-in",
+        "session-tokens",
+        "narrative"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Executive Summary",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Adversaries are increasingly choosing to log in rather than break in, exploiting credentials, session tokens, and federated access to bypass traditional perimeter defences. Identity has become the ultimate battleground.\""
+    },
+    {
+      "type": "stat",
+      "id": "pwc-annual-threat-dynamics-2026-ai-core-tradecraft-quote",
+      "title": "Threat actors treat AI as core tradecraft",
+      "description": "PwC's incident-response team reports that AI-driven threats are now the most frequently raised client concern, with adversaries integrating generative AI into reconnaissance, malware development, and multilingual social engineering pipelines.",
+      "source": "PwC",
+      "source_short": "PwC",
+      "color": "#DC6900",
+      "year": 2026,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "ai",
+        "tradecraft",
+        "social-engineering",
+        "narrative"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI's Dual Impact",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Threat actors are embracing AI not as an enhancement but as a core component of their tradecraft, using it to automate reconnaissance, craft highly convincing phishing campaigns, accelerate malware development, and scale social engineering across languages and platforms.\""
+    },
+    {
+      "type": "stat",
+      "id": "pwc-annual-threat-dynamics-2026-blurred-motivations-quote",
+      "title": "Blurring boundaries between motivations",
+      "description": "PwC argues the traditional clean lines between cybercrime, espionage, and influence operations have dissolved — with ransomware operators monetising strategic data, state actors using criminal tooling, and DPRK-linked operations industrialising fraudulent employment.",
+      "source": "PwC",
+      "source_short": "PwC",
+      "color": "#DC6900",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "motivation-blur",
+        "dprk",
+        "espionage",
+        "narrative",
+        "crypto-crime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Geopolitical & Motivational Factors",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"The boundaries between motivations continued to blur, as ransomware operators sold strategically sensitive data, espionage-motivated threat actors leveraged cyber criminal tooling, and North Korea-based threat actors industrialised fraudulent employment and cryptocurrency theft at unprecedented scale.\""
+    },
+    {
+      "type": "stat",
+      "id": "pwc-annual-threat-dynamics-2026-reaperai-china",
+      "title": "China-based actor deployed autonomous AI red-team agent",
+      "description": "Following the release of ReaperAI, a penetration-testing AI agent, PwC documented a China-based threat actor deploying a comparable tool capable of autonomous reconnaissance and exploit execution — an early example of agentic AI in offensive operations.",
+      "source": "PwC",
+      "source_short": "PwC",
+      "color": "#DC6900",
+      "year": 2026,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "Asia Pacific",
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "reaperai",
+        "agentic-ai",
+        "china",
+        "autonomous-attack"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Emerging AI Attack Tools",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Following the release of ReaperAI, a China-based threat actor deployed a comparable tool capable of autonomous reconnaissance and exploit execution.\""
+    },
+    {
+      "type": "stat",
+      "id": "pwc-annual-threat-dynamics-2026-full-stack-tradecraft",
+      "title": "Adversaries deploy full-stack tradecraft",
+      "description": "PwC characterises the 2026 threat landscape as one where adversaries move fluidly across identity, cloud, edge, and application layers — a 'full-stack' approach that breaks single-layer defensive models and demands integrated, identity-anchored security architecture.",
+      "source": "PwC",
+      "source_short": "PwC",
+      "color": "#DC6900",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "full-stack",
+        "tradecraft",
+        "cloud",
+        "edge",
+        "narrative"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat Landscape Overview",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"We are seeing an increasingly capable and adaptive threat landscape in which adversaries employ full-stack tradecraft and are fluidly navigating identity, cloud, edge, and application layers with unprecedented precision.\""
+    },
+    {
+      "type": "stat",
+      "id": "pwc-annual-threat-dynamics-2026-quantum-saas-emerging",
+      "title": "Post-quantum readiness becomes urgent",
+      "description": "PwC flags quantum computing as a near-term cryptographic risk and pairs it with rapidly expanding SaaS ecosystems as the two emerging surfaces defenders must instrument now — recommending post-quantum cryptography transition planning and SaaS-identity governance.",
+      "source": "PwC",
+      "source_short": "PwC",
+      "color": "#DC6900",
+      "year": 2026,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "post-quantum",
+        "pqc",
+        "saas",
+        "emerging-risk"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Emerging Concerns",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Quantum computing threats to cryptography and expanding SaaS ecosystems widening attack surfaces make post-quantum cryptography transition an urgent strategic priority.\""
+    },
+    {
+      "type": "stat",
+      "id": "pwc-annual-threat-dynamics-2026-genai-prompt-growth",
+      "title": "GenAI prompts to SaaS apps up 6x to 18,000/month",
+      "description": "PwC cites Netskope data showing organisational prompts to SaaS GenAI applications grew sixfold from roughly 3,000 to 18,000 per month, with an average of 223 GenAI data-policy violations per organisation per month — a rapidly expanding shadow-AI surface.",
+      "source": "PwC",
+      "source_short": "PwC",
+      "color": "#DC6900",
+      "year": 2026,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "genai",
+        "shadow-ai",
+        "saas",
+        "data-policy"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI Adoption Trends",
+      "comparison": "up from ~3,000/mo (6x)",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "18,000 prompts/mo"
+    }
+  ]
+}

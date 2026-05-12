@@ -1,0 +1,1638 @@
+{
+  "source": "Cisco Talos",
+  "source_short": "Talos",
+  "year": 2026,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/cisco-talos-year-in-review-2025.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.938Z. Curated top 10 of 30 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-cisco-talos-year-in-review-2025",
+      "title": "Cisco Talos 2025 Year in Review",
+      "year": 2026,
+      "category": "Vulnerabilities",
+      "color": "#1BA0D7",
+      "description": "Remote code execution overwhelms every other vulnerability class in Talos' top 100 dataset, with authentication bypass a distant second — a profile tailor-made for automated mass exploitation.",
+      "external_url": "https://blog.talosintelligence.com/2025-talos-year-in-review-speed-scale-and-staying-power/",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "IAM",
+          "PAM",
+          "Operating system",
+          "App delivery & security",
+          "Remote access"
+        ],
+        "series": [
+          {
+            "name": "2024",
+            "values": [
+              24,
+              0,
+              3,
+              9,
+              9
+            ],
+            "color": "#0E6E96"
+          },
+          {
+            "name": "2025",
+            "values": [
+              30,
+              3,
+              5,
+              5,
+              6
+            ],
+            "color": "#1BA0D7"
+          }
+        ]
+      },
+      "industry": [
+        "Technology",
+        "Financial Services",
+        "Manufacturing",
+        "Government",
+        "Telecommunications",
+        "Healthcare",
+        "Education",
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "vulnerability",
+        "supply_chain",
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "external-report",
+        "mfa-spray",
+        "yoy",
+        "iam",
+        "pam",
+        "rce",
+        "cve-type-distribution",
+        "cve-age",
+        "legacy-vulns",
+        "log4j",
+        "phpunit",
+        "network-devices",
+        "platform-software",
+        "management-plane",
+        "qilin",
+        "akira",
+        "play",
+        "lockbit",
+        "raas",
+        "sso",
+        "conditional-access",
+        "vishing",
+        "help-desk",
+        "device-registration",
+        "mfa",
+        "industry-targeting",
+        "device-compromise",
+        "byod",
+        "higher-education",
+        "manufacturing",
+        "dls"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2026-03-04",
+      "report_meta": {
+        "report_id": "cisco-talos-year-in-review-2025",
+        "organization_id": "cisco-talos",
+        "publication_date": "2026-03-04",
+        "extracted_on": "2026-05-06",
+        "source_url": "https://blog.talosintelligence.com/2025-talos-year-in-review-speed-scale-and-staying-power/",
+        "card_count_total": 30,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "cisco-talos-year-in-review-2025-mfa-yoy-shifts"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "cisco-talos-year-in-review-2025-mfa-yoy-shifts",
+      "title": "MFA spray targeting shifts, 2024 vs 2025",
+      "description": "Attackers piled into IAM (+6pts), PAM (+3pts), and operating system (+2pts) MFA spray targets while pulling back from legacy app delivery (-4pts) and remote access (-3pts) as orgs migrated VPN to cloud identity.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Identity & Access",
+      "industry": [
+        "Technology",
+        "Financial Services",
+        "Manufacturing"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "mfa-spray",
+        "yoy",
+        "iam",
+        "pam"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attacks against MFA — MFA spray attacks",
+      "comparison": "2024 vs 2025",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "IAM",
+          "PAM",
+          "Operating system",
+          "App delivery & security",
+          "Remote access"
+        ],
+        "series": [
+          {
+            "name": "2024",
+            "values": [
+              24,
+              0,
+              3,
+              9,
+              9
+            ],
+            "color": "#0E6E96"
+          },
+          {
+            "name": "2025",
+            "values": [
+              30,
+              3,
+              5,
+              5,
+              6
+            ],
+            "color": "#1BA0D7"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cisco-talos-year-in-review-2025-vuln-types",
+      "title": "Top 100 vulnerabilities by type",
+      "description": "Remote code execution overwhelms every other vulnerability class in Talos' top 100 dataset, with authentication bypass a distant second — a profile tailor-made for automated mass exploitation.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology",
+        "Manufacturing",
+        "Government"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "rce",
+        "cve-type-distribution"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top-targeted vulnerabilities — The top 100",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "RCE",
+          "Auth bypass",
+          "Path traversal",
+          "Info disclosure",
+          "DoS",
+          "Buffer overflow",
+          "SSRF"
+        ],
+        "series": [
+          {
+            "name": "Share of top 100 CVEs",
+            "values": [
+              80,
+              8,
+              3,
+              3,
+              3,
+              2,
+              1
+            ],
+            "color": "#1BA0D7"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cisco-talos-year-in-review-2025-cve-age",
+      "title": "CVE age distribution",
+      "description": "Despite headlines around React2Shell and ToolShell, only 15% of the top 100 CVEs are 0–2 years old; a full third are at least 10+ years old, underscoring how patch-management debt fuels modern intrusions.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology",
+        "Manufacturing",
+        "Government"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "cve-age",
+        "legacy-vulns",
+        "log4j",
+        "phpunit"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top-targeted vulnerabilities — CVE age distribution",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "0–2 years",
+          "3–5 years",
+          "6–10 years",
+          "11+ years"
+        ],
+        "series": [
+          {
+            "name": "Share of top 100 CVEs",
+            "values": [
+              15,
+              33,
+              31,
+              21
+            ],
+            "color": "#1BA0D7"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cisco-talos-year-in-review-2025-vuln-scope",
+      "title": "Network infrastructure vulnerability scope",
+      "description": "Device-specific firmware dominates by volume (66%), but the high-leverage classes — platform software, embedded services, and management plane — together account for one-third of CVEs and produce outsized blast radius.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology",
+        "Telecommunications",
+        "Manufacturing"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "supply_chain"
+      ],
+      "tags": [
+        "network-devices",
+        "platform-software",
+        "management-plane"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top-targeted vulnerabilities — Vulnerability scope and risk",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Device firmware",
+          "Platform software",
+          "Embedded service/module",
+          "Management software"
+        ],
+        "series": [
+          {
+            "name": "Top 50 network CVEs",
+            "values": [
+              66,
+              14,
+              14,
+              6
+            ],
+            "color": "#1BA0D7"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "cisco-talos-year-in-review-2025-ransomware-groups",
+      "title": "Ransomware data-leak posts by group",
+      "description": "Qilin led 2025 with 17% of all data-leak site posts, while Akira (10%) and Play (6%) demonstrated rare second-year longevity. LockBit 3.0 collapsed from #1 to #35 after Operation Cronos.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [
+        "Manufacturing",
+        "Technology",
+        "Healthcare"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "qilin",
+        "akira",
+        "play",
+        "lockbit",
+        "raas"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware — 2025 volume of posts",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Qilin",
+          "Akira",
+          "Play",
+          "INC Ransom",
+          "SAFEPAY",
+          "DragonForce",
+          "Lynx",
+          "RansomHub",
+          "Sinobi",
+          "Medusa",
+          "World Leaks",
+          "Everest Group",
+          "KillSec",
+          "Rhysida",
+          "NightSpire",
+          "Others"
+        ],
+        "series": [
+          {
+            "name": "Share of DLS posts",
+            "values": [
+              17,
+              10,
+              6,
+              5,
+              5,
+              4,
+              4,
+              3,
+              3,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              33
+            ],
+            "color": "#1BA0D7"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cisco-talos-year-in-review-2025-mfa-app-targets",
+      "title": "Application types targeted in MFA attacks",
+      "description": "Identity and access management apps absorbed 30% of all MFA spray attacks in 2025 (up 6 points from 2024), as attackers concentrated on SSO and conditional-access flows that unlock the entire estate.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Identity & Access",
+      "industry": [
+        "Technology",
+        "Financial Services",
+        "Manufacturing"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "mfa-spray",
+        "iam",
+        "sso",
+        "conditional-access"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attacks against MFA — MFA spray attacks",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "IAM",
+          "Network security",
+          "Authentication & networking",
+          "SDK",
+          "Remote access",
+          "Operating system",
+          "App delivery & security",
+          "API protocol",
+          "Auth protocol",
+          "PAM",
+          "NAC",
+          "Directory services",
+          "VDI",
+          "Email & collab"
+        ],
+        "series": [
+          {
+            "name": "Share of MFA attacks",
+            "values": [
+              30,
+              15,
+              13,
+              7,
+              6,
+              5,
+              5,
+              5,
+              5,
+              3,
+              2,
+              1,
+              1,
+              1
+            ],
+            "color": "#1BA0D7"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cisco-talos-year-in-review-2025-device-compromise-vectors",
+      "title": "Top access vectors in device-compromise attacks",
+      "description": "Administrator-managed registration accounted for 77% of fraudulent device-compromise events, a 3:1 dominance over user flows that points squarely at vishing of IT help desks as the primary playbook.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Identity & Access",
+      "industry": [
+        "Education",
+        "Manufacturing",
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "vishing",
+        "help-desk",
+        "device-registration",
+        "mfa"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attacks against MFA — Device compromise attacks",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Administrator-managed registration",
+          "User-managed registration",
+          "Link-initiated registration",
+          "Other",
+          "New user registration"
+        ],
+        "series": [
+          {
+            "name": "Share of device-compromise attacks",
+            "values": [
+              77,
+              12,
+              5,
+              4,
+              2
+            ],
+            "color": "#1BA0D7"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "cisco-talos-year-in-review-2025-industry-mfa-spray",
+      "title": "MFA spray attacks by industry",
+      "description": "Technology dominated MFA spray targeting at 36%, with manufacturing a distant second — both industries offering the predictable, uniform identity environments that automated credential guessing thrives on.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Identity & Access",
+      "industry": [
+        "Technology",
+        "Manufacturing",
+        "Telecommunications",
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "mfa-spray",
+        "industry-targeting"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attacks against MFA — Industry trends",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Technology",
+          "Manufacturing",
+          "Telecommunications",
+          "Financial services",
+          "Health care",
+          "Retail",
+          "Other"
+        ],
+        "series": [
+          {
+            "name": "Share of MFA spray volume",
+            "values": [
+              36,
+              16,
+              9,
+              9,
+              9,
+              5,
+              16
+            ],
+            "color": "#1BA0D7"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cisco-talos-year-in-review-2025-industry-device-compromise",
+      "title": "Device-compromise attacks by industry",
+      "description": "Higher education ranked #1 for device-compromise attacks at 24% — a stark inverse of MFA spray patterns, driven by heterogeneous BYOD ecosystems and lax registration controls.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Identity & Access",
+      "industry": [
+        "Education",
+        "Manufacturing",
+        "Technology",
+        "Healthcare"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "device-compromise",
+        "byod",
+        "higher-education"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attacks against MFA — Industry trends",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Higher education",
+          "Manufacturing",
+          "Technology",
+          "Health care",
+          "Retail",
+          "Financial services",
+          "Other"
+        ],
+        "series": [
+          {
+            "name": "Share of device-compromise volume",
+            "values": [
+              24,
+              12,
+              12,
+              11,
+              8,
+              8,
+              25
+            ],
+            "color": "#1BA0D7"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cisco-talos-year-in-review-2025-ransomware-industries",
+      "title": "Top ransomware-targeted industries",
+      "description": "Manufacturing remained the most-targeted ransomware sector for a third consecutive year, driven by low downtime tolerance and hybrid IT/OT attack surfaces. Professional services and wholesale trade follow.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [
+        "Manufacturing",
+        "Healthcare",
+        "Retail & E-Commerce",
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "industry-targeting",
+        "manufacturing",
+        "dls"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware — Industry targeting year-over-year",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Manufacturing",
+          "Professional/scientific/technical services",
+          "Wholesale trade",
+          "Construction",
+          "Healthcare",
+          "Retail trade",
+          "Information",
+          "Finance & insurance"
+        ],
+        "series": [
+          {
+            "name": "Approx share of DLS posts",
+            "values": [
+              22,
+              12,
+              9,
+              7,
+              7,
+              6,
+              6,
+              5
+            ],
+            "color": "#1BA0D7"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cisco-talos-year-in-review-2025-contagious-interview",
+      "title": "North Korea's Contagious Interview at scale",
+      "description": "Famous Chollima's fake-recruiter campaign spread through the npm ecosystem: 338+ malicious packages, 50,000+ downloads, and 180+ AI-built personas behind hundreds of confirmed victims.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Supply Chain",
+      "industry": [
+        "Technology",
+        "Financial Services",
+        "Government"
+      ],
+      "region": [
+        "North America",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "infostealer",
+        "data_leaks"
+      ],
+      "tags": [
+        "north-korea",
+        "famous-chollima",
+        "beavertail",
+        "npm",
+        "fake-it-worker",
+        "crypto-crime",
+        "industry:defense"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "State-sponsored threats — North Korea",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Malicious npm packages",
+          "Downloads (thousands)",
+          "Personas",
+          "Confirmed victims (approx)"
+        ],
+        "series": [
+          {
+            "name": "Volume",
+            "values": [
+              338,
+              50,
+              180,
+              200
+            ],
+            "color": "#1BA0D7"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "cisco-talos-year-in-review-2025-device-compromise-surge",
+      "title": "Fraudulent device registrations surge 178%",
+      "description": "User-reported fraudulent MFA device registration events jumped 178% from 2024 to 2025, as attackers raced to register their own hardware as a trusted MFA factor and gain persistent, high-trust account access.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Identity & Access",
+      "industry": [
+        "Education",
+        "Manufacturing",
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "mfa",
+        "device-compromise",
+        "vishing",
+        "identity-attack-surface"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attacks against MFA — Device compromise attacks",
+      "comparison": "vs 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "178%"
+    },
+    {
+      "type": "stat",
+      "id": "cisco-talos-year-in-review-2025-china-investigations",
+      "title": "China-nexus investigations up 74%",
+      "description": "Talos investigations into China-nexus campaigns increased nearly 74% in 2025 versus 2024, reflecting both the rising volume and growing operational sophistication of PRC-linked actors.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Government",
+        "Technology",
+        "Telecommunications"
+      ],
+      "region": [
+        "North America",
+        "Asia Pacific",
+        "Europe"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "china",
+        "apt",
+        "espionage",
+        "toolshell",
+        "industry:defense"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "State-sponsored threats — China",
+      "comparison": "vs 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+74% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "cisco-talos-year-in-review-2025-iran-hacktivism",
+      "title": "Iranian hacktivism activity up 60%",
+      "description": "Activity from the top Iranian hacktivist groups Talos tracks increased 60% in 2025, with collectives surging around Israel-Hamas escalations and U.S. strikes on Iranian nuclear sites.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Geopolitics",
+      "industry": [
+        "Government",
+        "Telecommunications",
+        "Energy & Utilities"
+      ],
+      "region": [
+        "Middle East",
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "iran",
+        "hacktivism",
+        "israel-hamas",
+        "ddos",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "State-sponsored threats — Iran",
+      "comparison": "vs prior year",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+60%"
+    },
+    {
+      "type": "stat",
+      "id": "cisco-talos-year-in-review-2025-ransomware-monthly",
+      "title": "Ransomware activity by month",
+      "description": "January was the lowest-volume month two years running, likely reflecting Eastern European Orthodox-Christmas holidays. Activity peaked in spring and again in October, giving defenders a clear seasonal test window.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [
+        "Manufacturing",
+        "Technology",
+        "Healthcare"
+      ],
+      "region": [
+        "Europe",
+        "North America",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "seasonality",
+        "monthly-trend",
+        "qilin",
+        "akira",
+        "spark-from-12"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware — Ransomware attacks by month",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": null,
+      "card_style": "sparkline",
+      "value": "Jan lowest",
+      "spark": [
+        55,
+        90,
+        92,
+        72,
+        96,
+        89
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "cisco-talos-year-in-review-2025-qilin-monthly-victims",
+      "title": "Qilin: 40+ victims every month except January",
+      "description": "Qilin's double-extortion machine claimed more than 40 victims every month of 2025 except January, signaling the group will remain a structural threat heading into 2026.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [
+        "Manufacturing",
+        "Technology",
+        "Healthcare"
+      ],
+      "region": [
+        "Europe",
+        "North America",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "qilin",
+        "raas",
+        "double-extortion",
+        "spark-from-12"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware — Threat actor spotlight: Qilin",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": null,
+      "card_style": "sparkline",
+      "value": "40+/mo",
+      "spark": [
+        22,
+        51,
+        48,
+        47,
+        60,
+        56
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "cisco-talos-year-in-review-2025-eol-share",
+      "title": "40% of top-100 CVEs hit EOL devices",
+      "description": "Nearly 40% of the 100 top-targeted vulnerabilities in 2025 directly impacted end-of-life devices — perimeter gear like VPN appliances and routers that organizations can no longer patch.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology",
+        "Manufacturing",
+        "Telecommunications"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "eol",
+        "legacy",
+        "patch-management",
+        "perimeter"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top-targeted vulnerabilities — The top 100",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "40%"
+    },
+    {
+      "type": "stat",
+      "id": "cisco-talos-year-in-review-2025-bybit-heist",
+      "title": "$1.5B Bybit crypto heist by North Korea",
+      "description": "North Korean cyber actors pulled off the largest cryptocurrency heist in history in February 2025, stealing $1.5 billion in Ethereum from the Bybit exchange to fund weapons programs and counteract sanctions.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Cryptocurrency Crime",
+      "industry": [
+        "Financial Services",
+        "Technology"
+      ],
+      "region": [
+        "Asia Pacific",
+        "North America"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "north-korea",
+        "lazarus",
+        "bybit",
+        "ethereum",
+        "crypto-crime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "State-sponsored threats — North Korea",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$1.5B"
+    },
+    {
+      "type": "stat",
+      "id": "cisco-talos-year-in-review-2025-phishing-initial-access",
+      "title": "Phishing drove 40% of IR cases",
+      "description": "Talos Incident Response observed phishing as the initial access vector in 40% of 2025 cases, with attackers commonly leveraging compromised internal or partner accounts to exploit trusted relationships.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Financial Services",
+        "Technology",
+        "Manufacturing"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "initial-access",
+        "incident-response",
+        "internal-phishing",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Email threats — Phishing trends",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "40%"
+    },
+    {
+      "type": "stat",
+      "id": "cisco-talos-year-in-review-2025-q2-internal-phishing",
+      "title": "75% of Q2 phishing cases used trusted accounts",
+      "description": "In Q2 2025, a staggering 75% of phishing-based initial-access cases involved emails originating from already-compromised internal users or external business partners, exploiting established trust to bypass controls.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Financial Services",
+        "Technology",
+        "Manufacturing"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "internal-phishing",
+        "trusted-account",
+        "q2-2025",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Email threats — Phishing trends",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "75%"
+    },
+    {
+      "type": "stat",
+      "id": "cisco-talos-year-in-review-2025-rce-share",
+      "title": "80% of top-targeted CVEs are RCE",
+      "description": "Remote code execution dominated Talos' top 100 dataset at 80%, the preferred class for both APTs and commodity botnets because it bypasses identity controls, scales via automation, and works on segmented networks.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology",
+        "Manufacturing",
+        "Government"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "rce",
+        "kev",
+        "automation"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top-targeted vulnerabilities — The top 100",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "80%"
+    },
+    {
+      "type": "stat",
+      "id": "cisco-talos-year-in-review-2025-qilin-payout",
+      "title": "Qilin affiliates take home up to 85%",
+      "description": "Qilin's RaaS model pays affiliates 80–85% of the ransom — well above typical industry splits — helping fuel its rise to the most active ransomware operation in 2025.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [
+        "Manufacturing",
+        "Technology",
+        "Healthcare"
+      ],
+      "region": [
+        "Europe",
+        "North America",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "qilin",
+        "raas",
+        "affiliate-economics"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware — Threat actor spotlight: Qilin",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "80–85%"
+    },
+    {
+      "type": "stat",
+      "id": "cisco-talos-year-in-review-2025-internal-phishing",
+      "title": "35% of phishing cases used internal phishing",
+      "description": "Once inside, attackers continued the lure: 35% of 2025 Talos IR phishing cases involved internal phishing from compromised accounts, used to clone MFA tokens, harvest credentials, and deploy malware deeper.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Financial Services",
+        "Technology",
+        "Manufacturing"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "internal-phishing",
+        "post-compromise",
+        "lateral",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Email threats — Phishing trends",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "35%"
+    },
+    {
+      "type": "stat",
+      "id": "cisco-talos-year-in-review-2025-isoon-pricing",
+      "title": "Chinese hackers-for-hire: $10K–$75K per inbox",
+      "description": "The March 2025 i-Soon indictment revealed Chinese cybercriminals charging $10,000 to $75,000 per compromised email account, blurring the line between state espionage and commercial intrusion services.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Government",
+        "Technology"
+      ],
+      "region": [
+        "Asia Pacific",
+        "North America"
+      ],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "i-soon",
+        "china",
+        "hacker-for-hire",
+        "indictment"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "State-sponsored threats — China",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$10K–$75K"
+    },
+    {
+      "type": "stat",
+      "id": "cisco-talos-year-in-review-2025-adc-share",
+      "title": "22% of top network CVEs hit ADCs",
+      "description": "Application delivery controllers like Citrix ADC and F5 BIG-IP accounted for 22% of the top 50 targeted network devices — compromise of one ADC can expose dozens of downstream apps via SAML/OAuth flows.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology",
+        "Financial Services",
+        "Telecommunications"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "adc",
+        "citrixbleed",
+        "f5",
+        "identity-gateway"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top-targeted vulnerabilities — ADC amplification",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "22%"
+    },
+    {
+      "type": "stat",
+      "id": "cisco-talos-year-in-review-2025-russian-sanctions-spike",
+      "title": "Russian cyber activity 4x in May",
+      "description": "May's Western sanctions spike coincided with a fourfold increase in observed Russian cyber activity, confirming that geopolitical pressure remains a leading indicator for heightened APT operations.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Geopolitics",
+      "industry": [
+        "Government",
+        "Energy & Utilities",
+        "Transportation"
+      ],
+      "region": [
+        "Europe",
+        "North America"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "russia",
+        "apt28",
+        "sanctions",
+        "ukraine",
+        "industry:defense"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "State-sponsored threats — Russia",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "multiplier",
+      "card_style": "number",
+      "value": "4x"
+    },
+    {
+      "type": "stat",
+      "id": "cisco-talos-year-in-review-2025-vishing-ratio",
+      "title": "Vishing of admins outpaced user fraud 3:1",
+      "description": "In device-compromise attacks, attackers targeted the admin-managed registration flow at a 3-to-1 rate over user-managed registration, leaning heavily on voice phishing of overworked help desks.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Education",
+        "Manufacturing",
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "vishing",
+        "help-desk",
+        "social-engineering"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attacks against MFA — Device compromise attacks",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "multiplier",
+      "card_style": "number",
+      "value": "3:1"
+    },
+    {
+      "type": "stat",
+      "id": "cisco-talos-year-in-review-2025-quote-identity-key",
+      "title": "Attackers target the person who holds the key",
+      "description": "Talos' MITRE ATT&CK analysis of ransomware engagements crystallized 2025's defining theme: identity is the new perimeter, and threat actors are bypassing infrastructure entirely by hijacking valid users.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Identity & Access",
+      "industry": [
+        "Manufacturing",
+        "Technology",
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing"
+      ],
+      "tags": [
+        "identity",
+        "valid-accounts",
+        "ransomware",
+        "narrative"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware — Identity theme",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Actors predominately targeted the person who holds the key rather than the lock itself.\""
+    },
+    {
+      "type": "stat",
+      "id": "cisco-talos-year-in-review-2025-quote-identity-control-points",
+      "title": "Network infrastructure as identity control point",
+      "description": "Talos found attackers prioritized identity gateways — ADCs, VPNs, network management platforms — over individual devices, weaponizing the systems that broker trust to bypass MFA and traverse networks.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology",
+        "Telecommunications",
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "supply_chain"
+      ],
+      "tags": [
+        "network-infrastructure",
+        "identity",
+        "adc",
+        "vpn",
+        "narrative"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top-targeted vulnerabilities — Network infrastructure",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"In 2025, the majority of attacker activity against network infrastructure focused on the systems that validate, enforce, or broker identity.\""
+    },
+    {
+      "type": "stat",
+      "id": "cisco-talos-year-in-review-2025-quote-react2shell-speed",
+      "title": "Speed of weaponization defines 2025",
+      "description": "React2Shell, disclosed in December, became the #1 most-targeted CVE of 2025, illustrating near-instant weaponization that left defenders almost no patch window.",
+      "source": "Cisco Talos",
+      "source_short": "Talos",
+      "color": "#1BA0D7",
+      "year": 2026,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology",
+        "Government",
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "react2shell",
+        "toolshell",
+        "log4j",
+        "weaponization",
+        "narrative"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Introduction",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"The speed of weaponization and the longevity of exposure are defining characteristics of today's threat landscape.\""
+    }
+  ]
+}

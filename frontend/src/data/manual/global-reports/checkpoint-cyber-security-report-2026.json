@@ -1,0 +1,1314 @@
+{
+  "source": "Check Point Research",
+  "source_short": "Check Point",
+  "year": 2026,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/checkpoint-cyber-security-report-2026.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.935Z. Curated top 10 of 29 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-checkpoint-cyber-security-report-2026",
+      "title": "Check Point Cyber Security Report 2026",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "color": "#E51C39",
+      "description": "Check Point Research measured a 97% year-over-year increase in risky AI prompts during 2025, reflecting how widespread unsupervised GenAI use has become inside enterprises and how it amplifies prompt injection and data-leak exposure.",
+      "external_url": "https://research.checkpoint.com/2026/cyber-security-report-2026/",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "Q2 2025",
+          "Nov 2025",
+          "Dec 2025"
+        ],
+        "series": [
+          {
+            "name": "Publicly disclosed ransomware attacks",
+            "values": [
+              1600,
+              727,
+              945
+            ],
+            "color": "#E51C39"
+          }
+        ]
+      },
+      "industry": [
+        "Education",
+        "Government",
+        "Telecommunications",
+        "Manufacturing",
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Latin America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability",
+        "data_leaks"
+      ],
+      "tags": [
+        "external-report",
+        "leak-sites",
+        "monthly",
+        "quarterly",
+        "geographic-share",
+        "weekly-attacks",
+        "sector-comparison",
+        "multi-series",
+        "regional",
+        "latam",
+        "africa",
+        "yoy",
+        "qilin",
+        "clop",
+        "akira",
+        "raas",
+        "manufacturing",
+        "threatcloud",
+        "telemetry",
+        "spark-from-4",
+        "education",
+        "sector",
+        "genai",
+        "prompt-injection",
+        "shadow-ai"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2026-01-28",
+      "report_meta": {
+        "report_id": "checkpoint-cyber-security-report-2026",
+        "organization_id": "checkpoint",
+        "publication_date": "2026-01-28",
+        "extracted_on": "2026-05-11",
+        "source_url": "https://research.checkpoint.com/2026/cyber-security-report-2026/",
+        "card_count_total": 29,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "checkpoint-cyber-security-report-2026-ransomware-disclosures"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "checkpoint-cyber-security-report-2026-ransomware-disclosures",
+      "title": "Publicly disclosed ransomware attacks across 2025",
+      "description": "Check Point's quarterly and monthly ransomware leak-site counts climbed steadily across 2025: ~1,600 incidents in Q2, 727 in November alone and 945 in December — illustrating that despite law enforcement takedowns, disclosures grew throughout the year.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "leak-sites",
+        "monthly",
+        "quarterly"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware Operations Become More Fragmented and Targeted",
+      "comparison": "Q2 → Dec 2025",
+      "trend": "increasing",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Q2 2025",
+          "Nov 2025",
+          "Dec 2025"
+        ],
+        "series": [
+          {
+            "name": "Publicly disclosed ransomware attacks",
+            "values": [
+              1600,
+              727,
+              945
+            ],
+            "color": "#E51C39"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "checkpoint-cyber-security-report-2026-ransomware-region-share",
+      "title": "Ransomware disclosures concentrate in North America",
+      "description": "Region share of publicly disclosed ransomware attacks tracked by Check Point Research stayed heavily tilted toward North America across 2025: 53% in Q2 vs 25% Europe, then 55% vs 18% in November, with the United States alone accounting for 52% of November incidents.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "geographic-share",
+        "leak-sites"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware Operations Become More Fragmented and Targeted",
+      "comparison": "Q2 vs Nov 2025",
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "North America",
+          "Europe"
+        ],
+        "series": [
+          {
+            "name": "Q2 2025 share",
+            "values": [
+              53,
+              25
+            ],
+            "color": "#E51C39"
+          },
+          {
+            "name": "Nov 2025 share",
+            "values": [
+              55,
+              18
+            ],
+            "color": "#F47A8A"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "checkpoint-cyber-security-report-2026-industry-comparison",
+      "title": "Weekly attacks per organization by industry – 2025",
+      "description": "Side-by-side comparison of the most-attacked industries in Check Point's monthly and quarterly 2025 telemetry. Education stayed the runaway leader across Q1, Q2, November and December, while Government held a stable second place and Associations/Non-Profits surged late in the year.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [
+        "Education",
+        "Government",
+        "Telecommunications"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "weekly-attacks",
+        "sector-comparison",
+        "multi-series"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Industry / Sector Targeting (Weekly Attacks per Organization)",
+      "comparison": "Q1 vs Q2 vs Nov vs Dec 2025",
+      "trend": "increasing",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Education",
+          "Government",
+          "Telecommunications",
+          "Associations & Non-Profits"
+        ],
+        "series": [
+          {
+            "name": "Q1 2025",
+            "values": [
+              4484,
+              2678,
+              2664,
+              0
+            ],
+            "color": "#E51C39"
+          },
+          {
+            "name": "Q2 2025",
+            "values": [
+              4388,
+              2632,
+              0,
+              0
+            ],
+            "color": "#F47A8A"
+          },
+          {
+            "name": "Nov 2025",
+            "values": [
+              4656,
+              2716,
+              0,
+              2550
+            ],
+            "color": "#A8141F"
+          },
+          {
+            "name": "Dec 2025",
+            "values": [
+              4349,
+              2666,
+              0,
+              2509
+            ],
+            "color": "#7A0E16"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "checkpoint-cyber-security-report-2026-regional-weekly-attacks",
+      "title": "Regional weekly attacks per organization – November 2025",
+      "description": "Latin America led every region in November 2025 with 3,048 weekly attacks per organization — a 17% YoY increase, the largest globally. Africa ran second at 2,696, although it actually fell 13% YoY as attention shifted to Latin America.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "Latin America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "regional",
+        "weekly-attacks",
+        "latam",
+        "africa"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Regional Targeting – November 2025 Snapshot",
+      "comparison": "Nov 2024 → Nov 2025",
+      "trend": "increasing",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Latin America",
+          "Africa"
+        ],
+        "series": [
+          {
+            "name": "Weekly attacks per org (Nov 2025)",
+            "values": [
+              3048,
+              2696
+            ],
+            "color": "#E51C39"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "checkpoint-cyber-security-report-2026-regional-yoy",
+      "title": "Regional YoY change in weekly attacks – November 2025",
+      "description": "Year-over-year change in average weekly attacks per organization in November 2025: Latin America +17%, North America +9%, APAC -0.1%, Europe -1%, Africa -13%. Latin America registered the largest regional surge globally.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "Latin America",
+        "North America",
+        "Asia Pacific",
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "regional",
+        "yoy",
+        "weekly-attacks",
+        "latam"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Regional Targeting – November 2025 Snapshot",
+      "comparison": "Nov 2024 → Nov 2025",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Latin America",
+          "North America",
+          "Asia Pacific",
+          "Europe",
+          "Africa"
+        ],
+        "series": [
+          {
+            "name": "YoY change",
+            "values": [
+              17,
+              9,
+              -0.1,
+              -1,
+              -13
+            ],
+            "color": "#E51C39"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "checkpoint-cyber-security-report-2026-top-ransomware-groups",
+      "title": "Top ransomware groups – November 2025",
+      "description": "By share of publicly disclosed ransomware attacks in November 2025, Qilin and Clop tied at 15% each, followed by Akira at 12%. The same Russian Qilin RaaS jumped to 18% of disclosures in December 2025, becoming the single most active group of the month.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "qilin",
+        "clop",
+        "akira",
+        "raas"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware Operations Become More Fragmented and Targeted",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Qilin",
+          "Clop",
+          "Akira"
+        ],
+        "series": [
+          {
+            "name": "Share of disclosed attacks (Nov 2025)",
+            "values": [
+              15,
+              15,
+              12
+            ],
+            "color": "#E51C39"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "checkpoint-cyber-security-report-2026-ransomware-business-sectors",
+      "title": "Ransomware-impacted business sectors – November 2025",
+      "description": "Industrial Manufacturing led ransomware leak-site disclosures in November 2025 with 12% of victims, followed by Business Services at 11% and Consumer Goods & Services at 10%, reflecting attackers' continued focus on operationally sensitive industries.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [
+        "Manufacturing",
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "leak-sites",
+        "manufacturing"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware Operations Become More Fragmented and Targeted",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Industrial Manufacturing",
+          "Business Services",
+          "Consumer Goods & Services"
+        ],
+        "series": [
+          {
+            "name": "Share of ransomware victims (Nov 2025)",
+            "values": [
+              12,
+              11,
+              10
+            ],
+            "color": "#E51C39"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-weekly-attacks-trend",
+      "title": "Weekly attacks per org climbed across 2025",
+      "description": "Check Point ThreatCloud AI telemetry tracked the average weekly attacks per organization through 2025: ~1,925 in Q1, 1,984 in Q2, 2,003 in November and 2,027 in December. December's reading is up 9% year over year.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Latin America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "threatcloud",
+        "weekly-attacks",
+        "telemetry",
+        "latam",
+        "spark-from-4"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Weekly Attacks per Organization – Quarterly and Monthly Telemetry",
+      "comparison": "Q1 2025 → Dec 2025",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "sparkline",
+      "value": "2,027/wk",
+      "spark": [
+        1925,
+        1984,
+        1984,
+        2003,
+        2003,
+        2027
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-education-most-targeted",
+      "title": "Education stayed #1 target all year",
+      "description": "Education was the most-attacked industry in every 2025 reporting window feeding the annual report, averaging more than double the global weekly attack rate: 4,484 (Q1), 4,388 (Q2), 4,656 (Nov) and 4,349 (Dec) weekly attacks per organization.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [
+        "Education"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "education",
+        "weekly-attacks",
+        "sector",
+        "spark-from-4"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Industry / Sector Targeting (Weekly Attacks per Organization)",
+      "comparison": "Q1 → Dec 2025",
+      "trend": "flat",
+      "value_unit": "count",
+      "card_style": "sparkline",
+      "value": "4,349/wk",
+      "spark": [
+        4484,
+        4388,
+        4388,
+        4656,
+        4656,
+        4349
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-risky-ai-prompts",
+      "title": "Risky AI prompts grew 97% in 2025",
+      "description": "Check Point Research measured a 97% year-over-year increase in risky AI prompts during 2025, reflecting how widespread unsupervised GenAI use has become inside enterprises and how it amplifies prompt injection and data-leak exposure.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "genai",
+        "prompt-injection",
+        "shadow-ai"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI as a Force Multiplier Across Cyber Attacks",
+      "comparison": "vs 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+97% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-q1-surge",
+      "title": "Q1 2025 attacks per org jumped 47% YoY",
+      "description": "Check Point's Q1 2025 Global Cyber Attack Report — the first major data drop feeding the annual report — measured a 47% YoY surge in average weekly cyber attacks per organization, reaching roughly 1,925 attacks per week.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Latin America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "q1-2025",
+        "weekly-attacks",
+        "latam"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Weekly Attacks per Organization – Quarterly and Monthly Telemetry",
+      "comparison": "vs Q1 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+47% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-q1-ransomware-surge",
+      "title": "Q1 2025 ransomware attacks up 126% YoY",
+      "description": "Publicly disclosed ransomware attacks rose 126% year over year in Q1 2025 according to Check Point's quarterly global cyber attack report, setting the tone for an entire year in which ransomware operations fragmented and accelerated.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "q1-2025",
+        "leak-sites"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware Operations Become More Fragmented and Targeted",
+      "comparison": "vs Q1 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+126% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-dec-ransomware-yoy",
+      "title": "December 2025 ransomware up 60% YoY",
+      "description": "Check Point recorded 945 publicly reported ransomware attacks in December 2025, a 60% increase versus December 2024, closing the year on the highest monthly disclosure volume Check Point had ever measured.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "december-2025",
+        "leak-sites"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware Operations Become More Fragmented and Targeted",
+      "comparison": "Dec 2024 → Dec 2025",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+60% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-associations-yoy",
+      "title": "Associations & Non-Profits +57% YoY",
+      "description": "Associations and non-profit organizations recorded the largest year-over-year jump of any tracked vertical in November 2025, with 2,550 weekly attacks per organization (+57% YoY). The trend held in December at 2,509 weekly attacks (+56% YoY).",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "non-profit",
+        "associations",
+        "sector"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Industry / Sector Targeting (Weekly Attacks per Organization)",
+      "comparison": "Nov 2024 → Nov 2025",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+57% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-education-yoy-q2",
+      "title": "Education sector +31% YoY in Q2 2025",
+      "description": "Education absorbed 4,388 weekly attacks per organization in Q2 2025 — a 31% jump versus Q2 2024. Check Point attributes the surge to underfunded defenses combined with the high black-market value of student and staff credentials.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [
+        "Education"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "education",
+        "q2-2025"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Industry / Sector Targeting (Weekly Attacks per Organization)",
+      "comparison": "Q2 2024 → Q2 2025",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+31% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-latam-december",
+      "title": "LATAM +26% YoY in December 2025",
+      "description": "Latin America extended its lead in December 2025 with 3,065 weekly attacks per organization, a 26% year-over-year jump and the largest regional surge of any region tracked by Check Point Research — capping a year of accelerating attacks across the region.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "Latin America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "latam",
+        "december-2025",
+        "regional"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Regional Targeting – November 2025 Snapshot",
+      "comparison": "Dec 2024 → Dec 2025",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+26% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-europe-q2-surge",
+      "title": "Europe +22% YoY in Q2 2025",
+      "description": "Europe posted the largest year-over-year increase of any region in Q2 2025 at 22%, despite not topping absolute volumes. Check Point attributes the rise to attackers exploiting geopolitical tensions, regulatory fragmentation and the region's concentration of high-value data.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Geopolitics",
+      "industry": [],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "europe",
+        "q2-2025",
+        "geopolitics"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Regional Targeting – November 2025 Snapshot",
+      "comparison": "Q2 2024 → Q2 2025",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+22% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-vulnerable-mcps",
+      "title": "40% of analyzed MCPs were vulnerable",
+      "description": "Check Point analyzed Model Context Protocols (MCPs) deployed by enterprises in 2025 and found 40% were vulnerable, signalling that the agentic AI tooling stack is becoming a first-class attack surface alongside traditional applications.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "mcp",
+        "agentic-ai",
+        "genai"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI as a Force Multiplier Across Cyber Attacks",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "40%"
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-genai-affected-orgs",
+      "title": "87% of GenAI-using organizations exposed",
+      "description": "Among organizations actively using generative AI, 87% were affected by at least one high-risk prompt event in November 2025, and the average enterprise was running 11 different GenAI tools per month outside formal governance.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "genai",
+        "shadow-ai",
+        "governance"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI as a Force Multiplier Across Cyber Attacks",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "87%"
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-qilin-december",
+      "title": "Qilin = 18% of December ransomware",
+      "description": "Qilin, the Russian Ransomware-as-a-Service operator active since 2022, was responsible for 18% of all publicly disclosed ransomware attacks in December 2025 — making it the most active group of the month per Check Point Research.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "qilin",
+        "raas",
+        "december-2025"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware Operations Become More Fragmented and Targeted",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "18%"
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-genai-data-share",
+      "title": "22% of GenAI prompts contained sensitive data",
+      "description": "Across enterprise tenants monitored by Check Point in November 2025, 22% of generative AI prompts contained sensitive information — credentials, source code, customer data or other regulated content — feeding the report's central thesis that ungoverned AI is now a measurable enterprise risk.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "genai",
+        "data-leak",
+        "sensitive-data"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI as a Force Multiplier Across Cyber Attacks",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "22%"
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-us-share-nov",
+      "title": "United States = 52% of November ransomware",
+      "description": "The United States alone accounted for 52% of all publicly reported ransomware incidents tracked by Check Point in November 2025, underscoring how concentrated North-American victims remain in extortion leak-site activity even as criminal operators decentralize.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "usa",
+        "leak-sites",
+        "november-2025"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware Operations Become More Fragmented and Targeted",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "52%"
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-genai-leak-prompts",
+      "title": "1 in 35 enterprise GenAI prompts risk a leak",
+      "description": "Check Point's November 2025 telemetry, cited in the Cyber Security Report 2026, found that one in every 35 enterprise GenAI prompts carried a high risk of leaking sensitive data, with 22% of prompts containing sensitive information overall.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "genai",
+        "data-leak",
+        "shadow-ai"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI as a Force Multiplier Across Cyber Attacks",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "1 in 35"
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-genai-tools-per-month",
+      "title": "Average org uses 11 GenAI tools per month",
+      "description": "Check Point telemetry shows that the typical enterprise interacts with 11 different generative AI tools each month, most of them unsanctioned, creating sprawling shadow-AI footprints that defenders cannot consistently see or govern.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "genai",
+        "shadow-ai",
+        "tool-sprawl"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI as a Force Multiplier Across Cyber Attacks",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "11"
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-geopolitical",
+      "title": "Cyber ops sync with geopolitical conflicts",
+      "description": "Check Point flags 2025 as the year in which cyber espionage, disruption and influence campaigns moved in lockstep with kinetic events, with compromised IoT and surveillance systems repurposed to support physical-world operations.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Geopolitics",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "Europe",
+        "Middle East",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "geopolitics",
+        "iot",
+        "influence-ops",
+        "espionage",
+        "mena",
+        "industry:defense"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Cyber Activity Aligns More Closely with Geopolitical Conflicts",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "Geo-aligned"
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-ai-quote",
+      "title": "AI is now embedded across the attack lifecycle",
+      "description": "Check Point's framing of AI as both an enabler of attacker tradecraft and a direct source of enterprise risk anchors the 2026 report and is reflected across every other major trend it covers.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "genai",
+        "social-engineering",
+        "ttp"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI as a Force Multiplier Across Cyber Attacks",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Artificial intelligence is now embedded across the attack lifecycle, accelerating the execution of familiar techniques at greater speed and scale.\""
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-edge-devices",
+      "title": "Edge devices are the new initial-access pillar",
+      "description": "Check Point Research positions routers, gateways and VPN appliances as the highest-yield foothold for both criminal and Chinese-nexus operators in 2025, citing limited monitoring and patching coverage as the structural driver.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "supply_chain"
+      ],
+      "tags": [
+        "edge-devices",
+        "routers",
+        "vpn-appliance",
+        "perimeter"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Unmonitored Devices as High-Value Initial Access Targets",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Unmonitored devices played a growing role in intrusion activity, particularly in large-scale and targeted attacks.\""
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-chinese-nexus",
+      "title": "Chinese-nexus operations are industrialized",
+      "description": "Check Point characterizes 2025 Chinese-nexus activity as routine, edge-focused and global by design, with zero-day exploitation and one-day weaponization treated as standard operating procedure rather than exceptional tradecraft.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "Asia Pacific",
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "supply_chain"
+      ],
+      "tags": [
+        "china",
+        "nation-state",
+        "zero-day",
+        "edge"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Chinese-Nexus Cyber Threats",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"During 2025 the Chinese-nexus activity was global by design… Operations are industrialized, not opportunistic.\""
+    },
+    {
+      "type": "stat",
+      "id": "checkpoint-cyber-security-report-2026-fragmentation-quote",
+      "title": "Ransomware fragments into smaller crews",
+      "description": "Check Point's headline narrative for 2026 is that ransomware power is decentralizing — law-enforcement disruption of brands like LockBit and BlackCat has pushed the ecosystem toward smaller affiliates, data-only extortion and AI-accelerated negotiation timelines.",
+      "source": "Check Point Research",
+      "source_short": "Check Point",
+      "color": "#E51C39",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "data-extortion",
+        "fragmentation",
+        "raas"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware Operations Become More Fragmented and Targeted",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"A shift away from centralized ransomware brands toward smaller, decentralized operators… increased use of data-only extortion without encryption.\""
+    }
+  ]
+}

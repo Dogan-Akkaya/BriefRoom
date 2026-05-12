@@ -1,0 +1,1337 @@
+{
+  "source": "CrowdStrike",
+  "source_short": "CrowdStrike",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/crowdstrike-global-threat-report-2025.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.945Z. Curated top 10 of 31 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-crowdstrike-global-threat-report-2025",
+      "title": "2025 Global Threat Report",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "color": "#FF1D1D",
+      "description": "Voice phishing (vishing) attacks, where adversaries call victims with persuasive social engineering, saw explosive growth in the second half of 2024. CrowdStrike observed a 442% increase between H1 and H2 2024.",
+      "external_url": "https://www.crowdstrike.com/global-threat-report/",
+      "preferred_chart": "line",
+      "dataset": {
+        "labels": [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec"
+        ],
+        "series": [
+          {
+            "name": "Vishing detections",
+            "values": [
+              3,
+              5,
+              2,
+              10,
+              11,
+              9,
+              10,
+              20,
+              33,
+              55,
+              64,
+              93
+            ],
+            "color": "#FF1D1D"
+          }
+        ]
+      },
+      "industry": [
+        "Technology",
+        "Manufacturing",
+        "Retail & E-Commerce",
+        "Financial Services",
+        "Healthcare",
+        "Telecommunications",
+        "Government",
+        "Education"
+      ],
+      "region": [
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "ransomware",
+        "vulnerability",
+        "dark_web_mentions",
+        "data_leaks"
+      ],
+      "tags": [
+        "external-report",
+        "vishing",
+        "monthly",
+        "trend",
+        "industry targeting",
+        "interactive intrusion",
+        "social engineering",
+        "callback phishing",
+        "China-nexus",
+        "nation-state",
+        "espionage",
+        "malware-free",
+        "hands-on-keyboard",
+        "breakout time",
+        "eCrime",
+        "lateral movement",
+        "deepfake",
+        "BEC",
+        "genAI",
+        "fraud",
+        "bec",
+        "enterprising adversary",
+        "foreword",
+        "access brokers",
+        "initial access"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2025-02-27",
+      "report_meta": {
+        "report_id": "crowdstrike-global-threat-report-2025",
+        "organization_id": "crowdstrike",
+        "publication_date": "2025-02-27",
+        "extracted_on": "2026-05-11",
+        "source_url": "https://www.crowdstrike.com/global-threat-report/",
+        "card_count_total": 31,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "crowdstrike-global-threat-report-2025-vishing-monthly-chart"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "crowdstrike-global-threat-report-2025-vishing-monthly-chart",
+      "title": "Vishing detections by month, 2024",
+      "description": "Monthly vishing intrusions detected by CrowdStrike OverWatch in 2024. The latter half of 2024 saw a 442% increase compared to H1, with December reaching 93 detections.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "vishing",
+        "monthly",
+        "trend"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "2024 Vishing Trends",
+      "comparison": "H1 vs H2 2024: +442%",
+      "trend": "increasing",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec"
+        ],
+        "series": [
+          {
+            "name": "Vishing detections",
+            "values": [
+              3,
+              5,
+              2,
+              10,
+              11,
+              9,
+              10,
+              20,
+              33,
+              55,
+              64,
+              93
+            ],
+            "color": "#FF1D1D"
+          }
+        ]
+      },
+      "preferred_chart": "line"
+    },
+    {
+      "type": "chart",
+      "id": "crowdstrike-global-threat-report-2025-top-industries",
+      "title": "Top 10 industries targeted by interactive intrusions, 2024",
+      "description": "Share of interactive intrusions by industry vertical observed by CrowdStrike in 2024. Technology remained the most targeted industry for the seventh consecutive year.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Threat Landscape",
+      "industry": [
+        "Technology",
+        "Manufacturing",
+        "Retail & E-Commerce",
+        "Financial Services",
+        "Healthcare",
+        "Telecommunications",
+        "Government",
+        "Education"
+      ],
+      "region": [],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "industry targeting",
+        "interactive intrusion"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top 10 Industries Targeted by Interactive Intrusions",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Technology",
+          "Consulting & Professional Services",
+          "Manufacturing",
+          "Retail",
+          "Financial Services",
+          "Healthcare",
+          "Telecommunications",
+          "Government",
+          "Industrials & Engineering",
+          "Academic"
+        ],
+        "series": [
+          {
+            "name": "Share of intrusions",
+            "values": [
+              23,
+              15,
+              12,
+              11,
+              10,
+              9,
+              7,
+              6,
+              4,
+              3
+            ],
+            "color": "#FF1D1D"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-vishing-h1-h2-growth",
+      "title": "Vishing attacks surged 442% between H1 and H2 2024",
+      "description": "Voice phishing (vishing) attacks, where adversaries call victims with persuasive social engineering, saw explosive growth in the second half of 2024. CrowdStrike observed a 442% increase between H1 and H2 2024.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "vishing",
+        "social engineering",
+        "callback phishing"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Foreword / 2024 Vishing Trends",
+      "comparison": "H1 2024 vs H2 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+442%"
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-china-nexus-surge",
+      "title": "China-nexus activity surged 150% across all sectors",
+      "description": "China-nexus intrusions increased 150% across all sectors on average compared to 2023 and represent the most active targeted intrusion threats CrowdStrike Intelligence tracks. China-nexus adversaries continued to operate in every sector and region globally.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "China-nexus",
+        "nation-state",
+        "espionage"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "China-Nexus Adversaries Dominate the Global Threat Landscape",
+      "comparison": "2024 vs 2023",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+150%"
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-malware-free-detections",
+      "title": "79% of detections in 2024 were malware-free",
+      "description": "In 2024, 79% of the detections CrowdStrike observed were malware-free, up from 40% in 2019. Adversaries are increasingly using hands-on-keyboard techniques that blend in with legitimate user activity and impede detection.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Detection",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "malware-free",
+        "hands-on-keyboard",
+        "interactive intrusion"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat Landscape Overview",
+      "comparison": "Up from 40% in 2019",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "79%"
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-breakout-time-avg",
+      "title": "Average eCrime breakout time fell to 48 minutes",
+      "description": "The average breakout time for interactive eCrime intrusions fell to 48 minutes in 2024, down from 62 minutes in 2023. Defenders have an ever-shrinking window to detect and respond before adversaries move laterally.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "breakout time",
+        "eCrime",
+        "lateral movement"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Breakout Time: The Race Against Adversaries",
+      "comparison": "Down from 62 minutes in 2023",
+      "trend": "decreasing",
+      "value_unit": "minutes",
+      "card_style": "number",
+      "value": "48 minutes"
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-deepfake-cfo",
+      "title": "$25.6M lost to a deepfake CFO scam",
+      "description": "In February 2024, unidentified threat actors used public footage of a target company's CFO and other employees to create credible deepfake video clones and socially engineered the victim into transferring 25.6 million USD.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "AI Security",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "deepfake",
+        "BEC",
+        "genAI",
+        "fraud",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "GenAI Supports Social Engineering",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$25.6M"
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-fastest-breakout",
+      "title": "Fastest observed breakout time dropped to 51 seconds",
+      "description": "The fastest breakout time CrowdStrike observed in 2024 was just 51 seconds, meaning defenders may have less than a minute to detect and respond before attackers establish deeper control.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "breakout time",
+        "eCrime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Breakout Time: The Race Against Adversaries",
+      "comparison": null,
+      "trend": "decreasing",
+      "value_unit": "seconds",
+      "card_style": "number",
+      "value": "51 seconds"
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-quote-enterprising",
+      "title": "Adversaries are becoming more business-like",
+      "description": "CrowdStrike's CEO underscores the central theme of the 2025 report: adversaries are no longer ad-hoc operators but enterprising, business-focused organizations.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "enterprising adversary",
+        "foreword"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Foreword",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "Adversaries are becoming more efficient, focused, and business-like in their approach — in many ways, more like the enterprise organizations they prey upon."
+    },
+    {
+      "type": "chart",
+      "id": "crowdstrike-global-threat-report-2025-access-brokers-monthly",
+      "title": "Access broker advertisements by month, 2024",
+      "description": "Monthly count of access broker advertisements observed by CrowdStrike in 2024, totaling 4,486 ads. May and December represented the largest peaks of access-as-a-service activity.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "eCrime",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "access brokers",
+        "initial access",
+        "monthly"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "The Growing Reliance on Identity Attacks",
+      "comparison": "Total: 4,486",
+      "trend": "increasing",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec"
+        ],
+        "series": [
+          {
+            "name": "Access broker ads",
+            "values": [
+              590,
+              306,
+              242,
+              186,
+              813,
+              201,
+              177,
+              151,
+              253,
+              386,
+              328,
+              853
+            ],
+            "color": "#FF1D1D"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "crowdstrike-global-threat-report-2025-malware-free-trend",
+      "title": "Malware-free detections, 2019-2024",
+      "description": "Percentage of CrowdStrike detections classified as malware-free over six years, rising from 40% in 2019 to 79% in 2024. This shift defines the move toward hands-on-keyboard attacks that mimic legitimate user activity.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Detection",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "malware-free",
+        "hands-on-keyboard"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top 10 Industries Targeted by Interactive Intrusions",
+      "comparison": "2019 vs 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ],
+        "series": [
+          {
+            "name": "Malware-free detections (%)",
+            "values": [
+              40,
+              51,
+              62,
+              71,
+              75,
+              79
+            ],
+            "color": "#FF1D1D"
+          }
+        ]
+      },
+      "preferred_chart": "area"
+    },
+    {
+      "type": "chart",
+      "id": "crowdstrike-global-threat-report-2025-breakout-time-trend",
+      "title": "Average eCrime breakout time, 2023 vs 2024",
+      "description": "Average eCrime breakout time, in minutes, fell from 62 minutes in 2023 to 48 minutes in 2024 — a 23% acceleration. The fastest observed breakout was just 51 seconds.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "breakout time",
+        "year over year"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Breakout Time: The Race Against Adversaries",
+      "comparison": "2023 vs 2024",
+      "trend": "decreasing",
+      "value_unit": "minutes",
+      "dataset": {
+        "labels": [
+          "2023",
+          "2024"
+        ],
+        "series": [
+          {
+            "name": "Average breakout time (minutes)",
+            "values": [
+              62,
+              48
+            ],
+            "color": "#FF1D1D"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "crowdstrike-global-threat-report-2025-llm-vs-human-phish",
+      "title": "Phishing click-through rate: LLM-generated vs human-written",
+      "description": "A 2024 academic study found LLM-generated phishing messages achieved a 54% click-through rate versus 12% for likely human-written phishing messages — a 4.5x increase in effectiveness.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "AI Security",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "genAI",
+        "LLM",
+        "phishing"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "GenAI Supports Social Engineering",
+      "comparison": "LLM 4.5x human",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "LLM-generated",
+          "Human-written"
+        ],
+        "series": [
+          {
+            "name": "Click-through rate (%)",
+            "values": [
+              54,
+              12
+            ],
+            "color": "#FF1D1D"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "crowdstrike-global-threat-report-2025-scattered-spider-cloud-yoy",
+      "title": "SCATTERED SPIDER share of cloud intrusions, 2023 vs 2024",
+      "description": "SCATTERED SPIDER's share of cloud-based intrusions fell from 30% in 2023 to 13% in 2024 as more nation-state and opportunistic threat actors entered the cloud control plane.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Cloud Security",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "SCATTERED SPIDER",
+        "cloud intrusions"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "New Cloud-Conscious Threat Actors Emerge in 2024",
+      "comparison": "2023 vs 2024",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "2023",
+          "2024"
+        ],
+        "series": [
+          {
+            "name": "SCATTERED SPIDER share of cloud intrusions (%)",
+            "values": [
+              30,
+              13
+            ],
+            "color": "#FF1D1D"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "crowdstrike-global-threat-report-2025-interactive-by-region",
+      "title": "Interactive intrusions by region, 2024",
+      "description": "Share of interactive intrusions by region observed by CrowdStrike in January-December 2024. North America dominated with 53% of activity, followed by Europe (14%) and East Asia (11%).",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Middle East"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "interactive intrusion",
+        "regional",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Interactive Intrusions by Region",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "North America",
+          "Europe",
+          "East Asia",
+          "Middle East",
+          "South Asia",
+          "Oceania",
+          "South America",
+          "Africa"
+        ],
+        "series": [
+          {
+            "name": "Share of intrusions",
+            "values": [
+              53,
+              14,
+              11,
+              7,
+              6,
+              5,
+              3,
+              1
+            ],
+            "color": "#FF1D1D"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "crowdstrike-global-threat-report-2025-m365-targeting",
+      "title": "Microsoft 365 services accessed in cloud intrusions, H1 2024",
+      "description": "Microsoft 365 has become a popular target for cloud-conscious threat actors. SharePoint and Outlook were accessed in 22% and 17%, respectively, of relevant intrusions in the first half of 2024.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Cloud Security",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "Microsoft 365",
+        "SharePoint",
+        "SaaS"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "SaaS Exploitation Likely to Continue",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "SharePoint",
+          "Outlook"
+        ],
+        "series": [
+          {
+            "name": "Share of intrusions",
+            "values": [
+              22,
+              17
+            ],
+            "color": "#FF1D1D"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-malware-free-spark",
+      "title": "Malware-free detections rose to 79% by 2024",
+      "description": "Six-year trend of CrowdStrike detections that were malware-free, climbing from 40% in 2019 to 79% in 2024, defining the shift toward hands-on-keyboard attacks.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Detection",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "malware-free",
+        "trend",
+        "2019-2024"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top 10 Industries Targeted by Interactive Intrusions",
+      "comparison": "2019 to 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "sparkline",
+      "value": "79%",
+      "spark": [
+        40,
+        51,
+        62,
+        71,
+        75,
+        79
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-china-key-industries",
+      "title": "Key sectors saw 200-300% more China-nexus attacks",
+      "description": "Financial services, media, manufacturing, and industrials and engineering sectors all experienced 200-300% increases in observed China-nexus intrusions compared to previous years.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Threat Actors",
+      "industry": [
+        "Financial Services",
+        "Manufacturing"
+      ],
+      "region": [
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "China-nexus",
+        "targeted sectors"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "China-Nexus Adversaries Dominate the Global Threat Landscape",
+      "comparison": "vs previous years",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+200-300%"
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-access-broker-ads",
+      "title": "Access broker advertisements increased 50% YoY",
+      "description": "Providing access as a service became a thriving business in 2024, as advertisements for access brokers increased 50% year-over-year. Access brokers acquire access to organizations and sell it to other threat actors, including ransomware operators.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "eCrime",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "access brokers",
+        "initial access"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "The Growing Reliance on Identity Attacks",
+      "comparison": "2024 vs 2023",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+50% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-cloud-intrusions-growth",
+      "title": "New cloud intrusions grew 26% in 2024",
+      "description": "In 2024, new and unattributed cloud intrusions increased 26% compared to 2023, indicating more threat actors seek to exploit cloud services. CrowdStrike observed more attackers gaining initial access via valid accounts and abusing cloud command line tools.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Cloud Security",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "cloud-conscious",
+        "cloud intrusions"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Cloud-Conscious Threat Actors Continue to Innovate",
+      "comparison": "2024 vs 2023",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+26%"
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-interactive-intrusions-growth",
+      "title": "Interactive intrusion campaigns grew 35% YoY",
+      "description": "In 2024, CrowdStrike observed a 35% year-over-year increase in interactive intrusion campaigns. For the seventh consecutive year, the technology sector remained the most targeted industry.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Threat Landscape",
+      "industry": [
+        "Technology"
+      ],
+      "region": [],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "interactive intrusion",
+        "hands-on-keyboard"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "The Continued Rise of Interactive Intrusions",
+      "comparison": "2024 vs 2023",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+35% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-llm-phishing-ctr",
+      "title": "LLM-generated phishing click-through rate hit 54%",
+      "description": "A 2024 study of phishing email click-through rates indicated LLM-generated phishing messages had a significantly higher click-through rate (54%) than likely human-written phishing messages (12%).",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "AI Security",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "LLM",
+        "phishing",
+        "genAI",
+        "click-through"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "GenAI Supports Social Engineering",
+      "comparison": "vs 12% for human-written",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "54%"
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-scattered-spider-cloud-share",
+      "title": "SCATTERED SPIDER share of cloud intrusions fell to 13%",
+      "description": "In 2023, prolific eCrime adversary SCATTERED SPIDER accounted for 30% of all cloud-based intrusions. This number fell to 13% in 2024, partly because numerous nation-state and opportunistic threat actors are increasingly targeting the cloud control plane.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Cloud Security",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "SCATTERED SPIDER",
+        "cloud"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "New Cloud-Conscious Threat Actors Emerge in 2024",
+      "comparison": "Down from 30% in 2023",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "13%"
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-named-adversaries",
+      "title": "CrowdStrike now tracks 257 named adversaries",
+      "description": "During 2024, CrowdStrike Intelligence introduced 26 newly named adversaries — including the new Kazakhstan-based COMRADE SAIGA — raising the total number of named adversaries tracked across all motivations to 257.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "named adversaries",
+        "intelligence"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Introduction",
+      "comparison": "+26 new in 2024",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "257"
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-famous-chollima-incidents",
+      "title": "304 FAMOUS CHOLLIMA incidents in 2024",
+      "description": "During 2024, CrowdStrike Falcon Adversary OverWatch threat hunters responded to 304 FAMOUS CHOLLIMA incidents, with nearly 40% of these representing insider threat operations driven by the DPRK's IT worker schemes.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Insider Threats",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "employee_exposure",
+        "data_leaks"
+      ],
+      "tags": [
+        "FAMOUS CHOLLIMA",
+        "DPRK",
+        "insider threat"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Introduction / FAMOUS CHOLLIMA Spotlight",
+      "comparison": "40% insider threat",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "304"
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-vishing-monthly-spark",
+      "title": "Vishing intrusions per month, 2024",
+      "description": "Monthly vishing intrusions detected by CrowdStrike OverWatch in 2024, showing the sharp ramp through H2 that culminated in 93 detections by year-end.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "vishing",
+        "monthly trend",
+        "spark-from-12"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "2024 Vishing Trends",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "sparkline",
+      "value": "93 in Dec",
+      "spark": [
+        3,
+        2,
+        11,
+        20,
+        55,
+        93
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-vulns-initial-access",
+      "title": "52% of observed vulnerabilities tied to initial access",
+      "description": "Attacks related to initial access boomed, accounting for 52% of vulnerabilities observed by CrowdStrike in 2024. This reinforces the need to secure exposed systems before attackers establish a foothold.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "initial access",
+        "exploitation"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "The Growing Reliance on Identity Attacks",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "52%"
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-valid-accounts-cloud",
+      "title": "Valid account abuse drove 35% of cloud incidents",
+      "description": "Abusing valid accounts has become the primary initial access vector to the cloud, accounting for 35% of cloud incidents in the first half of 2024. Attackers favor stealth-oriented credential tactics that don't trigger alerts.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Cloud Security",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "valid accounts",
+        "identity",
+        "cloud"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Access to Valid Accounts Facilitates Initial Access",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "35%"
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-sms-scattered-spider",
+      "title": "SCATTERED SPIDER sent 700,000+ malicious SMS",
+      "description": "In 2024, SCATTERED SPIDER obtained API keys to a commercial SMS distribution application from a compromised email inbox and subsequently used it to send more than 700,000 SMS messages containing links to AITM phishing and cryptocurrency drainer pages.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "smishing",
+        "SCATTERED SPIDER",
+        "AITM"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "SaaS Exploitation Likely to Continue",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "700,000+"
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-quote-cloud-credentials",
+      "title": "Valid accounts are the primary cloud access vector",
+      "description": "CrowdStrike's headline finding on identity-driven cloud compromise: legitimate credentials, not malware, are the front door.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2024,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "employee_exposure",
+        "infostealer"
+      ],
+      "tags": [
+        "identity",
+        "cloud",
+        "valid accounts"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Access to Valid Accounts Facilitates Initial Access",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "Abusing valid accounts has become the primary initial access vector to the cloud, accounting for 35% of cloud incidents in the first half of 2024."
+    },
+    {
+      "type": "stat",
+      "id": "crowdstrike-global-threat-report-2025-quote-attackers-faster",
+      "title": "In 2025, attackers will only move faster",
+      "description": "CrowdStrike's call to action for defenders entering 2025, emphasizing the closing detection-and-response window.",
+      "source": "CrowdStrike",
+      "source_short": "CrowdStrike",
+      "color": "#FF1D1D",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "call to action"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Proactive Defense Is Essential",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "In 2025, attackers will only move faster. Will defenders keep up?"
+    }
+  ]
+}

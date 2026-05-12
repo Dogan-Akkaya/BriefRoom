@@ -1,0 +1,1656 @@
+{
+  "source": "Microsoft Security",
+  "source_short": "Microsoft",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/microsoft-security-mddr-2025.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.962Z. Curated top 10 of 30 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-microsoft-security-mddr-2025",
+      "title": "Microsoft Digital Defense Report 2025",
+      "year": 2025,
+      "category": "Identity",
+      "color": "#0078D4",
+      "description": "Across Microsoft Incident Response and DART engagements, financially motivated outcomes dominate. Data theft, extortion, and destructive/human-operated ransomware together account for the vast majority of identified motivations; espionage trails far behind.",
+      "external_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/Microsoft-Digital-Defense-Report-2025.pdf",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "Exploit public-facing app",
+          "Valid accounts",
+          "Social engineering",
+          "External remote services",
+          "Phishing",
+          "Drive-by compromise",
+          "Trusted relationship",
+          "Supply chain compromise",
+          "Content injection"
+        ],
+        "series": [
+          {
+            "name": "FY24",
+            "values": [
+              11,
+              11,
+              10,
+              6,
+              8,
+              8,
+              1,
+              1,
+              2
+            ],
+            "color": "#0078D4"
+          },
+          {
+            "name": "FY25",
+            "values": [
+              16,
+              14,
+              8,
+              8,
+              6,
+              6,
+              4,
+              3,
+              2
+            ],
+            "color": "#50E6FF"
+          }
+        ]
+      },
+      "industry": [
+        "Government",
+        "Technology",
+        "Education",
+        "Manufacturing",
+        "Healthcare",
+        "Financial Services",
+        "Retail & E-Commerce",
+        "Transportation"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Middle East",
+        "Latin America"
+      ],
+      "threat_type": [
+        "phishing",
+        "supply_chain",
+        "vulnerability",
+        "ransomware",
+        "infostealer",
+        "employee_exposure"
+      ],
+      "tags": [
+        "external-report",
+        "initial-access",
+        "fy24-vs-fy25",
+        "valid-accounts",
+        "azure",
+        "defender-for-cloud",
+        "credential-theft",
+        "motivation",
+        "extortion",
+        "espionage",
+        "dart",
+        "geography",
+        "victims",
+        "mena",
+        "sectors",
+        "victimology",
+        "password-spray",
+        "token-theft",
+        "aitm",
+        "lumma",
+        "atomic",
+        "rhadamanthys",
+        "infostealers",
+        "latam",
+        "akira",
+        "ransomhub",
+        "qilin",
+        "play",
+        "fog",
+        "intel-471",
+        "clickfix",
+        "social-engineering"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2026-05-11",
+      "report_meta": {
+        "report_id": "microsoft-security-mddr-2025",
+        "organization_id": "microsoft-security",
+        "publication_date": null,
+        "extracted_on": "2026-05-11",
+        "source_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/Microsoft-Digital-Defense-Report-2025.pdf",
+        "card_count_total": 30,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "microsoft-security-mddr-2025-initial-access-vectors"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "microsoft-security-mddr-2025-initial-access-vectors",
+      "title": "Initial access vectors: FY24 vs FY25",
+      "description": "Microsoft Incident Response compares the most common initial-access vectors across two fiscal years. Exploitation of public-facing applications and valid accounts climbed, while phishing remained a leading vector and supply-chain compromise more than tripled in share.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "supply_chain",
+        "vulnerability"
+      ],
+      "tags": [
+        "initial-access",
+        "fy24-vs-fy25",
+        "valid-accounts"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "How threat actors are shaping the cyber risk environment",
+      "comparison": "FY24 vs FY25",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Exploit public-facing app",
+          "Valid accounts",
+          "Social engineering",
+          "External remote services",
+          "Phishing",
+          "Drive-by compromise",
+          "Trusted relationship",
+          "Supply chain compromise",
+          "Content injection"
+        ],
+        "series": [
+          {
+            "name": "FY24",
+            "values": [
+              11,
+              11,
+              10,
+              6,
+              8,
+              8,
+              1,
+              1,
+              2
+            ],
+            "color": "#0078D4"
+          },
+          {
+            "name": "FY25",
+            "values": [
+              16,
+              14,
+              8,
+              8,
+              6,
+              6,
+              4,
+              3,
+              2
+            ],
+            "color": "#50E6FF"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "microsoft-security-mddr-2025-cloud-alert-increases",
+      "title": "Azure cloud alert increases (second 100 days vs first 100 days of 2025)",
+      "description": "Microsoft Defender for Cloud telemetry shows sharp escalations across cloud attack categories in mid-2025. Destructive impact campaigns jumped 87%, data-collection alerts rose 58%, and credential-access attempts increased 23%.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Cloud Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "azure",
+        "defender-for-cloud",
+        "credential-theft"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Cloud threat trends",
+      "comparison": "second 100 days vs first 100 days of 2025",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Impact (ransomware/mass deletion)",
+          "Collection",
+          "Defense evasion",
+          "Credential access",
+          "Attacks by services",
+          "Run command"
+        ],
+        "series": [
+          {
+            "name": "Increase vs first 100 days of 2025",
+            "values": [
+              87,
+              58,
+              57,
+              23,
+              16,
+              15
+            ],
+            "color": "#0078D4"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "microsoft-security-mddr-2025-attacker-motivations-chart",
+      "title": "Identified motivations in incident response engagements",
+      "description": "Across Microsoft Incident Response and DART engagements, financially motivated outcomes dominate. Data theft, extortion, and destructive/human-operated ransomware together account for the vast majority of identified motivations; espionage trails far behind.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "motivation",
+        "extortion",
+        "espionage",
+        "dart"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "How threat actors are shaping the cyber risk environment",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Data theft",
+          "Extortion",
+          "Destruction / human-operated ransomware",
+          "Infrastructure building",
+          "Espionage"
+        ],
+        "series": [
+          {
+            "name": "Share of engagements",
+            "values": [
+              37,
+              33,
+              19,
+              7,
+              4
+            ],
+            "color": "#0078D4"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "microsoft-security-mddr-2025-top-impacted-countries",
+      "title": "Countries most frequently impacted by cyber threats (Jan-Jun 2025)",
+      "description": "The United States accounts for nearly a quarter of impacted Microsoft customers, with the UK, Israel, Germany, and Ukraine rounding out the top five. The distribution reflects geopolitical hotspots and Microsoft's commercial footprint.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "geography",
+        "victims",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "How threat actors are shaping the cyber risk environment",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "United States",
+          "United Kingdom",
+          "Israel",
+          "Germany",
+          "Ukraine",
+          "Canada",
+          "Japan",
+          "India",
+          "UAE",
+          "Australia/Taiwan"
+        ],
+        "series": [
+          {
+            "name": "Share of total impact",
+            "values": [
+              24.8,
+              5.6,
+              3.5,
+              3.3,
+              2.8,
+              2.6,
+              2.6,
+              2.3,
+              2,
+              1.8
+            ],
+            "color": "#0078D4"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "microsoft-security-mddr-2025-top-impacted-sectors",
+      "title": "Top 10 global sectors most impacted by threat actors",
+      "description": "Government agencies and IT lead the most-impacted sectors during the first half of 2025, each accounting for 17% of observed activity. Research and academia rank third — a sector consistently exploited as a stepping stone into other targets.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Government",
+        "Technology",
+        "Education",
+        "Manufacturing",
+        "Healthcare",
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "sectors",
+        "victimology"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "How threat actors are shaping the cyber risk environment",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Government",
+          "Information technology",
+          "Research and academia",
+          "NGOs",
+          "Critical manufacturing",
+          "Transportation",
+          "Consumer retail",
+          "Communications",
+          "Financial services",
+          "Healthcare"
+        ],
+        "series": [
+          {
+            "name": "Share of impact",
+            "values": [
+              17,
+              17,
+              11,
+              8,
+              6,
+              6,
+              6,
+              5,
+              4,
+              4
+            ],
+            "color": "#0078D4"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "microsoft-security-mddr-2025-identity-attack-mix",
+      "title": "How identity attacks break down (share of total)",
+      "description": "More than 97% of identity attacks are password spray or replay; advanced techniques such as token theft, AiTM, and consent phishing remain a small minority by volume but carry higher impact when successful.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "password-spray",
+        "token-theft",
+        "aitm"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Identity attacks in perspective",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Password spray / replay",
+          "Token theft by malware",
+          "AiTM",
+          "Other",
+          "Attacks on MFA",
+          "Consent phishing"
+        ],
+        "series": [
+          {
+            "name": "Share of identity attacks",
+            "values": [
+              97,
+              2.4042,
+              0.2375,
+              0.1692,
+              0.0033,
+              0.0005
+            ],
+            "color": "#0078D4"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "microsoft-security-mddr-2025-top-infostealers",
+      "title": "Top five infostealers observed",
+      "description": "Lumma Stealer dominated the infostealer landscape this year, accounting for more than half of observed infections among Microsoft Defender Threat Expert notifications, well ahead of Atomic, Node.js-based stealers, Sys01, and Rhadamanthys.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "eCrime",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Latin America",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "lumma",
+        "atomic",
+        "rhadamanthys",
+        "infostealers",
+        "latam"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Human-operated attacks and ransomware — From infostealers to ransomware",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Lumma Stealer",
+          "Atomic",
+          "Node.js-based stealer",
+          "Sys01",
+          "Rhadamanthys"
+        ],
+        "series": [
+          {
+            "name": "Share of infostealer detections",
+            "values": [
+              51,
+              21,
+              16,
+              8,
+              4
+            ],
+            "color": "#0078D4"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "microsoft-security-mddr-2025-ransomware-families",
+      "title": "Five most prolific ransomware families",
+      "description": "Akira led the ransomware leak-site landscape in 2025 with 22% of victims, followed by RansomHub, Fog, Qilin, and Play. The top five accounted for roughly 56% of all ransomware victims across 120 active variants tracked by Intel 471.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "akira",
+        "ransomhub",
+        "qilin",
+        "play",
+        "fog"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware's shifting tactics",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Akira",
+          "RansomHub",
+          "Fog",
+          "Qilin",
+          "Play"
+        ],
+        "series": [
+          {
+            "name": "Share of ransomware victims",
+            "values": [
+              22,
+              11,
+              11,
+              7,
+              5
+            ],
+            "color": "#0078D4"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "microsoft-security-mddr-2025-ransomware-industries",
+      "title": "Top 10 industries impacted by ransomware",
+      "description": "Industrial products and engineering/construction lead ransomware victim counts in 2025, with retail, healthcare, and technology rounding out the most-targeted verticals. Data is drawn from Intel 471 ransomware leak-site tracking.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [
+        "Manufacturing",
+        "Retail & E-Commerce",
+        "Healthcare",
+        "Technology",
+        "Education",
+        "Transportation",
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "victimology",
+        "intel-471"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top ten industries impacted by ransomware",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Industrial products",
+          "Engineering & construction",
+          "Retail/wholesale",
+          "Healthcare",
+          "Technology",
+          "IT consulting",
+          "Education",
+          "Law services",
+          "Transportation",
+          "Financial consulting"
+        ],
+        "series": [
+          {
+            "name": "Organizations impacted",
+            "values": [
+              633,
+              532,
+              441,
+              376,
+              281,
+              252,
+              251,
+              240,
+              223,
+              215
+            ],
+            "color": "#0078D4"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "microsoft-security-mddr-2025-clickfix-initial-access",
+      "title": "Top initial access methods seen by Defender Experts",
+      "description": "ClickFix — a social-engineering technique that tricks users into pasting attacker-supplied commands — became the most common initial access method observed by Microsoft Defender Experts in 2025, ahead of traditional phishing and password spray.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "clickfix",
+        "social-engineering",
+        "initial-access"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Social engineering exploits — Top initial access methods",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "ClickFix",
+          "Phishing",
+          "Password spray",
+          "Drive-by / SEO poisoning",
+          "Vulnerability"
+        ],
+        "series": [
+          {
+            "name": "Share of attacks",
+            "values": [
+              47,
+              35,
+              10,
+              7,
+              1
+            ],
+            "color": "#0078D4"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "microsoft-security-mddr-2025-container-infection-types",
+      "title": "Cloud container infection types",
+      "description": "Cryptojacking dominates Kubernetes and container attacks at 58% of cloud-native infections observed by Microsoft Defender for Cloud, followed by credential theft, known attack tools, and web shells.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Cloud Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "containers",
+        "kubernetes",
+        "cryptojacking",
+        "crypto-crime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Container security in focus",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Crypto miner",
+          "Credential theft",
+          "Known attack tools",
+          "Web shells"
+        ],
+        "series": [
+          {
+            "name": "Share of container infections",
+            "values": [
+              58,
+              21,
+              15,
+              6
+            ],
+            "color": "#0078D4"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "microsoft-security-mddr-2025-container-time-to-compromise",
+      "title": "Median time to compromise by container infection type",
+      "description": "Crypto miners hit fastest, compromising new containers within ~6.8 days; credential theft averages 8.7 days; known attack tools 12.7 days; and web shells 19.3 days. Most container compromises occur within 48 hours of deployment.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Cloud Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "containers",
+        "kubernetes",
+        "time-to-compromise"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Container security in focus",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "days",
+      "dataset": {
+        "labels": [
+          "Crypto miner",
+          "Credential theft",
+          "Known attack tools",
+          "Web shells"
+        ],
+        "series": [
+          {
+            "name": "Median time to compromise (days)",
+            "values": [
+              6.8,
+              8.7,
+              12.7,
+              19.3
+            ],
+            "color": "#0078D4"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "microsoft-security-mddr-2025-nation-state-sectors",
+      "title": "Most-targeted sectors by nation-state actors",
+      "description": "Nation-state cyber activity continues to prioritize espionage. IT alone accounted for 26% of nation-state targeting, with research and academia, government, and think tanks/NGOs together representing the largest share of intelligence collection.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Geopolitics",
+      "industry": [
+        "Technology",
+        "Education",
+        "Government",
+        "Manufacturing"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Middle East"
+      ],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "nation-state",
+        "espionage",
+        "apt",
+        "mena",
+        "industry:defense"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Nation-state adversary threats",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "IT",
+          "Research & academia",
+          "Government",
+          "Think tanks/NGOs",
+          "Consumer retail",
+          "Manufacturing",
+          "Transportation",
+          "Communications",
+          "Finance",
+          "Health",
+          "Defense",
+          "Energy"
+        ],
+        "series": [
+          {
+            "name": "Share of nation-state targeting",
+            "values": [
+              26,
+              14,
+              12,
+              7,
+              7,
+              6,
+              4,
+              4,
+              3,
+              3,
+              3,
+              3
+            ],
+            "color": "#0078D4"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "microsoft-security-mddr-2025-nation-state-countries",
+      "title": "Top targeted countries by nation-state activity",
+      "description": "Israel, the United States, and Ukraine led nation-state targeting in 2025, reflecting active geopolitical conflicts. The UAE, UK, and Korea round out the top recipients of state-sponsored attacks observed in Microsoft notifications.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Geopolitics",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Middle East"
+      ],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "nation-state",
+        "geopolitics",
+        "ukraine",
+        "israel",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Regional sample of nation-state activity levels observed",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "United States",
+          "Israel",
+          "Ukraine",
+          "UAE",
+          "United Kingdom",
+          "Korea",
+          "India",
+          "Hong Kong SAR",
+          "China",
+          "Kenya"
+        ],
+        "series": [
+          {
+            "name": "Observed events",
+            "values": [
+              623,
+              603,
+              277,
+              166,
+              144,
+              143,
+              126,
+              100,
+              95,
+              70
+            ],
+            "color": "#0078D4"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "microsoft-security-mddr-2025-identity-compromise-sectors",
+      "title": "Unique orgs with identity compromise signals, by sector",
+      "description": "Research and academia dwarf every other vertical with 4,647 unique organizations showing identity compromise signals between December 2024 and May 2025 — far ahead of services, technology, and manufacturing.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [
+        "Education",
+        "Technology",
+        "Manufacturing",
+        "Retail & E-Commerce",
+        "Energy & Utilities",
+        "Transportation",
+        "Healthcare"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "employee_exposure",
+        "infostealer"
+      ],
+      "tags": [
+        "identity-compromise",
+        "research-academia",
+        "victimology"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Identity, access, and the cybercrime economy",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Research & academia",
+          "Services",
+          "Technology",
+          "Manufacturing",
+          "Miscellaneous",
+          "Travel",
+          "Retail",
+          "Energy",
+          "Logistics",
+          "Media",
+          "Healthcare"
+        ],
+        "series": [
+          {
+            "name": "Unique organizations",
+            "values": [
+              4647,
+              841,
+              480,
+              411,
+              409,
+              391,
+              371,
+              334,
+              307,
+              272,
+              219
+            ],
+            "color": "#0078D4"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "microsoft-security-mddr-2025-ransomware-hybrid",
+      "title": "Hybrid cloud now in 40%+ of ransomware",
+      "description": "Two years ago, fewer than 5% of ransomware attacks involved hybrid components. Today over 40% leverage on-prem-to-cloud lateral movement, using compromised identities and tools like AADInternals to compromise cloud apps and delete VMs and backups.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "hybrid-cloud",
+        "lateral-movement",
+        "aadinternals",
+        "spark-from-7"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware's shifting tactics",
+      "comparison": "vs <5% two years ago",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "sparkline",
+      "value": "40%+",
+      "spark": [
+        5,
+        8,
+        14,
+        30,
+        36,
+        40
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "microsoft-security-mddr-2025-identity-attacks-surge",
+      "title": "Identity-based attacks surged 32%",
+      "description": "In the first half of 2025, identity-based attacks rose by 32% year over year. Research and academia accounted for 39% of all identity attacks — sectors with complex tenants and inconsistent MFA enforcement that frequently serve as adversary testing grounds.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [
+        "Education"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "identity",
+        "h1-2025",
+        "research-academia"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Identity, access, and the cybercrime economy",
+      "comparison": "1H 2025 vs prior period",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+32%"
+    },
+    {
+      "type": "stat",
+      "id": "microsoft-security-mddr-2025-ai-phishing-ctr",
+      "title": "AI phishing hits 54% click-through",
+      "description": "AI-automated phishing emails achieved a 54% click-through rate versus 12% for standard attempts — a 4.5x lift. AI also has the potential to increase phishing profitability by up to 50x by scaling highly targeted attacks at minimal cost.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "ai-phishing",
+        "click-through",
+        "generative-ai"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Phishing landscape",
+      "comparison": "vs 12% standard phishing",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "54%"
+    },
+    {
+      "type": "stat",
+      "id": "microsoft-security-mddr-2025-fraud-blocked",
+      "title": "$4B in fraud blocked in one year",
+      "description": "Between April 2024 and April 2025 Microsoft thwarted USD 4 billion of fraudulent transactions and scams — many likely aided by AI-generated content — and rejected 49,000 bogus partner-program enrollment attempts.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "fraud",
+        "deepfake",
+        "synthetic-identity"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Fraud and social engineering",
+      "comparison": "Apr 2024 - Apr 2025",
+      "trend": "unknown",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$4B"
+    },
+    {
+      "type": "stat",
+      "id": "microsoft-security-mddr-2025-ai-id-forgery",
+      "title": "AI-generated IDs surged 195% globally",
+      "description": "Use of AI-generated identity documents grew 195% globally year over year and now often outperforms classical forgeries in convincing verification systems — even defeating liveness checks used during selfie or document upload flows.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "deepfake",
+        "synthetic-identity",
+        "kyc"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Fraud and social engineering — The rise of deepfakes",
+      "comparison": "YoY",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+195%"
+    },
+    {
+      "type": "stat",
+      "id": "microsoft-security-mddr-2025-password-spray-concentration",
+      "title": "20 ASNs drive 80% of password spray",
+      "description": "Just 20 ASNs — only 0.04% of all autonomous systems carrying authentication traffic — account for more than 80% of malicious password spray activity globally. Concentration this extreme means targeted ASN-level blocking is highly effective.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "password-spray",
+        "asn",
+        "concentration"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Password spray: Anatomy of a high-volume attack",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "80%"
+    },
+    {
+      "type": "stat",
+      "id": "microsoft-security-mddr-2025-ransomware-exfil",
+      "title": "Data exfiltration in 82% of ransomware incidents",
+      "description": "With EDR slowing encryption-stage attacks (growth fell from 102% to 7% YoY), ransomware operators have pivoted to data theft. Microsoft observed large-scale data exfiltration in 82% of ransomware incidents this year, with 79% involving an RMM tool.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "exfiltration",
+        "extortion",
+        "rmm"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware's shifting tactics",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "82%"
+    },
+    {
+      "type": "stat",
+      "id": "microsoft-security-mddr-2025-daily-signals",
+      "title": "100 trillion security signals processed daily",
+      "description": "Microsoft processes more than 100 trillion security signals every day from endpoints, cloud services, identity systems, and partner networks. This planet-scale telemetry powers the defenses and insights presented throughout the Microsoft Digital Defense Report 2025.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "telemetry",
+        "signals",
+        "scale"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Introduction — Microsoft's global presence",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "100T"
+    },
+    {
+      "type": "stat",
+      "id": "microsoft-security-mddr-2025-emails-screened",
+      "title": "5 billion emails screened daily",
+      "description": "Microsoft screens roughly 5 billion emails each day on average to protect users from malware and phishing. The volume highlights both the dominance of email as an initial-access vector and the scale of defensive automation required to counter it.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "email-security",
+        "scale"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Introduction — Microsoft's global presence",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "5B"
+    },
+    {
+      "type": "stat",
+      "id": "microsoft-security-mddr-2025-identity-detections",
+      "title": "38 million identity risk detections per day",
+      "description": "Microsoft analyzes 38 million identity risk detections on an average day, alongside blocking 4.5 million net-new malware files. The figure underscores why identity has become the dominant attack surface and the volume of telemetry required to keep ahead of it.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "employee_exposure",
+        "infostealer"
+      ],
+      "tags": [
+        "identity",
+        "detections",
+        "scale"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Introduction — Microsoft's global presence",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "38M"
+    },
+    {
+      "type": "stat",
+      "id": "microsoft-security-mddr-2025-access-broker-impact",
+      "title": "368 access brokers, 4,000+ victims",
+      "description": "In the past year Intel 471 identified 368 distinct access brokers whose listings affected 68 industries across 131 countries and more than 4,000 victims. Brokers primarily targeted victims in the United States (31%), United Kingdom (6%), and Thailand (5%).",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Dark Web",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "logs_on_sale",
+        "data_leaks"
+      ],
+      "tags": [
+        "access-brokers",
+        "caas",
+        "intel-471"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Access brokers: The hidden gatekeepers of cybercrime",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "4,000+"
+    },
+    {
+      "type": "stat",
+      "id": "microsoft-security-mddr-2025-lumma-takedown",
+      "title": "2,300+ malicious domains seized in Lumma takedown",
+      "description": "In May 2025 Microsoft's DCU, the US DOJ, Europol, JC3, and partners disrupted Lumma Stealer by seizing or blocking over 2,300 malicious domains. Follow-on takedown notices drove a 68% reduction in active C2 servers, cutting their average lifespan from 49 to 18 days.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "eCrime",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "lumma",
+        "takedown",
+        "dcu",
+        "lumma-stealer"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Disrupting cybercrime ecosystems: Lessons from the Lumma Stealer takedown",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "2,300+"
+    },
+    {
+      "type": "stat",
+      "id": "microsoft-security-mddr-2025-financial-motivation-quote",
+      "title": "Espionage is rare; money rules",
+      "description": "In Microsoft's incident response engagements where motive could be determined, only 4% of attacks were driven purely by espionage. The majority were financially motivated extortion, ransomware, and data theft operations.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "motivation",
+        "extortion",
+        "ecrime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "How threat actors are shaping the cyber risk environment",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Threat actors were motivated solely by espionage in only 4% of our engagements.\""
+    },
+    {
+      "type": "stat",
+      "id": "microsoft-security-mddr-2025-mfa-block-rate",
+      "title": "MFA still blocks the overwhelming majority of attacks",
+      "description": "Despite years of evolving attacker tradecraft, modern multifactor authentication continues to block more than 99% of identity-based attacks, making it one of the highest-leverage controls organizations can deploy.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "employee_exposure",
+        "infostealer"
+      ],
+      "tags": [
+        "mfa",
+        "phishing-resistant",
+        "controls"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top 10 recommendations — Phishing-resistant MFA",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"MFA still blocks over 99% of unauthorized access attempts.\""
+    },
+    {
+      "type": "stat",
+      "id": "microsoft-security-mddr-2025-ransomware-success-quote",
+      "title": "A 14-minute ransomware containment",
+      "description": "In February 2025 a global shipping company narrowly averted catastrophe when its defenses stopped a ransomware attack 14 minutes after observation — with encryption halted one minute and eight seconds after it began.",
+      "source": "Microsoft Security",
+      "source_short": "Microsoft",
+      "color": "#0078D4",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [
+        "Transportation"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "containment",
+        "supply-chain",
+        "case-study"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "A ransomware attack with potential global impact stopped in under two minutes",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"The time from observation to disruption was a mere 14 minutes, with encryption stopped one minute and eight seconds after it began.\""
+    }
+  ]
+}

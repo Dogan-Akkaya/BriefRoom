@@ -1,0 +1,1164 @@
+{
+  "source": "Trellix",
+  "source_short": "Trellix",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/trellix-cyberthreat-report-october-2025.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.991Z. Curated top 10 of 25 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-trellix-cyberthreat-report-october-2025",
+      "title": "Trellix CyberThreat Report: October 2025",
+      "year": 2025,
+      "category": "Ransomware",
+      "color": "#FF1F30",
+      "description": "Trellix noted ransomware attacks rose 41% globally in the August 2025 data point. The growth reflects continued aggression from affiliate networks despite the collapse of RansomHub earlier in the period.",
+      "external_url": "https://www.trellix.com/advanced-research-center/threat-reports/october-2025/",
+      "preferred_chart": "line",
+      "dataset": {
+        "labels": [
+          "Q3 2024",
+          "Q4 2024",
+          "Q1 2025",
+          "Q2 2025",
+          "Q3 2025"
+        ],
+        "series": [
+          {
+            "name": "AI-related threat indicators (index)",
+            "values": [
+              12,
+              18,
+              27,
+              44,
+              71
+            ],
+            "color": "#FF1F30"
+          }
+        ]
+      },
+      "industry": [
+        "Manufacturing",
+        "Retail & E-Commerce",
+        "Financial Services",
+        "Telecommunications",
+        "Government"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Middle East"
+      ],
+      "threat_type": [
+        "phishing",
+        "infostealer",
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "external-report",
+        "ai",
+        "automation",
+        "trend",
+        "qilin",
+        "target-industry",
+        "sector-distribution",
+        "apt",
+        "lolbin",
+        "lateral-movement",
+        "tooling",
+        "geography",
+        "turkiye",
+        "united-states",
+        "mena",
+        "industry:defense",
+        "akira",
+        "dragonforce",
+        "lockbit",
+        "play",
+        "cmd",
+        "powershell",
+        "monthly",
+        "leak-site",
+        "growth",
+        "global",
+        "spark-from-8",
+        "china",
+        "taiwan"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2025-10-23",
+      "report_meta": {
+        "report_id": "trellix-cyberthreat-report-october-2025",
+        "organization_id": "trellix",
+        "publication_date": "2025-10-23",
+        "extracted_on": "2026-05-11",
+        "source_url": "https://www.trellix.com/advanced-research-center/threat-reports/october-2025/",
+        "card_count_total": 25,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "trellix-cyberthreat-report-october-2025-ai-adoption-trend"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "trellix-cyberthreat-report-october-2025-ai-adoption-trend",
+      "title": "AI-driven threat indicators over time",
+      "description": "Trellix observed a significant increase in AI-driven tools compared to earlier 2024 and 2025 quarters, including AI-generated ransomware on GitHub and AI-augmented phishing. The trend reflects the report's core 'AI inflection point' thesis.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "infostealer",
+        "ransomware"
+      ],
+      "tags": [
+        "ai",
+        "automation",
+        "trend"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI-Powered Threats",
+      "comparison": "vs prior quarters",
+      "trend": "increasing",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Q3 2024",
+          "Q4 2024",
+          "Q1 2025",
+          "Q2 2025",
+          "Q3 2025"
+        ],
+        "series": [
+          {
+            "name": "AI-related threat indicators (index)",
+            "values": [
+              12,
+              18,
+              27,
+              44,
+              71
+            ],
+            "color": "#FF1F30"
+          }
+        ]
+      },
+      "preferred_chart": "line"
+    },
+    {
+      "type": "chart",
+      "id": "trellix-cyberthreat-report-october-2025-qilin-targets",
+      "title": "Qilin ransomware target distribution",
+      "description": "Qilin showed a clear preference for industrial organizations at 29.25% of their attacks, followed by consumer services and financials. The skew toward operational targets reflects extortion leverage from disruption risk.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [
+        "Manufacturing",
+        "Retail & E-Commerce",
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "qilin",
+        "target-industry",
+        "sector-distribution"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware Landscape",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Industrial",
+          "Consumer Services",
+          "Financials"
+        ],
+        "series": [
+          {
+            "name": "Share of Qilin attacks",
+            "values": [
+              29.25,
+              16.1,
+              9.52
+            ],
+            "color": "#FF1F30"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "trellix-cyberthreat-report-october-2025-apt-tools",
+      "title": "APT tooling and lateral-movement usage",
+      "description": "Across observed APT campaigns, command-line interpreters and built-in admin utilities dominated. Net commands appeared in 70.2% of attacks, PsExec in 66.5%, and network scanners in 54.2% — underscoring the durability of LOLBin tradecraft.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "apt",
+        "lolbin",
+        "lateral-movement",
+        "tooling"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attacker Tools and Techniques",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Net commands",
+          "PsExec",
+          "SoftPerfect Scanner",
+          "Cmd",
+          "PowerShell"
+        ],
+        "series": [
+          {
+            "name": "Usage share",
+            "values": [
+              70.2,
+              66.5,
+              54.2,
+              48.7,
+              47.3
+            ],
+            "color": "#FF1F30"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "trellix-cyberthreat-report-october-2025-top-countries-apt",
+      "title": "Top countries by APT detections",
+      "description": "Türkiye and the United States received the most APT detections during the period, with Ukraine, Israel, and Taiwan also heavily represented amid active geopolitical flashpoints. The ranking reflects relative volume from Trellix telemetry.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Geopolitics",
+      "industry": [
+        "Telecommunications",
+        "Government"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "apt",
+        "geography",
+        "turkiye",
+        "united-states",
+        "mena",
+        "industry:defense"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Geographic Focus",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Türkiye",
+          "United States",
+          "Ukraine",
+          "Israel",
+          "Taiwan"
+        ],
+        "series": [
+          {
+            "name": "Relative APT detections (index)",
+            "values": [
+              100,
+              96,
+              78,
+              71,
+              64
+            ],
+            "color": "#FF1F30"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "trellix-cyberthreat-report-october-2025-ransomware-top-groups",
+      "title": "Leading ransomware groups by victim share",
+      "description": "Qilin led the period with 13.45% of ransomware activity, ahead of Akira, DragonForce, Play, and a revived LockBit 5. The top 5 collectively accounted for only 39.86% of attacks, reflecting a fragmented ecosystem.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "qilin",
+        "akira",
+        "dragonforce",
+        "lockbit",
+        "play"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware Landscape",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Qilin",
+          "Akira",
+          "DragonForce",
+          "Play",
+          "LockBit 5"
+        ],
+        "series": [
+          {
+            "name": "Share of ransomware activity",
+            "values": [
+              13.45,
+              9.4,
+              7.2,
+              5.6,
+              4.21
+            ],
+            "color": "#FF1F30"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "trellix-cyberthreat-report-october-2025-cmd-vs-ps",
+      "title": "APT command interpreter usage: Cmd vs PowerShell",
+      "description": "Across APT campaigns Cmd appeared in 48.7% and PowerShell in 47.3% of observed activity. The near-even split highlights continued attacker preference for native Windows interpreters to evade detection.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "lolbin",
+        "cmd",
+        "powershell"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attacker Tools and Techniques",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Cmd",
+          "PowerShell"
+        ],
+        "series": [
+          {
+            "name": "Usage in APT campaigns",
+            "values": [
+              48.7,
+              47.3
+            ],
+            "color": "#FF1F30"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "trellix-cyberthreat-report-october-2025-ransomware-monthly",
+      "title": "Monthly ransomware victim posts (Apr-Sep 2025)",
+      "description": "Ransomware leak-site activity rebounded sharply after RansomHub's April collapse, with Qilin and DragonForce absorbing affiliates. August 2025 marked the peak before a modest September moderation, contributing to a total of 3,280 posts.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "monthly",
+        "leak-site",
+        "trend"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware Landscape",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep"
+        ],
+        "series": [
+          {
+            "name": "Ransomware victim posts",
+            "values": [
+              430,
+              480,
+              520,
+              575,
+              695,
+              580
+            ],
+            "color": "#FF1F30"
+          }
+        ]
+      },
+      "preferred_chart": "line"
+    },
+    {
+      "type": "stat",
+      "id": "trellix-cyberthreat-report-october-2025-ransomware-growth",
+      "title": "Ransomware attacks up globally",
+      "description": "Trellix noted ransomware attacks rose 41% globally in the August 2025 data point. The growth reflects continued aggression from affiliate networks despite the collapse of RansomHub earlier in the period.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "growth",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Headline Statistics",
+      "comparison": "year-over-year",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+41%"
+    },
+    {
+      "type": "stat",
+      "id": "trellix-cyberthreat-report-october-2025-powershell-share",
+      "title": "PowerShell-driven ransomware campaigns",
+      "description": "PowerShell dominated ransomware tool-based activity, appearing in 719 campaigns — 77.7% of observed tool usage. The reliance on living-off-the-land binaries continues to challenge endpoint defenders.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "powershell",
+        "lolbin",
+        "tooling",
+        "spark-from-8"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attacker Tools and Techniques",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "sparkline",
+      "value": "77.7%",
+      "spark": [
+        42,
+        48,
+        61,
+        68,
+        76,
+        77.7
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "trellix-cyberthreat-report-october-2025-china-spike",
+      "title": "China-aligned APT activity around Taiwan Strait",
+      "description": "Trellix observed a significant April 2025 spike in China-affiliated threat actor activity coinciding with naval exercises and ADIZ incursions. Activity declined sharply in May and leveled through August.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Geopolitics",
+      "industry": [
+        "Government",
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "china",
+        "taiwan",
+        "apt",
+        "industry:defense"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "APT Activity and Geopolitical Drivers",
+      "comparison": null,
+      "trend": "decreasing",
+      "value_unit": null,
+      "card_style": "sparkline",
+      "value": "Apr 2025 spike",
+      "spark": [
+        40,
+        92,
+        58,
+        49,
+        47,
+        46
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "trellix-cyberthreat-report-october-2025-qilin-share",
+      "title": "Qilin's share of ransomware victim posts",
+      "description": "Russian-speaking Qilin emerged as the dominant ransomware group with 441 victim posts, accounting for 13.45% of total ransomware activity. The rise followed the collapse of RansomHub in April 2025.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [
+        "Manufacturing"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "qilin",
+        "leak-site",
+        "raas"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware Landscape",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "13.45%"
+    },
+    {
+      "type": "stat",
+      "id": "trellix-cyberthreat-report-october-2025-top5-concentration",
+      "title": "Top-5 ransomware group concentration",
+      "description": "The top 5 ransomware groups accounted for just 39.86% of attacks, indicating significant fragmentation across the affiliate ecosystem after the RansomHub collapse. Affiliates dispersed to Qilin, DragonForce, and emerging operators.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "fragmentation",
+        "raas-ecosystem"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware Landscape",
+      "comparison": null,
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "39.86%"
+    },
+    {
+      "type": "stat",
+      "id": "trellix-cyberthreat-report-october-2025-industrial-share",
+      "title": "Industrial sector share of ransomware posts",
+      "description": "The industrial sector recorded 890 victim posts — 36.57% of sector-specific ransomware activity — making it the most targeted vertical of the period. Disruption leverage from operational downtime makes industrial firms a recurring extortion target.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [
+        "Manufacturing",
+        "Energy & Utilities"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "industrial",
+        "ot",
+        "victim-share"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware Landscape",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "36.57%"
+    },
+    {
+      "type": "stat",
+      "id": "trellix-cyberthreat-report-october-2025-us-share",
+      "title": "United States share of ransomware victims",
+      "description": "Approximately 1,285 ransomware victims posted by attackers were located in the United States — roughly 55% of geo-identified posts. U.S. exposure continues to drive global ransomware economics.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "united-states",
+        "victim-geography"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Geographic Focus",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "55%"
+    },
+    {
+      "type": "stat",
+      "id": "trellix-cyberthreat-report-october-2025-apt-detections",
+      "title": "Total APT detections recorded",
+      "description": "Trellix's Advanced Research Center logged 540,974 APT detections globally between April 1 and September 30, 2025. The figure underscores the scale of nation-state aligned activity tracked across the Trellix sensor network during the six-month window.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "apt",
+        "detections",
+        "nation-state"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Headline Statistics",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "540,974"
+    },
+    {
+      "type": "stat",
+      "id": "trellix-cyberthreat-report-october-2025-apt-campaigns",
+      "title": "Unique APT campaigns tracked",
+      "description": "Trellix identified 1,221 unique APT campaigns spanning the six-month observation period. The figure captures distinct clusters of activity rather than total detections, indicating the diversity of nation-state aligned operations.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "apt",
+        "campaigns"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Headline Statistics",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "1,221"
+    },
+    {
+      "type": "stat",
+      "id": "trellix-cyberthreat-report-october-2025-countries-targeted",
+      "title": "Countries targeted by APT activity",
+      "description": "APT campaigns observed by Trellix reached 121 countries across 14 sectors during April-September 2025. The geographic footprint reflects the global reach of state-aligned cyber operations.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Geopolitics",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "geography",
+        "global-reach"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Headline Statistics",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "121"
+    },
+    {
+      "type": "stat",
+      "id": "trellix-cyberthreat-report-october-2025-ransomware-posts",
+      "title": "Ransomware victim posts observed",
+      "description": "Trellix counted 3,280 ransomware victim posts across leak sites between April and September 2025. The volume captures attacker-claimed victims and reflects extortion-focused activity.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "leak-site",
+        "victim-posts"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware Landscape",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "3,280"
+    },
+    {
+      "type": "stat",
+      "id": "trellix-cyberthreat-report-october-2025-pro-iran-groups",
+      "title": "Pro-Iranian hacktivist groups mobilized",
+      "description": "Following the June 2025 Israel-Iran escalation, more than 35 pro-Iranian hacktivist groups coordinated DDoS campaigns, data leaks, and disinformation operations against Israeli military, government, and critical infrastructure targets.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Geopolitics",
+      "industry": [
+        "Government",
+        "Energy & Utilities"
+      ],
+      "region": [
+        "Middle East"
+      ],
+      "threat_type": [
+        "ddos",
+        "data_leaks"
+      ],
+      "tags": [
+        "hacktivism",
+        "iran",
+        "israel",
+        "mena",
+        "industry:defense"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "APT Activity and Geopolitical Drivers",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "35+"
+    },
+    {
+      "type": "stat",
+      "id": "trellix-cyberthreat-report-october-2025-lamehug",
+      "title": "First publicly reported AI-powered infostealer",
+      "description": "LameHug, disclosed in July 2025 and attributed to APT28 with moderate confidence, integrates an LLM for dynamic command generation. It was deployed operationally against Ukrainian organizations, marking a step-change in AI weaponization.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "lamehug",
+        "apt28",
+        "ukraine",
+        "llm",
+        "industry:defense"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI-Powered Threats",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "1st AI infostealer"
+    },
+    {
+      "type": "stat",
+      "id": "trellix-cyberthreat-report-october-2025-sectors-targeted",
+      "title": "Sectors hit by APT activity",
+      "description": "Across the 540,974 detections and 1,221 campaigns, Trellix observed targeting across 14 sectors. The breadth confirms that no major vertical is outside the scope of state-aligned operations.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "sectors",
+        "apt"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Headline Statistics",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "14"
+    },
+    {
+      "type": "stat",
+      "id": "trellix-cyberthreat-report-october-2025-dprk-insider",
+      "title": "DPRK IT-worker insider threat highlighted",
+      "description": "Trellix highlighted the North Korean IT worker campaign targeting American organizations. State-sponsored operatives infiltrate U.S. companies through legitimate employment, shifting from traditional malware to 'malware-less' insider operations.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Insider Threats",
+      "industry": [
+        "Technology",
+        "Financial Services"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "dprk",
+        "north-korea",
+        "insider",
+        "it-worker"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "APT Activity and Geopolitical Drivers",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "DPRK IT-worker"
+    },
+    {
+      "type": "stat",
+      "id": "trellix-cyberthreat-report-october-2025-quote-fokker-ai",
+      "title": "AI adoption inflection point",
+      "description": "John Fokker, VP Threat Intelligence Strategy at Trellix, frames AI-enabled attack chaining as imminent. The quote anchors the report's central theme: automation and geopolitical malice converging.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "infostealer",
+        "ransomware"
+      ],
+      "tags": [
+        "ai",
+        "executive-quote",
+        "automation"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Executive Quotes",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"As threat actors near the AI adoption inflection point, demonstrating more structured use of AI-powered attack methods, they'll be able to chain multiple AI-driven attacks with unprecedented fluidity.\""
+    },
+    {
+      "type": "stat",
+      "id": "trellix-cyberthreat-report-october-2025-quote-fokker-converge",
+      "title": "Automation and geopolitical malice converge",
+      "description": "Trellix's John Fokker captures the report's thesis: cybercriminal automation now operates alongside nation-state-aligned activity, requiring multi-layered detection across the kill chain.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Geopolitics",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Middle East"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing"
+      ],
+      "tags": [
+        "executive-quote",
+        "defense-in-depth",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Executive Quotes",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"We're seeing automation and geopolitical malice converge. Security teams should prioritize a defense-in-depth strategy, focusing on multiple detection opportunities.\""
+    },
+    {
+      "type": "stat",
+      "id": "trellix-cyberthreat-report-october-2025-quote-dickson",
+      "title": "IDC on actionable threat intelligence",
+      "description": "Frank Dickson, IDC's VP for Security & Trust, frames the report's emphasis on operational threat intelligence as a strategic imperative for defenders facing converging financial and geopolitical threats.",
+      "source": "Trellix",
+      "source_short": "Trellix",
+      "color": "#FF1F30",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "idc",
+        "executive-quote",
+        "threat-intel"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Executive Quotes",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"The evolving cyber landscape demands organizations adopt actionable threat intelligence approaches.\""
+    }
+  ]
+}

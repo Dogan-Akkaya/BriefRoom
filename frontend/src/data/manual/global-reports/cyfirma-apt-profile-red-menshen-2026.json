@@ -1,0 +1,1092 @@
+{
+  "source": "CYFIRMA",
+  "source_short": "CYFIRMA",
+  "year": 2026,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/cyfirma-apt-profile-red-menshen-2026.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.946Z. Curated top 10 of 22 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-cyfirma-apt-profile-red-menshen-2026",
+      "title": "APT Profile - Red Menshen",
+      "year": 2026,
+      "category": "Threat Actors",
+      "color": "#003F87",
+      "description": "CYFIRMA attributes Red Menshen (also tracked as Earth Bluecrow) to China-linked operators conducting long-running espionage against telecommunications infrastructure. The group has been active since at least 2021.",
+      "external_url": "https://www.cyfirma.com/research/apt-profile-red-menshen/",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "Asia Pacific",
+          "MENA",
+          "North America"
+        ],
+        "series": [
+          {
+            "name": "Target countries",
+            "values": [
+              6,
+              3,
+              1
+            ],
+            "color": "#003F87"
+          }
+        ]
+      },
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions",
+        "vulnerability"
+      ],
+      "tags": [
+        "external-report",
+        "victimology",
+        "geography",
+        "regional",
+        "mena",
+        "countries",
+        "mitre",
+        "att&ck",
+        "tactics",
+        "ttps",
+        "c2",
+        "tunneling",
+        "initial-access",
+        "vpn",
+        "firewall",
+        "edge-devices",
+        "linux",
+        "windows",
+        "cross-platform",
+        "bpfdoor",
+        "defense-evasion",
+        "stealth",
+        "apac",
+        "apt",
+        "china",
+        "espionage",
+        "earth-bluecrow",
+        "dwell-time"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2026-04-22",
+      "report_meta": {
+        "report_id": "cyfirma-apt-profile-red-menshen-2026",
+        "organization_id": "cyfirma",
+        "publication_date": "2026-04-22",
+        "extracted_on": "2026-05-11",
+        "source_url": "https://www.cyfirma.com/research/apt-profile-red-menshen/",
+        "card_count_total": 22,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "cyfirma-apt-profile-red-menshen-2026-countries-by-region"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "cyfirma-apt-profile-red-menshen-2026-countries-by-region",
+      "title": "Red Menshen target geography by region",
+      "description": "Distribution of the ten Red Menshen target countries CYFIRMA lists, grouped by region. Asia Pacific dominates with six countries, followed by the Middle East/MENA cluster, with one US target rounding out the footprint.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "victimology",
+        "geography",
+        "regional",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Targeted Countries",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Asia Pacific",
+          "MENA",
+          "North America"
+        ],
+        "series": [
+          {
+            "name": "Target countries",
+            "values": [
+              6,
+              3,
+              1
+            ],
+            "color": "#003F87"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cyfirma-apt-profile-red-menshen-2026-target-countries-list",
+      "title": "Red Menshen target countries (full list)",
+      "description": "All ten countries CYFIRMA lists as targeted by Red Menshen, represented as a uniform-weight victim map. Telecom-heavy APAC nations dominate, with Egypt, Turkey, and the broader Middle East representing MENA exposure and the United States the lone North American entry.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "victimology",
+        "countries",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Targeted Countries",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "India",
+          "Myanmar",
+          "South Korea",
+          "Thailand",
+          "Vietnam",
+          "Cambodia",
+          "Egypt",
+          "Turkey",
+          "Middle East",
+          "United States"
+        ],
+        "series": [
+          {
+            "name": "Targeted",
+            "values": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "color": "#003F87"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cyfirma-apt-profile-red-menshen-2026-mitre-tactics-distribution",
+      "title": "Red Menshen techniques by ATT&CK tactic",
+      "description": "Distribution of Red Menshen's 34 mapped techniques across MITRE ATT&CK tactic categories. Defense Evasion (6) and Command and Control (5) dominate, reflecting the group's stealth-first, network-layer tradecraft built around BPFDoor.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "mitre",
+        "att&ck",
+        "tactics",
+        "ttps",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "MITRE ATT&CK",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Defense Evasion",
+          "Command and Control",
+          "Privilege Escalation",
+          "Persistence",
+          "Collection",
+          "Initial Access",
+          "Credential Access",
+          "Discovery",
+          "Lateral Movement",
+          "Execution",
+          "Exfiltration"
+        ],
+        "series": [
+          {
+            "name": "Techniques",
+            "values": [
+              6,
+              5,
+              4,
+              3,
+              3,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1
+            ],
+            "color": "#003F87"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cyfirma-apt-profile-red-menshen-2026-c2-techniques",
+      "title": "Command-and-control techniques observed",
+      "description": "Red Menshen's command-and-control footprint spans five distinct ATT&CK techniques. The mix combines covert protocol tunneling and non-application-layer channels with traditional HTTP/S beacons and ingress tool transfer — atypical breadth for a stealth-first actor.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "c2",
+        "mitre",
+        "tunneling",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "MITRE ATT&CK - C2",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "T1071.001 Web Protocols",
+          "T1095 Non-App Layer Protocol",
+          "T1572 Protocol Tunneling",
+          "T1001 Data Obfuscation",
+          "T1105 Ingress Tool Transfer"
+        ],
+        "series": [
+          {
+            "name": "Observed",
+            "values": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "color": "#003F87"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cyfirma-apt-profile-red-menshen-2026-initial-access-vectors",
+      "title": "Initial access vectors",
+      "description": "Red Menshen leans on two initial-access primitives: exploiting public-facing applications (notably internet-exposed VPN appliances, firewalls, and enterprise network gear) and abusing valid accounts harvested earlier in the kill chain.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "initial-access",
+        "vpn",
+        "firewall",
+        "edge-devices",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "MITRE ATT&CK - Initial Access",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "T1190 Exploit Public-Facing App",
+          "T1078 Valid Accounts"
+        ],
+        "series": [
+          {
+            "name": "Used",
+            "values": [
+              1,
+              1
+            ],
+            "color": "#003F87"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cyfirma-apt-profile-red-menshen-2026-target-os",
+      "title": "Targeted operating systems",
+      "description": "Red Menshen operates on a cross-platform footing. Linux is the strategic target — that's where BPFDoor lives and where carrier infrastructure runs — with Windows used as a secondary surface for credential harvesting and lateral movement in enterprise environments.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "linux",
+        "windows",
+        "cross-platform",
+        "bpfdoor",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Target Technologies",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Linux (primary)",
+          "Windows (secondary)"
+        ],
+        "series": [
+          {
+            "name": "Weight",
+            "values": [
+              2,
+              1
+            ],
+            "color": "#003F87"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "stat",
+      "id": "cyfirma-apt-profile-red-menshen-2026-defense-evasion-share",
+      "title": "Share of techniques in Defense Evasion",
+      "description": "Six of Red Menshen's 34 mapped ATT&CK techniques sit in the Defense Evasion tactic, the single largest category. This reflects the group's emphasis on low-noise, packet-triggered tradecraft and on hiding artifacts via NTFS attributes, masquerading, and indicator removal.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "mitre",
+        "defense-evasion",
+        "stealth",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "MITRE ATT&CK",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "18%"
+    },
+    {
+      "type": "stat",
+      "id": "cyfirma-apt-profile-red-menshen-2026-apac-share",
+      "title": "APAC share of Red Menshen targeting",
+      "description": "Six of the ten countries CYFIRMA lists as Red Menshen targets are in Asia Pacific (India, Myanmar, South Korea, Thailand, Vietnam, Cambodia), giving the region a 60% share of named victimology and confirming the group's regional priorities.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "apac",
+        "victimology",
+        "geography"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Targeted Countries",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "60%"
+    },
+    {
+      "type": "stat",
+      "id": "cyfirma-apt-profile-red-menshen-2026-attribution",
+      "title": "Red Menshen suspected origin",
+      "description": "CYFIRMA attributes Red Menshen (also tracked as Earth Bluecrow) to China-linked operators conducting long-running espionage against telecommunications infrastructure. The group has been active since at least 2021.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "apt",
+        "china",
+        "espionage",
+        "earth-bluecrow",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attribution",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "China-linked"
+    },
+    {
+      "type": "stat",
+      "id": "cyfirma-apt-profile-red-menshen-2026-active-since",
+      "title": "Red Menshen active since",
+      "description": "CYFIRMA reports Red Menshen operations going back to at least 2021, with sustained focus on long-term, low-noise intrusions into telecom networks rather than disruptive payloads.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "apt",
+        "dwell-time",
+        "espionage",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Profile",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "2021"
+    },
+    {
+      "type": "stat",
+      "id": "cyfirma-apt-profile-red-menshen-2026-motivation",
+      "title": "Primary motivation",
+      "description": "Red Menshen's tradecraft is built around information theft and espionage, with operations optimized for dwell and intelligence collection rather than financial or destructive outcomes.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Telecommunications",
+        "Government"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "espionage",
+        "information-theft",
+        "apt",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Profile",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "Espionage"
+    },
+    {
+      "type": "stat",
+      "id": "cyfirma-apt-profile-red-menshen-2026-flagship-malware",
+      "title": "Flagship malware",
+      "description": "BPFDoor is Red Menshen's signature implant: a Linux backdoor operating at the kernel level using Berkeley Packet Filter (BPF) functionality. It avoids open ports and persistent C2 by waking up on packet triggers.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "bpfdoor",
+        "linux",
+        "kernel",
+        "backdoor",
+        "bpf",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Tools",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "BPFDoor"
+    },
+    {
+      "type": "stat",
+      "id": "cyfirma-apt-profile-red-menshen-2026-countries-count",
+      "title": "Countries targeted",
+      "description": "CYFIRMA documents Red Menshen victimology spanning ten countries across Asia Pacific, the Middle East, and North America, consistent with telecommunications-focused intelligence gathering.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "victimology",
+        "geography",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Targeted Countries",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "10"
+    },
+    {
+      "type": "stat",
+      "id": "cyfirma-apt-profile-red-menshen-2026-mitre-total",
+      "title": "MITRE ATT&CK techniques mapped",
+      "description": "CYFIRMA maps Red Menshen tradecraft to 34 distinct MITRE ATT&CK technique entries spanning 11 tactic categories, reflecting a full-spectrum espionage toolkit from initial access through exfiltration.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "mitre",
+        "att&ck",
+        "ttps",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "MITRE ATT&CK",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "34"
+    },
+    {
+      "type": "stat",
+      "id": "cyfirma-apt-profile-red-menshen-2026-edge-devices-vector",
+      "title": "Primary initial-access surface",
+      "description": "Red Menshen's preferred entry path is exploitation of internet-facing network edge devices — VPN appliances, firewalls, and enterprise network equipment — rather than user-targeted phishing. This places patch posture on perimeter hardware at the center of defensive strategy.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "vpn",
+        "firewall",
+        "edge-devices",
+        "initial-access",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Campaign Highlights",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "Edge devices"
+    },
+    {
+      "type": "stat",
+      "id": "cyfirma-apt-profile-red-menshen-2026-tactic-coverage",
+      "title": "ATT&CK tactic categories covered",
+      "description": "Red Menshen's tradecraft touches 11 of the 14 enterprise ATT&CK tactic categories — full-spectrum coverage from initial access through exfiltration, with no observed activity in tactics like Impact, Reconnaissance, or Resource Development in this profile.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "mitre",
+        "att&ck",
+        "ttps",
+        "coverage",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "MITRE ATT&CK",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "11"
+    },
+    {
+      "type": "stat",
+      "id": "cyfirma-apt-profile-red-menshen-2026-primary-sector-quote",
+      "title": "Why telecoms are the prize",
+      "description": "CYFIRMA frames Red Menshen's telecom obsession as a route to government and enterprise traffic at scale — the strategic value of a single carrier compromise outstrips dozens of endpoint intrusions.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Telecommunications",
+        "Government"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "telecom",
+        "metadata",
+        "espionage",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Campaign Highlights",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"The group gains access to large volumes of data traversing these systems, including communications and metadata associated with government entities and enterprises.\""
+    },
+    {
+      "type": "stat",
+      "id": "cyfirma-apt-profile-red-menshen-2026-bpfdoor-quote",
+      "title": "BPFDoor's stealth model",
+      "description": "BPFDoor's defining trick is that it never needs to listen on an open port. By hooking the Berkeley Packet Filter at the kernel level it can stay invisible to standard port scans and netflow analytics until a magic packet activates it.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "bpfdoor",
+        "linux",
+        "kernel",
+        "stealth",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Campaign Highlights",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"BPFDoor, a Linux-based backdoor that operates at the kernel level using Berkeley Packet Filter (BPF) functionality, enables covert persistence without relying on open ports or standard command-and-control communication.\""
+    },
+    {
+      "type": "stat",
+      "id": "cyfirma-apt-profile-red-menshen-2026-dwell-quote",
+      "title": "Pre-positioning over exploitation",
+      "description": "CYFIRMA emphasizes that Red Menshen optimizes for years of dwell rather than rapid monetization, a profile consistent with state-aligned strategic intelligence collection.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "dwell-time",
+        "pre-positioning",
+        "espionage",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Campaign Highlights",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"The group focuses on sustaining undetected access over long periods, enabling continuous intelligence collection.\""
+    },
+    {
+      "type": "stat",
+      "id": "cyfirma-apt-profile-red-menshen-2026-shift-quote",
+      "title": "Shift toward infrastructure-level espionage",
+      "description": "CYFIRMA flags a broader strategic trend evident in Red Menshen's operations: state-aligned actors are moving target focus from endpoints to the network backbone where they can monitor traffic in bulk.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "trend",
+        "infrastructure",
+        "telecom",
+        "espionage",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Trends",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Red Menshen demonstrates movement from endpoint-focused attacks to compromising core network infrastructure, particularly within the telecommunications sector.\""
+    },
+    {
+      "type": "stat",
+      "id": "cyfirma-apt-profile-red-menshen-2026-stealth-quote",
+      "title": "Stealth-first operating doctrine",
+      "description": "Red Menshen's tradecraft is built around blending into normal traffic. Avoiding detectable artifacts is treated as a design constraint rather than a post-hoc tactic.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "stealth",
+        "evasion",
+        "tradecraft",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Trends",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"The group prioritizes low-noise operations, avoiding techniques that generate detectable traffic.\""
+    },
+    {
+      "type": "stat",
+      "id": "cyfirma-apt-profile-red-menshen-2026-bpf-quote",
+      "title": "Operating below the monitoring layer",
+      "description": "CYFIRMA highlights Red Menshen's network-level sophistication — by leveraging BPF, the malware effectively bypasses higher-level security telemetry that most defenders rely on.",
+      "source": "CYFIRMA",
+      "source_short": "CYFIRMA",
+      "color": "#003F87",
+      "year": 2026,
+      "category": "Threat Actors",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "bpf",
+        "kernel",
+        "stealth",
+        "edr-bypass",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Trends",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"BPF-based malware reflects sophisticated understanding that enables operations below traditional security monitoring layers.\""
+    }
+  ]
+}

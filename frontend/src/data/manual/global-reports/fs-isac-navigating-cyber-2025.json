@@ -1,0 +1,1271 @@
+{
+  "source": "FS-ISAC",
+  "source_short": "FS-ISAC",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/fs-isac-navigating-cyber-2025.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.954Z. Curated top 10 of 26 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-fs-isac-navigating-cyber-2025",
+      "title": "Navigating Cyber 2025 — Financial Sector Threats and Trends",
+      "year": 2025,
+      "category": "DDoS",
+      "color": "#003366",
+      "description": "FS-ISAC's Global Cyber Threat Level (CTL), based on a holistic worldview from regional Threat Intelligence Committees, stayed at GUARDED throughout 2024 — reflecting stability despite ongoing concerns in specific threat areas.",
+      "external_url": "https://www.fsisac.com/navigatingcyber2025",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "2023",
+          "2024"
+        ],
+        "series": [
+          {
+            "name": "EMEA share of financial-sector DDoS",
+            "values": [
+              66,
+              49
+            ],
+            "color": "#003366"
+          }
+        ]
+      },
+      "industry": [
+        "Financial Services",
+        "Technology",
+        "Government"
+      ],
+      "region": [
+        "Europe",
+        "Middle East",
+        "North America",
+        "Asia Pacific",
+        "Latin America"
+      ],
+      "threat_type": [
+        "ddos",
+        "phishing",
+        "supply_chain",
+        "vulnerability",
+        "data_leaks",
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "external-report",
+        "emea",
+        "akamai",
+        "regional-shift",
+        "mena",
+        "fraud",
+        "bec",
+        "impersonation",
+        "member-reporting",
+        "incident-timeline",
+        "zero-day",
+        "supply-chain",
+        "genai",
+        "use-cases",
+        "automation",
+        "nation-state",
+        "china",
+        "russia",
+        "iran",
+        "dprk",
+        "crypto-crime",
+        "industry:defense",
+        "regional",
+        "ddos",
+        "share",
+        "latam",
+        "big-game-hunting",
+        "ransom-payment",
+        "record",
+        "cyber-threat-level",
+        "ctl",
+        "global",
+        "scattered-spider",
+        "amer",
+        "out-of-cycle",
+        "spark-from-9",
+        "apac",
+        "ddos-campaign",
+        "late-2024",
+        "australia",
+        "japan",
+        "india",
+        "spark-from-8"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2025-05-19",
+      "report_meta": {
+        "report_id": "fs-isac-navigating-cyber-2025",
+        "organization_id": "fs-isac",
+        "publication_date": "2025-05-19",
+        "extracted_on": "2026-05-06",
+        "source_url": "https://www.fsisac.com/navigatingcyber2025",
+        "card_count_total": 26,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "fs-isac-navigating-cyber-2025-emea-ddos-share"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "fs-isac-navigating-cyber-2025-emea-ddos-share",
+      "title": "EMEA share of financial-sector DDoS attacks fell in 2024",
+      "description": "Akamai data cited by FS-ISAC shows that EMEA's share of DDoS attacks on the financial sector dropped from 66% in 2023 to 49% in 2024, signaling a redistribution of attacker focus across regions.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "Europe",
+        "Middle East"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "emea",
+        "akamai",
+        "regional-shift",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Regional Close-Up — EMEA",
+      "comparison": "vs 2023",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "2023",
+          "2024"
+        ],
+        "series": [
+          {
+            "name": "EMEA share of financial-sector DDoS",
+            "values": [
+              66,
+              49
+            ],
+            "color": "#003366"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fs-isac-navigating-cyber-2025-top-fraud-patterns",
+      "title": "Top 10 fraud attack patterns (Jul–Dec 2024)",
+      "description": "FS-ISAC member reporting from July to December 2024 ranks the most common fraud attack patterns. Business email scams and impersonation lead the list, ahead of account takeover, payroll diversion, and card fraud.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "fraud",
+        "bec",
+        "impersonation",
+        "member-reporting"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Fraud",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Business email scam",
+          "Impersonation",
+          "Account takeover",
+          "Payroll diversion",
+          "Card fraud",
+          "Manipulated invoice",
+          "Domain spoofing",
+          "Extortion",
+          "Social engineering",
+          "Check fraud"
+        ],
+        "series": [
+          {
+            "name": "Rank (10 = top, 1 = tenth)",
+            "values": [
+              10,
+              9,
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1
+            ],
+            "color": "#003366"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fs-isac-navigating-cyber-2025-2024-incident-timeline",
+      "title": "Major 2024 supply-chain & infrastructure incidents",
+      "description": "FS-ISAC's 2024 incident timeline tracks high-impact events shaping the financial sector, from January's Ivanti zero-day to December's BeyondTrust breach impacting the US Treasury — clustering heavily around mid-year supply-chain compromises.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [
+        "Financial Services",
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "vulnerability",
+        "ddos"
+      ],
+      "tags": [
+        "incident-timeline",
+        "zero-day",
+        "supply-chain"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Incident Timeline",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Jan (Ivanti / npm)",
+          "Feb (ConnectWise)",
+          "Mar (PyPI / XZ Utils)",
+          "Apr",
+          "May (Snowflake / DDoS CH)",
+          "Jun (Scat Spider / Fortigate)",
+          "Jul (CrowdStrike / MS DDoS)",
+          "Oct (Global APAC DDoS)",
+          "Dec (BeyondTrust / Treasury)"
+        ],
+        "series": [
+          {
+            "name": "Notable incidents",
+            "values": [
+              2,
+              1,
+              2,
+              0,
+              2,
+              2,
+              2,
+              1,
+              1
+            ],
+            "color": "#003366"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fs-isac-navigating-cyber-2025-genai-uses",
+      "title": "GenAI business use cases in financial services",
+      "description": "FS-ISAC outlines six headline GenAI use cases gaining traction across financial services firms and vendors in 2024 — spanning fraud detection, document summarization, financial reporting, customer support, market research, and coding.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "genai",
+        "use-cases",
+        "automation"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Generative AI",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Detecting fraud",
+          "Summarizing documents",
+          "Analyzing financial data",
+          "Automating support",
+          "Market research",
+          "Coding"
+        ],
+        "series": [
+          {
+            "name": "Adoption use cases",
+            "values": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "color": "#003366"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "fs-isac-navigating-cyber-2025-nation-state-mix",
+      "title": "Geopolitically-driven cyber activity by nation-state",
+      "description": "FS-ISAC tracks four primary nation-state ecosystems impacting financial services in 2024 — the PRC (espionage & pre-positioning), Russia (disruption & disinformation), Iran (regional warfare), and DPRK (financially motivated crypto theft).",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "Geopolitics",
+      "industry": [
+        "Financial Services",
+        "Government"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "data_leaks",
+        "ddos"
+      ],
+      "tags": [
+        "nation-state",
+        "china",
+        "russia",
+        "iran",
+        "dprk",
+        "crypto-crime",
+        "industry:defense"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Geopolitically-Driven Cyber Activity",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "PRC (China)",
+          "Russia",
+          "Iran",
+          "DPRK"
+        ],
+        "series": [
+          {
+            "name": "Espionage / pre-positioning",
+            "values": [
+              3,
+              2,
+              1,
+              1
+            ],
+            "color": "#003366"
+          },
+          {
+            "name": "Financial / destructive",
+            "values": [
+              1,
+              2,
+              2,
+              3
+            ],
+            "color": "#3366aa"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "fs-isac-navigating-cyber-2025-regional-ddos-mix",
+      "title": "Regional close-up — estimated DDoS pressure share",
+      "description": "Combining Akamai data and FS-ISAC's regional close-ups, EMEA remained the leading region for financial-sector DDoS in 2024 with 49% share, followed by APAC's late-2024 surge and growing pressure on NAM and LATAM.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "Europe",
+        "Asia Pacific",
+        "North America",
+        "Latin America"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "regional",
+        "ddos",
+        "share",
+        "akamai",
+        "latam"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Regional Close-Up",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "EMEA",
+          "APAC",
+          "NAM",
+          "LATAM"
+        ],
+        "series": [
+          {
+            "name": "Estimated regional DDoS share",
+            "values": [
+              49,
+              30,
+              16,
+              5
+            ],
+            "color": "#003366"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "stat",
+      "id": "fs-isac-navigating-cyber-2025-largest-ransom",
+      "title": "Largest ransomware payment on record",
+      "description": "An undisclosed victim made the largest ransomware payment on record in 2024, totaling $75M USD. The figure illustrates how big-game hunting is driving higher payouts even as overall attack volume reportedly fell.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "big-game-hunting",
+        "ransom-payment",
+        "record"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware",
+      "comparison": "all-time high",
+      "trend": "increasing",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$75M"
+    },
+    {
+      "type": "stat",
+      "id": "fs-isac-navigating-cyber-2025-global-ctl-guarded",
+      "title": "Global Cyber Threat Level remained GUARDED in 2024",
+      "description": "FS-ISAC's Global Cyber Threat Level (CTL), based on a holistic worldview from regional Threat Intelligence Committees, stayed at GUARDED throughout 2024 — reflecting stability despite ongoing concerns in specific threat areas.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "cyber-threat-level",
+        "ctl",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Cyber Threat Levels",
+      "comparison": "stable vs 2023",
+      "trend": "flat",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "GUARDED"
+    },
+    {
+      "type": "stat",
+      "id": "fs-isac-navigating-cyber-2025-amer-ctl-spike",
+      "title": "AMER CTL temporarily elevated for Scattered Spider",
+      "description": "On 2 May 2024, the AMER regional CTL was raised from GUARDED to ELEVATED via an out-of-cycle TIC vote due to escalating Scattered Spider activity. It returned to GUARDED on 23 May 2024 after FS-ISAC published mitigation guidance.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "scattered-spider",
+        "ctl",
+        "amer",
+        "out-of-cycle",
+        "spark-from-9"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Regional Cyber Threat Levels",
+      "comparison": null,
+      "trend": "decreasing",
+      "value_unit": "days",
+      "card_style": "sparkline",
+      "value": "ELEVATED (21 days)",
+      "spark": [
+        1,
+        1,
+        2,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "fs-isac-navigating-cyber-2025-apac-ddos-spark",
+      "title": "APAC DDoS campaign intensity (Oct 2024 onward)",
+      "description": "FS-ISAC describes coordinated DDoS campaigns against Australia, Japan, and India starting in October 2024 — record-high volumetric attacks with a notably sustained surge through the final quarter of 2024.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "apac",
+        "ddos-campaign",
+        "late-2024",
+        "australia",
+        "japan",
+        "india",
+        "spark-from-8"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Regional Close-Up — APAC",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "sparkline",
+      "value": "Sustained surge",
+      "spark": [
+        1,
+        1,
+        3,
+        4,
+        5,
+        4
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "fs-isac-navigating-cyber-2025-fin-leaks-share",
+      "title": "Financial & insurance share of ransomware leak sites",
+      "description": "Leak site data from 2024 shows the NAICS 'financial and insurance' sector accounted for roughly 8% of all identified leaks, making it the fourth most affected sector. Ransomware attacks are now more dispersed across a wider pool of threat actors.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "leak-sites",
+        "naics",
+        "fourth-most-affected",
+        "industry:insurance"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "~8%"
+    },
+    {
+      "type": "stat",
+      "id": "fs-isac-navigating-cyber-2025-prof-services-share",
+      "title": "Professional services dominate ransomware victims",
+      "description": "Almost 19% of ransomware victims fell within the NAICS Professional, Scientific, and Technical Services sector — many of them third-party providers to financial firms. This highlights the financial sector's heightened exposure via supply-chain incidents.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [
+        "Financial Services",
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "supply_chain"
+      ],
+      "tags": [
+        "third-party",
+        "naics",
+        "professional-services"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "~19%"
+    },
+    {
+      "type": "stat",
+      "id": "fs-isac-navigating-cyber-2025-ddos-fin-share",
+      "title": "Financial services share of DDoS attacks",
+      "description": "Per Akamai data cited by FS-ISAC, financial services was the most frequently targeted sector for DDoS attacks in 2024, absorbing 34% of all attacks — over a third of the global total.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "akamai",
+        "most-targeted-sector"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "DDoS",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "34%"
+    },
+    {
+      "type": "stat",
+      "id": "fs-isac-navigating-cyber-2025-deepfake-cfo-hk",
+      "title": "Hong Kong deepfake CFO scam loss",
+      "description": "A Hong Kong finance worker paid cybercriminals $25M USD in February 2024 after being tricked by a deepfake of the company's CFO during a video conference. The incident underscores GenAI's role in scaling C-suite impersonation fraud.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "deepfake",
+        "cfo-fraud",
+        "hong-kong",
+        "video-conference",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Deepfakes",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$25M"
+    },
+    {
+      "type": "stat",
+      "id": "fs-isac-navigating-cyber-2025-dprk-crypto-theft",
+      "title": "Cryptocurrency stolen by DPRK actors in 2024",
+      "description": "Per Chainalysis data cited by FS-ISAC, DPRK-linked threat actors stole $2.2B USD from cryptocurrency platforms in 2024 — funding state operations and weapons programs through skilled social engineering and supply-chain attacks.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "Cryptocurrency Crime",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "Asia Pacific",
+        "North America"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "dprk",
+        "north-korea",
+        "chainalysis",
+        "crypto-heist",
+        "crypto-crime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Democratic People's Republic of Korea",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$2.2B"
+    },
+    {
+      "type": "stat",
+      "id": "fs-isac-navigating-cyber-2025-dprk-crypto-share",
+      "title": "DPRK share of all stolen cryptocurrency",
+      "description": "DPRK cybercriminals accounted for 61% of all stolen cryptocurrency in 2024 according to Chainalysis. That share highlights how heavily North Korea relies on crypto theft to evade sanctions and finance the regime.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "Cryptocurrency Crime",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "Asia Pacific",
+        "North America"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "dprk",
+        "chainalysis",
+        "share-of-theft",
+        "crypto-crime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Democratic People's Republic of Korea",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "61%"
+    },
+    {
+      "type": "stat",
+      "id": "fs-isac-navigating-cyber-2025-mexico-latam-share",
+      "title": "Mexico's share of Latin American cyber attacks",
+      "description": "Mexico experienced over half of all cyber attacks in Latin America, driven largely by its economic proximity to the United States. Concentration in one market intensifies cross-border spillover risk for regional financial institutions.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "Latin America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "mexico",
+        "latam",
+        "regional-concentration"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Regional Close-Up — LATAM",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": ">50%"
+    },
+    {
+      "type": "stat",
+      "id": "fs-isac-navigating-cyber-2025-dprk-it-workers",
+      "title": "DPRK IT workers fraudulently hired in US",
+      "description": "In May 2024, the US Department of Justice reported that over 300 fraudulent DPRK workers had been hired by US companies, including banks and other financial service providers — embedding insider risk inside critical institutions.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "Insider Threats",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "employee_exposure",
+        "data_leaks"
+      ],
+      "tags": [
+        "dprk",
+        "insider-threat",
+        "fraudulent-hiring",
+        "doj"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Democratic People's Republic of Korea",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "300+"
+    },
+    {
+      "type": "stat",
+      "id": "fs-isac-navigating-cyber-2025-microsoft-ddos",
+      "title": "Microsoft DDoS outage impact",
+      "description": "A 10-hour Office, Outlook, and Azure outage triggered by a DDoS attack on Microsoft impacted financial sector users in July 2024. The disruption illustrates concentration risk inherent in heavily shared productivity and cloud platforms.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [
+        "Financial Services",
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "microsoft",
+        "outage",
+        "cloud",
+        "office-365"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Incident Timeline",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "hours",
+      "card_style": "number",
+      "value": "10 hours"
+    },
+    {
+      "type": "stat",
+      "id": "fs-isac-navigating-cyber-2025-snowflake-victims",
+      "title": "Snowflake customers exposed via stolen credentials",
+      "description": "Up to 165 Snowflake customer databases were accessed via stolen login credentials in 2024, attributed to UNC5537. The campaign reinforced infostealer risk and the need for strong identity controls on cloud data platforms.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [
+        "Financial Services",
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer",
+        "data_leaks"
+      ],
+      "tags": [
+        "snowflake",
+        "unc5537",
+        "credential-theft",
+        "cloud"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Incident Timeline",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "up to 165"
+    },
+    {
+      "type": "stat",
+      "id": "fs-isac-navigating-cyber-2025-fortigate-breached",
+      "title": "FortiGate systems breached by Chinese actors",
+      "description": "State-sponsored Chinese threat actors compromised approximately 20,000 FortiGate VPN firewall systems worldwide via a single vulnerability. The campaign showcases how perimeter device flaws can be weaponized at massive scale.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Financial Services",
+        "Technology",
+        "Government"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "supply_chain"
+      ],
+      "tags": [
+        "fortigate",
+        "vpn",
+        "china",
+        "state-sponsored"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Incident Timeline",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "20,000"
+    },
+    {
+      "type": "stat",
+      "id": "fs-isac-navigating-cyber-2025-dora-effective",
+      "title": "DORA effective date",
+      "description": "The EU's Digital Operational Resilience Act (DORA) entered into force on 17 January 2025, bringing ICT critical third-party providers into direct scope of financial regulation. Article 45 mandates structured intelligence sharing — a role FS-ISAC explicitly supports.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "Regulatory & Compliance",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "dora",
+        "regulation",
+        "eu",
+        "ict-third-party"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "New Regulations in 2024",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "17 Jan 2025"
+    },
+    {
+      "type": "stat",
+      "id": "fs-isac-navigating-cyber-2025-nis2-sectors",
+      "title": "NIS2 directive sector coverage",
+      "description": "By 17 October 2024, the EU's NIS2 Directive required member states to regulate cybersecurity across 18 sectors at national level. NIS2 and DORA frequently overlap, but DORA takes precedence for financial firms.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "Regulatory & Compliance",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "nis2",
+        "eu",
+        "regulation"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "DORA and NIS2",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "18 sectors"
+    },
+    {
+      "type": "stat",
+      "id": "fs-isac-navigating-cyber-2025-exec-quote-resilience",
+      "title": "Constant threats to global financial stability",
+      "description": "FS-ISAC frames the financial sector as under continuous pressure from lone hackers, organized crime, and nation-state actors. The 2024 review emphasizes that tiny errors can cascade into widespread disruption across an interdependent digital economy.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "executive-summary",
+        "resilience",
+        "geopolitics"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Executive Summary",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"The stability and continuity of the global financial system are under constant threat. Lone hackers in a basement, organized criminal gangs, and nation-state threat actors – motivated by profit, espionage, or politics – challenge the operational resilience of the financial sector and its supplier ecosystem on a daily basis.\""
+    },
+    {
+      "type": "stat",
+      "id": "fs-isac-navigating-cyber-2025-quote-supply-chain",
+      "title": "Supply-chain concentration is a top concern",
+      "description": "FS-ISAC underscores that many financial firms share the same providers, meaning a single outage can cascade across the sector. Concentration risk persists throughout the supply chain even with third-party risk management investments.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "concentration-risk",
+        "third-party"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Supply Chain Incidents",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Supply chain risk is one of the top concerns of the financial sector globally. Because many firms rely on the same service providers, an outage at one can impact many firms simultaneously. This concentration risk applies throughout the supply chain.\""
+    },
+    {
+      "type": "stat",
+      "id": "fs-isac-navigating-cyber-2025-quote-ransomware-adapt",
+      "title": "Ransomware groups continually rebrand and adapt",
+      "description": "FS-ISAC emphasizes ransomware operators' adaptability — including BYOVD evasion, GenAI-assisted automation, and rebranding to escape sanctions. Affiliates of high-impact groups often re-emerge under new names to evade law enforcement.",
+      "source": "FS-ISAC",
+      "source_short": "FS-ISAC",
+      "color": "#003366",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "rebranding",
+        "raas",
+        "law-enforcement",
+        "byovd"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Ransomware operators have shown their ability to rebrand, re-organize, and adapt their tactics despite, and in some cases because of, law enforcement's disruptive actions.\""
+    }
+  ]
+}

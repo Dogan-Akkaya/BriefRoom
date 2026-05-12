@@ -1,0 +1,1306 @@
+{
+  "source": "SecurityScorecard",
+  "source_short": "SecurityScorecard",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/securityscorecard-global-third-party-breach-report-2025.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.981Z. Curated top 10 of 24 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-securityscorecard-global-third-party-breach-report-2025",
+      "title": "2025 SecurityScorecard Global Third-Party Breach Report",
+      "year": 2025,
+      "category": "Supply Chain",
+      "color": "#006FB4",
+      "description": "The share of all breaches involving a third-party nexus climbed from 29% in 2023 to 35.5% in 2024, reflecting attackers' shift from direct intrusions toward exploiting vendor, supplier and software-provider relationships.",
+      "external_url": "https://securityscorecard.com/wp-content/uploads/2025/03/SSC-Third-Party-Breach-Report_031225_03.pdf",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "2023",
+          "2024"
+        ],
+        "series": [
+          {
+            "name": "Third-party share of breaches",
+            "values": [
+              29,
+              35.5
+            ],
+            "color": "#006FB4"
+          }
+        ]
+      },
+      "industry": [
+        "Retail & E-Commerce",
+        "Technology",
+        "Energy & Utilities",
+        "Transportation",
+        "Manufacturing",
+        "Financial Services",
+        "Healthcare",
+        "Government",
+        "Education"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "data_leaks",
+        "vulnerability",
+        "ransomware"
+      ],
+      "tags": [
+        "external-report",
+        "third-party",
+        "trend",
+        "yoy",
+        "global",
+        "industry-breakdown",
+        "third-party-rate",
+        "healthcare",
+        "volume-vs-rate",
+        "regional-breakdown",
+        "geographic",
+        "latam",
+        "mena",
+        "country-breakdown",
+        "affluence-effect",
+        "enablers",
+        "category-breakdown",
+        "top-vectors",
+        "file-transfer",
+        "cleo",
+        "moveit",
+        "threat-actors",
+        "attribution",
+        "actor-leaderboard",
+        "third-party-specialists"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2025-03-26",
+      "report_meta": {
+        "report_id": "securityscorecard-global-third-party-breach-report-2025",
+        "organization_id": "securityscorecard",
+        "publication_date": "2025-03-26",
+        "extracted_on": "2026-05-11",
+        "source_url": "https://securityscorecard.com/wp-content/uploads/2025/03/SSC-Third-Party-Breach-Report_031225_03.pdf",
+        "card_count_total": 24,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "securityscorecard-global-third-party-breach-report-2025-yoy-trend"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "securityscorecard-global-third-party-breach-report-2025-yoy-trend",
+      "title": "Third-party breach share rose 6.5 points YoY",
+      "description": "The share of all breaches involving a third-party nexus climbed from 29% in 2023 to 35.5% in 2024, reflecting attackers' shift from direct intrusions toward exploiting vendor, supplier and software-provider relationships.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "third-party",
+        "trend",
+        "yoy",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Third-Party vs. Fourth-Party Breach Trends",
+      "comparison": "2023 vs 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "2023",
+          "2024"
+        ],
+        "series": [
+          {
+            "name": "Third-party share of breaches",
+            "values": [
+              29,
+              35.5
+            ],
+            "color": "#006FB4"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "securityscorecard-global-third-party-breach-report-2025-industry-rate-chart",
+      "title": "Third-party breach rate by industry",
+      "description": "Retail & Hospitality (52.4%) is the only industry where a majority of breaches involve third parties. Tech/Telecom (47.3%), Energy & Critical Infrastructure (46.7%) and Travel/Logistics (45.3%) all exceed the 35.5% global average, while Education sits at 11%.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [
+        "Retail & E-Commerce",
+        "Technology",
+        "Energy & Utilities",
+        "Transportation",
+        "Manufacturing",
+        "Financial Services",
+        "Healthcare",
+        "Government",
+        "Education"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "industry-breakdown",
+        "third-party-rate",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Distribution of Third-Party Breaches by Industry",
+      "comparison": "industries vs 35.5% global average",
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Retail & Hospitality",
+          "Tech, Telecom & Media",
+          "Energy & Critical Infra",
+          "Travel & Logistics",
+          "Manufacturing & Auto",
+          "Global Average",
+          "Financial Services",
+          "Healthcare & Pharma",
+          "Professional Services",
+          "Government & Defense",
+          "Education"
+        ],
+        "series": [
+          {
+            "name": "Third-party rate within industry",
+            "values": [
+              52.4,
+              47.3,
+              46.7,
+              45.3,
+              36.2,
+              35.5,
+              33.6,
+              32.2,
+              30.6,
+              29.5,
+              11
+            ],
+            "color": "#006FB4"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "securityscorecard-global-third-party-breach-report-2025-healthcare-volume-vs-rate",
+      "title": "Healthcare leads breach volume but below-average third-party rate",
+      "description": "Healthcare, Pharmaceuticals, and Biotechnology accounts for 24.2% of all breaches (242 incidents) and 22% of third-party breaches (78 incidents) — the highest raw counts in both metrics. Yet just 32.2% of its breaches are third-party, below the 35.5% global average, because attackers find direct routes into healthcare more viable.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Healthcare"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "supply_chain"
+      ],
+      "tags": [
+        "healthcare",
+        "volume-vs-rate",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Healthcare Tops Breaches in General",
+      "comparison": "healthcare vs cross-industry",
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Share of all breaches",
+          "Share of third-party breaches",
+          "Third-party rate within healthcare"
+        ],
+        "series": [
+          {
+            "name": "Healthcare, Pharma & Biotech",
+            "values": [
+              24.2,
+              22,
+              32.2
+            ],
+            "color": "#006FB4"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "securityscorecard-global-third-party-breach-report-2025-region-chart",
+      "title": "Third-party breach rate by region",
+      "description": "Northeast Asia is the only region where more than half of all breaches (54.3%) involve third parties. Oceania (43.2%) and Europe (38.8%) also exceed the global average (35.5%), while North America — despite holding 59% of all breach volume — sits below at 31.9%.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [],
+      "region": [
+        "Asia Pacific",
+        "Europe",
+        "North America",
+        "Latin America",
+        "Middle East",
+        "Africa"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "regional-breakdown",
+        "geographic",
+        "latam",
+        "mena",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Third-Party Breach Hotspots",
+      "comparison": "region vs 35.5% global average",
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Northeast Asia",
+          "Oceania",
+          "Europe",
+          "Global Avg",
+          "S. & SE Asia",
+          "North America",
+          "MEA",
+          "LatAm & Caribbean",
+          "Former Soviet Union"
+        ],
+        "series": [
+          {
+            "name": "Third-party breach rate",
+            "values": [
+              54.3,
+              43.2,
+              38.8,
+              35.5,
+              35.3,
+              31.9,
+              28.6,
+              22.2,
+              12.5
+            ],
+            "color": "#006FB4"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "securityscorecard-global-third-party-breach-report-2025-country-rate-chart",
+      "title": "Country third-party breach rates: affluent nations on top",
+      "description": "Singapore (71.4%), the Netherlands (70.4%), Japan (60%) and Taiwan (57.1%) lead the world in third-party breach rate. The U.S. (30.9%) sits below the 35.5% global average. The Netherlands' rate was driven by a major breach at a customer-communications firm that cascaded through Dutch utilities and housing associations.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [],
+      "region": [
+        "Asia Pacific",
+        "Europe",
+        "North America",
+        "Middle East",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "country-breakdown",
+        "affluence-effect",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Nation-Level Analysis",
+      "comparison": "country vs 35.5% global average",
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Singapore",
+          "Netherlands",
+          "Japan",
+          "Taiwan",
+          "Australia",
+          "Germany",
+          "Canada",
+          "United Kingdom",
+          "Global Avg",
+          "India",
+          "Philippines",
+          "United States"
+        ],
+        "series": [
+          {
+            "name": "Third-party breach rate",
+            "values": [
+              71.4,
+              70.4,
+              60,
+              57.1,
+              50,
+              47.1,
+              43.3,
+              37.2,
+              35.5,
+              35,
+              31,
+              30.9
+            ],
+            "color": "#006FB4"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "securityscorecard-global-third-party-breach-report-2025-enablers-category-chart",
+      "title": "Third-party breach enablers by category",
+      "description": "Across 400 supply chain relationships involved in breaches, cross-industry software & IT leads at 37.5%, followed by industry-specific non-technical services (22%) and cross-industry non-technical services (13%). Technology overall enabled 46.75% — a notable drop from the ~75% reported in prior analyses, signalling diversification of attack surfaces.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "enablers",
+        "category-breakdown",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Third-Party Breach Enablers",
+      "comparison": "category share of 400 relationships",
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Cross-Industry Software & IT",
+          "Industry-Specific Services (non-tech)",
+          "Cross-Industry Services (non-tech)",
+          "Subsidiaries & Acquisitions",
+          "Industry-Specific Software & IT",
+          "Other"
+        ],
+        "series": [
+          {
+            "name": "Share of third-party breach relationships",
+            "values": [
+              37.5,
+              22,
+              13,
+              11.75,
+              9.25,
+              6.5
+            ],
+            "color": "#006FB4"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "securityscorecard-global-third-party-breach-report-2025-top-vectors-chart",
+      "title": "Top 5 third-party breach vectors",
+      "description": "File transfer software leads as the third-party breach vector at 14% of relationships, followed by cloud products & services (8.25%), foreign subsidiaries & acquisitions (7.75%), payment card data (7.25%) and pharmaceutical distribution/clinical trial support (7%).",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [
+        "Financial Services",
+        "Healthcare"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "data_leaks"
+      ],
+      "tags": [
+        "top-vectors",
+        "enablers",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Products and Services at the Center of Supply Chain Risk",
+      "comparison": "top vectors out of 400 relationships",
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "File transfer software",
+          "Cloud products & services",
+          "Foreign subsidiaries & acquisitions",
+          "Payment card data",
+          "Pharma distribution & clinical trials"
+        ],
+        "series": [
+          {
+            "name": "Share of third-party breach relationships",
+            "values": [
+              14,
+              8.25,
+              7.75,
+              7.25,
+              7
+            ],
+            "color": "#006FB4"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "securityscorecard-global-third-party-breach-report-2025-file-transfer-decline",
+      "title": "File transfer software share fell from 26% to 14% YoY",
+      "description": "File transfer software remains the #1 third-party breach vector but its share of third-party relationships dropped from 26% in the prior year to 14% in 2024, even as C10p exploited Cleo zero-days at scale.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "vulnerability"
+      ],
+      "tags": [
+        "file-transfer",
+        "yoy",
+        "cleo",
+        "moveit",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "File Transfer Software",
+      "comparison": "prior year vs 2024",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Prior Year",
+          "2024"
+        ],
+        "series": [
+          {
+            "name": "File transfer software share",
+            "values": [
+              26,
+              14
+            ],
+            "color": "#006FB4"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "securityscorecard-global-third-party-breach-report-2025-threat-actor-chart",
+      "title": "Threat actor distribution: ransomware groups dominate",
+      "description": "Across 315 attributable breaches, ransomware groups account for 64.8% of incidents, non-ransomware criminals and non-patriotic hacktivists 21.9%, and state-sponsored actors plus patriotic hacktivists 13.3%. Among third-party breaches specifically, the ransomware share climbs to 67.7%.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "ransomware",
+        "supply_chain"
+      ],
+      "tags": [
+        "threat-actors",
+        "attribution",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat Actors",
+      "comparison": "all attributable vs third-party only",
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Ransomware groups",
+          "Non-ransomware criminals / hacktivists",
+          "State-sponsored / patriotic hacktivists"
+        ],
+        "series": [
+          {
+            "name": "All attributable breaches",
+            "values": [
+              64.8,
+              21.9,
+              13.3
+            ],
+            "color": "#006FB4"
+          },
+          {
+            "name": "Third-party breaches only",
+            "values": [
+              67.7,
+              20,
+              12.3
+            ],
+            "color": "#5BAEDF"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "securityscorecard-global-third-party-breach-report-2025-top-third-party-actors-chart",
+      "title": "Top third-party attack specialists",
+      "description": "C10p ransomware leads at 41.5% of attributable third-party breaches, far ahead of miscellaneous ransomware groups (12.3%), Chinese state-sponsored actors (8.5%), miscellaneous criminals/hacktivists (7%) and UNC5537 (7% — the Snowflake campaign).",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "ransomware",
+        "supply_chain"
+      ],
+      "tags": [
+        "actor-leaderboard",
+        "third-party-specialists",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat Actors",
+      "comparison": "top 11 actors out of 130 attributable",
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "C10p",
+          "Misc. ransomware",
+          "China (state)",
+          "UNC5537",
+          "Misc. criminals/hacktivists",
+          "LockBit",
+          "Black Basta",
+          "IntelBroker & Sanggiero",
+          "RansomHub",
+          "8Base",
+          "Russia (state)"
+        ],
+        "series": [
+          {
+            "name": "Share of attributable third-party breaches",
+            "values": [
+              41.5,
+              12.3,
+              8.5,
+              7,
+              7,
+              3.8,
+              3.8,
+              3.8,
+              3.1,
+              3.1,
+              2.3
+            ],
+            "color": "#006FB4"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "securityscorecard-global-third-party-breach-report-2025-headline-third-party-share",
+      "title": "35.5% of 2024 breaches originated from third parties",
+      "description": "SecurityScorecard's STRIKE team analyzed 1,000 data breaches and found that at least 35.5% (355 cases) involved a third-party nexus in 2024, up 6.5 percentage points from 29% in 2023. The figure is likely conservative since many third-party origins go unreported.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "data_leaks"
+      ],
+      "tags": [
+        "third-party",
+        "headline",
+        "yoy",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top Takeaways",
+      "comparison": "2024 vs 2023 (29%)",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "35.5%"
+    },
+    {
+      "type": "stat",
+      "id": "securityscorecard-global-third-party-breach-report-2025-fourth-party",
+      "title": "Fourth-party breaches reached 4.5% of all incidents",
+      "description": "Of 1,000 breaches analyzed, 45 cascaded into a fourth party — accounting for 4.5% of all breaches and 12.7% of third-party breaches. A single compromise increasingly triggers widespread disruption across multiple organizations.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "data_leaks"
+      ],
+      "tags": [
+        "fourth-party",
+        "cascading",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Third-Party vs. Fourth-Party Breach Trends",
+      "comparison": "share of all 1,000 breaches",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "4.5%"
+    },
+    {
+      "type": "stat",
+      "id": "securityscorecard-global-third-party-breach-report-2025-retail-leader",
+      "title": "52.4% of Retail & Hospitality breaches come via third parties",
+      "description": "Retail, Hospitality, and Consumer Goods is the only industry where third-party compromises form the majority of breaches (52.4%). It moves from fifth in overall breach volume (10.3%) to second in third-party breach share (15.2%), driven heavily by payment-card ecosystems and e-commerce vendor dependencies.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "data_leaks"
+      ],
+      "tags": [
+        "retail",
+        "hospitality",
+        "industry-leader",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Retail & Hospitality and Technology Lead",
+      "comparison": "retail vs 35.5% global average",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "52.4%"
+    },
+    {
+      "type": "stat",
+      "id": "securityscorecard-global-third-party-breach-report-2025-energy-hidden-risk",
+      "title": "46.7% of Energy & Critical Infrastructure breaches are third-party",
+      "description": "Energy, Utilities, and Critical Infrastructure represents only 3% of all breaches but 46.7% of its breaches (14 of 30) flow through third parties — mirroring SecurityScorecard's prior U.S. energy supply chain analysis where 45% of breaches had third-party connections.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "OT / ICS",
+      "industry": [
+        "Energy & Utilities"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "energy",
+        "critical-infrastructure",
+        "utilities",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Energy and Transportation Sectors",
+      "comparison": "energy vs 35.5% global average",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "46.7%"
+    },
+    {
+      "type": "stat",
+      "id": "securityscorecard-global-third-party-breach-report-2025-na-volume",
+      "title": "North America: 59% of breach volume, 31.9% third-party rate",
+      "description": "North America dominates total breach volume at 59% of all breaches and 53% of third-party incidents (188 cases), yet its third-party rate (31.9%) falls below the 35.5% global average — largely because U.S. healthcare disclosure laws inflate direct-attack counts.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "data_leaks"
+      ],
+      "tags": [
+        "north-america",
+        "volume",
+        "regional"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Third-Party Breach Hotspots",
+      "comparison": "share of all breaches",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "59%"
+    },
+    {
+      "type": "stat",
+      "id": "securityscorecard-global-third-party-breach-report-2025-singapore",
+      "title": "Singapore: 71.4% third-party breach rate — highest globally",
+      "description": "Singapore posted the highest national third-party breach rate (71.4%) despite a small sample size, appearing alongside documented Chinese cyber operations targeting its overseas Chinese population and strategic position in regional economics and naval power projection.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [],
+      "region": [
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "singapore",
+        "country",
+        "china-targeting"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Nation-Level Analysis",
+      "comparison": "Singapore vs 35.5% global avg",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "71.4%"
+    },
+    {
+      "type": "stat",
+      "id": "securityscorecard-global-third-party-breach-report-2025-cleo-vuln-share",
+      "title": "63.5% of vulnerability-based breaches traced to two Cleo CVEs",
+      "description": "C10p's exploitation of CVE-2024-50623 and CVE-2024-55956 in Cleo Harmony, VLTrader and Lexicom accounted for 54 of the 85 vulnerability-based third-party breaches (63.5%) in SecurityScorecard's dataset — a single campaign dominating the third-party vulnerability landscape.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "vulnerability",
+        "ransomware"
+      ],
+      "tags": [
+        "cleo",
+        "cve-2024-50623",
+        "cve-2024-55956",
+        "c10p",
+        "clop",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Third-Party Software Vulnerabilities",
+      "comparison": "Cleo campaign vs all vuln-based third-party breaches",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "63.5%"
+    },
+    {
+      "type": "stat",
+      "id": "securityscorecard-global-third-party-breach-report-2025-c10p-dominance",
+      "title": "C10p drove 41.5% of attributable third-party breaches",
+      "description": "C10p (Clop) ransomware was responsible for 41.5% of the 130 attributable third-party breaches in 2024, largely through file transfer software zero-days. The group also accounted for 17% of all attributable breaches — more than twice the next most active group.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "ransomware",
+        "supply_chain",
+        "vulnerability"
+      ],
+      "tags": [
+        "c10p",
+        "clop",
+        "third-party-specialist",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat Actors",
+      "comparison": "C10p vs all third-party attackers",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "41.5%"
+    },
+    {
+      "type": "stat",
+      "id": "securityscorecard-global-third-party-breach-report-2025-china-state",
+      "title": "China is the most prolific state-sponsored third-party actor",
+      "description": "Chinese state-sponsored groups drove 8.5% of attributable third-party breaches in 2024 — twice Russia's tally — with frequent supply chain targeting of Japan, Taiwan, the Philippines and Singapore. Chinese-attributed activity also exploited Ivanti Connect Secure VPN CVEs to breach MITRE and CISA.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "Asia Pacific",
+        "North America",
+        "Europe",
+        "Middle East",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "china",
+        "espionage",
+        "ivanti",
+        "mitre",
+        "cisa",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat Actors / Geopolitical Patterns",
+      "comparison": "China vs Russia state-sponsored share",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "8.5%"
+    },
+    {
+      "type": "stat",
+      "id": "securityscorecard-global-third-party-breach-report-2025-ransomware-nexus",
+      "title": "41.4% of ransomware/extortion attacks had a third-party nexus",
+      "description": "Of 297 ransomware or extortion incidents in 2024, 123 (41.4%) had a third-party component — 5.9 points above the 35.5% baseline. Those 123 incidents represent 34.6% of all third-party breaches, confirming supply chain compromise is now a core ransomware strategy.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "ransomware",
+        "supply_chain",
+        "data_leaks"
+      ],
+      "tags": [
+        "ransomware-nexus",
+        "extortion",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware and Third-Party Attacks",
+      "comparison": "ransomware third-party rate vs 35.5% baseline",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "41.4%"
+    },
+    {
+      "type": "stat",
+      "id": "securityscorecard-global-third-party-breach-report-2025-healthcare-finserv-share",
+      "title": "27.5% of third-party breach relationships are Healthcare or Financial Services-specific",
+      "description": "Industry-specific products and services in Healthcare (15.75%) and Financial Services (11.75%) together represent 27.5% of all third-party breach relationships — virtually unchanged from 28% the prior year, despite both industries running below-average third-party breach rates.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Other",
+      "industry": [
+        "Healthcare",
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "data_leaks"
+      ],
+      "tags": [
+        "healthcare",
+        "financial-services",
+        "industry-specific",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Healthcare and Financial Services",
+      "comparison": "healthcare + finserv vectors vs all 400 relationships",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "27.5%"
+    },
+    {
+      "type": "stat",
+      "id": "securityscorecard-global-third-party-breach-report-2025-subsidiaries-risk",
+      "title": "Foreign subsidiaries are 2x more likely than domestic to drive breaches",
+      "description": "Subsidiaries and acquisitions account for 11.75% of third-party breach relationships globally. Foreign subsidiaries appear in 7.75% of breach relationships — nearly twice the domestic share (4%) — owing to language, time-zone, regulatory and integration gaps. In Japan, subsidiaries drive 33% of third-party breaches.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "subsidiaries",
+        "acquisitions",
+        "m-and-a",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Subsidiaries & Acquisitions",
+      "comparison": "foreign vs domestic subsidiaries",
+      "trend": "increasing",
+      "value_unit": "ratio",
+      "card_style": "number",
+      "value": "2x"
+    },
+    {
+      "type": "stat",
+      "id": "securityscorecard-global-third-party-breach-report-2025-wealth-effect",
+      "title": "Wealthier nations face higher third-party breach risk",
+      "description": "SecurityScorecard finds a counterintuitive correlation: organizations in affluent economies invest more in security, so attackers shift to third-party vectors to circumvent stronger direct defenses. China, Brazil and Russia rank among the highest by overall breach share but disappear from the top third-party breach countries.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "wealth-effect",
+        "macro-trend",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "The Wealth Effect",
+      "comparison": "affluent vs developing economies",
+      "trend": "flat",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Affluent nations face disproportionately high third-party breach risks... attackers respond by seeking third-party vectors to circumvent stronger defenses.\""
+    },
+    {
+      "type": "stat",
+      "id": "securityscorecard-global-third-party-breach-report-2025-quote-back-door",
+      "title": "Attackers are logging in through the back door",
+      "description": "SecurityScorecard frames the 2024 third-party threat landscape as a strategic failure of perimeter-focused security — defenders look inward while adversaries scale through trusted vendor relationships.",
+      "source": "SecurityScorecard",
+      "source_short": "SecurityScorecard",
+      "color": "#006FB4",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Middle East",
+        "Asia Pacific",
+        "Latin America",
+        "Africa"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "narrative",
+        "executive-quote",
+        "global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Don't let a third party reality check become checkmate",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"More than 1 in 3 breaches (35.5%) now come through third parties — attackers aren't breaking in; they're logging in with your partners' credentials while you're busy patching your own systems.\""
+    }
+  ]
+}

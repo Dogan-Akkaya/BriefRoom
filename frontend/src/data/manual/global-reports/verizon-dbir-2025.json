@@ -1,0 +1,1447 @@
+{
+  "source": "Verizon (DBIR)",
+  "source_short": "Verizon DBIR",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/verizon-dbir-2025.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.993Z. Curated top 10 of 30 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-verizon-dbir-2025",
+      "title": "2025 Data Breach Investigations Report",
+      "year": 2025,
+      "category": "Ransomware",
+      "color": "#CD040B",
+      "description": "Verizon's refined initial-access analysis (Figure 5/16) shows the three dominant vectors in non-Error, non-Misuse breaches (n=9,891). Credential abuse remains on top, vulnerability exploitation has overtaken phishing, and the gap between them keeps narrowing.",
+      "external_url": "https://www.verizon.com/business/resources/reports/2025-dbir-data-breach-investigations-report.pdf",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "Credential abuse",
+          "Exploit vulnerability",
+          "Phishing"
+        ],
+        "series": [
+          {
+            "name": "Share of breaches",
+            "values": [
+              22,
+              20,
+              15
+            ],
+            "color": "#CD040B"
+          }
+        ]
+      },
+      "industry": [
+        "Manufacturing",
+        "Healthcare",
+        "Financial Services",
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "phishing",
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "external-report",
+        "initial-access",
+        "veris",
+        "trend",
+        "edge-devices",
+        "vpn",
+        "exploit-vuln",
+        "remediation",
+        "kev",
+        "patching",
+        "smb",
+        "large-enterprise",
+        "ransomware",
+        "espionage",
+        "state-sponsored",
+        "industry-comparison",
+        "motives",
+        "awareness-training",
+        "phishing-simulation",
+        "report-rate",
+        "apac",
+        "system-intrusion",
+        "bwaa",
+        "stolen-credentials"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2026-05-11",
+      "report_meta": {
+        "report_id": "verizon-dbir-2025",
+        "organization_id": "verizon",
+        "publication_date": null,
+        "extracted_on": "2026-05-11",
+        "source_url": "https://www.verizon.com/business/resources/reports/2025-dbir-data-breach-investigations-report.pdf",
+        "card_count_total": 30,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "verizon-dbir-2025-initial-access-vectors"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "verizon-dbir-2025-initial-access-vectors",
+      "title": "Initial access vectors in breaches",
+      "description": "Verizon's refined initial-access analysis (Figure 5/16) shows the three dominant vectors in non-Error, non-Misuse breaches (n=9,891). Credential abuse remains on top, vulnerability exploitation has overtaken phishing, and the gap between them keeps narrowing.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "phishing"
+      ],
+      "tags": [
+        "initial-access",
+        "veris"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Summary of findings",
+      "comparison": "Use of stolen creds down from 31%",
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Credential abuse",
+          "Exploit vulnerability",
+          "Phishing"
+        ],
+        "series": [
+          {
+            "name": "Share of breaches",
+            "values": [
+              22,
+              20,
+              15
+            ],
+            "color": "#CD040B"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "verizon-dbir-2025-initial-access-over-time",
+      "title": "Initial access vectors over time",
+      "description": "Stolen credentials, vulnerability exploitation and phishing each plotted across the last four DBIR datasets. The 2025 view reflects Verizon's reclassification that removed overlap between credential abuse and exploitation, with vulnerability exploitation rising fast and phishing flat at ~15%.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "phishing"
+      ],
+      "tags": [
+        "initial-access",
+        "trend",
+        "veris"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Summary of findings",
+      "comparison": "Multi-year trend",
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "series": [
+          {
+            "name": "Stolen credentials",
+            "values": [
+              40,
+              38,
+              31,
+              22
+            ],
+            "color": "#CD040B"
+          },
+          {
+            "name": "Exploit vulnerability",
+            "values": [
+              7,
+              5,
+              15,
+              20
+            ],
+            "color": "#7A0306"
+          },
+          {
+            "name": "Phishing",
+            "values": [
+              16,
+              14,
+              15,
+              15
+            ],
+            "color": "#F4666B"
+          }
+        ]
+      },
+      "preferred_chart": "line"
+    },
+    {
+      "type": "chart",
+      "id": "verizon-dbir-2025-edge-vpn-jump",
+      "title": "Edge / VPN share of vulnerability exploitation",
+      "description": "Edge devices and VPNs ballooned as a target of vulnerability-based access between the 2024 and 2025 datasets, almost an eight-fold jump. Verizon flags this as the defining shift behind the rise of System Intrusion and Espionage breaches.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "edge-devices",
+        "vpn",
+        "exploit-vuln"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "VERIS Actions / Edge cases",
+      "comparison": "~8x year-over-year",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "2024 DBIR",
+          "2025 DBIR"
+        ],
+        "series": [
+          {
+            "name": "Edge / VPN share of exploit-vuln vector",
+            "values": [
+              3,
+              22
+            ],
+            "color": "#CD040B"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "verizon-dbir-2025-edge-remediation-status",
+      "title": "Remediation status of CVEs by vulnerability type",
+      "description": "Verizon's vulnerability-management partners tracked remediation outcomes across edge-device CVEs, full CISA KEV entries and all scanned vulnerabilities. Edge-device bugs were patched more aggressively than other classes, but a large unremediated tail remains.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "remediation",
+        "kev",
+        "patching"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "VERIS Actions",
+      "comparison": "Edge sample patched fastest",
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Edge-device sample",
+          "Full CISA KEV",
+          "All scan findings"
+        ],
+        "series": [
+          {
+            "name": "Fully remediated",
+            "values": [
+              54,
+              38,
+              9
+            ],
+            "color": "#CD040B"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "verizon-dbir-2025-ransomware-smb-large",
+      "title": "Ransomware share of breaches: SMB vs. large org",
+      "description": "Ransomware shows up in 88% of SMB breaches compared to 39% in large organizations, hammering the long-held assumption that ransomware crews focus on large enterprises. SMBs accounted for nearly 4x more breach victims than large orgs in the dataset.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "smb",
+        "large-enterprise",
+        "ransomware"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Focused analysis / SMBs",
+      "comparison": "SMBs hit ~2.3x more often",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "SMB (<1,000 emp.)",
+          "Large (1,000+ emp.)"
+        ],
+        "series": [
+          {
+            "name": "Ransomware share of breaches",
+            "values": [
+              88,
+              39
+            ],
+            "color": "#CD040B"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "verizon-dbir-2025-espionage-growth",
+      "title": "Espionage-motivated breaches by industry",
+      "description": "Espionage motivation surged across industries in the 2025 dataset. Manufacturing went from 3% to 20%, Healthcare from 1% to 16%, Retail from 1% to 9%, and Financial from 5% to 12%, reflecting both new contributor visibility and real geopolitical pressure.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [
+        "Manufacturing",
+        "Healthcare",
+        "Financial Services",
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "espionage",
+        "state-sponsored",
+        "industry-comparison"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "VERIS Actors / Industries",
+      "comparison": "163% overall increase",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Manufacturing",
+          "Healthcare",
+          "Financial & Insurance",
+          "Retail"
+        ],
+        "series": [
+          {
+            "name": "2024 DBIR",
+            "values": [
+              3,
+              1,
+              5,
+              1
+            ],
+            "color": "#F4666B"
+          },
+          {
+            "name": "2025 DBIR",
+            "values": [
+              20,
+              16,
+              12,
+              9
+            ],
+            "color": "#CD040B"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "verizon-dbir-2025-actor-motives-state",
+      "title": "State-sponsored actor motives in incidents",
+      "description": "Across 1,892 incidents tied to state-sponsored actors, Espionage dominates but financial motivation is also surprisingly common. Verizon notes this overlap supports the 'double-dipping' theory of state-backed crews monetising their access.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "state-sponsored",
+        "espionage",
+        "motives"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "VERIS Actors",
+      "comparison": "Motives overlap; 28% Financial",
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Espionage",
+          "Financial",
+          "Secondary"
+        ],
+        "series": [
+          {
+            "name": "Share of state-sponsored incidents",
+            "values": [
+              85,
+              28,
+              15
+            ],
+            "color": "#CD040B"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "verizon-dbir-2025-phishing-training",
+      "title": "Phishing reporting rate: trained vs. untrained",
+      "description": "Across ~7,000 organizations running phishing simulations, employees who had recent (within 30 days) security awareness training reported phishing emails at 21%, vs. a 5% base rate without recent training—a 4x relative lift, even as click rates barely moved.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "awareness-training",
+        "phishing-simulation",
+        "report-rate"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Social Engineering / Phishing training",
+      "comparison": "4x relative lift",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "No recent training",
+          "Recent training (<30d)"
+        ],
+        "series": [
+          {
+            "name": "Phishing report rate",
+            "values": [
+              5,
+              21
+            ],
+            "color": "#CD040B"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "verizon-dbir-2025-apac-system-intrusion",
+      "title": "APAC: System Intrusion overwhelms breaches",
+      "description": "APAC's threat landscape became dramatically dominated by System Intrusion in the 2025 DBIR, jumping from 39% to 83% of breaches. Social Engineering and Basic Web Application Attacks declined as a proportion of the whole.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "apac",
+        "system-intrusion",
+        "ransomware"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Regions / APAC",
+      "comparison": "2024 vs 2025",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "System Intrusion",
+          "Social Engineering",
+          "Basic Web App Attacks"
+        ],
+        "series": [
+          {
+            "name": "2024 DBIR",
+            "values": [
+              39,
+              32,
+              26
+            ],
+            "color": "#F4666B"
+          },
+          {
+            "name": "2025 DBIR",
+            "values": [
+              83,
+              20,
+              11
+            ],
+            "color": "#CD040B"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "verizon-dbir-2025-bwaa-espionage",
+      "title": "Basic Web App Attack motives flipped to Espionage",
+      "description": "For the first time, Espionage became the top motive in Basic Web Application Attacks at 62%, displacing Financial motivation. State actors are increasingly leaning on credential abuse to walk in through the front door.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "bwaa",
+        "espionage",
+        "stolen-credentials"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "BWAA",
+      "comparison": "10-20% range historically",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Espionage",
+          "Financial",
+          "Ideology"
+        ],
+        "series": [
+          {
+            "name": "BWAA breach motives",
+            "values": [
+              62,
+              34,
+              4
+            ],
+            "color": "#CD040B"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "verizon-dbir-2025-genai-shadow",
+      "title": "Employees accessing GenAI outside corporate policy",
+      "description": "Browser-monitoring data shows 15% of employees routinely access GenAI tools on corporate devices. Of those, 72% use non-corporate emails and 17% use a corporate email without integrated SSO, leaving only ~11% on properly sanctioned accounts.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "genai",
+        "shadow-it",
+        "byod",
+        "data-loss"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "GenAI threats",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Non-corporate email",
+          "Corp email, no SSO",
+          "Corp email + SSO (sanctioned)"
+        ],
+        "series": [
+          {
+            "name": "GenAI account types",
+            "values": [
+              72,
+              17,
+              11
+            ],
+            "color": "#CD040B"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "verizon-dbir-2025-mfa-bypass",
+      "title": "Microsoft 365 MFA bypass by attack type",
+      "description": "Analysis of Microsoft 365 logs from a managed-security data contributor shows token theft is the most common MFA-bypass technique observed in attacks, followed by MFA-interrupt and Adversary-in-the-Middle (AiTM) phishing.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "mfa-bypass",
+        "token-theft",
+        "aitm",
+        "microsoft-365"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Social Engineering",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Token theft",
+          "MFA interrupt",
+          "AiTM"
+        ],
+        "series": [
+          {
+            "name": "Share of MFA-bypass attacks",
+            "values": [
+              31,
+              23,
+              18
+            ],
+            "color": "#CD040B"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "verizon-dbir-2025-regions-breaches",
+      "title": "Confirmed breaches by region",
+      "description": "Breach counts by world region in the 2025 DBIR. EMEA topped the list with 5,321 confirmed breaches, followed by Northern America (2,867), APAC (1,374) and LATAM/Caribbean (413).",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Latin America",
+        "Middle East"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "regional",
+        "breach-count",
+        "latam",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Regional analysis",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "EMEA",
+          "Northern America",
+          "APAC",
+          "LATAM"
+        ],
+        "series": [
+          {
+            "name": "Confirmed breaches",
+            "values": [
+              5321,
+              2867,
+              1374,
+              413
+            ],
+            "color": "#CD040B"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "verizon-dbir-2025-genai-malicious-emails",
+      "title": "AI-written malicious emails doubled to ~10%",
+      "description": "An email-security partner's research, reproduced by the DBIR, shows the share of malicious emails that appear synthetically generated has roughly doubled over the past two years—from ~5% to ~10%—coinciding with the popularization of LLM chat tools.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "genai",
+        "phishing",
+        "llm",
+        "ai-written",
+        "spark-from-8"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Results and analysis / GenAI",
+      "comparison": "~doubled in 2 years",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "sparkline",
+      "value": "~10%",
+      "spark": [
+        4,
+        5,
+        6,
+        7,
+        9,
+        10
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "verizon-dbir-2025-dwell-time-sparkline",
+      "title": "Median dwell time fell to 24 days",
+      "description": "For breaches not disclosed by the threat actor themselves, the median dwell time improved to 24 days in the 2025 dataset, down from roughly 30 days reported in the 2023 DBIR. Verizon notes the change is statistically modest but operationally meaningful.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "dwell-time",
+        "median",
+        "discovery",
+        "spark-from-8"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "VERIS discovery method",
+      "comparison": "down from ~30 days in 2023",
+      "trend": "decreasing",
+      "value_unit": "days",
+      "card_style": "sparkline",
+      "value": "24 days",
+      "spark": [
+        120,
+        80,
+        45,
+        35,
+        28,
+        24
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "verizon-dbir-2025-third-party-share",
+      "title": "Third-party involvement doubled to 30% of breaches",
+      "description": "Third-party involvement was found in 30% of all breaches analyzed in the 2025 DBIR, roughly double the 15% reported in the 2024 report. The cover graphic for this year's report is centered on the topic, with Snowflake, Change Healthcare, CDK Global and Blue Yonder all flagged as illustrative supply-chain cases.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain"
+      ],
+      "tags": [
+        "third-party",
+        "snowflake",
+        "change-healthcare",
+        "cdk-global"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Summary of findings / Third-party",
+      "comparison": "up from 15% in 2024 DBIR",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "30%"
+    },
+    {
+      "type": "stat",
+      "id": "verizon-dbir-2025-ransomware-share",
+      "title": "Ransomware present in 44% of breaches",
+      "description": "Ransomware, with or without encryption, was a component of 44% of breaches reviewed in this year's dataset, up from 32% in the prior year, a 37% relative increase. On the incident side, Ransomware was present in 31% of cases, up from 14%.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ransomware",
+        "breach-share",
+        "system-intrusion"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Summary of findings",
+      "comparison": "up from 32% in 2024 DBIR (+37%)",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "44%"
+    },
+    {
+      "type": "stat",
+      "id": "verizon-dbir-2025-median-ransom",
+      "title": "Median ransom paid fell to $115K",
+      "description": "The median amount paid to ransomware groups in 2024 dropped to $115,000, down from $150,000 the prior year. The drop is partially attributed to the 64% of victim organizations that did not pay the ransom, up from 50% two years ago.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ransom-payment",
+        "median",
+        "negotiation"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "System Intrusion",
+      "comparison": "down from $150K in 2023",
+      "trend": "decreasing",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$115K"
+    },
+    {
+      "type": "stat",
+      "id": "verizon-dbir-2025-non-payers",
+      "title": "64% of ransomware victims refused to pay",
+      "description": "According to Verizon's ransomware negotiation data contributors, 64% of victim organizations did not pay the ransom in 2024, up from 50% two years prior. Blockchain analysis from peers showed ransomware payments dropped 35% overall.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "non-payment",
+        "negotiation"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "System Intrusion / Turning tides",
+      "comparison": "up from 50% two years prior",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "64%"
+    },
+    {
+      "type": "stat",
+      "id": "verizon-dbir-2025-exploit-vuln-share",
+      "title": "Vulnerability exploitation hit 20% of breaches",
+      "description": "Exploitation of vulnerabilities as an initial access vector reached 20% of breaches, a 34% relative increase from the prior year. Edge devices and VPNs accounted for 22% of that vulnerability activity, up almost eight-fold from 3% last year.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "initial-access",
+        "exploit-vuln",
+        "edge-devices",
+        "zero-day"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Summary of findings / VERIS Actions",
+      "comparison": "+34% YoY",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "20%"
+    },
+    {
+      "type": "stat",
+      "id": "verizon-dbir-2025-bec-losses",
+      "title": "$6.3B transferred via BEC in 2024",
+      "description": "Per FBI IC3 figures cited by Verizon, more than $6.3 billion was transferred as part of Business Email Compromise scams in 2024 across ~19,000 complaints. The median amount extracted from victims has stabilized around $50,000, with 88% of proceeds moved via wire transfer.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "bec",
+        "fbi-ic3",
+        "wire-transfer"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Social Engineering",
+      "comparison": "median per victim ~$50K",
+      "trend": "increasing",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$6.3B"
+    },
+    {
+      "type": "stat",
+      "id": "verizon-dbir-2025-ddos-growth",
+      "title": "DDoS bandwidth up ~1,000% since 2018",
+      "description": "Verizon's DDoS contributors show a 200%+ growth in median attack size since 2018 and roughly a 1,000% increase in the upper bound of bits-per-second. Finance, Manufacturing and Professional Services together account for more than 75% of DoS cases.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [
+        "Financial Services",
+        "Manufacturing"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "ddos",
+        "bandwidth",
+        "trend"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Denial of Service",
+      "comparison": "since 2018 baseline",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+1,000%"
+    },
+    {
+      "type": "stat",
+      "id": "verizon-dbir-2025-breaches-analyzed",
+      "title": "12,195 confirmed breaches analyzed",
+      "description": "The 2025 DBIR analyzed 22,052 real-world security incidents, of which 12,195 were confirmed data breaches, the highest number ever examined in a single edition. Victims spanned 139 countries.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Data Breaches",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "dataset",
+        "methodology",
+        "139-countries"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Introduction",
+      "comparison": "highest ever",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "12,195"
+    },
+    {
+      "type": "stat",
+      "id": "verizon-dbir-2025-kev-mass-exploit",
+      "title": "Median 5 days to mass-exploit CISA KEV bugs",
+      "description": "The median gap between CVE publication and addition to the CISA Known Exploited Vulnerabilities catalog held at 5 days. For Verizon's edge-device subset, the median was zero days—9 of the 17 sampled CVEs hit the KEV list on or before their CVE publication date.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "kev",
+        "cisa",
+        "mass-exploit",
+        "edge-devices"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "VERIS Actions / Edge cases",
+      "comparison": "edge-device subset: 0 days",
+      "trend": "flat",
+      "value_unit": "days",
+      "card_style": "number",
+      "value": "5 days"
+    },
+    {
+      "type": "stat",
+      "id": "verizon-dbir-2025-infostealer-byod",
+      "title": "46% of compromised corporate logins on non-managed devices",
+      "description": "Verizon's infostealer analysis found that 46% of compromised systems with corporate logins were non-managed devices hosting both personal and business credentials. The DBIR ties this directly to BYOD risk and lack of enforced device policies.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "byod",
+        "infostealer",
+        "stolen-credentials"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Summary of findings / BWAA",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "46%"
+    },
+    {
+      "type": "stat",
+      "id": "verizon-dbir-2025-ransomware-victims-infostealer",
+      "title": "54% of ransomware victims pre-exposed in infostealer logs",
+      "description": "Correlating ransomware leak-site disclosures with infostealer logs and marketplace postings, Verizon found 54% of ransomware victim domains appeared in credential dumps, and 40% of those entries included corporate email addresses, suggesting access-broker tradecraft.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "infostealer",
+        "logs_on_sale"
+      ],
+      "tags": [
+        "access-broker",
+        "credential-exposure"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "BWAA / Stolen credentials",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "54%"
+    },
+    {
+      "type": "stat",
+      "id": "verizon-dbir-2025-public-sector-ransomware",
+      "title": "Ransomware in 30% of Public Sector breaches",
+      "description": "Ransomware was present in 30% of Public Sector breaches, with about 43% of those victims being U.S. local governments. The pattern impacts federal, state and council-level government bodies across regions.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "public-sector",
+        "local-government",
+        "sltt"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Focused analysis / Public Sector",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "30%"
+    },
+    {
+      "type": "stat",
+      "id": "verizon-dbir-2025-human-element-quote",
+      "title": "Humans still in 60% of breaches",
+      "description": "Even as vulnerability exploitation rose sharply, the human element remained a 6-in-10 factor across breaches reviewed by Verizon.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "human-element",
+        "social-engineering"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Results and analysis",
+      "comparison": "61% last year",
+      "trend": "flat",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"We see the human involvement in breaches at 60% this year, as opposed to 61% last year, which equates to approximately the same thing within our usual 95% confidence level tolerance.\""
+    },
+    {
+      "type": "stat",
+      "id": "verizon-dbir-2025-espionage-quote",
+      "title": "State-sponsored actors double-dipping for cash",
+      "description": "Verizon highlights that Espionage-motivated breaches nearly tripled (a 163% increase) this year and that state-sponsored actors also pursue financially motivated activity to fund operations.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "espionage",
+        "state-sponsored",
+        "motives",
+        "narrative"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Summary of findings",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Espionage was not the only thing state-sponsored actors were interested in—approximately 28% of incidents involving those actors had a Financial motive. There has been media speculation that this may be a case of the threat actors double-dipping to pad their compensation.\""
+    },
+    {
+      "type": "stat",
+      "id": "verizon-dbir-2025-edge-device-quote",
+      "title": "Any device can be an edge device",
+      "description": "Edge device and VPN exploitation jumped from 3% to 22% of vulnerability-based initial access vectors. The DBIR's wry framing underscores how widespread the edge attack surface has become.",
+      "source": "Verizon (DBIR)",
+      "source_short": "Verizon DBIR",
+      "color": "#CD040B",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "edge-devices",
+        "vpn",
+        "exploitation",
+        "narrative"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Results and analysis",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"All in all, those findings reinforce the old adage that 'any device can be an edge device if you are brave enough.'\""
+    }
+  ]
+}

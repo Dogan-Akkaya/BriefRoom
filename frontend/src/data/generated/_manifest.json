@@ -1,0 +1,25 @@
+{
+  "last_run_at": "2026-05-08T07:55:48.531Z",
+  "sources": [
+    {
+      "category": "ransomware",
+      "source": "SOCRadar ThreatVision",
+      "count": 0,
+      "ok": true,
+      "skipped": true,
+      "reason": "THREATVISION_RANSOMWARE_KEY not set",
+      "name": "threatvision-ransomware",
+      "duration_ms": 1
+    },
+    {
+      "category": "dark_web_mentions",
+      "source": "SOCRadar ThreatVision (darkweb)",
+      "count": 0,
+      "ok": true,
+      "skipped": true,
+      "reason": "THREATVISION_DARKWEB_KEY not set",
+      "name": "threatvision-darkweb",
+      "duration_ms": 0
+    }
+  ]
+}

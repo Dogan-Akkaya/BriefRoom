@@ -8,9 +8,11 @@ import Popular from './routes/Popular'
 import Methodology from './routes/Methodology'
 import StaticPage from './routes/StaticPage'
 import Reports from './routes/Reports'
+import ReportDetail from './routes/ReportDetail'
 import Explore from './routes/Explore'
 import WizardScreen1 from './components/explore/WizardScreen1'
 import WizardScreen2 from './components/explore/WizardScreen2'
+import UnderConstructionWall from './components/UnderConstructionWall'
 
 class ErrorBoundary extends React.Component {
   constructor(props) { super(props); this.state = { error: null } }
@@ -37,18 +39,33 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Landing />} />
-          {/* Custom Builder wizard */}
-          <Route path="/explore" element={<Explore />}>
+          {/* Custom Builder wizard — walled in v1 */}
+          <Route path="/explore" element={
+            <UnderConstructionWall title="Custom Builder is in progress">
+              <Explore />
+            </UnderConstructionWall>
+          }>
             <Route index element={<WizardScreen1 />} />
             <Route path=":dim/:value" element={<WizardScreen2 />} />
             <Route path=":dim/:value/:dim2/:value2" element={<WizardScreen2 />} />
           </Route>
           {/* Legacy /builder (no id) redirects into the wizard */}
           <Route path="/builder" element={<Navigate to="/explore" replace />} />
-          <Route path="/builder/:categoryId" element={<Builder />} />
-          <Route path="/popular" element={<Popular />} />
+          {/* Per-category Builder — walled in v1 */}
+          <Route path="/builder/:categoryId" element={
+            <UnderConstructionWall title="Custom Builder is in progress">
+              <Builder />
+            </UnderConstructionWall>
+          } />
+          {/* Popular Charts — walled in v1 */}
+          <Route path="/popular" element={
+            <UnderConstructionWall title="Popular Charts is in progress">
+              <Popular />
+            </UnderConstructionWall>
+          } />
           <Route path="/methodology" element={<Methodology />} />
           <Route path="/reports" element={<Reports />} />
+          <Route path="/reports/:reportId" element={<ReportDetail />} />
           <Route path="/page/:slug" element={<StaticPage />} />
         </Routes>
       </div>

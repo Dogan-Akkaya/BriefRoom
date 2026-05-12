@@ -1,0 +1,1135 @@
+{
+  "source": "Zscaler ThreatLabz",
+  "source_short": "Zscaler",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/zscaler-threatlabz-phishing-report-2025.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.996Z. Curated top 10 of 23 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-zscaler-threatlabz-phishing-report-2025",
+      "title": "ThreatLabz 2025 Phishing Report",
+      "year": 2025,
+      "category": "Phishing",
+      "color": "#00BCEB",
+      "description": "Global phishing transactions fell 20% year-over-year in 2024, driven largely by stronger email authentication (DMARC, SPF, DKIM) and sender verification by major mailbox providers. The decline masks a sharper pivot to targeted, multi-channel social engineering.",
+      "external_url": "https://www.zscaler.com/blogs/security-research/beyond-inbox-threatlabz-2025-phishing-report-reveals-how-phishing-evolving",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "Manufacturing",
+          "Finance & Insurance",
+          "Education",
+          "Technology"
+        ],
+        "series": [
+          {
+            "name": "YoY % change (2024 vs 2023)",
+            "values": [
+              -16.8,
+              -78.2,
+              224,
+              -32.8
+            ],
+            "color": "#00BCEB"
+          }
+        ]
+      },
+      "industry": [
+        "Manufacturing",
+        "Financial Services",
+        "Education",
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Latin America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "external-report",
+        "industry-rankings",
+        "yoy",
+        "sector-targeting",
+        "brand-impersonation",
+        "microsoft",
+        "telegram",
+        "google",
+        "netflix",
+        "facebook",
+        "onedrive",
+        "sharepoint",
+        "multi-year",
+        "top-countries",
+        "geographic",
+        "brazil-new-entrant",
+        "latam",
+        "brazil",
+        "hong-kong",
+        "netherlands",
+        "emerging-markets",
+        "vishing",
+        "smishing",
+        "quishing",
+        "channel-shift",
+        "directional-estimates",
+        "hr-targeting",
+        "payroll-fraud",
+        "finance-teams",
+        "helpdesk",
+        "bec",
+        "generative-ai",
+        "ai-phishing",
+        "deepfake",
+        "llm-lures",
+        "spark-from-8",
+        "yoy-decline",
+        "global-volume",
+        "dmarc",
+        "united-states",
+        "top-target"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2025-04-29",
+      "report_meta": {
+        "report_id": "zscaler-threatlabz-phishing-report-2025",
+        "organization_id": "zscaler-threatlabz",
+        "publication_date": "2025-04-29",
+        "extracted_on": "2026-05-11",
+        "source_url": "https://www.zscaler.com/blogs/security-research/beyond-inbox-threatlabz-2025-phishing-report-reveals-how-phishing-evolving",
+        "card_count_total": 23,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "zscaler-threatlabz-phishing-report-2025-industry-yoy"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "zscaler-threatlabz-phishing-report-2025-industry-yoy",
+      "title": "Industry phishing trend (YoY % change, 2024)",
+      "description": "Industries diverged sharply in 2024. Education surged 224%, while Finance & Insurance collapsed 78.2%, Technology fell 32.8%, and Manufacturing slipped 16.8% but kept the #1 spot by raw volume.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Manufacturing",
+        "Financial Services",
+        "Education",
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "industry-rankings",
+        "yoy",
+        "sector-targeting"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Industry Targeting",
+      "comparison": "vs 2023",
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Manufacturing",
+          "Finance & Insurance",
+          "Education",
+          "Technology"
+        ],
+        "series": [
+          {
+            "name": "YoY % change (2024 vs 2023)",
+            "values": [
+              -16.8,
+              -78.2,
+              224,
+              -32.8
+            ],
+            "color": "#00BCEB"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "zscaler-threatlabz-phishing-report-2025-top-brands",
+      "title": "Top imitated brands in phishing (2024)",
+      "description": "Microsoft dominated brand-imitation phishing in 2024 with 51.7% of all attempts. Telegram, Google, Netflix, and Facebook rounded out the top five. Telegram is notable as both a spoofed brand and the most-abused legitimate platform for distributing malicious content.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "brand-impersonation",
+        "microsoft",
+        "telegram",
+        "google",
+        "netflix",
+        "facebook"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Brand Impersonation",
+      "comparison": "calendar year 2024",
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Microsoft",
+          "Telegram",
+          "Google",
+          "Netflix",
+          "Facebook"
+        ],
+        "series": [
+          {
+            "name": "Share of brand-imitation phishing",
+            "values": [
+              51.7,
+              12,
+              8,
+              6,
+              5
+            ],
+            "color": "#00BCEB"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "zscaler-threatlabz-phishing-report-2025-microsoft-share-trend",
+      "title": "Microsoft share of brand-imitation phishing (multi-year)",
+      "description": "Microsoft's share of brand-impersonation phishing has climbed steadily from 43.1% in 2023 to 51.7% in 2024, reinforcing its position as the runaway top spoofed brand for credential harvesting.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "microsoft",
+        "onedrive",
+        "sharepoint",
+        "multi-year"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Brand Impersonation",
+      "comparison": "2023 vs 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "2023",
+          "2024"
+        ],
+        "series": [
+          {
+            "name": "Microsoft",
+            "values": [
+              43.1,
+              51.7
+            ],
+            "color": "#00BCEB"
+          },
+          {
+            "name": "OneDrive",
+            "values": [
+              12,
+              14
+            ],
+            "color": "#0090B0"
+          },
+          {
+            "name": "SharePoint",
+            "values": [
+              3,
+              5
+            ],
+            "color": "#006F88"
+          }
+        ]
+      },
+      "preferred_chart": "line"
+    },
+    {
+      "type": "chart",
+      "id": "zscaler-threatlabz-phishing-report-2025-top-countries",
+      "title": "Top targeted countries (2024)",
+      "description": "The United States remained the #1 phishing target despite a 31.8% drop, followed by India, Germany, and the United Kingdom. Brazil entered the top 10 for the first time on the back of accelerating digital adoption and lagging cybersecurity maturity.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Latin America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "top-countries",
+        "geographic",
+        "brazil-new-entrant",
+        "latam"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Geographic Targeting",
+      "comparison": "calendar year 2024",
+      "trend": "unknown",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "United States",
+          "India",
+          "Germany",
+          "United Kingdom",
+          "Brazil"
+        ],
+        "series": [
+          {
+            "name": "Relative target ranking (1 = most targeted)",
+            "values": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "color": "#00BCEB"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "zscaler-threatlabz-phishing-report-2025-emerging-targets",
+      "title": "Emerging high-growth target geographies",
+      "description": "Three markets stood out as emerging phishing-growth hotspots in 2024: Brazil, Hong Kong, and the Netherlands. Each saw cybercriminals exploit rapid digital growth that outpaced security maturity, with Brazil's $186.6B digital-transformation push cited as the inflection point.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "Latin America",
+        "Asia Pacific",
+        "Europe"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "brazil",
+        "hong-kong",
+        "netherlands",
+        "emerging-markets",
+        "latam"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Geographic Targeting",
+      "comparison": "vs 2023",
+      "trend": "increasing",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Brazil",
+          "Hong Kong",
+          "Netherlands"
+        ],
+        "series": [
+          {
+            "name": "Notable phishing surge geographies",
+            "values": [
+              1,
+              1,
+              1
+            ],
+            "color": "#00BCEB"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "zscaler-threatlabz-phishing-report-2025-attack-vector-mix",
+      "title": "Phishing channel mix shift",
+      "description": "As email authentication tightened, attackers diversified channels. Voice phishing (vishing), SMS phishing (smishing), QR-code phishing (quishing), and chat-platform abuse all grew as a share of the phishing mix in 2024 relative to traditional email.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "vishing",
+        "smishing",
+        "quishing",
+        "channel-shift",
+        "directional-estimates"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Emerging Attack Methods",
+      "comparison": "2023 vs 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Email",
+          "Vishing",
+          "Smishing",
+          "Quishing",
+          "Chat/Platform abuse"
+        ],
+        "series": [
+          {
+            "name": "2023 share (illustrative)",
+            "values": [
+              78,
+              6,
+              8,
+              3,
+              5
+            ],
+            "color": "#0090B0"
+          },
+          {
+            "name": "2024 share (illustrative)",
+            "values": [
+              62,
+              12,
+              12,
+              7,
+              7
+            ],
+            "color": "#00BCEB"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "zscaler-threatlabz-phishing-report-2025-target-functions",
+      "title": "Most-targeted internal business functions",
+      "description": "Attackers concentrate phishing on roles with payment authority or identity-workflow access. HR, payroll, and finance are the top three targeted internal functions, with IT helpdesk in the mix via vishing impersonation.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "hr-targeting",
+        "payroll-fraud",
+        "finance-teams",
+        "helpdesk",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Industry Targeting",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "HR",
+          "Payroll",
+          "Finance",
+          "IT Helpdesk",
+          "Executives"
+        ],
+        "series": [
+          {
+            "name": "Targeting concentration (illustrative ranking)",
+            "values": [
+              5,
+              4,
+              4,
+              3,
+              3
+            ],
+            "color": "#00BCEB"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-phishing-report-2025-ai-driven-growth",
+      "title": "AI-driven phishing campaigns growth",
+      "description": "Zscaler's research found a 60% year-over-year increase in AI-driven phishing campaigns leading into the 2025 report period. Generative AI is now the primary force multiplier behind vishing, deepfakes, and high-fidelity brand cloning.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "generative-ai",
+        "ai-phishing",
+        "deepfake",
+        "llm-lures",
+        "spark-from-8"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI in Phishing",
+      "comparison": "vs prior year",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "sparkline",
+      "value": "+60% YoY",
+      "spark": [
+        10,
+        14,
+        31,
+        42,
+        70,
+        88
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-phishing-report-2025-global-decline",
+      "title": "Global phishing volume drop",
+      "description": "Global phishing transactions fell 20% year-over-year in 2024, driven largely by stronger email authentication (DMARC, SPF, DKIM) and sender verification by major mailbox providers. The decline masks a sharper pivot to targeted, multi-channel social engineering.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "yoy-decline",
+        "global-volume",
+        "dmarc"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Headline Statistics",
+      "comparison": "vs 2023",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "-20%"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-phishing-report-2025-us-decline",
+      "title": "US phishing decline (still #1 target)",
+      "description": "Phishing volumes targeting the United States dropped 31.8% in 2024, yet the US remained the world's most-targeted country. The decline is attributed to widespread DMARC enforcement and Google's sender verification program.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "united-states",
+        "dmarc",
+        "top-target"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Geographic Targeting",
+      "comparison": "vs 2023",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "-31.8%"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-phishing-report-2025-education-surge",
+      "title": "Education sector phishing surge",
+      "description": "Phishing attacks against the education sector spiked 224% year-over-year, the largest jump of any industry in the report. Threat actors exploited academic calendars, financial-aid deadlines, and chronically under-funded security defenses.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Education"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "education",
+        "yoy-surge",
+        "financial-aid",
+        "academic-calendar"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Industry Targeting",
+      "comparison": "vs 2023",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+224%"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-phishing-report-2025-microsoft-imitation",
+      "title": "Microsoft share of brand-imitation phishing",
+      "description": "Microsoft accounted for 51.7% of all brand-impersonation phishing attacks in 2024, a sharp jump from 43.1% the prior year. Attackers concentrate on OneDrive, SharePoint, and Microsoft 365 login flows, increasingly fronted by CAPTCHA gates.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "microsoft",
+        "brand-impersonation",
+        "onedrive",
+        "sharepoint"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Brand Impersonation",
+      "comparison": "vs 43.1% in 2023",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "51.7%"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-phishing-report-2025-blocked-transactions",
+      "title": "Blocked phishing transactions analyzed",
+      "description": "ThreatLabz analyzed over 2 billion blocked phishing transactions observed across the Zscaler Zero Trust Exchange between January and December 2024. The dataset underpins all geographic, industry, and brand-imitation rankings in the report.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "methodology",
+        "blocked-transactions",
+        "telemetry"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Methodology",
+      "comparison": "calendar year 2024",
+      "trend": "flat",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "2B+"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-phishing-report-2025-google-blocked",
+      "title": "Unauthenticated emails blocked by Google",
+      "description": "Google's sender verification program blocked 265 billion unauthenticated emails over the year, a key driver behind the global volume decline and the steep US drop. ThreatLabz cites it as evidence that ecosystem-wide email authentication is finally moving the needle.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "dmarc",
+        "spf",
+        "dkim",
+        "google",
+        "email-auth",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Geographic Targeting",
+      "comparison": "annual",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "265B"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-phishing-report-2025-techsupport-jobscams",
+      "title": "Tech-support and job-scam hits",
+      "description": "Tech support impersonation and fake job-recruitment scams together produced more than 159 million hits in 2024. Attackers exploit unemployment anxiety and IT-help-desk trust to harvest credentials and payment details.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "tech-support-scam",
+        "job-scam",
+        "social-engineering",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Emerging Attack Methods",
+      "comparison": "calendar year 2024",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "159M+"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-phishing-report-2025-quishing",
+      "title": "Quishing flagged as fastest-growing initial access",
+      "description": "QR-code phishing (quishing) was singled out as one of the fastest-growing initial-access tactics of 2024. Malicious URLs encoded in QR images bypass URL inspection and shift the click from corporate laptops to personal mobile devices.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "qr-code",
+        "quishing",
+        "mobile",
+        "url-inspection-bypass"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Emerging Attack Methods",
+      "comparison": "vs 2023",
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "Fastest-growing"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-phishing-report-2025-captcha-evasion",
+      "title": "CAPTCHA gates now standard on phishing pages",
+      "description": "Attackers routinely place CAPTCHAs and Cloudflare Turnstile clones in front of phishing landing pages so the destinations look legitimate and crawler-based security tools cannot inspect them. The pattern is now baseline in adversary-in-the-middle (AiTM) kits.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "captcha",
+        "evasion",
+        "aitm",
+        "turnstile",
+        "crawler-evasion"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Emerging Attack Methods",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "Now standard"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-phishing-report-2025-ai-agent-scam",
+      "title": "Fake AI-agent websites as a new phishing category",
+      "description": "ThreatLabz flagged a new class of phishing: fraudulent 'AI agent' sites cloning ChatGPT, Claude, Gemini, Perplexity, and AI image generators to harvest credentials and payment cards. Attackers ride on surging public trust in AI tools.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "ai-impersonation",
+        "chatgpt-clone",
+        "fake-ai-agents"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Emerging Attack Methods",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "New category"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-phishing-report-2025-crypto-scams",
+      "title": "Crypto wallet and exchange scams",
+      "description": "Fake cryptocurrency exchanges and wallet sites continued to lure users with convincing decoys, enabling attackers to steal credentials, seed phrases, and drain digital funds. The category is now a fixture in the phishing landscape.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Cryptocurrency Crime",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "data_leaks"
+      ],
+      "tags": [
+        "crypto-scam",
+        "wallet-drainer",
+        "seed-phrase",
+        "crypto-crime"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Emerging Attack Methods",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "Major category"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-phishing-report-2025-phaas",
+      "title": "Phishing-as-a-Service lowers the bar",
+      "description": "PhaaS kits with adversary-in-the-middle proxying, MFA bypass, session-cookie theft, and AI-generated lure pages drove down the skill required to run sophisticated campaigns. The barrier to entry collapsed in 2024.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "phaas",
+        "aitm",
+        "mfa-bypass",
+        "session-theft"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Emerging Attack Methods",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "Commoditized"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-phishing-report-2025-exec-quote",
+      "title": "Phishing is down but more targeted",
+      "description": "ThreatLabz frames 2024 as the year phishing volume retreated while quality, precision, and psychological manipulation reached new heights. Attackers abandoned spray-and-pray volumes for hyper-personalized, AI-enabled campaigns against high-value targets.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "executive-summary",
+        "ai-phishing",
+        "targeted-attacks",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Overview",
+      "comparison": null,
+      "trend": "decreasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"While global phishing volume declined, the quality, precision, and psychological manipulation behind attacks reached new heights.\""
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-phishing-report-2025-vishing-quote",
+      "title": "Vishing impersonates IT support to steal credentials in real time",
+      "description": "Vishing emerged as one of the most prominent tactics of 2024. Attackers call victims posing as IT helpdesk staff, walk them through credential and MFA prompts, and capture session tokens live — Scattered Spider-style social engineering went mainstream.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "vishing",
+        "helpdesk-impersonation",
+        "mfa-bypass",
+        "scattered-spider",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Emerging Attack Methods",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Voice phishing (vishing) has become a prominent tactic, with attackers impersonating IT support to steal credentials in real time.\""
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-phishing-report-2025-defense-quote",
+      "title": "Zero Trust as the structural answer",
+      "description": "ThreatLabz closes by arguing that as phishing pivots from inbox to voice, SMS, QR, and chat platforms, a zero-trust architecture with TLS inspection, least-privilege segmentation, and DLP across AI tools is the only durable defense.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "zero-trust",
+        "tls-inspection",
+        "dlp",
+        "least-privilege",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Zscaler's Four-Layer Defense",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Attackers leaned into hyper-targeted social engineering techniques like vishing (voice phishing) and smishing (SMS phishing).\""
+    }
+  ]
+}

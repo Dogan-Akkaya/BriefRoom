@@ -17,11 +17,29 @@ export default function Navbar() {
 
   const links = [
     { label: "Home", path: "/", activeColor: "#FF4562", icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: 2}}><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>, exact: true },
-    { label: "Popular Charts", path: "/popular", activeColor: "#FF4562" },
+    { label: "Popular Charts", path: "/popular", activeColor: "#FF4562", soon: true },
     { label: "Global Reports", path: "/reports", activeColor: "#3B82F6" },
-    { label: "Custom Builder", path: "/explore", activeColor: "#FF4562" },
+    { label: "Custom Builder", path: "/explore", activeColor: "#FF4562", soon: true },
     { label: "Methodology", path: "/methodology", activeColor: "#FF4562" },
   ];
+
+  const SoonPill = () => (
+    <span style={{
+      marginLeft: 7,
+      padding: '2px 5px',
+      fontSize: 8,
+      fontWeight: 700,
+      letterSpacing: '0.1em',
+      fontFamily: "'JetBrains Mono', monospace",
+      color: 'rgba(96,165,250,0.85)',
+      background: 'rgba(59,130,246,0.12)',
+      border: '1px solid rgba(59,130,246,0.22)',
+      borderRadius: 4,
+      verticalAlign: 'middle',
+      lineHeight: 1.3,
+      textTransform: 'uppercase',
+    }}>Soon</span>
+  );
 
   return (
     <>
@@ -93,7 +111,7 @@ export default function Navbar() {
                 onClick={() => navigate(link.path)}
                 onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') navigate(link.path) }}
               >
-                {link.icon}{link.label}
+                {link.icon}{link.label}{link.soon && <SoonPill />}
               </span>
             );
           })}
@@ -131,7 +149,7 @@ export default function Navbar() {
                 className={`br-mobile-link${isActive ? ' active' : ''}`}
                 onClick={() => navigate(link.path)}
               >
-                {link.label}
+                {link.label}{link.soon && <SoonPill />}
               </button>
             );
           })}

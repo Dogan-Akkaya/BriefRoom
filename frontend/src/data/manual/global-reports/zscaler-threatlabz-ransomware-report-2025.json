@@ -1,0 +1,996 @@
+{
+  "source": "Zscaler ThreatLabz",
+  "source_short": "Zscaler",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/zscaler-threatlabz-ransomware-report-2025.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.997Z. Curated top 10 of 22 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-zscaler-threatlabz-ransomware-report-2025",
+      "title": "ThreatLabz 2025 Ransomware Report",
+      "year": 2025,
+      "category": "Ransomware",
+      "color": "#00BCEB",
+      "description": "Zscaler's cloud blocked an unprecedented surge in ransomware attempts between April 2024 and April 2025. ThreatLabz says the 145.9% YoY growth shows attackers are scaling campaigns faster than ever before.",
+      "external_url": "https://www.zscaler.com/blogs/security-research/ransomware-surges-extortion-escalates-threatlabz-2025-ransomware-report",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "Attacks blocked",
+          "Public extortion cases",
+          "Data exfiltration volume"
+        ],
+        "series": [
+          {
+            "name": "YoY change (%)",
+            "values": [
+              145.9,
+              70.1,
+              92.7
+            ],
+            "color": "#00BCEB"
+          }
+        ]
+      },
+      "industry": [
+        "Energy & Utilities",
+        "Government",
+        "Manufacturing",
+        "Technology",
+        "Healthcare"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks",
+        "vulnerability"
+      ],
+      "tags": [
+        "external-report",
+        "yoy",
+        "headline-metrics",
+        "extortion",
+        "critical-infrastructure",
+        "oil-and-gas",
+        "government",
+        "yoy-spike",
+        "industry-ranking",
+        "top-targets",
+        "ransomhub",
+        "clop",
+        "akira",
+        "raas",
+        "leak-sites",
+        "initial-access",
+        "vpn",
+        "remote-access",
+        "exploited-software",
+        "zero-trust",
+        "kill-chain",
+        "defense-framework",
+        "attacks-blocked",
+        "yoy-growth",
+        "zscaler-cloud",
+        "data-exfiltration",
+        "double-extortion"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2025-07-29",
+      "report_meta": {
+        "report_id": "zscaler-threatlabz-ransomware-report-2025",
+        "organization_id": "zscaler-threatlabz",
+        "publication_date": "2025-07-29",
+        "extracted_on": "2026-05-11",
+        "source_url": "https://www.zscaler.com/blogs/security-research/ransomware-surges-extortion-escalates-threatlabz-2025-ransomware-report",
+        "card_count_total": 22,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "zscaler-threatlabz-ransomware-report-2025-yoy-trio"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "zscaler-threatlabz-ransomware-report-2025-yoy-trio",
+      "title": "Three headline YoY surges shaping the 2025 ransomware year",
+      "description": "ThreatLabz's three signature year-over-year metrics — blocked attacks, public extortion listings, and exfiltrated data volumes — all moved sharply upward. The chart contrasts how each dimension of the ransomware problem accelerated in parallel.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "yoy",
+        "headline-metrics",
+        "extortion"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "5 Key Ransomware Findings",
+      "comparison": "vs prior 12 months",
+      "trend": "increasing",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Attacks blocked",
+          "Public extortion cases",
+          "Data exfiltration volume"
+        ],
+        "series": [
+          {
+            "name": "YoY change (%)",
+            "values": [
+              145.9,
+              70.1,
+              92.7
+            ],
+            "color": "#00BCEB"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "zscaler-threatlabz-ransomware-report-2025-industry-spikes",
+      "title": "Sharpest YoY industry spikes: Oil & Gas and Government",
+      "description": "While Manufacturing, Technology and Healthcare led in absolute attack volume, the most dramatic year-over-year jumps hit critical-infrastructure verticals. Oil & Gas saw a near-10x surge and Government attacks more than tripled.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [
+        "Energy & Utilities",
+        "Government"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "critical-infrastructure",
+        "oil-and-gas",
+        "government",
+        "yoy-spike"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "5 Key Ransomware Findings",
+      "comparison": "vs prior 12 months",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Oil & Gas",
+          "Government"
+        ],
+        "series": [
+          {
+            "name": "YoY change (%)",
+            "values": [
+              935,
+              235
+            ],
+            "color": "#00BCEB"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "zscaler-threatlabz-ransomware-report-2025-top-industries",
+      "title": "Most-targeted industries by absolute attack volume",
+      "description": "Manufacturing, Technology, and Healthcare remained the three most-attacked sectors in 2025. ThreatLabz cites their large attack surfaces, low tolerance for downtime, and rich data troves as the structural reasons they stay on top.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [
+        "Manufacturing",
+        "Technology",
+        "Healthcare"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "industry-ranking",
+        "top-targets"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "5 Key Ransomware Findings",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Manufacturing",
+          "Technology",
+          "Healthcare"
+        ],
+        "series": [
+          {
+            "name": "Ranking (1 = most targeted)",
+            "values": [
+              1,
+              2,
+              3
+            ],
+            "color": "#00BCEB"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "zscaler-threatlabz-ransomware-report-2025-top-raas",
+      "title": "Top RaaS brands driving the 2025 surge",
+      "description": "RansomHub, Clop, and Akira dominated leak-site victim totals in ThreatLabz's analysis window. Together they accounted for a disproportionate share of public extortion listings as new groups churned around them.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ransomhub",
+        "clop",
+        "akira",
+        "raas",
+        "leak-sites"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware Groups Behind the Surge",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "RansomHub",
+          "Clop",
+          "Akira"
+        ],
+        "series": [
+          {
+            "name": "Relative leak-site dominance (rank order)",
+            "values": [
+              3,
+              2,
+              1
+            ],
+            "color": "#00BCEB"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "zscaler-threatlabz-ransomware-report-2025-initial-access-vectors",
+      "title": "5 enterprise tech categories weaponized for initial access",
+      "description": "ThreatLabz observes that ransomware operators consistently exploit a narrow set of widely-deployed enterprise tools to land first. Each represents an internet-exposed control plane attackers can scan and abuse.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "ransomware"
+      ],
+      "tags": [
+        "initial-access",
+        "vpn",
+        "remote-access",
+        "exploited-software"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Vulnerabilities Remain the Easy Way In",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "VPN applications",
+          "File transfer tools",
+          "Remote access software",
+          "Virtualization platforms",
+          "Backup systems"
+        ],
+        "series": [
+          {
+            "name": "Cited as primary ransomware entry vector",
+            "values": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "color": "#00BCEB"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "zscaler-threatlabz-ransomware-report-2025-zero-trust-stages",
+      "title": "Zero Trust coverage across the ransomware kill chain",
+      "description": "Zscaler frames defense as four sequential capabilities aligned to attacker stages: hiding the attack surface, blocking initial compromise, killing lateral movement, and stopping exfiltration. The model anchors the report's prescriptive guidance.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "zero-trust",
+        "kill-chain",
+        "defense-framework"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Zero Trust",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Minimize exposure",
+          "Prevent initial compromise",
+          "Eliminate lateral movement",
+          "Block data exfiltration"
+        ],
+        "series": [
+          {
+            "name": "Kill-chain stage covered",
+            "values": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "color": "#00BCEB"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-ransomware-report-2025-attacks-yoy",
+      "title": "Ransomware attacks skyrocketed 145.9% year-over-year",
+      "description": "Zscaler's cloud blocked an unprecedented surge in ransomware attempts between April 2024 and April 2025. ThreatLabz says the 145.9% YoY growth shows attackers are scaling campaigns faster than ever before.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "attacks-blocked",
+        "yoy-growth",
+        "zscaler-cloud"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "5 Key Ransomware Findings",
+      "comparison": "vs Apr 2023 – Apr 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+145.9% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-ransomware-report-2025-public-extortion",
+      "title": "Public extortion cases jumped 70.1% YoY",
+      "description": "Far more organizations were listed on ransomware leak sites year-over-year as attackers escalate pressure tactics. The growth in public shaming campaigns underscores extortion's central role in modern ransomware economics.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "extortion",
+        "leak-sites",
+        "yoy-growth"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "5 Key Ransomware Findings",
+      "comparison": "vs prior 12 months",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+70.1% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-ransomware-report-2025-exfil-surge",
+      "title": "Data exfiltration volumes surged 92.7%",
+      "description": "ThreatLabz observed a near-doubling of data theft volumes by ransomware operators year-over-year. The pattern confirms that stealing sensitive files — not just encrypting them — is now the primary lever for extortion.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "data-exfiltration",
+        "double-extortion",
+        "yoy-growth"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "5 Key Ransomware Findings",
+      "comparison": "vs prior 12 months",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+92.7% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-ransomware-report-2025-oil-gas-spike",
+      "title": "Oil & Gas ransomware attacks up 935% YoY",
+      "description": "Energy operators saw a nearly tenfold jump in ransomware activity, the steepest sector-level increase in the report. Critical infrastructure exposure and OT-adjacent systems make this vertical a high-value extortion target.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [
+        "Energy & Utilities"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "oil-and-gas",
+        "critical-infrastructure",
+        "yoy-spike"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "5 Key Ransomware Findings",
+      "comparison": "vs prior 12 months",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+935% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-ransomware-report-2025-gov-spike",
+      "title": "Government ransomware attacks up 235% YoY",
+      "description": "Public-sector ransomware activity more than tripled year-over-year. Municipalities, agencies, and state entities remain attractive targets due to constrained security budgets and high pressure to restore citizen services.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "public-sector",
+        "government",
+        "yoy-spike"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "5 Key Ransomware Findings",
+      "comparison": "vs prior 12 months",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+235% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-ransomware-report-2025-total-tb",
+      "title": "238.5 TB of data exfiltrated by top 10 families",
+      "description": "Across 10 major ransomware families analyzed by ThreatLabz, attackers stole a combined 238.5 terabytes of data over the year. The figure quantifies how aggressively today's RaaS operations weaponize stolen information for ransom leverage.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "data-exfiltration",
+        "top-10-families",
+        "terabytes"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "5 Key Ransomware Findings",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "238.5 TB"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-ransomware-report-2025-new-groups",
+      "title": "34 new ransomware groups emerged",
+      "description": "ThreatLabz catalogued 34 newly active ransomware brands during the analysis window. The count includes rebrands, offshoots of defunct gangs, and entirely new entrants rushing to fill voids left by law-enforcement takedowns.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "new-groups",
+        "rebrands",
+        "raas-ecosystem"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "5 Key Ransomware Findings",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "34"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-ransomware-report-2025-genai",
+      "title": "At least 1 notorious group used ChatGPT in attacks",
+      "description": "ThreatLabz uncovered direct evidence that a high-profile ransomware crew leveraged ChatGPT to support attack execution. GenAI is now being used to automate tasks and write code that streamlines operations and improves attack effectiveness.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "genai",
+        "chatgpt",
+        "weaponized-ai"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Now Trending",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "1+ group"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-ransomware-report-2025-top10-families",
+      "title": "10 ransomware families analyzed for exfiltration",
+      "description": "ThreatLabz built its 238.5 TB exfiltration figure by deep-analyzing the 10 most active ransomware families during the year. This focused dataset underpins the report's data-theft conclusions.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "methodology",
+        "top-10",
+        "data-exfiltration"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Methodology",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "10 families"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-ransomware-report-2025-analysis-window",
+      "title": "12-month analysis window: April 2024 – April 2025",
+      "description": "All ThreatLabz findings — including the 145.9% attack increase and 238.5 TB exfiltration figure — were derived from a continuous 12-month observation window. Telemetry combined leak-site monitoring, Zscaler cloud signals, and reverse-engineered samples.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "methodology",
+        "telemetry",
+        "analysis-period"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Methodology",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "12 months"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-ransomware-report-2025-top-watch-groups",
+      "title": "Top 5 ransomware groups to watch next year",
+      "description": "Beyond today's dominant RansomHub, Clop and Akira, ThreatLabz nominated five rising groups whose extortion-first playbook signals where the ecosystem is heading. The list represents the report's forward-looking threat watchlist.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "watchlist",
+        "emerging-groups",
+        "forecast"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware Groups Behind the Surge",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "5 groups"
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-ransomware-report-2025-key-quote",
+      "title": "ThreatLabz on the new ransomware reality",
+      "description": "ThreatLabz frames the 2025 landscape as a fundamental architectural challenge — not just a volume problem. The authors argue that legacy network defenses are structurally incompatible with how modern ransomware operates.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "zero-trust",
+        "architecture",
+        "executive-summary"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Introduction",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Today's ransomware threat landscape demands a new level of operational vigilance and a fundamentally different security architecture than traditional security models provide.\""
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-ransomware-report-2025-extortion-quote",
+      "title": "Extortion now eclipses encryption",
+      "description": "ThreatLabz observed a strategic shift away from file encryption toward pure data-theft extortion. Reputational, regulatory, and IP-loss threats have become the primary coercion tools.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "data-extortion",
+        "no-encryption",
+        "tactics-shift"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Now Trending",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Some attackers are skipping file encryption altogether, opting to steal sensitive data and use the threat of public exposure via leak sites.\""
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-ransomware-report-2025-it-impersonation-quote",
+      "title": "Ransomware actors pivot to IT impersonation",
+      "description": "ThreatLabz characterizes 2025 as a turning point where bulk phishing gave way to surgical impersonation campaigns. The new playbook targets help-desk and admin personas to harvest privileged credentials.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "ransomware"
+      ],
+      "tags": [
+        "help-desk-impersonation",
+        "social-engineering"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Now Trending",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Ransomware threat actors have largely shifted away from traditional large-scale spam campaigns... in favor of more tailored attacks that impersonate IT staff to target employees with privileged access.\""
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-ransomware-report-2025-vulns-quote",
+      "title": "Scanning + automated exploitation is enough",
+      "description": "ThreatLabz emphasizes the unglamorous truth behind most ransomware breaches: simple internet scans and off-the-shelf exploits still work. Firewalls and VPNs leave too much exposed for opportunistic operators to ignore.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "ransomware"
+      ],
+      "tags": [
+        "initial-access",
+        "exposed-edge",
+        "attack-surface"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Vulnerabilities Remain the Easy Way In",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"In most cases, attackers gained initial access through simple scanning and automated exploitation of internet-connected systems.\""
+    },
+    {
+      "type": "stat",
+      "id": "zscaler-threatlabz-ransomware-report-2025-it-impersonation",
+      "title": "Tailored attacks impersonating IT staff",
+      "description": "ThreatLabz reports a tactical shift away from opportunistic spam toward narrowly targeted social engineering. Attackers now impersonate internal IT to compromise employees with privileged access.",
+      "source": "Zscaler ThreatLabz",
+      "source_short": "Zscaler",
+      "color": "#00BCEB",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "ransomware"
+      ],
+      "tags": [
+        "social-engineering",
+        "it-impersonation",
+        "privileged-access"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Now Trending",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "ThreatLabz reports a tactical shift away from opportunistic spam toward narrowly targeted social engineering"
+    }
+  ]
+}

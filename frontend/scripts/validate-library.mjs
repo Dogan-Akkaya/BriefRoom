@@ -24,23 +24,22 @@ const CATEGORIES = [
   { id: 'supply_chain', label: 'Supply Chain', hasData: true },
 ]
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-// Stub: the library now also imports GLOBAL_REPORTS. Mock a minimal shape the
-// globalReportToItem() converter expects so we can execute the module.
-const GLOBAL_REPORTS = [
-  { id: 'mock-dbir', source: 'Verizon DBIR', sourceShort: 'DBIR', title: 'Mock Attack Patterns', year: 2025, category: 'Data Breaches', color: '#8B5CF6', description: 'Mock.', chartType: 'bar', dummyData: [1, 2, 3], dummyLabels: ['a', 'b', 'c'] },
-]
 
 let src = readFileSync(new URL('../src/lib/intelligenceLibrary.js', import.meta.url), 'utf8')
-// Strip any `import ... from './data'` line (handles additions like GLOBAL_REPORTS).
-src = src.replace(/^import\s*\{[^}]+\}\s*from\s*['"]\.\/data['"]\s*;?\s*$/m, '')
+// Strip every relative-path import (./data, ./manualData, …). The eval injects
+// the symbols those modules export as function arguments below — Vite-only
+// constructs (import.meta.glob in manualData.js) never get evaluated here, so
+// MANUAL_* arrives as empty arrays. validate-manual.mjs covers the manual data
+// separately.
+src = src.replace(/^import\s*\{[^}]+\}\s*from\s*['"]\.\/[^'"]+['"]\s*;?\s*$/gm, '')
 
 const fn = eval(
-  `(function(INDUSTRIES, ALL_REGIONS, CATEGORIES, MONTHS, GLOBAL_REPORTS) {
+  `(function(INDUSTRIES, ALL_REGIONS, CATEGORIES, MONTHS, MANUAL_LIBRARY_ITEMS, MANUAL_REPORT_ITEMS, MANUAL_REPORT_RAW_BY_ID) {
     ${src.replace(/export const /g, 'var ').replace(/export /g, '')}
-    return { INTELLIGENCE_LIBRARY, popularCharts, reports, sliceItems, crossSliceItems, crossSliceCounts }
+    return { INTELLIGENCE_LIBRARY, popularCharts, reports, globalReports, reportById, sliceItems, crossSliceItems, crossSliceCounts }
   })`
 )
-const lib = fn(INDUSTRIES, ALL_REGIONS, CATEGORIES, MONTHS, GLOBAL_REPORTS)
+const lib = fn(INDUSTRIES, ALL_REGIONS, CATEGORIES, MONTHS, [], [], {})
 
 let errors = 0
 const fail = (msg) => { console.error('\u2717 ' + msg); errors++ }

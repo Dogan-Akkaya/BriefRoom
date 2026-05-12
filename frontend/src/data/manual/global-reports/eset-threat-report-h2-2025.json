@@ -1,0 +1,1258 @@
+{
+  "source": "ESET",
+  "source_short": "ESET",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/eset-threat-report-h2-2025.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.949Z. Curated top 10 of 26 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-eset-threat-report-h2-2025",
+      "title": "ESET Threat Report H2 2025",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "color": "#0099CC",
+      "description": "ESET telemetry shows Lumma Stealer attack attempts fell from more than 60,000 in H1 2025 to fewer than 9,000 in H2 2025, an 86% drop after the May 2025 disruption operation.",
+      "external_url": "https://www.welivesecurity.com/en/eset-research/eset-threat-report-h2-2025/",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "H1 2025",
+          "H2 2025"
+        ],
+        "series": [
+          {
+            "name": "Lumma Stealer detections",
+            "values": [
+              60000,
+              9000
+            ],
+            "color": "#0099CC"
+          }
+        ]
+      },
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "infostealer",
+        "vulnerability",
+        "ransomware",
+        "phishing"
+      ],
+      "tags": [
+        "external-report",
+        "lumma-stealer",
+        "takedown",
+        "h1-h2-comparison",
+        "rdp",
+        "smb",
+        "sql",
+        "password-guessing",
+        "telemetry",
+        "h1-h2-trends",
+        "geography",
+        "targeting",
+        "raas",
+        "akira",
+        "qilin",
+        "medusalocker",
+        "top10",
+        "infostealer-families",
+        "android",
+        "mobile",
+        "ransomware-families",
+        "email",
+        "exploits",
+        "attachments"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2025-12-16",
+      "report_meta": {
+        "report_id": "eset-threat-report-h2-2025",
+        "organization_id": "eset",
+        "publication_date": "2025-12-16",
+        "extracted_on": "2026-05-11",
+        "source_url": "https://www.welivesecurity.com/en/eset-research/eset-threat-report-h2-2025/",
+        "card_count_total": 26,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "eset-threat-report-h2-2025-lumma-detection-volume"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "eset-threat-report-h2-2025-lumma-detection-volume",
+      "title": "Lumma Stealer attack attempts collapse: H1 vs H2 2025",
+      "description": "ESET telemetry shows Lumma Stealer attack attempts fell from more than 60,000 in H1 2025 to fewer than 9,000 in H2 2025, an 86% drop after the May 2025 disruption operation.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "lumma-stealer",
+        "takedown",
+        "h1-h2-comparison"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat landscape trends — Infostealers",
+      "comparison": "H1 2025 vs H2 2025",
+      "trend": "decreasing",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "H1 2025",
+          "H2 2025"
+        ],
+        "series": [
+          {
+            "name": "Lumma Stealer detections",
+            "values": [
+              60000,
+              9000
+            ],
+            "color": "#0099CC"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "eset-threat-report-h2-2025-protocol-attack-attempts",
+      "title": "RDP, SMB, and SQL password-guessing attempts surge",
+      "description": "ESET telemetry shows continued growth in password-guessing attack attempts against exposed network services in H2 2025 vs H1 2025: RDP +62%, SQL +27%, and SMB +19%.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "rdp",
+        "smb",
+        "sql",
+        "password-guessing"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat telemetry — Exploits",
+      "comparison": "H2 2025 vs H1 2025",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "RDP",
+          "SMB",
+          "SQL"
+        ],
+        "series": [
+          {
+            "name": "H2 vs H1 2025 change (%)",
+            "values": [
+              62,
+              19,
+              27
+            ],
+            "color": "#0099CC"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "eset-threat-report-h2-2025-category-trends",
+      "title": "Detection-category trends: H2 vs H1 2025",
+      "description": "Cross-category H2 2025 detection changes from ESET telemetry: unique URL blocks +78%, email threats +36%, downloaders +24%, ransomware +13%, all threats +10%, Android -15%, cryptocurrency threats -18%, infostealers -18%, web threats -22%, spam -23%, macOS -31%.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "telemetry",
+        "h1-h2-trends"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat telemetry — Overview",
+      "comparison": "H2 2025 vs H1 2025",
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Unique URL blocks",
+          "Email threats",
+          "Downloaders",
+          "Ransomware",
+          "All threats",
+          "Android",
+          "Cryptocurrency",
+          "Infostealers",
+          "Web threats",
+          "Spam",
+          "macOS"
+        ],
+        "series": [
+          {
+            "name": "H2 vs H1 2025 change (%)",
+            "values": [
+              78,
+              36,
+              24,
+              13,
+              10,
+              -15,
+              -18,
+              -18,
+              -22,
+              -23,
+              -31
+            ],
+            "color": "#0099CC"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "eset-threat-report-h2-2025-ransomware-target-countries",
+      "title": "Top countries targeted in ESET-analyzed ransomware attacks",
+      "description": "Of hundreds of hands-on-keyboard ransomware attacks analyzed by ESET in 2025, organizations in the United States accounted for the largest share, followed by Spain, France, Italy, and Canada.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "geography",
+        "targeting"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat landscape trends — Ransomware",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "United States",
+          "Spain",
+          "France",
+          "Italy",
+          "Canada"
+        ],
+        "series": [
+          {
+            "name": "% of analyzed attacks",
+            "values": [
+              17,
+              5,
+              4,
+              4,
+              4
+            ],
+            "color": "#0099CC"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "eset-threat-report-h2-2025-raas-share",
+      "title": "Top RaaS gangs in ESET-analyzed attacks: Akira and Qilin lead",
+      "description": "In hands-on-keyboard ransomware attacks analyzed by ESET in 2025, Akira and Qilin tied for the largest share at 10% each in the ransomware-as-a-service arena, followed by MedusaLocker at 7%. By year-end, Qilin emerged as the dominant public force after the H1 2025 collapse of RansomHub.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "raas",
+        "akira",
+        "qilin",
+        "medusalocker"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat landscape trends — Ransomware",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Akira",
+          "Qilin",
+          "MedusaLocker"
+        ],
+        "series": [
+          {
+            "name": "% of analyzed attacks",
+            "values": [
+              10,
+              10,
+              7
+            ],
+            "color": "#0099CC"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "eset-threat-report-h2-2025-top-infostealers",
+      "title": "Top 10 infostealer families in H2 2025",
+      "description": "Win/Formbook trojan led infostealer detections in H2 2025 at 17.3%, followed by MSIL/Spy.AgentTesla and MSIL/Spy.Agent. Overall infostealer detections fell 18% H1 to H2 as Lumma Stealer collapsed.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "top10",
+        "infostealer-families"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat telemetry — Infostealers",
+      "comparison": null,
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Win/Formbook",
+          "MSIL/Spy.AgentTesla",
+          "MSIL/Spy.Agent",
+          "JS/Spy.Banker",
+          "PHP/Webshell",
+          "Win/Spy.VB",
+          "MSIL/Spy.SnakeStealer",
+          "MSIL/Agent backdoor",
+          "Win/Rescoms",
+          "ASP/Webshell"
+        ],
+        "series": [
+          {
+            "name": "% of infostealer detections",
+            "values": [
+              17.3,
+              10.7,
+              10.5,
+              9.5,
+              4.7,
+              4,
+              3.9,
+              2.9,
+              2.7,
+              1.9
+            ],
+            "color": "#0099CC"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "eset-threat-report-h2-2025-top-android",
+      "title": "Top 10 Android detections in H2 2025",
+      "description": "Android/TrojanDropper.Agent led Android detections in H2 2025 at 18.9%, followed by AdDisplay.Generic PUA (17.6%) and AdDisplay.MobiDash PUA (11.5%). Android/Spy.Banker — the trojan category covering NGate and PhantomCard variants — held 4.3%. Overall Android detections fell 15% H1 to H2.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "IoT & Mobile",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "android",
+        "top10",
+        "mobile"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat telemetry — Android",
+      "comparison": null,
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "TrojanDropper.Agent",
+          "AdDisplay.Generic PUA",
+          "AdDisplay.MobiDash PUA",
+          "Agent trojan",
+          "AdDisplay.HiddAd PUA",
+          "Spy.Banker",
+          "SpyLoan PUA",
+          "AntiAV",
+          "TrojanDownloader.Agent",
+          "Spy.Agent"
+        ],
+        "series": [
+          {
+            "name": "% of Android detections",
+            "values": [
+              18.9,
+              17.6,
+              11.5,
+              7.2,
+              5.8,
+              4.3,
+              3.7,
+              3.2,
+              2.2,
+              1.9
+            ],
+            "color": "#0099CC"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "eset-threat-report-h2-2025-top-ransomware-detections",
+      "title": "Top 10 ransomware detections in H2 2025",
+      "description": "Win/RiskWare.LockScreen application led ransomware detections at 18.8%, followed by Win/Filecoder trojan (12.3%) and Win/Filecoder.BlackMatter (6.9%). Overall ransomware category detections rose 13% from H1 to H2 2025.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "top10",
+        "ransomware-families"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat telemetry — Ransomware",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "RiskWare.LockScreen",
+          "Filecoder trojan",
+          "Filecoder.BlackMatter",
+          "MSIL/Filecoder",
+          "Python/Filecoder",
+          "PowerShell/Filecoder",
+          "Filecoder.GandCrab",
+          "Filecoder_AGen",
+          "Filecoder.WannaCryptor",
+          "LockScreen trojan"
+        ],
+        "series": [
+          {
+            "name": "% of ransomware detections",
+            "values": [
+              18.8,
+              12.3,
+              6.9,
+              6.1,
+              3.2,
+              2.7,
+              2.6,
+              2.6,
+              2.1,
+              2
+            ],
+            "color": "#0099CC"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "eset-threat-report-h2-2025-email-threats",
+      "title": "Top 10 email-borne threats in H2 2025",
+      "description": "HTML/Phishing.Agent dominated email-borne threats at 30.8%, followed by DOC/Fraud (10.7%) and HTML/Phishing (5.7%). Email threat detections rose 36% H1 to H2 2025, even as spam detections fell 23%.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "email",
+        "top10",
+        "exploits"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat telemetry — Email threats",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "HTML/Phishing.Agent",
+          "DOC/Fraud",
+          "HTML/Phishing",
+          "JS/Danger.ScriptAttachment",
+          "Win/Agent",
+          "Exploit.CVE-2017-0199",
+          "MSIL/TrojanDownloader.Agent",
+          "PDF/Phishing",
+          "Exploit.CVE-2017-11882",
+          "JS/TrojanDownloader.Agent"
+        ],
+        "series": [
+          {
+            "name": "% of email threats",
+            "values": [
+              30.8,
+              10.7,
+              5.7,
+              3.3,
+              3.1,
+              3,
+              2.8,
+              2.7,
+              2.6,
+              2.1
+            ],
+            "color": "#0099CC"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "eset-threat-report-h2-2025-email-attachment-types",
+      "title": "Malicious email attachment types in H2 2025",
+      "description": "Script files dominated malicious email attachments at 41.5% in H2 2025, followed by executables (23.4%), Office documents (11.1%), PDFs (9.7%), archives (7.2%), and batch files (6.6%).",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "attachments",
+        "email"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat telemetry — Email threats",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Scripts",
+          "Executables",
+          "Office docs",
+          "PDF",
+          "Archives",
+          "Batch",
+          "Shortcuts",
+          "Jar",
+          "Android"
+        ],
+        "series": [
+          {
+            "name": "% of malicious attachments",
+            "values": [
+              41.5,
+              23.4,
+              11.1,
+              9.7,
+              7.2,
+              6.6,
+              0.6,
+              0.3,
+              0.2
+            ],
+            "color": "#0099CC"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "eset-threat-report-h2-2025-external-intrusion-vectors",
+      "title": "Top external network intrusion vectors in H2 2025",
+      "description": "Password guessing accounted for 43.3% of external network intrusion vectors reported by unique ESET clients in H2 2025, far outpacing CVE-driven exploitation. The top exploit-based vectors were Apache Log4j (CVE-2021-44228) at 16.2%, Apache Struts2 (CVE-2017-5638) at 14.4%, and PHP CVE-2024-4577 at 8.4%.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "password-guessing",
+        "exploits",
+        "cve",
+        "intrusion"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat telemetry — Exploits",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Password guessing",
+          "Log4j CVE-2021-44228",
+          "Struts2 CVE-2017-5638",
+          "PHP CVE-2024-4577",
+          "Spring4Shell",
+          "MS IIS CVE-2015-1635",
+          "SMB.DoublePulsar",
+          "Pulse Secure CVE-2019-11510",
+          "RDP BlueKeep",
+          "MS Exchange CVE-2021-26855",
+          "MS SMB1 EternalBlue"
+        ],
+        "series": [
+          {
+            "name": "% of intrusion vectors",
+            "values": [
+              43.3,
+              16.2,
+              14.4,
+              8.4,
+              7.5,
+              2.7,
+              2.6,
+              2.5,
+              1.4,
+              0.6,
+              0.2
+            ],
+            "color": "#0099CC"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "eset-threat-report-h2-2025-top-malware",
+      "title": "Top 10 overall malware detections in H2 2025",
+      "description": "HTML/Phishing.Agent led overall ESET malware detections in H2 2025 at 9.2%, followed by JS/Agent adware (8.6%), JS/Packed.Agent (6.4%), and JS/Redirector (6.1%). HTML and JavaScript dominate the top of the list, reflecting heavy reliance on web-based delivery.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "top10",
+        "overall-malware"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat telemetry — All threats",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "HTML/Phishing.Agent",
+          "JS/Agent adware",
+          "JS/Packed.Agent",
+          "JS/Redirector",
+          "MSIL/Kryptik",
+          "DOC/Fraud",
+          "JS/Adport adware",
+          "Win/Injector.Autoit",
+          "HTML/ScrInject",
+          "JS/Agent trojan"
+        ],
+        "series": [
+          {
+            "name": "% of malware detections",
+            "values": [
+              9.2,
+              8.6,
+              6.4,
+              6.1,
+              4,
+              3,
+              2.4,
+              2.2,
+              2.1,
+              1.9
+            ],
+            "color": "#0099CC"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "eset-threat-report-h2-2025-lumma-stealer-decline",
+      "title": "Lumma Stealer detections collapse after May takedown",
+      "description": "Following the global disruption of Lumma Stealer in May 2025 by law enforcement and cybersecurity companies including ESET, attack attempts using this MaaS infostealer fell 86% in H2 2025 versus H1 2025. Lumma briefly resurfaced twice but its glory days appear over.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "lumma-stealer",
+        "takedown",
+        "maas",
+        "h1-h2"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat landscape trends — Infostealers",
+      "comparison": "H2 2025 vs H1 2025",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "-86%"
+    },
+    {
+      "type": "stat",
+      "id": "eset-threat-report-h2-2025-fakecaptcha-clickfix-drop",
+      "title": "ClickFix delivery vector for Lumma nearly vanishes",
+      "description": "HTML/FakeCaptcha trojan — a key ClickFix distribution vector for Lumma Stealer — collapsed by nearly 100%, from more than 1.6 million detections in H1 2025 to fewer than 60,000 in H2 2025. Several threat actors appear to have abandoned this vector after the takedown efforts.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "phishing",
+        "infostealer"
+      ],
+      "tags": [
+        "clickfix",
+        "fakecaptcha",
+        "h1-h2"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat landscape trends — Infostealers",
+      "comparison": "H2 2025 vs H1 2025",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "-100%"
+    },
+    {
+      "type": "stat",
+      "id": "eset-threat-report-h2-2025-powershell-downloaders",
+      "title": "PowerShell downloaders rise 59%",
+      "description": "Attack attempts using PowerShell variants of CloudEyE's initial stage drove PowerShell downloader detections up 59% in H2 2025, making PowerShell scripts account for 9% of all downloader detections during the period.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "powershell",
+        "downloader",
+        "cloudeye"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat landscape trends — Downloaders",
+      "comparison": "H2 2025 vs H1 2025",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+59%"
+    },
+    {
+      "type": "stat",
+      "id": "eset-threat-report-h2-2025-ransomware-victims-2025",
+      "title": "Ransomware victims projected up 40% YoY in 2025",
+      "description": "Based on dedicated leak site (DLS) data collected via ecrime.ch, the cumulative number of publicly named ransomware victims in 2025 reached 6,937 — over 1,700 more than the 2024 total — implying roughly +40% year-over-year growth. The data only includes victims who refused to pay and were named by gangs themselves.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "dls",
+        "victim-count",
+        "yoy"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat landscape trends — Ransomware",
+      "comparison": "2025 vs 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+40% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "eset-threat-report-h2-2025-nfc-growth",
+      "title": "Android NFC threats grow 87%",
+      "description": "Detections of NFC-abusing Android malware grew 87% between H1 and H2 2025 — a slowdown vs the 30x+ growth in H1 but still a notable rise. Notable upgrades observed: NGate added contact stealing, PhantomCard expanded NFC fraud into Brazil, and RatOn fused RAT, banking trojan, ATS, and NFC relay capabilities.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "IoT & Mobile",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "nfc",
+        "android",
+        "ngate",
+        "ratton",
+        "phantomcard"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat landscape trends — NFC threats",
+      "comparison": "H2 2025 vs H1 2025",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+87%"
+    },
+    {
+      "type": "stat",
+      "id": "eset-threat-report-h2-2025-nomani-yoy",
+      "title": "Nomani investment scams grew 62% YoY",
+      "description": "ESET telemetry shows HTML/Nomani investment scam detections grew 62% year-over-year in 2025, with more than 64,000 unique URLs blocked across the year. H2 2025 detections fell 37% versus H1 — a hint of improvement. Scammers use higher-resolution deepfakes, AI-generated phishing pages, and ultra-short ad campaigns to evade detection.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "nomani",
+        "deepfake",
+        "investment-scam",
+        "social-media"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat landscape trends — Nomani scams",
+      "comparison": "2025 vs 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+62% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "eset-threat-report-h2-2025-meta-scam-revenue",
+      "title": "Meta projected $16B from scam ads (Reuters)",
+      "description": "Reuters, citing Meta internal documents in late H2 2025, reported that Meta anticipated earning approximately USD 16 billion — or 10% of its 2024 revenue — from scam advertising. The documents also estimated users were exposed to 15 billion deceptive ads daily across Facebook, Instagram, and WhatsApp. Meta's automated systems reportedly ban advertisers only when at least 95% certain they are scammers. Meta disputes the framing.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2024,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Technology"
+      ],
+      "region": [],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "meta",
+        "scam-ads",
+        "reuters",
+        "platform-policy"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat landscape trends — Nomani scams",
+      "comparison": "10% of Meta 2024 revenue",
+      "trend": "unknown",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$16B"
+    },
+    {
+      "type": "stat",
+      "id": "eset-threat-report-h2-2025-cloudeye-surge",
+      "title": "CloudEyE/GuLoader detections skyrocket ~30x",
+      "description": "Phishing-delivered CloudEyE (also known as GuLoader), a MaaS downloader and cryptor used to deploy Rescoms, Formbook, Agent Tesla, and ransomware, increased nearly thirtyfold in ESET telemetry in H2 2025, surpassing 100,000 detections during the period.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "cloudeye",
+        "guloader",
+        "downloader",
+        "cryptor"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat landscape trends — Downloaders",
+      "comparison": "H1 2025 vs H2 2025",
+      "trend": "increasing",
+      "value_unit": "multiplier",
+      "card_style": "number",
+      "value": "~30x"
+    },
+    {
+      "type": "stat",
+      "id": "eset-threat-report-h2-2025-ransomware-victim-total",
+      "title": "6,937 publicly named ransomware victims in 2025",
+      "description": "ESET cites ecrime.ch DLS monitoring showing 6,937 known ransomware victims in 2025, exceeding 2024's total by more than 1,700 victims. DLS data only includes victims who refused to pay; true victim counts are higher.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "dls",
+        "victims",
+        "ecrime.ch"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat landscape trends — Ransomware",
+      "comparison": "vs 2024 (+1,700)",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "6,937"
+    },
+    {
+      "type": "stat",
+      "id": "eset-threat-report-h2-2025-cloudeye-poland",
+      "title": "Poland absorbs ~32% of CloudEyE attacks",
+      "description": "Poland was the top target country for CloudEyE attacks in H2 2025, with roughly every third attack attempt (about 32%) seen there. The peak day was September 18, part of a wave of Central and Eastern European phishing campaigns observed in September and October 2025.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "cloudeye",
+        "guloader",
+        "poland",
+        "geography"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat landscape trends — Downloaders",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "~32%"
+    },
+    {
+      "type": "stat",
+      "id": "eset-threat-report-h2-2025-jlr-cost",
+      "title": "Jaguar Land Rover ransomware costs ~$2.5B",
+      "description": "The H2 2025 ransomware attack on Jaguar Land Rover forced a global production and IT shutdown, disrupted approximately 5,000 supply-chain businesses, and caused financial damage of nearly USD 2.5 billion — making it the costliest cyberincident in UK history. A group linked to Scattered Spider, Lapsus$, and ShinyHunters claimed responsibility.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [
+        "Manufacturing"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware",
+        "supply_chain"
+      ],
+      "tags": [
+        "jlr",
+        "scattered-spider",
+        "lapsus",
+        "shinyhunters",
+        "uk"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat landscape trends — Ransomware",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "~$2.5B"
+    },
+    {
+      "type": "stat",
+      "id": "eset-threat-report-h2-2025-promptlock-first-ai-ransomware",
+      "title": "First known AI-powered ransomware emerges",
+      "description": "ESET researchers discovered PromptLock, the first known AI-driven ransomware, on VirusTotal in H2 2025. It uses an OpenAI model via the Ollama API to generate malicious Lua scripts on the fly that can enumerate files, exfiltrate, encrypt, or destroy data. ESET assessed it as a proof of concept, later confirmed by NYU academics.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ai-malware",
+        "promptlock",
+        "ollama",
+        "lua"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat landscape trends — AI threats",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"The emergence of tools like PromptLock highlights a significant shift in the cyberthreat landscape. With the help of AI, launching sophisticated attacks has become dramatically easier, eliminating the need for teams of skilled developers.\""
+    },
+    {
+      "type": "stat",
+      "id": "eset-threat-report-h2-2025-edr-killers",
+      "title": "EDR killers proliferate among Akira, Qilin, Warlock affiliates",
+      "description": "Over three months in H2 2025, ESET Research discovered more than a dozen new EDR-killer tools in the wild, mostly used by Akira and Qilin affiliates, followed by Warlock. Most rely on bring-your-own-vulnerable-driver (BYOVD); rapid adoption of EDR-Freeze (abusing WerFaultSecure) was observed mainly with Akira and Chaos affiliates.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "edr-killer",
+        "byovd",
+        "edr-freeze",
+        "akira",
+        "qilin",
+        "warlock"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat landscape trends — Ransomware",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"The rising popularity of EDR killers highlights that endpoint detection and response (EDR) tools remain a significant obstacle for ransomware operators.\""
+    },
+    {
+      "type": "stat",
+      "id": "eset-threat-report-h2-2025-apt-highlights",
+      "title": "APT activity: Sednit weaponizes AI; Gamaredon teams with Turla",
+      "description": "ESET research in H2 2025 highlighted multiple nation-state operations: Russia-aligned Sednit/APT28/Fancy Bear was linked (medium confidence by CERT-UA) to the LLM-querying PromptSteal/LameHug data miner against Poland and Lithuania; Gamaredon collaborated with Turla against Ukrainian targets; North Korea-aligned Lazarus targeted the UAV sector via Operation DreamJob; China-aligned PlushDaemon and GhostRedirector compromised network devices and Windows servers; MuddyWater (Iran-aligned) targeted Israel and Egypt; RomCom exploited a WinRAR zero-day.",
+      "source": "ESET",
+      "source_short": "ESET",
+      "color": "#0099CC",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "Europe",
+        "Asia Pacific",
+        "Middle East"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "phishing"
+      ],
+      "tags": [
+        "apt",
+        "sednit",
+        "gamaredon",
+        "turla",
+        "lazarus",
+        "plushdaemon",
+        "muddywater",
+        "romcom",
+        "mena",
+        "industry:defense"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Research publications & Threat landscape trends — AI threats",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Russia-aligned Sednit (aka APT28, Fancy Bear) used PromptSteal in cyberespionage and reconnaissance attacks against Ukraine.\""
+    }
+  ]
+}

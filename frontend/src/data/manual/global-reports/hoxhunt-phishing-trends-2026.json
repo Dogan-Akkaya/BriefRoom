@@ -1,0 +1,1239 @@
+{
+  "source": "Hoxhunt",
+  "source_short": "Hoxhunt",
+  "year": 2026,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/hoxhunt-phishing-trends-2026.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.955Z. Curated top 10 of 25 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-hoxhunt-phishing-trends-2026",
+      "title": "Phishing Trends Report (Updated for 2026)",
+      "year": 2026,
+      "category": "Phishing",
+      "color": "#5B43FF",
+      "description": "Surface-indicator analysis of Hoxhunt-reported phishing across three consecutive months captures the holiday-season spike: AI-tell signals jumped from 4% of emails in November to 56% in December before partially retreating to 40% in January.",
+      "external_url": "https://hoxhunt.com/guide/phishing-trends-report",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "Nov 2025",
+          "Dec 2025",
+          "Jan 2026"
+        ],
+        "series": [
+          {
+            "name": "AI-generated phishing share",
+            "values": [
+              4,
+              56,
+              40
+            ],
+            "color": "#5B43FF"
+          }
+        ]
+      },
+      "industry": [
+        "Financial Services",
+        "Healthcare",
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "external-report",
+        "ai-phishing",
+        "monthly-share",
+        "indicators",
+        "attachments",
+        "pdf",
+        "svg",
+        "html",
+        "file-types",
+        "html-smuggling",
+        "attachment-rotation",
+        "yoy",
+        "calendar-invite",
+        "ics",
+        "failure-rate",
+        "lure-type",
+        "gmail",
+        "outlook",
+        "sender-domain",
+        "free-mailbox",
+        "training",
+        "behavior-change",
+        "industry-benchmark",
+        "training-success",
+        "12-month",
+        "themes",
+        "delivery-mechanism",
+        "open-redirect",
+        "callback-phishing",
+        "brand-impersonation",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2026-01-01",
+      "report_meta": {
+        "report_id": "hoxhunt-phishing-trends-2026",
+        "organization_id": "hoxhunt",
+        "publication_date": "2026-01-01",
+        "extracted_on": "2026-05-11",
+        "source_url": "https://hoxhunt.com/guide/phishing-trends-report",
+        "card_count_total": 25,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "hoxhunt-phishing-trends-2026-ai-share-monthly"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "hoxhunt-phishing-trends-2026-ai-share-monthly",
+      "title": "AI-generated share of phishing — Nov 2025 to Jan 2026",
+      "description": "Surface-indicator analysis of Hoxhunt-reported phishing across three consecutive months captures the holiday-season spike: AI-tell signals jumped from 4% of emails in November to 56% in December before partially retreating to 40% in January.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "ai-phishing",
+        "monthly-share",
+        "indicators"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI Phishing Campaign Analysis",
+      "comparison": "month-over-month",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Nov 2025",
+          "Dec 2025",
+          "Jan 2026"
+        ],
+        "series": [
+          {
+            "name": "AI-generated phishing share",
+            "values": [
+              4,
+              56,
+              40
+            ],
+            "color": "#5B43FF"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "hoxhunt-phishing-trends-2026-attachment-mix",
+      "title": "Malicious attachment mix — H1 2025",
+      "description": "PDFs dominate the malicious attachment landscape at 23.7% of all blocked files, with SVGs surging into third place at 5% (up 50-fold from 2024). HTML attachments declined sharply from ~10% in 2024 to 5.6% as defenders caught up with smuggling techniques.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "attachments",
+        "pdf",
+        "svg",
+        "html",
+        "file-types"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attachment Types & Trends",
+      "comparison": "H1 2025",
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "PDF",
+          "HTML",
+          "SVG",
+          "Microsoft Word",
+          "EML"
+        ],
+        "series": [
+          {
+            "name": "Share of malicious attachments (H1 2025)",
+            "values": [
+              23.7,
+              5.6,
+              5,
+              4.4,
+              1.4
+            ],
+            "color": "#5B43FF"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "hoxhunt-phishing-trends-2026-html-vs-svg-yoy",
+      "title": "Attachment mix shift — 2024 vs 2025",
+      "description": "Year-over-year comparison shows attackers rotating away from HTML smuggling (~10% to 5.6%) and toward SVG-based payloads (~0.1% to 5%) as defenders patched HTML handling but left SVG inline rendering and attachments largely unmonitored until Microsoft disabled inline SVG in September 2025.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "html-smuggling",
+        "svg",
+        "attachment-rotation",
+        "yoy"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attachment Types & Trends",
+      "comparison": "2024 vs 2025",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "HTML",
+          "SVG"
+        ],
+        "series": [
+          {
+            "name": "2024 share",
+            "values": [
+              10,
+              0.1
+            ],
+            "color": "#A99BFF"
+          },
+          {
+            "name": "2025 share",
+            "values": [
+              5.6,
+              5
+            ],
+            "color": "#5B43FF"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "hoxhunt-phishing-trends-2026-calendar-failure",
+      "title": "Calendar-invite phishing is 6x more effective",
+      "description": "Malicious .ics calendar invites trigger a 24% failure rate versus a 4% global baseline — a 6x improvement for attackers. Auto-population of calendars before the recipient reads the email and recurring reminders are the structural advantages.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "calendar-invite",
+        "ics",
+        "failure-rate",
+        "lure-type"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Malicious Calendar Invites",
+      "comparison": "vs global baseline",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Global baseline",
+          "Calendar invite (.ics)"
+        ],
+        "series": [
+          {
+            "name": "Failure rate",
+            "values": [
+              4,
+              24
+            ],
+            "color": "#5B43FF"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "hoxhunt-phishing-trends-2026-gmail-microsoft",
+      "title": "Sender-domain mix by victim mailbox provider",
+      "description": "Gmail dominates malicious sending across both ecosystems: 17.9% of confirmed malicious emails into Microsoft environments and 30.1% into Google environments originate from Gmail addresses, versus 2.5% and 5.7% from Outlook respectively. Free, easy account creation drives the imbalance.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "gmail",
+        "outlook",
+        "sender-domain",
+        "free-mailbox"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Domain Spoofing Analysis",
+      "comparison": "Gmail vs Outlook senders",
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Into Microsoft env",
+          "Into Google env"
+        ],
+        "series": [
+          {
+            "name": "Gmail",
+            "values": [
+              17.9,
+              30.1
+            ],
+            "color": "#5B43FF"
+          },
+          {
+            "name": "Outlook",
+            "values": [
+              2.5,
+              5.7
+            ],
+            "color": "#A99BFF"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "hoxhunt-phishing-trends-2026-attachment-training-curve",
+      "title": "Malicious-attachment training curve",
+      "description": "On malicious-attachment simulations, reporting climbs from 34% pre-training to 80% at 14 months while failure rates collapse from 11% to under 2% — a 5.5x reduction. The pair shows how reporting and failure improve in lockstep.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "training",
+        "attachments",
+        "failure-rate",
+        "behavior-change"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Phishing Training Performance",
+      "comparison": "pre-training vs 14 months",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Pre-training",
+          "6 months",
+          "12 months",
+          "14 months"
+        ],
+        "series": [
+          {
+            "name": "Reporting rate",
+            "values": [
+              34,
+              50,
+              74,
+              80
+            ],
+            "color": "#5B43FF"
+          },
+          {
+            "name": "Failure rate",
+            "values": [
+              11,
+              6,
+              3,
+              2
+            ],
+            "color": "#A99BFF"
+          }
+        ]
+      },
+      "preferred_chart": "line"
+    },
+    {
+      "type": "chart",
+      "id": "hoxhunt-phishing-trends-2026-industry-success",
+      "title": "12-month training success by industry",
+      "description": "After 12 months of Hoxhunt adaptive training, Financial Services leads with a 74% phishing-simulation success rate, while Healthcare (62%) and Retail (61%) trail — Hoxhunt attributes the gap to less time at the keyboard and higher operational stress.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Financial Services",
+        "Healthcare",
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "industry-benchmark",
+        "training-success",
+        "12-month"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Industry Cyber Performance Rankings",
+      "comparison": "by industry",
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Financial Services",
+          "Healthcare",
+          "Retail"
+        ],
+        "series": [
+          {
+            "name": "Success rate (12 months)",
+            "values": [
+              74,
+              62,
+              61
+            ],
+            "color": "#5B43FF"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "hoxhunt-phishing-trends-2026-ai-themes",
+      "title": "AI phishing — top themes",
+      "description": "Generative-AI phishing concentrates on commercial lures: fake offers and promotions lead (18.6%), followed by financial-service impersonation (13.1%), invoice scams (8.3%), and HR impersonations (8.2%). The mix reflects what LLMs produce most fluently with minimal prompting.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "ai-phishing",
+        "themes",
+        "lure-type"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI Phishing Campaign Analysis",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Fake offers/promotions",
+          "Financial service impersonation",
+          "Invoice lures",
+          "HR impersonations"
+        ],
+        "series": [
+          {
+            "name": "Share of AI phishing themes",
+            "values": [
+              18.6,
+              13.1,
+              8.3,
+              8.2
+            ],
+            "color": "#5B43FF"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "hoxhunt-phishing-trends-2026-ai-delivery",
+      "title": "AI phishing — delivery mechanism mix",
+      "description": "Inside AI-generated campaigns, malicious links remain the dominant payload (43.1%), followed by open redirects (20.3%), attachments (11%), and callback-phone lures (4.9%). Links and redirects together account for nearly two-thirds of AI campaigns.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "ai-phishing",
+        "delivery-mechanism",
+        "open-redirect"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI Phishing Campaign Analysis",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Malicious links",
+          "Open redirects",
+          "Attachments",
+          "Callback (phone)"
+        ],
+        "series": [
+          {
+            "name": "Share of AI campaigns",
+            "values": [
+              43.1,
+              20.3,
+              11,
+              4.9
+            ],
+            "color": "#5B43FF"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "hoxhunt-phishing-trends-2026-callback-themes",
+      "title": "Callback phishing — top themes",
+      "description": "Callback phishing lures concentrate on financial-service impersonation (27.1%) and invoice or subscription notices (26.6%), together driving more than half of all callback campaigns. Common brand spoofs include PayPal, Venmo, Bank of America, McAfee, eBay, and Zelle.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "callback-phishing",
+        "themes",
+        "brand-impersonation",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Callback Phishing",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Financial service impersonation",
+          "Invoice/subscription lures"
+        ],
+        "series": [
+          {
+            "name": "Share of callback campaigns",
+            "values": [
+              27.1,
+              26.6
+            ],
+            "color": "#5B43FF"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "hoxhunt-phishing-trends-2026-ransomware-causes",
+      "title": "Top causes of ransomware infection",
+      "description": "Phishing remains the single largest entry vector for ransomware infections at 54%, dwarfing poor user practices (27%), lack of cybersecurity training (26%), and malicious-website visits (14%). Categories overlap because incidents often have multiple contributing causes.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "ransomware"
+      ],
+      "tags": [
+        "ransomware",
+        "entry-vector",
+        "statista"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware Connection to Phishing",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Phishing",
+          "Poor user practices",
+          "Lack of training",
+          "Malicious websites"
+        ],
+        "series": [
+          {
+            "name": "Share of ransomware infections",
+            "values": [
+              54,
+              27,
+              26,
+              14
+            ],
+            "color": "#5B43FF"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "hoxhunt-phishing-trends-2026-target-mix",
+      "title": "Business vs personal target mix",
+      "description": "Two-thirds of phishing attacks target organizational assets — credentials, invoices, and finance workflows — while one-third aim at personal accounts and bank details. The personal share ticks up in summer as attackers retool around vacation themes.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "target-mix",
+        "business-vs-personal",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Target Mix",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Business / organizational",
+          "Personal"
+        ],
+        "series": [
+          {
+            "name": "Share of attacks",
+            "values": [
+              66,
+              33
+            ],
+            "color": "#5B43FF"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "stat",
+      "id": "hoxhunt-phishing-trends-2026-breach-cost",
+      "title": "Average phishing breach cost",
+      "description": "IBM/Ponemon's 2024 figure put the average phishing-driven breach at $4.88M, up 10% from $4.45M in 2023 and the largest year-over-year jump since the pandemic. Hoxhunt frames the trajectory as accelerating despite improved detection.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "Data Breaches",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "breach-cost",
+        "ponemon",
+        "ibm",
+        "bec",
+        "spark-from-5"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Core Statistics",
+      "comparison": "vs 2023 ($4.45M)",
+      "trend": "increasing",
+      "value_unit": "usd",
+      "card_style": "sparkline",
+      "value": "$4.88M",
+      "spark": [
+        3.86,
+        4.24,
+        4.35,
+        4.35,
+        4.45,
+        4.88
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "hoxhunt-phishing-trends-2026-reporting-rate",
+      "title": "Real-threat reporting rises with training",
+      "description": "Hoxhunt's adaptive program drives steady gains in real-threat reporting: 13% of employees report real phishing in month zero, rising to 64% at 12 months and 71% at 24 months. The curve underpins the report's '10x rise in real threat detection' headline.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "training",
+        "reporting-rate",
+        "behavior-change"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Real Threat Detection Trajectory",
+      "comparison": "month 0 to month 24",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "sparkline",
+      "value": "71%",
+      "spark": [
+        13,
+        26,
+        34,
+        50,
+        64,
+        71
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "hoxhunt-phishing-trends-2026-callback-500",
+      "title": "Callback phishing campaigns Q4 2025",
+      "description": "Callback phishing — emails that lure victims into calling attacker-controlled phone numbers — surged 500% in Q4 2025 per VIPRE Security telemetry cited by Hoxhunt. Phone numbers bypass email filters and enable live social engineering on the call.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "callback-phishing",
+        "tobs",
+        "vipre",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Callback Phishing",
+      "comparison": "Q4 2025 vs prior quarters",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+500%"
+    },
+    {
+      "type": "stat",
+      "id": "hoxhunt-phishing-trends-2026-quishing-yoy",
+      "title": "Quishing (QR code phishing) growth",
+      "description": "QR-code phishing attacks rose 25% year-over-year in 2024, reflecting attackers' shift to image-based payloads that slip past URL filters and force users onto mobile devices outside enterprise controls.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "quishing",
+        "qr-code",
+        "mobile"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Phishing Trends & Statistics",
+      "comparison": "year-over-year",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+25% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "hoxhunt-phishing-trends-2026-job-role-gap",
+      "title": "Communications fail 40% more than Finance",
+      "description": "Communications, Sales & Marketing and Business Development teams record the highest phishing-simulation failure rates — Communications alone fails 40% more often than Finance. High inbound email volume and divided attention explain the gap.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "job-role",
+        "communications",
+        "failure-rate"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Performance by Job Role",
+      "comparison": "Communications vs Finance",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+40%"
+    },
+    {
+      "type": "stat",
+      "id": "hoxhunt-phishing-trends-2026-ai-surge-14x",
+      "title": "December 2025 AI phishing surge",
+      "description": "After holding below 5% of monthly attacks for the first 11 months of 2025, AI-generated phishing exploded to 56% of reported attacks in December 2025 — a 14x increase that Hoxhunt dubbed a 'Phishmas Anti-Miracle'. The surge persisted into early 2026.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "ai-phishing",
+        "holiday-surge",
+        "phishmas"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Executive Summary",
+      "comparison": "vs. first 11 months of 2025",
+      "trend": "increasing",
+      "value_unit": "multiplier",
+      "card_style": "number",
+      "value": "14x"
+    },
+    {
+      "type": "stat",
+      "id": "hoxhunt-phishing-trends-2026-svg-50x",
+      "title": "SVG malicious attachments — 50x rise",
+      "description": "Malicious SVG attachments grew 50-fold versus 2024, now representing 5% of all malicious attachments and the 3rd most common file type behind PDF and HTML. SVGs can carry embedded scripts and bypass many anti-spam tools.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "svg",
+        "attachments",
+        "malware-delivery"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attachment Types & Trends",
+      "comparison": "vs. 2024",
+      "trend": "increasing",
+      "value_unit": "multiplier",
+      "card_style": "number",
+      "value": "50x"
+    },
+    {
+      "type": "stat",
+      "id": "hoxhunt-phishing-trends-2026-engagement-multiplier",
+      "title": "45x more behavioral data points",
+      "description": "A 10,000-person company running a Behavior Change Program (50% engagement, 36 simulations/year) generates 180,000 behavioral data points annually versus 4,000 for quarterly SAT — a 45x insights multiplier that Hoxhunt cites as the foundation of personalised coaching.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "engagement",
+        "behavior-change",
+        "data-volume"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Engagement & Data Points",
+      "comparison": "Behavior Change vs quarterly SAT",
+      "trend": "increasing",
+      "value_unit": "multiplier",
+      "card_style": "number",
+      "value": "45x"
+    },
+    {
+      "type": "stat",
+      "id": "hoxhunt-phishing-trends-2026-vishing-orgs",
+      "title": "Organizations reporting vishing incidents",
+      "description": "30% of organizations reported voice-phishing (vishing) incidents in 2024, with attackers increasingly combining email lures and follow-up calls (the callback phishing pattern) to defeat technical controls and harvest credentials live.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "vishing",
+        "voice-phishing",
+        "multi-channel",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Phishing Trends & Statistics",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "30%"
+    },
+    {
+      "type": "stat",
+      "id": "hoxhunt-phishing-trends-2026-bec-loss",
+      "title": "Average BEC loss per incident",
+      "description": "Business Email Compromise hit 64% of organizations in 2024 with an average loss of $150,000 per incident. BEC remains the highest-dollar phishing variant because attackers redirect payments rather than steal credentials.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "bec",
+        "loss-per-incident",
+        "wire-fraud"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Core Statistics",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$150K"
+    },
+    {
+      "type": "stat",
+      "id": "hoxhunt-phishing-trends-2026-phishing-breach-share",
+      "title": "Breaches initiated by phishing",
+      "description": "Between 80% and 95% of all breaches start with a phishing email, per the Comcast Business 2025 report cited by Hoxhunt. The wide range reflects how analysts attribute multi-stage incidents, but the floor still places phishing first among initial-access vectors.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "Data Breaches",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "initial-access",
+        "breach-vector",
+        "comcast"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Core Statistics",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "80-95%"
+    },
+    {
+      "type": "stat",
+      "id": "hoxhunt-phishing-trends-2026-dbir-quote",
+      "title": "Recent training quadruples reporting",
+      "description": "Hoxhunt cites Verizon's 2025 DBIR finding that users with recent security training report phishing emails at 21% versus a 5% baseline — a 4x relative increase that establishes the macro link between training cadence and resilience.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "training",
+        "dbir",
+        "reporting-rate",
+        "verizon"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threat Reporting Baseline",
+      "comparison": "trained vs baseline",
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Users who had more recent training reported phishing emails at 21% vs. 5% baseline — a 4x relative increase.\""
+    },
+    {
+      "type": "stat",
+      "id": "hoxhunt-phishing-trends-2026-exec-quote",
+      "title": "AI social engineering — fight fire with fire",
+      "description": "Hoxhunt's co-founder and CTO frames the 2026 outlook: generative AI is accelerating social engineering at scale, but the same tooling can power adaptive, behavior-based defenses. Sets the tone for the report's pivot from awareness to measurable human-risk reduction.",
+      "source": "Hoxhunt",
+      "source_short": "Hoxhunt",
+      "color": "#5B43FF",
+      "year": 2026,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "executive-summary",
+        "ai-phishing",
+        "human-risk",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Executive Summary",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"AI is fueling a new era of social engineering tactics, but it can also be the white hat that helps us fight back.\""
+    }
+  ]
+}

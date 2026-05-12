@@ -1,0 +1,1206 @@
+{
+  "source": "Okta",
+  "source_short": "Okta",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/okta-customer-identity-trends-2025-pdf.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.972Z. Curated top 10 of 25 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-okta-customer-identity-trends-2025-pdf",
+      "title": "Auth0 Customer Identity Trends Report 2025 (PDF)",
+      "year": 2025,
+      "category": "Identity",
+      "color": "#007DC1",
+      "description": "Median daily proportion of signup attempts that met the criteria of a signup attack in 2024, by industry. Retail/eCommerce led at nearly 70%, with Financial Services close behind at ~65%, well above the all-industries mean of 44.5%.",
+      "external_url": "https://assets.ctfassets.net/2ntc334xpx65/2em850bMF2ccH0Jx9rLEJG/21226f2da5387ba640086212016f1a5d/Auth0_Customer_Identity_Trends_Report_2025_EN.pdf",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "Retail/eCommerce",
+          "Financial Services",
+          "All-industries mean"
+        ],
+        "series": [
+          {
+            "name": "Median daily signup-attack rate",
+            "values": [
+              70,
+              65,
+              44.5
+            ],
+            "color": "#007DC1"
+          }
+        ]
+      },
+      "industry": [
+        "Retail & E-Commerce",
+        "Financial Services",
+        "Manufacturing",
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "logs_on_sale",
+        "infostealer",
+        "data_leaks",
+        "employee_exposure",
+        "vulnerability"
+      ],
+      "tags": [
+        "external-report",
+        "signup-attack",
+        "industry",
+        "fake-accounts",
+        "auth0",
+        "bec",
+        "segment",
+        "enterprise",
+        "smb",
+        "ato",
+        "credential-stuffing",
+        "mfa-abuse",
+        "mfa-fatigue",
+        "sms-pumping",
+        "headline",
+        "media",
+        "consumer-trust",
+        "sectoral",
+        "biometrics",
+        "passkeys",
+        "social-login",
+        "authentication",
+        "ai-agents",
+        "human-preference",
+        "consumer-survey",
+        "toll-fraud"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2025-10-01",
+      "report_meta": {
+        "report_id": "okta-customer-identity-trends-2025-pdf",
+        "organization_id": "okta",
+        "publication_date": "2025-10-01",
+        "extracted_on": "2026-05-11",
+        "source_url": "https://assets.ctfassets.net/2ntc334xpx65/2em850bMF2ccH0Jx9rLEJG/21226f2da5387ba640086212016f1a5d/Auth0_Customer_Identity_Trends_Report_2025_EN.pdf",
+        "card_count_total": 25,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "okta-customer-identity-trends-2025-pdf-signup-attacks-by-industry"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "okta-customer-identity-trends-2025-pdf-signup-attacks-by-industry",
+      "title": "Retail/eCommerce and FinServ are the top targets for fake signups",
+      "description": "Median daily proportion of signup attempts that met the criteria of a signup attack in 2024, by industry. Retail/eCommerce led at nearly 70%, with Financial Services close behind at ~65%, well above the all-industries mean of 44.5%.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2024,
+      "category": "Identity & Access",
+      "industry": [
+        "Retail & E-Commerce",
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "signup-attack",
+        "industry",
+        "fake-accounts",
+        "auth0",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Fraudsters focus on retail and finance",
+      "comparison": "vs. mean of per-industry daily medians (44.5%)",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Retail/eCommerce",
+          "Financial Services",
+          "All-industries mean"
+        ],
+        "series": [
+          {
+            "name": "Median daily signup-attack rate",
+            "values": [
+              70,
+              65,
+              44.5
+            ],
+            "color": "#007DC1"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "okta-customer-identity-trends-2025-pdf-signup-attacks-by-segment",
+      "title": "Enterprises absorb the most fake-signup traffic",
+      "description": "Median daily proportion of signup attempts meeting attack criteria, broken out by customer segment in 2024. Enterprises faced 64.3% — more than three times the rate seen by mid-market organizations.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2024,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "signup-attack",
+        "segment",
+        "enterprise",
+        "smb",
+        "auth0",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Fraudsters focus on retail and finance",
+      "comparison": "Enterprise vs. mid-market",
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Enterprise",
+          "Small business",
+          "Mid-market"
+        ],
+        "series": [
+          {
+            "name": "Median daily signup-attack rate",
+            "values": [
+              64.3,
+              43.3,
+              18.2
+            ],
+            "color": "#007DC1"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "okta-customer-identity-trends-2025-pdf-login-attacks-by-industry",
+      "title": "Retail/eCommerce sees double the ATO attempts of the average industry",
+      "description": "Median daily proportion of login attempts meeting attack criteria in 2024, by industry. Retail/eCommerce was a clear outlier at 22.2%, with Professional Services and Financial Services hovering close to the all-industries mean of 10.0%.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2024,
+      "category": "Identity & Access",
+      "industry": [
+        "Retail & E-Commerce",
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "logs_on_sale",
+        "infostealer"
+      ],
+      "tags": [
+        "ato",
+        "industry",
+        "credential-stuffing",
+        "auth0"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Where suspected ATO attacks are concentrated",
+      "comparison": "vs. all-industries mean (10.0%)",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Retail/eCommerce",
+          "Professional Services",
+          "Financial Services",
+          "All-industries mean"
+        ],
+        "series": [
+          {
+            "name": "Median daily login-attack rate",
+            "values": [
+              22.2,
+              10.5,
+              10,
+              10
+            ],
+            "color": "#007DC1"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "okta-customer-identity-trends-2025-pdf-ato-by-segment",
+      "title": "Enterprises see the highest rate of malicious logins",
+      "description": "Median daily proportion of login attempts that met the criteria of a login attack in 2024, by customer segment. Enterprises endured the highest rate at 24.9%, while mid-market and small businesses faced ATO pressure at 7.6% and 9.4% respectively.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2024,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "logs_on_sale",
+        "infostealer"
+      ],
+      "tags": [
+        "ato",
+        "segment",
+        "enterprise",
+        "smb",
+        "auth0"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Account takeovers — by segment",
+      "comparison": "Enterprise vs. SMB",
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Enterprise",
+          "Small business",
+          "Mid-market"
+        ],
+        "series": [
+          {
+            "name": "Median daily login-attack rate",
+            "values": [
+              24.9,
+              9.4,
+              7.6
+            ],
+            "color": "#007DC1"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "okta-customer-identity-trends-2025-pdf-mfa-abuse-trend",
+      "title": "MFA abuse continues a multi-year decline",
+      "description": "Mean proportion of MFA events on the Auth0 platform classified as malicious. Falling from 12.7% in H1 2023 to a 2024 mean of 7.8% — and under 7% in the second half of 2024 — reflects improving secondary factors and tougher controls against MFA-fatigue and SMS-pumping attacks.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2024,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "mfa-abuse",
+        "mfa-fatigue",
+        "sms-pumping",
+        "auth0",
+        "headline",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "MFA abuse remains common, but may be declining",
+      "comparison": "H1 2023 vs. H2 2024",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "H1 2023",
+          "2024 mean",
+          "H2 2024"
+        ],
+        "series": [
+          {
+            "name": "Malicious MFA event rate",
+            "values": [
+              12.7,
+              7.8,
+              7
+            ],
+            "color": "#007DC1"
+          }
+        ]
+      },
+      "preferred_chart": "line"
+    },
+    {
+      "type": "chart",
+      "id": "okta-customer-identity-trends-2025-pdf-mfa-by-industry",
+      "title": "Media leads industries in malicious MFA events",
+      "description": "Median daily proportion of MFA events meeting the criteria of malicious activity in 2024, by industry. Media topped the chart at >20%, followed by Professional Services (17.6%) and Manufacturing (8.2%) — all well above the all-industries mean of 6.0%.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2024,
+      "category": "Identity & Access",
+      "industry": [
+        "Manufacturing"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "mfa-abuse",
+        "media",
+        "industry",
+        "auth0",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Lights, camera, attack: Media leads in malicious MFA events",
+      "comparison": "vs. all-industries mean (6.0%)",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Media",
+          "Professional Services",
+          "Manufacturing",
+          "All-industries mean"
+        ],
+        "series": [
+          {
+            "name": "Median malicious-MFA event rate",
+            "values": [
+              20,
+              17.6,
+              8.2,
+              6
+            ],
+            "color": "#007DC1"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "okta-customer-identity-trends-2025-pdf-trust-by-sector",
+      "title": "Banks earn the most trust to secure consumer data",
+      "description": "Consumers were asked how much they trust different sectors to secure their personal data. 63% trust banks and financial institutions; at the bottom, only 29% trust social-media platforms with the same. This trust gap shapes signup, login, and identity-sharing decisions.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [
+        "Financial Services",
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "consumer-trust",
+        "sectoral",
+        "auth0"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "With identity fraud emerging as a top concern…",
+      "comparison": "top vs. bottom sector",
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Banks / FinServ",
+          "Social media"
+        ],
+        "series": [
+          {
+            "name": "Trust to secure personal data",
+            "values": [
+              63,
+              29
+            ],
+            "color": "#007DC1"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "okta-customer-identity-trends-2025-pdf-biometric-trust",
+      "title": "Biometrics dominate perceived security; social login lags",
+      "description": "Share of respondents who rated each authentication method as 'very secure' or 'secure'. Fingerprint (71%) and FaceID (62%) topped the rankings, while only 35% considered social login secure — a flag for marketers nudging users toward social SSO.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "employee_exposure",
+        "infostealer"
+      ],
+      "tags": [
+        "biometrics",
+        "passkeys",
+        "social-login",
+        "authentication",
+        "auth0"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Customers point to fingerprints as the most secure",
+      "comparison": "biometrics vs. social login",
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Fingerprint",
+          "FaceID",
+          "Social login"
+        ],
+        "series": [
+          {
+            "name": "Perceived as secure / very secure",
+            "values": [
+              71,
+              62,
+              35
+            ],
+            "color": "#007DC1"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "okta-customer-identity-trends-2025-pdf-human-vs-ai-preference",
+      "title": "Users prefer humans over AI agents by a 4.4-to-1 ratio",
+      "description": "Across the global survey, 70% favored interacting with humans while only 16% favored AI agents — a 4.4:1 ratio. Every cohort preferred humans; Tech Innovators were the closest (1.1) while Baby Boomers preferred humans by a striking 41.5-to-1.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "ai-agents",
+        "human-preference",
+        "consumer-survey",
+        "auth0"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Humans aren't sold on AI agents — yet",
+      "comparison": "70% human vs. 16% AI",
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Prefer human",
+          "Prefer AI agent",
+          "No preference / unsure"
+        ],
+        "series": [
+          {
+            "name": "Share of respondents",
+            "values": [
+              70,
+              16,
+              14
+            ],
+            "color": "#007DC1"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "stat",
+      "id": "okta-customer-identity-trends-2025-pdf-mfa-malicious-median",
+      "title": "7.3%: median rate of malicious MFA events in 2024",
+      "description": "In 2024, the median daily proportion of MFA events detected as being malicious on the Auth0 platform was 7.3% — with the majority attributable to MFA-fatigue attacks and SMS pumping (toll fraud). The sparkline approximates the multi-year trajectory of malicious-MFA share.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2024,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "mfa-abuse",
+        "mfa-fatigue",
+        "toll-fraud",
+        "auth0",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "MFA abuse remains common, but may be declining",
+      "comparison": "vs. 12.7% in H1 2023",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "sparkline",
+      "value": "7.3%",
+      "spark": [
+        12.7,
+        9.5,
+        8.4,
+        7.8,
+        7.3,
+        7
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "okta-customer-identity-trends-2025-pdf-signup-attack-median",
+      "title": "46.1% of all customer signup attempts were malicious in 2024",
+      "description": "Across the Auth0 platform in 2024, the median daily proportion of registration attempts that met the criteria of a signup attack was 46.1% — reversing a prior downward trend and consistent with a surge in fraudulent signups reported across other large tech companies, attributed to AI-enabled attack workflows.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2024,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "logs_on_sale"
+      ],
+      "tags": [
+        "signup-attack",
+        "fraud",
+        "fake-accounts",
+        "ai-enabled",
+        "auth0",
+        "headline",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threats against customer identity — Signup attacks",
+      "comparison": "reverses a prior downward trend; surge attributed to AI",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "46.1%"
+    },
+    {
+      "type": "stat",
+      "id": "okta-customer-identity-trends-2025-pdf-signup-attack-peak",
+      "title": "Peak day: 92.5% of signups were attack attempts",
+      "description": "On April 6, 2024, 92.5% of registration attempts on the Auth0 platform met the criteria of a signup attack. In contrast, the lowest day of the year (February 29) still saw 14.4% — a major outlier, as no other day fell below 30%.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2024,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "signup-attack",
+        "peak",
+        "fake-accounts",
+        "auth0",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Threats against customer identity — Signup attacks",
+      "comparison": "vs. 14.4% lowest day of 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "92.5%"
+    },
+    {
+      "type": "stat",
+      "id": "okta-customer-identity-trends-2025-pdf-ato-login-attack-median",
+      "title": "16.9% of customer logins showed clear malicious behavior",
+      "description": "Across the Auth0 platform in 2024, the median daily proportion of login attempts that exhibited clear malicious behavior was 16.9% — a baseline rate for account takeover (ATO) attempts driven primarily by brute-force techniques like credential stuffing and password spraying.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2024,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "logs_on_sale",
+        "infostealer",
+        "phishing"
+      ],
+      "tags": [
+        "account-takeover",
+        "ato",
+        "credential-stuffing",
+        "auth0",
+        "headline"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Account takeovers (ATOs) present a constant threat",
+      "comparison": "median across all Auth0 customers in 2024",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "16.9%"
+    },
+    {
+      "type": "stat",
+      "id": "okta-customer-identity-trends-2025-pdf-ato-daily-range",
+      "title": "Daily login-attack rate swung from 7.6% to 47.4%",
+      "description": "The 16.9% median masked dramatic day-to-day variability: across all of 2024, the highest daily rate of login attacks was 47.4% and the lowest 7.6%, including sustained multi-week ATO campaigns.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2024,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "logs_on_sale",
+        "infostealer"
+      ],
+      "tags": [
+        "ato",
+        "credential-stuffing",
+        "variance",
+        "auth0"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Account takeovers (ATOs) present a constant threat",
+      "comparison": "min vs. max daily rate in 2024",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "7.6%–47.4%"
+    },
+    {
+      "type": "stat",
+      "id": "okta-customer-identity-trends-2025-pdf-mfa-enterprise",
+      "title": "11.6% of enterprise MFA events were malicious",
+      "description": "Enterprises experienced the highest proportion of malicious MFA events of any customer segment in 2024 — 11.6%, nearly double the overall 6.0% average. Mid-market organizations recorded the lowest abuse rate at 3.1%.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2024,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "mfa-abuse",
+        "enterprise",
+        "auth0",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "MFA by segment",
+      "comparison": "vs. 3.1% mid-market, 6.0% average",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "11.6%"
+    },
+    {
+      "type": "stat",
+      "id": "okta-customer-identity-trends-2025-pdf-identity-fraud-concern",
+      "title": "64% of consumers are concerned about identity fraud",
+      "description": "Across the entire 6,750-respondent survey, 64% of users said they are concerned about identity fraud (32% very concerned, 32% concerned), while only 10% expressed little or no concern. Respondents from India were the most concerned (81% concerned or very concerned).",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "phishing"
+      ],
+      "tags": [
+        "identity-fraud",
+        "consumer-trust",
+        "survey",
+        "auth0"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Identity fraud is a top-of-mind issue",
+      "comparison": "vs. 10% not concerned",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "64%"
+    },
+    {
+      "type": "stat",
+      "id": "okta-customer-identity-trends-2025-pdf-friction-abandonment",
+      "title": "Nearly 1 in 4 shoppers abandon purchases due to signup or login friction",
+      "description": "23% of respondents report either always (6%) or often (17%) abandoning an online purchase due to issues with signup or login processes; a further 40% report sometimes doing so. Tech Innovators are even more intolerant — 43% always or often abandon when faced with friction.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "employee_exposure",
+        "infostealer"
+      ],
+      "tags": [
+        "signup-friction",
+        "conversion",
+        "ux",
+        "auth0"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Signup and login issues drive customers away",
+      "comparison": "always/often vs. sometimes (40%)",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "23%"
+    },
+    {
+      "type": "stat",
+      "id": "okta-customer-identity-trends-2025-pdf-long-forms-frustration",
+      "title": "62% say long signup or login forms are their top frustration",
+      "description": "Having to fill out long signup or login forms stands alone as the most frequently cited source of signup or login frustration — selected by 62% of respondents, well ahead of needing to provide private or sensitive information (52%).",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "employee_exposure",
+        "infostealer"
+      ],
+      "tags": [
+        "signup-friction",
+        "ux",
+        "consumer-survey",
+        "auth0"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Long forms are the most frustrating signup or login hurdle",
+      "comparison": "vs. 52% private/sensitive info",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "62%"
+    },
+    {
+      "type": "stat",
+      "id": "okta-customer-identity-trends-2025-pdf-password-convenience",
+      "title": "73% of users still rate passwords as 'convenient'",
+      "description": "Despite the security weaknesses, 73% of respondents rated passwords as either very convenient (40%) or convenient (33%) — a full 10 percentage points above the second-most-convenient authentication method. The correlation between usage and perceived convenience was 0.92.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "employee_exposure",
+        "infostealer"
+      ],
+      "tags": [
+        "passwords",
+        "authentication",
+        "convenience",
+        "auth0"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Convenience and familiarity drive login habits",
+      "comparison": "vs. next-best method (≆63%)",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "73%"
+    },
+    {
+      "type": "stat",
+      "id": "okta-customer-identity-trends-2025-pdf-ai-privacy-concern",
+      "title": "60% of consumers worry about AI's impact on identity privacy",
+      "description": "60% of survey respondents reported being either very concerned or concerned about AI's impact on the privacy and security of their digital identities; only 9% were not concerned. Privacy fears are the top reason cited by non-adopters of AI agents (44%).",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "ai-agents",
+        "privacy",
+        "trust",
+        "auth0"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Privacy concern: AI's impact on identity",
+      "comparison": "vs. 9% not concerned",
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "60%"
+    },
+    {
+      "type": "stat",
+      "id": "okta-customer-identity-trends-2025-pdf-signup-attack-ratio",
+      "title": "120x: attack signups outnumbered real signups during a sustained retail campaign",
+      "description": "During a multi-month sustained attack against the Retail/eCommerce sector — which endured the highest proportion of attack signups of any industry in 2024 — the number of signup-attack events exceeded the number of legitimate signups by a factor of 120.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2024,
+      "category": "Identity & Access",
+      "industry": [
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "signup-attack",
+        "retail",
+        "scale",
+        "auth0",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "The massive scale of signup attacks",
+      "comparison": "attack events vs. legitimate signups",
+      "trend": "increasing",
+      "value_unit": "multiplier",
+      "card_style": "number",
+      "value": "120x"
+    },
+    {
+      "type": "stat",
+      "id": "okta-customer-identity-trends-2025-pdf-password-reuse",
+      "title": "68% of consumers admit to reusing passwords",
+      "description": "Despite years of warnings, 68% of users reported either using the same password for every account (17%) or reusing only a small set of passwords (51%) — poor hygiene that directly fuels credential-stuffing and ATO campaigns. 53% blame the inability to remember unique passwords.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer",
+        "logs_on_sale",
+        "phishing"
+      ],
+      "tags": [
+        "password-reuse",
+        "credential-hygiene",
+        "consumer-survey",
+        "auth0",
+        "headline"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "More than two-thirds of respondents reuse passwords",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "68%"
+    },
+    {
+      "type": "stat",
+      "id": "okta-customer-identity-trends-2025-pdf-ai-encounter",
+      "title": "37% of consumers encounter AI agents very frequently or frequently",
+      "description": "Auth0's survey found that 37% of customers encounter AI agents on online platforms or websites either very frequently or frequently — a fast-rising baseline as GenAI-powered non-human identities (NHIs) begin acting on behalf of users.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "ai-agents",
+        "genai",
+        "non-human-identity",
+        "auth0"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI meets customer identity",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "37%"
+    },
+    {
+      "type": "stat",
+      "id": "okta-customer-identity-trends-2025-pdf-ai-refusers",
+      "title": "23% of consumers refuse to use AI agents at all",
+      "description": "23% of respondents exclusively selected 'I would not use AI agents' — a stance driven largely by Tech Avoiders (73%), Baby Boomers (42%), Tech Traditionalists (43%) and respondents from Japan (37%). The leading reason (44%) is distrust of AI agents with personal information.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "ai-agents",
+        "adoption",
+        "trust",
+        "auth0"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Hesitancy and AI agents",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "23%"
+    },
+    {
+      "type": "stat",
+      "id": "okta-customer-identity-trends-2025-pdf-ai-trust-quote",
+      "title": "The benefits of AI agents require trust above all",
+      "description": "Auth0's authors frame the report's central thesis: that as autonomous GenAI agents take on more user-facing tasks, customer identity and access management becomes the control plane for the trust those agents must earn.",
+      "source": "Okta",
+      "source_short": "Okta",
+      "color": "#007DC1",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "ai-agents",
+        "trust",
+        "ciam",
+        "auth0",
+        "quote"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI meets customer identity",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"The benefits of AI agents are vast, but their actions require sensitive, valuable, and possibly even confidential information from businesses and consumers. Above all, their actions require trust.\""
+    }
+  ]
+}

@@ -1,0 +1,4008 @@
+{
+  "category": "ransomware",
+  "source": "SOCRadar ThreatVision",
+  "generated_at": "2026-05-08T09:19:36.684Z",
+  "count": 500,
+  "records": [
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    },
+    {
+      "encryption_confirmed": false,
+      "data_exfiltration_confirmed": false,
+      "leak_site_posted": false,
+      "payment_status": "undisclosed",
+      "source": "SOCRadar ThreatVision",
+      "confidence": "medium"
+    }
+  ]
+}

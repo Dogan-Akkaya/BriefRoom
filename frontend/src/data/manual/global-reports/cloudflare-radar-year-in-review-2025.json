@@ -1,0 +1,1385 @@
+{
+  "source": "Cloudflare",
+  "source_short": "Cloudflare",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/cloudflare-radar-year-in-review-2025.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.940Z. Curated top 10 of 25 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-cloudflare-radar-year-in-review-2025",
+      "title": "Cloudflare Radar 2025 Year in Review",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "color": "#F38020",
+      "description": "Cloud platforms continued to be major sources of bot traffic in 2025. AWS led with 14.4% (combined across two ASes), Google Cloud reached 9.7%, and Microsoft Azure rose to 5.5% — all three increased compared to 2024.",
+      "external_url": "https://blog.cloudflare.com/radar-2025-year-in-review/",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "AWS",
+          "Google Cloud",
+          "Microsoft Azure"
+        ],
+        "series": [
+          {
+            "name": "2025 share",
+            "values": [
+              14.4,
+              9.7,
+              5.5
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "industry": [
+        "Technology",
+        "Telecommunications"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific",
+        "Middle East",
+        "Latin America"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "ransomware",
+        "phishing"
+      ],
+      "tags": [
+        "external-report",
+        "bot-traffic",
+        "aws",
+        "gcp",
+        "azure",
+        "cloud-origins",
+        "http3",
+        "http2",
+        "protocols",
+        "web-requests",
+        "ipv6",
+        "dual-stack",
+        "adoption",
+        "india",
+        "mena",
+        "latam",
+        "rpki",
+        "bgp",
+        "routing-security",
+        "api-clients",
+        "go",
+        "python",
+        "java",
+        "nodejs",
+        "download-speed",
+        "broadband",
+        "europe",
+        "performance",
+        "verified-bots",
+        "googlebot",
+        "gptbot",
+        "bingbot",
+        "mobile",
+        "ios",
+        "android",
+        "device-share",
+        "search-engines",
+        "google",
+        "yandex",
+        "referrals",
+        "workers-ai",
+        "llama",
+        "whisper",
+        "stable-diffusion"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2026-05-11",
+      "report_meta": {
+        "report_id": "cloudflare-radar-year-in-review-2025",
+        "organization_id": "cloudflare",
+        "publication_date": null,
+        "extracted_on": "2026-05-11",
+        "source_url": "https://blog.cloudflare.com/radar-2025-year-in-review/",
+        "card_count_total": 25,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "cloudflare-radar-year-in-review-2025-bot-cloud-origins"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-radar-year-in-review-2025-bot-cloud-origins",
+      "title": "Bot traffic origin by cloud provider, 2024 vs 2025",
+      "description": "Cloud platforms continued to be major sources of bot traffic in 2025. AWS led with 14.4% (combined across two ASes), Google Cloud reached 9.7%, and Microsoft Azure rose to 5.5% — all three increased compared to 2024.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "Cloud Security",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "bot-traffic",
+        "aws",
+        "gcp",
+        "azure",
+        "cloud-origins"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Bot Traffic Analysis",
+      "comparison": "all three up vs 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "AWS",
+          "Google Cloud",
+          "Microsoft Azure"
+        ],
+        "series": [
+          {
+            "name": "2025 share",
+            "values": [
+              14.4,
+              9.7,
+              5.5
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-radar-year-in-review-2025-http-versions",
+      "title": "HTTP version distribution of global web requests",
+      "description": "HTTP/2 remained the dominant protocol version at 50% of global web requests in 2025, with HTTP/3 reaching 21% and legacy HTTP/1.x at 29%. The shares of HTTP/3 and HTTP/2 both increased slightly during the year.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "http3",
+        "http2",
+        "protocols",
+        "web-requests"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "HTTP Versions",
+      "comparison": "HTTP/2 and HTTP/3 both slightly up YoY",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "HTTP/2",
+          "HTTP/1.x",
+          "HTTP/3"
+        ],
+        "series": [
+          {
+            "name": "Share of requests",
+            "values": [
+              50,
+              29,
+              21
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-radar-year-in-review-2025-ipv6-leaders",
+      "title": "IPv6 adoption: top countries vs global",
+      "description": "India led IPv6 adoption with 67% of dual-stack requests using IPv6, while the global average was 29%. Only Malaysia, Saudi Arabia, and Uruguay also exceeded 50%, and 94 countries remained below 10%.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "Middle East",
+        "Latin America"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "ipv6",
+        "dual-stack",
+        "adoption",
+        "india",
+        "mena",
+        "latam"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "IPv6 Adoption",
+      "comparison": "global +1pp YoY",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "India",
+          "Malaysia",
+          "Saudi Arabia",
+          "Uruguay",
+          "Global"
+        ],
+        "series": [
+          {
+            "name": "IPv6 share of dual-stack",
+            "values": [
+              67,
+              52,
+              51,
+              50,
+              29
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-radar-year-in-review-2025-rpki-progress",
+      "title": "RPKI valid routes: start vs end of 2025",
+      "description": "Routing security improved across the board in 2025. IPv4 valid routes increased from 50% to 53.9% and IPv6 valid routes climbed 4.7 percentage points to 60.1%. IPv4 routes and address space coverage have grown approximately 3x since 2020.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "rpki",
+        "bgp",
+        "routing-security"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Routing Security (BGP/RPKI)",
+      "comparison": "start-of-year vs end-of-year 2025",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "IPv4 valid routes",
+          "IPv6 valid routes"
+        ],
+        "series": [
+          {
+            "name": "Start of 2025",
+            "values": [
+              50,
+              55.4
+            ],
+            "color": "#FBB97D"
+          },
+          {
+            "name": "End of 2025",
+            "values": [
+              53.9,
+              60.1
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-radar-year-in-review-2025-api-clients",
+      "title": "API client language share, 2024 vs 2025",
+      "description": "API client traffic composition shifted significantly in 2025. Go-based clients climbed from 12% to 20%, Python rose from 9.6% to 17%, and Java from 7.4% to 11.2%. Node.js fell from its prior second-place position to 8.3%.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "api-clients",
+        "go",
+        "python",
+        "java",
+        "nodejs"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Web Technology Trends",
+      "comparison": "2024 vs 2025",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Go",
+          "Python",
+          "Java",
+          "Node.js",
+          ".NET"
+        ],
+        "series": [
+          {
+            "name": "2024",
+            "values": [
+              12,
+              9.6,
+              7.4,
+              12,
+              2.3
+            ],
+            "color": "#FBB97D"
+          },
+          {
+            "name": "2025",
+            "values": [
+              20,
+              17,
+              11.2,
+              8.3,
+              2.3
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-radar-year-in-review-2025-download-speeds",
+      "title": "Top countries by average download speed",
+      "description": "European countries dominated download performance in 2025. Spain and Hungary both exceeded 300 Mbps average download speeds, with Portugal, Denmark, Romania, and France all above 200 Mbps.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "download-speed",
+        "broadband",
+        "europe",
+        "performance"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Download Speeds",
+      "comparison": "Spain +25 Mbps; Hungary +46 Mbps vs 2024",
+      "trend": "increasing",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Spain",
+          "Hungary",
+          "Portugal",
+          "Denmark",
+          "Romania",
+          "France"
+        ],
+        "series": [
+          {
+            "name": "Avg download (Mbps)",
+            "values": [
+              305,
+              302,
+              240,
+              230,
+              220,
+              210
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-radar-year-in-review-2025-ai-verified-bots",
+      "title": "Share of verified bot traffic by crawler",
+      "description": "Googlebot dominated verified bot traffic in 2025, accounting for over 28% of all verified bot activity. OpenAI's GPTBot reached approximately 7.5% and Microsoft's Bingbot held around 6%.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "verified-bots",
+        "googlebot",
+        "gptbot",
+        "bingbot"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Crawling Patterns",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Googlebot",
+          "GPTBot (OpenAI)",
+          "Bingbot (Microsoft)"
+        ],
+        "series": [
+          {
+            "name": "% of verified bot traffic",
+            "values": [
+              28,
+              7.5,
+              6
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-radar-year-in-review-2025-mobile-os",
+      "title": "iOS vs Android share of mobile device traffic",
+      "description": "Globally, iOS generated 35% of mobile device traffic in 2025, with Android at 65%. Country leaders diverged sharply: Monaco hit 70% iOS share while Papua New Guinea registered 97% Android.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "IoT & Mobile",
+      "industry": [
+        "Telecommunications",
+        "Technology"
+      ],
+      "region": [
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "mobile",
+        "ios",
+        "android",
+        "device-share"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Mobile Dominance",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Global",
+          "Monaco",
+          "Papua New Guinea"
+        ],
+        "series": [
+          {
+            "name": "iOS",
+            "values": [
+              35,
+              70,
+              3
+            ],
+            "color": "#F38020"
+          },
+          {
+            "name": "Android",
+            "values": [
+              65,
+              30,
+              97
+            ],
+            "color": "#FBB97D"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-radar-year-in-review-2025-search-engines",
+      "title": "Global search engine referral share",
+      "description": "Google retained dominant search referral share globally at approximately 90% in 2025, with Bing, Yandex, Baidu, and DuckDuckGo distant followers. Russia remained the outlier, where Yandex captured 65% versus Google's 34%.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "search-engines",
+        "google",
+        "yandex",
+        "referrals"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Search Engine Landscape",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Google",
+          "Bing",
+          "Yandex",
+          "Baidu",
+          "DuckDuckGo"
+        ],
+        "series": [
+          {
+            "name": "Global share",
+            "values": [
+              90,
+              3.1,
+              2,
+              1.4,
+              1.2
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-radar-year-in-review-2025-workers-ai-models",
+      "title": "Top Workers AI models by account share",
+      "description": "Meta's llama-3-8b-instruct was the most-used model on Workers AI in 2025, capturing 36.3% of accounts. OpenAI's whisper followed at 10.1% and Stability AI's stable-diffusion-xl-base-1.0 at 9.8%.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "workers-ai",
+        "llama",
+        "whisper",
+        "stable-diffusion"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Workers AI Adoption",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "llama-3-8b-instruct",
+          "whisper",
+          "stable-diffusion-xl-base-1.0"
+        ],
+        "series": [
+          {
+            "name": "Account share",
+            "values": [
+              36.3,
+              10.1,
+              9.8
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-radar-year-in-review-2025-latency",
+      "title": "Lowest idle latency by country",
+      "description": "Iceland recorded the lowest idle latency at 13 ms in 2025, followed by Moldova at 15 ms. Portugal, Spain, and Hungary all stayed below 20 ms.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "latency",
+        "performance",
+        "idle-latency"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Latency Metrics",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Iceland",
+          "Moldova",
+          "Portugal",
+          "Spain",
+          "Hungary"
+        ],
+        "series": [
+          {
+            "name": "Idle latency (ms)",
+            "values": [
+              13,
+              15,
+              18,
+              19,
+              19
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-radar-year-in-review-2025-outage-causes",
+      "title": "Major internet outage causes in 2025",
+      "description": "Of 174 major internet outages tracked by Cloudflare in 2025, government-directed shutdowns accounted for roughly half (~87), followed by cable cuts, equipment failures (notably a Cairo telecom fire), and weather events such as Hurricane Melissa in Jamaica.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "Geopolitics",
+      "industry": [
+        "Telecommunications",
+        "Government"
+      ],
+      "region": [
+        "Middle East",
+        "Asia Pacific",
+        "Europe",
+        "Latin America"
+      ],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "outages",
+        "shutdowns",
+        "cable-cuts",
+        "infrastructure",
+        "mena",
+        "latam"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "2025 Outage Summary",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Government shutdowns",
+          "Cable cuts",
+          "Equipment failure",
+          "Weather",
+          "Other"
+        ],
+        "series": [
+          {
+            "name": "Approx. # of outages",
+            "values": [
+              87,
+              35,
+              20,
+              15,
+              17
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "cloudflare-radar-year-in-review-2025-tbps-attacks",
+      "title": "Hyper-volumetric DDoS attacks (>1 Tbps) by month",
+      "description": "Cloudflare observed more than 500 attacks above 1 Tbps in July, the year's peak. February had the fewest (~150), and the largest individual attacks scaled up dramatically: 10 Tbps (Aug), 20+ Tbps (Sep), 29.7 Tbps (Oct), 31.4 Tbps (Nov).",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "ddos",
+        "tbps",
+        "hyper-volumetric",
+        "monthly"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "DDoS Attack Escalation",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec"
+        ],
+        "series": [
+          {
+            "name": "# of >1 Tbps attacks",
+            "values": [
+              200,
+              150,
+              220,
+              280,
+              320,
+              380,
+              500,
+              450,
+              400,
+              380,
+              360,
+              340
+            ],
+            "color": "#F38020"
+          }
+        ]
+      },
+      "preferred_chart": "line"
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-radar-year-in-review-2025-mitigated-traffic",
+      "title": "6% of global traffic was mitigated by Cloudflare",
+      "description": "Cloudflare's systems mitigated 6% of global traffic across its network in 2025, either as potentially malicious or for customer-defined reasons. This represents a small decrease from 6.2% in 2024, while DDoS/WAF mitigations grew slightly to 3.3%.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "mitigation",
+        "waf",
+        "network-traffic",
+        "spark-from-8"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Traffic Mitigation",
+      "comparison": "vs 6.2% in 2024",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "sparkline",
+      "value": "6%",
+      "spark": [
+        6.2,
+        6.1,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-radar-year-in-review-2025-pq-encryption",
+      "title": "Post-quantum encryption surged to 52% of human web traffic",
+      "description": "The share of human-generated web traffic protected by post-quantum encryption nearly doubled to 52% in 2025, up from 29% at the start of the year. Apple's iOS 26 release in September drove a step-change in adoption.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "employee_exposure",
+        "infostealer"
+      ],
+      "tags": [
+        "post-quantum",
+        "encryption",
+        "tls",
+        "ios",
+        "spark-from-8"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Post-Quantum Encryption Growth",
+      "comparison": "vs 29% at year-start",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "sparkline",
+      "value": "52%",
+      "spark": [
+        29,
+        31,
+        35,
+        38,
+        48,
+        52
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-radar-year-in-review-2025-cms-share",
+      "title": "WordPress holds 47% of CMS share",
+      "description": "WordPress remained the dominant content management system in 2025 with 47% share of CMS-using sites, though this represents a continued decline from previous years as alternative platforms gain ground.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "wordpress",
+        "cms",
+        "web-technology",
+        "spark-from-8"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Web Technology Trends",
+      "comparison": "down from previous years",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "sparkline",
+      "value": "47%",
+      "spark": [
+        55,
+        53,
+        50,
+        49,
+        47,
+        47
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-radar-year-in-review-2025-global-traffic-growth",
+      "title": "Global internet traffic grew 19% in 2025",
+      "description": "Cloudflare measured a 19% year-over-year increase in global Internet traffic across 2025, accelerating roughly 10% faster than 2024's 17% rate. Most of the growth materialized after mid-April, with significant acceleration starting in August.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "internet-traffic",
+        "growth",
+        "yoy"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Global Internet Growth",
+      "comparison": "vs +17% in 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+19% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-radar-year-in-review-2025-people-society-targeting",
+      "title": "'People and Society' became 2025's most-attacked vertical",
+      "description": "Organizations in the 'People and Society' vertical absorbed 4.4% of global mitigated traffic in 2025, peaking at 23.2% in early July. Gambling/Games, the prior year's leader, fell over 50% to 2.6%.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "vertical-targeting",
+        "people-society",
+        "gambling",
+        "attacks"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Vertical-Based Attack Trends",
+      "comparison": "Gambling/Games dropped 50%+ YoY to 2.6%",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "4.4%"
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-radar-year-in-review-2025-record-ddos",
+      "title": "Record 31.4 Tbps DDoS attack in November",
+      "description": "Hyper-volumetric DDoS attack sizes grew dramatically throughout 2025, culminating in a record 31.4 Tbps attack in November. Cloudflare observed its first >10 Tbps attack in late August, multiple >20 Tbps attacks in September, and a 29.7 Tbps attack in October.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "hyper-volumetric",
+        "record",
+        "tbps",
+        "layer3-4"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "DDoS Attack Escalation",
+      "comparison": "vs 29.7 Tbps in October",
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "31.4 Tbps"
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-radar-year-in-review-2025-ai-user-action",
+      "title": "AI 'user action' crawling grew 15x in 2025",
+      "description": "AI user-action crawling, driven primarily by OpenAI's ChatGPT-User bot, increased more than 15x throughout 2025. Request volumes peaked roughly 16x higher than year-start levels.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "ai-bots",
+        "crawlers",
+        "chatgpt",
+        "user-action"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Crawling Patterns",
+      "comparison": "16x year-start at peak",
+      "trend": "increasing",
+      "value_unit": "multiplier",
+      "card_style": "number",
+      "value": "15x"
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-radar-year-in-review-2025-anthropic-crawl-ratio",
+      "title": "Anthropic's crawl-to-refer ratio hit 500,000:1",
+      "description": "Anthropic recorded the highest crawl-to-refer ratio among major AI and search platforms in 2025, reaching as high as 500,000:1. Perplexity, by contrast, maintained the lowest ratios, staying below 400:1 after September.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "anthropic",
+        "crawl-to-refer",
+        "ai-crawlers",
+        "perplexity"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Crawl-to-Refer Ratios",
+      "comparison": "vs Perplexity <400:1",
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "500,000:1"
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-radar-year-in-review-2025-malicious-email",
+      "title": "Over 5% of email messages were malicious",
+      "description": "Cloudflare's email security analysis classified more than 5% of analyzed messages as malicious in 2025. Deceptive links emerged as the most common threat type, followed by identity deception and brand impersonation.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "email-security",
+        "deceptive-links",
+        "brand-impersonation",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Malicious Email Prevalence",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "5%+"
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-radar-year-in-review-2025-bot-country-share",
+      "title": "40% of global bot traffic originated in the United States",
+      "description": "The United States dominated bot traffic origin in 2025 with 40% share, followed by Germany at 6.5%. AWS and Google Cloud combined accounted for roughly a quarter of all global bot traffic.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "ddos"
+      ],
+      "tags": [
+        "bot-traffic",
+        "country-origin",
+        "us",
+        "cloud-providers"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Bot Traffic Analysis",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "40%"
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-radar-year-in-review-2025-exec-quote",
+      "title": "Almost half of major outages were government-directed shutdowns",
+      "description": "Cloudflare's headline narrative on 2025 connectivity disruptions emphasizes how state-imposed shutdowns drove nearly half of the 174 major outages observed worldwide.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "Geopolitics",
+      "industry": [
+        "Telecommunications",
+        "Government"
+      ],
+      "region": [
+        "Middle East",
+        "Asia Pacific",
+        "Europe"
+      ],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "outages",
+        "shutdowns",
+        "censorship",
+        "government",
+        "mena"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Internet Outages and Disruptions",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Almost half of the 174 major Internet outages observed around the world in 2025 were due to government-directed regional and national shutdowns.\""
+    },
+    {
+      "type": "stat",
+      "id": "cloudflare-radar-year-in-review-2025-tld-malicious",
+      "title": "Almost all .christmas and .lol email was spam or malicious",
+      "description": "Cloudflare singled out two TLDs as near-total vectors for unwanted email — both .christmas and .lol domains delivered email that was almost entirely spam or malicious during 2025.",
+      "source": "Cloudflare",
+      "source_short": "Cloudflare",
+      "color": "#F38020",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "tld",
+        "email-security",
+        "spam",
+        "christmas",
+        "lol"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Problematic Top-Level Domains (TLDs)",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Nearly all of the email messages from the .christmas and .lol Top Level Domains were found to be either spam or malicious.\""
+    }
+  ]
+}

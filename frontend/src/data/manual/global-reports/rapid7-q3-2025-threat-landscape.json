@@ -1,0 +1,1111 @@
+{
+  "source": "Rapid7",
+  "source_short": "Rapid7",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/rapid7-q3-2025-threat-landscape.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.978Z. Curated top 10 of 22 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-rapid7-q3-2025-threat-landscape",
+      "title": "Rapid7 Q3 2025 Threat Landscape Report",
+      "year": 2025,
+      "category": "Vulnerabilities",
+      "color": "#F73B1C",
+      "description": "Rapid7's AttackerKB tracked 53 vulnerabilities reported as exploited in the wild for the first time in Q3 2025 — a continued quarter-on-quarter decline from this time last year, though Rapid7 cautions the macro drop hides troubling patterns in the data.",
+      "external_url": "https://www.rapid7.com/blog/post/tr-rapid7-q3-2025-threat-landscape-report/",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "CWE-502 (Deserialization)",
+          "CWE-78 (OS Cmd Injection)",
+          "CWE-77 (Command Injection)",
+          "CWE-22 (Path Traversal)",
+          "CWE-89 (SQL Injection)",
+          "CWE-287 (Improper Auth)",
+          "CWE-352 (CSRF)",
+          "CWE-94 (Code Injection)",
+          "CWE-863 (Authz)",
+          "CWE-119 (Memory Corruption)"
+        ],
+        "series": [
+          {
+            "name": "Vulnerabilities",
+            "values": [
+              10,
+              6,
+              5,
+              4,
+              3,
+              3,
+              2,
+              2,
+              2,
+              2
+            ],
+            "color": "#F73B1C"
+          }
+        ]
+      },
+      "industry": [
+        "Manufacturing",
+        "Healthcare",
+        "Technology",
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "ransomware",
+        "data_leaks",
+        "phishing"
+      ],
+      "tags": [
+        "external-report",
+        "cwe",
+        "deserialization",
+        "command-injection",
+        "root-cause",
+        "new-entrants",
+        "churn",
+        "rebrand",
+        "leak-sites",
+        "industry-share",
+        "victimology",
+        "geography",
+        "mft",
+        "crushftp",
+        "goanywhere",
+        "storm-1175",
+        "medusa",
+        "netscaler",
+        "mitre-attack",
+        "ttps",
+        "initial-access",
+        "lateral-movement",
+        "incident-response",
+        "sectors",
+        "attackerkb",
+        "exploited-in-wild",
+        "quarterly-trend",
+        "qilin",
+        "akira",
+        "inc-ransom",
+        "top10",
+        "cisco",
+        "asa",
+        "ftd",
+        "cve-2025-20333",
+        "cve-2025-20362",
+        "cve-2025-20363",
+        "patch-bypass"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2025-11-12",
+      "report_meta": {
+        "report_id": "rapid7-q3-2025-threat-landscape",
+        "organization_id": "rapid7",
+        "publication_date": "2025-11-12",
+        "extracted_on": "2026-05-11",
+        "source_url": "https://www.rapid7.com/blog/post/tr-rapid7-q3-2025-threat-landscape-report/",
+        "card_count_total": 22,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "rapid7-q3-2025-threat-landscape-top-cwes"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "rapid7-q3-2025-threat-landscape-top-cwes",
+      "title": "Top CWE classes for Q3 exploited-in-the-wild vulns",
+      "description": "Unsafe deserialization (CWE-502) led the root-cause categories for Q3 2025 exploited-in-the-wild vulnerabilities by a notable margin, with command injection (CWE-78, CWE-77) in second and third place. Attackers favor these logic-level classes for reliability of exploitation over memory corruption bugs. (Illustrative ranks; chart in PDF.)",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "cwe",
+        "deserialization",
+        "command-injection",
+        "root-cause"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Vulnerability intelligence — top CWEs",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "CWE-502 (Deserialization)",
+          "CWE-78 (OS Cmd Injection)",
+          "CWE-77 (Command Injection)",
+          "CWE-22 (Path Traversal)",
+          "CWE-89 (SQL Injection)",
+          "CWE-287 (Improper Auth)",
+          "CWE-352 (CSRF)",
+          "CWE-94 (Code Injection)",
+          "CWE-863 (Authz)",
+          "CWE-119 (Memory Corruption)"
+        ],
+        "series": [
+          {
+            "name": "Vulnerabilities",
+            "values": [
+              10,
+              6,
+              5,
+              4,
+              3,
+              3,
+              2,
+              2,
+              2,
+              2
+            ],
+            "color": "#F73B1C"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "rapid7-q3-2025-threat-landscape-ransomware-group-flow",
+      "title": "Ransomware group churn: new vs. inactive in Q3",
+      "description": "Of the 88 ransomware groups active in Q3 2025, 28 were brand-new additions to the active leak-site cohort. Meanwhile, 19 of the 65 groups that posted leaks in Q2 went silent during July–September 2025 — illustrating high churn in the ecosystem.",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "new-entrants",
+        "churn",
+        "rebrand",
+        "leak-sites"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "The ransomware landscape — At a glance",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Q3 active groups",
+          "New entrants in Q3",
+          "Q2 groups now silent"
+        ],
+        "series": [
+          {
+            "name": "Groups",
+            "values": [
+              88,
+              28,
+              19
+            ],
+            "color": "#F73B1C"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "rapid7-q3-2025-threat-landscape-industry-targets",
+      "title": "Top targeted industries — ransomware leak posts",
+      "description": "Business services led ransomware victim posts in Q3 2025 at 18%, followed by manufacturing (15%) and healthcare (13%). Construction and financial services round out the top five most-targeted industries.",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [
+        "Manufacturing",
+        "Healthcare"
+      ],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "industry-share",
+        "victimology"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "The ransomware landscape — Popular targets",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Business services",
+          "Manufacturing",
+          "Healthcare",
+          "Construction",
+          "Financial"
+        ],
+        "series": [
+          {
+            "name": "Share of ransomware posts",
+            "values": [
+              18,
+              15,
+              13,
+              8,
+              7
+            ],
+            "color": "#F73B1C"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "rapid7-q3-2025-threat-landscape-region-targets",
+      "title": "Top regional targets — ransomware victim share",
+      "description": "The United States accounted for 67% of ransomware leak-site posts in Q3 2025, with Germany a distant second at 6%. The UK and Canada were tied at 5%, followed by Italy (4%) and France (3%).",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "geography",
+        "victimology"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "The ransomware landscape — Popular targets",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "United States",
+          "Germany",
+          "United Kingdom",
+          "Canada",
+          "Italy",
+          "France"
+        ],
+        "series": [
+          {
+            "name": "Share of ransomware victims",
+            "values": [
+              67,
+              6,
+              5,
+              5,
+              4,
+              3
+            ],
+            "color": "#F73B1C"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "rapid7-q3-2025-threat-landscape-mft-zero-days",
+      "title": "Managed File Transfer zero-days dominate Q3 ETRs",
+      "description": "Two of the five Q3 2025 Emergent Threat Response cases — CrushFTP (CVE-2025-54309) and GoAnywhere MFT (CVE-2025-10035) — targeted enterprise managed file transfer platforms. The GoAnywhere exploit was attributed to Storm-1175 and used to deploy Medusa ransomware.",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "ransomware"
+      ],
+      "tags": [
+        "mft",
+        "crushftp",
+        "goanywhere",
+        "storm-1175",
+        "medusa",
+        "netscaler"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Vulnerability intelligence — ETR",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "CrushFTP",
+          "SharePoint",
+          "NetScaler",
+          "GoAnywhere MFT",
+          "Cisco ASA/FTD"
+        ],
+        "series": [
+          {
+            "name": "ETR zero-day cases",
+            "values": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "color": "#F73B1C"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "rapid7-q3-2025-threat-landscape-mitre-techniques",
+      "title": "Top 10 MITRE ATT&CK techniques observed in Q3",
+      "description": "Valid accounts (T1078) and external remote services (T1133) led the top 10 MITRE ATT&CK techniques observed across Rapid7-investigated incidents in Q3 2025 — reflecting the dominance of credential compromise and VPN/RDP exploitation as initial access vectors. (Ranks shown; counts illustrative.)",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing"
+      ],
+      "tags": [
+        "mitre-attack",
+        "ttps",
+        "initial-access",
+        "lateral-movement"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top 10 MITRE ATT&CK techniques for Q3",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "T1078 Valid Accounts",
+          "T1133 Ext. Remote Svc",
+          "T1059 Cmd/Script",
+          "T1003 OS Cred Dump",
+          "T1021 Remote Svc",
+          "T1047 WMI",
+          "T1087 Acct Discovery",
+          "T1018 Sys Discovery",
+          "T1560 Archive Data",
+          "T1566 Phishing"
+        ],
+        "series": [
+          {
+            "name": "Relative rank (1=top)",
+            "values": [
+              10,
+              9,
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1
+            ],
+            "color": "#F73B1C"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "rapid7-q3-2025-threat-landscape-ir-impacted-sectors",
+      "title": "Most impacted sectors in Rapid7 IR cases",
+      "description": "Across Rapid7 Incident Response investigations in Q3 2025, the most impacted sectors were retail, real estate, and manufacturing — overlapping but distinct from the ransomware-leak-site victimology, which skewed toward business services and healthcare.",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [
+        "Retail & E-Commerce",
+        "Manufacturing",
+        "Healthcare"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "incident-response",
+        "victimology",
+        "sectors"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Cybersecurity incidents — At a glance",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Retail",
+          "Real Estate",
+          "Manufacturing",
+          "Construction",
+          "Legal Services",
+          "Healthcare"
+        ],
+        "series": [
+          {
+            "name": "Relative IR case volume",
+            "values": [
+              5,
+              4,
+              4,
+              3,
+              2,
+              2
+            ],
+            "color": "#F73B1C"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "rapid7-q3-2025-threat-landscape-cve-vulns-tracked",
+      "title": "53 vulnerabilities first exploited in the wild in Q3",
+      "description": "Rapid7's AttackerKB tracked 53 vulnerabilities reported as exploited in the wild for the first time in Q3 2025 — a continued quarter-on-quarter decline from this time last year, though Rapid7 cautions the macro drop hides troubling patterns in the data.",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "attackerkb",
+        "exploited-in-wild",
+        "quarterly-trend"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Vulnerability intelligence",
+      "comparison": "trending down QoQ",
+      "trend": "decreasing",
+      "value_unit": "count",
+      "card_style": "sparkline",
+      "value": "53",
+      "spark": [
+        78,
+        72,
+        70,
+        65,
+        60,
+        53
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "rapid7-q3-2025-threat-landscape-qilin-top",
+      "title": "Qilin retains #1 ransomware spot",
+      "description": "Qilin retained the top position by number of leak-site posts in Q3 2025, with Akira and INC Ransom in second and third place respectively. Devman, WorldLeaks, and Everest were the only new entrants to the top 10 this quarter.",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "qilin",
+        "akira",
+        "inc-ransom",
+        "top10"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "The ransomware landscape — Top 10",
+      "comparison": "retained from prior quarter",
+      "trend": "flat",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "#1"
+    },
+    {
+      "type": "stat",
+      "id": "rapid7-q3-2025-threat-landscape-cisco-asa-vulns",
+      "title": "3 critical Cisco ASA/FTD vulns patched in late Sept",
+      "description": "In late September 2025, Cisco published patches for three critical vulnerabilities (CVE-2025-20333, CVE-2025-20362, CVE-2025-20363) affecting ASA and FTD products. CVE-2025-20362 is trivial to exploit and is a patch bypass of CVE-2018-0296. The chain was exploited in highly targeted attacks by an unknown threat actor.",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "cisco",
+        "asa",
+        "ftd",
+        "cve-2025-20333",
+        "cve-2025-20362",
+        "cve-2025-20363",
+        "patch-bypass"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Vulnerability intelligence — ETR",
+      "comparison": "patch bypass of CVE-2018-0296",
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "3 CVEs"
+    },
+    {
+      "type": "stat",
+      "id": "rapid7-q3-2025-threat-landscape-us-target-share",
+      "title": "US absorbs 67% of ransomware victim posts",
+      "description": "The United States overwhelmingly dominated Q3 2025 ransomware victimology, accounting for roughly two-thirds of all leak-site posts — far ahead of Germany (6%) and the joint-third UK/Canada (5% each).",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "united-states",
+        "victimology"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "The ransomware landscape — Popular targets",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "67%"
+    },
+    {
+      "type": "stat",
+      "id": "rapid7-q3-2025-threat-landscape-etr-zero-days",
+      "title": "5 of 5 Emergent Threat Response cases were zero-days",
+      "description": "All five high-profile threats triaged by Rapid7's Emergent Threat Response (ETR) program in Q3 2025 had been exploited as zero-day vulnerabilities — before vendor patches were available. Targets included CrushFTP, SharePoint, NetScaler, GoAnywhere MFT, and Cisco ASA/FTD.",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "supply_chain"
+      ],
+      "tags": [
+        "zero-day",
+        "etr",
+        "emergent-threat-response"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Vulnerability intelligence — ETR program",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "5/5"
+    },
+    {
+      "type": "stat",
+      "id": "rapid7-q3-2025-threat-landscape-old-cve-kev",
+      "title": "18-year-old CVE first KEV-listed in Q3",
+      "description": "CVE-2007-0671 — disclosed 18 years ago and reportedly exploited in the wild by the vendor circa 2007 — only received its first official exploitation-in-the-wild report this quarter when CISA added it to the KEV list. Rapid7 warns that relying solely on KEV for remediation is 'useful, but brittle.'",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "kev",
+        "cve-2007-0671",
+        "historical-cve",
+        "cisa"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Vulnerability intelligence — disclosure delta",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "days",
+      "card_style": "number",
+      "value": "18 yrs"
+    },
+    {
+      "type": "stat",
+      "id": "rapid7-q3-2025-threat-landscape-old-vulns-exploited",
+      "title": "10 Q3 vulns disclosed more than a year earlier",
+      "description": "Of the 53 vulnerabilities first reported as exploited in the wild in Q3, 10 had CVE disclosure dates more than a year ago — some over a decade old. Rapid7 stresses that historical vulnerabilities remain potent attack vectors and cannot be ignored in remediation planning.",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "legacy-cve",
+        "patch-management",
+        "kev"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Vulnerability intelligence — disclosure delta",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "10"
+    },
+    {
+      "type": "stat",
+      "id": "rapid7-q3-2025-threat-landscape-crimson-redhat",
+      "title": "Crimson Collective hits 28,000 Red Hat repos",
+      "description": "Crimson Collective rose to prominence after claiming responsibility for the compromise of 28,000 private Red Hat repositories, followed by AWS targeting via TruffleHog credential-hunting and an alleged breach of Nintendo's internal systems.",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "supply_chain"
+      ],
+      "tags": [
+        "crimson-collective",
+        "red-hat",
+        "trufflehog",
+        "aws",
+        "nintendo"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ones to watch — Crimson Collective",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "28,000"
+    },
+    {
+      "type": "stat",
+      "id": "rapid7-q3-2025-threat-landscape-f5-brickstorm-dwell",
+      "title": "BRICKSTORM dwell time exceeded 12 months at F5",
+      "description": "F5 confirmed that an unauthorized actor — linked by reports to BRICKSTORM/UNC5221 — accessed internal development systems beginning on or around August 9, 2025, exfiltrating BIG-IP source code, internal vulnerability data, and configuration artifacts. Dwell times in some cases exceeded 12 months.",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [
+        "Technology",
+        "Government"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "vulnerability"
+      ],
+      "tags": [
+        "brickstorm",
+        "unc5221",
+        "f5",
+        "bigip",
+        "dwell-time",
+        "source-code-theft",
+        "industry:defense"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Nation-state activity — China",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "months",
+      "card_style": "number",
+      "value": "12+ mo"
+    },
+    {
+      "type": "stat",
+      "id": "rapid7-q3-2025-threat-landscape-customers",
+      "title": "11,000+ customers powering Rapid7 telemetry",
+      "description": "Rapid7's Q3 2025 Threat Landscape Report draws on telemetry, AttackerKB community vulnerability intelligence, Intelligence Hub correlations, and Incident Response engagements across more than 11,000 customers worldwide.",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "methodology",
+        "telemetry",
+        "customers"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "About Rapid7",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "11,000+"
+    },
+    {
+      "type": "stat",
+      "id": "rapid7-q3-2025-threat-landscape-intro-quote",
+      "title": "Disclosure-to-exploitation race tighter than ever",
+      "description": "Rapid7 Labs Chief Scientist Raj Samani frames Q3 2025 as a quarter defined by zero-day mass exploitation, supply-chain fragility, and the operationalization of AI by adversaries.",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "zero-day",
+        "introduction",
+        "raj-samani"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Introduction",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"The race between disclosure and exploitation has never been tighter, with many organizations caught in the gap.\""
+    },
+    {
+      "type": "stat",
+      "id": "rapid7-q3-2025-threat-landscape-qilin-coalition",
+      "title": "Qilin–LockBit–DragonForce coalition announced",
+      "description": "A DragonForce admin post on the dark web site Ransombay formally announced a coalition with Qilin and a refreshed LockBit (sporting an all-new version 5.0). The merging of tactics and infrastructure could solidify these groups' dominance through Q4 2025 and the year as a whole.",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "qilin",
+        "lockbit",
+        "dragonforce",
+        "coalition",
+        "ransombay"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ones to watch — Qilin",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"The coalition between Qilin, LockBit, and DragonForce... If you have a partnership program, feel free to reach out to us, and together we can maximize our overall income!\""
+    },
+    {
+      "type": "stat",
+      "id": "rapid7-q3-2025-threat-landscape-sharepoint-zero-day",
+      "title": "SharePoint ToolPane chain — Q3's most impactful incident",
+      "description": "The SharePoint exploit chain — initially demonstrated at Pwn2Own Berlin 2025 and leaked to a threat actor — saw mass exploitation just before Microsoft's July 2025 patch release. Patch bypasses CVE-2025-53770 and CVE-2025-53771 required an out-of-band Microsoft release.",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology",
+        "Government"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "sharepoint",
+        "toolpane",
+        "cve-2025-53770",
+        "cve-2025-53771",
+        "cve-2025-49706",
+        "cve-2025-49704",
+        "pwn2own",
+        "microsoft"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Vulnerability intelligence — ETR",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Due to the pervasive deployment of SharePoint across multiple industry verticals, this threat campaign was likely the most significant and highly impactful incident in Q3.\""
+    },
+    {
+      "type": "stat",
+      "id": "rapid7-q3-2025-threat-landscape-ai-malware",
+      "title": "LAMEHUG: LLM-driven malware operationalized",
+      "description": "A Pawn Storm-affiliated Russian group deployed LAMEHUG — a malware family that uses a large language model to dynamically generate command-and-control logic, evading signature-based and static analysis. Rapid7 says this signals a 'new frontier' in malware development.",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "Europe",
+        "North America"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "phishing"
+      ],
+      "tags": [
+        "ai",
+        "llm",
+        "lamehug",
+        "pawn-storm",
+        "deepfake",
+        "evasion"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "AI-supported threats",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"The theoretical risk of AI has been fully operationalized. Defenders must now assume attackers are using these tools and techniques against them.\""
+    },
+    {
+      "type": "stat",
+      "id": "rapid7-q3-2025-threat-landscape-active-ransomware-groups",
+      "title": "88 active ransomware groups in Q3 2025",
+      "description": "Rapid7 observed 88 ransomware groups actively posting to leak sites in Q3 2025, up from 65 in Q2 and 76 in Q1 — a signal of renewed energy and proliferation across the ransomware economy.",
+      "source": "Rapid7",
+      "source_short": "Rapid7",
+      "color": "#F73B1C",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "leak-sites",
+        "active-groups",
+        "fragmentation"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "The ransomware landscape — At a glance",
+      "comparison": "vs 65 in Q2, 76 in Q1",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "88"
+    }
+  ]
+}

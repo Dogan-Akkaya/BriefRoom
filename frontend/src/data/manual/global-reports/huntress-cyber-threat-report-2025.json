@@ -1,0 +1,1669 @@
+{
+  "source": "Huntress",
+  "source_short": "Huntress",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/huntress-cyber-threat-report-2025.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.956Z. Curated top 10 of 30 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-huntress-cyber-threat-report-2025",
+      "title": "Huntress 2025 Cyber Threat Report",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "color": "#1F8FFF",
+      "description": "Infostealers led all observed incidents at 24%, followed closely by malicious scripts at 22%. Malware and RATs rounded out the top four threat categories observed across Huntress telemetry in 2024.",
+      "external_url": "https://www.huntress.com/resources/2025-cyber-threat-report",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "RansomHub",
+          "Inc/Lynx",
+          "Akira",
+          "Medusa",
+          "Play",
+          "Black Basta",
+          "BlackSuit",
+          "LockBit",
+          "Cl0p",
+          "BianLian"
+        ],
+        "series": [
+          {
+            "name": "Share of 2024 incidents (%)",
+            "values": [
+              21.4,
+              16.8,
+              15.8,
+              11.8,
+              9.1,
+              7.6,
+              5.7,
+              1.4,
+              1.2,
+              0.4
+            ],
+            "color": "#1F8FFF"
+          }
+        ]
+      },
+      "industry": [
+        "Education",
+        "Healthcare",
+        "Technology",
+        "Government",
+        "Manufacturing"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "infostealer",
+        "supply_chain",
+        "vulnerability",
+        "phishing"
+      ],
+      "tags": [
+        "external-report",
+        "ransomhub",
+        "lynx",
+        "akira",
+        "blacksuit",
+        "threat-frequency",
+        "telemetry",
+        "infostealer",
+        "malicious-script",
+        "industry-breakdown",
+        "verticals",
+        "healthcare",
+        "gootloader",
+        "socgholish",
+        "jrat",
+        "time-to-ransom",
+        "ttr",
+        "dwell-time",
+        "cobalt-strike",
+        "mimikatz",
+        "sysinternals",
+        "hacking-tools",
+        "remote-access",
+        "rat",
+        "asyncrat",
+        "netsupport",
+        "jupyter",
+        "rmm",
+        "screenconnect",
+        "teamviewer",
+        "logmein",
+        "rdp",
+        "cve",
+        "crushftp",
+        "proxyshell",
+        "byovd",
+        "mitre-attack",
+        "detection-phase",
+        "execution",
+        "persistence"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2025-02-01",
+      "report_meta": {
+        "report_id": "huntress-cyber-threat-report-2025",
+        "organization_id": "huntress",
+        "publication_date": "2025-02-01",
+        "extracted_on": "2026-05-06",
+        "source_url": "https://www.huntress.com/resources/2025-cyber-threat-report",
+        "card_count_total": 30,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "huntress-cyber-threat-report-2025-ransomware-operators"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "huntress-cyber-threat-report-2025-ransomware-operators",
+      "title": "Most prevalent ransomware operators in 2024",
+      "description": "RansomHub topped Huntress's 2024 list at 21.4% as ex-LockBit affiliates migrated in. Inc/Lynx and Akira followed at 16.8% and 15.8%, while older brands like LockBit (1.4%) and Cl0p (1.2%) shrank dramatically.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ransomhub",
+        "lynx",
+        "akira",
+        "blacksuit"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware Groups (Figure 10)",
+      "comparison": "vs 2023",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "RansomHub",
+          "Inc/Lynx",
+          "Akira",
+          "Medusa",
+          "Play",
+          "Black Basta",
+          "BlackSuit",
+          "LockBit",
+          "Cl0p",
+          "BianLian"
+        ],
+        "series": [
+          {
+            "name": "Share of 2024 incidents (%)",
+            "values": [
+              21.4,
+              16.8,
+              15.8,
+              11.8,
+              9.1,
+              7.6,
+              5.7,
+              1.4,
+              1.2,
+              0.4
+            ],
+            "color": "#1F8FFF"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "huntress-cyber-threat-report-2025-threat-frequency",
+      "title": "Top threat categories in 2024",
+      "description": "Infostealers led all observed incidents at 24%, followed closely by malicious scripts at 22%. Malware and RATs rounded out the top four threat categories observed across Huntress telemetry in 2024.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer",
+        "ransomware"
+      ],
+      "tags": [
+        "threat-frequency",
+        "telemetry",
+        "infostealer",
+        "malicious-script"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "The 2024 Threat Landscape (Figure 1)",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Infostealer",
+          "Malicious Script",
+          "Malware",
+          "RAT",
+          "Ransomware",
+          "RMM Abuse",
+          "Hacking Tool",
+          "Lateral Movement"
+        ],
+        "series": [
+          {
+            "name": "Share of incidents (%)",
+            "values": [
+              24,
+              22,
+              17,
+              13,
+              9.5,
+              6.5,
+              4,
+              4
+            ],
+            "color": "#1F8FFF"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "huntress-cyber-threat-report-2025-industries-targeted",
+      "title": "Industries targeted in 2024",
+      "description": "Education (21%) and Healthcare (17%) were the most targeted industries, making up 38% of all incidents. Technology, Government, and Manufacturing each saw double-digit shares.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Education",
+        "Healthcare",
+        "Technology",
+        "Government",
+        "Manufacturing"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "infostealer"
+      ],
+      "tags": [
+        "industry-breakdown",
+        "verticals"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attack Breakdown By Industry (Figure 2)",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Education",
+          "Healthcare",
+          "Technology",
+          "Government",
+          "Manufacturing",
+          "Other"
+        ],
+        "series": [
+          {
+            "name": "Share of incidents (%)",
+            "values": [
+              21,
+              17,
+              12,
+              11,
+              9,
+              30
+            ],
+            "color": "#1F8FFF"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "huntress-cyber-threat-report-2025-healthcare-threats",
+      "title": "Threats targeting healthcare",
+      "description": "Healthcare environments faced malicious scripts (22%) as their top risk, followed by infostealers (19%) and malware (16%). Java-based RATs like JRat/Adwind and STRRAT were notably prevalent in this sector.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Healthcare"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "infostealer",
+        "ransomware"
+      ],
+      "tags": [
+        "healthcare",
+        "gootloader",
+        "socgholish",
+        "jrat"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Healthcare Sector Threats (Figure 4)",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Malicious Script",
+          "Infostealer",
+          "Malware",
+          "Other",
+          "RMM Abuse",
+          "Ransomware",
+          "RAT",
+          "Hacking Tool",
+          "Lateral Movement"
+        ],
+        "series": [
+          {
+            "name": "Share of healthcare incidents (%)",
+            "values": [
+              22,
+              19,
+              16,
+              11,
+              9,
+              8,
+              7,
+              4,
+              4
+            ],
+            "color": "#1F8FFF"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "huntress-cyber-threat-report-2025-ttr-by-group",
+      "title": "Average time-to-ransom by group (hours)",
+      "description": "Rapid (43.42h) and Sodinokibi (38.46h) were the slowest; Play (4.22h), Dharma/Crysis (4.44h), and Akira (6.10h) the fastest. Smash-and-grab groups deploy ransomware within hours of initial access.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "time-to-ransom",
+        "ttr",
+        "dwell-time"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Time-To-Ransom (TTR) Measurement (Figure 13)",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "hours",
+      "dataset": {
+        "labels": [
+          "Rapid",
+          "Sodinokibi",
+          "Phobos",
+          "Cl0p",
+          "MedusaLocker",
+          "CryptoWall",
+          "LockBit",
+          "Conti",
+          "Black Basta",
+          "Maze",
+          "INC/Lynx",
+          "RansomHub",
+          "Akira",
+          "Dharma/Crysis",
+          "Play"
+        ],
+        "series": [
+          {
+            "name": "TTR (hours)",
+            "values": [
+              43.42,
+              38.46,
+              34.67,
+              22.18,
+              20.74,
+              18.86,
+              18.27,
+              17.86,
+              16.2,
+              8.76,
+              7.73,
+              6.44,
+              6.1,
+              4.44,
+              4.22
+            ],
+            "color": "#1F8FFF"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "huntress-cyber-threat-report-2025-hacking-tools",
+      "title": "Most used hacking tools in 2024",
+      "description": "Cobalt Strike (31.7%) remains the dominant hacking tool, followed by Mimikatz (17.6%) and Sysinternals abuse (17.1%). Advanced IP Scanner and Metasploit round out the top five.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "cobalt-strike",
+        "mimikatz",
+        "sysinternals",
+        "hacking-tools"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Hacking Tools (Figure 17)",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Cobalt Strike",
+          "Mimikatz",
+          "Sysinternals",
+          "Advanced IP Scanner",
+          "Metasploit",
+          "Hack Tool, Other",
+          "PowerSploit",
+          "Atomic Red Team",
+          "Network Scanner, Other",
+          "Empire",
+          "Bloodhound"
+        ],
+        "series": [
+          {
+            "name": "Share (%)",
+            "values": [
+              31.7,
+              17.6,
+              17.1,
+              10,
+              7.9,
+              6.1,
+              2.7,
+              2.6,
+              2.4,
+              2.3,
+              1.1
+            ],
+            "color": "#1F8FFF"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "huntress-cyber-threat-report-2025-remote-access-methods",
+      "title": "Most common remote access methods",
+      "description": "Generic RATs (42.7%) and ScreenConnect (12.3%) dominated remote access methods in 2024. Three named RAT families (AsyncRAT, NetSupport, Jupyter) collectively accounted for nearly 25%.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "remote-access",
+        "rat",
+        "asyncrat",
+        "netsupport",
+        "jupyter"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attacker Tools and Techniques (Figure 16)",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Generic RAT",
+          "ScreenConnect",
+          "NetSupport RAT",
+          "AsyncRAT",
+          "Jupyter RAT",
+          "Trickbot RAT",
+          "Generic RMM",
+          "Cobalt Strike",
+          "Hacktool Generic",
+          "Meterpreter",
+          "SSH"
+        ],
+        "series": [
+          {
+            "name": "Share (%)",
+            "values": [
+              42.7,
+              12.3,
+              9.5,
+              8.4,
+              6.7,
+              6.7,
+              2.9,
+              2.5,
+              1.6,
+              1.3,
+              1.1
+            ],
+            "color": "#1F8FFF"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "huntress-cyber-threat-report-2025-rmm-abuse",
+      "title": "Top abused RMM and remote tools",
+      "description": "ConnectWise ScreenConnect dominated RMM abuse with 74.5% of incidents. RDP (14.6%), LogMeIn (4.7%), and TeamViewer (4.4%) made up the bulk of the remainder.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "vulnerability"
+      ],
+      "tags": [
+        "rmm",
+        "screenconnect",
+        "teamviewer",
+        "logmein",
+        "rdp"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "RMM Abuse (Figure 19)",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "ConnectWise (ScreenConnect)",
+          "RDP",
+          "LogMeIn",
+          "TeamViewer",
+          "Atera",
+          "VNC",
+          "NinjaRMM"
+        ],
+        "series": [
+          {
+            "name": "Share (%)",
+            "values": [
+              74.5,
+              14.6,
+              4.7,
+              4.4,
+              0.7,
+              0.6,
+              0.4
+            ],
+            "color": "#1F8FFF"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "huntress-cyber-threat-report-2025-exploitation",
+      "title": "Most witnessed CVE exploitation",
+      "description": "ScreenConnect (60.1%) led traditional exploitation in 2024, followed by CrushFTP (42.7%) and Microsoft Exchange (30.1%). BYOVD driver exploitation reached 14.6%, signaling its mainstreaming.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "cve",
+        "screenconnect",
+        "crushftp",
+        "proxyshell",
+        "byovd"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Exploit-Driven Campaigns in 2024 (Figure 20)",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "ScreenConnect",
+          "CrushFTP",
+          "Microsoft Exchange",
+          "BYOVD Exploits",
+          "Forticlient EMS Injection",
+          "Netlogon MS-NRPC",
+          "ACLs Priv ESC",
+          "PrintNightmare",
+          "DoublePulsar SMB",
+          "Zoho ManageEngine"
+        ],
+        "series": [
+          {
+            "name": "Share (%)",
+            "values": [
+              60.1,
+              42.7,
+              30.1,
+              14.6,
+              3.8,
+              2.4,
+              1.4,
+              1.4,
+              0.9,
+              0.9
+            ],
+            "color": "#1F8FFF"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "huntress-cyber-threat-report-2025-mitre-phases",
+      "title": "MITRE ATT&CK phase where Huntress detected attackers",
+      "description": "Huntress catches attackers most often at Execution (65.5%), followed by Persistence (15.5%) and Defense Evasion (8.6%). This shapes the layered detection strategy across endpoints.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Detection",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "mitre-attack",
+        "detection-phase",
+        "execution",
+        "persistence"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "MITRE ATT&CK Phases (Figure 26)",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Execution",
+          "Persistence",
+          "Defense Evasion",
+          "Lateral Movement",
+          "Privilege Elevation",
+          "Credential Access"
+        ],
+        "series": [
+          {
+            "name": "Share of detections (%)",
+            "values": [
+              65.5,
+              15.5,
+              8.6,
+              5.2,
+              2.9,
+              2.3
+            ],
+            "color": "#1F8FFF"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "huntress-cyber-threat-report-2025-scripting-abuse",
+      "title": "Scripting language abuse in 2024",
+      "description": "PowerShell dominated scripting abuse at 45% of incidents, with JavaScript (15.6%) and batch files (14.7%) far behind. Legacy languages MSHTA, WMI, and WScript combined for just 8.4%.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Detection",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "powershell",
+        "javascript",
+        "scripting",
+        "lolbins"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Scripting Abuse (Figure 27)",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "PowerShell",
+          "JavaScript",
+          "Batch File",
+          "VB Script",
+          "Python",
+          "WMI",
+          "MSHTA",
+          "WScript",
+          "Java",
+          "MSIX",
+          "PHP"
+        ],
+        "series": [
+          {
+            "name": "Share (%)",
+            "values": [
+              45,
+              15.6,
+              14.7,
+              6.3,
+              3.9,
+              3,
+              2.9,
+              2.5,
+              2.5,
+              1.5,
+              1.3
+            ],
+            "color": "#1F8FFF"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "huntress-cyber-threat-report-2025-itdr-incidents",
+      "title": "Identity threat (ITDR) incident frequency",
+      "description": "Microsoft 365 attacks dominated identity threats in 2024 — VPN rule violations (30.3%) and inbox rule modifications (25.4%) led, with credential theft (8%), token theft (5.4%), and AitM attempts (1.9%) rounding out the picture.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "infostealer"
+      ],
+      "tags": [
+        "itdr",
+        "m365",
+        "token-theft",
+        "aitm",
+        "vpn-abuse"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Identity Threats (Figure 42)",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "VPN Rule Violation",
+          "Inbox Rule Modification",
+          "Location Rule Violation",
+          "Suspicious Browser Data",
+          "Credential Theft",
+          "Token Theft",
+          "Malicious Application Deployment",
+          "Attacker-in-the-Middle Attempt"
+        ],
+        "series": [
+          {
+            "name": "Share (%)",
+            "values": [
+              30.3,
+              25.4,
+              15.1,
+              9.2,
+              8,
+              5.4,
+              4.8,
+              1.9
+            ],
+            "color": "#1F8FFF"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "huntress-cyber-threat-report-2025-vpn-abuse",
+      "title": "VPN and proxy services abused by attackers",
+      "description": "NordVPN topped attacker-favored VPN abuse at 20% in 2024, while SurfEasy and ExpressVPN combined for 23%. TOR was abused less than 2% — a sharp decline from its prior staple-tool status.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "vpn-abuse",
+        "nordvpn",
+        "expressvpn",
+        "tor",
+        "proxy"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "VPN and Proxy Abuse (Figure 46)",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "NordVPN",
+          "SurfEasy VPN",
+          "ExpressVPN",
+          "TunnelBear",
+          "HMA VPN",
+          "Surfshark VPN",
+          "PIA VPN",
+          "Meson Network VPN",
+          "Proton VPN",
+          "Touch VPN",
+          "IPRoyal VPN",
+          "VPN Super Free",
+          "Mullvad VPN",
+          "TOR",
+          "Lantern VPN"
+        ],
+        "series": [
+          {
+            "name": "Share (%)",
+            "values": [
+              20,
+              11.8,
+              11.8,
+              7.5,
+              5.8,
+              4.7,
+              4.6,
+              3.9,
+              3.3,
+              2.9,
+              2.9,
+              1.7,
+              1.5,
+              1.4,
+              1.2
+            ],
+            "color": "#1F8FFF"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "huntress-cyber-threat-report-2025-phishing-themes",
+      "title": "Most prevalent phishing themes",
+      "description": "E-signature impersonation (28.8%) and image-based content (23.9%) led 2024 phishing themes. QR-code phishing (quishing) made up 8.1% but is forecast to escalate in 2025.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "e-signature",
+        "docusign",
+        "qr-code",
+        "voicemail-lure",
+        "lots",
+        "quishing"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Phishing Activity in 2024 (Figure 47)",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "e-Signature Impersonation",
+          "Image-Based Content",
+          "QR Codes",
+          "Living Off Trusted Sites",
+          "Voicemail Lures",
+          "Financial Docs",
+          "Fake Thread/Reply Chains",
+          "Other"
+        ],
+        "series": [
+          {
+            "name": "Share (%)",
+            "values": [
+              28.8,
+              23.9,
+              8.1,
+              7,
+              4.9,
+              4.2,
+              2.1,
+              21.1
+            ],
+            "color": "#1F8FFF"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "stat",
+      "id": "huntress-cyber-threat-report-2025-lockbit-monthly",
+      "title": "LockBit activity collapsed after February 2024 takedown",
+      "description": "87% of 2024's LockBit activity occurred between February 17 and March 1, after Operation Cronos disrupted the group. LockBit then shifted focus to enterprise targets, leaving SMB activity to splinter groups like RansomHub.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "lockbit",
+        "operation-cronos",
+        "takedown",
+        "monthly-trend",
+        "spark-from-12"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "ScreenConnect Exploitation (Figure 24)",
+      "comparison": null,
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "sparkline",
+      "value": "87% in Feb-Mar",
+      "spark": [
+        5,
+        30,
+        6,
+        4,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "huntress-cyber-threat-report-2025-hok-utc",
+      "title": "Attackers most active 12:00-20:00 UTC",
+      "description": "Hands-on-keyboard activity peaked between 12:00 UTC and 20:00 UTC, mapping closely to US East Coast business hours. Attackers likely operate during these windows to blend with normal activity or remain on active devices.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "hands-on-keyboard",
+        "operating-hours",
+        "utc",
+        "spark-from-20"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Operational Timeframes (Figure 41)",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "sparkline",
+      "value": "12-20 UTC",
+      "spark": [
+        1,
+        3,
+        7,
+        11,
+        5,
+        2
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "huntress-cyber-threat-report-2025-rat-remote-access",
+      "title": "RATs drove 75% of remote access incidents",
+      "description": "Remote Access Trojans maintained their top spot for remote access delivery in 2024. AsyncRAT, NetSupport RAT, and Jupyter dominated the landscape, with three RATs accounting for one-third of all RAT types observed.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "rat",
+        "asyncrat",
+        "netsupport",
+        "jupyter",
+        "remote-access"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Attacker Tools and Techniques / Remote Access Trojans",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "75%"
+    },
+    {
+      "type": "stat",
+      "id": "huntress-cyber-threat-report-2025-top3-ransomware",
+      "title": "Top 3 ransomware groups drove 54% of incidents",
+      "description": "RansomHub, Lynx (formerly Inc), and Akira collectively accounted for 54% of Huntress's ransomware incidents in 2024. All three target SMBs and offer high affiliate payouts, often 80-90% of ransom paid.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ransomhub",
+        "lynx",
+        "akira",
+        "affiliates"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Ransomware In 2024",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "54%"
+    },
+    {
+      "type": "stat",
+      "id": "huntress-cyber-threat-report-2025-screenconnect-abuse",
+      "title": "ConnectWise ScreenConnect abused in 74.5% of RMM incidents",
+      "description": "ConnectWise ScreenConnect was the most abused remote access tool in 2024, accounting for nearly three out of four RMM-abuse incidents. The February SlashAndGrab campaign (CVE-2024-1709/1708) was the largest driver.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "supply_chain"
+      ],
+      "tags": [
+        "screenconnect",
+        "rmm",
+        "cve-2024-1709",
+        "slashandgrab"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "RMM Abuse",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "74.5%"
+    },
+    {
+      "type": "stat",
+      "id": "huntress-cyber-threat-report-2025-execution-phase",
+      "title": "65.5% of Huntress detections occurred at execution phase",
+      "description": "Huntress's strongest catch point in 2024 was the MITRE ATT&CK Execution tactic (TA0002), where attackers had to run their payload. Persistence (15.5%) and Defense Evasion (8.6%) followed.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Detection",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "mitre-attack",
+        "execution",
+        "detection-phase"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "MITRE ATT&CK Phases",
+      "comparison": null,
+      "trend": "flat",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "65.5%"
+    },
+    {
+      "type": "stat",
+      "id": "huntress-cyber-threat-report-2025-byovd-priv-esc",
+      "title": "90.5% of BYOVD use went to privilege elevation",
+      "description": "When attackers brought their own vulnerable drivers (BYOVD) in 2024, over 90% used them to elevate privileges to ring 0 rather than to tamper with EDR. Huntress attributes this to less-sophisticated EDR in non-enterprise environments.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Detection",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "byovd",
+        "privilege-escalation",
+        "edr-tampering",
+        "truesight"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Security Bypasses",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "90.5%"
+    },
+    {
+      "type": "stat",
+      "id": "huntress-cyber-threat-report-2025-lockbit-screenconnect",
+      "title": "LockBit drove 87.1% of ScreenConnect campaign payloads",
+      "description": "During the February 2024 SlashAndGrab campaign exploiting CVE-2024-1709, LockBit was the dominant payload at 87.1% of attempted deliveries. Dridex, WinZip PUP, Emotet, Trickbot, and miners made up the rest.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "vulnerability"
+      ],
+      "tags": [
+        "lockbit",
+        "screenconnect",
+        "slashandgrab",
+        "cve-2024-1709"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "ScreenConnect Exploitation (Figure 23)",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "87.1%"
+    },
+    {
+      "type": "stat",
+      "id": "huntress-cyber-threat-report-2025-token-price",
+      "title": "Stolen browser tokens sell for under $10",
+      "description": "Infostealers harvest browser, location, VPN, and OS metadata; brokers then sell complete victim sessions for less than $10 per individual, letting attackers mimic legitimate logins and bypass MFA.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer",
+        "logs_on_sale"
+      ],
+      "tags": [
+        "token-theft",
+        "data-brokers",
+        "dark-web",
+        "mfa-bypass"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Token Theft",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "<$10"
+    },
+    {
+      "type": "stat",
+      "id": "huntress-cyber-threat-report-2025-chromeloader-edu",
+      "title": "Chromeloader = ~70% of education infostealers",
+      "description": "ChromeLoader dominated the education sector, accounting for nearly 70% of all infostealer activity across Huntress's education partner environments in 2024.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Education"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "chromeloader",
+        "education",
+        "infostealer"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Education Sector Threats",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "~70%"
+    },
+    {
+      "type": "stat",
+      "id": "huntress-cyber-threat-report-2025-rmm-share",
+      "title": "RMM abuse = 17.3% of remote access methods",
+      "description": "Remote monitoring and management (RMM) abuse made up 17.3% of all remote access methods in 2024, making it the second-most common technique after RAT-based access. ScreenConnect drove most of the volume.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "vulnerability"
+      ],
+      "tags": [
+        "rmm",
+        "remote-access",
+        "screenconnect"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "RMM Abuse",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "17.3%"
+    },
+    {
+      "type": "stat",
+      "id": "huntress-cyber-threat-report-2025-avg-ttr",
+      "title": "Average time-to-ransom is nearly 17 hours",
+      "description": "Across investigated incidents, Huntress measured an average time-to-ransom (TTR) of 16.88 hours from initial access to ransomware deployment. Some groups like Play, Dharma/Crysis, and Akira deploy ransomware in around six hours.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "time-to-ransom",
+        "ttr",
+        "dwell-time"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Time-To-Ransom (TTR) Measurement",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "hours",
+      "card_style": "number",
+      "value": "16.88 hours"
+    },
+    {
+      "type": "stat",
+      "id": "huntress-cyber-threat-report-2025-avg-actions-pre-ransom",
+      "title": "18 malicious actions on average before ransomware",
+      "description": "Ransomware groups performed an average of 18 identifiable malicious actions in the 48 hours before deploying ransomware. Extortion-focused groups like Phobos performed up to 37 actions, while smash-and-grab groups like Play averaged only 8.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "pre-ransom",
+        "kill-chain",
+        "reconnaissance"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Activity Before Ransom",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "18"
+    },
+    {
+      "type": "stat",
+      "id": "huntress-cyber-threat-report-2025-endpoints-protected",
+      "title": "Huntress protects 3M endpoints and 1M identities",
+      "description": "Huntress's 2025 report draws on telemetry from over 3 million endpoints and 1 million identities worldwide, monitored by a 24/7 team of security analysts and researchers.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Other",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "telemetry",
+        "scope",
+        "methodology"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "About Huntress",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "3M endpoints"
+    },
+    {
+      "type": "stat",
+      "id": "huntress-cyber-threat-report-2025-exec-quote",
+      "title": "Sophistication gap has all but disappeared",
+      "description": "Huntress's executive summary highlights how attackers are standardizing enterprise-grade tradecraft across businesses of all sizes. Advanced techniques like BYOVD, defense tampering, and UAC bypasses have become the norm even against SMBs.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "infostealer"
+      ],
+      "tags": [
+        "smb",
+        "byovd",
+        "uac-bypass",
+        "executive-summary"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Executive Summary",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"The gap between sophistication in attacks on large enterprises and smaller businesses has narrowed—in fact, it's all but disappeared.\""
+    },
+    {
+      "type": "stat",
+      "id": "huntress-cyber-threat-report-2025-bianlian-quote",
+      "title": "Ransomware pivots from encryption to extortion",
+      "description": "Huntress flags a strategic shift among ransomware operators away from file encryption toward pure data theft and extortion — a cost-saving move as encryption defenses mature and DLP lags behind.",
+      "source": "Huntress",
+      "source_short": "Huntress",
+      "color": "#1F8FFF",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "bianlian",
+        "extortion",
+        "data-theft",
+        "dlp"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "The 2024 Threat Landscape",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Attackers are becoming more aware of these circumstances and are opting to steal data and hold it for ransom.\""
+    }
+  ]
+}

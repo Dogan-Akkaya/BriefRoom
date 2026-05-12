@@ -1,0 +1,1344 @@
+{
+  "source": "Red Canary",
+  "source_short": "Red Canary",
+  "year": 2026,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/red-canary-threat-detection-report-2026.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.979Z. Curated top 10 of 27 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-red-canary-threat-detection-report-2026",
+      "title": "2026 Threat Detection Report",
+      "year": 2026,
+      "category": "eCrime",
+      "color": "#CC2A36",
+      "description": "Red Canary ranks the most prevalent MITRE ATT&CK techniques observed across its customer base in 2025. Cloud Accounts overtook traditional endpoint techniques, while PowerShell and Windows Command Shell remain core adversary tooling.",
+      "external_url": "https://redcanary.com/threat-detection-report/",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "Cloud Accounts",
+          "PowerShell",
+          "Windows Command Shell",
+          "Data From Cloud Storage",
+          "Ingress Tool Transfer",
+          "Email Forwarding Rule",
+          "WMI",
+          "Malicious Copy and Paste",
+          "Email Hiding Rules",
+          "Obfuscated Files"
+        ],
+        "series": [
+          {
+            "name": "Rank (inverted for chart)",
+            "values": [
+              10,
+              9,
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1
+            ],
+            "color": "#CC2A36"
+          }
+        ]
+      },
+      "industry": [
+        "Technology",
+        "Government"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability",
+        "data_leaks",
+        "infostealer"
+      ],
+      "tags": [
+        "external-report",
+        "mitre-attack",
+        "top-techniques",
+        "ranking",
+        "customer-impact",
+        "cloud-accounts",
+        "powershell",
+        "top-threats",
+        "identity-attacks",
+        "detection-share",
+        "endpoint",
+        "threat-counts",
+        "extortion",
+        "exfiltration",
+        "lapsus",
+        "cl0p",
+        "bianlian",
+        "hunters",
+        "cve",
+        "sonicwall",
+        "veeam",
+        "akira",
+        "kev",
+        "macos",
+        "atomic-stealer",
+        "odyssey",
+        "macsync",
+        "phexia",
+        "digitstealer",
+        "mfa-bypass",
+        "consent-phishing",
+        "device-code-phishing",
+        "sap-netweaver",
+        "wsus",
+        "sharepoint",
+        "exploitation"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2026-03-01",
+      "report_meta": {
+        "report_id": "red-canary-threat-detection-report-2026",
+        "organization_id": "red-canary",
+        "publication_date": "2026-03-01",
+        "extracted_on": "2026-05-11",
+        "source_url": "https://redcanary.com/threat-detection-report/",
+        "card_count_total": 27,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "red-canary-threat-detection-report-2026-top10-techniques-chart"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "red-canary-threat-detection-report-2026-top10-techniques-chart",
+      "title": "Top 10 ATT&CK techniques detected",
+      "description": "Red Canary ranks the most prevalent MITRE ATT&CK techniques observed across its customer base in 2025. Cloud Accounts overtook traditional endpoint techniques, while PowerShell and Windows Command Shell remain core adversary tooling.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "mitre-attack",
+        "top-techniques",
+        "ranking"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top 10 Techniques",
+      "comparison": "ranked",
+      "trend": "unknown",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Cloud Accounts",
+          "PowerShell",
+          "Windows Command Shell",
+          "Data From Cloud Storage",
+          "Ingress Tool Transfer",
+          "Email Forwarding Rule",
+          "WMI",
+          "Malicious Copy and Paste",
+          "Email Hiding Rules",
+          "Obfuscated Files"
+        ],
+        "series": [
+          {
+            "name": "Rank (inverted for chart)",
+            "values": [
+              10,
+              9,
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1
+            ],
+            "color": "#CC2A36"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "red-canary-threat-detection-report-2026-techniques-customer-share",
+      "title": "Customer impact of top techniques",
+      "description": "Percentage of Red Canary customers affected by the two leading ATT&CK techniques in 2025. Cloud Accounts (T1078.004) hit 21% of customers, while PowerShell (T1059.001) affected 19.6%.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "Detection",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "mitre-attack",
+        "customer-impact",
+        "cloud-accounts",
+        "powershell"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top 10 Techniques",
+      "comparison": "across customers",
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Cloud Accounts",
+          "PowerShell"
+        ],
+        "series": [
+          {
+            "name": "% customers affected",
+            "values": [
+              21,
+              19.6
+            ],
+            "color": "#CC2A36"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "red-canary-threat-detection-report-2026-top10-threats-chart",
+      "title": "Top 10 threats by prevalence",
+      "description": "Red Canary's ten most prevalent threats in 2025 customer environments. Activity clusters Amber Albatross, JustAskJacky, and Tampered Chef topped the list, while stealers LummaC2 (rank 5) and Rhadamanthys (rank 10) continued to dominate the eCrime ecosystem.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "top-threats",
+        "ranking"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top 10 Threats",
+      "comparison": "ranked",
+      "trend": "unknown",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Amber Albatross",
+          "JustAskJacky",
+          "Tampered Chef",
+          "NetSupport Manager",
+          "LummaC2",
+          "Scarlet Goldfinch",
+          "KongTuke",
+          "SocGholish",
+          "MintsLoader",
+          "Rhadamanthys"
+        ],
+        "series": [
+          {
+            "name": "Rank (inverted)",
+            "values": [
+              10,
+              9,
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1
+            ],
+            "color": "#CC2A36"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "red-canary-threat-detection-report-2026-cloud-vs-endpoint",
+      "title": "Identity vs endpoint detection share",
+      "description": "Identity-based detections (53%) overtook endpoint detections (estimated 47%) in 2025 for the first time in Red Canary's history, signaling a structural shift in where defenders must focus their resources.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "identity-attacks",
+        "detection-share",
+        "endpoint"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Trends - Identity attacks",
+      "comparison": "identity vs endpoint",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Identity-based",
+          "Endpoint & other"
+        ],
+        "series": [
+          {
+            "name": "Share of detections",
+            "values": [
+              53,
+              47
+            ],
+            "color": "#CC2A36"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "red-canary-threat-detection-report-2026-technique-threat-counts",
+      "title": "Detected threat volume for top techniques",
+      "description": "Raw count of confirmed threats associated with each top technique. Cloud Accounts generated 2,480 confirmed threats — more than double PowerShell's 1,054 — reflecting the rapid pivot of adversaries to cloud-native tradecraft.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "mitre-attack",
+        "threat-counts"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top 10 Techniques",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Cloud Accounts (T1078.004)",
+          "PowerShell (T1059.001)"
+        ],
+        "series": [
+          {
+            "name": "Threats detected",
+            "values": [
+              2480,
+              1054
+            ],
+            "color": "#CC2A36"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "red-canary-threat-detection-report-2026-ransomware-groups",
+      "title": "Exfiltration-only extortion groups",
+      "description": "Threat groups abandoning encryption entirely in favor of pure data-theft extortion. These groups rely on living-off-the-land techniques to steal data and threaten public disclosure, reducing operational complexity.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware",
+        "data_leaks"
+      ],
+      "tags": [
+        "extortion",
+        "exfiltration",
+        "lapsus",
+        "cl0p",
+        "bianlian",
+        "hunters"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Trends - Ransomware",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Lapsus$",
+          "Cl0p",
+          "Hunters",
+          "BianLian"
+        ],
+        "series": [
+          {
+            "name": "Exfiltration-only groups",
+            "values": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "color": "#CC2A36"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "red-canary-threat-detection-report-2026-ransomware-cves",
+      "title": "Key CVEs exploited by ransomware actors",
+      "description": "Red Canary tracked three high-impact CVEs leveraged by ransomware affiliates in 2025: a SonicWall VPN flaw exploited by Akira nearly a year after patches were available, and two Veeam vulnerabilities used for initial access and privilege escalation.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "ransomware"
+      ],
+      "tags": [
+        "cve",
+        "sonicwall",
+        "veeam",
+        "akira",
+        "kev"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Trends - Ransomware",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "CVE-2024-40766 (SonicWall)",
+          "CVE-2023-27532 (Veeam)",
+          "CVE-2024-40711 (Veeam)"
+        ],
+        "series": [
+          {
+            "name": "Notable ransomware CVEs",
+            "values": [
+              1,
+              1,
+              1
+            ],
+            "color": "#CC2A36"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "red-canary-threat-detection-report-2026-mac-stealers-chart",
+      "title": "macOS stealer families ranked",
+      "description": "Relative prevalence of macOS stealer families in 2025. Atomic Stealer led throughout the year, followed by Odyssey (rebranded from Poseidon). MacSync and Phexia emerged late in 2025, with DigitStealer as the least-distributed newcomer.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "eCrime",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "macos",
+        "atomic-stealer",
+        "odyssey",
+        "macsync",
+        "phexia",
+        "digitstealer"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Trends - Mac malware",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Atomic",
+          "Odyssey",
+          "MacSync",
+          "Phexia",
+          "DigitStealer"
+        ],
+        "series": [
+          {
+            "name": "Relative prevalence (1-5)",
+            "values": [
+              5,
+              4,
+              4,
+              2,
+              1
+            ],
+            "color": "#CC2A36"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "red-canary-threat-detection-report-2026-identity-vectors",
+      "title": "Primary identity attack vectors",
+      "description": "Red Canary identifies six dominant identity attack categories observed in 2025. Infostealers and credential exposure feed downstream brute-force and consent-phishing campaigns, while MFA bypass tactics including AitM kits and MFA fatigue are growing fastest.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "infostealer"
+      ],
+      "tags": [
+        "identity-attacks",
+        "mfa-bypass",
+        "consent-phishing",
+        "device-code-phishing"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Trends - Identity attacks",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Infostealers",
+          "Credential Exposure",
+          "Device Code Phishing",
+          "Consent Phishing",
+          "Brute Force",
+          "MFA Bypass"
+        ],
+        "series": [
+          {
+            "name": "Identity attack vectors (qualitative ranking)",
+            "values": [
+              6,
+              5,
+              4,
+              4,
+              3,
+              5
+            ],
+            "color": "#CC2A36"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "red-canary-threat-detection-report-2026-vulns-tracked",
+      "title": "Notable vulnerable software in 2025",
+      "description": "Software ecosystems Red Canary specifically tracked during 2025 due to exploited vulnerabilities: SAP NetWeaver, Microsoft Windows Server Update Services (WSUS), and SharePoint. All three saw active exploitation by financially motivated and state-aligned actors.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology",
+        "Government"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "sap-netweaver",
+        "wsus",
+        "sharepoint",
+        "exploitation"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Trends - Vulnerabilities",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "SAP NetWeaver",
+          "Windows Server Update Services",
+          "SharePoint"
+        ],
+        "series": [
+          {
+            "name": "Tracked vulnerable platforms",
+            "values": [
+              1,
+              1,
+              1
+            ],
+            "color": "#CC2A36"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "red-canary-threat-detection-report-2026-malvertising-cluster",
+      "title": "Charcoal Stork malvertising cluster",
+      "description": "Charcoal Stork emerged as a prevalent malvertising threat, delivering payloads more serious than typical adware. Red Canary linked it to related malware ChromeLoader and SmashJacker, which together formed an interconnected malvertising ecosystem.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "eCrime",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "charcoal-stork",
+        "chromeloader",
+        "smashjacker",
+        "malvertising"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Key Findings",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "dataset": {
+        "labels": [
+          "Charcoal Stork",
+          "ChromeLoader",
+          "SmashJacker"
+        ],
+        "series": [
+          {
+            "name": "Malvertising cluster",
+            "values": [
+              1,
+              1,
+              1
+            ],
+            "color": "#CC2A36"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "red-canary-threat-detection-report-2026-ransomware-victims",
+      "title": "Ransomware victims up 33%",
+      "description": "2025 saw approximately 33% more ransomware victims than 2023 and 2024, with a near-identical jump in active ransomware groups. Operators shifted from high-value targeting to a higher-volume strategy as payment rates fell.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [
+        "Healthcare",
+        "Manufacturing",
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ransomware",
+        "victim-count",
+        "volume-strategy",
+        "spark-from-8"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Trends - Ransomware",
+      "comparison": "vs 2023-2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "sparkline",
+      "value": "+33%",
+      "spark": [
+        75,
+        75,
+        82,
+        85,
+        95,
+        100
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "red-canary-threat-detection-report-2026-cloud-accounts-rank",
+      "title": "Cloud Accounts climbs to #1 technique",
+      "description": "Cloud Accounts (T1078.004) now ranks #1 in Red Canary's top 10 ATT&CK techniques, affecting 21% of customers with 2,480 detected threats. Detection volume increased 16-fold year over year as adversaries find it easier to log in than hack in.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "Cloud Security",
+      "industry": [
+        "Technology",
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "cloud-accounts",
+        "t1078-004",
+        "mitre-attack",
+        "spark-from-8"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top 10 Techniques",
+      "comparison": "vs prior year",
+      "trend": "increasing",
+      "value_unit": "multiplier",
+      "card_style": "sparkline",
+      "value": "16x growth",
+      "spark": [
+        1,
+        1,
+        3,
+        5,
+        14,
+        16
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "red-canary-threat-detection-report-2026-identity-yoy",
+      "title": "Identity threat detections YoY increase",
+      "description": "Identity threat detections grew 850 percent from 2024 to 2025, becoming Red Canary's fastest-growing detection category. Infostealers, device code phishing, consent phishing, and MFA bypass drove the surge.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "infostealer"
+      ],
+      "tags": [
+        "identity-attacks",
+        "year-over-year"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Trends - Identity attacks",
+      "comparison": "vs 2024",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+850% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "red-canary-threat-detection-report-2026-identity-share",
+      "title": "Identity share of total detections",
+      "description": "Identity-based threats accounted for 53% of overall detection volume in 2025, overtaking endpoint detections by a significant margin for the first time in Red Canary's reporting history.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "identity-attacks",
+        "detection-share"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Trends - Identity attacks",
+      "comparison": "vs endpoint detections",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "53%"
+    },
+    {
+      "type": "stat",
+      "id": "red-canary-threat-detection-report-2026-cloud-accounts-customers",
+      "title": "Customers affected by Cloud Accounts abuse",
+      "description": "21% of Red Canary customers experienced threats involving Cloud Accounts (T1078.004) abuse in 2025. Most detections occurred at login, with adversaries authenticating from unusual VPNs, geographies, ASNs, or devices.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "Cloud Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "cloud-accounts",
+        "t1078-004",
+        "customer-impact"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top 10 Techniques - Cloud Accounts",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "21%"
+    },
+    {
+      "type": "stat",
+      "id": "red-canary-threat-detection-report-2026-amber-albatross",
+      "title": "Amber Albatross #1 threat of 2025",
+      "description": "Amber Albatross was the most prevalent threat in Red Canary's 2025 telemetry, affecting 11.1% of customers. A Pyarmor-obfuscated PyInstaller payload masquerades as PDF utilities and PUPs like PC App Store, then performs reconnaissance and browser credential theft.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "eCrime",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "amber-albatross",
+        "pyinstaller",
+        "pyarmor",
+        "pup"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top 10 Threats - Amber Albatross",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "11.1%"
+    },
+    {
+      "type": "stat",
+      "id": "red-canary-threat-detection-report-2026-lummac2-customers",
+      "title": "LummaC2 reach before takedown",
+      "description": "LummaC2 (Lumma Stealer) affected 3.7% of Red Canary customers in 2025, ranking #5 among top threats. After Operation Endgame's May 2025 infrastructure takedown, activity dropped sharply with no detections after October 2025.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "eCrime",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "lummac2",
+        "lumma-stealer",
+        "operation-endgame",
+        "maas"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top 10 Threats - LummaC2",
+      "comparison": null,
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "3.7%"
+    },
+    {
+      "type": "stat",
+      "id": "red-canary-threat-detection-report-2026-lummac2-price",
+      "title": "LummaC2 source-code price",
+      "description": "LummaC2 subscriptions started at $250 per month for the malware-as-a-service tier, with full source code available for a one-time payment of $20,000 USD before its May 2025 takedown.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "Dark Web",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "lummac2",
+        "maas",
+        "pricing",
+        "underground-market"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top 10 Threats - LummaC2",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$20K"
+    },
+    {
+      "type": "stat",
+      "id": "red-canary-threat-detection-report-2026-threats-analyzed",
+      "title": "Threats analyzed in 2025",
+      "description": "Red Canary's 2026 Threat Detection Report analyzed approximately 110,000 confirmed threats detected across 1,000+ customer environments throughout the past year. Each threat bypassed existing security controls.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "Detection",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "mdr",
+        "detection-volume",
+        "telemetry"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Overview",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "110K+"
+    },
+    {
+      "type": "stat",
+      "id": "red-canary-threat-detection-report-2026-identity-surge-quote",
+      "title": "Identity threats now majority of detections",
+      "description": "Identity-based threats have overtaken endpoint detections in Red Canary's telemetry, signaling a fundamental shift in adversary tradecraft toward credential abuse and cloud account compromise.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "infostealer"
+      ],
+      "tags": [
+        "identity-attacks",
+        "credential-theft",
+        "mfa-bypass"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Trends - Identity attacks",
+      "comparison": "vs 2024",
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Identity-based threats now account for more than half of our total confirmed threats, following an 850 percent increase in identity threat detections year-over-year.\""
+    },
+    {
+      "type": "stat",
+      "id": "red-canary-threat-detection-report-2026-ransomware-quote",
+      "title": "Ransomware payout demands rising",
+      "description": "Red Canary highlights that despite falling payment rates, ransomware operators continue to drive payout demands higher year over year — sustaining the criminal economy through volume and exfiltration-only extortion.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "Ransomware",
+      "industry": [
+        "Healthcare",
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "ransomware"
+      ],
+      "tags": [
+        "ransomware",
+        "extortion",
+        "payout"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Trends - Ransomware",
+      "comparison": "year-over-year",
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Ransomware continues to surge year-over-year, and payout demands are only getting higher.\""
+    },
+    {
+      "type": "stat",
+      "id": "red-canary-threat-detection-report-2026-customer-base",
+      "title": "Customers in detection telemetry",
+      "description": "Red Canary's 2026 Threat Detection Report synthesizes detections across more than 1,000 customer environments spanning endpoints, networks, cloud infrastructure, identities, and SaaS applications.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "Detection",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "methodology",
+        "telemetry",
+        "customer-base"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Methodology",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "1,000+"
+    },
+    {
+      "type": "stat",
+      "id": "red-canary-threat-detection-report-2026-mac-quote",
+      "title": "macOS attack surface expanding",
+      "description": "As enterprise Mac fleets grow, attackers have followed — porting paste-and-run tradecraft from PowerShell to shell scripts and AppleScript. Red Canary urges tailored macOS detection strategies.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "eCrime",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer"
+      ],
+      "tags": [
+        "macos",
+        "applescript",
+        "paste-and-run",
+        "clickfix"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Trends - Mac malware",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"As more employees switch to Macs, the macOS-specific attack surface for your organization expands, requiring a new tailored approach to defense.\""
+    },
+    {
+      "type": "stat",
+      "id": "red-canary-threat-detection-report-2026-ai-threats-quote",
+      "title": "Adversaries automating with AI",
+      "description": "Red Canary observed adversaries integrating AI services, command-line tools, and MCP servers into their tradecraft to automate reconnaissance, credential theft, and data exfiltration — accelerating the operational tempo of intrusions.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "AI Security",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "vulnerability"
+      ],
+      "tags": [
+        "ai",
+        "mcp",
+        "automation",
+        "genai"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Trends - AI-powered threats",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Adversaries are leveraging AI services, command-lines tools and MCP servers to automate reconnaissance, credential theft, and data exfiltration.\""
+    },
+    {
+      "type": "stat",
+      "id": "red-canary-threat-detection-report-2026-paste-and-run",
+      "title": "Paste-and-run dominates delivery",
+      "description": "ClickFix and FakeCAPTCHA paste-and-run techniques became the dominant initial-access vector for stealers in 2025, pairing with loaders such as HijackLoader, MintsLoader, and CypherIT to deliver LummaC2 and Rhadamanthys.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "eCrime",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer",
+        "phishing"
+      ],
+      "tags": [
+        "clickfix",
+        "fakecaptcha",
+        "paste-and-run",
+        "hijackloader",
+        "mintsloader"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Trends - Stealers",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Paste and run techniques (ClickFix/FakeCAPTCHA) were the dominant distribution vector for stealers in 2025.\""
+    },
+    {
+      "type": "stat",
+      "id": "red-canary-threat-detection-report-2026-rmm-quote",
+      "title": "RMM tools as ultimate payload",
+      "description": "Red Canary observed remote monitoring and management (RMM) tools — including NetSupport Manager (rank #4) — increasingly delivered as the final payload of phishing and web-based campaigns rather than as auxiliary tooling.",
+      "source": "Red Canary",
+      "source_short": "Red Canary",
+      "color": "#CC2A36",
+      "year": 2026,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "rmm",
+        "netsupport-manager",
+        "phishing"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Trends - RMM Tools",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"In 2025, Red Canary observed RMM tools as the ultimate payload in an increasing number of campaigns, including web-based phishing.\""
+    }
+  ]
+}

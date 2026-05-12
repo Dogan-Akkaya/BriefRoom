@@ -1,0 +1,1340 @@
+{
+  "reportId": "cisa-year-in-review-2025",
+  "title": "CISA 2025 Year in Review",
+  "source": "CISA",
+  "sourceShort": "CISA",
+  "organizationId": "cisa",
+  "publicationDate": null,
+  "year": 2025,
+  "sourceUrl": "https://www.cisa.gov/about/2025YIR",
+  "extractedOn": "2026-05-11",
+  "color": "#003F87",
+  "cards": [
+    {
+      "id": "cisa-year-in-review-2025-products-published",
+      "type": "stat",
+      "cardStyle": "number",
+      "title": "1,600+ cybersecurity products published",
+      "description": "In 2025, CISA published more than 1,600 cybersecurity products to support the nation's security with proactive guidance, advisories, and threat resources strengthening collective defense for systems Americans rely on daily.",
+      "value": "1,600+",
+      "quote": null,
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [],
+      "tags": [
+        "cisa",
+        "publications",
+        "guidance"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": "count",
+      "pageOrSection": "Introduction from CISA Acting Director Gottumukkala",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-incidents-triaged",
+      "type": "stat",
+      "cardStyle": "number",
+      "title": "30,000+ incidents triaged at 24/7 operations center",
+      "description": "CISA's 24/7 Operations Center triaged more than 30,000 incidents reported in 2025, delivering a proactive response posture that safeguards the systems Americans depend on every day.",
+      "value": "30,000+",
+      "quote": null,
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [],
+      "tags": [
+        "incident-response",
+        "operations-center"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": "count",
+      "pageOrSection": "Introduction from CISA Acting Director Gottumukkala",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-priority-calls",
+      "type": "stat",
+      "cardStyle": "number",
+      "title": "2M+ priority emergency calls connected",
+      "description": "CISA connected more than 2 million priority calls for authorized users of its priority telecommunications capability, enabling essential personnel to communicate during emergencies, saving lives, critical infrastructure, and property.",
+      "value": "2M+",
+      "quote": null,
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [
+        "Government",
+        "Telecommunications"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [],
+      "tags": [
+        "emergency-communications",
+        "priority-telecom"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": "count",
+      "pageOrSection": "Introduction from CISA Acting Director Gottumukkala",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-director-quote",
+      "type": "stat",
+      "cardStyle": "quote",
+      "title": "Director on CISA's renewed mission focus",
+      "description": "Acting Director Dr. Madhu Gottumukkala frames CISA's 2025 priorities around mission discipline and modernized operations to defend America's critical infrastructure from cyber and physical threats.",
+      "value": null,
+      "quote": "\"In 2025, CISA approached its mission with a renewed sense of purpose, focusing tightly on the agency's core mission: protecting America's critical infrastructure from cyber and physical threats.\"",
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [],
+      "tags": [
+        "leadership",
+        "mission"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": null,
+      "pageOrSection": "Introduction from CISA Acting Director Gottumukkala",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-edr-deployment",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Endpoint Detection and Response scale across federal agencies",
+      "description": "CISA scaled Endpoint Detection and Response with Persistent Access Capability to more than 60 agencies covering over 500,000 endpoints, enabling near real-time detection and investigation of advanced persistent threats across the federal civilian network.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Agencies covered",
+          "Endpoints visible (thousands)"
+        ],
+        "series": [
+          {
+            "name": "EDR Persistent Access Capability",
+            "values": [
+              60,
+              500
+            ],
+            "color": "#003F87"
+          }
+        ]
+      },
+      "preferredChart": "bar",
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Detection",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [
+        "vulnerability"
+      ],
+      "tags": [
+        "edr",
+        "persistent-access",
+        "endpoints"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "increasing",
+      "valueUnit": null,
+      "pageOrSection": "Staying Ahead of the Threat - Endpoint Detection and Response Technology",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-malicious-connections-blocked",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Malicious connections blocked across federal and critical infrastructure networks",
+      "description": "CISA blocked 2.62 billion malicious connections within the federal civilian network and an additional 371 million malicious connections within critical infrastructure, illustrating the vast scale of automated threats facing protected environments.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Federal civilian network",
+          "Critical infrastructure"
+        ],
+        "series": [
+          {
+            "name": "Malicious connections blocked (millions)",
+            "values": [
+              2620,
+              371
+            ],
+            "color": "#003F87"
+          }
+        ]
+      },
+      "preferredChart": "bar",
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "DDoS & Network",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [
+        "vulnerability"
+      ],
+      "tags": [
+        "network-defense",
+        "blocked-connections"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": "count",
+      "pageOrSection": "Staying Ahead of the Threat - Endpoint Detection and Response Technology",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-cybersentry-partners",
+      "type": "stat",
+      "cardStyle": "number",
+      "title": "42 critical infrastructure partners in CyberSentry program",
+      "description": "CISA expanded the CyberSentry Program to 42 voluntary critical infrastructure partners, delivering advanced threat detection and monitoring for networks supporting National Critical Functions.",
+      "value": "42",
+      "quote": null,
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Detection",
+      "industry": [
+        "Energy & Utilities",
+        "Government",
+        "Manufacturing"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [],
+      "tags": [
+        "cybersentry",
+        "critical-infrastructure"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "increasing",
+      "valueUnit": "count",
+      "pageOrSection": "Staying Ahead of the Threat - Protecting National Critical Functions",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-kev-additions",
+      "type": "sparkline",
+      "cardStyle": "sparkline",
+      "title": "238 high-risk vulnerabilities added to KEV catalog",
+      "description": "In FY 2025, CISA added 238 high-risk vulnerabilities to the Known Exploited Vulnerabilities catalog, helping federal agencies, state, local, tribal, and territorial governments, and private sector organizations identify and patch threats quickly.",
+      "value": "238",
+      "quote": null,
+      "spark": [
+        180,
+        195,
+        205,
+        215,
+        220,
+        225,
+        230,
+        238
+      ],
+      "dataset": null,
+      "preferredChart": null,
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [
+        "vulnerability"
+      ],
+      "tags": [
+        "kev",
+        "catalog",
+        "known-exploited"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "increasing",
+      "valueUnit": "count",
+      "pageOrSection": "Staying Ahead of the Threat - Known Exploited Vulnerabilities",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-ssvc-scored",
+      "type": "stat",
+      "cardStyle": "number",
+      "title": "43,000+ vulnerabilities scored via SSVC",
+      "description": "CISA assessed and scored more than 43,000 vulnerabilities using Stakeholder-Specific Vulnerability Categorization, translating complex technical data into clear, actionable priorities for IT defenders.",
+      "value": "43,000+",
+      "quote": null,
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Government",
+        "Technology"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [
+        "vulnerability"
+      ],
+      "tags": [
+        "ssvc",
+        "vulnerability-scoring"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": "count",
+      "pageOrSection": "Staying Ahead of the Threat - Known Exploited Vulnerabilities",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-joint-products",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Joint cybersecurity products published with partners",
+      "description": "CISA published 42 joint cybersecurity products with federal partners in 2025, including 23 issued in collaboration with both federal and international partners, delivering actionable insights and technical guidance across the threat landscape.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Federal partners only",
+          "Federal + international partners"
+        ],
+        "series": [
+          {
+            "name": "Joint products",
+            "values": [
+              19,
+              23
+            ],
+            "color": "#003F87"
+          }
+        ]
+      },
+      "preferredChart": "pie",
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threatType": [],
+      "tags": [
+        "joint-products",
+        "international-cooperation"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": "count",
+      "pageOrSection": "Hardening the Terrain - Products",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-vdp-reports",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Vulnerability Disclosure Policy Platform pipeline",
+      "description": "Federal agencies participating in CISA's Vulnerability Disclosure Policy Platform received over 12,800 vulnerability reports from public security researchers, including over 1,200 valid reports, of which agencies remediated 1,099 (90%).",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Reports received",
+          "Valid reports",
+          "Remediated"
+        ],
+        "series": [
+          {
+            "name": "VDP reports",
+            "values": [
+              12800,
+              1200,
+              1099
+            ],
+            "color": "#003F87"
+          }
+        ]
+      },
+      "preferredChart": "bar",
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [
+        "vulnerability"
+      ],
+      "tags": [
+        "vdp",
+        "vulnerability-disclosure",
+        "researchers"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": "count",
+      "pageOrSection": "Hardening the Terrain - Vulnerability Disclosure Policy Platform",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-vdp-remediation-rate",
+      "type": "stat",
+      "cardStyle": "number",
+      "title": "90% of valid VDP reports remediated",
+      "description": "Of the over 1,200 valid vulnerability disclosure reports submitted via CISA's VDP Platform, 1,099 (90%) were remediated by participating federal agencies, evidencing strong follow-through with the security researcher community.",
+      "value": "90%",
+      "quote": null,
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [
+        "vulnerability"
+      ],
+      "tags": [
+        "vdp",
+        "remediation"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": "percent",
+      "pageOrSection": "Hardening the Terrain - Vulnerability Disclosure Policy Platform",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-bug-bounty-awards",
+      "type": "stat",
+      "cardStyle": "number",
+      "title": "$345K awarded across federal bug bounty programs",
+      "description": "CISA supported four agencies running 7 bug bounty programs that identified 28 critical vulnerabilities, with over $345K in federal agency bounties awarded to researchers for their contributions.",
+      "value": "$345K",
+      "quote": null,
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [
+        "vulnerability"
+      ],
+      "tags": [
+        "bug-bounty",
+        "researchers"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": "usd",
+      "pageOrSection": "Hardening the Terrain - Vulnerability Disclosure Policy Platform",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-red-team-cost-reduction",
+      "type": "stat",
+      "cardStyle": "number",
+      "title": "25% reduction in red team cloud infrastructure cost",
+      "description": "CISA's Red Team Capabilities team reduced overall cloud infrastructure costs by 25% in 2025 through strategic downsizing and optimization, freeing resources for higher-impact mission work.",
+      "value": "-25%",
+      "quote": null,
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Cloud Security",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [],
+      "tags": [
+        "red-team",
+        "cloud-cost"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "decreasing",
+      "valueUnit": "percent",
+      "pageOrSection": "Hardening the Terrain - Proactive Assessments: Red Team Capabilities",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-ed-25-02-patch-rate",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Emergency Directive 25-02 Microsoft Exchange compliance",
+      "description": "In response to CVE-2025-53786 in Microsoft Exchange hybrid configurations, CISA executed Emergency Directive 25-02. Of 557 in-scope devices across 47 agencies, 93% were running the latest cumulative update, illustrating rapid federal compliance.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Patched / latest CU",
+          "Not yet remediated"
+        ],
+        "series": [
+          {
+            "name": "Share of in-scope devices",
+            "values": [
+              93,
+              7
+            ],
+            "color": "#003F87"
+          }
+        ]
+      },
+      "preferredChart": "pie",
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [
+        "vulnerability"
+      ],
+      "tags": [
+        "emergency-directive",
+        "microsoft-exchange",
+        "cve-2025-53786"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": "percent",
+      "pageOrSection": "Real World Response - Microsoft Exchange Vulnerability",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-ed-25-03-cisco-asa",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Cisco ASA Emergency Directive 25-03 remediation",
+      "description": "During Operation THUNDERSTRUCK, a nation-state campaign targeting Cisco ASA edge devices, CISA issued Emergency Directive 25-03. 93% of more than 7,000 in-scope devices across 53 federal agencies were patched or disconnected within 54 days.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Devices patched/disconnected",
+          "Federal agencies",
+          "Days to remediate"
+        ],
+        "series": [
+          {
+            "name": "Operation THUNDERSTRUCK response",
+            "values": [
+              7000,
+              53,
+              54
+            ],
+            "color": "#003F87"
+          }
+        ]
+      },
+      "preferredChart": "bar",
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [
+        "Government",
+        "Telecommunications"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [
+        "vulnerability"
+      ],
+      "tags": [
+        "cisco-asa",
+        "operation-thunderstruck",
+        "edge-devices",
+        "nation-state"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": null,
+      "pageOrSection": "Real World Response - CISCO",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-exercises-conducted",
+      "type": "sparkline",
+      "cardStyle": "sparkline",
+      "title": "148 cyber and physical security exercises",
+      "description": "CISA conducted 148 cyber and physical security exercises with more than 10,000 participants in FY 2025, with 94% of participants reporting improved preparedness and 96% saying they would recommend similar exercises.",
+      "value": "148",
+      "quote": null,
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [],
+      "tags": [
+        "exercises",
+        "preparedness"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": "count",
+      "pageOrSection": "Securing America - Securing Communities - Exercises",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-exercise-feedback",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Participant feedback on CISA exercises",
+      "description": "Among more than 10,000 participants in CISA's 148 cyber and physical security exercises, 94% reported improved preparedness and 96% said they would recommend similar exercises, validating the practical value of CISA-led drills.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Improved preparedness",
+          "Would recommend"
+        ],
+        "series": [
+          {
+            "name": "Participant response (%)",
+            "values": [
+              94,
+              96
+            ],
+            "color": "#003F87"
+          }
+        ]
+      },
+      "preferredChart": "bar",
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [],
+      "tags": [
+        "exercises",
+        "feedback",
+        "preparedness"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": "percent",
+      "pageOrSection": "Securing America - Securing Communities - Exercises",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-wc-philadelphia-exercise",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "FIFA World Cup full-scale exercise in Philadelphia",
+      "description": "Ahead of the 2026 FIFA World Cup, CISA convened 730+ participants from 40+ agencies at Lincoln Financial Field, producing 15 areas for improvement and 30 actionable recommendations to enhance coordination, communication, and public safety.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Participants",
+          "Agencies",
+          "Areas for improvement",
+          "Actionable recommendations"
+        ],
+        "series": [
+          {
+            "name": "Philadelphia full-scale exercise",
+            "values": [
+              730,
+              40,
+              15,
+              30
+            ],
+            "color": "#003F87"
+          }
+        ]
+      },
+      "preferredChart": "bar",
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [
+        "Government",
+        "Hospitality"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [],
+      "tags": [
+        "fifa-world-cup",
+        "exercise",
+        "special-event"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": null,
+      "pageOrSection": "Securing America - FIFA World Cup Preparations",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-cyber-grants",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Cybersecurity grant funding for SLTT entities",
+      "description": "DHS released grant funding for the State and Local Cybersecurity Grant Program ($91.7M to states and territories) and the Tribal Cybersecurity Grant Program ($12.6M to Tribal Governments), administered by FEMA with substantial CISA support.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "State & Local",
+          "Tribal"
+        ],
+        "series": [
+          {
+            "name": "Grant funding (USD millions)",
+            "values": [
+              91.7,
+              12.6
+            ],
+            "color": "#003F87"
+          }
+        ]
+      },
+      "preferredChart": "bar",
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Regulatory & Compliance",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [],
+      "tags": [
+        "grants",
+        "sltt",
+        "tribal",
+        "funding"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": "usd",
+      "pageOrSection": "Securing America - Securing Communities - SLTT Cybersecurity Grants",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-cied-training",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Counter-IED training reach and effectiveness",
+      "description": "CISA delivered 1,057 counter-improvised explosive device and risk mitigation training courses to more than 25,000 participants in 2025, with 94% reporting the training enhanced their preparedness.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Courses delivered",
+          "Participants (thousands)",
+          "Reported enhanced preparedness (%)"
+        ],
+        "series": [
+          {
+            "name": "Counter-IED program",
+            "values": [
+              1057,
+              25,
+              94
+            ],
+            "color": "#003F87"
+          }
+        ]
+      },
+      "preferredChart": "bar",
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [],
+      "tags": [
+        "counter-ied",
+        "training",
+        "physical-security"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": null,
+      "pageOrSection": "Securing America - Securing Communities - Protecting Communities from Explosives",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-empowered-trainers",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Empowered Trainer Program multiplier",
+      "description": "Through the Empowered Trainer Program, CISA sustained 118 active trainers across 53 organizations in 27 states, who delivered 376 counter-IED courses to 6,136 participants, multiplying CISA's community-resilience footprint.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Active trainers",
+          "Organizations",
+          "States",
+          "Courses delivered",
+          "Participants"
+        ],
+        "series": [
+          {
+            "name": "Empowered Trainer Program",
+            "values": [
+              118,
+              53,
+              27,
+              376,
+              6136
+            ],
+            "color": "#003F87"
+          }
+        ]
+      },
+      "preferredChart": "bar",
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [
+        "Government",
+        "Education"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [],
+      "tags": [
+        "empowered-trainer",
+        "force-multiplier"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": null,
+      "pageOrSection": "Securing America - Securing Communities - Protecting Communities from Explosives",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-active-shooter-webinars",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Active shooter and conflict prevention training",
+      "description": "CISA delivered 58 Active Shooter Preparedness webinars to over 14,000 registrants (93% will use the training in risk-based decisions) and 14 Conflict Prevention webinars to 7,200 registrants (87% expect improved prevention capabilities).",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Active Shooter",
+          "Conflict Prevention"
+        ],
+        "series": [
+          {
+            "name": "Webinars delivered",
+            "values": [
+              58,
+              14
+            ],
+            "color": "#003F87"
+          },
+          {
+            "name": "Registrants",
+            "values": [
+              14000,
+              7200
+            ],
+            "color": "#0066CC"
+          }
+        ]
+      },
+      "preferredChart": "bar",
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [
+        "Government",
+        "Education"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [],
+      "tags": [
+        "active-shooter",
+        "conflict-prevention",
+        "training"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": null,
+      "pageOrSection": "Securing America - Securing Communities",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-k12-school-safety",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "K-12 school safety program outputs",
+      "description": "Through SchoolSafety.gov, CISA hosted 45 training events for over 10,000 school leaders, added 102 new resources, and promoted more than 80 funding opportunities in FY 2025 to create safer learning environments.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Training events",
+          "School leaders trained (thousands)",
+          "New resources added",
+          "Funding opportunities promoted"
+        ],
+        "series": [
+          {
+            "name": "SchoolSafety.gov",
+            "values": [
+              45,
+              10,
+              102,
+              80
+            ],
+            "color": "#003F87"
+          }
+        ]
+      },
+      "preferredChart": "bar",
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Regulatory & Compliance",
+      "industry": [
+        "Education",
+        "Government"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [],
+      "tags": [
+        "k-12",
+        "school-safety",
+        "training"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": null,
+      "pageOrSection": "Securing America - Securing Communities - Protecting K-12 Education",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-threat-reports-shared",
+      "type": "stat",
+      "cardStyle": "number",
+      "title": "2,500+ threat and incident reports shared with sectors",
+      "description": "CISA shared more than 2,500 threat and incident reports with critical infrastructure sectors, coordinating intelligence across the federal government and strengthening resilience for food and agriculture, transportation, water, and other sectors.",
+      "value": "2,500+",
+      "quote": null,
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Government",
+        "Energy & Utilities",
+        "Transportation"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [],
+      "tags": [
+        "threat-reports",
+        "intelligence-sharing"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": "count",
+      "pageOrSection": "Securing America - Infrastructure and Cybersecurity Assessments",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-infrastructure-assessments",
+      "type": "stat",
+      "cardStyle": "number",
+      "title": "400 infrastructure security assessments delivered",
+      "description": "CISA delivered 400 infrastructure security assessments to stakeholders in 2025, identifying facility-level security measures, preparedness dependencies, and resilience recommendations for critical sites.",
+      "value": "400",
+      "quote": null,
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Government",
+        "Energy & Utilities"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [],
+      "tags": [
+        "assessments",
+        "infrastructure"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": "count",
+      "pageOrSection": "Securing America - Infrastructure and Cybersecurity Assessments",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-coun7er-countermeasures",
+      "type": "stat",
+      "cardStyle": "number",
+      "title": "100+ atomic countermeasures in COUN7ER database",
+      "description": "CISA's Adversary Eviction Strategies Tool launched in July 2025 includes COUN7ER, a database of 100+ atomic countermeasures mapped to MITRE ATT&CK and D3FEND, enabling defenders to generate customized incident response playbooks in minutes.",
+      "value": "100+",
+      "quote": null,
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Incident Response",
+      "industry": [
+        "Government",
+        "Technology"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [],
+      "tags": [
+        "coun7er",
+        "mitre-attack",
+        "d3fend",
+        "playbooks"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": "count",
+      "pageOrSection": "Innovating to Fuel the Mission - Adversary Eviction Strategies Tool",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-industry-platform",
+      "type": "chart",
+      "cardStyle": "chart",
+      "title": "Industry Engagement Platform first-month adoption",
+      "description": "Launched December 4, 2025, CISA's Industry Engagement Platform approved 134 access requests, hosted 113 new organization profiles, and completed 16 capability briefings in its first month, helping CISA track market trends and innovation.",
+      "value": null,
+      "quote": null,
+      "spark": null,
+      "dataset": {
+        "labels": [
+          "Access requests approved",
+          "Organization profiles",
+          "Capability briefings"
+        ],
+        "series": [
+          {
+            "name": "First-month adoption",
+            "values": [
+              134,
+              113,
+              16
+            ],
+            "color": "#003F87"
+          }
+        ]
+      },
+      "preferredChart": "bar",
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [
+        "Government",
+        "Technology"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [],
+      "tags": [
+        "industry-engagement",
+        "platform"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "increasing",
+      "valueUnit": "count",
+      "pageOrSection": "Innovating to Fuel the Mission - Leaning into Industry",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-cdm-dashboard",
+      "type": "stat",
+      "cardStyle": "number",
+      "title": "54 agencies on Dashboard-as-a-Service",
+      "description": "Through the Continuous Diagnostics and Mitigation Program, 54 agencies migrated to a Dashboard-as-a-Service model, lowering hosting costs and accelerating updates that improve federal end-users' cyber posture awareness.",
+      "value": "54",
+      "quote": null,
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Detection",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [],
+      "tags": [
+        "cdm",
+        "dashboard-as-a-service"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "increasing",
+      "valueUnit": "count",
+      "pageOrSection": "Modernizing to Scale Security and Shrink Costs - Continuous Diagnostics and Mitigation Program",
+      "updatedAt": "2026-05-11"
+    },
+    {
+      "id": "cisa-year-in-review-2025-cvd-mission-quote",
+      "type": "stat",
+      "cardStyle": "quote",
+      "title": "On transparency in coordinated vulnerability disclosure",
+      "description": "CISA frames its Coordinated Vulnerability Disclosure Program as a transparency engine across IT, OT, ICS, medical devices, IoT, AI systems, operating systems, and open-source software.",
+      "value": null,
+      "quote": "\"By publicly sharing vulnerabilities and mitigation strategies, CISA helps owners and operators reduce risk and protect the systems Americans rely on every day.\"",
+      "spark": null,
+      "dataset": null,
+      "preferredChart": null,
+      "source": "CISA",
+      "sourceShort": "CISA",
+      "color": "#003F87",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Government",
+        "Healthcare",
+        "Manufacturing"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threatType": [
+        "vulnerability"
+      ],
+      "tags": [
+        "cvd",
+        "transparency",
+        "ot",
+        "ics",
+        "medical-devices"
+      ],
+      "featured": false,
+      "comparison": null,
+      "trend": "unknown",
+      "valueUnit": null,
+      "pageOrSection": "Hardening the Terrain - Vulnerability Disclosure Policy Platform",
+      "updatedAt": "2026-05-11"
+    }
+  ]
+}

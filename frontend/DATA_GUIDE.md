@@ -545,6 +545,46 @@ Automation
 
 ---
 
+## Section H — Adding manual stats: TL;DR for PR contributors
+
+You're sending a stat from a vendor report (e.g. "1 in 3 financial-services institutions breached"). Pick the right home, copy a Section D template, validate, push.
+
+### H.1 Pick the right home
+
+| Shape | Target | Template |
+|---|---|---|
+| Single fact card (number / sparkline / quote) | `intelligenceLibrary.js` → `HAND_CRAFTED`, `type: 'stat'` | D.1 |
+| Featured chart (multi-series, surfaces on `/popular`) | `intelligenceLibrary.js` → `HAND_CRAFTED`, `type: 'chart'`, `featured: true` | D.2 |
+| Vendor report mirror (full bar/pie chart on `/reports`) | `data.js` → `GLOBAL_REPORTS` | D.4 |
+
+### H.2 Tag vocabulary cheat-sheet
+
+These are the only valid values for tag fields. **Exact strings — case + spelling matter.** The records validator (`npm run validate`) flags drift loudly.
+
+- `industry[]`: `Financial Services`, `Healthcare`, `Technology`, `Government`, `Manufacturing`, `Energy & Utilities`, `Retail & E-Commerce`, `Telecommunications`, `Education`, `Transportation`
+- `region[]`: `North America`, `Europe`, `Middle East`, `Asia Pacific`, `Latin America`, `Africa`
+- `threat_type[]` (lowercase ids): `ransomware`, `phishing`, `infostealer`, `logs_on_sale`, `data_leaks`, `employee_exposure`, `dark_web_mentions`, `vulnerability`, `ddos`, `supply_chain`
+- `country` (records only): see `ALL_COUNTRIES` in `data.js` (31 names — exact spellings like `United States`, `United Kingdom`, `UAE`)
+- `updated_at`: ISO 8601 date — `'YYYY-MM-DD'` (not timestamp, not Unix epoch)
+
+### H.3 Always set on manual stats
+
+- `id` — kebab-case, unique. Convention: `<source>-<topic>` e.g. `dbir-fs-breach-rate`.
+- `source` — display string. Drives the Brand Chip on the card.
+- `real: true` — manual stats are always real (this elevates them above generated backfill in slice views).
+- `updated_at` — today's date or the report's publication date.
+
+### H.4 Validate before pushing
+
+```bash
+cd frontend
+npm run validate
+```
+
+Catches: unknown industry/region/threat_type tags, missing required fields, duplicate ids, ISO date format violations. CI runs the same gate on every PR.
+
+---
+
 ## Appendix — File quick-reference
 
 | To edit | Open |

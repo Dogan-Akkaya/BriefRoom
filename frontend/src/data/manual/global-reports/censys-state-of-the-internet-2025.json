@@ -1,0 +1,1076 @@
+{
+  "source": "Censys",
+  "source_short": "Censys",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/censys-state-of-the-internet-2025.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.934Z. Curated top 10 of 23 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-censys-state-of-the-internet-2025",
+      "title": "2025 State of the Internet Report",
+      "year": 2025,
+      "category": "Threat Actors",
+      "color": "#3E36DA",
+      "description": "Across Censys scan data, Cobalt Strike TeamServer services exhibited an average time-to-live of 11.2 days and a median of just 5 days, with an interquartile range of 3-19 days. The short lifespan reflects active takedown pressure and operator OPSEC churn.",
+      "external_url": "https://censys.com/reports/2025-sotir/",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "Average TTL",
+          "Median TTL",
+          "25th percentile",
+          "75th percentile"
+        ],
+        "series": [
+          {
+            "name": "Cobalt Strike",
+            "values": [
+              11.2,
+              5,
+              3,
+              19
+            ],
+            "color": "#3E36DA"
+          },
+          {
+            "name": "Viper",
+            "values": [
+              17.4,
+              18.5,
+              4,
+              30
+            ],
+            "color": "#9B95F0"
+          }
+        ]
+      },
+      "industry": [
+        "Technology",
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "dark_web_mentions",
+        "supply_chain",
+        "ransomware"
+      ],
+      "tags": [
+        "external-report",
+        "c2",
+        "ttl",
+        "cobalt-strike",
+        "viper",
+        "infrastructure",
+        "open-directories",
+        "tlsh",
+        "content-persistence",
+        "polaredge",
+        "iot-botnet",
+        "orb",
+        "mbed-tls",
+        "edge-devices",
+        "watermark",
+        "ports",
+        "geo-distribution",
+        "operation-morpheus",
+        "takedown",
+        "law-enforcement",
+        "spark-from-8"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2025-01-01",
+      "report_meta": {
+        "report_id": "censys-state-of-the-internet-2025",
+        "organization_id": "censys",
+        "publication_date": "2025-01-01",
+        "extracted_on": "2026-05-11",
+        "source_url": "https://censys.com/reports/2025-sotir/",
+        "card_count_total": 23,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "censys-state-of-the-internet-2025-c2-ttl-comparison"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "censys-state-of-the-internet-2025-c2-ttl-comparison",
+      "title": "Cobalt Strike vs Viper C2 lifespans",
+      "description": "Side-by-side TTL distribution for the two most-tracked C2 families in the report. Cobalt Strike services churn faster across every statistic, while Viper hosts remain online longer on average and at the median.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "c2",
+        "ttl",
+        "cobalt-strike",
+        "viper",
+        "infrastructure"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "C2 Time-to-Live",
+      "comparison": "Cobalt Strike vs Viper",
+      "trend": "unknown",
+      "value_unit": "days",
+      "dataset": {
+        "labels": [
+          "Average TTL",
+          "Median TTL",
+          "25th percentile",
+          "75th percentile"
+        ],
+        "series": [
+          {
+            "name": "Cobalt Strike",
+            "values": [
+              11.2,
+              5,
+              3,
+              19
+            ],
+            "color": "#3E36DA"
+          },
+          {
+            "name": "Viper",
+            "values": [
+              17.4,
+              18.5,
+              4,
+              30
+            ],
+            "color": "#9B95F0"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "censys-state-of-the-internet-2025-open-dir-content-vs-network",
+      "title": "Open directories: content outlives network availability",
+      "description": "Using TLSH rolling-hash similarity, Censys found that while the median network lifespan of an open directory is just 1 day, its content lifespan extends to 3 days. The same payloads tend to reappear on new hosts, weakening the value of pure IP/host blocklists.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "dark_web_mentions",
+        "supply_chain"
+      ],
+      "tags": [
+        "open-directories",
+        "tlsh",
+        "content-persistence"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Open Directories Time to Live",
+      "comparison": "content 3x longer than network",
+      "trend": "unknown",
+      "value_unit": "days",
+      "dataset": {
+        "labels": [
+          "Network lifespan (median)",
+          "Content lifespan (median)"
+        ],
+        "series": [
+          {
+            "name": "Days",
+            "values": [
+              1,
+              3
+            ],
+            "color": "#3E36DA"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "censys-state-of-the-internet-2025-polaredge-growth",
+      "title": "PolarEdge IoT botnet grew from 150 to 40,000 devices",
+      "description": "First observed in June 2023 with ~150 infected devices, the PolarEdge IoT botnet expanded to approximately 40,000 active devices by August 2025. The campaign mixes enterprise gear (Cisco APIC, ASA firewalls) with consumer routers, NAS, IP cameras and VoIP phones using a custom Mbed TLS backdoor.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "IoT & Mobile",
+      "industry": [
+        "Technology",
+        "Telecommunications"
+      ],
+      "region": [
+        "Asia Pacific",
+        "North America"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "polaredge",
+        "iot-botnet",
+        "orb",
+        "mbed-tls",
+        "edge-devices"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Edge Infrastructure - PolarEdge",
+      "comparison": "~267x growth over 26 months",
+      "trend": "increasing",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Jun 2023",
+          "Aug 2025"
+        ],
+        "series": [
+          {
+            "name": "Active infected devices",
+            "values": [
+              150,
+              40000
+            ],
+            "color": "#3E36DA"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "censys-state-of-the-internet-2025-cobalt-watermark-ttl",
+      "title": "Cobalt Strike content outlives network presence",
+      "description": "When Censys tracked individual Cobalt Strike beacon watermarks rather than network availability, average TTL rose from 9.5 days to 11.1 days and median TTL from 4 to 6 days. The same beacon license is being moved between hosts, complicating IP-based blocklists.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "cobalt-strike",
+        "watermark",
+        "ttl",
+        "infrastructure"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "C2 Time-to-Live - Watermarks",
+      "comparison": "content TTL ~50% longer than network TTL",
+      "trend": "unknown",
+      "value_unit": "days",
+      "dataset": {
+        "labels": [
+          "Average TTL",
+          "Median TTL"
+        ],
+        "series": [
+          {
+            "name": "Service-level (network)",
+            "values": [
+              9.5,
+              4
+            ],
+            "color": "#9B95F0"
+          },
+          {
+            "name": "Watermark-level (content)",
+            "values": [
+              11.1,
+              6
+            ],
+            "color": "#3E36DA"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "censys-state-of-the-internet-2025-cobalt-strike-port-share",
+      "title": "Cobalt Strike top ports by share of observed services",
+      "description": "Censys ranks the most common ports for Cobalt Strike TeamServer services. Port 443 leads at 23.8%, closely followed by port 80 at 21.7%, with the Cobalt Strike default 50050 at 9.2%. Most beaconing still hides behind HTTP/HTTPS conventions.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "c2",
+        "cobalt-strike",
+        "ports",
+        "infrastructure"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "C2 Time-to-Live - Cobalt Strike ports",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "443",
+          "80",
+          "50050",
+          "8443",
+          "8080"
+        ],
+        "series": [
+          {
+            "name": "Share of Cobalt Strike services",
+            "values": [
+              23.8,
+              21.7,
+              9.2,
+              3.9,
+              3.7
+            ],
+            "color": "#3E36DA"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "censys-state-of-the-internet-2025-viper-port-share",
+      "title": "Viper top ports by share of observed services",
+      "description": "Viper deployments cluster heavily on two ports: TCP 60000 (46.6%) and TCP 80 (45.4%). Port 60000 is short-lived (median 5 days) while port 80 hosts persist for a median of 30 days, suggesting two very different operational profiles within the same C2 family.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "c2",
+        "viper",
+        "ports",
+        "infrastructure"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "C2 Time-to-Live - Viper ports",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "60000",
+          "80",
+          "443",
+          "4040",
+          "8096"
+        ],
+        "series": [
+          {
+            "name": "Share of Viper services",
+            "values": [
+              46.6,
+              45.4,
+              6.9,
+              0.2,
+              0.2
+            ],
+            "color": "#9B95F0"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "censys-state-of-the-internet-2025-polaredge-geo",
+      "title": "PolarEdge infections concentrate in South Korea and the US",
+      "description": "Geographic distribution of PolarEdge-infected devices is sharply uneven: South Korea hosts 51.6% of compromised devices and the United States 21.1%, leaving roughly a quarter scattered across the rest of the world.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "IoT & Mobile",
+      "industry": [
+        "Telecommunications",
+        "Technology"
+      ],
+      "region": [
+        "Asia Pacific",
+        "North America"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "polaredge",
+        "iot-botnet",
+        "geo-distribution",
+        "orb"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Edge Infrastructure - PolarEdge",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "South Korea",
+          "United States",
+          "Rest of world"
+        ],
+        "series": [
+          {
+            "name": "Share of PolarEdge devices",
+            "values": [
+              51.6,
+              21.1,
+              27.3
+            ],
+            "color": "#3E36DA"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "stat",
+      "id": "censys-state-of-the-internet-2025-operation-morpheus",
+      "title": "Operation Morpheus took down 85% of pirated Cobalt Strike",
+      "description": "Of 690 illegally licensed Cobalt Strike instances targeted in June 2024's Operation Morpheus, 593 were successfully disrupted - an 85% success rate. Censys observed a clear drop in unique Cobalt Strike IPs in July 2024 before partial recovery in subsequent months.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "operation-morpheus",
+        "cobalt-strike",
+        "takedown",
+        "law-enforcement",
+        "spark-from-8"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Notable Incidents - Operation Morpheus",
+      "comparison": "593 of 690 instances removed",
+      "trend": "decreasing",
+      "value_unit": "percent",
+      "card_style": "sparkline",
+      "value": "85% takedown",
+      "spark": [
+        100,
+        100,
+        30,
+        35,
+        55,
+        65
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "censys-state-of-the-internet-2025-cobalt-strike-median-ttl",
+      "title": "Cobalt Strike C2 servers live a median of 5 days",
+      "description": "Across Censys scan data, Cobalt Strike TeamServer services exhibited an average time-to-live of 11.2 days and a median of just 5 days, with an interquartile range of 3-19 days. The short lifespan reflects active takedown pressure and operator OPSEC churn.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "c2",
+        "cobalt-strike",
+        "ttl",
+        "infrastructure"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "C2 Time-to-Live",
+      "comparison": "avg 11.2 days; IQR 3-19 days",
+      "trend": "unknown",
+      "value_unit": "days",
+      "card_style": "number",
+      "value": "5.0 days"
+    },
+    {
+      "type": "stat",
+      "id": "censys-state-of-the-internet-2025-viper-median-ttl",
+      "title": "Viper C2 servers persist a median of 18.5 days",
+      "description": "Viper C2 services lived substantially longer than Cobalt Strike infrastructure, with an average TTL of 17.4 days and a median of 18.5 days. Censys hypothesizes the wider variance in Cobalt Strike reflects its greater prevalence and exposure to takedowns.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "c2",
+        "viper",
+        "ttl",
+        "infrastructure"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "C2 Time-to-Live",
+      "comparison": "vs 5 days median for Cobalt Strike",
+      "trend": "unknown",
+      "value_unit": "days",
+      "card_style": "number",
+      "value": "18.5 days"
+    },
+    {
+      "type": "stat",
+      "id": "censys-state-of-the-internet-2025-cleo-exposure",
+      "title": "1,011 Cleo file-transfer systems were exposed to CL0P",
+      "description": "Censys identified roughly 1,011 internet-exposed Cleo file transfer instances potentially vulnerable to CVE-2024-55956 and CVE-2024-50623 - about 70% of all Cleo systems it could see. CL0P weaponized the flaws starting around 3 December 2024.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology",
+        "Financial Services",
+        "Manufacturing"
+      ],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "supply_chain",
+        "ransomware"
+      ],
+      "tags": [
+        "cleo",
+        "cve-2024-55956",
+        "cve-2024-50623",
+        "managed-file-transfer",
+        "easm"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Notable Incidents - Cleo",
+      "comparison": "~70% of total exposed Cleo instances",
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "1,011"
+    },
+    {
+      "type": "stat",
+      "id": "censys-state-of-the-internet-2025-clop-cleo-victims",
+      "title": "CL0P named 378 victims from the Cleo campaign",
+      "description": "By 1 July 2025, the CL0P ransomware group's data-leak site listed 378 organizations breached via the Cleo file-transfer flaws. A separate Termite gang listed roughly 12 additional victims, underscoring how a single MFT vulnerability fueled an entire year of extortion activity.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [
+        "Technology",
+        "Manufacturing",
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware",
+        "supply_chain",
+        "vulnerability"
+      ],
+      "tags": [
+        "clop",
+        "cleo",
+        "data-leak-site",
+        "mft"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Notable Incidents - Cleo",
+      "comparison": "Termite added ~12 more victims",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "378 victims"
+    },
+    {
+      "type": "stat",
+      "id": "censys-state-of-the-internet-2025-fortinet-mass-scan",
+      "title": "DragonForce scanned 250,000+ IPs for FortiOS zero-day",
+      "description": "Investigating CVE-2024-55591, Censys observed a single attacker host at 91.199.163.21:8000 testing more than 250,000 IP addresses for vulnerable FortiOS / FortiProxy devices. The mass scan ultimately compromised 31 devices and exfiltrated credentials from 22 hosts, concentrated in the US and Switzerland.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "Vulnerabilities & Zero-Days",
+      "industry": [
+        "Technology",
+        "Financial Services",
+        "Government"
+      ],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "vulnerability",
+        "ransomware"
+      ],
+      "tags": [
+        "fortinet",
+        "fortios",
+        "cve-2024-55591",
+        "dragonforce",
+        "zero-day",
+        "kev"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Notable Incidents - FortiOS",
+      "comparison": "31 devices compromised; 22 host credentials taken",
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "250,000+ IPs"
+    },
+    {
+      "type": "stat",
+      "id": "censys-state-of-the-internet-2025-rpx-hosts",
+      "title": "2,400+ hosts serve the PolarEdge-linked RPX certificate",
+      "description": "Censys' follow-up analysis of PolarEdge-adjacent residential-proxy (RPX) infrastructure identified more than 2,400 hosts presenting the suspicious Mbed TLS certificate that ties the ecosystem together - a substantial Operational Relay Box (ORB) footprint hidden in legitimate consumer networks.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "IoT & Mobile",
+      "industry": [
+        "Telecommunications",
+        "Technology"
+      ],
+      "region": [],
+      "threat_type": [
+        "supply_chain",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "rpx",
+        "residential-proxy",
+        "orb",
+        "mbed-tls",
+        "certificates"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Residential Proxy Infrastructure",
+      "comparison": "single RPX server peaked at 100+ proxy nodes in Aug 2025",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "2,400+ hosts"
+    },
+    {
+      "type": "stat",
+      "id": "censys-state-of-the-internet-2025-beavertail-servers",
+      "title": "DPRK BeaverTail keeps ~4 control servers online at any time",
+      "description": "The North Korean BeaverTail / InvisibleFerret campaign maintained a steady operational tempo from October 2024 through at least July 2025, typically running four control servers simultaneously on TCP 1224, 1225 and 3000, hosted predominantly on Cloudzy / RouterHosting infrastructure across Europe and the US.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "dark_web_mentions",
+        "supply_chain"
+      ],
+      "tags": [
+        "dprk",
+        "beavertail",
+        "invisibleferret",
+        "cloudzy",
+        "infostealer"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Malware Investigations - BeaverTail",
+      "comparison": "active Oct 2024 - Jul 2025+",
+      "trend": "flat",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "~4 servers"
+    },
+    {
+      "type": "stat",
+      "id": "censys-state-of-the-internet-2025-wainscot-window",
+      "title": "Wainscot infection persisted on Indian military host for 2 years",
+      "description": "Censys' Wainscot investigation - linked to the Storm-0156 cluster - identified a modified variant of the malware running on an Indian Territorial Army system near the Pakistan border from December 2022 through November 2024, designed to survive intermittent satellite/mobile connectivity before being remediated in February 2025.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "Geopolitics",
+      "industry": [
+        "Government"
+      ],
+      "region": [
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "supply_chain",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "wainscot",
+        "storm-0156",
+        "espionage",
+        "india",
+        "pakistan",
+        "industry:defense"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Malware Investigations - Wainscot",
+      "comparison": "remediated Feb 2025",
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "number",
+      "value": "Dec 2022 - Nov 2024"
+    },
+    {
+      "type": "stat",
+      "id": "censys-state-of-the-internet-2025-clop-jan-announcement",
+      "title": "57 of CL0P's Cleo victims were named in January 2025 alone",
+      "description": "CL0P's January 2025 mass announcement listed 57 organizations breached via Cleo - approximately 15% of all CL0P intrusions disclosed before July. The gap between initial exploitation in December 2024 and leak-site disclosure exceeded three months for several victims.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "Ransomware",
+      "industry": [
+        "Manufacturing",
+        "Financial Services",
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "ransomware",
+        "supply_chain",
+        "vulnerability"
+      ],
+      "tags": [
+        "clop",
+        "cleo",
+        "data-leak-site"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Notable Incidents - Cleo",
+      "comparison": "~15% of CL0P's pre-July intrusions",
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "57 victims"
+    },
+    {
+      "type": "stat",
+      "id": "censys-state-of-the-internet-2025-open-dir-network-lifespan",
+      "title": "Median open directory disappears in 1 day",
+      "description": "Censys sampled open web directories on HTTP services during April. Half of them were network-visible for one day or less - a sign that adversaries cycle staging infrastructure aggressively, but also that defenders have an extremely short window to capture evidence.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "dark_web_mentions",
+        "supply_chain"
+      ],
+      "tags": [
+        "open-directories",
+        "staging",
+        "ttl"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Open Directories Time to Live",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "days",
+      "card_style": "number",
+      "value": "1 day"
+    },
+    {
+      "type": "stat",
+      "id": "censys-state-of-the-internet-2025-intro-quote",
+      "title": "Adversary infrastructure is an early-warning system",
+      "description": "Censys frames the 2025 State of the Internet Report around the idea that the public-internet footprint of attacker infrastructure - C2 servers, open directories, residential proxies, IoT botnets - is observable and measurable, and can be used to warn defenders before campaigns mature.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "dark_web_mentions",
+        "supply_chain"
+      ],
+      "tags": [
+        "adversary-infrastructure",
+        "early-warning",
+        "easm"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Introduction",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Adversary infrastructure provides an early-warning system for malicious activity, revealing where it resides, how long it persists, and how continuity is maintained across shifting services.\""
+    },
+    {
+      "type": "stat",
+      "id": "censys-state-of-the-internet-2025-open-dir-quote",
+      "title": "Even when a directory blinks offline, its content doesn't change",
+      "description": "Censys highlights the asymmetry between network presence and content persistence as a key lesson for blue teams: pivoting on file hashes and directory contents catches more adversary infrastructure than chasing IP addresses alone.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "Threat Landscape",
+      "industry": [],
+      "region": [],
+      "threat_type": [
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "open-directories",
+        "hunting",
+        "content-hashing"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Open Directories Time to Live",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Even if a web directory blips in and out in terms of network visibility, the content doesn't necessarily change.\""
+    },
+    {
+      "type": "stat",
+      "id": "censys-state-of-the-internet-2025-orb-quote",
+      "title": "ORBs hide adversary traffic inside consumer networks",
+      "description": "Operational Relay Boxes turn legitimate routers, NAS units and IP cameras into exit nodes for malicious traffic without disturbing their primary function - a tactic Censys flags as a defining feature of the 2025 threat landscape.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "IoT & Mobile",
+      "industry": [
+        "Telecommunications"
+      ],
+      "region": [],
+      "threat_type": [
+        "supply_chain",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "orb",
+        "residential-proxy",
+        "stealth",
+        "edge"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Residential Proxy Infrastructure",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Operation Relay Boxes (ORBs) are compromised exit nodes that forward traffic without taking over the device's core function.\""
+    },
+    {
+      "type": "stat",
+      "id": "censys-state-of-the-internet-2025-dprk-quote",
+      "title": "DPRK campaigns succeed via adaptability, not sophistication",
+      "description": "Censys' takeaway from tracking BeaverTail and the wider DPRK developer-targeting ecosystem is that low-tech but persistent operations are what keep these campaigns productive, with thousands of remote workers staged across China, Russia and Vietnam.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "Threat Actors",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "Asia Pacific",
+        "North America",
+        "Europe"
+      ],
+      "threat_type": [
+        "dark_web_mentions",
+        "supply_chain"
+      ],
+      "tags": [
+        "dprk",
+        "north-korea",
+        "it-workers",
+        "supply-chain"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Malware Investigations - DPRK",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"These campaigns remain effective not because of technical sophistication, but because of adaptability and persistence.\""
+    },
+    {
+      "type": "stat",
+      "id": "censys-state-of-the-internet-2025-edge-quote",
+      "title": "Edge devices have become the operational layer of adversary networks",
+      "description": "A summary takeaway across PolarEdge, RPX, and DPRK campaigns: residential routers, NAS units, IP cameras and small-business firewalls are now the preferred substrate for adversary infrastructure - not data centers - because they blend legitimate encrypted traffic with operator traffic.",
+      "source": "Censys",
+      "source_short": "Censys",
+      "color": "#3E36DA",
+      "year": 2025,
+      "category": "IoT & Mobile",
+      "industry": [
+        "Telecommunications",
+        "Technology"
+      ],
+      "region": [],
+      "threat_type": [
+        "supply_chain",
+        "dark_web_mentions",
+        "vulnerability"
+      ],
+      "tags": [
+        "edge",
+        "residential-proxy",
+        "orb",
+        "iot"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Summary and Conclusions",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"The rise of edge-based infrastructure such as residential proxies and IoT botnets complements traditional C2 ecosystems and is reshaping how adversaries maintain continuity.\""
+    }
+  ]
+}

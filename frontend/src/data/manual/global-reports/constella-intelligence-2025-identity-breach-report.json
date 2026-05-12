@@ -1,0 +1,1571 @@
+{
+  "source": "Constella Intelligence",
+  "source_short": "Constella",
+  "year": 2025,
+  "real": true,
+  "notes": "Transformed from Global-reports-inputs/constella-intelligence-2025-identity-breach-report.json by ingest-global-reports.mjs at 2026-05-11T20:00:16.943Z. Curated top 10 of 30 cards into library.",
+  "items": [
+    {
+      "type": "report",
+      "id": "gr-constella-intelligence-2025-identity-breach-report",
+      "title": "2025 Identity Breach Report: 107 Billion Exposed Records",
+      "year": 2025,
+      "category": "Data Breaches",
+      "color": "#00BFA5",
+      "description": "The largest 2024 breaches Constella tracked were tencent.com (668M) and National Public Data (647M), then a steep drop to 1win.com (195M). Nine breaches surpassed 75M records vs seven in 2023.",
+      "external_url": "https://constella.ai/reports/2025-identity-breach-report/",
+      "preferred_chart": "bar",
+      "dataset": {
+        "labels": [
+          "United States",
+          "Russia",
+          "Germany",
+          "India",
+          "France",
+          "United Kingdom",
+          "Canada",
+          "Australia",
+          "Spain",
+          "Poland"
+        ],
+        "series": [
+          {
+            "name": "Share of breaches (%)",
+            "values": [
+              25.47,
+              9.87,
+              5.07,
+              4.27,
+              3.2,
+              1.87,
+              1.33,
+              1.33,
+              1.33,
+              1.07
+            ],
+            "color": "#00BFA5"
+          }
+        ]
+      },
+      "industry": [
+        "Technology",
+        "Telecommunications",
+        "Retail & E-Commerce",
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "logs_on_sale",
+        "dark_web_mentions",
+        "phishing"
+      ],
+      "tags": [
+        "external-report",
+        "geography",
+        "country-distribution",
+        "us",
+        "sectors",
+        "email-providers",
+        "industry-targeting",
+        "combo-breaches",
+        "recycled-data",
+        "credential-stuffing",
+        "top-breaches",
+        "leaderboard",
+        "victim-domains",
+        "pii-types",
+        "exposed-attributes",
+        "blast-radius",
+        "pii-volumes",
+        "ssn",
+        "credit-card",
+        "fullz",
+        "continent",
+        "distribution",
+        "webmail",
+        "compromised-domains",
+        "credential-harvesting",
+        "password-algorithms",
+        "plaintext",
+        "weak-hashing",
+        "fbi-ic3",
+        "crime-complaints",
+        "phishing",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "updated_at": "2025-02-01",
+      "report_meta": {
+        "report_id": "constella-intelligence-2025-identity-breach-report",
+        "organization_id": "constella-intelligence",
+        "publication_date": "2025-02-01",
+        "extracted_on": "2026-05-06",
+        "source_url": "https://constella.ai/reports/2025-identity-breach-report/",
+        "card_count_total": 30,
+        "card_count_in_library": 10,
+        "hero_kind": "chart",
+        "hero_card_id": "constella-intelligence-2025-identity-breach-report-countries"
+      }
+    },
+    {
+      "type": "chart",
+      "id": "constella-intelligence-2025-identity-breach-report-countries",
+      "title": "Countries most impacted by breaches (2024)",
+      "description": "The U.S. accounted for 25.47% of breaches, nearly doubling from 13.9% in 2023. Russia and Germany rounded out the top three. Indicates a continued concentration of victim entities in North America and Europe.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Data Breaches",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "geography",
+        "country-distribution",
+        "us"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Geographic Distribution",
+      "comparison": "US: +11.56pp YoY",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "United States",
+          "Russia",
+          "Germany",
+          "India",
+          "France",
+          "United Kingdom",
+          "Canada",
+          "Australia",
+          "Spain",
+          "Poland"
+        ],
+        "series": [
+          {
+            "name": "Share of breaches (%)",
+            "values": [
+              25.47,
+              9.87,
+              5.07,
+              4.27,
+              3.2,
+              1.87,
+              1.33,
+              1.33,
+              1.33,
+              1.07
+            ],
+            "color": "#00BFA5"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "constella-intelligence-2025-identity-breach-report-sectors",
+      "title": "Sectors most impacted by breaches",
+      "description": "Email providers surged to 22.17% of breaches (+16.34 pp YoY), eclipsing all other sectors as adversaries target identity gateways. Retail, services, and news segments shrank meaningfully year over year.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Data Breaches",
+      "industry": [
+        "Technology",
+        "Telecommunications",
+        "Retail & E-Commerce",
+        "Financial Services"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "sectors",
+        "email-providers",
+        "industry-targeting"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Most Impacted Sectors",
+      "comparison": "Email providers: +16.34pp YoY",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Email providers",
+          "Retail",
+          "Services",
+          "News",
+          "Gaming",
+          "Technology",
+          "Telecoms",
+          "Education",
+          "Entertainment",
+          "Finance"
+        ],
+        "series": [
+          {
+            "name": "Share of breaches (%)",
+            "values": [
+              22.17,
+              2.62,
+              2.22,
+              1.48,
+              1.38,
+              1.28,
+              1.26,
+              1.15,
+              1.03,
+              0.59
+            ],
+            "color": "#00BFA5"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "constella-intelligence-2025-identity-breach-report-combo-vs-unique",
+      "title": "Combo breaches vs unique breaches (2024)",
+      "description": "Combo breaches (recompiled/recycled lists) made up 88.98% of 2024 breach intake versus 11.02% genuinely unique breaches. Only 7.4% of Constella's lake represents truly novel breach events; the rest is recycled content.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Dark Web",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "logs_on_sale",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "combo-breaches",
+        "recycled-data",
+        "credential-stuffing"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "2024 Total Breached Identity Metrics",
+      "comparison": "+8.27pp combo YoY",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Combo breaches",
+          "Unique breaches"
+        ],
+        "series": [
+          {
+            "name": "Share of intake (%)",
+            "values": [
+              88.98,
+              11.02
+            ],
+            "color": "#00BFA5"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "constella-intelligence-2025-identity-breach-report-top-breaches",
+      "title": "Top breaches by records exposed (2024)",
+      "description": "The largest 2024 breaches Constella tracked were tencent.com (668M) and National Public Data (647M), then a steep drop to 1win.com (195M). Nine breaches surpassed 75M records vs seven in 2023.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Data Breaches",
+      "industry": [
+        "Technology",
+        "Telecommunications",
+        "Retail & E-Commerce"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "top-breaches",
+        "leaderboard",
+        "victim-domains"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top 20 Breaches & Leakages",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "tencent.com",
+          "National Public Data",
+          "1win.com",
+          "AT&T",
+          "pureincubation.com",
+          "thepostmillennial.com",
+          "vk.com",
+          "neimanmarcus.com",
+          "intexmmedia.com",
+          "sportmaster.ru"
+        ],
+        "series": [
+          {
+            "name": "Records exposed (M)",
+            "values": [
+              668,
+              647,
+              195,
+              142,
+              127,
+              122,
+              119,
+              103,
+              76,
+              58
+            ],
+            "color": "#00BFA5"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "constella-intelligence-2025-identity-breach-report-top-pii",
+      "title": "Top PII attributes exposed in breaches",
+      "description": "Emails (54.16%) and passwords (38.89%) remained the most frequently exposed data types in 2024 breaches, followed by phone numbers (35.33%) and usernames (23.58%). Birthdates, SSNs, and credit card numbers continue to leak at material rates.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "pii-types",
+        "exposed-attributes",
+        "blast-radius"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top PII Exposed from Breaches",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Email",
+          "Password",
+          "Phone",
+          "Username",
+          "User ID",
+          "Web Address",
+          "Name",
+          "Surname",
+          "Address",
+          "City",
+          "Zip",
+          "DoB",
+          "SSN",
+          "IPv4",
+          "Credit Card"
+        ],
+        "series": [
+          {
+            "name": "Share of breaches (%)",
+            "values": [
+              54.16,
+              38.89,
+              35.33,
+              23.58,
+              21.16,
+              20.79,
+              16.08,
+              14.85,
+              13.87,
+              11.3,
+              10.28,
+              8.86,
+              4.37,
+              3.17,
+              1.9
+            ],
+            "color": "#00BFA5"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "constella-intelligence-2025-identity-breach-report-pii-volumes",
+      "title": "Sensitive PII record counts (2024)",
+      "description": "2024 breaches exposed over 4.2B phone numbers, 2.9B addresses/cities, and 2B full names, alongside 1.05B birthdates, 519M SSNs, and 225M credit card numbers. The composition shows how identity kits are assembled from many sources.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "pii-volumes",
+        "ssn",
+        "credit-card",
+        "fullz"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Identity Breach Impact",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Phone numbers",
+          "Addresses/cities",
+          "Full names",
+          "Birthdates",
+          "SSNs",
+          "Credit cards"
+        ],
+        "series": [
+          {
+            "name": "Records (M)",
+            "values": [
+              4200,
+              2900,
+              2000,
+              1050,
+              519,
+              225
+            ],
+            "color": "#00BFA5"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "constella-intelligence-2025-identity-breach-report-continents",
+      "title": "Breach distribution by continent (2024)",
+      "description": "Continent-level distribution of 2024 breaches: North America (40.88%) leads, followed by Asia (28.89%) and Europe (22.34%). South America, Oceania, and Africa together account for under 8%.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Data Breaches",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "continent",
+        "geography",
+        "distribution"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Geographic Distribution",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "North America",
+          "Asia",
+          "Europe",
+          "South America",
+          "Oceania",
+          "Africa"
+        ],
+        "series": [
+          {
+            "name": "Share of breaches (%)",
+            "values": [
+              40.88,
+              28.89,
+              22.34,
+              4.44,
+              2.11,
+              1.34
+            ],
+            "color": "#00BFA5"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "constella-intelligence-2025-identity-breach-report-domains",
+      "title": "Top compromised webmail domains",
+      "description": "Gmail led 2024 webmail compromise with 3.1B accounts exposed, followed by hotmail.com (1.45B) and yahoo.com (1.38B). Russian services (mail.ru, yandex.ru) appear prominently, signalling geopolitically motivated credential harvesting.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [
+        "Technology",
+        "Telecommunications"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "logs_on_sale",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "webmail",
+        "compromised-domains",
+        "credential-harvesting"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top 2024 Compromised Domains",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "gmail.com",
+          "hotmail.com",
+          "yahoo.com",
+          "qq.com",
+          "aol.com",
+          "mail.ru",
+          "comcast.net",
+          "hotmail.fr",
+          "yandex.ru",
+          "web.de"
+        ],
+        "series": [
+          {
+            "name": "Compromised accounts (M)",
+            "values": [
+              3107,
+              1450,
+              1385,
+              732,
+              508,
+              348,
+              161,
+              125,
+              121,
+              95
+            ],
+            "color": "#00BFA5"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "constella-intelligence-2025-identity-breach-report-password-algos",
+      "title": "Top detected password algorithms in breaches",
+      "description": "Plaintext dominated 2024 with 95.29% prevalence; MySQL323 (74.61%) and MD2 (41.57%) — both legacy/weak — also appeared at alarming rates. Several breaches contain multiple algorithms, so percentages don't sum to 100%.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "logs_on_sale"
+      ],
+      "tags": [
+        "password-algorithms",
+        "plaintext",
+        "weak-hashing"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Password Algorithms",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Plaintext",
+          "MySQL323",
+          "MD2",
+          "Crypt16",
+          "MD5",
+          "JNS-SO",
+          "SHA-1",
+          "CRC-96",
+          "CISCO-ASA"
+        ],
+        "series": [
+          {
+            "name": "Share of breaches (%)",
+            "values": [
+              95.29,
+              74.61,
+              41.57,
+              15.07,
+              8.99,
+              6.37,
+              4.69,
+              4.6,
+              2.03
+            ],
+            "color": "#00BFA5"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "constella-intelligence-2025-identity-breach-report-fbi-complaints",
+      "title": "FBI 2024 cybercrime complaints by type",
+      "description": "From 859,532 FBI IC3 complaints in 2024, phishing/spoofing (193,407) and extortion (86,415) led by volume, with personal data breach (64,882) third. Identity-relevant categories dominate the complaint mix.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing",
+        "data_leaks"
+      ],
+      "tags": [
+        "fbi-ic3",
+        "crime-complaints",
+        "phishing",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": true,
+      "updated_at": "2026-05-11",
+      "page_or_section": "2024 Crime Types by Complaint Count",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "dataset": {
+        "labels": [
+          "Phishing/Spoofing",
+          "Extortion",
+          "Personal Data Breach",
+          "Non-Payment/Non-Delivery",
+          "Investment",
+          "Tech Support",
+          "BEC",
+          "Identity Theft",
+          "Employment",
+          "Confidence/Romance"
+        ],
+        "series": [
+          {
+            "name": "Complaints",
+            "values": [
+              193407,
+              86415,
+              64882,
+              49572,
+              47919,
+              36002,
+              21442,
+              21403,
+              20044,
+              17910
+            ],
+            "color": "#00BFA5"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "constella-intelligence-2025-identity-breach-report-fbi-losses",
+      "title": "FBI 2024 cybercrime losses by category",
+      "description": "Investment fraud ($6.57B) and BEC ($2.77B) dwarfed other 2024 FBI IC3 loss categories. Data breach ($364.86M) ranked 8/26 in dollar value despite ranking 19/26 in complaint volume.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [
+        "Financial Services"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing",
+        "data_leaks"
+      ],
+      "tags": [
+        "fbi-ic3",
+        "losses",
+        "financial-impact",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "2024 Crime Types by Complaint Loss",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "usd",
+      "dataset": {
+        "labels": [
+          "Investment",
+          "BEC",
+          "Tech Support",
+          "Personal Data Breach",
+          "Non-Payment",
+          "Confidence/Romance",
+          "Gov Impersonation",
+          "Data Breach",
+          "Other",
+          "Employment"
+        ],
+        "series": [
+          {
+            "name": "Losses (USD)",
+            "values": [
+              6570639864,
+              2770151146,
+              1464755976,
+              1453296303,
+              785436888,
+              672009052,
+              405624084,
+              364855818,
+              280278325,
+              264223271
+            ],
+            "color": "#00BFA5"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "chart",
+      "id": "constella-intelligence-2025-identity-breach-report-social-media",
+      "title": "Top social media attributes exposed",
+      "description": "Of 2024 social-media-related breach records, Facebook profiles dominated at 49.7%, with Twitter (14%), LinkedIn (13.6%), ICQ (3.9%), and other platforms trailing. Threat actors use these profiles for impersonation and reconnaissance.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "social-media",
+        "facebook",
+        "profile-exposure"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Top Social Media Attributes",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Facebook",
+          "Twitter",
+          "LinkedIn",
+          "ICQ",
+          "Other platforms"
+        ],
+        "series": [
+          {
+            "name": "Share of SM records (%)",
+            "values": [
+              49.7,
+              14,
+              13.6,
+              3.9,
+              0.3
+            ],
+            "color": "#00BFA5"
+          }
+        ]
+      },
+      "preferred_chart": "pie"
+    },
+    {
+      "type": "chart",
+      "id": "constella-intelligence-2025-identity-breach-report-cxo-targeting",
+      "title": "Executive targeting indicators (2024)",
+      "description": "A 2024 GetApp survey shows 72% of cybersecurity pros observed senior executives being targeted recently, 54% of U.S. companies had an identity-fraud incident affecting an executive, and 27% of those attacks involved deepfakes.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "executive-targeting",
+        "deepfake",
+        "identity-fraud",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "CXO Digital Exposure",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "dataset": {
+        "labels": [
+          "Pros seeing exec targeting",
+          "US companies w/ exec ID-fraud",
+          "Exec attacks using deepfakes"
+        ],
+        "series": [
+          {
+            "name": "Share (%)",
+            "values": [
+              72,
+              54,
+              27
+            ],
+            "color": "#00BFA5"
+          }
+        ]
+      },
+      "preferred_chart": "bar"
+    },
+    {
+      "type": "stat",
+      "id": "constella-intelligence-2025-identity-breach-report-spark-records-yoy",
+      "title": "Records exposed YoY surge",
+      "description": "Constella's records-exposed counter climbed sharply through 2024, ending at 107.1B with a 55.72% year-over-year growth rate. The sparkline approximates the cumulative quarterly ramp.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Data Breaches",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "records-growth",
+        "yoy",
+        "trend",
+        "spark-from-8"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "2024 Total Breached Identity Metrics",
+      "comparison": "vs 2023",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "sparkline",
+      "value": "+55.72% YoY",
+      "spark": [
+        12,
+        22,
+        55,
+        68,
+        95,
+        107
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "constella-intelligence-2025-identity-breach-report-spark-fbi-databreach",
+      "title": "FBI data-breach complaints trend",
+      "description": "FBI IC3 data-breach complaints more than doubled from 2021 to 2023 then plateaued in 2024. The trajectory: 1,287 (2021), 2,795 (2022), 3,727 (2023), 3,204 (2024) — staying elevated despite a slight retreat.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Data Breaches",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "fbi-ic3",
+        "complaint-trend",
+        "multi-year",
+        "spark-from-4"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Prevalent Types of Attacks",
+      "comparison": "vs 2023 peak (3,727)",
+      "trend": "decreasing",
+      "value_unit": "count",
+      "card_style": "sparkline",
+      "value": "3,204",
+      "spark": [
+        1287,
+        2795,
+        2795,
+        3727,
+        3727,
+        3204
+      ]
+    },
+    {
+      "type": "stat",
+      "id": "constella-intelligence-2025-identity-breach-report-pii-coverage",
+      "title": "99.33% of breaches expose PII",
+      "description": "Personally identifiable information appeared in 99.33% of 2024 breaches, up from 96.6% the year prior. Nearly every breach now leaks names, phone numbers, addresses, birthdates, SSNs, or credit card data alongside credentials.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "pii",
+        "breach-impact",
+        "blast-radius"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Identity Breach Impact Goes Far Beyond IT",
+      "comparison": "+1.75pp YoY",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "99.33%"
+    },
+    {
+      "type": "stat",
+      "id": "constella-intelligence-2025-identity-breach-report-plaintext-passwords",
+      "title": "95.29% of breaches contain plaintext passwords",
+      "description": "Plaintext passwords appeared in 95.29% of breaches Constella analyzed in 2024, up from 70.99% in 2023 — a 24+ percentage point jump. The vast majority of stolen passwords are now immediately exploitable without cracking.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "logs_on_sale"
+      ],
+      "tags": [
+        "plaintext",
+        "password-algorithms",
+        "credential-exposure"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Password Algorithms",
+      "comparison": "+24.30pp vs 2023",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "95.29%"
+    },
+    {
+      "type": "stat",
+      "id": "constella-intelligence-2025-identity-breach-report-phishing-infostealer",
+      "title": "+84% phishing campaigns deliver infostealers (YoY)",
+      "description": "IBM reported an 84% year-over-year increase in phishing campaigns that deliver infostealer malware, cited by Constella. Email threats have shifted heavily toward dropping stealers to harvest credentials at scale.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Phishing & BEC",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "infostealer"
+      ],
+      "tags": [
+        "phishing-infostealer",
+        "yoy",
+        "delivery-vector"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Infostealers Now Mass-Harvest Identities",
+      "comparison": "vs 2023",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "+84% YoY"
+    },
+    {
+      "type": "stat",
+      "id": "constella-intelligence-2025-identity-breach-report-exposed-records",
+      "title": "107.1B identity records exposed in 2024",
+      "description": "Constella's threat intelligence team identified more than 107.1 billion exposed records circulating across the deep and dark web in 2024, drawn from 219K breach events. Records grew 55.72% year-over-year, underscoring the industrialization of identity compromise.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Data Breaches",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "identity-records",
+        "deep-and-dark-web",
+        "headline"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "2024 Total Breached Identity Metrics",
+      "comparison": "+55.72% YoY",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "107.1B"
+    },
+    {
+      "type": "stat",
+      "id": "constella-intelligence-2025-identity-breach-report-breach-events",
+      "title": "219K breach events tracked in 2024",
+      "description": "Constella hunted down more than 219,000 breach events in 2024, a 45.10% increase over 2023. The volume reflects both genuine new compromises and re-circulated combo lists across underground markets.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Data Breaches",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "breach-events",
+        "scale",
+        "identity"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "2024 Total Breached Identity Metrics",
+      "comparison": "+45.10% YoY",
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "219K"
+    },
+    {
+      "type": "stat",
+      "id": "constella-intelligence-2025-identity-breach-report-cxo-deepfakes",
+      "title": "27% of executive attacks involved deepfakes",
+      "description": "An increasingly common element of executive-targeting campaigns is AI-driven impersonation: 27% of attacks on execs involved deepfakes. With as little as 16 seconds of audio, attackers can clone voices to deceive employees, investors, and partners.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing"
+      ],
+      "tags": [
+        "deepfake",
+        "executive-impersonation",
+        "voice-cloning",
+        "bec"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "CXO Digital Exposure",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "27%"
+    },
+    {
+      "type": "stat",
+      "id": "constella-intelligence-2025-identity-breach-report-fbi-loss-databreach",
+      "title": "$364.86M in 2024 data-breach losses",
+      "description": "The FBI's 2024 Internet Crime Report tallied $364,855,818 in losses attributed to data breaches, ranking 8th of 26 crime categories by dollar value despite ranking 19th in complaint volume. Identity-driven crime is small in count but huge in financial impact.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Data Breaches",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "fbi-ic3",
+        "complaint-loss",
+        "financial-impact"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "2024 Crime Types by Complaint Loss",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "usd",
+      "card_style": "number",
+      "value": "$364.86M"
+    },
+    {
+      "type": "stat",
+      "id": "constella-intelligence-2025-identity-breach-report-infostealer-correlation",
+      "title": "78% of recently breached companies had infostealer logs",
+      "description": "Of 50 recently breached companies studied, 78% had corporate credentials surface in infostealer logs within the six-month window around their breach. Infostealer infections are increasingly the precursor to enterprise compromise.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer",
+        "logs_on_sale",
+        "data_leaks"
+      ],
+      "tags": [
+        "infostealer-correlation",
+        "pre-breach",
+        "initial-access"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Infostealers Now Mass-Harvest Identities",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "78%"
+    },
+    {
+      "type": "stat",
+      "id": "constella-intelligence-2025-identity-breach-report-infostealer-logs",
+      "title": "30M infostealer device logs circulating",
+      "description": "Constella's telemetry observed over 30 million infostealer device logs circulating on dark web marketplaces in the past year. Each log can contain saved credentials, session cookies, autofill data, system info, and screenshots from a single infected machine.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Dark Web",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "infostealer",
+        "logs_on_sale",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "infostealer",
+        "device-logs",
+        "dark-web-markets"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Infostealers Now Mass-Harvest Identities at Scale",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "30M"
+    },
+    {
+      "type": "stat",
+      "id": "constella-intelligence-2025-identity-breach-report-na-exec-logs",
+      "title": "417K North American employees in infostealer logs",
+      "description": "Constella's 2024 data identified over 417,000 North American employees and approximately 15,000 Asia-based employees with identities surfaced in infostealer logs, including high-privilege executive domains.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "infostealer",
+        "logs_on_sale",
+        "data_leaks"
+      ],
+      "tags": [
+        "executive-exposure",
+        "infostealer",
+        "employee-credentials"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "CXO Digital Exposure",
+      "comparison": null,
+      "trend": "increasing",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "417K"
+    },
+    {
+      "type": "stat",
+      "id": "constella-intelligence-2025-identity-breach-report-snowflake",
+      "title": "165 companies hit via Snowflake identity chain",
+      "description": "The UNC5537 campaign used infostealer-harvested credentials to access data belonging to roughly 165 Snowflake customer tenants in 2024. Constella highlights it as the textbook supply chain identity compromise.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Supply Chain",
+      "industry": [
+        "Technology"
+      ],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "infostealer",
+        "supply_chain",
+        "data_leaks"
+      ],
+      "tags": [
+        "snowflake",
+        "unc5537",
+        "supply-chain-identity"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Supply Chain Identity Risk",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": "count",
+      "card_style": "number",
+      "value": "~165"
+    },
+    {
+      "type": "stat",
+      "id": "constella-intelligence-2025-identity-breach-report-quote-credentials",
+      "title": "Attackers log in, they don't hack in",
+      "description": "Constella frames 2024 as the year credentials became the new perimeter. With over a billion identity records exposed via breaches and infostealers, the cost of buying valid logins outpaced the effort of breaking in.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Identity & Access",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "infostealer",
+        "logs_on_sale"
+      ],
+      "tags": [
+        "narrative",
+        "credentials",
+        "perimeter"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Identity is the New Attack Surface",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Credentials are the new perimeter, and they're under attack. Attackers no longer break in, they log in.\""
+    },
+    {
+      "type": "stat",
+      "id": "constella-intelligence-2025-identity-breach-report-quote-itrc",
+      "title": "Fewer breaches, far greater damage",
+      "description": "The Identity Theft Resource Center, cited by Constella, observes that reported breach counts plateaued in 2024 while the scale of records exposed per incident exploded. Breach severity, not breach count, is the more meaningful signal.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Data Breaches",
+      "industry": [],
+      "region": [
+        "North America"
+      ],
+      "threat_type": [
+        "data_leaks"
+      ],
+      "tags": [
+        "narrative",
+        "itrc",
+        "breach-scale"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Trend Alert 01",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Fewer breaches, but far greater damage. It's no longer about how many breaches occur, but how extensive their reach is.\""
+    },
+    {
+      "type": "stat",
+      "id": "constella-intelligence-2025-identity-breach-report-quote-agentic-ai",
+      "title": "Defenders must move to agentic AI",
+      "description": "Constella COO/CISO Andres Andreu argues that reactive security models can't keep pace with adversaries already leveraging AI to automate vulnerability discovery and campaign delivery. Agentic AI must shift defenders from reaction to proactive neutralization.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "AI Security",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "phishing",
+        "vulnerability"
+      ],
+      "tags": [
+        "agentic-ai",
+        "andres-andreu",
+        "future-defense"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Agentic AI: The Next Frontier",
+      "comparison": null,
+      "trend": "unknown",
+      "value_unit": null,
+      "card_style": "quote",
+      "quote": "\"Defenders must move from adaptive or reactive models to models of agentic AI that proactively neutralizes threats.\""
+    },
+    {
+      "type": "stat",
+      "id": "constella-intelligence-2025-identity-breach-report-spark-combo-lists",
+      "title": "Combo-list share of breach intake",
+      "description": "Credential compilations rose from 43% of Constella-ingested breaches in 2023 to 60% in 2024. Only 7.4% of breaches in Constella's data lake represent truly unique events — the rest is recycled material.",
+      "source": "Constella Intelligence",
+      "source_short": "Constella",
+      "color": "#00BFA5",
+      "year": 2025,
+      "category": "Dark Web",
+      "industry": [],
+      "region": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "threat_type": [
+        "data_leaks",
+        "logs_on_sale",
+        "dark_web_mentions"
+      ],
+      "tags": [
+        "combo-lists",
+        "credential-stuffing",
+        "recycled-data"
+      ],
+      "featured": false,
+      "real": true,
+      "library_include": false,
+      "updated_at": "2026-05-11",
+      "page_or_section": "Cybercriminals Recycle Breached Data Indefinitely",
+      "comparison": "vs 43% in 2023",
+      "trend": "increasing",
+      "value_unit": "percent",
+      "card_style": "number",
+      "value": "60%"
+    }
+  ]
+}

@@ -1,0 +1,419 @@
+{
+  "generated_at": "2026-05-12",
+  "logos": [
+    {
+      "name": "SOCRadar",
+      "slug": "socradar",
+      "file": "/logos/sources/socradar.png",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "internal: copied from /socradar-logo-white.png",
+      "notes": "White wordmark on transparent — ideal for dark backgrounds. Copied from existing public asset."
+    },
+    {
+      "name": "IBM X-Force",
+      "slug": "ibm-xforce",
+      "file": "/logos/sources/ibm-xforce.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg",
+      "notes": "Official IBM 8-bar logo in blue (#1f70c1). X-Force has no distinct standalone SVG mark; IBM corporate logo is the recognised parent identity for the X-Force Threat Intelligence brand."
+    },
+    {
+      "name": "CrowdStrike",
+      "slug": "crowdstrike",
+      "file": "/logos/sources/crowdstrike.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/CrowdStrike_logo.svg",
+      "notes": "Official CrowdStrike falcon + wordmark in red (#fc0000). Also covers CrowdStrike OverWatch."
+    },
+    {
+      "name": "Verizon DBIR",
+      "slug": "verizon-dbir",
+      "file": "/logos/sources/verizon.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Verizon_2024.svg",
+      "notes": "Verizon 2024 wordmark with red checkmark. DBIR is published by Verizon — parent brand is the recognised identity."
+    },
+    {
+      "name": "Mandiant",
+      "slug": "mandiant",
+      "file": "/logos/sources/mandiant.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Mandiant_logo.svg",
+      "notes": "Official Mandiant wordmark in burgundy (#960a2c). Also covers Mandiant M-Trends."
+    },
+    {
+      "name": "Unit 42",
+      "slug": "unit42",
+      "file": "/logos/sources/unit42.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://www.paloaltonetworks.com/etc/clientlibs/clean/imgs/pan-logo-dark.svg",
+      "notes": "Official Palo Alto Networks dark-mode logo (orange + light). Unit 42 is PAN's threat intel arm; PAN parent brand is the recognised mark. Covers Unit 42 and Palo Alto Unit 42."
+    },
+    {
+      "name": "ENISA",
+      "slug": "enisa",
+      "file": "/logos/sources/enisa.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://www.enisa.europa.eu/sites/default/files/enisa-logo.svg",
+      "notes": "Official ENISA logo from enisa.europa.eu (EU blue + yellow stars motif)."
+    },
+    {
+      "name": "Cloudflare",
+      "slug": "cloudflare",
+      "file": "/logos/sources/cloudflare.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://cdn.simpleicons.org/cloudflare",
+      "notes": "Official Cloudflare orange (#F38020) cloud mark via Simple Icons CDN."
+    },
+    {
+      "name": "Akamai",
+      "slug": "akamai",
+      "file": "/logos/sources/akamai.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Akamai_logo.svg",
+      "notes": "Official Akamai wordmark + wave logo (blue + orange)."
+    },
+    {
+      "name": "Kaspersky",
+      "slug": "kaspersky",
+      "file": "/logos/sources/kaspersky.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Kaspersky_logo.svg",
+      "notes": "Official Kaspersky wordmark in green (#009982)."
+    },
+    {
+      "name": "Check Point",
+      "slug": "checkpoint",
+      "file": "/logos/sources/checkpoint.svg",
+      "confidence": "high",
+      "bg": "white",
+      "source_url": "https://www.checkpoint.com/wp-content/themes/checkpoint-theme-v2/images/checkpoint-logo.svg",
+      "notes": "Official Check Point logo from their site. Dark grey wordmark (#231f20) with magenta accent — needs white card on dark background."
+    },
+    {
+      "name": "Dragos",
+      "slug": "dragos",
+      "file": "/logos/sources/dragos.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://dragos.brightspotcdn.com/9d/64/c5a518e840ac86c1cfd4685fa538/header-nav-dragos-logo-8-25.svg",
+      "notes": "Official Dragos navbar SVG (white-on-transparent variant — ideal for dark background)."
+    },
+    {
+      "name": "PCI SSC",
+      "slug": "pci-ssc",
+      "file": "/logos/sources/pci-ssc.svg",
+      "confidence": "high",
+      "bg": "white",
+      "source_url": "https://www.pcisecuritystandards.org/wp-content/uploads/2022/03/pci-logo-teal.svg",
+      "notes": "Official PCI Security Standards Council teal logo (#006A71). Teal-on-transparent is readable but contrast is borderline on a dark bg — use white card for safety."
+    },
+    {
+      "name": "NVD",
+      "slug": "nvd",
+      "file": null,
+      "confidence": "missing",
+      "bg": "transparent",
+      "source_url": null,
+      "notes": "NIST/NVD does not publish a distinct vector logo for NVD. NIST master logo exists but is generic. Recommend falling back to NIST logo or keeping monogram chip for this one."
+    },
+    {
+      "name": "CISA",
+      "slug": "cisa",
+      "file": "/logos/sources/cisa.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://www.cisa.gov/profiles/cisad8_gov/themes/custom/gesso/dist/images/backgrounds/6fdaa25709d28dfb5cca.svg",
+      "notes": "Official CISA seal SVG from cisa.gov asset path. Multi-colour (#005288 blue, #C41230 red, #5E9732 green) — looks great on dark."
+    },
+    {
+      "name": "FBI IC3",
+      "slug": "fbi-ic3",
+      "file": "/logos/sources/fbi-ic3.png",
+      "confidence": "medium",
+      "bg": "transparent",
+      "source_url": "https://www.ic3.gov/img/ic3_logo.png",
+      "notes": "Official IC3 PNG logo from ic3.gov. 300x300 raster (no SVG available). Also see fbi-seal.svg in folder if FBI corporate seal is preferred."
+    },
+    {
+      "name": "Cisco Talos",
+      "slug": "cisco-talos",
+      "file": "/logos/sources/cisco-talos.svg",
+      "confidence": "medium",
+      "bg": "transparent",
+      "source_url": "https://talosintelligence.com/assets/logo_cisco_white-d87b7f7d3152ad412e48aad924a972cc5b802b7a53cb56b0792a4456c9b7b3a5.svg",
+      "notes": "White Cisco corporate logo pulled from talosintelligence.com header. This is the Cisco parent logo (no standalone Talos wordmark) so the Talos sub-brand is implicit. Medium confidence because it shows Cisco rather than Talos explicitly."
+    },
+    {
+      "name": "Red Canary",
+      "slug": "redcanary",
+      "file": "/logos/sources/redcanary.svg",
+      "confidence": "medium",
+      "bg": "transparent",
+      "source_url": "https://redcanary.com/wp-content/uploads/2025/08/Red-Canary_x_Zscaler_logo.svg",
+      "notes": "Joint Red Canary x Zscaler logo from redcanary.com header (Red Canary was acquired by Zscaler in 2025). Standalone pre-acquisition Red Canary SVG is no longer hosted on the site. Medium confidence — the joint lockup may look busy."
+    },
+    {
+      "name": "Black Duck",
+      "slug": "black-duck",
+      "file": "/logos/sources/black-duck.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://www.blackduck.com/content/dam/black-duck/style-guide/header/BlackDuckLogo.svg",
+      "notes": "Official Black Duck logo from their style guide path (purple gradient + duck mark)."
+    },
+    {
+      "name": "F5 Labs",
+      "slug": "f5",
+      "file": "/logos/sources/f5.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://upload.wikimedia.org/wikipedia/en/f/f9/F5_Networks_logo.svg",
+      "notes": "Official F5 Networks logo (red ball #e21d38 with white F5). Covers F5 Labs as F5 is the parent."
+    },
+    {
+      "name": "FS-ISAC",
+      "slug": "fs-isac",
+      "file": "/logos/sources/fs-isac.svg",
+      "confidence": "high",
+      "bg": "white",
+      "source_url": "https://www.fsisac.com/hubfs/FS-ISAC_Logos/Logo.svg",
+      "notes": "Official FS-ISAC SVG from their CDN. Dark wordmark (#231F20) with gradient hexagon mark — needs white card on dark background."
+    },
+    {
+      "name": "World Economic Forum",
+      "slug": "wef",
+      "file": "/logos/sources/wef.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/World_Economic_Forum_logo.svg",
+      "notes": "Official WEF logo (blue #004b86 + white)."
+    },
+    {
+      "name": "Sophos",
+      "slug": "sophos",
+      "file": "/logos/sources/sophos.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Sophos_logo.svg",
+      "notes": "Official Sophos navy-blue (#495390) wordmark."
+    },
+    {
+      "name": "Zscaler",
+      "slug": "zscaler",
+      "file": "/logos/sources/zscaler.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://upload.wikimedia.org/wikipedia/en/f/fa/Zscaler_logo.svg",
+      "notes": "Official Zscaler logo in cyan-blue (#0076be). Covers Zscaler ThreatLabz."
+    },
+    {
+      "name": "Microsoft Security",
+      "slug": "microsoft",
+      "file": "/logos/sources/microsoft.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
+      "notes": "Official Microsoft logo (four-colour squares + grey wordmark). Microsoft Security is the same parent brand."
+    },
+    {
+      "name": "Rapid7",
+      "slug": "rapid7",
+      "file": "/logos/sources/rapid7.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://www.rapid7.com/_next/static/media/rapid7-logo.0wr-9470i7grz.svg",
+      "notes": "Official Rapid7 logo from rapid7.com (orange #E85E26)."
+    },
+    {
+      "name": "Fortinet FortiGuard",
+      "slug": "fortinet",
+      "file": "/logos/sources/fortinet.svg",
+      "confidence": "high",
+      "bg": "white",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Fortinet_logo.svg",
+      "notes": "Official Fortinet logo (black wordmark #231f20 + red Fortinet F #ee2e24). Dark wordmark needs white card. FortiGuard is Fortinet's threat research arm — same parent brand."
+    },
+    {
+      "name": "ESET",
+      "slug": "eset",
+      "file": "/logos/sources/eset.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/ESET_logo.svg",
+      "notes": "Official ESET logo in teal-cyan (#0094A1) with white accent."
+    },
+    {
+      "name": "Trellix",
+      "slug": "trellix",
+      "file": "/logos/sources/trellix.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://www.trellix.com/en-us/assets/logos/trellix-logo-black.svg",
+      "notes": "Official Trellix logo with gradient fill (despite the filename saying 'black' the actual SVG uses a linear gradient mark — visible on dark backgrounds)."
+    },
+    {
+      "name": "Bitdefender",
+      "slug": "bitdefender",
+      "file": "/logos/sources/bitdefender.svg",
+      "confidence": "high",
+      "bg": "white",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Bitdefender_logo.svg",
+      "notes": "Official Bitdefender logo (black wordmark + red shield). Black wordmark needs white card on dark background."
+    },
+    {
+      "name": "Hoxhunt",
+      "slug": "hoxhunt",
+      "file": "/logos/sources/hoxhunt.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://cdn.prod.website-files.com/612e0b960d87816eb1cb9216/612e1ad0edc1a9bac99f1448_Hoxhunt.svg",
+      "notes": "Official Hoxhunt logo from their Webflow CDN (pink #EE295C + light)."
+    },
+    {
+      "name": "KnowBe4",
+      "slug": "knowbe4",
+      "file": "/logos/sources/knowbe4.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://www.vectorlogo.zone/logos/knowbe4/knowbe4-icon.svg",
+      "notes": "KnowBe4 logo from vectorlogo.zone (white + gradient). Visible on dark."
+    },
+    {
+      "name": "Proofpoint",
+      "slug": "proofpoint",
+      "file": "/logos/sources/proofpoint.svg",
+      "confidence": "high",
+      "bg": "white",
+      "source_url": "https://www.proofpoint.com/sites/default/files/logos/logo.svg",
+      "notes": "Official Proofpoint logo from proofpoint.com (dark grey wordmark #231f20). Needs white card."
+    },
+    {
+      "name": "Coalition",
+      "slug": "coalition",
+      "file": "/logos/sources/coalition.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://images.ctfassets.net/o2pgk9gufvga/4FsCKS3AtT1XrYg66OOkor/88e55df16c8b77f057ccecdb678a133f/Coalition_Logo_Reverse.svg",
+      "notes": "Official Coalition 'Reverse' (white-on-transparent) variant from their Contentful CDN. Designed for dark backgrounds."
+    },
+    {
+      "name": "Constella",
+      "slug": "constella",
+      "file": "/logos/sources/constella.png",
+      "confidence": "medium",
+      "bg": "white",
+      "source_url": "https://constella.ai/wp-content/uploads/2025/12/Constella-logo_black.png",
+      "notes": "Official Constella logo PNG (black wordmark, 385x72). No SVG available on their site. Black wordmark — needs white card."
+    },
+    {
+      "name": "KELA",
+      "slug": "kela",
+      "file": "/logos/sources/kela.png",
+      "confidence": "medium",
+      "bg": "white",
+      "source_url": "https://www.kelacyber.com/wp-content/uploads/2021/12/KELA-Logo_black-and-red-300x76.png",
+      "notes": "Official KELA logo PNG from kelacyber.com (black KELA wordmark + red mark, 300x76). No SVG hosted on their site. Needs white card."
+    },
+    {
+      "name": "CYFIRMA",
+      "slug": "cyfirma",
+      "file": "/logos/sources/cyfirma.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://www.cyfirma.com/media/2022/08/CyfirmaLogoWhite.svg",
+      "notes": "Official CYFIRMA white-variant logo SVG from cyfirma.com — designed for dark backgrounds."
+    },
+    {
+      "name": "Sonatype",
+      "slug": "sonatype",
+      "file": "/logos/sources/sonatype.svg",
+      "confidence": "medium",
+      "bg": "transparent",
+      "source_url": "https://www.sonatype.com/hubfs/1-2025_Website-Assets/logos/favicon-2025.svg",
+      "notes": "Sonatype 2025 favicon SVG (blue 'S' mark). This is the icon mark, not the full wordmark — but it's the only SVG available on their HubSpot CDN. Medium confidence because it's icon-only."
+    },
+    {
+      "name": "Coveware",
+      "slug": "coveware",
+      "file": "/logos/sources/coveware.png",
+      "confidence": "low",
+      "bg": "white",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5ab16578e2ccd10898976178/1524678956216-R496TJD9OIGMY0CH4K94/coveware_banner.png",
+      "notes": "Coveware homepage banner (2500x894). The full Coveware site is built on Squarespace and does not expose a standalone logo SVG — this banner is the closest thing to a brand asset. Low confidence due to size and being a banner crop rather than a clean wordmark. Forced ?format=2500w to get PNG instead of WebP."
+    },
+    {
+      "name": "Huntress",
+      "slug": "huntress",
+      "file": "/logos/sources/huntress.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://cdn.builder.io/api/v1/image/assets%2F3eb6f92aedf74f109c7b4b0897ec39a8%2Fbf879a26d9994fd8b3b0d8878c9474f4",
+      "notes": "Huntress 'Logo in Teal' (alt-text matched) from their builder.io CDN — teal (#01C5D1). The non-obvious source: had to scrape huntress.com HTML, regex match alt='Huntress Logo' to find the asset hash, then fetch directly without format params to get raw SVG (with format params it returns WebP)."
+    },
+    {
+      "name": "NCSC (UK)",
+      "slug": "ncsc",
+      "file": "/logos/sources/ncsc.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://www.ncsc.gov.uk/themes/custom/lakes/dist/ncsc-logo-CarDIzNF.svg",
+      "notes": "Official NCSC UK logo SVG from ncsc.gov.uk theme assets (white-on-transparent variant — designed for dark headers)."
+    },
+    {
+      "name": "PwC",
+      "slug": "pwc",
+      "file": "/logos/sources/pwc.svg",
+      "confidence": "high",
+      "bg": "white",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/05/PricewaterhouseCoopers_Logo.svg",
+      "notes": "Official PricewaterhouseCoopers logo. PwC wordmark is black with stacked orange/red colour ribbons above — black text needs a white card on dark backgrounds."
+    },
+    {
+      "name": "Censys",
+      "slug": "censys",
+      "file": "/logos/sources/censys.png",
+      "confidence": "medium",
+      "bg": "transparent",
+      "source_url": "https://censys.com/wp-content/uploads/Censys-Primary-logo-White.png",
+      "notes": "Official Censys primary white logo PNG (728x176). Filename specifies 'White' variant — designed for dark backgrounds. PNG only; no SVG exposed on their site."
+    },
+    {
+      "name": "Okta",
+      "slug": "okta",
+      "file": "/logos/sources/okta.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Okta_logo.svg",
+      "notes": "Official Okta logo in blue (#007DC1)."
+    },
+    {
+      "name": "SecurityScorecard",
+      "slug": "securityscorecard",
+      "file": "/logos/sources/securityscorecard.svg",
+      "confidence": "medium",
+      "bg": "transparent",
+      "source_url": "https://cdn.simpleicons.org/securityscorecard",
+      "notes": "SecurityScorecard icon mark (purple #7033FD) from Simple Icons CDN. Single-colour mark — not the full wordmark, but on-brand."
+    },
+    {
+      "name": "Trend Micro",
+      "slug": "trendmicro",
+      "file": "/logos/sources/trendmicro.svg",
+      "confidence": "high",
+      "bg": "transparent",
+      "source_url": "https://www.trendmicro.com/content/dam/trendmicro/global/en/core/images/logos/tm-logo-red-white-t.svg",
+      "notes": "Official Trend Micro red-on-white variant SVG (red #d71920 + white). 'tm-logo-red-white-t' filename indicates a reversed/dark-bg-friendly variant."
+    }
+  ]
+}
