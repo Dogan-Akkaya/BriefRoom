@@ -1,5 +1,7 @@
 import Spark from '../Spark'
 import { BrandChip } from '../../lib/sourceBrands'
+import { copyText, citationForItem } from '../../lib/export'
+import { useToastStore } from '../../stores/useToastStore'
 
 // Renders one Intelligence Library stat item in one of four visual styles:
 // number | sparkline | bar | quote.
@@ -29,6 +31,50 @@ function TinyBars({ values, color = '#FF4562' }) {
 export default function SliceStatCard({ item }) {
   const style = item.card_style || 'number'
   const span = SPAN_BY_STYLE[style] || 1
+  const showToast = useToastStore((s) => s.show)
+
+  const handleCopyCitation = async (e) => {
+    e.stopPropagation()
+    const text = citationForItem(item)
+    if (!text) return
+    const ok = await copyText(text)
+    showToast(ok ? 'Citation copied' : 'Copy failed', ok ? 'success' : 'error')
+  }
+
+  // Copy-with-citation icon button. Only shown when the item is `real`
+  // (verified vendor source); pairs visually with the Verified badge.
+  const copyButton = item.real ? (
+    <button
+      onClick={handleCopyCitation}
+      aria-label="Copy stat with citation"
+      title="Copy stat with citation"
+      style={{
+        position: 'absolute', top: 10, right: 96,
+        display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+        width: 22, height: 22, borderRadius: 6,
+        background: 'rgba(255,255,255,0.04)',
+        border: '1px solid rgba(255,255,255,0.08)',
+        color: 'rgba(232,236,241,0.55)',
+        cursor: 'pointer', padding: 0,
+        transition: 'all 0.18s',
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.color = '#60A5FA'
+        e.currentTarget.style.borderColor = 'rgba(96,165,250,0.32)'
+        e.currentTarget.style.background = 'rgba(59,130,246,0.08)'
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.color = 'rgba(232,236,241,0.55)'
+        e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)'
+        e.currentTarget.style.background = 'rgba(255,255,255,0.04)'
+      }}
+    >
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+      </svg>
+    </button>
+  ) : null
 
   const containerBase = {
     padding: 18,
@@ -68,8 +114,8 @@ export default function SliceStatCard({ item }) {
     </span>
   ) : null
   // When Verified chip is rendered, reserve right-side space so title/quote
-  // never runs under the badge (badge is ~86px wide at top:10 / right:10).
-  const contentInsetRight = item.real ? 92 : 0
+  // never runs under the badge + copy button (combined ~124px at top:10).
+  const contentInsetRight = item.real ? 128 : 0
   const sourceLine = (
     <div style={{
       display: 'flex', alignItems: 'center', gap: 8,
@@ -100,6 +146,7 @@ export default function SliceStatCard({ item }) {
     return (
       <div style={{ ...containerBase, minHeight: 140, padding: '26px 32px' }}>
         {verifiedBadge}
+        {copyButton}
         <div style={{
           fontFamily: "'Plus Jakarta Sans'", fontSize: 20,
           fontWeight: 500, lineHeight: 1.5, color: 'rgba(232,236,241,0.92)',
@@ -118,6 +165,7 @@ export default function SliceStatCard({ item }) {
     return (
       <div style={{ ...containerBase, minHeight: 160 }}>
         {verifiedBadge}
+        {copyButton}
         {titleLine}
         <div style={{ display: 'flex', alignItems: 'flex-end', gap: 16, flex: 1 }}>
           <div style={{
@@ -141,6 +189,7 @@ export default function SliceStatCard({ item }) {
   return (
     <div style={{ ...containerBase, minHeight: 140 }}>
       {verifiedBadge}
+        {copyButton}
       {titleLine}
       <div style={{
         fontFamily: "'Plus Jakarta Sans'",

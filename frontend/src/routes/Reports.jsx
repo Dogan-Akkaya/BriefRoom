@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { INTELLIGENCE_LIBRARY, globalReports, threatTypeLabel } from '../lib/intelligenceLibrary'
+import { MANUAL_REPORT_RAW_BY_ID } from '../lib/manualData'
 import { CATEGORIES, INDUSTRIES } from '../lib/data'
 import ReportCard from '../components/ReportCard'
 import ChartPreviewModal from '../components/ChartPreviewModal'
@@ -9,6 +10,18 @@ import KnowledgeGraphBG from '../components/KnowledgeGraphBG'
 import SliceStatCard from '../components/explore/SliceStatCard'
 import SearchableSelect from '../components/SearchableSelect'
 import { BrandChip, sourceBrand } from '../lib/sourceBrands'
+import { sourceType } from '../lib/methodologyBias'
+
+const MONTH_NAMES = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+function formatReportDate(report) {
+  const pub = report.report_meta?.publication_date
+  if (pub && /^\d{4}-\d{2}/.test(pub)) {
+    const [y, m] = pub.split('-')
+    const mi = parseInt(m, 10) - 1
+    if (mi >= 0 && mi < 12) return `${MONTH_NAMES[mi]} ${y}`
+  }
+  return report.year ? String(report.year) : ''
+}
 
 // Sentinel values shown as the first option in each SearchableSelect.
 const ALL_SOURCES = 'All sources'
@@ -156,6 +169,39 @@ export default function Reports() {
     yearFilter !== 'All' ||
     regionFilter !== ALL_REGIONS
 
+  // Count findings within a report that match the active finding-level
+  // filters (industry / region / threat type). Returns null when no
+  // finding-level filter is active (so the chip stays hidden when the
+  // user is browsing unfiltered or only narrowing on report-level dims
+  // like Source / Year / Category).
+  const findingMatchFor = (report) => {
+    const indActive = industryFilter !== ALL_INDUSTRIES
+    const regActive = regionFilter !== ALL_REGIONS
+    const ttActive = threatTypeFilter !== ALL_THREAT_TYPES
+    if (!indActive && !regActive && !ttActive) return null
+
+    const reportId = report.report_meta?.report_id
+    const cards = reportId ? MANUAL_REPORT_RAW_BY_ID[reportId]?.cards : null
+    if (!Array.isArray(cards) || cards.length === 0) return null
+
+    const ttId = ttActive ? THREAT_TYPE_LABEL_TO_ID[threatTypeFilter] : null
+    const matched = cards.filter((c) => {
+      if (indActive && !(Array.isArray(c.industry) && c.industry.includes(industryFilter))) return false
+      if (regActive && !(Array.isArray(c.region) && c.region.includes(regionFilter))) return false
+      if (ttId && !(Array.isArray(c.threat_type) && c.threat_type.includes(ttId))) return false
+      return true
+    }).length
+
+    // Pick the active dimension label — when more than one is active,
+    // surface the most specific (threat type > industry > region).
+    let dimensionLabel = null
+    if (ttActive) dimensionLabel = threatTypeFilter
+    else if (indActive) dimensionLabel = industryFilter
+    else if (regActive) dimensionLabel = regionFilter
+
+    return { matched, total: cards.length, dimensionLabel }
+  }
+
   const clearAll = () => {
     setSourceFilter(ALL_SOURCES)
     setCategoryFilter(ALL_CATEGORIES)
@@ -200,6 +246,13 @@ export default function Reports() {
   return (
     <div style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden' }}>
       <KnowledgeGraphBG />
+      {/* Scrim — vertical gradient under the hero area to lift WCAG AA
+          contrast on the H1 sitting over the constellation. */}
+      <div aria-hidden="true" style={{
+        position: 'absolute', top: 0, left: 0, right: 0, height: 360, zIndex: 1,
+        background: 'linear-gradient(180deg, rgba(10,14,26,0.62) 0%, rgba(10,14,26,0.32) 55%, rgba(10,14,26,0) 100%)',
+        pointerEvents: 'none',
+      }} />
       <div style={{ position: 'relative', zIndex: 2, paddingTop: 80, paddingBottom: 80, maxWidth: 1280, margin: '0 auto', paddingLeft: 24, paddingRight: 24 }}>
       <div style={{ display: 'flex', gap: 28, alignItems: 'flex-start', flexWrap: 'wrap' }}>
         {/* Left Sidebar */}
@@ -392,18 +445,19 @@ export default function Reports() {
           }}>
             {filtered.map((report, i) => {
               const isFeatured = i % 3 === 2
+              const match = findingMatchFor(report)
 
               if (isFeatured) {
                 return (
                   <Reveal key={report.id} delay={i * 60} style={{ gridColumn: 'span 2' }}>
-                    <FeaturedCard report={report} onClick={() => openReport(report)} />
+                    <FeaturedCard report={report} onClick={() => openReport(report)} match={match} />
                   </Reveal>
                 )
               }
 
               return (
                 <Reveal key={report.id} delay={i * 60}>
-                  <ReportCard report={report} onClick={() => openReport(report)} />
+                  <ReportCard report={report} onClick={() => openReport(report)} match={match} />
                 </Reveal>
               )
             })}
@@ -521,7 +575,7 @@ function FeaturedMiniChart({ data, labels, color, type }) {
   )
 }
 
-function FeaturedCard({ report, onClick }) {
+function FeaturedCard({ report, onClick, match }) {
   const [hovered, setHovered] = useState(false)
 
   const dataset = report.dataset
@@ -529,6 +583,21 @@ function FeaturedCard({ report, onClick }) {
   const hasChart = dataset?.series?.[0]?.values?.length > 0
   const series = hasChart ? dataset.series[0] : null
   const externalUrl = report.external_url
+
+  const matchChip = match && match.total > 0 ? (
+    <span style={{
+      display: 'inline-flex', alignItems: 'center',
+      padding: '3px 8px',
+      fontFamily: "'JetBrains Mono', monospace",
+      fontSize: 9, letterSpacing: '0.04em', textTransform: 'uppercase',
+      borderRadius: 5,
+      background: match.matched > 0 ? 'rgba(245,158,11,0.10)' : 'rgba(255,255,255,0.04)',
+      border: match.matched > 0 ? '1px solid rgba(245,158,11,0.28)' : '1px solid rgba(255,255,255,0.08)',
+      color: match.matched > 0 ? 'rgba(252,211,77,0.95)' : 'rgba(232,236,241,0.45)',
+    }}>
+      {match.matched} of {match.total} findings match{match.dimensionLabel ? ` ${match.dimensionLabel}` : ''}
+    </span>
+  ) : null
 
   return (
     <div
@@ -567,18 +636,24 @@ function FeaturedCard({ report, onClick }) {
         border: '1px solid rgba(59,130,246,0.15)',
       }}>Featured</span>
 
-      <span style={{
-        position: 'absolute',
-        top: 16,
-        right: 90,
-        fontFamily: "'JetBrains Mono', monospace",
-        fontSize: 9,
-        background: 'rgba(255,255,255,0.04)',
-        color: 'rgba(232,236,241,0.5)',
-        padding: '3px 8px',
-        borderRadius: 4,
-        letterSpacing: '0.04em',
-      }}>External Source</span>
+      {(() => {
+        const t = sourceType(report.source)
+        if (!t) return null
+        return (
+          <span style={{
+            position: 'absolute',
+            top: 16,
+            right: 90,
+            fontFamily: "'JetBrains Mono', monospace",
+            fontSize: 9,
+            background: 'rgba(255,255,255,0.04)',
+            color: 'rgba(232,236,241,0.5)',
+            padding: '3px 8px',
+            borderRadius: 4,
+            letterSpacing: '0.04em',
+          }}>{t}</span>
+        )
+      })()}
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12, flexWrap: 'wrap' }}>
         <BrandChip source={report.source} size="lg" />
@@ -586,7 +661,7 @@ function FeaturedCard({ report, onClick }) {
           fontFamily: "'JetBrains Mono', monospace",
           fontSize: 10,
           color: 'rgba(232,236,241,0.55)',
-        }}>{report.year}</span>
+        }}>{formatReportDate(report)}</span>
         <span style={{
           fontFamily: "'JetBrains Mono', monospace",
           fontSize: 9,
@@ -607,6 +682,7 @@ function FeaturedCard({ report, onClick }) {
             letterSpacing: '0.06em',
           }}>{report.report_meta.card_count_total} findings</span>
         )}
+        {matchChip}
       </div>
 
       {(report.threat_type || []).length > 0 && (

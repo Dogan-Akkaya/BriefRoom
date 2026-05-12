@@ -10,6 +10,7 @@ import ReportCard from '../components/ReportCard'
 import SearchPanel from '../components/SearchPanel'
 import ChartPreviewModal from '../components/ChartPreviewModal'
 import { popularCharts, globalReports, threatTypeLabel } from '../lib/intelligenceLibrary'
+import { heroStats } from '../lib/stats'
 
 // Adapter: Intelligence Library item → PopularChartCard props (mirrors /popular)
 function toCardProps(item) {
@@ -66,7 +67,7 @@ export default function Landing() {
             Explore ransomware, phishing, and dark web threat data through ready-made charts. Tailored for industry and region for security reporting.
           </p>
           <p style={{ fontSize: 12, color: 'rgba(232,236,241,0.5)', fontFamily: "'JetBrains Mono'", letterSpacing: '0.06em', margin: '0 auto 36px', opacity: loaded ? 1 : 0, transition: 'all 0.8s cubic-bezier(0.16,1,0.3,1) 0.6s' }}>
-            Free &bull; Instant export
+            Free &bull; PNG export &bull; 0 synthesised numbers
           </p>
 
           {/* Search */}
@@ -106,7 +107,7 @@ export default function Landing() {
             <div style={{ maxWidth: 900, margin: '32px auto 0', padding: '0 16px' }}>
               <div style={{ height: 1, background: 'linear-gradient(90deg,transparent,rgba(255,69,98,0.1),transparent)', marginBottom: 20 }} />
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(130px,1fr))', gap: 8, textAlign: 'center' }}>
-                {[{ n: 2400, s: '+', l: 'CISOs using Brief Room' }, { n: 47, s: '', l: 'Countries covered' }, { n: 180, s: '+', l: 'Ready-made charts' }, { n: 12, s: 's', l: 'Avg. time to first chart' }].map((s, i) => (
+                {heroStats.map((s, i) => (
                   <Reveal key={i} delay={i * 70}>
                     <div style={{ padding: '10px 6px' }}>
                       <div style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 30, fontWeight: 700, color: '#FF4562', lineHeight: 1, marginBottom: 4, letterSpacing: '-0.02em' }}>
@@ -134,7 +135,7 @@ export default function Landing() {
               <p style={{ fontSize: 15, lineHeight: 1.7, color: 'rgba(232,236,241,0.62)', fontWeight: 300, maxWidth: 600 }}>Explore ransomware, phishing, and dark web threat data through ready-made charts. Tailored for industry and region for security reporting.</p>
             </div>
             <button onClick={() => navigate('/popular')} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '10px 18px', fontFamily: "'Satoshi','DM Sans',sans-serif", fontSize: 12, fontWeight: 600, background: 'transparent', color: 'rgba(232,236,241,0.55)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 12, cursor: 'pointer' }}>
-              Browse All 180+ →
+              Browse all featured →
             </button>
           </div>
         </Reveal>

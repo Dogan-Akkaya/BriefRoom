@@ -1,10 +1,13 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useToastStore } from '../stores/useToastStore'
 import { downloadPNG } from '../lib/export'
 import Spark from './Spark'
 import PNGExportModal from './PNGExportModal'
 import ShareLinkModal from './ShareLinkModal'
+import { similarFindings } from '../lib/similarFindings'
+import { BrandChip } from '../lib/sourceBrands'
+import { sourceType } from '../lib/methodologyBias'
 
 function MiniChart({ data, labels, color, type }) {
   const w = 280, h = 140
@@ -50,7 +53,7 @@ const exportBtn = {
   transition: 'all 0.25s', backdropFilter: 'blur(8px)',
 }
 
-export default function ChartPreviewModal({ chart, type, onClose, onCustomize }) {
+export default function ChartPreviewModal({ chart, type, onClose, onCustomize, onSwapToFinding }) {
   const navigate = useNavigate()
   const toast = useToastStore((s) => s.show)
   const [showPNGModal, setShowPNGModal] = useState(false)
@@ -61,6 +64,14 @@ export default function ChartPreviewModal({ chart, type, onClose, onCustomize })
   if (!chart) return null
 
   const isPopular = type === 'popular'
+
+  // Cross-vendor comparability — only computed for report-mode previews
+  // that ship through the original-item carrier.
+  const similar = useMemo(
+    () => (!isPopular && chart._originalItem ? similarFindings(chart._originalItem, 6) : []),
+    [chart, isPopular]
+  )
+  const hasSimilar = similar.length > 0
 
   const handleDirectExport = async () => {
     if (chartAreaRef.current) {
@@ -82,16 +93,20 @@ export default function ChartPreviewModal({ chart, type, onClose, onCustomize })
       <div
         onClick={(e) => e.stopPropagation()}
         style={{
-          maxWidth: 560, width: '90%',
+          maxWidth: hasSimilar ? 960 : 560, width: '92%',
           background: 'rgba(16,20,34,0.95)',
           backdropFilter: 'blur(24px)', WebkitBackdropFilter: 'blur(24px)',
           border: '1px solid rgba(255,255,255,0.08)',
-          borderRadius: 24, padding: 36,
+          borderRadius: 24, padding: hasSimilar ? '36px 24px 36px 36px' : 36,
           boxShadow: '0 32px 100px rgba(0,0,0,0.5)',
           position: 'relative',
-          maxHeight: '90vh', overflowY: 'auto',
+          maxHeight: '92vh', overflowY: 'auto',
+          display: hasSimilar ? 'grid' : 'block',
+          gridTemplateColumns: hasSimilar ? 'minmax(0, 1fr) 280px' : undefined,
+          gap: hasSimilar ? 24 : 0,
         }}
       >
+        <div style={{ minWidth: 0 }}>
         {/* Close button */}
         <button
           onClick={onClose}
@@ -240,27 +255,23 @@ export default function ChartPreviewModal({ chart, type, onClose, onCustomize })
           /* ── Report Mode ── */
           <>
             <div ref={chartAreaRef}>
-            {/* Source + External badges */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 14 }}>
-              <span style={{
-                fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 10, fontWeight: 600,
-                background: 'rgba(59,130,246,0.08)',
-                color: 'rgba(232,236,241,0.6)',
-                padding: '3px 9px', borderRadius: 6,
-              }}>
-                {chart.sourceShort}
-              </span>
-              <span style={{
-                fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 9,
-                background: 'rgba(255,255,255,0.04)',
-                color: 'rgba(232,236,241,0.5)',
-                padding: '3px 8px', borderRadius: 4,
-                letterSpacing: '0.04em',
-              }}>
-                External Source
-              </span>
+            {/* Source brand + source-type badge */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 14, flexWrap: 'wrap' }}>
+              <BrandChip source={chart.source} size="lg" />
+              {(() => {
+                const t = sourceType(chart.source)
+                if (!t) return null
+                return (
+                  <span style={{
+                    fontFamily: "'JetBrains Mono', monospace",
+                    fontSize: 9,
+                    background: 'rgba(255,255,255,0.04)',
+                    color: 'rgba(232,236,241,0.5)',
+                    padding: '3px 8px', borderRadius: 4,
+                    letterSpacing: '0.04em',
+                  }}>{t}</span>
+                )
+              })()}
             </div>
 
             {/* Title */}
@@ -364,9 +375,100 @@ export default function ChartPreviewModal({ chart, type, onClose, onCustomize })
             </div>
           </>
         )}
+        </div>{/* end primary panel */}
+        {hasSimilar && (
+          <SimilarFindingsRail
+            items={similar}
+            onPick={(it) => {
+              if (onSwapToFinding) onSwapToFinding(it)
+            }}
+          />
+        )}
       </div>
       {showPNGModal && <PNGExportModal onClose={() => setShowPNGModal(false)} chartType={type} mode={pngMode} onExport={handleDirectExport} />}
       {showShareModal && <ShareLinkModal onClose={() => setShowShareModal(false)} categoryId={chart.categoryId || chart.id} />}
     </div>
+  )
+}
+
+// Right rail: small thumbnails for findings that measure the same KPI
+// across other vendors. Click swaps the modal's primary view.
+function SimilarFindingsRail({ items, onPick }) {
+  return (
+    <aside
+      style={{
+        borderLeft: '1px solid rgba(255,255,255,0.06)',
+        paddingLeft: 18,
+        minWidth: 0,
+        maxHeight: 'calc(92vh - 72px)',
+        overflowY: 'auto',
+      }}
+    >
+      <div style={{
+        fontFamily: "'JetBrains Mono', monospace",
+        fontSize: 9.5, letterSpacing: '0.14em', textTransform: 'uppercase',
+        color: 'rgba(232,236,241,0.6)', marginBottom: 6,
+      }}>
+        Compare across vendors
+      </div>
+      <div style={{
+        fontSize: 11, color: 'rgba(232,236,241,0.45)', lineHeight: 1.5, marginBottom: 14,
+      }}>
+        Same KPI surfaced in {items.length} other vendor report{items.length === 1 ? '' : 's'}. Click to swap the primary view.
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+        {items.map((it) => {
+          const value = it.value || (Array.isArray(it.dataset?.series?.[0]?.values)
+            ? `${it.dataset.series[0].values[0]} ${it.value_unit || ''}`.trim()
+            : '—')
+          return (
+            <button
+              key={it.id}
+              onClick={() => onPick && onPick(it)}
+              style={{
+                textAlign: 'left',
+                background: 'rgba(255,255,255,0.025)',
+                border: '1px solid rgba(255,255,255,0.06)',
+                borderRadius: 10,
+                padding: '10px 12px',
+                cursor: 'pointer',
+                color: 'inherit',
+                display: 'flex', flexDirection: 'column', gap: 6,
+                transition: 'all 0.18s',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(96,165,250,0.32)'
+                e.currentTarget.style.background = 'rgba(59,130,246,0.06)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(255,255,255,0.06)'
+                e.currentTarget.style.background = 'rgba(255,255,255,0.025)'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                <BrandChip source={it._report_source} size="sm" />
+                <span style={{
+                  fontFamily: "'JetBrains Mono', monospace",
+                  fontSize: 9, color: 'rgba(232,236,241,0.5)',
+                }}>{it._report_year}</span>
+              </div>
+              <div style={{
+                fontFamily: "'Plus Jakarta Sans', sans-serif",
+                fontSize: 18, fontWeight: 700, color: '#E8ECF1',
+                lineHeight: 1.1,
+              }}>{value}</div>
+              <div style={{
+                fontSize: 11, color: 'rgba(232,236,241,0.6)',
+                lineHeight: 1.35,
+                display: '-webkit-box',
+                WebkitLineClamp: 2,
+                WebkitBoxOrient: 'vertical',
+                overflow: 'hidden',
+              }}>{it.title}</div>
+            </button>
+          )
+        })}
+      </div>
+    </aside>
   )
 }
