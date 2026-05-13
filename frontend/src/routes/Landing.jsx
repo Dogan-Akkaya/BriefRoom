@@ -9,6 +9,7 @@ import CategoryPicker from '../components/CategoryPicker'
 import ReportCard from '../components/ReportCard'
 import SearchPanel from '../components/SearchPanel'
 import ChartPreviewModal from '../components/ChartPreviewModal'
+import SourceMarquee from '../components/SourceMarquee'
 import { popularCharts, globalReports, threatTypeLabel } from '../lib/intelligenceLibrary'
 import { heroStats } from '../lib/stats'
 
@@ -121,6 +122,99 @@ export default function Landing() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* OPEN DATA — INDEXED — sits directly below the hero so the first
+          thing the user sees off the search bar is what we actually have:
+          vendor identity + scale. Logos as social proof. */}
+      <section id="sources-section" style={{ position: 'relative', zIndex: 1, padding: '72px 24px 24px', maxWidth: 1100, margin: '0 auto' }}>
+        <Reveal>
+          <div style={{ textAlign: 'center', marginBottom: 28, maxWidth: 760, marginLeft: 'auto', marginRight: 'auto' }}>
+            <div style={{
+              fontFamily: "'JetBrains Mono'", fontSize: 11,
+              letterSpacing: '0.14em', textTransform: 'uppercase',
+              color: 'rgba(96,165,250,0.85)', marginBottom: 14,
+            }}>
+              <span style={{ animation: 'gentlePulse 2.5s ease-in-out infinite', display: 'inline-block' }}>●</span>&nbsp;&nbsp;Open data — indexed
+            </div>
+            <h2 style={{
+              fontFamily: "'Plus Jakarta Sans'",
+              fontSize: 'clamp(26px,3.5vw,40px)', fontWeight: 600,
+              lineHeight: 1.15, color: '#E8ECF1',
+              marginBottom: 14, letterSpacing: '-0.02em',
+            }}>Every public threat report. One catalog.</h2>
+            <p style={{
+              fontSize: 15, lineHeight: 1.7,
+              color: 'rgba(232,236,241,0.62)', fontWeight: 300,
+            }}>
+              We pull open threat-intel from 46 vendors &mdash; government agencies, intel firms, IR teams, insurers &mdash; so you don&rsquo;t have to chase 43 PDFs. Every finding cited, every source attributed.
+            </p>
+          </div>
+        </Reveal>
+
+        <Reveal delay={120}>
+          <SourceMarquee />
+        </Reveal>
+
+        <Reveal delay={200}>
+          <div style={{
+            display: 'flex', flexWrap: 'wrap', gap: 24,
+            justifyContent: 'center', alignItems: 'center',
+            marginTop: 30, padding: '0 16px',
+          }}>
+            {heroStats.map((s, i) => (
+              <div key={i} style={{
+                display: 'inline-flex', alignItems: 'baseline', gap: 8,
+                padding: '8px 16px',
+                borderRadius: 10,
+                background: 'rgba(255,255,255,0.025)',
+                border: '1px solid rgba(255,255,255,0.06)',
+              }}>
+                <span style={{
+                  fontFamily: "'Plus Jakarta Sans'",
+                  fontSize: 22, fontWeight: 700,
+                  color: '#E8ECF1', lineHeight: 1, letterSpacing: '-0.02em',
+                }}>{s.n.toLocaleString()}{s.s}</span>
+                <span style={{
+                  fontFamily: "'JetBrains Mono'", fontSize: 10,
+                  letterSpacing: '0.08em', textTransform: 'uppercase',
+                  color: 'rgba(232,236,241,0.55)',
+                }}>{s.l}</span>
+              </div>
+            ))}
+          </div>
+        </Reveal>
+
+        <Reveal delay={280}>
+          <div style={{ textAlign: 'center', marginTop: 26 }}>
+            <button
+              onClick={() => navigate('/reports')}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(59,130,246,0.55)'
+                e.currentTarget.style.background = 'rgba(59,130,246,0.16)'
+                e.currentTarget.style.transform = 'translateY(-2px)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(59,130,246,0.32)'
+                e.currentTarget.style.background = 'rgba(59,130,246,0.08)'
+                e.currentTarget.style.transform = 'translateY(0)'
+              }}
+              style={{
+                display: 'inline-flex', alignItems: 'center', gap: 8,
+                padding: '11px 22px',
+                fontFamily: "'Satoshi','DM Sans',sans-serif",
+                fontSize: 13, fontWeight: 600,
+                color: '#60A5FA',
+                background: 'rgba(59,130,246,0.08)',
+                border: '1px solid rgba(59,130,246,0.32)',
+                borderRadius: 12, cursor: 'pointer',
+                transition: 'all 0.25s cubic-bezier(0.16,1,0.3,1)',
+              }}
+            >
+              Browse all reports &rarr;
+            </button>
+          </div>
+        </Reveal>
       </section>
 
       {/* POPULAR CHARTS */}

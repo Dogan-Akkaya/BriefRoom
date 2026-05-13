@@ -269,23 +269,44 @@ export default function SearchPanel() {
 
   // --- Render helpers ---
 
-  function renderSectionHeader(label, dotColor) {
+  function renderSectionHeader(label, dotColor, { muted = false } = {}) {
     return (
-      <div style={sectionHeaderStyle(dotColor)}>
+      <div style={{
+        ...sectionHeaderStyle(dotColor),
+        opacity: muted ? 0.6 : 1,
+      }}>
         <span style={dotStyle(dotColor)} />
         {label}
+        {muted && (
+          <span style={{
+            marginLeft: 6,
+            padding: '1px 6px',
+            borderRadius: 4,
+            background: 'rgba(255,255,255,0.06)',
+            color: 'rgba(232,236,241,0.55)',
+            fontSize: 8,
+            fontWeight: 700,
+            letterSpacing: '0.12em',
+            textTransform: 'uppercase',
+          }}>Soon</span>
+        )}
       </div>
     )
   }
 
-  function ResultItem({ children, badge, onClick, icon }) {
+  function ResultItem({ children, badge, onClick, icon, muted = false }) {
     const [hovered, setHovered] = useState(false)
+    // Muted rows sit at ~55% opacity by default and lift on hover so the
+    // SOON sections (Popular Charts / Custom Builder) read as "still
+    // clickable, but not the primary path".
+    const baseOpacity = muted ? (hovered ? 0.9 : 0.55) : 1
     return (
       <div
         style={{
           ...resultItemStyle,
           background: hovered ? 'rgba(255,69,98,0.04)' : 'transparent',
           color: hovered ? '#E8ECF1' : 'rgba(232,236,241,0.6)',
+          opacity: baseOpacity,
         }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
@@ -301,36 +322,13 @@ export default function SearchPanel() {
   }
 
   // --- Default suggestions (focused, no query, no filter) ---
+  // Live section (Global Reports) renders first at full opacity. The two
+  // SOON sections render below at reduced opacity with a SOON pill so the
+  // user is psychologically guided to the live surface but can still click
+  // through to /popular and /builder if they want to.
   function renderDefaultSuggestions() {
     return (
       <>
-        {renderSectionHeader('Popular Charts', '#FF4562')}
-        {POPULAR.slice(0, 2).map((p, i) => (
-          <ResultItem
-            key={`pop-${i}`}
-            badge={p.views}
-            onClick={() => closeAndNavigate('/popular')}
-            icon={<span style={typeIconDot('#FF4562')} />}
-          >
-            {p.title}
-          </ResultItem>
-        ))}
-
-        {renderSectionHeader('Custom Builder', '#FF4562')}
-        {activeCategories.slice(0, 2).map((cat, i) => {
-          const firstDp = cat.label
-          return (
-            <ResultItem
-              key={`build-${i}`}
-              badge="builder"
-              onClick={() => closeAndNavigate(`/builder/${cat.id}`)}
-              icon={<span style={typeIconLetter}>B</span>}
-            >
-              Build: {cat.label} &middot; {cat.desc.split(',')[0]}
-            </ResultItem>
-          )
-        })}
-
         {renderSectionHeader('Global Reports', '#3B82F6')}
         {globalReports().slice(0, 2).map((r, i) => {
           const rid = r.report_meta?.report_id
@@ -345,6 +343,32 @@ export default function SearchPanel() {
             </ResultItem>
           )
         })}
+
+        {renderSectionHeader('Popular Charts', '#FF4562', { muted: true })}
+        {POPULAR.slice(0, 2).map((p, i) => (
+          <ResultItem
+            key={`pop-${i}`}
+            badge={p.views}
+            onClick={() => closeAndNavigate('/popular')}
+            icon={<span style={typeIconDot('#FF4562')} />}
+            muted
+          >
+            {p.title}
+          </ResultItem>
+        ))}
+
+        {renderSectionHeader('Custom Builder', '#FF4562', { muted: true })}
+        {activeCategories.slice(0, 2).map((cat, i) => (
+          <ResultItem
+            key={`build-${i}`}
+            badge="builder"
+            onClick={() => closeAndNavigate(`/builder/${cat.id}`)}
+            icon={<span style={typeIconLetter}>B</span>}
+            muted
+          >
+            Build: {cat.label} &middot; {cat.desc.split(',')[0]}
+          </ResultItem>
+        ))}
       </>
     )
   }
@@ -400,28 +424,30 @@ export default function SearchPanel() {
           </>
         )}
 
-        {/* Text search sections */}
-        {popular?.length > 0 && (
-          <>
-            {renderSectionHeader('Popular Charts', '#FF4562')}
-            {popular.map((p, i) => (
-              <ResultItem key={`sp-${i}`} badge={p.views} onClick={() => closeAndNavigate('/popular')} icon={<span style={typeIconDot('#FF4562')} />}>{p.title}</ResultItem>
-            ))}
-          </>
-        )}
-        {categories?.length > 0 && (
-          <>
-            {renderSectionHeader('Custom Builder', '#FF4562')}
-            {categories.map((cat, i) => (
-              <ResultItem key={`sc-${i}`} badge={cat.label} onClick={() => closeAndNavigate(`/builder/${cat.id}`)} icon={<span style={typeIconLetter}>B</span>}>{cat.label} &mdash; {cat.desc}</ResultItem>
-            ))}
-          </>
-        )}
+        {/* Text-search sections — same live-first ordering. Global Reports
+            is the only live destination, so it leads; Popular / Builder
+            results render muted with a SOON pill below. */}
         {reports?.length > 0 && (
           <>
             {renderSectionHeader('Global Reports', '#3B82F6')}
             {reports.map((r, i) => (
               <ResultItem key={`sr-${i}`} badge={r.sourceShort} onClick={() => closeAndNavigate('/reports')} icon={<span style={typeIconDot('#3B82F6')} />}>{r.sourceShort}: {r.title}</ResultItem>
+            ))}
+          </>
+        )}
+        {popular?.length > 0 && (
+          <>
+            {renderSectionHeader('Popular Charts', '#FF4562', { muted: true })}
+            {popular.map((p, i) => (
+              <ResultItem key={`sp-${i}`} badge={p.views} onClick={() => closeAndNavigate('/popular')} icon={<span style={typeIconDot('#FF4562')} />} muted>{p.title}</ResultItem>
+            ))}
+          </>
+        )}
+        {categories?.length > 0 && (
+          <>
+            {renderSectionHeader('Custom Builder', '#FF4562', { muted: true })}
+            {categories.map((cat, i) => (
+              <ResultItem key={`sc-${i}`} badge={cat.label} onClick={() => closeAndNavigate(`/builder/${cat.id}`)} icon={<span style={typeIconLetter}>B</span>} muted>{cat.label} &mdash; {cat.desc}</ResultItem>
             ))}
           </>
         )}
