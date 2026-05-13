@@ -4,19 +4,19 @@ import { useParams, useNavigate } from 'react-router-dom'
 const PLACEHOLDERS = {
   privacy: {
     title: 'Privacy Policy',
-    body: 'SOCRadar Brief Room is committed to protecting the privacy and security of your information. We collect minimal usage data to improve chart generation and do not sell or share your data with third parties. All threat intelligence displayed is aggregated and anonymized. Session data is encrypted in transit and at rest using AES-256. For detailed information about data retention periods and your rights under GDPR and CCPA, please contact our data protection officer.',
+    body: 'Brief Room is committed to protecting the privacy and security of your information. We collect minimal usage data to improve chart generation and do not sell or share your data with third parties. All threat intelligence displayed is aggregated and anonymized. Session data is encrypted in transit and at rest using AES-256. For detailed information about data retention periods and your rights under GDPR and CCPA, please contact our data protection officer.',
   },
   terms: {
     title: 'Terms of Service',
-    body: 'By using SOCRadar Brief Room, you agree to use the platform and its generated charts for legitimate cybersecurity reporting and awareness purposes only. Charts and data are provided "as-is" without warranty. You may export and embed charts in internal reports and board presentations. Redistribution of raw data feeds or reverse engineering of our intelligence APIs is prohibited. SOCRadar reserves the right to modify these terms with 30 days notice.',
+    body: 'By using Brief Room, you agree to use the platform and its generated charts for legitimate cybersecurity reporting and awareness purposes only. Charts and data are provided "as-is" without warranty. You may export and embed charts in internal reports and board presentations. Redistribution of raw data feeds or reverse engineering of our intelligence APIs is prohibited. We reserve the right to modify these terms with 30 days notice.',
   },
   api: {
     title: 'API Documentation',
-    body: 'The Brief Room API provides programmatic access to chart generation, threat data queries, and export capabilities. Authentication is handled via API keys issued through your SOCRadar dashboard. Endpoints support JSON and SVG responses. Rate limits are set at 1,000 requests per hour for free-tier users. Enterprise plans include webhook support, batch chart generation, and custom data source integration.',
+    body: 'The Brief Room API provides programmatic access to chart generation, threat data queries, and export capabilities. Authentication is handled via API keys issued through your account dashboard. Endpoints support JSON and SVG responses. Rate limits are set at 1,000 requests per hour for free-tier users. Enterprise plans include webhook support, batch chart generation, and custom data source integration.',
   },
   contact: {
     title: 'Contact Us',
-    body: 'For support inquiries, data correction requests, or partnership opportunities, reach out to the SOCRadar Brief Room team. Enterprise customers have access to dedicated support channels with 4-hour SLA response times. For vulnerability disclosures related to the Brief Room platform, please use our responsible disclosure program.',
+    body: 'For support inquiries, data correction requests, or partnership opportunities, reach out to the Brief Room team. Enterprise customers have access to dedicated support channels with 4-hour SLA response times. For vulnerability disclosures related to the Brief Room platform, please use our responsible disclosure program.',
   },
 }
 

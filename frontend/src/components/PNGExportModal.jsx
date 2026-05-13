@@ -270,8 +270,7 @@ function PreviewChart({ data, colors, bgColor, gridLines, chartType, headline, s
           ))}
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 4, opacity: 0.3, flexShrink: 0 }}>
-          <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 8, color: textColor, letterSpacing: '0.04em' }}>Powered by</span>
-          <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 9, fontWeight: 700, color: textColor }}>SOCRadar</span>
+          <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 9, fontWeight: 700, color: textColor }}>Brief Room</span>
         </div>
       </div>
     </div>

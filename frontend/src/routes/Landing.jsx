@@ -42,7 +42,7 @@ export default function Landing() {
   const [previewChart, setPreviewChart] = useState(null)
   const [previewType, setPreviewType] = useState(null)
 
-  useEffect(() => { document.title = 'Brief Room — Threat Intelligence Charts for CISOs | SOCRadar'; setTimeout(() => setLoaded(true), 150) }, [])
+  useEffect(() => { document.title = 'Brief Room — Threat Intelligence Charts for CISOs'; setTimeout(() => setLoaded(true), 150) }, [])
 
   return (
     <div>
@@ -82,7 +82,7 @@ export default function Landing() {
                 style={{ cursor: 'pointer', textAlign: 'center', flex: '1 1 180px', padding: '20px 16px', borderRadius: 14, border: '1px solid rgba(255,69,98,0.18)', background: 'rgba(255,69,98,0.06)', transition: 'all 0.3s cubic-bezier(0.16,1,0.3,1)', boxShadow: '0 0 20px rgba(255,69,98,0.08)' }}
               >
                 <div style={{ fontFamily: "'Plus Jakarta Sans'", fontSize: 14, fontWeight: 600, color: '#E8ECF1', marginBottom: 4 }}>Popular Charts</div>
-                <div style={{ fontSize: 12, color: 'rgba(232,236,241,0.45)', lineHeight: 1.5 }}>Recently created & suggested charts from SOCRadar</div>
+                <div style={{ fontSize: 12, color: 'rgba(232,236,241,0.45)', lineHeight: 1.5 }}>Recently created & suggested charts</div>
               </div>
               <div
                 onClick={() => navigate('/reports')}
@@ -331,7 +331,7 @@ export default function Landing() {
 
       {/* FOOTER */}
       <footer style={{ position: 'relative', zIndex: 1, padding: '20px 28px', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.03)' }}>
-        <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: 'rgba(232,236,241,0.45)' }}>© 2026 SOCRadar Brief Room</span>
+        <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: 'rgba(232,236,241,0.45)' }}>© 2026 Brief Room</span>
       </footer>
 
       {previewChart && (

@@ -178,7 +178,7 @@ export default function Builder() {
       </nav>
 
       <h1 style={{ position: 'absolute', width: 1, height: 1, overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap' }}>
-        {selectedCat.label} Threat Intelligence Chart Builder — Brief Room by SOCRadar
+        {selectedCat.label} Threat Intelligence Chart Builder — Brief Room
       </h1>
       <div style={{ display: 'flex', flex: 1, overflow: 'hidden', position: 'relative', zIndex: 1 }}>
         {/* LEFT — Chart */}
@@ -266,15 +266,10 @@ export default function Builder() {
               )}
             </ResponsiveContainer>
             )}
-            {/* Powered by SOCRadar watermark */}
-            <div style={{ position: 'absolute', bottom: 5, right: 16, display: 'flex', alignItems: 'center', gap: 5, opacity: 0.35, pointerEvents: 'none' }}>
-              <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 9, color: '#E8ECF1', letterSpacing: '0.04em' }}>Powered by</span>
-              <img src="/socradar-logo-white.png" alt="SOCRadar" loading="lazy" style={{ height: 24 }} />
-            </div>
           </div>
           <ExportBar onPNGClick={() => setShowPNGModal(true)} onShareClick={() => setShowShareModal(true)} />
           <div style={{ marginTop: 12, fontFamily: "'JetBrains Mono'", fontSize: 10, color: 'rgba(232,236,241,0.5)', display: 'flex', justifyContent: 'space-between' }}>
-            <span>Data: SOCRadar Threat Intelligence • {chartMonthLabels[0]}–{chartMonthLabels[chartMonthLabels.length - 1]}{country ? ` • ${country}` : ''}{industry ? ` • ${industry}` : ''}</span>
+            <span>{chartMonthLabels[0]}–{chartMonthLabels[chartMonthLabels.length - 1]}{country ? ` • ${country}` : ''}{industry ? ` • ${industry}` : ''}</span>
             <span>{visibleData.length} of {rawData.length} shown</span>
           </div>
         </div>

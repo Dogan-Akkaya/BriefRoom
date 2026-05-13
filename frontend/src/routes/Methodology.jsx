@@ -119,7 +119,7 @@ export default function Methodology() {
             <li><strong style={{ color: '#FF4562' }}>Identity &amp; phishing</strong> -- Proofpoint, KnowBe4, Hoxhunt, Okta, Constella Intelligence</li>
             <li><strong style={{ color: '#FF4562' }}>Supply chain &amp; OSS</strong> -- Sonatype, Black Duck, SecurityScorecard, Cisco Talos</li>
             <li><strong style={{ color: '#FF4562' }}>Government &amp; standards</strong> -- CISA, FBI IC3, NCSC (UK), ENISA, World Economic Forum</li>
-            <li><strong style={{ color: '#FF4562' }}>SOCRadar Annual Dark Web Report</strong> -- our own corner of the dark web monitoring stack</li>
+            <li><strong style={{ color: '#FF4562' }}>SOCRadar Annual Dark Web Report</strong> -- dark-web exposure + leak-site activity</li>
           </ul>
           <p style={{ fontSize: 12, color: 'rgba(232,236,241,0.4)', lineHeight: 1.7, marginTop: 14, fontStyle: 'italic' }}>
             Plus 16 more from Bitdefender, Censys, Check Point, Cloudflare, Coalition, CYFIRMA, ESET, F5 Labs, Fortinet, FS-ISAC, KELA, PwC, Red Canary, Trellix, Palo Alto Unit 42, and others.
